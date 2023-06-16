@@ -9,34 +9,41 @@
 </script>
 
 <nav>
-    <div class="logo">SARCHLAB</div>
-    <button
-        id="menu-toggle"
-        class="text-white justify-end md:hidden"
-        on:click={toggleMenu}
-    >
-        {@html feather.icons['menu'].toSvg()}
-    </button>
+    <div class="nav-container">
+        <div class="logo">SARCHLAB</div>
+        <button
+            id="menu-toggle"
+            class="text-white justify-end md:hidden"
+            on:click={toggleMenu}
+        >
+            {@html feather.icons['menu'].toSvg()}
+        </button>
 
-    <ul id="nav-menu-list" class="hidden">
-        <li>People</li>
-        <li>Publication</li>
-        <li>Software</li>
-    </ul>
+        <ul id="nav-menu-list" class="hidden">
+            <li>People</li>
+            <li>Publication</li>
+            <li>Software</li>
+        </ul>
+    </div>
 </nav>
 
 <style lang="postcss">
     nav {
-        @apply flex flex-wrap justify-between;
-        @apply items-center bg-slate-700 px-8 mb-3 py-4;
+        @apply items-center bg-slate-700 mb-3 py-4 px-2;
     }
 
-    nav > ul {
+    .nav-container {
+        @apply flex flex-wrap justify-between;
+        @apply items-center;
+        @apply container mx-auto;
+    }
+
+    #nav-menu-list {
         @apply w-full flex-col gap-1 basis-full;
         @apply md:w-auto md:basis-0 md:flex md:flex-row md:gap-4;
     }
 
-    nav > ul > li {
+    #nav-menu-list > li {
         @apply text-slate-400 text-lg;
         @apply hover:text-slate-100;
     }
