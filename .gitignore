@@ -3,3 +3,5 @@ node_modules
 .svelte-kit
 build
 publish
+# Local Netlify folder
+.netlify
