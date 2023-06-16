@@ -20,6 +20,7 @@ const config = {
             // if `edge` is true, this option cannot be used
             split: false,
         }),
+        outDir: 'publish',
         alias: {
             $components: 'src/lib/components',
             '$components/*': 'src/lib/components/*',
