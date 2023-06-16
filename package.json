@@ -38,6 +38,7 @@
 	"dependencies": {
 		"class-variance-authority": "^0.6.0",
 		"clsx": "^1.2.1",
+		"feather-icons": "^4.29.0",
 		"lucide-svelte": "^0.244.0",
 		"tailwind-merge": "^1.13.1",
 		"tailwindcss-animate": "^1.0.6"

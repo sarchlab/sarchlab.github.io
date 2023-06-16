@@ -1,10 +1,11 @@
 <script>
+    import Nav from '$components/nav.svelte'
     import '../app.css'
 </script>
 
-<nav />
+<Nav />
 
-<div class="container mx-auto">
+<div class="md:container">
     <h1>Scalable Architecture Lab</h1>
 
     <p>
