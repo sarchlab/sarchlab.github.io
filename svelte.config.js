@@ -16,6 +16,7 @@ const config = {
         }),
         outDir: 'publish',
         alias: {
+            $src: 'src',
             $components: 'src/lib/components',
             '$components/*': 'src/lib/components/*',
         },

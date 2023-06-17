@@ -5,7 +5,7 @@
 
 <Nav />
 
-<div class="main-container">
+<div class="md:container">
     <h1>Scalable Architecture Lab</h1>
 
     <p>
@@ -24,9 +24,5 @@
     <h2>People</h2>
 </div>
 
-<style lang="postcss">
-    .main-container {
-        @apply md:container md:mx-auto;
-        @apply bg-white dark:bg-slate-800;
-    }
+<style>
 </style>
