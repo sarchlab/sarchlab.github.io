@@ -140,7 +140,7 @@
 <style lang="postcss">
     nav {
         @apply items-center  mb-3 py-4 px-2;
-        @apply bg-slate-700 dark:bg-slate-950;
+        @apply bg-stone-800 dark:bg-stone-950;
     }
 
     .nav-container {
