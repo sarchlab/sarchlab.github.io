@@ -4,6 +4,13 @@
 
     onMount(() => {
         highlightNavItem()
+
+        window
+            .matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', (e) => {
+                changeTheme()
+            })
+
         changeTheme()
     })
 
@@ -22,6 +29,8 @@
         const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
         if (systemTheme.matches) {
             document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
         }
     }
 
@@ -127,7 +136,7 @@
                     class="theme-option"
                     on:click={() => selectTheme('System')}
                 >
-                    {@html feather.icons['moon'].toSvg({
+                    {@html feather.icons['monitor'].toSvg({
                         width: 18,
                         height: 18,
                     })} System
