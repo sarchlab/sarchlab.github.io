@@ -1,6 +1,7 @@
 <script lang="ts">
     import feather from 'feather-icons'
     import { onMount } from 'svelte'
+    import '$src/app.css'
 
     onMount(() => {
         highlightNavItem()
@@ -91,7 +92,9 @@
 
 <nav>
     <div class="nav-container">
-        <div class="logo">SARCHLAB</div>
+        <a href="/">
+            <div class="logo">SARCHLAB</div>
+        </a>
         <button
             id="menu-toggle-btn"
             class=" justify-end md:hidden"
@@ -102,9 +105,19 @@
 
         <div id="nav-fold" class="nav-fold hidden items-center text-slate-300">
             <div id="nav-menu-list">
-                <div id="nav-people" class="nav-item highlight">People</div>
-                <div id="nav-publication" class="nav-item">Publication</div>
-                <div id="nav-software" class="nav-item">Software</div>
+                <a href="/people">
+                    <div id="nav-people" class="nav-item highlight">
+                        People
+                    </div>
+                </a>
+                <a href="/publication">
+                    <div id="nav-publication" class="nav-item">
+                        Publication
+                    </div>
+                </a>
+                <a href="/software">
+                    <div id="nav-software" class="nav-item">Software</div>
+                </a>
             </div>
 
             <button id="theme-option-btn" on:click={toggleThemeOption}>
@@ -149,7 +162,7 @@
 <style lang="postcss">
     nav {
         @apply items-center  mb-3 py-4 px-2;
-        @apply bg-stone-800 dark:bg-stone-950;
+        @apply bg-background;
     }
 
     .nav-container {
@@ -164,23 +177,23 @@
     }
 
     .nav-item {
-        @apply text-slate-300 dark:text-slate-600 text-lg;
-        @apply hover:text-slate-50 hover:dark:text-slate-400;
+        @apply text-muted-foreground text-lg;
+        @apply hover:text-foreground;
         @apply cursor-pointer;
     }
 
     .nav-item.highlight {
-        @apply text-slate-50 dark:text-slate-400;
+        @apply text-foreground;
     }
 
     .logo {
         @apply text-2xl  font-bold;
         @apply md:mr-12;
-        @apply text-slate-50 dark:text-slate-400;
+        @apply text-foreground;
     }
 
     #menu-toggle-btn {
-        @apply text-slate-50 dark:text-slate-400;
+        @apply text-muted-foreground;
     }
 
     .nav-fold {
@@ -190,7 +203,7 @@
 
     #theme-option-btn {
         @apply w-full;
-        @apply text-slate-300 dark:text-slate-600;
+        @apply text-muted-foreground;
     }
 
     #theme-options {
@@ -199,8 +212,8 @@
 
     .theme-option {
         @apply cursor-pointer;
-        @apply text-slate-300 dark:text-slate-600;
-        @apply hover:text-slate-50 hover:dark:text-slate-400;
+        @apply text-muted-foreground;
+        @apply hover:text-foreground;
         @apply flex items-center gap-1;
     }
 </style>
