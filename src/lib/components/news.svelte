@@ -1,6 +1,9 @@
 <script>
 </script>
 
+<div>
+
+<h3 class="font-bold">Lab News</h3>
 <ul>
     <li>
         <span class="date">[Mar 2023]</span> Our NSF CCRI Proposal Enabling Computer
@@ -37,12 +40,15 @@
     </li>
 </ul>
 
+</div>
+
 <style lang="postcss">
     ul {
-        @apply flex flex-col gap-2 px-3 pt-2;
+        @apply flex flex-col gap-4 px-3 pt-2;
+        @apply text-sm
     }
 
     .date {
-        @apply text-sm;
+        @apply text-sm text-muted-foreground;
     }
 </style>

@@ -1,7 +1,7 @@
 <script>
     import Nav from '$components/nav.svelte'
     import News from '$components/news.svelte'
-    import People from '$components/people.svelte'
+    import LabIntro from '$components/labintro.svelte'
     import '$src/app.css'
 </script>
 
@@ -9,7 +9,7 @@
 
 <div class="main-container">
     <div class="two-col-left">
-        <People />
+        <LabIntro />
     </div>
     <div class="two-col-right">
         <News />
