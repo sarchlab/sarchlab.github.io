@@ -81,7 +81,7 @@
     }
 
     .sec-title {
-        @apply text-5xl font-thin mt-5;
+        @apply text-5xl font-thin mt-8;
     }
 
     h1,

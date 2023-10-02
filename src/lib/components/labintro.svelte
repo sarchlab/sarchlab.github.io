@@ -1,5 +1,6 @@
 <script>
     import ResearchTopic from "./ResearchTopic.svelte"
+    import Sponsor from "./sponsor.svelte"
 
 </script>
 
@@ -29,6 +30,13 @@
 	content= "Single GPU systems struggle to meet the performance requirement. Therefore, researchers start to use large-scale multi-GPU systems to achieve extreme performance. Inter-GPU communication can easily kill the performance. I design architecture and system solutions for multi-GPU systems to avoid inter-GPU traffic and improve performance."
 />
 
+
+<h2 class="sec-title">Sponsors</h2>
+
+<div class="flex flow-row gap-6">
+	<Sponsor img="NSF_logo.png" name="National Science Foundation"/>
+	<Sponsor img="AMD_Logo.svg.png" name="Advanced Micro Devices"/>
+</div>
 
 <style>
 </style>
