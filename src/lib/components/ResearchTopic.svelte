@@ -19,13 +19,16 @@
 
 <style lang="postcss">
 	.research-topic {
-		@apply flex flex-row gap-6 justify-center items-center;
-		@apply mt-8 ml-8;
+		@apply flex gap-6 ;
+		@apply flex-col justify-start items-start ;
+		@apply sm:flex-row sm:justify-center sm:items-center;
+		@apply mt-8 ml-2 pl-2;
+		/* @apply border-l-2 */
 	}
 
 	 img{
-		@apply rounded-full border;
-		@apply w-24 h-24;
+		@apply rounded-2xl border;
+		@apply w-full sm:w-48 h-16 sm:h-32;
 		@apply flex-shrink-0;
 		@apply object-cover;
 	}

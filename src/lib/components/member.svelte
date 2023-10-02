@@ -1,22 +1,23 @@
 <script>
-export let name = ""
-export let profile_img = ""
+    export let name = ''
+    export let profile_img = ''
 </script>
 
 <div class="person-container">
-	<div class="person-card">
-		<img src="{profile_img}" alt="Profile of {name}" />
-		<div class="person-info">
-			<div class="person-name">{name}</div>
-			<slot></slot>
-		</div>
-	</div>
+    <div class="person-card">
+        <img src={profile_img} alt="Profile of {name}" />
+        <div class="person-info">
+            <div class="person-name">{name}</div>
+            <slot />
+        </div>
+    </div>
 </div>
 
 <style lang="postcss">
     .person-card {
         @apply flex flex-1;
-        @apply border rounded-xl p-3 my-4;
+        @apply border-l-2 border-muted;
+        @apply p-3 my-4;
         @apply text-left;
     }
 

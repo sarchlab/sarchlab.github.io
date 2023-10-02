@@ -27,7 +27,7 @@
 
     <h2 class="sec-title">Undergraduate Researcher</h2>
     <div class="person-container">
-        <Member name="Zhuoyan Zheng" profile_img="zhuoyan_profile.jpg">
+        <Member name="Zhuoyan Zheng" profile_img="zhuoyan_profile.jpg ">
             <div><b>Position:</b> Undergraduate Student</div>
         </Member>
     </div>
