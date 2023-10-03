@@ -105,22 +105,18 @@
 
         <div id="nav-fold" class="nav-fold hidden items-center text-slate-300">
             <div id="nav-menu-list">
-                <a href="/people">
-                    <div id="nav-people" class="nav-item highlight">
-                        People
-                    </div>
-                </a>
-                <a href="/publication">
-                    <div id="nav-publication" class="nav-item">
-                        Publication
-                    </div>
-                </a>
-                <a href="/software">
-                    <div id="nav-software" class="nav-item">Software</div>
-                </a>
-                <a href="/news">
-                    <div id="nav-news" class="nav-item">News</div>
-                </a>
+                <div id="nav-people" class="nav-item highlight">
+                    <a href="/people"> People </a>
+                </div>
+                <div id="nav-publication" class="nav-item">
+                    <a href="/publication"> Publication </a>
+                </div>
+                <div id="nav-software" class="nav-item">
+                    <a href="/software"> Software </a>
+                </div>
+                <div id="nav-news" class="nav-item">
+                    <a href="/news"> News </a>
+                </div>
             </div>
 
             <button id="theme-option-btn" on:click={toggleThemeOption}>
@@ -166,6 +162,8 @@
     nav {
         @apply items-center mb-3 py-4 px-2;
         @apply bg-background;
+        @apply max-w-screen-2xl;
+        @apply mx-auto;
     }
 
     .nav-container {

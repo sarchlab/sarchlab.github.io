@@ -106,15 +106,16 @@
     }
 
     .main-container {
-        @apply flex px-10 gap-10;
+        @apply flex flex-col  px-10 gap-10 items-start;
+        @apply md:flex-row md:justify-center;
         @apply md:container md:mx-auto;
         @apply justify-center;
+        @apply max-w-screen-2xl;
     }
 
     .main-container > .two-col-left {
         @apply w-full;
         @apply md:w-9/12;
-        @apply max-w-screen-xl;
     }
 
     .main-container > .two-col-right {

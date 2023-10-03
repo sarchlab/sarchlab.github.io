@@ -1,15 +1,16 @@
 <script>
     export let name = ''
     export let profile_img = ''
+    export let link = ''
 </script>
 
-<div class="person-container">
-    <div class="person-card">
-        <img src={profile_img} alt="Profile of {name}" />
-        <div class="person-info">
+<div class="person-card">
+    <img src={profile_img} alt="Profile of {name}" />
+    <div class="person-info">
+        <a href={link}>
             <div class="person-name">{name}</div>
-            <slot />
-        </div>
+        </a>
+        <slot />
     </div>
 </div>
 
