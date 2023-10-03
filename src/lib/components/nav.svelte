@@ -118,6 +118,9 @@
                 <a href="/software">
                     <div id="nav-software" class="nav-item">Software</div>
                 </a>
+                <a href="/news">
+                    <div id="nav-news" class="nav-item">News</div>
+                </a>
             </div>
 
             <button id="theme-option-btn" on:click={toggleThemeOption}>

@@ -6,6 +6,10 @@
     import Publication from '$src/lib/components/publication.svelte'
 </script>
 
+<svelte:head>
+    <title>Scalable Architecture Lab | Publication</title>
+</svelte:head>
+
 <Nav />
 
 <div class="main-container">

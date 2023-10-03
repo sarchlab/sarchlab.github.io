@@ -5,6 +5,10 @@
     import '$src/app.css'
 </script>
 
+<svelte:head>
+    <title>Scalable Architecture Lab</title>
+</svelte:head>
+
 <Nav />
 
 <div class="main-container">

@@ -6,16 +6,13 @@
 </script>
 
 <svelte:head>
-    <title>Scalable Architecture Lab | People</title>
+    <title>Scalable Architecture Lab | News</title>
 </svelte:head>
 
 <Nav />
 
 <div class="main-container">
-    <div class="two-col-left">
-        <PeoplePage />
-    </div>
-    <div class="two-col-right">
+    <div class="w-full md:w-9/12 lg:w-6/12">
         <News />
     </div>
 </div>

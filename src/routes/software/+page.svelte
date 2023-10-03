@@ -1,10 +1,13 @@
 <script>
     import Nav from '$components/nav.svelte'
     import News from '$components/news.svelte'
-    import PeoplePage from '$src/lib/components/PeoplePage.svelte'
     import '$src/app.css'
     import Software from '$src/lib/components/software.svelte'
 </script>
+
+<svelte:head>
+    <title>Scalable Architecture Lab | Software</title>
+</svelte:head>
 
 <Nav />
 

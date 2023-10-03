@@ -108,6 +108,7 @@
     .main-container {
         @apply flex px-10 gap-10;
         @apply md:container md:mx-auto;
+        @apply justify-center;
     }
 
     .main-container > .two-col-left {
