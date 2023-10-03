@@ -114,6 +114,7 @@
     .main-container > .two-col-left {
         @apply w-full;
         @apply md:w-9/12;
+        @apply max-w-screen-xl;
     }
 
     .main-container > .two-col-right {

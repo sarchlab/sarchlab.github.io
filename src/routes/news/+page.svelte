@@ -12,7 +12,7 @@
 <Nav />
 
 <div class="main-container">
-    <div class="w-full md:w-9/12 lg:w-6/12">
+    <div class="w-full md:w-9/12 lg:w-6/12 max-lg">
         <News />
     </div>
 </div>

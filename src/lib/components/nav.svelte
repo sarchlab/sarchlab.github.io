@@ -164,7 +164,7 @@
 
 <style lang="postcss">
     nav {
-        @apply items-center  mb-3 py-4 px-2;
+        @apply items-center mb-3 py-4 px-2;
         @apply bg-background;
     }
 
