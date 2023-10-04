@@ -6,12 +6,12 @@
 </svelte:head>
 
 <div class="sidebar">
-    <div class="sub-sidebar pl-5">
+    <div class="sub-sidebar md:pl-5">
         <div>
             <img
                 src="yifan_profile.png"
                 alt="Yifan Sun"
-                class="w-32 h-32 rounded-full"
+                class="w-32 h-32 rounded-full object-cover"
             />
             <div class="mt-4">
                 <h2>Yifan Sun</h2>
@@ -81,9 +81,9 @@
 <style lang="postcss">
     .sidebar {
         @apply w-full;
-        @apply flex flex-row gap-14 justify-start items-start;
-        @apply px-0 py-8;
-        @apply md:flex-col md:justify-start md:gap-6;
+        @apply flex flex-col gap-6 justify-start items-start;
+        @apply px-12 py-8;
+        @apply md:px-0 md:justify-start;
     }
 
     .sub-sidebar {
