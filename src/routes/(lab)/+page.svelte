@@ -9,8 +9,6 @@
     <title>Scalable Architecture Lab</title>
 </svelte:head>
 
-<Nav />
-
 <div class="main-container">
     <div class="two-col-left">
         <LabIntro />

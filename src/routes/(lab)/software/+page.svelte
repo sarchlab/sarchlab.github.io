@@ -9,8 +9,6 @@
     <title>Scalable Architecture Lab | Software</title>
 </svelte:head>
 
-<Nav />
-
 <div class="main-container">
     <div class="two-col-left">
         <div class="flex flex-wrap">

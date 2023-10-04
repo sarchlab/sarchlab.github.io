@@ -1,15 +1,12 @@
 <script>
-    import Nav from '$components/nav.svelte'
     import News from '$components/news.svelte'
-    import Member from '$src/lib/components/Member.svelte'
+    import Member from '$src/lib/components/member.svelte'
     import '$src/app.css'
 </script>
 
 <svelte:head>
     <title>Scalable Architecture Lab | People</title>
 </svelte:head>
-
-<Nav />
 
 <div class="main-container">
     <div class="two-col-left">

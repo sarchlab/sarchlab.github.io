@@ -1,21 +1,38 @@
-<script>
+<script lang="ts">
+    import { stringify } from 'postcss'
+
+    export let venue = ''
+    export let title = ''
+    export let authors = ''
+    export let links = Array<{
+        icon: string
+        name: string
+        link: string
+    }>()
 </script>
 
 <div class="pub-card">
     <div class="venue">
-        (<slot name="venue" />)
+        {venue}
     </div>
 
     <div class="title">
-        <slot name="title" />
+        {title}
     </div>
 
     <div class="authors">
-        <slot name="authors" />
+        {authors}
     </div>
 
     <div class="links">
-        <slot name="links" />
+        {#each links as link}
+            <a href={link.link}>
+                <span class="link">
+                    <i class={link.icon} />
+                    {link.name}
+                </span>
+            </a>
+        {/each}
     </div>
 </div>
 

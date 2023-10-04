@@ -9,7 +9,7 @@
     <div class="sub-sidebar md:pl-5">
         <div>
             <img
-                src="yifan_profile.png"
+                src="/yifan_profile.png"
                 alt="Yifan Sun"
                 class="w-32 h-32 rounded-full object-cover"
             />
@@ -27,7 +27,7 @@
 
     <div class="sub-sidebar">
         <div class="entry">
-            <img class="small-icon" src="location.svg" alt="location" />
+            <img class="small-icon" src="/location.svg" alt="location" />
             <div>
                 McGlothlin-Street Hall 117<br />
                 737 Landrum Dr, <br />
@@ -37,17 +37,17 @@
 
         <div class="flex flex-col gap-1">
             <div class="entry">
-                <img class="small-icon" src="file.svg" alt="file" />
+                <img class="small-icon" src="/file.svg" alt="file" />
                 <a href="yifan_cv.pdf">CV</a>
             </div>
             <div class="entry">
-                <img class="small-icon" src="email.svg" alt="email" />
+                <img class="small-icon" src="/email.svg" alt="email" />
                 <a href="mailto:yifan@cs.wm.edu">yifan@cs.wm.edu</a>
             </div>
             <div class="entry">
                 <img
                     class="small-icon"
-                    src="googlescholar.png"
+                    src="/googlescholar.png"
                     alt="google scholar"
                 />
                 <a
@@ -56,17 +56,17 @@
                 >
             </div>
             <div class="entry">
-                <img class="small-icon" src="twitter.svg" alt="twitter" />
+                <img class="small-icon" src="/twitter.svg" alt="twitter" />
                 <a href="https://twitter.com/_syifan_"> Twitter</a>
             </div>
             <div class="entry">
-                <img class="small-icon" src="github.svg" alt="github" />
+                <img class="small-icon" src="/github.svg" alt="github" />
                 <a href="https://github.com/syifan">GitHub</a>
             </div>
             <div class="entry">
                 <img
                     class="small-icon"
-                    src="xiaohongshu.png"
+                    src="/xiaohongshu.png"
                     alt="xiaohongshu"
                 />
                 <a

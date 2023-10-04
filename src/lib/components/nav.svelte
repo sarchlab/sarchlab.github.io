@@ -3,6 +3,13 @@
     import { onMount } from 'svelte'
     import '$src/app.css'
 
+    export let logoLink = ''
+    export let logoImg = ''
+    export let navItems = Array<{
+        name: string
+        link: string
+    }>()
+
     onMount(() => {
         highlightNavItem()
 
@@ -41,10 +48,11 @@
             navItems[i].classList.remove('highlight')
         }
 
-        let path = window.location.pathname
-        path = path.slice(1)
+        const path = window.location.pathname
+        const pathTokens = path.split('/')
+        const pageName = pathTokens[pathTokens.length - 1]
 
-        const itemID = 'nav-' + path
+        const itemID = 'nav-' + pageName
         const item = document.getElementById(itemID)
 
         if (item) {
@@ -92,8 +100,8 @@
 
 <nav>
     <div class="nav-container">
-        <a href="/">
-            <div class="logo">SARCHLAB</div>
+        <a href={logoLink}>
+            <img src={logoImg} alt="logo" class="logo" />
         </a>
         <button
             id="menu-toggle-btn"
@@ -105,7 +113,16 @@
 
         <div id="nav-fold" class="nav-fold hidden items-center text-slate-300">
             <div id="nav-menu-list">
-                <div id="nav-people" class="nav-item highlight">
+                {#each navItems as item}
+                    <div
+                        id="nav-{item.name.toLowerCase()}"
+                        class="nav-item highlight"
+                    >
+                        <a href={item.link}> {item.name} </a>
+                    </div>
+                {/each}
+
+                <!-- <div id="nav-people" class="nav-item highlight">
                     <a href="/people"> People </a>
                 </div>
                 <div id="nav-publication" class="nav-item">
@@ -116,7 +133,7 @@
                 </div>
                 <div id="nav-news" class="nav-item">
                     <a href="/news"> News </a>
-                </div>
+                </div> -->
             </div>
 
             <button id="theme-option-btn" on:click={toggleThemeOption}>
@@ -164,6 +181,10 @@
         @apply bg-background;
         @apply max-w-screen-2xl;
         @apply mx-auto;
+    }
+
+    .logo {
+        @apply h-6;
     }
 
     .nav-container {
