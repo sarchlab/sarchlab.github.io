@@ -1,6 +1,7 @@
 <script lang="ts">
     import feather from 'feather-icons'
     import { onMount } from 'svelte'
+    import { navigating } from '$app/stores'
     import '$src/app.css'
 
     export let logoLink = ''
@@ -190,7 +191,8 @@
     .nav-container {
         @apply flex flex-wrap justify-between;
         @apply items-center;
-        @apply container mx-auto;
+        @apply mx-auto;
+        @apply px-8;
     }
 
     #nav-menu-list {
