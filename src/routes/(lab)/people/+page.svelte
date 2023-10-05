@@ -24,7 +24,11 @@
 
     <h2 class="sec-title">Ph.D. Student</h2>
     <div class="person-container">
-        <Member name="Ying Li" profile_img="ying_profile.png">
+        <Member
+            name="Ying Li"
+            profile_img="ying_profile.png"
+            link="https://yingliphd.com/#about_me"
+        >
             <div><b>Position:</b> Ph.D. Candidate</div>
             <div><b>Email:</b> yli81@wm.edu</div>
         </Member>

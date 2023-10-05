@@ -13,9 +13,10 @@
 <div>
     <p>
         I am an Assistant Professor in the Department of Computer Science at
-        William & Mary since Fall 2020. I received my Ph.D. degree from the
-        Department of Electrical and Computer Engineering at Northeastern
-        University in 2020 under the supervision of David Kaeli. My research
+        William & Mary. I am the lead of the <a href="/"
+            >Scalable Architecture Lab</a
+        >I received my Ph.D. degree from the Department of Electrical and
+        Computer Engineering at Northeastern University in 2020. My research
         interests lie in GPU architecture, performance evaluation, and
         performance modeling.
     </p>
