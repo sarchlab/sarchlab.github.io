@@ -81,7 +81,7 @@
     }
 
     .sec-title {
-        @apply text-5xl font-thin mt-5;
+        @apply text-5xl font-thin mt-8;
     }
 
     h1,
@@ -105,9 +105,16 @@
         @apply text-2xl;
     }
 
+    a {
+        @apply underline;
+    }
+
     .main-container {
-        @apply flex px-10 gap-10;
+        @apply flex flex-col px-8 gap-4 items-start;
+        @apply md:flex-row md:justify-center;
         @apply md:container md:mx-auto;
+        @apply justify-center;
+        @apply max-w-screen-2xl;
     }
 
     .main-container > .two-col-left {

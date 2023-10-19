@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+        <meta name="viewport" content="width=device-width" />
+
+        <script type="text/javascript">
+            window.smartlook ||
+                (function (d) {
+                    var o = (smartlook = function () {
+                            o.api.push(arguments)
+                        }),
+                        h = d.getElementsByTagName('head')[0]
+                    var c = d.createElement('script')
+                    o.api = new Array()
+                    c.async = true
+                    c.type = 'text/javascript'
+                    c.charset = 'utf-8'
+                    c.src = 'https://web-sdk.smartlook.com/recorder.js'
+                    h.appendChild(c)
+                })(document)
+            smartlook('init', '7371dc87f31ef6dd344e7ef617b155332beda109', {
+                region: 'eu',
+            })
+        </script>
+
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-DP3FENZCXQ"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'G-DP3FENZCXQ')
+        </script>
+
+        %sveltekit.head%
+    </head>
+    <body data-sveltekit-preload-data="hover">
+        <div style="display: contents">%sveltekit.body%</div>
+    </body>
 </html>

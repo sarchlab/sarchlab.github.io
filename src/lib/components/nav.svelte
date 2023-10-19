@@ -1,7 +1,15 @@
 <script lang="ts">
     import feather from 'feather-icons'
     import { onMount } from 'svelte'
+    import { navigating } from '$app/stores'
     import '$src/app.css'
+
+    export let logoLink = ''
+    export let logoImg = ''
+    export let navItems = Array<{
+        name: string
+        link: string
+    }>()
 
     onMount(() => {
         highlightNavItem()
@@ -41,10 +49,11 @@
             navItems[i].classList.remove('highlight')
         }
 
-        let path = window.location.pathname
-        path = path.slice(1)
+        const path = window.location.pathname
+        const pathTokens = path.split('/')
+        const pageName = pathTokens[pathTokens.length - 1]
 
-        const itemID = 'nav-' + path
+        const itemID = 'nav-' + pageName
         const item = document.getElementById(itemID)
 
         if (item) {
@@ -92,8 +101,8 @@
 
 <nav>
     <div class="nav-container">
-        <a href="/">
-            <div class="logo">SARCHLAB</div>
+        <a href={logoLink}>
+            <img src={logoImg} alt="logo" class="logo" />
         </a>
         <button
             id="menu-toggle-btn"
@@ -105,19 +114,27 @@
 
         <div id="nav-fold" class="nav-fold hidden items-center text-slate-300">
             <div id="nav-menu-list">
-                <a href="/people">
-                    <div id="nav-people" class="nav-item highlight">
-                        People
+                {#each navItems as item}
+                    <div
+                        id="nav-{item.name.toLowerCase()}"
+                        class="nav-item highlight"
+                    >
+                        <a href={item.link}> {item.name} </a>
                     </div>
-                </a>
-                <a href="/publication">
-                    <div id="nav-publication" class="nav-item">
-                        Publication
-                    </div>
-                </a>
-                <a href="/software">
-                    <div id="nav-software" class="nav-item">Software</div>
-                </a>
+                {/each}
+
+                <!-- <div id="nav-people" class="nav-item highlight">
+                    <a href="/people"> People </a>
+                </div>
+                <div id="nav-publication" class="nav-item">
+                    <a href="/publication"> Publication </a>
+                </div>
+                <div id="nav-software" class="nav-item">
+                    <a href="/software"> Software </a>
+                </div>
+                <div id="nav-news" class="nav-item">
+                    <a href="/news"> News </a>
+                </div> -->
             </div>
 
             <button id="theme-option-btn" on:click={toggleThemeOption}>
@@ -161,14 +178,21 @@
 
 <style lang="postcss">
     nav {
-        @apply items-center  mb-3 py-4 px-2;
+        @apply items-center mb-3 py-4 px-2;
         @apply bg-background;
+        @apply max-w-screen-2xl;
+        @apply mx-auto;
+    }
+
+    .logo {
+        @apply h-6;
     }
 
     .nav-container {
         @apply flex flex-wrap justify-between;
         @apply items-center;
-        @apply container mx-auto;
+        @apply mx-auto;
+        @apply px-8;
     }
 
     #nav-menu-list {
