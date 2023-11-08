@@ -17,7 +17,7 @@
 </script>
 
 <div class="flex flex-col items-center gap-5 md:items-start">
-    <h2>Enabled Research</h2>
+    <h2 class="text-4xl mb-6 text-theme font-bold">Enabled Research</h2>
     <p>
         So far, there are 18 published papers that uses Akita-based simulators
         to validate design ideas or use Akita to build new simulators. Out of

@@ -20,13 +20,15 @@
 
 <div class="block">
     <div class="block-content">
-        <h2>Useful Resources</h2>
-    </div>
-</div>
-
-<div class="block">
-    <div class="block-content">
-        <h2>Events</h2>
+        <h2 class="text-4xl mb-6 text-theme font-bold">Events</h2>
+        <ul class="px-5 list-outside list-disc">
+            <li>
+                <a href="/akita/akita2023">
+                    The first lightweight Workshop on Akita and MGPUSim (Akita
+                    2023)
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 
