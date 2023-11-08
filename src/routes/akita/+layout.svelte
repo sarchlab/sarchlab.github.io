@@ -5,7 +5,7 @@
 
 <Nav
     logoLink="/akita"
-    logoImg="akita_logo.png"
+    logoImg="/akita_logo.png"
     navItems={[
         {
             name: 'Sarchlab',

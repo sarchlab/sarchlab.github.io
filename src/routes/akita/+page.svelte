@@ -23,9 +23,9 @@
         <h2 class="text-4xl mb-6 text-theme font-bold">Events</h2>
         <ul class="px-5 list-outside list-disc">
             <li>
-                <a href="/akita/akita2023">
-                    The first lightweight Workshop on Akita and MGPUSim (Akita
-                    2023)
+                <a href="/akita/akita23">
+                    The first Lightweight Workshop on Akita and MGPUSim
+                    (Akita23)
                 </a>
             </li>
         </ul>
