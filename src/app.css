@@ -16,6 +16,12 @@
         --card: 0 0% 100%;
         --card-foreground: 222.2 47.4% 11.2%;
 
+        --theme: #3db2d1;
+        --theme-foreground: #f1843f;
+
+        --theme2: #f1843f;
+        --theme2-foreground: #3db2d1;
+
         --border: 214.3 31.8% 91.4%;
         --input: 214.3 31.8% 91.4%;
 
@@ -45,6 +51,12 @@
 
         --popover: 224 71% 4%;
         --popover-foreground: 215 20.2% 65.1%;
+
+        --theme: #3db2d1;
+        --theme-foreground: #f1843f;
+
+        --theme2: #f1843f;
+        --theme2-foreground: #3db2d1;
 
         --card: 224 71% 4%;
         --card-foreground: 213 31% 91%;
@@ -125,5 +137,21 @@
     .main-container > .two-col-right {
         @apply hidden;
         @apply md:w-3/12 md:flex;
+    }
+
+    .block-container {
+        @apply flex flex-col gap-0;
+    }
+
+    .block-container > .block {
+        @apply w-full;
+        @apply mx-auto;
+    }
+
+    .block-container > .block > .block-content {
+        @apply h-full;
+        @apply w-full max-w-screen-lg;
+        @apply px-20 py-20;
+        @apply mx-auto;
     }
 }
