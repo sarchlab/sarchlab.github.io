@@ -1,14 +1,22 @@
 <script>
     export let img = ''
     export let title = ''
+    export let titleLink = ''
 </script>
 
 <div class="research-topic">
     <img src={img} alt={title} />
     <div>
-        <span class="title">
-            {title}
-        </span>
+        {#if titleLink == ''}
+            <span class="title">
+                {title}
+            </span>
+        {:else}
+            <a class="title" href={titleLink}>
+                {title}
+            </a>
+        {/if}
+
         <span class="link">
             <slot name="link" />
         </span>
