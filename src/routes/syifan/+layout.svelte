@@ -9,6 +9,10 @@
     logoLink="/syifan"
     navItems={[
         {
+            name: 'SARCHLAB',
+            link: '/',
+        }
+        {
             name: 'Publication',
             link: '/syifan/publication',
         },
