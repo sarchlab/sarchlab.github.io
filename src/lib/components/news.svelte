@@ -5,6 +5,11 @@
     <h3 class="font-bold">Lab News</h3>
     <ul>
         <li>
+            <span class="date">[Nov 2023]</span> Our paper "Visual Exploratory Analysis
+            for Designing Large-Scale Network-on-Chip Architectures: A Domain Expert-Led
+            Design Study" has been accepted by TVCG!
+        </li>
+        <li>
             <span class="date">[Sep 2023]</span> Our paper "Path Forward Beyond
             Simulators: Fast and Accurate DNN Execution Time Prediction" has been
             accepted by MICRO 2023! Congrats Ying!
