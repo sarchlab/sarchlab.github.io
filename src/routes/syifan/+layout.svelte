@@ -11,7 +11,7 @@
         {
             name: 'SARCHLAB',
             link: '/',
-        }
+        },
         {
             name: 'Publication',
             link: '/syifan/publication',
