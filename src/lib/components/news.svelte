@@ -20,6 +20,10 @@
             by MICRO 2023!
         </li>
         <li>
+            <span class="date">[Sep 2023]</span> Daoxuan Xu has joined our lab as
+            a Ph.D. student. Welcome!
+        </li>
+        <li>
             <span class="date">[Mar 2023]</span> Our NSF CCRI Proposal Enabling
             Computer Architecture Simulation as a Service has been awarded! Thanks
             to NSF and my collaborator Kate Isaacs!

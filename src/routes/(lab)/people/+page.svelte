@@ -37,6 +37,11 @@
             <div><b>Position:</b> Ph.D. Student</div>
             <div><b>Email:</b> sajannat@wm.edu</div>
         </Member>
+
+        <Member name="Daoxuan Xu" profile_img="daoxuan.jpg">
+            <div><b>Position:</b> Ph.D. Student</div>
+            <div><b>Email:</b> dxu05@wm.edu</div>
+        </Member>
     </div>
 
     <h2 class="sec-title">Undergraduate Researcher</h2>
