@@ -18,8 +18,8 @@
     />
 
     <Publication
-        title="Path Forward Beyond Simulators: Fast and Accurate DNN Execution
-            Time Prediction"
+        title="Path Forward Beyond Simulators: Fast and Accurate GPU
+        Execution Time Prediction for DNN Workloads"
         authors="Ying Li, Yifan Sun, Adwait Jog"
         venue="MICRO 2023"
     />

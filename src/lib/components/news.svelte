@@ -11,8 +11,8 @@
         </li>
         <li>
             <span class="date">[Sep 2023]</span> Our paper "Path Forward Beyond
-            Simulators: Fast and Accurate DNN Execution Time Prediction" has been
-            accepted by MICRO 2023! Congrats Ying!
+            Simulators: Fast and Accurate GPU Execution Time Prediction for DNN
+            Workloads" has been accepted by MICRO 2023! Congrats Ying!
         </li>
         <li>
             <span class="date">[Sep 2023]</span> Our paper "Photon: A Fine-grained
