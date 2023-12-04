@@ -38,11 +38,11 @@
         <div class="flex flex-col gap-1">
             <div class="entry">
                 <img class="small-icon" src="/file.svg" alt="file" />
-                <a href="yifan_cv.pdf">CV</a>
+                <a href="yifan_cv.pdf">CV (updated Dec 2023)</a>
             </div>
             <div class="entry">
                 <img class="small-icon" src="/email.svg" alt="email" />
-                <a href="mailto:yifan@cs.wm.edu">yifan@cs.wm.edu</a>
+                <a href="mailto:ysun25@wm.edu">ysun25@wm.edu</a>
             </div>
             <div class="entry">
                 <img

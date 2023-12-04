@@ -18,7 +18,7 @@
         >
             <div><b>Position:</b> Assistant Professor</div>
             <div><b>Office:</b> McGlothlin-Street Hall 117</div>
-            <div><b>Email:</b> yifan@cs.wm.edu</div>
+            <div><b>Email:</b> ysun25@wm.edu</div>
         </Member>
     </div>
 
