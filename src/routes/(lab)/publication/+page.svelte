@@ -9,10 +9,12 @@
 </svelte:head>
 
 <div class="two-col-left">
+    <h1>Publication</h1>
+
     <h2 class="sec-title">2023</h2>
     <Publication
         title="Visual Exploratory Analysis for Designing Large-Scale Network-on-Chip Architectures: A Domain Expert-Led Design Study"
-        authors="Shaoyu Wang, Hang Yan, Katherine E. Isaacs, Yifan Sun"
+        authors="Shaoyu Wang (co-first author), Hang Yan (co-first author), Katherine E. Isaacs, Yifan Sun"
         venue="TVCG"
     />
 
