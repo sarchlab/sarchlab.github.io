@@ -1,8 +1,9 @@
 <script lang="ts">
     import feather from 'feather-icons'
     import { onMount } from 'svelte'
-    import { navigating } from '$app/stores'
+    import { page } from '$app/stores'
     import '$src/app.css'
+    import { browser } from '$app/environment'
 
     export let logoLink = ''
     export let logoImg = ''
@@ -12,6 +13,14 @@
     }>()
 
     onMount(() => {
+        pageInit()
+    })
+
+    page.subscribe(() => {
+        highlightNavItem()
+    })
+
+    function pageInit() {
         highlightNavItem()
 
         window
@@ -21,7 +30,7 @@
             })
 
         changeTheme()
-    })
+    }
 
     function changeTheme() {
         const userPref = localStorage.getItem('theme')
@@ -44,6 +53,8 @@
     }
 
     function highlightNavItem() {
+        if (!browser) return
+
         const navItems = document.getElementsByClassName('nav-item')
         for (let i = 0; i < navItems.length; i++) {
             navItems[i].classList.remove('highlight')

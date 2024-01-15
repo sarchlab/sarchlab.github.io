@@ -33,12 +33,20 @@
             <div><b>Email:</b> yli81@wm.edu</div>
         </Member>
 
-        <Member name="Sabila Al Jannat" profile_img="sabila_profile.jpeg">
+        <Member
+            name="Sabila Al Jannat"
+            profile_img="sabila_profile.jpeg"
+            link="https://www.linkedin.com/in/sabila-al-jannat-69826718b"
+        >
             <div><b>Position:</b> Ph.D. Student</div>
             <div><b>Email:</b> sajannat@wm.edu</div>
         </Member>
 
-        <Member name="Daoxuan Xu" profile_img="daoxuan.jpg">
+        <Member
+            name="Daoxuan Xu"
+            profile_img="daoxuan.jpg"
+            link="https://www.linkedin.com/in/%E9%81%93%E7%85%8A-%E5%BE%90-23223323b/"
+        >
             <div><b>Position:</b> Ph.D. Student</div>
             <div><b>Email:</b> dxu05@wm.edu</div>
         </Member>
@@ -46,8 +54,13 @@
 
     <h2 class="sec-title">Undergraduate Researcher</h2>
     <div class="person-container">
-        <Member name="Zhuoyan Zheng" profile_img="zhuoyan_profile.jpg ">
+        <Member
+            name="Zhuoyan Zheng"
+            profile_img="zhuoyan_profile.jpg"
+            link="https://www.linkedin.com/in/%E5%8D%93%E5%A6%8D-%E9%83%91-339495224/"
+        >
             <div><b>Position:</b> Undergraduate Student</div>
+            <div><b>Email:</b> zzheng11@wm.edu</div>
         </Member>
     </div>
 </div>
