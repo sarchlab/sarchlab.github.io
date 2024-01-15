@@ -30,10 +30,6 @@
         @apply text-muted-foreground;
     }
 
-    .description {
-        @apply text-sm;
-    }
-
     .course-title {
         @apply font-bold;
     }
