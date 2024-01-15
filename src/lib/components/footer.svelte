@@ -24,6 +24,7 @@
         @apply text-sm;
         @apply min-h-fit;
         @apply bg-muted;
+        @apply shadow-inner;
     }
 
     .container {
