@@ -1,7 +1,5 @@
 <script>
     import News from '$components/news.svelte'
-    import Publication from '$src/lib/components/publication.svelte'
-
     import '$src/app.css'
     import Course from './course.svelte'
 </script>

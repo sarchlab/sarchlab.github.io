@@ -1,14 +1,7 @@
 <script lang="ts">
-    import { stringify } from 'postcss'
-
     export let venue = ''
     export let title = ''
     export let authors = ''
-    export let links = Array<{
-        icon: string
-        name: string
-        link: string
-    }>()
 </script>
 
 <div class="pub-card">
@@ -25,14 +18,7 @@
     </div>
 
     <div class="links">
-        {#each links as link}
-            <a href={link.link}>
-                <span class="link">
-                    <i class={link.icon} />
-                    {link.name}
-                </span>
-            </a>
-        {/each}
+        <slot />
     </div>
 </div>
 
@@ -53,5 +39,11 @@
 
     .authors {
         @apply text-sm;
+    }
+
+    .links {
+        @apply flex flex-row;
+        @apply flex-wrap;
+        @apply gap-4;
     }
 </style>

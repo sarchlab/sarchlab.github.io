@@ -33,7 +33,7 @@
         <slot />
     </div>
 
-    <div class="w-full md:w-3/12 pl-4">
+    <div class="hidden md:block md:w-3/12 pl-4">
         <News />
     </div>
 </div>
