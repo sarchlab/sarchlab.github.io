@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Publication from '$lib/components/Publication.svelte'
-    import PublicationLink from '$lib/components/PublicationLink.svelte'
+    import Publication from '$src/lib/components/publication.svelte'
+    import PublicationLink from '$src/lib/components/publication_link.svelte'
     import { onMount } from 'svelte'
 
     export let filter = ''

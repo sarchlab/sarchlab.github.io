@@ -1,5 +1,5 @@
 <script>
-    import ResearchInterests from './ResearchInterests.svelte'
+    import ResearchInterests from './research_interests.svelte'
 
     import Sponsor from './sponsor.svelte'
 </script>

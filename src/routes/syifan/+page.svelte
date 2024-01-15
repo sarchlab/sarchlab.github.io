@@ -2,7 +2,7 @@
     import Nav from '$components/nav.svelte'
     import News from '$components/news.svelte'
     import YifanSidebar from './YifanSidebar.svelte'
-    import ResearchInterests from '$src/lib/components/ResearchInterests.svelte'
+    import ResearchInterests from '$src/lib/components/research_interests.svelte'
     import '$src/app.css'
 </script>
 

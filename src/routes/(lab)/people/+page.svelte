@@ -1,6 +1,6 @@
 <script>
     import News from '$components/news.svelte'
-    import Member from '$src/lib/components/Member.svelte'
+    import Member from '$src/lib/components/member.svelte'
     import '$src/app.css'
 </script>
 

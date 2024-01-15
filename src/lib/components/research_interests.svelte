@@ -1,5 +1,5 @@
 <script>
-    import ResearchTopic from './ResearchTopic.svelte'
+    import ResearchTopic from './research_topic.svelte'
 </script>
 
 <h2 class="sec-title">Research Topics</h2>

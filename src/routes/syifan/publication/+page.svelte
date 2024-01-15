@@ -1,7 +1,7 @@
 <script>
     import '$src/app.css'
     import News from '$components/news.svelte'
-    import PublicationList from '$src/lib/components/PublicationList.svelte'
+    import PublicationList from '$src/lib/components/publication_list.svelte'
 
     export let data
 </script>
