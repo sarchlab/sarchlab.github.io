@@ -5,6 +5,9 @@
     <h3 class="font-bold">Lab News</h3>
     <ul>
         <li>
+            [Jan 2023] Sabila Al Jannat has achieved Ph.D. candidacy. Congrats!
+        </li>
+        <li>
             <span class="date">[Nov 2023]</span> Our paper "Visual Exploratory Analysis
             for Designing Large-Scale Network-on-Chip Architectures: A Domain Expert-Led
             Design Study" has been accepted by TVCG!

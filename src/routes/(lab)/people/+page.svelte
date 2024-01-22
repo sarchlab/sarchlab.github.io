@@ -38,7 +38,7 @@
             profile_img="sabila_profile.jpeg"
             link="https://www.linkedin.com/in/sabila-al-jannat-69826718b"
         >
-            <div><b>Position:</b> Ph.D. Student</div>
+            <div><b>Position:</b> Ph.D. Candidate</div>
             <div><b>Email:</b> sajannat@wm.edu</div>
         </Member>
 
@@ -59,7 +59,7 @@
             profile_img="zhuoyan_profile.jpg"
             link="https://www.linkedin.com/in/%E5%8D%93%E5%A6%8D-%E9%83%91-339495224/"
         >
-            <div><b>Position:</b> Undergraduate Student</div>
+            <div><b>Position:</b> Undergraduate Researcher</div>
             <div><b>Email:</b> zzheng11@wm.edu</div>
         </Member>
     </div>

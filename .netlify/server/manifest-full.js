@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["AMD_Logo.svg.png","NSF_logo.png","akita_logo.png","circuit.jpg","code.svg","daoxuan.jpg","email.svg","favicon.png","file.svg","file_outline.svg","github.svg","googlescholar.png","location.svg","mgpusim_logo.png","multigpu.jpg","pcb.png","publication_list.json","sabila_profile.jpeg","sarchlab.svg","twitter.svg","vis4mesh.pdf","xiaohongshu.png","yifan_cv.pdf","yifan_profile.png","yifan_sun.svg","ying_profile.png","youtube.svg","zhuoyan_profile.jpg"]),
 	mimeTypes: {".png":"image/png",".jpg":"image/jpeg",".svg":"image/svg+xml",".json":"application/json",".jpeg":"image/jpeg",".pdf":"application/pdf"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.f9c59c88.js","app":"_app/immutable/entry/app.30927b02.js","imports":["_app/immutable/entry/start.f9c59c88.js","_app/immutable/chunks/index.1821980e.js","_app/immutable/chunks/singletons.9f993d67.js","_app/immutable/chunks/paths.4615ce8f.js","_app/immutable/entry/app.30927b02.js","_app/immutable/chunks/index.1821980e.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.2b336879.js","app":"_app/immutable/entry/app.c2b5c38f.js","imports":["_app/immutable/entry/start.2b336879.js","_app/immutable/chunks/index.1821980e.js","_app/immutable/chunks/singletons.7b25c6d0.js","_app/immutable/chunks/paths.3e0987a6.js","_app/immutable/entry/app.c2b5c38f.js","_app/immutable/chunks/index.1821980e.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),
