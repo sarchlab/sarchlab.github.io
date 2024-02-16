@@ -70,8 +70,14 @@
     <div class="block-content px-20 py-20">
         <h2 class="text-theme font-bold mb-6">Organizer</h2>
         <ul>
-            <li>Yifan Sun (William & Mary)</li>
-            <li>Katherine E Isaacs (University of Utah)</li>
+            <li>
+                <a href="https://sarchlab.org/syifan"> Yifan Sun </a> (William &
+                Mary)
+            </li>
+            <li>
+                <a href="https://kisaacs.github.io/">Katherine E Isaacs</a> (University
+                of Utah)
+            </li>
         </ul>
     </div>
 </div>
