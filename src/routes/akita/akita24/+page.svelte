@@ -2,6 +2,7 @@
     <title>
         The First Lightweight Community Workshop on Akita and MGPUSim (Akita24)
     </title>
+    <link rel="icon" href="akita_logo.png" />
 </svelte:head>
 
 <div class="block">
