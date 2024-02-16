@@ -13,7 +13,7 @@
             <img src="/akita_logo.png" alt="The Akita logo" class="w-40" />
             <div>
                 <h1 class="text-3xl font-bold text-theme mb-3">
-                    The first Lightweight Community Workshop on Akita and
+                    The First Lightweight Community Workshop on Akita and
                     MGPUSim
                 </h1>
                 <p class="text-lg">
