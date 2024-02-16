@@ -83,6 +83,18 @@
     </div>
 </div>
 
+<div class="block">
+    <div class="block-content px-20 py-20">
+        <h2 class="text-theme font-bold mb-6">A Survey on Akita</h2>
+        <p>
+            If you have used Akita or MGPUSim before, please consider
+            submitting a brief survey on your experience. Your opinion will
+            help us build better tools for the community.
+        </p>
+        <a class="button" href="https://bit.ly/akita-survey"> Start Survey </a>
+    </div>
+</div>
+
 <style lang="postcss">
     #schedule {
         @apply w-full;
@@ -102,5 +114,17 @@
     #schedule > tr > td {
         @apply py-2 px-4;
         @apply align-top;
+    }
+
+    .button {
+        @apply inline-block;
+        @apply px-4 py-2;
+        @apply bg-theme;
+        @apply text-white;
+        @apply rounded-md;
+        @apply transition-all;
+        @apply hover:bg-theme2;
+        @apply no-underline text-lg;
+        @apply mt-4;
     }
 </style>
