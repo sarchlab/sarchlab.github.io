@@ -16,15 +16,27 @@
                     The First Lightweight Community Workshop on Akita and
                     MGPUSim
                 </h1>
-                <p class="text-lg">
+                <div class="text-lg">
                     <b class="text-theme">Date:</b> March 13, 2024
                     <br />
                     <b class="text-theme">Time:</b> 10:00am - 12:00am (US
                     Eastern Time)
                     <br />
-                    <b class="text-theme">Location:</b> Zoom (Link TBA)
-                </p>
-                <p class="text-baseline">
+                    <b class="text-theme">Location:</b>
+                    <a
+                        href="https://cwm.zoom.us/j/91386326093?pwd=Yk1EY2lCTEtwbGhrWTErYUltS3B2Zz09"
+                    >
+                        Virtual on Zoom
+                    </a>
+                    <br />
+                    <a href="/akita/akita24/zoom">
+                        Here is the full Zoom invitation
+                    </a>
+                </div>
+                <a href="https://forms.gle/WKaeWkEubBLfYQeB7" class="button">
+                    RSVP Here
+                </a>
+                <p class="text-baseline mt-4">
                     Join our upcoming Akita Workshop, a dynamic forum for users
                     to present their projects, discuss challenges, and
                     articulate requirements. It also serves as a direct
