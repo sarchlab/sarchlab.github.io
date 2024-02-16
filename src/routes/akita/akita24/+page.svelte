@@ -1,6 +1,6 @@
 <svelte:head>
     <title>
-        The first Lightweight Workshop on Akita and MGPUSim (Akita23)
+        The First Lightweight Community Workshop on Akita and MGPUSim (Akita24)
     </title>
 </svelte:head>
 
@@ -12,10 +12,11 @@
             <img src="/akita_logo.png" alt="The Akita logo" class="w-40" />
             <div>
                 <h1 class="text-3xl font-bold text-theme mb-3">
-                    The first Lightweight Workshop on Akita and MGPUSim
+                    The first Lightweight Community Workshop on Akita and
+                    MGPUSim
                 </h1>
                 <p class="text-lg">
-                    <b class="text-theme">Date:</b> December 12, 2023
+                    <b class="text-theme">Date:</b> March 13, 2024
                     <br />
                     <b class="text-theme">Time:</b> 10:00am - 12:00am (US
                     Eastern Time)
@@ -42,7 +43,7 @@
             <tr>
                 <td>10:00 am -10:30 am</td>
                 <td>
-                    Report on Akita/MGPUSim development and Roadmap <br />
+                    Report on Akita/MGPUSim Development and Roadmap <br />
                     Yifan Sun (William & Mary)
                 </td>
             </tr>
@@ -58,10 +59,20 @@
             </tr>
 
             <tr>
-                <td>12:00 pm - 1:00 pm</td>
-                <td>Simulator Office Hour with Yifan Sun</td>
+                <td>12:00 pm and on</td>
+                <td>Free Chat</td>
             </tr>
         </table>
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content px-20 py-20">
+        <h2 class="text-theme font-bold mb-6">Organizer</h2>
+        <ul>
+            <li>Yifan Sun (William & Mary)</li>
+            <li>Katherine E Isaacs (University of Utah)</li>
+        </ul>
     </div>
 </div>
 
