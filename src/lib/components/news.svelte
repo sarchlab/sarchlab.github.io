@@ -8,7 +8,7 @@
             <span class="date">[Mar 2024]</span> We will be organizing the
             First Lightweight Community Workshop on Akita and MGPUSim. Please
             find more information
-            <a href="https://sarchlab.org/akita/akita24"> here </a>.
+            <a href="https://sarchlab.org/akita/akita24">here</a>.
         </li>
         <li>
             <span class="date">[Jan 2024]</span> Sabila Al Jannat has achieved Ph.D.
