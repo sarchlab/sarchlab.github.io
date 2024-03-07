@@ -19,7 +19,7 @@
                 <div class="text-lg">
                     <b class="text-theme">Date:</b> March 13, 2024
                     <br />
-                    <b class="text-theme">Time:</b> 10:00am - 12:00am (US
+                    <b class="text-theme">Time:</b> 10:00am - 12:00pm (US
                     Eastern Time)
                     <br />
                     <b class="text-theme">Location:</b>
