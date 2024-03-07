@@ -5,7 +5,16 @@
     <h3 class="font-bold">Lab News</h3>
     <ul>
         <li>
-            [Jan 2023] Sabila Al Jannat has achieved Ph.D. candidacy. Congrats!
+            <span class="date">[Mar 2024]</span> We will be organizing the
+            First Lightweight Community Workshop on Akita and MGPUSim. Please
+            find more information at
+            <a href="hhttps://sarchlab.org/akita/akita24">
+                https://sarchlab.org/akita/akita24
+            </a>.
+        </li>
+        <li>
+            <span class="date">[Jan 2024]</span> Sabila Al Jannat has achieved Ph.D.
+            candidacy. Congrats!
         </li>
         <li>
             <span class="date">[Nov 2023]</span> Our paper "Visual Exploratory Analysis
