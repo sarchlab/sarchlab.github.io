@@ -57,7 +57,7 @@
                 <td>10:00 am -10:30 am</td>
                 <td>
                     Report on Akita/MGPUSim Development and Roadmap <br />
-                    Yifan Sun (William & Mary)
+                    Yifan Sun <span class="affiliation">(William & Mary)</span>
                 </td>
             </tr>
 
@@ -139,12 +139,12 @@
         <h2 class="text-theme font-bold mb-6">Organizer</h2>
         <ul>
             <li>
-                <a href="https://sarchlab.org/syifan"> Yifan Sun </a> (William &
-                Mary)
+                <a href="https://sarchlab.org/syifan"> Yifan Sun </a>
+                <span class="affiliation">(William & Mary)</span>
             </li>
             <li>
-                <a href="https://kisaacs.github.io/">Katherine E Isaacs</a> (University
-                of Utah)
+                <a href="https://kisaacs.github.io/">Katherine E Isaacs</a>
+                <span class="affiliation">(University of Utah)</span>
             </li>
         </ul>
     </div>
