@@ -62,17 +62,72 @@
             </tr>
 
             <tr>
-                <td>10:30 am -11:15 am</td>
-                <td> Lightning Talks [Detailed schedule TBD]</td>
+                <td>10:30 am -11:30 am</td>
+                <td>Lightning Talks</td>
+            </tr>
+
+            <tr class="sub-schedule">
+                <td>10:30 am</td>
+                <td>
+                    Ali Mosallaei
+                    <span class="affliation"> (University of Michigan) </span>
+                </td>
+            </tr>
+            <tr class="sub-schedule">
+                <td>10:38 am</td>
+                <td>
+                    Yueqi Wang
+                    <span class="affliation">(University of Pittsburg) </span>
+                </td>
+            </tr>
+            <tr class="sub-schedule">
+                <td>10:46 am</td>
+                <td>
+                    Yuhui Bao
+                    <span class="affliation"> (Northeastern University) </span>
+                </td>
+            </tr>
+            <tr class="sub-schedule">
+                <td>10:54 am</td>
+                <td>
+                    Hang Yan / Shaoyu Wang
+                    <span class="affliation">
+                        (Huazhong University of Sci. and Tech.)
+                    </span>
+                </td>
+            </tr>
+            <tr class="sub-schedule">
+                <td>11:02 am</td>
+                <td>
+                    Amel Fatima <span class="affliation">
+                        (University of Virginia)
+                    </span></td
+                >
+            </tr>
+            <tr class="sub-schedule">
+                <td>11:10 am</td>
+                <td
+                    >Nicolas Meseguer <span class="affliation">
+                        (University of Murcia)</span
+                    ></td
+                >
+            </tr>
+            <tr class="sub-schedule">
+                <td>11:18 am</td>
+                <td
+                    >Changxi Liu <span class="affliation">
+                        (National University of Singapore)</span
+                    ></td
+                >
             </tr>
 
             <tr>
-                <td>11:15 am - 12:00 pm</td>
+                <td>11:30 am - 12:30 pm</td>
                 <td>Round-Table Discussion</td>
             </tr>
 
             <tr>
-                <td>12:00 pm and on</td>
+                <td>12:30 pm and on</td>
                 <td>Free Chat</td>
             </tr>
         </table>
@@ -126,6 +181,16 @@
     #schedule > tr > td {
         @apply py-2 px-4;
         @apply align-top;
+    }
+
+    #schedule > tr.sub-schedule > td {
+        @apply pl-10;
+        @apply font-normal;
+    }
+
+    #schedule > tr.sub-schedule > td > span.affliation {
+        @apply text-gray-500;
+        @apply font-normal text-xs;
     }
 
     .button {
