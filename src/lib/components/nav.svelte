@@ -203,7 +203,8 @@
         @apply flex flex-wrap justify-between;
         @apply items-center;
         @apply mx-auto;
-        @apply px-8;
+        @apply px-6 md:px-6;
+        @apply max-w-screen-2xl;
     }
 
     #nav-menu-list {

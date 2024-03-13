@@ -1,6 +1,6 @@
 <div class="block-content px-20 py-20">
     <div class="flex flex-col items-center gap-5 md:items-start" />
-    <h2 class="text-4xl mb-6 text-theme font-bold">Sub-Projects</h2>
+    <h2 class="text-4xl mb-3 text-theme font-bold">Sub-Projects</h2>
 
     <div class="grid grid-cols-1 gap-10 w-full lg:grid-cols-2 lg:w-auto">
         <div class="sub-project">
