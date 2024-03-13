@@ -6,9 +6,9 @@
 </svelte:head>
 
 <div class="block">
-    <div class="block-content px-20 py-20">
+    <div class="block-content">
         <div
-            class="flex flex-col items-center gap-5 px-10 md:flex-row md:gap-20"
+            class="flex flex-col items-center gap-5 md:py-10 md:flex-row md:gap-20"
         >
             <img src="/akita_logo.png" alt="The Akita logo" class="w-40" />
             <div>
@@ -49,7 +49,7 @@
 </div>
 
 <div class="block">
-    <div class="block-content px-20 py-20">
+    <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Schedule</h2>
         <p class="mb-2">All time in US Eastern time.</p>
         <table id="schedule" class="w-full">
@@ -135,7 +135,7 @@
 </div>
 
 <div class="block">
-    <div class="block-content px-20 py-20">
+    <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Organizer</h2>
         <ul>
             <li>
@@ -151,7 +151,7 @@
 </div>
 
 <div class="block">
-    <div class="block-content px-20 py-20">
+    <div class="block-content">
         <h2 class="text-theme font-bold mb-6">A Survey on Akita</h2>
         <p>
             If you have used Akita or MGPUSim before, please consider
