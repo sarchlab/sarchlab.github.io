@@ -7,7 +7,7 @@
 <h2 class="font-bold">Scalable Architecture Lab</h2>
 
 <p class="mt-2 text-sm">
-    Scalable Architecture Lab (SAarchL) is a research lab that runs under the
+    Scalable Architecture Lab (SARCHLAB) is a research lab that runs under the
     Computer Science Department of William & Mary, under the supervision of Dr.
     Yifan Sun. SARCHLAB aims to develop scalable and efficient computer
     architectures by emphasizing the capabilities for human to understand the
