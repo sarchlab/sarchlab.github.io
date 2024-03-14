@@ -1,8 +1,22 @@
+<script lang="js">
+    function unfold(event) {
+        const target = event.currentTarget
+        const iframe = target.nextElementSibling
+        if (iframe.style.display === 'none') {
+            iframe.style.display = 'block'
+            target.firstChild.src = '/caret-down-solid.svg'
+        } else {
+            iframe.style.display = 'none'
+            target.firstChild.src = '/caret-right-solid.svg'
+        }
+    }
+</script>
+
 <svelte:head>
     <title>
         The First Lightweight Community Workshop on Akita and MGPUSim (Akita24)
     </title>
-    <link rel="icon" href="akita_logo.png" />
+    <link rel="icon" href="/akita_logo.png" />
 </svelte:head>
 
 <div class="block">
@@ -60,10 +74,38 @@
                     Yifan Sun <span class="affiliation">(William & Mary)</span>
                 </td>
             </tr>
+            <tr class="sub-schedule">
+                <td colspan="2">
+                    <div>
+                        <button
+                            class="flex items-center gap-1"
+                            on:click={unfold}
+                        >
+                            <img
+                                class="inline-block w-4 h-4"
+                                src="/caret-right-solid.svg"
+                                alt="right arrow"
+                            />
+                            Recording
+                        </button>
+                        <div style="display:none">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/Pv94dKiAm_k?si=4JDMqFOR6xqhqB-0"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            />
+                        </div>
+                    </div>
+                </td>
+            </tr>
 
             <tr>
                 <td>10:30 am -11:30 am</td>
-                <td>Lightning Talks</td>
+                <td>Lightning Talks </td>
             </tr>
 
             <tr class="sub-schedule">
@@ -119,6 +161,34 @@
                         (National University of Singapore)</span
                     ></td
                 >
+            </tr>
+            <tr class="sub-schedule">
+                <td colspan="2">
+                    <div>
+                        <button
+                            class="flex items-center gap-1"
+                            on:click={unfold}
+                        >
+                            <img
+                                class="inline-block w-4 h-4"
+                                src="/caret-right-solid.svg"
+                                alt="right arrow"
+                            />
+                            Recording
+                        </button>
+                        <div style="display:none">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/A3jtbqo7a_c?si=3FJcZy1ZuLnLdOOA"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            />
+                        </div>
+                    </div>
+                </td>
             </tr>
 
             <tr>
