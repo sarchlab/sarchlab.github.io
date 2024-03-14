@@ -62,6 +62,15 @@
             <div><b>Position:</b> Undergraduate Researcher</div>
             <div><b>Email:</b> zzheng11@wm.edu</div>
         </Member>
+
+        <Member
+            name="Yexi Zheng"
+            profile_img="yexi_zheng.jpg"
+            link="https://www.linkedin.com/in/yexi-zheng-201894225/"
+        >
+            <div><b>Position:</b> Undergraduate Researcher</div>
+            <div><b>Email:</b> yzheng12@email.wm.edu</div>
+        </Member>
     </div>
 </div>
 <div class="two-col-right">
