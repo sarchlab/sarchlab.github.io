@@ -21,6 +21,26 @@
         performance modeling.
     </p>
 
+    <h2 class="sec-title">Hiring</h2>
+
+    <p>
+        <b>Ph.D.</b> I am actively seeking <u>1-2 Ph.D. students</u>, starting
+        to join our team in Spring 2024 or Fall 2025. Candidates should possess
+        a solid background in programming and a keen interest in computer
+        hardware research. Specifically, I am eager to mentor a student
+        specializing in data visualization for performance analysis.
+    </p>
+    <p>
+        <b>Research intern.</b> I also mentor unpaid, remote research intern who
+        may consider to pursue Ph.D. degree under my supervision later. William
+        & Mary undergraduate students are always welcome to contact me for research
+        opportunities.
+    </p>
+    <p>
+        <b>How to apply.</b> Interested candidates should email me (ysun25@wm.edu)
+        with their CV and transcript attached to inquire about opportunities.
+    </p>
+
     <ResearchInterests />
 </div>
 

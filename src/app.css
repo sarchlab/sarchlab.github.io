@@ -93,7 +93,7 @@
     }
 
     .sec-title {
-        @apply text-5xl font-thin mt-8;
+        @apply text-4xl font-thin mt-8 mb-4;
     }
 
     h1,
@@ -119,6 +119,10 @@
 
     a {
         @apply underline;
+    }
+
+    p {
+        @apply mt-2;
     }
 
     .main-container {

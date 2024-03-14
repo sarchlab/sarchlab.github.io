@@ -4,7 +4,7 @@
     import Sponsor from './sponsor.svelte'
 </script>
 
-<h2 class="font-bold">Scalable Architecture Lab</h2>
+<h2 class="sec-title">Scalable Architecture Lab</h2>
 
 <p class="mt-2 text-sm">
     Scalable Architecture Lab (SARCHLAB) is a research lab that runs under the
@@ -12,6 +12,30 @@
     Yifan Sun. SARCHLAB aims to develop scalable and efficient computer
     architectures by emphasizing the capabilities for human to understand the
     architecture and for the architecture to serve human.
+</p>
+
+<h2 class="sec-title">Hiring</h2>
+
+<p>
+    <b>Ph.D.</b> SARCHLAB is actively seeking <u>1-2 Ph.D. students</u>,
+    starting from either the Spring 2024 or Fall 2025 semester, with an
+    requirement of a strong programming background and an interest in
+    researching the computer hardware domain.
+</p>
+<p>
+    We particularly eager to hire one student to work on <u
+        >data visualization</u
+    >
+    within the performance analysis domain.
+</p>
+<p>
+    <b>Research intern.</b> We welcome applications for unpaid, remote research
+    intern positions. William & Mary undergraduate students are always welcome
+    to contact <a href="/syifan">Yifan Sun</a> for research opportunities.
+</p>
+<p>
+    <b>How to apply.</b> Interested candidates should email Yifan Sun (ysun25@wm.edu)
+    with their CV and transcript attached to inquire about opportunities.
 </p>
 
 <ResearchInterests />
