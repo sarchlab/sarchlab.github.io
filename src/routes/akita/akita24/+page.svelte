@@ -162,34 +162,6 @@
                     ></td
                 >
             </tr>
-            <tr class="sub-schedule">
-                <td colspan="2">
-                    <div>
-                        <button
-                            class="flex items-center gap-1"
-                            on:click={unfold}
-                        >
-                            <img
-                                class="inline-block w-4 h-4"
-                                src="/caret-right-solid.svg"
-                                alt="right arrow"
-                            />
-                            Recording
-                        </button>
-                        <div style="display:none">
-                            <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/A3jtbqo7a_c?si=3FJcZy1ZuLnLdOOA"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            />
-                        </div>
-                    </div>
-                </td>
-            </tr>
 
             <tr>
                 <td>11:30 am - 12:30 pm</td>
