@@ -7,9 +7,13 @@
 <div class="person-card">
     <img src={profile_img} alt="Profile of {name}" />
     <div class="person-info">
-        <a href={link}>
+        {#if link !== ''}
+            <a href={link}>
+                <div class="person-name">{name}</div>
+            </a>
+        {:else}
             <div class="person-name">{name}</div>
-        </a>
+        {/if}
         <slot />
     </div>
 </div>

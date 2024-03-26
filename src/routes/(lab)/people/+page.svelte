@@ -71,6 +71,11 @@
             <div><b>Position:</b> Undergraduate Researcher</div>
             <div><b>Email:</b> yzheng12@email.wm.edu</div>
         </Member>
+
+        <Member name="Aibo Li" profile_img="aibo.jpg" link="">
+            <div><b>Position:</b> Undergraduate Researcher</div>
+            <div><b>Email:</b> ali14@wm.edu</div>
+        </Member>
     </div>
 </div>
 <div class="two-col-right">
