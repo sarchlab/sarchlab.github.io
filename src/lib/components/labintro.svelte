@@ -24,14 +24,16 @@
 </p>
 <p>
     We particularly eager to hire one student to work on <u
-        >data visualization</u
-    >
-    within the performance analysis domain.
+        >Data visualization
+    </u>
+    and one student to work on
+    <u> large-language model (LLM) and natural language processing (NLP) </u>.
 </p>
 <p>
     <b>Research intern.</b> We welcome applications for unpaid, remote research
     intern positions. William & Mary undergraduate students are always welcome
-    to contact <a href="/syifan">Yifan Sun</a> for research opportunities.
+    to contact <a href="/syifan">Yifan Sun</a> for research opportunities. Recommendation
+    letters can be provided for productive students.
 </p>
 <p>
     <b>How to apply.</b> Interested candidates should email Yifan Sun (ysun25@wm.edu)

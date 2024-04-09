@@ -1,166 +1,148 @@
 [
-	{
-		"title": "Visual Exploratory Analysis for Designing Large-Scale Network-on-Chip Architectures: A Domain Expert-Led Design Study",
-		"authors": "Shaoyu Wang (co-first author), Hang Yan (co-first author), Katherine E. Isaacs, Yifan Sun",
-		"venue": "TVCG",
-		"year": 2023,
-		"tags": [
-			"lab",
-			"yifan"
-		],
-		"links": [
-			{
-				"icon": "/file_outline.svg",
-				"link": "/vis4mesh.pdf",
-				"text": "PDF"
-			}
-		]
-	}, 
-	{
-		"title": "Path Forward Beyond Simulators: Fast and Accurate GPU Execution Time Prediction for DNN Workloads",
-		"authors": "Ying Li, Yifan Sun, Adwait Jog",
-		"venue": "MICRO 2023",
-		"year": 2023,
-		"tags": [
-			"lab",
-			"yifan"
-		],
-		"links": [
-			{
-				"icon": "/file_outline.svg",
-				"link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/374160652_Path_Forward_Beyond_Simulators_Fast_and_Accurate_GPU_Execution_Time_Prediction_for_DNN_Workloads/links/6556bfd43fa26f66f407497b/Path-Forward-Beyond-Simulators-Fast-and-Accurate-GPU-Execution-Time-Prediction-for-DNN-Workloads.pdf?origin=publicationDetail&_sg%5B0%5D=G3VLwjhhNIqnPj3CfxiWD50D80AxsS4-j7s40h2_uqGu-VI8DIclHU_p89ORVSWO2YuCZeNyhbsaPD6pTJL47Q.xOvzhSlnx3MjZMAdNegJoMebNGrx-x70M_WadfkUDp5CQMCe9lxMuHsC3GG5vynczFFUyOuY_c8NBvW_JMl5uw&_sg%5B1%5D=Pajy5tCpZsxXFFYzvolHKbNrIADv2oPumpWmceraenZBMxgYFszoOdzwCA-BisdEtbG75jKsYY_K8gOiN7RPqvCZ9qiEyYEjQVL4ijFOdfuI.xOvzhSlnx3MjZMAdNegJoMebNGrx-x70M_WadfkUDp5CQMCe9lxMuHsC3GG5vynczFFUyOuY_c8NBvW_JMl5uw&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJwcm9maWxlIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19",
-				"text": "PDF"
-			}
-		]
-	},
-	{
-		"title": "Photon: A Fine-grained Sampled Simulation Methodology for GPU Workloads",
-		"authors": "Changxi Liu, Yifan Sun, Trevor E. Carlson",
-		"venue": "MICRO 2023",
-		"year": 2023,
-		"tags": [
-			"lab",
-			"yifan"
-		],
-		"links": [
-			{
-				"icon": "/file_outline.svg",
-				"link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/374910558_Photon_A_Fine-grained_Sampled_Simulation_Methodology_for_GPU_Workloads/links/65356a5724bbe32d9a61fe9e/Photon-A-Fine-grained-Sampled-Simulation-Methodology-for-GPU-Workloads.pdf?origin=publicationDetail&_sg%5B0%5D=YBb3e0P2MK3wo67j7v2DhQlIQElf2Rbet9KD4ROEWJxpCnx2n38QRv9ggP4vcZ8ToMR-pGfjoKW3BzfUYfDoFA.8NodPI2_fY0QE2Z6oFqSOzl8tf9-rjTu1TAAUdB2SQGXPIpT1Z56IlrQnhK7PtkpmdwEcABBD26rZga0HihE1w&_sg%5B1%5D=KLnVsyUMBGPQmXWV-q_QpR04IXpqVrwUzoJmTj9au7No-mcdGs7MaOH33TEUV0rZ8NwuAetw1_AKTvV59XbbDm81WmHMyEcbjkNUGlMpt8Lo.8NodPI2_fY0QE2Z6oFqSOzl8tf9-rjTu1TAAUdB2SQGXPIpT1Z56IlrQnhK7PtkpmdwEcABBD26rZga0HihE1w&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJwcm9maWxlIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19",
-				"text": "PDF"
-			}
-		]
-	},
-	{
-		"title": "Accelerated Computing with HIP",
-		"authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
-		"venue": "Book",
-		"year": 2022,
-		"tags": [
-			"lab",
-			"yifan"
-		],
-		"links": [
-		]
-	},
-	{
-		"title": "NaviSim: A Highly Accurate GPU Simulator for AMD RDNA GPUs",
-		"authors": "Yuhui Bao, Yifan Sun, Zlatan Feric, Michael Tian Shen, Micah Weston, José L. Abellán, Trinayan Baruah, John Kim, Ayay Joshi, David Kaeli",
-		"venue": "PACT 2022",
-		"year": 2022,
-		"tags": [
-			"lab",
-			"yifan"
-		],
-		"links": [
-		]
-	},
-	{
-		"title": "Visualization Design Practices in a Crisis: Behind the Scenes with COVID-19 Dashboard Creators",
-		"authors": "Yixuan Zhang, Yifan Sun, Joseph D Gaggiano, Neha Kumar, Clio Maria Adris, and Andrea G Parker",
-		"venue": "IEEEVis 2022",
-		"year": 2022,
-		"tags": [
-			"yifan"
-		],
-		"links": [
-		]
-	},
-	{
-		"title": "Shifting Trust: Examining How Trust and Distrust Emerge, Transform, and Collapse in COVID-19 Information Seeking",
-		"authors": "Yixuan Zhang, Nurul Suhaimi, Nutchanon Yongsatianchot, Joseph D Gaggiano, Miso Kim, Shivani A Patel, Yifan Sun, Stacy Marsella, Jacqueline Griffin, Andrea G Parker",
-		"venue": "CHI 2022",
-		"year": 2022,
-		"tags": [
-			"yifan"
-		],
-		"links": [
-		]
-	},
-	{
-		"title": "Daisen: A Framework for Visualizing Detailed GPU Execution",
-		"authors": "Yifan Sun, Yixuan Zhang, Ali Mosallaei, Michael D. Shah, Cody Dunne, David Kaeli",
-		"venue": "EuroVis 2021",
-		"year": 2021,
-		"tags": [
-			"lab",
-			"yifan"
-		],
-		"links": [
-			{
-				"icon": "/file_outline.svg",
-				"link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/350567495_Daisen_A_Framework_for_Visualizing_Detailed_GPU_Execution/links/6066271f92851c91b19868fe/Daisen-A-Framework-for-Visualizing-Detailed-GPU-Execution.pdf",
-				"text": "PDF"
-			},
-			{
-				"icon": "/youtube.svg",
-				"link": "https://www.youtube.com/watch?v=t5Ej4od4lek&t=21s",
-				"text": "Video"
-			},
-			{
-				"icon": "/code.svg",
-				"link": "https://github.com/sarchlab/akita/tree/v3/daisen",
-				"text": "Code"
-			}
-		]
-	},
-	{
-		"title": "Spartan: A Sparsity-Adaptive Framework to AccelerateDeep Neural Network Training on GPUs",
-		"authors": "Shi Dong, Yifan Sun, Nicolas Bohm Agostini, Elmira Karimi, Daniel Lowell, Jing Zhou, José Cano, José L. Abellán, David Kaeli",
-		"year": 2021,
-		"venue": "TPDS",
-		"tags": [
-			"yifan"
-		],
-		"links": []
-	}, 
-	{
-		"title": "Intelligent data coordination for accelerated computing in cloud environment",
-		"authors": "Junping Zhao, Yifan Sun, Layne Peng, Jie Bao, Kun Wang",
-		"year": 2021,
-		"venue": "US Patent App.",
-		"tags": [
-			"yifan"
-		],
-		"links": []
-	}, 
-	{
-		"title": "Mapping the Landscape of COVID-19 Crisis Visualizations",
-		"authors": "Yixuan Zhang, Yifan Sun, Lace Padilla, Submit Barua, Enrico Bertini, Andrea G. Parker",
-		"year": 2021,
-		"venue": "CHI 2021",
-		"tags": [
-			"yifan"
-		],
-		"links": []
-	},
-	{
-		"title": "GNNMark: A Benchmark Suite to Characterize Graph Neural Network Training on GPUs",
-		"authors": "Trinayan Baruah, Kaustubh Shivdikar, Shi Dong, Yifan Sun, Saiful A. Mojumder, Kihoon Jung, José L. Abellán, Yash Ukidave, Ajay Joshi, John Kim, David Kaeli",
-		"year": 2021,
-		"venue": "ISPASS 2021",
-		"tags": [
-			"yifan"
-		],
-		"links": []
-	}
+    {
+        "title": "Evaluating the Effectiveness of LLMs in Introductory Computer Science Education: A Semester-Long Field Study",
+        "authors": "Wenhan Lyu, Yimeng Wang, Tingting Rachel Chung, Yifan Sun, Yixuan Zhang",
+        "venue": "Learning @ Scale '24",
+        "year": 2024,
+        "tags": ["lab", "yifan"],
+        "links": []
+    },
+    {
+        "title": "Impact of Raindrops on Camera-Based Detection in Software-Defined Vehicles",
+        "authors": "Yichen Luo, Daoxuan Xu, Gang Zhou, Yifan Sun, Sidi Lu",
+        "venue": "MOST '24",
+        "year": 2024,
+        "tags": ["lab", "yifan"],
+        "links": []
+    },
+    {
+        "title": "Visual Exploratory Analysis for Designing Large-Scale Network-on-Chip Architectures: A Domain Expert-Led Design Study",
+        "authors": "Shaoyu Wang (co-first author), Hang Yan (co-first author), Katherine E. Isaacs, Yifan Sun",
+        "venue": "TVCG",
+        "year": 2023,
+        "tags": ["lab", "yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/vis4mesh.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Path Forward Beyond Simulators: Fast and Accurate GPU Execution Time Prediction for DNN Workloads",
+        "authors": "Ying Li, Yifan Sun, Adwait Jog",
+        "venue": "MICRO 2023",
+        "year": 2023,
+        "tags": ["lab", "yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/374160652_Path_Forward_Beyond_Simulators_Fast_and_Accurate_GPU_Execution_Time_Prediction_for_DNN_Workloads/links/6556bfd43fa26f66f407497b/Path-Forward-Beyond-Simulators-Fast-and-Accurate-GPU-Execution-Time-Prediction-for-DNN-Workloads.pdf?origin=publicationDetail&_sg%5B0%5D=G3VLwjhhNIqnPj3CfxiWD50D80AxsS4-j7s40h2_uqGu-VI8DIclHU_p89ORVSWO2YuCZeNyhbsaPD6pTJL47Q.xOvzhSlnx3MjZMAdNegJoMebNGrx-x70M_WadfkUDp5CQMCe9lxMuHsC3GG5vynczFFUyOuY_c8NBvW_JMl5uw&_sg%5B1%5D=Pajy5tCpZsxXFFYzvolHKbNrIADv2oPumpWmceraenZBMxgYFszoOdzwCA-BisdEtbG75jKsYY_K8gOiN7RPqvCZ9qiEyYEjQVL4ijFOdfuI.xOvzhSlnx3MjZMAdNegJoMebNGrx-x70M_WadfkUDp5CQMCe9lxMuHsC3GG5vynczFFUyOuY_c8NBvW_JMl5uw&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJwcm9maWxlIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Photon: A Fine-grained Sampled Simulation Methodology for GPU Workloads",
+        "authors": "Changxi Liu, Yifan Sun, Trevor E. Carlson",
+        "venue": "MICRO 2023",
+        "year": 2023,
+        "tags": ["lab", "yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/374910558_Photon_A_Fine-grained_Sampled_Simulation_Methodology_for_GPU_Workloads/links/65356a5724bbe32d9a61fe9e/Photon-A-Fine-grained-Sampled-Simulation-Methodology-for-GPU-Workloads.pdf?origin=publicationDetail&_sg%5B0%5D=YBb3e0P2MK3wo67j7v2DhQlIQElf2Rbet9KD4ROEWJxpCnx2n38QRv9ggP4vcZ8ToMR-pGfjoKW3BzfUYfDoFA.8NodPI2_fY0QE2Z6oFqSOzl8tf9-rjTu1TAAUdB2SQGXPIpT1Z56IlrQnhK7PtkpmdwEcABBD26rZga0HihE1w&_sg%5B1%5D=KLnVsyUMBGPQmXWV-q_QpR04IXpqVrwUzoJmTj9au7No-mcdGs7MaOH33TEUV0rZ8NwuAetw1_AKTvV59XbbDm81WmHMyEcbjkNUGlMpt8Lo.8NodPI2_fY0QE2Z6oFqSOzl8tf9-rjTu1TAAUdB2SQGXPIpT1Z56IlrQnhK7PtkpmdwEcABBD26rZga0HihE1w&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJwcm9maWxlIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Accelerated Computing with HIP",
+        "authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
+        "venue": "Book",
+        "year": 2022,
+        "tags": ["lab", "yifan"],
+        "links": []
+    },
+    {
+        "title": "NaviSim: A Highly Accurate GPU Simulator for AMD RDNA GPUs",
+        "authors": "Yuhui Bao, Yifan Sun, Zlatan Feric, Michael Tian Shen, Micah Weston, José L. Abellán, Trinayan Baruah, John Kim, Ayay Joshi, David Kaeli",
+        "venue": "PACT 2022",
+        "year": 2022,
+        "tags": ["lab", "yifan"],
+        "links": []
+    },
+    {
+        "title": "Visualization Design Practices in a Crisis: Behind the Scenes with COVID-19 Dashboard Creators",
+        "authors": "Yixuan Zhang, Yifan Sun, Joseph D Gaggiano, Neha Kumar, Clio Maria Adris, and Andrea G Parker",
+        "venue": "IEEEVis 2022",
+        "year": 2022,
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "Shifting Trust: Examining How Trust and Distrust Emerge, Transform, and Collapse in COVID-19 Information Seeking",
+        "authors": "Yixuan Zhang, Nurul Suhaimi, Nutchanon Yongsatianchot, Joseph D Gaggiano, Miso Kim, Shivani A Patel, Yifan Sun, Stacy Marsella, Jacqueline Griffin, Andrea G Parker",
+        "venue": "CHI 2022",
+        "year": 2022,
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "Daisen: A Framework for Visualizing Detailed GPU Execution",
+        "authors": "Yifan Sun, Yixuan Zhang, Ali Mosallaei, Michael D. Shah, Cody Dunne, David Kaeli",
+        "venue": "EuroVis 2021",
+        "year": 2021,
+        "tags": ["lab", "yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/350567495_Daisen_A_Framework_for_Visualizing_Detailed_GPU_Execution/links/6066271f92851c91b19868fe/Daisen-A-Framework-for-Visualizing-Detailed-GPU-Execution.pdf",
+                "text": "PDF"
+            },
+            {
+                "icon": "/youtube.svg",
+                "link": "https://www.youtube.com/watch?v=t5Ej4od4lek&t=21s",
+                "text": "Video"
+            },
+            {
+                "icon": "/code.svg",
+                "link": "https://github.com/sarchlab/akita/tree/v3/daisen",
+                "text": "Code"
+            }
+        ]
+    },
+    {
+        "title": "Spartan: A Sparsity-Adaptive Framework to AccelerateDeep Neural Network Training on GPUs",
+        "authors": "Shi Dong, Yifan Sun, Nicolas Bohm Agostini, Elmira Karimi, Daniel Lowell, Jing Zhou, José Cano, José L. Abellán, David Kaeli",
+        "year": 2021,
+        "venue": "TPDS",
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "Intelligent data coordination for accelerated computing in cloud environment",
+        "authors": "Junping Zhao, Yifan Sun, Layne Peng, Jie Bao, Kun Wang",
+        "year": 2021,
+        "venue": "US Patent App.",
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "Mapping the Landscape of COVID-19 Crisis Visualizations",
+        "authors": "Yixuan Zhang, Yifan Sun, Lace Padilla, Submit Barua, Enrico Bertini, Andrea G. Parker",
+        "year": 2021,
+        "venue": "CHI 2021",
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "GNNMark: A Benchmark Suite to Characterize Graph Neural Network Training on GPUs",
+        "authors": "Trinayan Baruah, Kaustubh Shivdikar, Shi Dong, Yifan Sun, Saiful A. Mojumder, Kihoon Jung, José L. Abellán, Yash Ukidave, Ajay Joshi, John Kim, David Kaeli",
+        "year": 2021,
+        "venue": "ISPASS 2021",
+        "tags": ["yifan"],
+        "links": []
+    }
 ]

@@ -28,13 +28,14 @@
         to join our team in Spring 2024 or Fall 2025. Candidates should possess
         a solid background in programming and a keen interest in computer
         hardware research. Specifically, I am eager to mentor a student
-        specializing in data visualization for performance analysis.
+        specializing in data visualization and a student in LLM/NLP.
     </p>
     <p>
         <b>Research intern.</b> I also mentor unpaid, remote research intern who
         may consider to pursue Ph.D. degree under my supervision later. William
         & Mary undergraduate students are always welcome to contact me for research
-        opportunities.
+        opportunities. I am happy to provide recommendation letters for productive
+        students.
     </p>
     <p>
         <b>How to apply.</b> Interested candidates should email me (ysun25@wm.edu)

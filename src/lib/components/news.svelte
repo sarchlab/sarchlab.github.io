@@ -6,6 +6,12 @@
     <ul>
         <li>
             <span class="date">[Apr 2024]</span>
+            Our paper "Evaluating the Effectiveness of LLMs in Introductory Computer
+            Science Education: A Semester-Long Field Study" has been accepted by
+            the Tenth ACM Conference on Learning @ Scale (L@S '24') !
+        </li>
+        <li>
+            <span class="date">[Apr 2024]</span>
             Our project
             <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2402804">
                 "Collaborative Research: SHF: Medium: Enabling Graphics
@@ -20,6 +26,12 @@
                 >First Lightweight Community Workshop on Akita and MGPUSim</a
             > has been successfully organized. Thank you all for participating in
             the event.
+        </li>
+        <li>
+            <span class="date">[Jan 2024]</span>
+            Our paper "Impact of Raindrops on Camera-Based Detection in Software-Defined
+            Vehicles" has been accepted by the 2nd IEEE International Conference
+            on Mobility: Operations, Services, and Technologies (MOST '24') !
         </li>
         <li>
             <span class="date">[Jan 2024]</span> Sabila Al Jannat has achieved Ph.D.
