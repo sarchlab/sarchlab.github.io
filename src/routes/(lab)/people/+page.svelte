@@ -76,6 +76,11 @@
             <div><b>Position:</b> Undergraduate Researcher</div>
             <div><b>Email:</b> ali14@wm.edu</div>
         </Member>
+
+        <Member name="Mengyang He" profile_img="mengyang.jpeg" link="">
+            <div><b>Position:</b> Undergraduate Researcher</div>
+            <div><b>Email:</b> mhe03@wm.edu</div>
+        </Member>
     </div>
 </div>
 <div class="two-col-right">
