@@ -4,7 +4,7 @@
         "authors": "Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
         "venue": "Learning @ Scale '24",
         "year": 2024,
-        "tags": ["lab", "yifan"],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -217,7 +217,7 @@
         "title": "MGPU-TSM: A Multi-gpu System with Truly Shared Memory",
         "authors": "Saiful A Mojumder, Yifan Sun, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
         "year": 2020,
-        "venue": "Arxiv 2020",
+        "venue": "ArXiv",
         "tags": ["yifan"],
         "links": [
             {
@@ -231,7 +231,7 @@
         "title": "Halcone: A Hardware-Level Timestamp-based Cache Coherence Scheme for Multi-gpu Systems",
         "authors": "Saiful A Mojumder, Yifan Sun, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
         "year": 2020,
-        "venue": "Arxiv 2020",
+        "venue": "ArXiv",
         "tags": ["yifan"],
         "links": [
             {
@@ -254,5 +254,347 @@
                 "text": "PDF"
             }
         ]
+    },
+    {
+        "title": "Effects of Trust-based Decision Making in Disrupted Supply Chains",
+        "authors": "Rozhin Doroudi, Pedro Sequeira, Stacy Marsella, Ozlem Ergun, Rana Azghandi, David Kaeli, Yifan Sun, Jacqueline Griffin",
+        "year": 2020,
+        "venue": "PLoS one",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0224761&type=printable",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Griffin: Hardware-Software Support for Efficient Page Migration in Multi-GPU Systems",
+        "authors": "Trinayan Baruah, Yifan Sun, Ali Tolga Dinçer, Saiful A. Mojumder, José L. Abellán, Yash Ukidave, Ajay Joshi, Normam Rubin, John Kim, David Kaeli",
+        "year": 2020,
+        "venue": "HPCA 2020",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/hpca2020.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Enabling Collaborative Heterogeneous Computing",
+        "authors": "Yifan Sun",
+        "year": 2020,
+        "venue": "Ph.D. Dissertation",
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "Priority-based PCIe scheduling for multi-tenant multi-GPU systems",
+        "authors": "Chen Li, Yifan Sun, Lingling Jin, Lingjie Xu, Zheng Cao, Pengfei Fan, David Kaeli, Sheng Ma, Yang Guo, Jun Yang",
+        "year": 2019,
+        "venue": "IEEE Computer Architecture Letters (CAL)",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/cal19.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Summarizing CPU and GPU Design Trends with Product Data",
+        "authors": "Yifan Sun, Nicolas Bohm Agostini, Dong Shi, David Kaeli",
+        "year": 2019,
+        "venue": "ArXiv",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/cal19.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "MGPUSim: Enabling Multi-GPU Performance Modeling and Optimization",
+        "authors": "Yifan Sun, Trinayan Baruah, Saiful A. Mojumder, Shi Dong, Xiang Gong, Shane Treadway, Yuhui Bao, Spencer Hance, Carter McCardwell, Vincent Zhao, Harrison Barclay, Amir Kavyan Ziabari, Zhongliang Chen, Rafael Ubal, José L. Abellán, John Kim, Ajay Joshi, David Kaeli",
+        "year": 2019,
+        "venue": "ISCA 2019",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/mgpusim_isca19.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Exploiting Adaptive Data Compression to Improve Performance and Energy-efficiency of Compute Workloads in Multi-GPU Systems",
+        "authors": "Mohammad Khavari Tavana, Yifan Sun, Nicolas Bohm Agostini, David Kaeli",
+        "year": 2019,
+        "venue": "IPDPS 2019",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/330882136_Exploiting_Adaptive_Data_Compression_to_Improve_Performance_and_Energy-Efficiency_of_Compute_Workloads_in_Multi-GPU_Systems/links/5c59a977a6fdccb608a983d5/Exploiting-Adaptive-Data-Compression-to-Improve-Performance-and-Energy-Efficiency-of-Compute-Workloads-in-Multi-GPU-Systems.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "MGSim: A Flexible High-Performance Simulator for Multi-GPU Systems",
+        "authors": "Yifan Sun, Trinayan Baruah, Shi Dong, David Kaeli",
+        "year": 2019,
+        "venue": "IWOCL 2019",
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "Checkpointing for GPU-as-a-Service in Cloud Computing Environment",
+        "authors": "Zhao Junping, Layne Peng, Jie Bao, Kun Wang, Yifan Sun",
+        "year": 2019,
+        "venue": "US Patent App.",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://patentimages.storage.googleapis.com/e7/5b/a9/9b20b2e1171539/US10275851.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Managing Access to a Resource Pool of Graphics Processing Units under Fine Grain Control",
+        "authors": "Yifan Sun, Layne Peng, Robert A Lincourt Jr, John Cardente, Junping Zhao",
+        "year": 2019,
+        "venue": "US Patent App.",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://patentimages.storage.googleapis.com/b5/be/c9/4b0e7bc9e9b1be/US10262390.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "An Integrated Simulation Framework for Examining Resiliency in Pharmaceutical Supply Chains Considering Human Behaviors",
+        "authors": "Rozhin Doroudi, Rana Azghandi, Zlatan Feric, Omid Mohaddesi, Yifan Sun, Jacqueline Griffin, Ozlem Ergun, David Kaeli, Pedro Sequeira, Stacy Marsella, Casper Harteveld",
+        "year": 2018,
+        "venue": "WinterSim 2018",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/wintersim18",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Queue-based GPU Virtualization and Management System",
+        "authors": "Yifan Sun, Layne Peng, Jr. Robert A. Lincourt, John Cardente, John S Harwood",
+        "year": 2018,
+        "venue": "US Patent App.",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://patentimages.storage.googleapis.com/5b/1e/23/1d35362c5c3386/US10109030.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "MGSim+MGMark: A Framework for Multi-GPU System Research",
+        "authors": "Yifan Sun, Trinayan Baruah, Saiful A Mojumder, Shi Dong, Rafael Ubal, Xiang Gong, Shane Treadway, Yuhui Bao, Vincent Zhao, José L Abellán, John Kim, Ajay Joshi, David Kaeli",
+        "year": 2018,
+        "venue": "ArXiv",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/1811.02884",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Profiling DNN Workloads on a Volta-based DGX-1 System",
+        "authors": "Saiful A Mojumder, Marcia S Louis, Yifan Sun, Amir Kavyan Ziabari, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
+        "year": 2018,
+        "venue": "IISWC 2018",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/329654398_Profiling_DNN_Workloads_on_a_Volta-based_DGX-1_System/links/5c82ce9092851c695063f3f5/Profiling-DNN-Workloads-on-a-Volta-based-DGX-1-System.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Evaluating Performance Tradeoffs on the Radeon Open Compute Platform",
+        "authors": "Yifan Sun, Saoni Mukherjee, Trinayan Baruah, Shi Dong, Julian Gutierrez, Prannory Mohan, David Kaeli",
+        "year": 2018,
+        "venue": "ISPASS 2018",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/323745962_Evaluating_Performance_Tradeoffs_on_the_Radeon_Open_Compute_Platform/links/5aa88420a6fdcc1b59c641a5/Evaluating-Performance-Tradeoffs-on-the-Radeon-Open-Compute-Platform.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Airavat: Improving Energy Efficiency of Heterogeneous Applications",
+        "authors": "Trinayan Baruah, Yifan Sun, Shi Dong, David Kaeli, Norm Rubin",
+        "year": 2018,
+        "venue": "DATE 2018",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/324707835_Airavat_Improving_energy_efficiency_of_heterogeneous_applications/links/5c82cd9b92851c695063f3b2/Airavat-Improving-energy-efficiency-of-heterogeneous-applications.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Characterizing the Microarchitectural Implications of a Convolutional Neural Network (CNN) on GPUs",
+        "authors": "Shi Dong, Gong Xiang, Yifan Sun, Trinayan Baruah, David Kaeli",
+        "year": 2018,
+        "venue": "ICPE 2018",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Shi-Dong-2/publication/324068639_Characterizing_the_Microarchitectural_Implications_of_a_Convolutional_Neural_Network_CNN_Execution_on_GPUs/links/5ada0972a6fdcc293586ef94/Characterizing-the-Microarchitectural-Implications-of-a-Convolutional-Neural-Network-CNN-Execution-on-GPUs.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Moka: Model-based Concurrent Kernel Analysis",
+        "authors": "Leiming Yu, Xun Gong, Yifan Sun, Qianqian Fang, Norm Rubin, David Kaeli",
+        "year": 2017,
+        "venue": "IISWC 2017",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/321662207_Moka_Model-based_concurrent_kernel_analysis/links/5c831426458515831f92da05/Moka-Model-based-concurrent-kernel-analysis.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Hetero-Mark, A Benchmark Suite for CPU-GPU Collaborative Computing",
+        "authors": "Yifan Sun, Xiang Gong, Amir Kavyan Ziabari, Leiming Yu, Xiangyu Li, Saoni Mukherjee, Carter McCardwell, Alejandro Vilegas, David Kaeli",
+        "year": 2016,
+        "venue": "IISWC 2016",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/309206460_Hetero-Mark_A_Benchmark_Suite_for_CPU-GPU_Collaborative_Computing/links/59e2b508458515393d57fb2c/Hetero-Mark-A-Benchmark-Suite-for-CPU-GPU-Collaborative-Computing.pdfs",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Modeling Player Decisions in a Supply Chain Game",
+        "authors": "Yifan Sun, Chisheng Liang, Steven Sutherland, Casper Harteveld, David Kaeli",
+        "year": 2016,
+        "venue": "CIG 2016",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/313955687_Modeling_player_decisions_in_a_supply_chain_game/links/5aa47a8e0f7e9badd9a9b33f/Modeling-player-decisions-in-a-supply-chain-game.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "HSA Simulators",
+        "authors": "Y-C Chung, W-C Hsu, S-H Hung, TB Jablin, D Kaeli, Y Sun, R Ubal",
+        "year": 2016,
+        "venue": "Book Chapter",
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "UMH: A Hardware-based Unified Memory Hierarchy for Systems with Multiple Discrete GPUs",
+        "authors": "Amir Kavyan Ziabari, Yifan Sun, Yenai Ma, Dana Schaa, Jose L. Abellan, John Kim, Ajay Joshi, David Kaeli",
+        "year": 2016,
+        "venue": "TACO",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/311361275_UMH_A_Hardware-Based_Unified_Memory_Hierarchy_for_Systems_with_Multiple_Discrete_GPUs/links/5c8316d9458515831f92db47/UMH-A-Hardware-Based-Unified-Memory-Hierarchy-for-Systems-with-Multiple-Discrete-GPUs.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": " Comprehensive Performance Analysis of HSA and OpenCL 2.0",
+        "authors": "Amir Kavyan Ziabari, Yifan Sun, Yenai Ma, Dana Schaa, Jose L. Abellan, John Kim, Ajay Joshi, David Kaeli",
+        "year": 2016,
+        "venue": "ISPASS 2016",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/303772633_A_comprehensive_performance_analysis_of_HSA_and_OpenCL_20/links/5b11fc32aca2723d997b4277/A-comprehensive-performance-analysis-of-HSA-and-OpenCL-20.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Enabling emergency communication through a cognitive radio vehicular network",
+        "authors": "Yifan Sun, Kaushik R Chowdhury",
+        "year": 2014,
+        "venue": "IEEE Communications Magazine",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Yifan-Sun-16/publication/273391705_Enabling_Emergency_Communication_through_a_Cognitive_Radio_Vehicular_Network/links/580587d408aee314f68e25c5/Enabling-Emergency-Communication-through-a-Cognitive-Radio-Vehicular-Network.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Accessing Spectrum Databases using Interference Alignment in Vehicular Cognitive Radio Networks",
+        "authors": "Abdulla K Al-Ali, Yifan Sun, Marco Di Felice, Jarkko Paavola, Kaushik R Chowdhury",
+        "year": 2014,
+        "venue": "IEEE Transactions on Vehicular Technology (TVT)",
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "A Hybrid MAC Protocol with Channel-Dependent Optimized Scheduling for Clustered Underwater Acoustic Sensor Networks",
+        "authors": "Jithin Jagannath, Anu Saji, Hovannes Kulhandjian, Yifan Sun, Emrecan Demirors, Tommaso Melodia",
+        "year": 2013,
+        "venue": "WUWNet 2013",
+        "tags": ["yifan"],
+        "links": []
+    },
+    {
+        "title": "The Internet underwater: An IP-compatible protocol stack for commercial undersea modems",
+        "authors": "Yifan Sun, Tommaso Melodia",
+        "year": 2013,
+        "venue": "WUWNet 2013",
+        "tags": ["yifan"],
+        "links": []
     }
 ]
