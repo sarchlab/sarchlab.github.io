@@ -2,7 +2,7 @@
 </script>
 
 <div>
-    <h3 class="font-bold">Lab News</h3>
+    <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
             <span class="date">[Apr 2024]</span>

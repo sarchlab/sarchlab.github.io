@@ -9,9 +9,10 @@
 </svelte:head>
 
 <div class="two-col-left">
+    <h2 class="sec-title">Grant</h2>
     <p>
-        SARCHLAB has acquired $908K external grant to support the research and
-        education activities. We thank our sponsors for the generous support.
+        SARCHLAB has acquired <u>$908K</u> external grant to support the research
+        and education activities. We thank our sponsors for the generous support.
     </p>
     <GrantEntry
         title="Enabling Graphics Processing Unit Performance Simulation for Large-Scale Workloads with Lightweight Simulation Methods"
@@ -41,7 +42,7 @@
         pi="Yifan Sun, Katherine E. Isaacs (University of Utah)"
     />
     <GrantEntry
-        title="Enabling Computer Architecture Simulation as a Service"
+        title="Multiple Research Topics Related to GPU Computing on the AMD ROCm Platform"
         sponsor="AMD Inc."
         program="Multiple Gifts"
         duration="Unconstrained Gift"

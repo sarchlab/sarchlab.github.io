@@ -19,17 +19,18 @@
 
 <style lang="postcss">
     .grant-card {
-        @apply mt-4;
+        @apply mt-6;
         @apply flex flex-col;
         @apply pl-2 border-l-2 border-muted;
     }
 
     .duration {
-        @apply text-muted-foreground font-thin text-xl;
+        @apply text-muted-foreground font-thin text-lg;
     }
 
     .title {
         @apply font-bold;
+        @apply mt-2 mb-2;
     }
 
     .info {
