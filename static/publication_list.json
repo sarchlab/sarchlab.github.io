@@ -212,5 +212,47 @@
                 "text": "PDF"
             }
         ]
+    },
+    {
+        "title": "MGPU-TSM: A Multi-gpu System with Truly Shared Memory",
+        "authors": "Saiful A Mojumder, Yifan Sun, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
+        "year": 2020,
+        "venue": "Arxiv 2020",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2008.02300",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Halcone: A Hardware-Level Timestamp-based Cache Coherence Scheme for Multi-gpu Systems",
+        "authors": "Saiful A Mojumder, Yifan Sun, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
+        "year": 2020,
+        "venue": "Arxiv 2020",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2007.04292",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Introducing Gamettes: A Playful Approach for Capturing Decision-Making for Informing Behavioral Models",
+        "authors": "Omid Mohaddesi, Yifan Sun, Rana Azghandi, Rozhin Doroudi, Sam Snodgrass, Ozlem Ergun, Jacqueline Griffin, David Kaeli, Stacy Marsella, Casper Harteveld",
+        "year": 2020,
+        "venue": "CHI 2020",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/profile/Casper-Harteveld/publication/341693041_Introducing_Gamettes_A_Playful_Approach_for_Capturing_Decision-Making_for_Informing_Behavioral_Models/links/5ef96a84a6fdcc4ca43a1d9d/Introducing-Gamettes-A-Playful-Approach-for-Capturing-Decision-Making-for-Informing-Behavioral-Models.pdf",
+                "text": "PDF"
+            }
+        ]
     }
 ]
