@@ -6,9 +6,13 @@
     <ul>
         <li>
             <span class="date">[Apr 2024]</span>
-            Our paper "Evaluating the Effectiveness of LLMs in Introductory Computer
-            Science Education: A Semester-Long Field Study" has been accepted by
-            the Tenth ACM Conference on Learning @ Scale (L@S '24') !
+            Our paper
+            <a href="https://arxiv.org/abs/2404.13414">
+                "Evaluating the Effectiveness of LLMs in Introductory Computer
+                Science Education: A Semester-Long Field Study"
+            </a>
+            has been accepted by the Tenth ACM Conference on Learning @ Scale (L@S
+            '24') !
         </li>
         <li>
             <span class="date">[Apr 2024]</span>
