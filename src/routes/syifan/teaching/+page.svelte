@@ -11,6 +11,13 @@
 <div>
     <h2 class="sec-title">@ William & Mary</h2>
     <div class="mt-4 flex flex-col gap-4">
+        <Course year="Fall 2024" title="CSCI432: Web Programming" />
+        <Course
+            year="Spring 2024"
+            title="CSCI780: Data Visualization"
+            link="https://syifan.notion.site/W-M-CSCI780-Spring-2024-Data-Visualization-4a27c979837e4e42ac7121e9b98a8f6b?pvs=4"
+        />
+
         <Course
             year="Fall 2023"
             title="CSCI141: Computational Problem Solving"
