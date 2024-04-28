@@ -1,11 +1,17 @@
 [
     {
         "title": "Evaluating the Effectiveness of LLMs in Introductory Computer Science Education: A Semester-Long Field Study",
-        "authors": "Wenhan Lyu, Yimeng Wang, Tingting Rachel Chung, Yifan Sun, Yixuan Zhang",
+        "authors": "Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
         "venue": "Learning @ Scale '24",
         "year": 2024,
         "tags": ["lab", "yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2404.13414",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Impact of Raindrops on Camera-Based Detection in Software-Defined Vehicles",
@@ -13,7 +19,13 @@
         "venue": "MOST '24",
         "year": 2024,
         "tags": ["lab", "yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/most24.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Visual Exploratory Analysis for Designing Large-Scale Network-on-Chip Architectures: A Domain Expert-Led Design Study",
@@ -71,7 +83,13 @@
         "venue": "PACT 2022",
         "year": 2022,
         "tags": ["lab", "yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/navisim_pact_2022.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Visualization Design Practices in a Crisis: Behind the Scenes with COVID-19 Dashboard Creators",
@@ -79,7 +97,13 @@
         "venue": "IEEEVis 2022",
         "year": 2022,
         "tags": ["yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/ieeevis_2022.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Shifting Trust: Examining How Trust and Distrust Emerge, Transform, and Collapse in COVID-19 Information Seeking",
@@ -87,7 +111,13 @@
         "venue": "CHI 2022",
         "year": 2022,
         "tags": ["yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/chi22.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Daisen: A Framework for Visualizing Detailed GPU Execution",
@@ -119,7 +149,13 @@
         "year": 2021,
         "venue": "TPDS",
         "tags": ["yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/spartan_tpds_2021.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Intelligent data coordination for accelerated computing in cloud environment",
@@ -127,7 +163,13 @@
         "year": 2021,
         "venue": "US Patent App.",
         "tags": ["yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://patentimages.storage.googleapis.com/44/7f/51/0d60841376f15b/US10891156.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Mapping the Landscape of COVID-19 Crisis Visualizations",
@@ -135,7 +177,13 @@
         "year": 2021,
         "venue": "CHI 2021",
         "tags": ["yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/chi21.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "GNNMark: A Benchmark Suite to Characterize Graph Neural Network Training on GPUs",
@@ -143,6 +191,26 @@
         "year": 2021,
         "venue": "ISPASS 2021",
         "tags": ["yifan"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/gnnmark.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "Valkyrie: Leveraging Inter-TLB Locality to Enhance GPU Performance",
+        "authors": "Trinayan Baruah, Yifan Sun, Saiful A. Mojumder, José L. Abellán, Yash Ukidave, Ajay Joshi, Norman Rubin, John Kim, David Kaeli",
+        "year": 2020,
+        "venue": "PACT 2020",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/valkyrie_pact_2020.pdf",
+                "text": "PDF"
+            }
+        ]
     }
 ]
