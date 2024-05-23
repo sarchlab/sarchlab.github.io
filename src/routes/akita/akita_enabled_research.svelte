@@ -32,6 +32,16 @@
     >
         <ul class="px-5 list-outside list-disc">
             <li>
+                Yuan Feng, Seonjin Na, Hyesoon Kim, Hyeran Jeon. "Barre Chord:
+                Efficient Virtual Memory Translation for Multi-Chip-Module GPUs
+                " (2024)
+            </li>
+            <li>
+                Bingyao Li, Yueqi Wang, Tianyu Wang, Lieven Eeckhout, Jun Yang,
+                Aamer Jaleel, Xulong Tang. "Barre Chord: Efficient Virtual
+                Memory Translation for Multi-Chip-Module GPUs" (2024)
+            </li>
+            <li>
                 Changxi Liu, Yifan Sun, and Trevor E. Carlson. "Photon: A
                 Fine-grained Sampled Simulation Methodology for GPU Workloads."
                 (2023).
