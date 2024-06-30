@@ -123,7 +123,10 @@
             {@html feather.icons['menu'].toSvg()}
         </button>
 
-        <div id="nav-fold" class="nav-fold hidden items-center text-slate-300">
+        <div
+            id="nav-fold"
+            class="nav-fold hidden items-center text-primary-foreground"
+        >
             <div id="nav-menu-list">
                 {#each navItems as item}
                     <div

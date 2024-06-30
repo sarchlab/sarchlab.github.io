@@ -26,17 +26,16 @@
         >
             <img src="/akita_logo.png" alt="The Akita logo" class="w-40" />
             <div>
-                <h1 class="text-3xl font-bold text-theme mb-3">
+                <h1 class="text-3xl font-bold mb-3">
                     The First Lightweight Community Workshop on Akita and
                     MGPUSim
                 </h1>
                 <div class="text-lg">
-                    <b class="text-theme">Date:</b> March 13, 2024
+                    <b>Date:</b> March 13, 2024
                     <br />
-                    <b class="text-theme">Time:</b> 10:00am - 12:00pm (US
-                    Eastern Time)
+                    <b>Time:</b> 10:00am - 12:00pm (US Eastern Time)
                     <br />
-                    <b class="text-theme">Location:</b>
+                    <b>Location:</b>
                     <a
                         href="https://cwm.zoom.us/j/91386326093?pwd=Yk1EY2lCTEtwbGhrWTErYUltS3B2Zz09"
                     >
@@ -207,11 +206,11 @@
 <style lang="postcss">
     #schedule {
         @apply w-full;
-        @apply border-t-2 border-b-2 border-theme;
+        @apply border-t-2 border-b-2 border-primary;
     }
 
     #schedule > tr {
-        @apply border-b border-theme;
+        @apply border-b border-primary;
     }
 
     #schedule > tr > td:first-child {
@@ -238,11 +237,11 @@
     .button {
         @apply inline-block;
         @apply px-4 py-2;
-        @apply bg-theme;
-        @apply text-white;
+        @apply bg-primary;
+        @apply text-white font-bold;
         @apply rounded-md;
         @apply transition-all;
-        @apply hover:bg-theme2;
+        @apply hover:bg-secondary;
         @apply no-underline text-lg;
         @apply mt-4;
     }
