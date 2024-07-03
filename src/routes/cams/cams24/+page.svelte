@@ -1,0 +1,1235 @@
+<script lang="js">
+    import { onMount } from 'svelte';
+    function unfold(event) {
+        const target = event.currentTarget
+        const iframe = target.nextElementSibling
+        if (iframe.style.display === 'none') {
+            iframe.style.display = 'block'
+            target.firstChild.src = '/caret-down-solid.svg'
+        } else {
+            iframe.style.display = 'none'
+            target.firstChild.src = '/caret-right-solid.svg'
+        }
+    }
+
+    onMount(() => {     
+        document.querySelectorAll(".collapse-opener").forEach((opener) => {
+            opener.addEventListener("click", () => {
+                const arrow = opener.querySelector(".collapse-arrow");
+                const abstractContent = document.getElementById(opener.id.replace("toggle-opener", "abstract-content"));
+                
+                if (abstractContent.style.display === "none") {
+                    abstractContent.style.display = "block";
+                    arrow.textContent = "▼";
+                } else {
+                    abstractContent.style.display = "none";
+                    arrow.textContent = "▶";
+                }
+            });
+        });
+    });
+</script>
+
+<svelte:head>
+    <title>
+        The 2nd Workshop on Computer Architecture Modeling and Simulation (CAMS 2024)
+    </title>
+    <link rel="icon" href="/akita_logo.png" />
+</svelte:head>
+
+<div class="block">
+    <div class="block-content">
+        <div
+            class="flex flex-col items-center gap-5 md:py-10 md:flex-row md:gap-20"
+        >
+            <!-- <img src="akita_logo.png" alt="The Akita logo" class="w-40" /> -->
+            <div>
+                <h1 class="text-3xl font-bold mb-3">
+                    The 2nd Workshop on Computer Architecture Modeling and Simulation (CAMS 2024)
+                </h1>
+                <div class="text-lg">
+                    <b>Date:</b> TBD, 2024
+                    <br />
+                    <b>Time:</b> TBD (US Eastern Time)
+                    <br />
+                    <b>Location:</b>
+                    <a
+                        href="https://cwm.zoom.us/j/91386326093?pwd=Yk1EY2lCTEtwbGhrWTErYUltS3B2Zz09"
+                    >
+                        Virtual on Zoom
+                    </a>
+                    <br />
+                    <a href="/akita/akita24/zoom">
+                        Here is the full Zoom invitation
+                    </a>
+                </div>
+                <a href="https://forms.gle/WKaeWkEubBLfYQeB7" class="button">
+                    RSVP Here
+                </a>
+                <p class="text-baseline mt-4">
+                    The modeling and simulation of computer architecture are fields of increasing interest 
+                    and importance, especially with the emergence of new and diverse computing platforms 
+                    such as quantum computers, neuromorphic systems, and advanced machine-learning hardware.
+                    The goal of our workshop, "Computer Architecture Modeling and Simulation," 
+                    is to provide a forum for researchers and practitioners to exchange ideas and 
+                    discuss the latest advances in the field. The focus on modeling and simulation 
+                    techniques is of vital importance to the ongoing advancements in microarchitecture, 
+                    as these methods are essential tools for improving system performance, efficiency, 
+                    and reliability. This workshop will provide a forum for sharing cutting-edge research, fostering innovative 
+                    ideas, and stimulating interdisciplinary collaboration in these areas.
+                </p>
+
+                <p class="text-baseline mt-4">
+                    The workshop will cover various aspects of computer architecture modeling and simulation, 
+                    including but not limited to:
+                </p>
+                    
+                <ul class="">
+                    <li>
+                        Simulator Development: Advances in design, theory,
+                        implementation, and integration of
+                        simulators.
+                    </li>
+                    <li>
+                        Performance Modeling: Strategies for
+                        prediction, validation, and the impact of architectural
+                        features.
+                    </li>
+                    <li>
+                        Power Modeling and Simulation: Methods 
+                        for power-efficient design and power-performance 
+                        trade-offs.
+                    </li>
+                    <li>
+                        Tools and Studies Survey: Review and compare 
+                        existing simulation tools and applications.
+                    </li>
+                    <li>
+                        Scalable Simulation Techniques: Approaches 
+                        for improving simulation scalability and efficiency.
+                    </li>
+                    <li>
+                        Modeling and Simulation for Unconventional 
+                        Architectures: Exploration of unique 
+                        challenges and approaches for emerging and 
+                        unconventional architectures.
+
+                    </li>
+                    <li>
+                        Hardware-in-the-loop Simulation:
+                        Advancements and case studies in
+                        hardware-in-the-loop validation.
+                    </li>
+                    <li>
+                        Modeling for Machine Learning (Sim4AI):
+                        Architectural considerations and models for
+                        hardware accelerators.
+                    </li>
+                    <li>
+                        Validation Techniques: Approaches for 
+                        validating the accuracy of simulation models.
+                    </li>
+                    <li>
+                        Human-centered simulation methods:
+                        Analysis, Visualization, Monitoring methods.
+                    </li>
+                </ul>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Workshop Program</h2>
+        <p class="mb-2">All times are in Eastern Daylight Time (UTC-4).</p>
+        <table id="schedule" class="w-full">
+                                <tr>
+                                    <td>10:00 am -10:30 am</td>
+                                    <td>
+                                        <span style="font-weight: bold"
+                                            >[Keynote]</span
+                                        >
+                                        <span>Putting Trust in Simulation-based
+                                            Research</span
+                                        >
+                                        <br />John Kim, KAIST
+                                        <a href="#keynote1">[Link]</a>
+                                        <br />
+                                        <div class="abstract collapse">
+                                            <div class="collapse-opener" id="toggle-opener-1">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-1" style="display: none">
+                                                <p>
+                                                    As a computer architect,
+                                                    simulators are often our
+                                                    best friend but at the same
+                                                    time, they can be our worst
+                                                    enemy. In this talk, I will
+                                                    present some of the common
+                                                    limitations and challenges
+                                                    of using simulations and
+                                                    how simulations (and
+                                                    modeling) can be your
+                                                    friend. At the same time, I
+                                                    will present steps we
+                                                    should take to ensure
+                                                    simulators do not become
+                                                    our worst enemy. In
+                                                    comparison to simulation
+                                                    data, real systems (and
+                                                    measurements) can provide
+                                                    more realistic data but I
+                                                    will also argue how that
+                                                    can be misleading as well.
+                                                    I will use interconnection
+                                                    network simulations and
+                                                    evaluations as a case study
+                                                    to describe the challenges
+                                                    as well as potential
+                                                    opportunities.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >10:00 AM - 10:30 AM</span
+                                        >
+                                    </td>
+                                    <td
+                                        class="tg-0pky"
+                                        style="font-weight: bold"
+                                    >
+                                        Coffee Break
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td
+                                        class="tg-fymr"
+                                        style="font-weight: bold"
+                                    >
+                                        Session 1
+                                    </td>
+                                    <td style="font-weight: bold">
+                                        Improving and Validating Simulators
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >10:30 AM - 10:50 AM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Paper]</span
+                                        >
+                                        <span style="font-style: italic"
+                                            >ROIperf : A Framework to Rapidly
+                                            Validate Workload Sampling
+                                            Methodologies
+                                        </span>
+                                        <br />Alen Sabu (National University of
+                                        Singapore), Harish Patil, Wim Heirman
+                                        (Intel Corporation), Trevor E. Carlson
+                                        (National University of Singapore)
+                                        <div class="abstract">
+                                            <div class="collapse-opener" id="toggle-opener-2">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-2" style="display: none">
+                                                <p>
+                                                    Estimating workload
+                                                    performance for a future
+                                                    processor is a daunting
+                                                    task, as traditional
+                                                    cycle-accurate simulation
+                                                    techniques used by
+                                                    architects are extremely
+                                                    slow. Workload sampling can
+                                                    significantly speed up this
+                                                    process, assuming the
+                                                    regions of interest (ROIs)
+                                                    or the representative
+                                                    sample found can be proven
+                                                    to accurately represent the
+                                                    behavior of the full
+                                                    workload. One standard way
+                                                    to validate the regions of
+                                                    interest is to measure the
+                                                    prediction error, which is
+                                                    the difference in the
+                                                    performance of the full
+                                                    workload and the predicted
+                                                    performance obtained using
+                                                    the representative.
+                                                    Performance is typically
+                                                    obtained using simulation.
+                                                    However, simulation of
+                                                    long-running workloads is
+                                                    infeasible, taking months
+                                                    to years. <br />In this
+                                                    work, we propose ROIperf, a
+                                                    framework that assesses the
+                                                    quality of workload
+                                                    sampling methodologies
+                                                    based on hardware
+                                                    performance counters by
+                                                    evaluating both the full
+                                                    and representative
+                                                    workloads using real
+                                                    hardware systems. ROIperf
+                                                    allows for the accurate
+                                                    validation of regions of
+                                                    interest by measuring the
+                                                    performance using real
+                                                    hardware instead of
+                                                    simulation. The work aims
+                                                    to present a methodology
+                                                    for long-running programs
+                                                    for which the prevailing
+                                                    simulation-based validation
+                                                    technique is not feasible.
+                                                    We demonstrate the efficacy
+                                                    of ROIperf by evaluating
+                                                    various sample selection
+                                                    methodologies across a wide
+                                                    range of workloads. We
+                                                    evaluate single-threaded
+                                                    and multi-threaded SPEC
+                                                    CPU2017 benchmarks as well
+                                                    as the NAS Parallel
+                                                    Benchmarks to test the
+                                                    proposed technique. ROIperf
+                                                    provides a significant
+                                                    speedup in validating
+                                                    regions selected for
+                                                    simulation, allowing for
+                                                    more widespread use of
+                                                    sample verification,
+                                                    especially for long-running
+                                                    workloads.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >10:50 AM - 11:10 AM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Paper]</span
+                                        >
+                                        <span style="font-style: italic"
+                                            >A functional validation framework
+                                            for the Unlimited Vector Extension
+                                        </span>
+                                        <br />Ana Beatriz Fernandes (University
+                                        of Coimbra), Nuno Neves, Luís Crespo,
+                                        Pedro Tomás, Nuno Roma (Universidade de
+                                        Lisboa), Gabriel Falcao (University of
+                                        Coimbra)
+                                        <div class="abstract">
+                                            <div class="collapse-opener" id="toggle-opener-3">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-3" style="display: none">
+                                                <p>
+                                                    The Unlimited Vector
+                                                    Extension (UVE) was already
+                                                    proposed to tackle the
+                                                    limitations of current
+                                                    state-of-the-art
+                                                    Vector-Length Agnostic
+                                                    (VLA) extensions. This is a
+                                                    new Instruction Set
+                                                    Architecture (ISA)
+                                                    extension that aims to
+                                                    reduce loop control and
+                                                    memory access indexation
+                                                    overheads, as well as
+                                                    memory access latency,
+                                                    joining data streaming and
+                                                    Single Instruction,
+                                                    Multiple Data (SIMD)
+                                                    processing. This ISA
+                                                    extension has already been
+                                                    validated in a
+                                                    cycle-accurate simulator,
+                                                    gem5, with a first
+                                                    implementation made on an
+                                                    out-of-order processor
+                                                    model, based on the ARM
+                                                    Cortex-A76. However, as
+                                                    compilation support is
+                                                    currently being developed,
+                                                    and several shortcomings
+                                                    and improvements on the
+                                                    existing specification have
+                                                    been identified, an
+                                                    increasing need to
+                                                    efficiently run and
+                                                    validate UVE code has
+                                                    surged. As such, support
+                                                    for UVE has been added to
+                                                    the Spike simulator. This
+                                                    is the golden reference
+                                                    functional RISC-V ISA
+                                                    simulator, written in C++.
+                                                    To achieve this, the
+                                                    simulator has been extended
+                                                    to accommodate for the
+                                                    necessary architecture
+                                                    changes, such as new
+                                                    registers that hold the
+                                                    data streams (streaming
+                                                    registers) together with a
+                                                    convenient Streaming Unit
+                                                    that emulates the
+                                                    configuration and
+                                                    manipulation of the
+                                                    streams. The result is a
+                                                    powerful tool that provides
+                                                    the possibility to validate
+                                                    all current features and
+                                                    improvements of UVE, along
+                                                    with some preliminary code
+                                                    obtained from the compiler
+                                                    currently under
+                                                    development.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >11:10 AM - 11:30 AM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Paper]
+                                        </span>
+                                        <span style="font-style: italic">
+                                            Analyzing and Improving Hardware
+                                            Modeling of Accel-Sim </span
+                                        ><br />Rodrigo Huerta, Mojtaba Abaie
+                                        Shoushtary, Antonio González
+                                        (Universitat Politècnica de Catalunya)
+                                        <br />
+                                        <div class="abstract">
+                                            <div class="collapse-opener" id="toggle-opener-4">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-4" style="display: none">
+                                                <p>
+                                                    GPU architectures have
+                                                    become popular for
+                                                    executing general-purpose
+                                                    programs. Their many-core
+                                                    architecture supports a
+                                                    large number of threads
+                                                    that run concurrently to
+                                                    hide the latency among
+                                                    dependent instructions. In
+                                                    modern GPU architectures,
+                                                    each SM/core is typically
+                                                    composed of several
+                                                    sub-cores, where each
+                                                    sub-core has its own
+                                                    independent pipeline.
+
+                                                    <br />Simulators are a key
+                                                    tool for investigating
+                                                    novel concepts in computer
+                                                    architecture. They must be
+                                                    performance-accurate and
+                                                    have a proper model related
+                                                    to the target hardware to
+                                                    explore the different
+                                                    bottlenecks properly.
+
+                                                    <br />This paper presents a
+                                                    wide analysis of different
+                                                    parts of Accel-sim, a
+                                                    popular GPGPU simulator,
+                                                    and some improvements of
+                                                    its model. First, we focus
+                                                    on the front-end and
+                                                    developed a more realistic
+                                                    model. Then, we analyze the
+                                                    way the result bus works
+                                                    and develop a more
+                                                    realistic one. Next, we
+                                                    describe the current memory
+                                                    pipeline model and propose
+                                                    a model for a more
+                                                    cost-effective design.
+                                                    Finally, we discuss other
+                                                    areas of improvement of the
+                                                    simulator.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >11:30 AM - 11:50 AM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Paper]</span
+                                        >
+                                        <span style="font-style: italic"
+                                            >Looking into the Black Box:
+                                            Monitoring Computer Architecture
+                                            Simulations in Real-Time with
+                                            AkitaRTM </span
+                                        ><br />
+                                        Ali Mosallaei (University of Michigan),
+                                        Katherine Isaacs (University of Utah),
+                                        Yifan Sun (William &amp; Mary)
+                                        <br />
+                                        <div class="abstract">
+                                            <div class="collapse-opener" id="toggle-opener-5">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-5" style="display: none">
+                                                <p>
+                                                    Computer architecture
+                                                    simulators, one essential
+                                                    tool for chip design
+                                                    concept proving, often
+                                                    provide limited
+                                                    interactivity. These
+                                                    simulations are often seen
+                                                    as black boxes by users, as
+                                                    they usually only display
+                                                    terminal logs during
+                                                    simulation or generate
+                                                    output files after
+                                                    completion. In this paper,
+                                                    we discuss the effective
+                                                    interactivity method in the
+                                                    context of computer
+                                                    hardware design.
+                                                    Particularly, we examine
+                                                    solutions that reveal the
+                                                    execution status and allow
+                                                    users to control the
+                                                    execution of a hardware
+                                                    simulator. To this end, we
+                                                    developed AkitaRTM, an
+                                                    interactive web-based tool
+                                                    for real-time monitoring of
+                                                    hardware simulations. We
+                                                    based the design on
+                                                    observations of
+                                                    inefficiencies in the
+                                                    architect’s workflow when
+                                                    using simulations. We
+                                                    reflected on our design
+                                                    process, particularly on
+                                                    the opportunities for a
+                                                    symbiotic relationship
+                                                    between interface design
+                                                    and its influence on
+                                                    architecture design.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >11:50 AM - 01:00 PM</span
+                                        >
+                                    </td>
+                                    <td
+                                        class="tg-0pky"
+                                        style="font-weight: bold"
+                                    >
+                                        Lunch
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td
+                                        class="tg-fymr"
+                                        style="font-weight: bold"
+                                    >
+                                        Session 2
+                                    </td>
+                                    <td style="font-weight: bold">
+                                        Using and Accelerating Simulators
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >01:00 PM - 01:20 PM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Paper]</span
+                                        >
+                                        <span style="font-style: italic"
+                                            >Revisiting Fairness and Throughput
+                                            Metrics for Cache-Partitioning
+                                            Policy Assessment: Insights and
+                                            Recommendations </span
+                                        ><br />Carlos Bilbao, Juan Carlos Saez,
+                                        Manuel Prieto-Matias (Complutense
+                                        University of Madrid)
+                                        <br />
+                                        <div class="abstract">
+                                            <div class="collapse-opener" id="toggle-opener-6">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-6" style="display: none">
+                                                <p>
+                                                    The widespread adoption of
+                                                    hardware cache-partitioning
+                                                    support in commercial
+                                                    processors, especially in
+                                                    the server market, has
+                                                    rekindled interest in
+                                                    research on
+                                                    cache-partitioning
+                                                    policies. Partitioning the
+                                                    Last-Level Cache (LLC),
+                                                    often shared among a number
+                                                    of cores in current
+                                                    multicore processor
+                                                    designs, can help alleviate
+                                                    the negative effects
+                                                    stemming from shared
+                                                    resource contention.
+                                                    Particularly,
+                                                    LLC-partitioning policies
+                                                    significantly influence the
+                                                    degree of throughput and
+                                                    fairness extracted from the
+                                                    system. Unfortunately,
+                                                    recent research on
+                                                    LLC-partitioning
+                                                    systematically employ
+                                                    different sets of metrics,
+                                                    making it difficult to
+                                                    distinguish between the
+                                                    most effective proposals in
+                                                    terms of both throughput
+                                                    and fairness.
+                                                    <br />
+                                                    This work conducts a
+                                                    simulation-based analysis
+                                                    to shed light on the effect
+                                                    that the choice of
+                                                    different popular metrics
+                                                    for throughput and fairness
+                                                    assessment has on the
+                                                    relative gains associated
+                                                    with LLC-partitioning
+                                                    policies. In light of the
+                                                    results, we also propose a
+                                                    set of recommendations on
+                                                    the utilization and
+                                                    selection criteria for
+                                                    throughput and fairness
+                                                    metrics. Our study reveals
+                                                    that the chosen metric
+                                                    indeed has a profound
+                                                    impact on the reported
+                                                    relative improvement for a
+                                                    partitioning policy, as
+                                                    each metric exhibits a very
+                                                    different improvement
+                                                    range, sometimes even
+                                                    duplicating the percentage
+                                                    increases with respect to
+                                                    other metrics. We find
+                                                    that, putting aside the
+                                                    differences in range,
+                                                    improvements reported by
+                                                    the analyzed throughput
+                                                    metrics show a strong
+                                                    correlation. In contrast,
+                                                    there exists a weaker
+                                                    correlation among many
+                                                    popular fairness metrics
+                                                    regarding their improvement
+                                                    trends.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >01:20 PM - 01:40 PM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Paper]</span
+                                        >
+                                        <span style="font-style: italic"
+                                            >Accelerating Computer Architecture
+                                            Simulation through Machine Learning </span
+                                        ><br />Wajid Ali (UET Lahore), Ayaz
+                                        Akram (UC Davis)<br />
+                                        <!-- <br> -->
+                                        <div class="abstract">
+                                            <div class="collapse-opener" id="toggle-opener-7">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-7" style="display: none">
+                                                <p>
+                                                    This paper presents our
+                                                    approach to accelerating
+                                                    computer architecture
+                                                    simulation by leveraging
+                                                    machine learning
+                                                    techniques. Traditional
+                                                    computer architecture
+                                                    simulations are
+                                                    time-consuming, making it
+                                                    challenging to explore
+                                                    different design choices
+                                                    efficiently. Our proposed
+                                                    model utilizes a
+                                                    combination of application
+                                                    features and
+                                                    micro-architectural
+                                                    features to predict the
+                                                    performance of an
+                                                    application. These features
+                                                    are derived from
+                                                    simulations of a small
+                                                    portion of the application.
+                                                    We demonstrate the
+                                                    effectiveness of our
+                                                    approach by building and
+                                                    evaluating a machine
+                                                    learning model that offers
+                                                    significant speedup in
+                                                    architectural exploration.
+                                                    This model demonstrates the
+                                                    ability to predict IPC
+                                                    values for the testing data
+                                                    with a root mean square
+                                                    error of less than 0.1.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >01:40 PM - 2:00 PM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Paper]</span
+                                        >
+                                        <span style="font-style: italic">
+                                            TraceSim: a Lightweight Simulator
+                                            for Large-Scale DNN Workloads on
+                                            Multi-GPU Systems </span
+                                        ><br />Ying Li (William & Mary), Yuhui
+                                        Bao (Northeastern University), Pranav
+                                        Vaid (Stanford University), Gongyu Wang
+                                        (Lightmatter), Adwait Jog (University
+                                        of Virginia), Darius Bunandar, Ajay
+                                        Joshi (Lightmatter), Yifan Sun (William
+                                        & Mary)
+                                        <br />
+                                        <div class="abstract">
+                                            <div class="collapse-opener" id="toggle-opener-8">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-8" style="display: none">
+                                                <p>
+                                                    Deep Neural Networks (DNNs)
+                                                    have become increasingly
+                                                    capable of tasks ranging
+                                                    from image recognition to
+                                                    human-language generation,
+                                                    predominantly powered by
+                                                    GPUs. With the growing
+                                                    DNNs’ complexity and the
+                                                    datasets’ size, training
+                                                    DNNs with a large number of
+                                                    GPUs is turning into a
+                                                    prevalent strategy.
+                                                    However, when designing and
+                                                    deploying such systems,
+                                                    designers usually rely on
+                                                    testing configurations on
+                                                    hardware, which is both
+                                                    costly and inflexible.
+                                                    While an alternative
+                                                    solution is to test on GPU
+                                                    simulators, they are often
+                                                    too time-consuming.
+                                                    Addressing these
+                                                    challenges, we present
+                                                    TraceSim. TraceSim relies
+                                                    on kernel-level execution
+                                                    traces collected from
+                                                    PyTorch execution and can
+                                                    simulate new hardware
+                                                    configurations with
+                                                    extremely high performance
+                                                    and reasonable accuracy.
+                                                    TraceSim is expected to
+                                                    serve as an essential tool
+                                                    in evaluating the
+                                                    system-level design of
+                                                    large-scale DNN training,
+                                                    especially for massive DNN
+                                                    models.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >02:00 PM - 03:00 PM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Panel discussion]</span
+                                        >
+                                        <br />Ajay Joshi (Boston University),
+                                        Nandita Vijaykumar (University of
+                                        Toronto), Kaustubh Shivdikar
+                                        (Northeastern University), Wenjie Xiong
+                                        (Virginia Tech)
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >03:00 PM - 03:30 PM</span
+                                        >
+                                    </td>
+                                    <td
+                                        class="tg-0pky"
+                                        style="font-weight: bold"
+                                    >
+                                        Coffee Break
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #000">
+                                    <td class="tg-fymr">
+                                        <span style="font-weight: bold"
+                                            >03:30 PM - 04:30 PM</span
+                                        >
+                                    </td>
+                                    <td class="tg-0pky">
+                                        <span style="font-weight: bold"
+                                            >[Keynote]</span
+                                        >
+                                        <span style="font-style: italic"
+                                            >RISC-V GPU modeling and
+                                            simulation</span
+                                        >
+                                        <br />Hyesoon Kim, Georgia Institute of
+                                        Technology
+                                        <a href="#keynote2">[Link]</a>
+                                        <br />
+                                        <div class="abstract">
+                                            <div class="collapse-opener" id="toggle-opener-9">
+                                                <span class="collapse-arrow">▶</span> Abstract
+                                            </div>
+                                            <div class="collapse-content abstract-content" id="abstract-content-9" style="display: none">
+                                                <p>
+                                                    GPUs have emerged as the
+                                                    dominant architecture for
+                                                    running machine learning
+                                                    applications, while RISC-V
+                                                    has taken the lead in open
+                                                    source hardware and
+                                                    software initiatives.
+                                                    Within our research group,
+                                                    we've introduced an open
+                                                    source project called
+                                                    Vortex, aimed at supporting
+                                                    GPGPU functionality through
+                                                    RISC-V ISA extensions. The
+                                                    Vortex platform offers
+                                                    comprehensive suite of open
+                                                    source tools, including
+                                                    compilers, drivers, and
+                                                    runtime software, all
+                                                    designed to facilitate
+                                                    research in GPU
+                                                    architectures, compilers,
+                                                    and runtime systems. In
+                                                    this presentation, I will
+                                                    present our efforts in
+                                                    modeling both RISC-V GPU
+                                                    software and hardware, and
+                                                    also future directions.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Keynotes</h2>
+    </div>
+    <div class="content">
+        <div
+            style="float: left; margin-right: 10px"
+            id="keynote1"
+        >
+            <img
+                src="/John-kim-cams2023.jpeg"
+                width="160"
+                height="180"
+            />
+        </div>
+        <b>Speaker:</b> John Kim, KAIST<br />
+        <b
+            >Title: Putting Trust in Simulation-based
+            Research </b
+        ><br /><br />
+        <p align="justify">
+            <b>Abstract:</b> As a computer architect,
+            simulators are often our best friend but at
+            the same time, they can be our worst enemy.
+            In this talk, I will present some of the
+            common limitations and challenges of using
+            simulations and how simulations (and
+            modeling) can be your friend. At the same
+            time, I will present steps we should take
+            to ensure simulators do not become our
+            worst enemy. In comparison to simulation
+            data, real systems (and measurements) can
+            provide more realistic data but I will also
+            argue how that can be misleading as well. I
+            will use interconnection network
+            simulations and evaluations as a case study
+            to describe the challenges as well as
+            potential opportunities.
+        </p>
+        <p align="justify">
+            <b>Bio:</b> John Kim is currently a full
+            professor in the School of Electrical
+            Engineering at KAIST (Korea Advanced
+            Institute of Science and Technology) in
+            Daejeon, Korea. John Kim received his Ph.D.
+            from Stanford University and B.S/M.Eng from
+            Cornell University. His research interests
+            include computer architecture,
+            interconnection networks, security, and
+            mobile systems. He has received a Google
+            Faculty Research Award, Microsoft-Asia New
+            Faculty Fellowship, and is listed in the
+            Hall of Fame for ISCA, MICRO, and HPCA. He
+            has also worked on the design of several
+            microprocessors at Intel and at Motorola.
+        </p>
+        <br />
+
+        <br />
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Call for Papers</h2>
+        <p>
+            The workshop invites submissions of original work in 
+            the form of full papers (up to 6 pages, reference not 
+            included) covering all aspects of computer architecture 
+            modeling and simulation. Submissions will be peer-reviewed, 
+            and accepted papers will be included in the workshop proceedings.
+        </p>
+
+        <!-- <p>
+            Authors are invited to submit original research
+            papers in the general area of computer
+            architecture modeling and simulation. Topics
+            include, but are not limited to:
+        </p> -->
+
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Important Dates</h2>
+        <ul>
+            <li>
+                <!-- Papers due:
+                <del>TBD, 2024 </del> TBD,
+                2024 (Anywhere on Earth) -->
+                Papers due: August 16, 2024 (Anywhere on Earth)
+            </li>
+            <li>Author Notification: September 15, 2024</li>
+            <!-- <li>Final paper due: TBD, 2024 </li> -->
+        </ul>
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Submission Guidelines</h2>
+        <p>
+            Full paper submissions must be in PDF format for US
+            letter-size or A4 paper. They must not exceed 6
+            pages (excluding unlimited references) in standard
+            ACM two-column conference format (review mode, with
+            page numbers and both 9 or 10pt can be used). More
+            concise papers with ideas clearly expressed are
+            also welcomed. Authors can select if they want to
+            reveal their identity in the submission. Templates
+            for ACM format are available for Microsoft Word and
+            LaTeX at this link.
+            <a
+                href="https://www.acm.org/publications/proceedings-template"
+            >
+                https://www.acm.org/publications/proceedings-template</a
+            >
+        </p>
+        <p>
+            We do not put the paper in the ACM or IEEE digital
+            libraries. Therefore, the papers submitted to the
+            event can be submitted to other venues without
+            restrictions.
+        </p>
+        <p>
+            At least one author of accepted papers is expected
+            to present in person during the event. We
+            understand the travel difficulty of the
+            post-pandemia era. In extreme cases, we will allow
+            remote or pre-recorded presentations.
+        </p>
+        <p>
+            Submission Site:
+            <a
+                href="https://easychair.org/conferences/?conf=cams2023"
+                >CAMS 2024</a
+            >
+        </p>
+    </div>
+</div>
+
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Workshop Organizers</h2>
+        <table style="width: 100%">
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <col style="width: 33%" />
+            <tr>
+                <td>
+                    <img
+                        src="yifan.jpg"
+                        style="border-radius: 10px"
+                        alt=""
+                        data-position="center center"
+                        width="200"
+                    />
+                </td>
+                <td>
+                    <img
+                        src="tcarlson.jpeg"
+                        style="border-radius: 10px"
+                        alt=""
+                        data-position="center center"
+                        width="200"
+                    />
+                </td>
+                <td>
+                    <img
+                        src="sabila_profile.jpeg"
+                        style="border-radius: 10px"
+                        alt=""
+                        data-position="center center"
+                        width="200"
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a
+                        href="https://syifan.github.io/"
+                        target="&ldquo;blank&rdquo;"
+                        >Yifan Sun</a
+                    >
+                </td>
+                <td>
+                    <a
+                        href="https://www.comp.nus.edu.sg/~tcarlson/"
+                        target="&ldquo;blank&rdquo;"
+                        >Trevor E. Carlson</a
+                    >
+                </td>
+                <td>
+                    <a
+                        href=""
+                        target="&ldquo;blank&rdquo;"
+                        >Sabila Al Jannat</a
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>Chair</td>
+                <td>Chair</td>
+                <td>Web Chair</td>
+            </tr>
+            <tr>
+                <td>William &amp; Mary</td>
+                <td>National University of Singapore</td>
+                <td>William &amp; Mary</td>
+            </tr>
+        </table>
+        <div>
+            Please contact the organizers if you have any questions.
+        </div>
+    </div>
+</div>
+
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Program Committee</h2>
+        <ul>
+            <li>Ying Li (William & Mary)</li>
+            <li>
+                Changxi Liu (National University of Singapore)
+            </li>
+        </ul>    
+    </div>
+</div>
+
+<style lang="postcss">
+    #schedule {
+        @apply w-full;
+        @apply border-t-2 border-b-2 border-primary;
+    }
+
+    #schedule > tr {
+        @apply border-b border-primary;
+    }
+
+    #schedule > tr > td:first-child {
+        @apply w-3/12;
+        /* @apply text-right; */
+        @apply font-bold;
+    }
+
+    #schedule > tr > td {
+        @apply py-2 px-4;
+        @apply align-top;
+    }
+
+    #schedule > tr.sub-schedule > td {
+        @apply pl-10;
+        @apply font-normal;
+    }
+
+    #schedule > tr.sub-schedule > td > span.affliation {
+        @apply text-gray-500;
+        @apply font-normal text-xs;
+    }
+
+    .button {
+        @apply inline-block;
+        @apply px-4 py-2;
+        @apply bg-primary;
+        @apply text-white font-bold;
+        @apply rounded-md;
+        @apply transition-all;
+        /* @apply hover:bg-secondary; */
+        @apply no-underline text-lg;
+        @apply mt-4;
+    }
+
+    .abstract {
+        margin-bottom: 1em;
+    }
+
+    .collapse-opener {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .collapse-arrow {
+        margin-right: 0.5em;
+    }
+
+    .collapse-content {
+        display: none;
+    }
+
+    .collapse-content.show {
+        display: block;
+    }
+
+</style>
