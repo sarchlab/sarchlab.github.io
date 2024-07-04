@@ -37,7 +37,6 @@
         CAMS24 - The 2nd Workshop on Computer Architecture Modeling and
         Simulation
     </title>
-    <link rel="icon" href="/akita_logo.png" />
 </svelte:head>
 
 <div class="block">
