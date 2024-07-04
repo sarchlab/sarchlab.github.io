@@ -212,7 +212,7 @@
                 <tr>
                     <td>
                         <img
-                            src="yifan.jpg"
+                            src="yifan_profile.png"
                             style="border-radius: 10px"
                             alt=""
                             data-position="center center"

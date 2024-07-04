@@ -118,9 +118,7 @@
                 <img src={logoImg} alt="logo" class="logo" />
             </a>
         {:else if logoText != ''}
-            <a href={logoLink}>
-                <span class="logo">{logoText}</span>
-            </a>
+            <a href={logoLink} class="logo">{logoText}</a>
         {/if}
 
         <button
