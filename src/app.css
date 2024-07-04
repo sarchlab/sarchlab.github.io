@@ -95,10 +95,12 @@
 
     h1 {
         @apply text-4xl;
+        @apply text-primary;
     }
 
     h2 {
         @apply text-3xl;
+        @apply text-primary;
     }
 
     h3 {
@@ -145,5 +147,37 @@
         @apply w-full max-w-screen-lg;
         @apply px-4 py-10 md:px-20 md:py-20;
         @apply mx-auto;
+    }
+
+    table {
+        width: 100%;
+        @apply border-collapse;
+        @apply mt-4 mb-4;
+    }
+
+    table tr {
+        @apply border-t border-primary;
+    }
+
+    table tr:first-child {
+        @apply border-t-2 border-primary;
+    }
+
+    table tr:last-child {
+        @apply border-b-2 border-primary;
+    }
+
+    table tr:nth-child(2n) {
+        @apply bg-muted;
+    }
+
+    table th {
+        font-weight: bold;
+        background-color: #f3f3f3;
+    }
+
+    table th,
+    table td {
+        @apply pt-3 pb-3;
     }
 }
