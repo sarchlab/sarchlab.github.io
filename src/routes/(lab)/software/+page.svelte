@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="two-col-left flex flex-wrap">
-    <Software img="akita_logo.png" title="Akita" titleLink="/akita">
+    <Software img="/akita_logo.png" title="Akita" titleLink="/akita">
         <a slot="link" href="https://github.com/sarchlab/akita">
             https://github.com/sarchlab/akita
         </a>
@@ -23,7 +23,7 @@
         </div>
     </Software>
 
-    <Software img="mgpusim_logo.png" title="MGPUSim" titleLink="/akita">
+    <Software img="/mgpusim_logo.png" title="MGPUSim" titleLink="/akita">
         <a slot="link" href="https://github.com/sarchlab/mgpusim">
             https://github.com/sarchlab/mgpusim
         </a>
