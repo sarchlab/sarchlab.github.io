@@ -1,4 +1,5 @@
 <script lang="js">
+    import { onMount } from 'svelte'
     function unfold(event) {
         const target = event.currentTarget
         const iframe = target.nextElementSibling
@@ -10,11 +11,31 @@
             target.firstChild.src = '/caret-right-solid.svg'
         }
     }
+
+    onMount(() => {
+        document.querySelectorAll('.collapse-opener').forEach((opener) => {
+            opener.addEventListener('click', () => {
+                const arrow = opener.querySelector('.collapse-arrow')
+                const abstractContent = document.getElementById(
+                    opener.id.replace('toggle-opener', 'abstract-content')
+                )
+
+                if (abstractContent.style.display === 'none') {
+                    abstractContent.style.display = 'block'
+                    arrow.textContent = '▼'
+                } else {
+                    abstractContent.style.display = 'none'
+                    arrow.textContent = '▶'
+                }
+            })
+        })
+    })
 </script>
 
 <svelte:head>
     <title>
-        The First Lightweight Community Workshop on Akita and MGPUSim (Akita24)
+        CAMS24 - The 2nd Workshop on Computer Architecture Modeling and
+        Simulation
     </title>
     <link rel="icon" href="/akita_logo.png" />
 </svelte:head>
@@ -24,38 +45,94 @@
         <div
             class="flex flex-col items-center gap-5 md:py-10 md:flex-row md:gap-20"
         >
-            <img src="/akita_logo.png" alt="The Akita logo" class="w-40" />
+            <!-- <img src="akita_logo.png" alt="The Akita logo" class="w-40" /> -->
             <div>
                 <h1 class="text-3xl font-bold mb-3">
-                    The First Lightweight Community Workshop on Akita and
-                    MGPUSim
+                    <span class="text-6xl font-thin text-muted-foreground">
+                        The 2nd Workshop on
+                    </span>
+                    <br />
+                    <span class="text-4xl">
+                        Computer Architecture Modeling and Simulation
+                    </span><br />
+                    (CAMS 2024)
                 </h1>
                 <div class="text-lg">
-                    <b>Date:</b> March 13, 2024
+                    <b>Date:</b> November 2nd, 2024
                     <br />
-                    <b>Time:</b> 10:00am - 12:00pm (US Eastern Time)
+                    <b>Time:</b> Saturday Morning
                     <br />
                     <b>Location:</b>
                     <a
-                        href="https://cwm.zoom.us/j/91386326093?pwd=Yk1EY2lCTEtwbGhrWTErYUltS3B2Zz09"
-                    >
-                        Virtual on Zoom
-                    </a>
+                        href="https://www.google.com/maps/place/AT%26T+Hotel+and+Conference+Center/@30.2816295,-97.7404408,15z/data=!4m2!3m1!1s0x0:0x7ef52b1ad3321879?sa=X&ved=1t:2428&ictx=111"
+                        >AT&T Hotel and Conference Center</a
+                    >, Austin, Texas
                     <br />
-                    <a href="/akita/akita24/zoom">
-                        Here is the full Zoom invitation
-                    </a>
+                    <b>Room:</b> TBD
                 </div>
-                <a href="https://forms.gle/WKaeWkEubBLfYQeB7" class="button">
-                    RSVP Here
-                </a>
+
                 <p class="text-baseline mt-4">
-                    Join our upcoming Akita Workshop, a dynamic forum for users
-                    to present their projects, discuss challenges, and
-                    articulate requirements. It also serves as a direct
-                    communication channel between developers and users,
-                    enhancing the Akita community experience.
+                    The goal of the workshop is to provide a forum for
+                    researchers and practitioners to exchange ideas and discuss
+                    the latest advances in the field of computer architecture
+                    modeling ans simulation. The focus on modeling and
+                    simulation techniques is of vital importance to the ongoing
+                    advancements in microarchitecture, as these methods are
+                    essential tools for improving system performance,
+                    efficiency, and reliability.
                 </p>
+
+                <p class="text-baseline mt-4">
+                    The workshop will cover various aspects of computer
+                    architecture modeling and simulation, including but not
+                    limited to:
+                </p>
+
+                <ul class="ml-6 list-disc">
+                    <li>
+                        <b>Simulator Development:</b> Advances in design, theory,
+                        implementation, and integration of simulators.
+                    </li>
+                    <li>
+                        <b>Performance Modeling:</b> Strategies for prediction,
+                        validation, and the impact of architectural features.
+                    </li>
+                    <li>
+                        <b>Power Modeling and Simulation:</b> Methods for power-efficient
+                        design and power-performance trade-offs.
+                    </li>
+                    <li>
+                        <b>Tools and Studies Survey:</b> Review and compare existing
+                        simulation tools and applications.
+                    </li>
+                    <li>
+                        <b>Scalable Simulation Techniques:</b> Approaches for improving
+                        simulation scalability and efficiency.
+                    </li>
+                    <li>
+                        <b
+                            >Modeling and Simulation for Unconventional
+                            Architectures:</b
+                        > Exploration of unique challenges and approaches for emerging
+                        and unconventional architectures.
+                    </li>
+                    <li>
+                        <b>Hardware-in-the-loop Simulation:</b> Performance modeling
+                        and simulator validation with hardware.
+                    </li>
+                    <li>
+                        <b>Modeling for Machine Learning (Sim4AI):</b> Architectural
+                        considerations and models for hardware accelerators.
+                    </li>
+                    <li>
+                        <b>Validation Techniques:</b> Approaches for validating
+                        the accuracy of simulation models.
+                    </li>
+                    <li>
+                        <b>Human-centered simulation methods:</b> Analysis, Visualization,
+                        Monitoring methods.
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -63,143 +140,147 @@
 
 <div class="block">
     <div class="block-content">
-        <h2 class="text-theme font-bold mb-6">Schedule</h2>
-        <p class="mb-2">All time in US Eastern time.</p>
-        <table id="schedule" class="w-full">
-            <tr>
-                <td>10:00 am -10:30 am</td>
-                <td>
-                    Report on Akita/MGPUSim Development and Roadmap <br />
-                    Yifan Sun <span class="affiliation">(William & Mary)</span>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td colspan="2">
-                    <div>
-                        <button
-                            class="flex items-center gap-1"
-                            on:click={unfold}
-                        >
-                            <img
-                                class="inline-block w-4 h-4"
-                                src="/caret-right-solid.svg"
-                                alt="right arrow"
-                            />
-                            Recording
-                        </button>
-                        <div style="display:none">
-                            <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/Pv94dKiAm_k?si=4JDMqFOR6xqhqB-0"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen
-                            />
-                        </div>
-                    </div>
-                </td>
-            </tr>
+        <h2 class="text-theme font-bold mb-6">Call for Papers</h2>
+        <p>
+            The workshop invites submissions of original work in the form of
+            full papers (up to 6 pages, reference not included) covering all
+            aspects of computer architecture modeling and simulation.
+            Submissions will be peer-reviewed, and accepted papers will be
+            included in the workshop proceedings.
+        </p>
 
-            <tr>
-                <td>10:30 am -11:30 am</td>
-                <td>Lightning Talks </td>
-            </tr>
-
-            <tr class="sub-schedule">
-                <td>10:30 am</td>
-                <td>
-                    Ali Mosallaei
-                    <span class="affliation"> (University of Michigan) </span>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>10:38 am</td>
-                <td>
-                    Yueqi Wang
-                    <span class="affliation">(University of Pittsburg) </span>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>10:46 am</td>
-                <td>
-                    Yuhui Bao
-                    <span class="affliation"> (Northeastern University) </span>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>10:54 am</td>
-                <td>
-                    Hang Yan / Shaoyu Wang
-                    <span class="affliation">
-                        (Huazhong University of Sci. and Tech.)
-                    </span>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>11:02 am</td>
-                <td>
-                    Amel Fatima <span class="affliation">
-                        (University of Virginia)
-                    </span></td
-                >
-            </tr>
-            <tr class="sub-schedule">
-                <td>11:10 am</td>
-                <td
-                    >Nicolas Meseguer <span class="affliation">
-                        (University of Murcia)</span
-                    ></td
-                >
-            </tr>
-            <tr class="sub-schedule">
-                <td>11:18 am</td>
-                <td
-                    >Changxi Liu <span class="affliation">
-                        (National University of Singapore)</span
-                    ></td
-                >
-            </tr>
-
-            <tr>
-                <td>11:30 am - 12:30 pm</td>
-                <td>Round-Table Discussion</td>
-            </tr>
-
-            <tr>
-                <td>12:30 pm and on</td>
-                <td>Free Chat</td>
-            </tr>
-        </table>
+        <!-- <p>
+            Authors are invited to submit original research
+            papers in the general area of computer
+            architecture modeling and simulation. Topics
+            include, but are not limited to:
+        </p> -->
     </div>
 </div>
 
 <div class="block">
     <div class="block-content">
-        <h2 class="text-theme font-bold mb-6">Organizer</h2>
+        <h2 class="text-theme font-bold mb-6">Important Dates</h2>
         <ul>
-            <li>
-                <a href="https://sarchlab.org/syifan"> Yifan Sun </a>
-                <span class="affiliation">(William & Mary)</span>
-            </li>
-            <li>
-                <a href="https://kisaacs.github.io/">Katherine E Isaacs</a>
-                <span class="affiliation">(University of Utah)</span>
-            </li>
+            <li><b>Papers Due:</b> August 16, 2024 (Anywhere on Earth)</li>
+            <li><b>Author Notification:</b> September 15, 2024</li>
         </ul>
     </div>
 </div>
 
 <div class="block">
     <div class="block-content">
-        <h2 class="text-theme font-bold mb-6">A Survey on Akita</h2>
+        <h2 class="text-theme font-bold mb-6">Submission Guidelines</h2>
         <p>
-            If you have used Akita or MGPUSim before, please consider
-            submitting a brief survey on your experience. Your opinion will
-            help us build better tools for the community.
+            Full paper submissions must be in PDF format for US letter-size or
+            A4 paper. They must not exceed 6 pages (excluding unlimited
+            references) in standard ACM two-column conference format (review
+            mode, with page numbers and both 9 or 10pt can be used). More
+            concise papers with ideas clearly expressed are also welcomed.
+            Authors can select if they want to reveal their identity in the
+            submission. Templates for ACM format are available for Microsoft
+            Word and LaTeX at this link.
+            <a href="https://www.acm.org/publications/proceedings-template">
+                https://www.acm.org/publications/proceedings-template</a
+            >
         </p>
-        <a class="button" href="https://bit.ly/akita-survey"> Start Survey </a>
+        <p>
+            We do not put the paper in the ACM or IEEE digital libraries.
+            Therefore, the papers submitted to the event can be submitted to
+            other venues without restrictions.
+        </p>
+        <p>
+            At least one author of accepted papers is expected to present in
+            person during the event. We understand the travel difficulty of the
+            post-pandemia era. In extreme cases, we will allow remote or
+            pre-recorded presentations.
+        </p>
+        <p><b>Submission Site:</b> TBA</p>
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Workshop Organizers</h2>
+        <table style="width: 100%">
+            <colgroup>
+                <col style="width: 33%" />
+                <col style="width: 33%" />
+                <col style="width: 33%" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>
+                        <img
+                            src="yifan_profile.png"
+                            style="border-radius: 10px"
+                            alt=""
+                            data-position="center center"
+                            width="200"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="tcarlson.jpeg"
+                            style="border-radius: 10px"
+                            alt=""
+                            data-position="center center"
+                            width="200"
+                        />
+                    </td>
+                    <td>
+                        <img
+                            src="sabila_profile.jpeg"
+                            style="border-radius: 10px"
+                            alt=""
+                            data-position="center center"
+                            width="200"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a
+                            href="https://syifan.github.io/"
+                            target="&ldquo;blank&rdquo;">Yifan Sun</a
+                        >
+                    </td>
+                    <td>
+                        <a
+                            href="https://www.comp.nus.edu.sg/~tcarlson/"
+                            target="&ldquo;blank&rdquo;">Trevor E. Carlson</a
+                        >
+                    </td>
+                    <td>
+                        <a href="" target="&ldquo;blank&rdquo;"
+                            >Sabila Al Jannat</a
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chair</td>
+                    <td>Chair</td>
+                    <td>Web Chair</td>
+                </tr>
+                <tr>
+                    <td>William &amp; Mary</td>
+                    <td>National University of Singapore</td>
+                    <td>William &amp; Mary</td>
+                </tr>
+            </tbody>
+        </table>
+        <div>Please contact the organizers if you have any questions.</div>
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Program Committee</h2>
+        To be announced.
+        <!-- <ul>
+            <li>Ying Li (William & Mary)</li>
+            <li>Changxi Liu (National University of Singapore)</li>
+        </ul> -->
     </div>
 </div>
 
@@ -241,8 +322,30 @@
         @apply text-white font-bold;
         @apply rounded-md;
         @apply transition-all;
-        @apply hover:bg-secondary;
+        /* @apply hover:bg-secondary; */
         @apply no-underline text-lg;
         @apply mt-4;
+    }
+
+    .abstract {
+        margin-bottom: 1em;
+    }
+
+    .collapse-opener {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .collapse-arrow {
+        margin-right: 0.5em;
+    }
+
+    .collapse-content {
+        display: none;
+    }
+
+    .collapse-content.show {
+        display: block;
     }
 </style>
