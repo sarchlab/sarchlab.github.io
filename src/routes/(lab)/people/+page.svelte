@@ -13,7 +13,7 @@
     <div class="person-container">
         <Member
             name="Yifan Sun"
-            profile_img="yifan_profile.png"
+            profile_img="/yifan_profile.png"
             link="/syifan"
         >
             <div><b>Position:</b> Assistant Professor</div>
@@ -26,7 +26,7 @@
     <div class="person-container">
         <Member
             name="Ying Li"
-            profile_img="ying_profile.png"
+            profile_img="/ying_profile.png"
             link="https://yingliphd.com/#about_me"
         >
             <div><b>Position:</b> Ph.D. Candidate</div>
@@ -35,7 +35,7 @@
 
         <Member
             name="Sabila Al Jannat"
-            profile_img="sabila_profile.jpeg"
+            profile_img="/sabila_profile.jpeg"
             link="https://www.linkedin.com/in/sabila-al-jannat-69826718b"
         >
             <div><b>Position:</b> Ph.D. Candidate</div>
@@ -44,7 +44,7 @@
 
         <Member
             name="Daoxuan Xu"
-            profile_img="daoxuan.jpg"
+            profile_img="/daoxuan.jpg"
             link="https://www.linkedin.com/in/%E9%81%93%E7%85%8A-%E5%BE%90-23223323b/"
         >
             <div><b>Position:</b> Ph.D. Student</div>
@@ -56,7 +56,7 @@
     <div class="person-container">
         <Member
             name="Zhuoyan Zheng"
-            profile_img="zhuoyan_profile.jpg"
+            profile_img="/zhuoyan_profile.jpg"
             link="https://www.linkedin.com/in/%E5%8D%93%E5%A6%8D-%E9%83%91-339495224/"
         >
             <div><b>Position:</b> Undergraduate Researcher</div>
@@ -65,19 +65,19 @@
 
         <Member
             name="Yexi Zheng"
-            profile_img="yexi_zheng.jpg"
+            profile_img="/yexi_zheng.jpg"
             link="https://www.linkedin.com/in/yexi-zheng-201894225/"
         >
             <div><b>Position:</b> Undergraduate Researcher</div>
             <div><b>Email:</b> yzheng12@email.wm.edu</div>
         </Member>
 
-        <Member name="Aibo Li" profile_img="aibo.jpg" link="">
+        <Member name="Aibo Li" profile_img="/aibo.jpg" link="">
             <div><b>Position:</b> Undergraduate Researcher</div>
             <div><b>Email:</b> ali14@wm.edu</div>
         </Member>
 
-        <Member name="Mengyang He" profile_img="mengyang.jpeg" link="">
+        <Member name="Mengyang He" profile_img="/mengyang.jpeg" link="">
             <div><b>Position:</b> Undergraduate Researcher</div>
             <div><b>Email:</b> mhe03@wm.edu</div>
         </Member>
