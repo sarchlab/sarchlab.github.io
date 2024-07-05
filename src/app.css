@@ -156,7 +156,6 @@
     }
 
     table tr {
-        @apply border-t border-primary;
     }
 
     table tr:first-child {
@@ -178,6 +177,6 @@
 
     table th,
     table td {
-        @apply pt-3 pb-3;
+        @apply pt-3 pb-3 pl-4 pr-4;
     }
 }
