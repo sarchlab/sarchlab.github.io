@@ -71,8 +71,13 @@
                 />
                 <a
                     href="https://www.xiaohongshu.com/user/profile/61da3d750000000010004c3e"
-                    >小红书</a
                 >
+                    小红书
+                </a>
+            </div>
+            <div class="entry">
+                <img class="small-icon" src="/bilibili.svg" alt="bilibili" />
+                <a href="https://space.bilibili.com/1914889792"> 哔哩哔哩 </a>
             </div>
         </div>
     </div>
