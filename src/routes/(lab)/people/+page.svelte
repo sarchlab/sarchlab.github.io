@@ -94,34 +94,70 @@
     </div>
 
     <h2 class="sec-title">External Research Interns</h2>
-    <ul class="people-list">
-        <li>
-            <b>Shaoyu Wang</b> (Huazhong University of Science and Technology)
-        </li>
-        <li>
-            <b>Gong Chen</b> (Huazhong University of Science and Technology)
-        </li>
-        <li><b>Yuchao Su</b> (Northeastern Universty)</li>
-        <li><b>Bei Pei</b> (UCSD)</li>
-        <li><b>Bohan Cui</b> (Nanjing University)</li>
-        <li><b>Shiyuan Li</b> (Oregon State University)</li>
-    </ul>
+    <div class="person-container lightweight">
+        <Member name="Shaoyu Wang" lightweight>
+            <div>2022/3 -</div>
+            <div>Huazhong University of Science and Technology</div>
+        </Member>
+
+        <Member name="Chen Gong" lightweight>
+            <div>2023/4 -</div>
+            <div>Huazhong University of Science and Technology</div>
+        </Member>
+
+        <Member name="Bohan Cui" lightweight>
+            <div>2023/7 -</div>
+            <div>Nanjing University</div>
+        </Member>
+
+        <Member name="Yuchao Su" lightweight>
+            <div>2023/8 -</div>
+            <div>Northeastern University</div>
+        </Member>
+
+        <Member name="Bei Pei" lightweight>
+            <div>2023/8 -</div>
+            <div>University of California, San Diego</div>
+        </Member>
+
+        <Member name="Shiyuan Li" lightweight>
+            <div>2024/7 -</div>
+            <div>Oregon State University</div>
+        </Member>
+    </div>
 
     <h2 class="sec-title">Past Members</h2>
-    <ul class="people-list">
-        <li>
-            <b>Yan Hang</b> (Huazhong University of Science and Technology)
-            <br />
-            <div>
-                Yan led the development and evaluation of the work Vis4Mesh.
-                Creating the paper <i
+    <div class="person-container">
+        <Member name="Yan Hang" lightweight>
+            <div>Research Intern</div>
+            <div>2021/5 - 2023/8</div>
+            <div>Huazhong University of Science and Technology</div>
+            <div class="member-description">
+                Yan led the development Vis4Mesh and published the paper <i
                     >Visual Exploratory Analysis for Designing Large-Scale
                     Network-on-Chip Architectures: A Domain Expert-Led Design
                     Study</i
                 > as a co-first-author.
             </div>
+        </Member>
+
+        <Member name="Ali Mosallaei" lightweight>
+            <div>Research Intern</div>
+            <div>2021/5 - 2023/8</div>
+            <div>University of Michigan</div>
+            <div class="member-description">
+                Ali initiated project Yuzawa, laying out the technical
+                foundation. Ali have also worked on designing, developing, and
+                evaluating AkitaRTM.
+            </div>
+        </Member>
+    </div>
+    <!-- <ul class="people-list">
+        <li>
+            <b>Yan Hang</b> (Huazhong University of Science and Technology)
+            <br />
         </li>
-    </ul>
+    </ul> -->
 </div>
 <div class="two-col-right">
     <News />
@@ -133,11 +169,11 @@
         @apply lg:grid-cols-2 lg:gap-4;
     }
 
-    .people-list {
-        @apply list-disc ml-4 text-lg;
+    .person-container.lightweight {
+        @apply lg:grid-cols-3 lg:gap-0;
     }
 
-    .people-list li div {
+    .member-description {
         @apply text-sm text-muted-foreground leading-4;
     }
 </style>

@@ -2,9 +2,10 @@
     export let name = ''
     export let profile_img = ''
     export let link = ''
+    export let lightweight = false
 </script>
 
-<div class="person-card">
+<div class="person-card" class:lightweight>
     {#if profile_img !== ''}
         <img class="profile-img" src={profile_img} alt="Profile of {name}" />
     {:else}
@@ -18,6 +19,7 @@
             {/if}
         </div>
     {/if}
+
     <div class="person-info">
         {#if link !== ''}
             <a href={link}>
@@ -36,6 +38,11 @@
         @apply border-l-2 border-muted;
         @apply p-3 my-4;
         @apply text-left;
+        @apply text-sm;
+    }
+
+    .person-card.lightweight {
+        @apply p-0 my-1 pl-3;
     }
 
     .person-info {
@@ -43,8 +50,10 @@
     }
 
     .profile-img {
+        @apply inline-block;
         @apply flex-initial rounded-full;
-        @apply h-24 w-24 ml-2 mr-8 inline-block;
+        @apply h-14 w-14 ml-0 mr-3;
+        @apply lg:h-24 lg:w-24 lg:ml-2 lg:mr-8;
     }
 
     div.profile-img {
@@ -53,7 +62,14 @@
         @apply text-4xl font-semibold text-foreground;
     }
 
+    .person-card.lightweight .profile-img {
+        @apply hidden;
+    }
+
     .person-name {
         @apply text-2xl font-semibold;
+    }
+    .person-card.lightweight .person-name {
+        @apply text-lg;
     }
 </style>
