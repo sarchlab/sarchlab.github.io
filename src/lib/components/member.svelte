@@ -48,9 +48,9 @@
     }
 
     div.profile-img {
-        @apply border border-muted-foreground bg-gray-300;
+        @apply border border-muted-foreground bg-muted;
         @apply flex items-center justify-center;
-        @apply text-4xl font-semibold;
+        @apply text-4xl font-semibold text-foreground;
     }
 
     .person-name {
