@@ -5,7 +5,19 @@
 </script>
 
 <div class="person-card">
-    <img src={profile_img} alt="Profile of {name}" />
+    {#if profile_img !== ''}
+        <img class="profile-img" src={profile_img} alt="Profile of {name}" />
+    {:else}
+        <div class="profile-img">
+            {#if name !== ''}
+                <div class="initials">
+                    {name.charAt(0)}{name.split(' ')[1].charAt(0)}
+                </div>
+            {:else}
+                <div class="initials">NN</div>
+            {/if}
+        </div>
+    {/if}
     <div class="person-info">
         {#if link !== ''}
             <a href={link}>
@@ -30,8 +42,15 @@
         @apply flex flex-col text-left;
     }
 
-    .person-card img {
-        @apply flex-initial rounded-full h-24 w-24 ml-2 mr-8 inline-block;
+    .profile-img {
+        @apply flex-initial rounded-full;
+        @apply h-24 w-24 ml-2 mr-8 inline-block;
+    }
+
+    div.profile-img {
+        @apply border border-muted-foreground bg-gray-300;
+        @apply flex items-center justify-center;
+        @apply text-4xl font-semibold;
     }
 
     .person-name {

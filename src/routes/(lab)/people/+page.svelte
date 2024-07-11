@@ -33,6 +33,11 @@
             <div><b>Email:</b> yli81@wm.edu</div>
         </Member>
 
+        <Member name="Chris Thames" profile_img="chris_thames.jpeg" link="">
+            <div><b>Position:</b> Part-Time Ph.D. Candidate</div>
+            <div><b>Email:</b> dcthames@wm.edu</div>
+        </Member>
+
         <Member
             name="Sabila Al Jannat"
             profile_img="/sabila_profile.jpeg"
@@ -77,6 +82,11 @@
             <div><b>Email:</b> ali14@wm.edu</div>
         </Member>
 
+        <Member name="Pablo Ibarz" profile_img="" link="">
+            <div><b>Position:</b> Undergraduate Researcher</div>
+            <div><b>Email:</b> pjibarz@wm.edu</div>
+        </Member>
+
         <Member name="Mengyang He" profile_img="/mengyang.jpeg" link="">
             <div><b>Position:</b> Undergraduate Researcher</div>
             <div><b>Email:</b> mhe03@wm.edu</div>
@@ -84,7 +94,7 @@
     </div>
 
     <h2 class="sec-title">External Research Interns</h2>
-    <ul class="list-disc ml-4">
+    <ul class="people-list">
         <li>
             <b>Shaoyu Wang</b> (Huazhong University of Science and Technology)
         </li>
@@ -98,9 +108,18 @@
     </ul>
 
     <h2 class="sec-title">Past Members</h2>
-    <ul class="list-disc ml-4">
+    <ul class="people-list">
         <li>
             <b>Yan Hang</b> (Huazhong University of Science and Technology)
+            <br />
+            <div>
+                Yan led the development and evaluation of the work Vis4Mesh.
+                Creating the paper <i
+                    >Visual Exploratory Analysis for Designing Large-Scale
+                    Network-on-Chip Architectures: A Domain Expert-Led Design
+                    Study</i
+                > as a co-first-author.
+            </div>
         </li>
     </ul>
 </div>
@@ -112,5 +131,13 @@
     .person-container {
         @apply grid;
         @apply lg:grid-cols-2 lg:gap-4;
+    }
+
+    .people-list {
+        @apply list-disc ml-4 text-lg;
+    }
+
+    .people-list li div {
+        @apply text-sm text-muted-foreground leading-4;
     }
 </style>
