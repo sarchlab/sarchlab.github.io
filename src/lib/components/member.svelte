@@ -52,8 +52,10 @@
     .profile-img {
         @apply inline-block;
         @apply flex-initial rounded-full;
-        @apply h-14 w-14 ml-0 mr-3;
-        @apply lg:h-24 lg:w-24 lg:ml-2 lg:mr-8;
+        @apply h-20 w-20 ml-0 mr-4;
+        @apply md:h-28 md:w-28 md:ml-4 md:mr-12;
+        @apply lg:h-24 lg:w-24 lg:ml-1 lg:mr-4;
+        @apply xl:h-24 xl:w-24 xl:ml-2 xl:mr-8;
     }
 
     div.profile-img {

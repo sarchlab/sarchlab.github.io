@@ -65,7 +65,26 @@
             link="https://www.linkedin.com/in/%E5%8D%93%E5%A6%8D-%E9%83%91-339495224/"
         >
             <div>Undergraduate Researcher</div>
+            <div>2022/9 -</div>
             <div><b>Email:</b> zzheng11@wm.edu</div>
+        </Member>
+
+        <Member name="Mengyang He" profile_img="/mengyang.jpeg" link="">
+            <div>Undergraduate Researcher</div>
+            <div>2023/9 -</div>
+            <div><b>Email:</b> mhe03@wm.edu</div>
+        </Member>
+
+        <Member name="Pablo Ibarz" profile_img="" link="">
+            <div>Undergraduate Researcher</div>
+            <div>2023/9 -</div>
+            <div><b>Email:</b> pjibarz@wm.edu</div>
+        </Member>
+
+        <Member name="Aibo Li" profile_img="/aibo.jpg" link="">
+            <div>Undergraduate Researcher</div>
+            <div>2023/11 -</div>
+            <div><b>Email:</b> ali14@wm.edu</div>
         </Member>
 
         <Member
@@ -74,22 +93,20 @@
             link="https://www.linkedin.com/in/yexi-zheng-201894225/"
         >
             <div>Undergraduate Researcher</div>
+            <div>2023/11 -</div>
             <div><b>Email:</b> yzheng12@email.wm.edu</div>
         </Member>
 
-        <Member name="Aibo Li" profile_img="/aibo.jpg" link="">
+        <Member name="Xuzhong Wang" profile_img="" link="">
             <div>Undergraduate Researcher</div>
-            <div><b>Email:</b> ali14@wm.edu</div>
+            <div>2024/5 -</div>
+            <div><b>Email:</b> xwang58@wm.edu</div>
         </Member>
 
-        <Member name="Pablo Ibarz" profile_img="" link="">
+        <Member name="Huizhi Zhao" profile_img="" link="">
             <div>Undergraduate Researcher</div>
-            <div><b>Email:</b> pjibarz@wm.edu</div>
-        </Member>
-
-        <Member name="Mengyang He" profile_img="/mengyang.jpeg" link="">
-            <div>Undergraduate Researcher</div>
-            <div><b>Email:</b> mhe03@wm.edu</div>
+            <div>2024/6 -</div>
+            <div><b>Email:</b> hzhao10@wm.edu</div>
         </Member>
     </div>
 
@@ -97,12 +114,12 @@
     <div class="person-container lightweight">
         <Member name="Shaoyu Wang" lightweight>
             <div>2022/3 -</div>
-            <div>Huazhong University of Science and Technology</div>
+            <div>Huazhong U. of Sci. and Tech.</div>
         </Member>
 
         <Member name="Chen Gong" lightweight>
             <div>2023/4 -</div>
-            <div>Huazhong University of Science and Technology</div>
+            <div>Huazhong U. of Sci. and Tech.</div>
         </Member>
 
         <Member name="Bohan Cui" lightweight>
@@ -120,6 +137,11 @@
             <div>University of California, San Diego</div>
         </Member>
 
+        <Member name="Yuanhuan Deng" lightweight>
+            <div>2024/4 -</div>
+            <div>Brandeis University</div>
+        </Member>
+
         <Member name="Shiyuan Li" lightweight>
             <div>2024/7 -</div>
             <div>Oregon State University</div>
@@ -131,7 +153,7 @@
         <Member name="Yan Hang" lightweight>
             <div>Research Intern</div>
             <div>2021/5 - 2023/8</div>
-            <div>Huazhong University of Science and Technology</div>
+            <div>Huazhong U. of Sci. and Tech.</div>
             <div class="member-description">
                 Yan led the development Vis4Mesh and published the paper <i
                     >Visual Exploratory Analysis for Designing Large-Scale
@@ -152,12 +174,6 @@
             </div>
         </Member>
     </div>
-    <!-- <ul class="people-list">
-        <li>
-            <b>Yan Hang</b> (Huazhong University of Science and Technology)
-            <br />
-        </li>
-    </ul> -->
 </div>
 <div class="two-col-right">
     <News />
@@ -166,11 +182,12 @@
 <style lang="postcss">
     .person-container {
         @apply grid;
-        @apply lg:grid-cols-2 lg:gap-4;
+        @apply lg:grid-cols-2 xl:gap-4;
     }
 
     .person-container.lightweight {
-        @apply lg:grid-cols-3 lg:gap-0;
+        @apply lg:grid-cols-2 xl:gap-0;
+        @apply xl:grid-cols-3 xl:gap-0;
     }
 
     .member-description {
