@@ -82,6 +82,27 @@
             <div><b>Email:</b> mhe03@wm.edu</div>
         </Member>
     </div>
+
+    <h2 class="sec-title">External Research Interns</h2>
+    <ul class="list-disc ml-4">
+        <li>
+            <b>Shaoyu Wang</b> (Huazhong University of Science and Technology)
+        </li>
+        <li>
+            <b>Gong Chen</b> (Huazhong University of Science and Technology)
+        </li>
+        <li><b>Yuchao Su</b> (Northeastern Universty)</li>
+        <li><b>Bei Pei</b> (UCSD)</li>
+        <li><b>Bohan Cui</b> (Nanjing University)</li>
+        <li><b>Shiyuan Li</b> (Oregon State University)</li>
+    </ul>
+
+    <h2 class="sec-title">Past Members</h2>
+    <ul class="list-disc ml-4">
+        <li>
+            <b>Yan Hang</b> (Huazhong University of Science and Technology)
+        </li>
+    </ul>
 </div>
 <div class="two-col-right">
     <News />
