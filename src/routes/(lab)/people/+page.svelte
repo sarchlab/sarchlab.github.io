@@ -33,7 +33,7 @@
             <div><b>Email:</b> yli81@wm.edu</div>
         </Member>
 
-        <Member name="Chris Thames" profile_img="chris_thames.jpeg" link="">
+        <Member name="Chris Thames" profile_img="/chris_thames.jpeg" link="">
             <div>Part-Time Ph.D. Candidate</div>
             <div><b>Email:</b> dcthames@wm.edu</div>
         </Member>
