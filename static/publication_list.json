@@ -1,5 +1,13 @@
 [
     {
+        "title": "Looking into the Black Box: Monitoring Computer Architecture Simulations in Real-Time with AkitaRTM",
+        "authors": "Ali Mosallaei, Katherine Isaacs, Yifan Sun",
+        "venue": "MICRO '24",
+        "year": 2024,
+        "tags": ["yifan", "lab"],
+        "links": []
+    },
+    {
         "title": "Evaluating the Effectiveness of LLMs in Introductory Computer Science Education: A Semester-Long Field Study",
         "authors": "Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
         "venue": "Learning @ Scale '24",

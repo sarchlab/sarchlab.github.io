@@ -5,6 +5,16 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Jul 2024]</span>
+            Our paper
+            <a href="https://arxiv.org/abs/2404.13414">
+                "Looking into the Black Box: Monitoring Computer Architecture
+                Simulations in Real-Time with AkitaRTM"
+            </a>
+            has been accepted by the 57th IEEE/ International Symposium on Microarchitecture
+            (MICRO '24')! Congrats Ali!
+        </li>
+        <li>
             <span class="date">[Apr 2024]</span>
             Our paper
             <a href="https://arxiv.org/abs/2404.13414">

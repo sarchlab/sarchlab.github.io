@@ -194,7 +194,12 @@
             post-pandemia era. In extreme cases, we will allow remote or
             pre-recorded presentations.
         </p>
-        <p><b>Submission Site:</b> TBA</p>
+        <p>
+            <b>Submission Site:</b>
+            <a href="https://easychair.org/conferences/?conf=cams2024"
+                >https://easychair.org/conferences/?conf=cams2024</a
+            >
+        </p>
     </div>
 </div>
 

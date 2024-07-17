@@ -137,6 +137,11 @@
             <div>University of California, San Diego</div>
         </Member>
 
+        <Member name="Jijie Zhou" lightweight>
+            <div>2023/11 -</div>
+            <div>Cornell University</div>
+        </Member>
+
         <Member name="Yuanhuan Deng" lightweight>
             <div>2024/4 -</div>
             <div>Brandeis University</div>
@@ -168,9 +173,9 @@
             <div>2021/5 - 2023/12</div>
             <div>University of Michigan</div>
             <div class="member-description">
-                Ali initiated project Yuzawa, laying out the technical
-                foundation. Ali have also worked on designing, developing, and
-                evaluating AkitaRTM.
+                Ali worked on the developement and evaluation of AkitaRTM,
+                leading to a first-author publication at MICRO '24. Ali also
+                initiated project Yuzawa, laying out the technical foundations.
             </div>
         </Member>
     </div>
