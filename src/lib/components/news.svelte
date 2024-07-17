@@ -11,7 +11,7 @@
                 "Looking into the Black Box: Monitoring Computer Architecture
                 Simulations in Real-Time with AkitaRTM"
             </a>
-            has been accepted by the 57th IEEE/ International Symposium on Microarchitecture
+            has been accepted by the 57th IEEE/ACM International Symposium on Microarchitecture
             (MICRO '24')! Congrats Ali!
         </li>
         <li>
