@@ -139,12 +139,15 @@
 
         <Member name="Jijie Zhou" lightweight>
             <div>2023/11 -</div>
-            <div>Cornell University</div>
         </Member>
 
         <Member name="Yuanhuan Deng" lightweight>
             <div>2024/4 -</div>
             <div>Brandeis University</div>
+        </Member>
+
+        <Member name="Jiaojiao Cheng" lightweight>
+            <div>2024/4 -</div>
         </Member>
 
         <Member name="Shiyuan Li" lightweight>
