@@ -141,8 +141,8 @@
 <div class="block">
     <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Keynotes</h2>
-    </div>
-    <div class="content">
+    
+    <!-- <div class="content"> -->
         <div
             style="float: left; margin-right: 10px"
             id="keynote1"
@@ -189,6 +189,7 @@
         <br />
     </div>
 </div>
+
 
 
 <div class="block">
