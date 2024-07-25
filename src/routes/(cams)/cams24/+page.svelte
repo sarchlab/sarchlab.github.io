@@ -141,6 +141,60 @@
     </div>
 </div>
 
+
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Keynotes</h2>
+    </div>
+    <div class="content">
+        <div
+            style="float: left; margin-right: 10px"
+            id="keynote1"
+        >
+            <img
+                src="/John-kim-cams2023.jpeg"
+                width="160"
+                height="180"
+            />
+        </div>
+        <b>Speaker:</b> Matt Sinclair, University of Wisconsin-Madison<br />
+        <b>Title: TBD </b>
+        <br /><br />
+        <p align="justify">
+            <b>Abstract:</b> TBD
+        </p>
+        <p align="justify">
+            <b>Bio:</b> I am an Assistant Professor in the Computer Sciences 
+            Department, an affiliate faculty member of the Electrical & Computer 
+            Engineering Department, and an affiliate of the Teaching Academy at 
+            the University of Wisconsin-Madison. I am primarily a computer 
+            architect, although my work also includes other areas such as 
+            operating systems and parallel programming. Moreover, I am also 
+            passionate about designing the tools used to study future heterogeneous 
+            systems, including serving as a member of the gem5 Project Management 
+            Committee. As an instructor at UW-Madison, I am currently part of the 
+            Excel Initiative, and was previously a Madison Teaching & Learning 
+            Fellow. I also am the current steward for the ISCA Hall of Fame. 
+            My research has been recognized several times, including with an 
+            NSF CAREER award, a 2018 ACM Doctoral Dissertation Award nomination, 
+            a Qualcomm Innovation Fellowship, the 2018 David J. Kuck Outstanding 
+            PhD Thesis Award, an ACM SIGARCH - IEEE Computer Society TCCA 2018 
+            Outstanding Dissertation Award Honorable Mention, two Mavis Future 
+            Faculty Fellowships, a Feng Chen Memorial Award, and W.J. Poppelbaum 
+            Award, and Saburo Muroga Fellowship. Previously, I completed my PhD 
+            in Computer Architecture in the Computer Science Department at the 
+            University of Illinois at Urbana-Champaign under the supervision of 
+            Sarita Adve. During my PhD I interned at NVIDIA Research and after my 
+            PhD I was a postdoc at AMD Research; at both AMD and NVIDIA my work 
+            focused on optimizing future GPU memory systems.
+        </p>
+        <br />
+
+        <br />
+    </div>
+</div>
+
+
 <div class="block">
     <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Call for Papers</h2>
