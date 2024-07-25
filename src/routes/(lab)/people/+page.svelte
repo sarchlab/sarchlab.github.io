@@ -154,6 +154,11 @@
             <div>2024/7 -</div>
             <div>Oregon State University</div>
         </Member>
+
+        <Member name="Yuwei Sun" lightweight>
+            <div>2024/7 -</div>
+            <div>New York University</div>
+        </Member>
     </div>
 
     <h2 class="sec-title">Past Members</h2>
