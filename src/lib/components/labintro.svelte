@@ -23,11 +23,9 @@
     researching the computer hardware domain.
 </p>
 <p>
-    We particularly eager to hire one student to work on <u
-        >Data visualization
-    </u>
-    and one student to work on
-    <u> large-language model (LLM) and natural language processing (NLP) </u>.
+    We particularly eager to hire one student with background in <u
+        >Complexity Science or Mathematical Modeling
+    </u>.
 </p>
 <p>
     <b>Research intern.</b> We welcome applications for unpaid, remote research

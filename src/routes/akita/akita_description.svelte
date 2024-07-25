@@ -1,6 +1,6 @@
 <div class="block-content">
     <div class="flex flex-col items-center gap-5 md:flex-row md:gap-20">
-        <img src="akita_logo.png" alt="The Akita logo" class="w-40" />
+        <img src="/akita_logo.png" alt="The Akita logo" class="w-40" />
         <div>
             <h1 class="text-5xl font-bold text-theme mb-3">Project Akita</h1>
             <p class="text-lg">

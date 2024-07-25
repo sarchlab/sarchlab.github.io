@@ -1,6 +1,5 @@
 import adapter from '@sveltejs/adapter-netlify'
 import { vitePreprocess } from '@sveltejs/kit/vite'
-import preprocess from 'svelte-preprocess'
 
 /** @type {import('@sveltejs/kit').Config}*/
 const config = {
@@ -21,16 +20,7 @@ const config = {
             $components: 'src/lib/components',
             '$components/*': 'src/lib/components/*',
         },
-        files: {
-            routes: 'src/routes/\(cams)/cams24',
-        }
     },
-    preprocess: preprocess({
-        postcss: true,
-    }),
 }
 
 export default config
-
-
-

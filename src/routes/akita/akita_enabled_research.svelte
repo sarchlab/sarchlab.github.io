@@ -37,9 +37,19 @@
                 " (2024)
             </li>
             <li>
+                Yueqi Wang, Bingyao Li, Aamer Jaleel, Jun Yang, Xulong Tang.
+                "GRIT: Enhancing Multi-GPU Performance with Fine-Grained
+                Dynamic Page Placement" (2024)
+            </li>
+            <li>
                 Bingyao Li, Yueqi Wang, Tianyu Wang, Lieven Eeckhout, Jun Yang,
-                Aamer Jaleel, Xulong Tang. "Barre Chord: Efficient Virtual
-                Memory Translation for Multi-Chip-Module GPUs" (2024)
+                Aamer Jaleel, Xulong Tang. "Improving Multi-Instance GPU
+                Efficiency via Sub-Entry Sharing TLB Design" (2024)
+            </li>
+            <li>
+                Seonjin Na, Jungwoo Kim, Sunho Lee, Jaehyuk Huh. "Supporting
+                Secure Multi-GPU Computing with Dynamic and Batched Metadata
+                Management" (2024)
             </li>
             <li>
                 Changxi Liu, Yifan Sun, and Trevor E. Carlson. "Photon: A

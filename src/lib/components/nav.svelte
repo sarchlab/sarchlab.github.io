@@ -7,6 +7,7 @@
 
     export let logoLink = ''
     export let logoImg = ''
+    export let logoText = ''
     export let navItems = Array<{
         name: string
         link: string
@@ -112,9 +113,14 @@
 
 <nav>
     <div class="nav-container">
-        <a href={logoLink}>
-            <img src={logoImg} alt="logo" class="logo" />
-        </a>
+        {#if logoImg != ''}
+            <a href={logoLink}>
+                <img src={logoImg} alt="logo" class="logo" />
+            </a>
+        {:else if logoText != ''}
+            <a href={logoLink} class="logo">{logoText}</a>
+        {/if}
+
         <button
             id="menu-toggle-btn"
             class=" justify-end md:hidden"
@@ -227,6 +233,7 @@
 
     .logo {
         @apply text-2xl  font-bold;
+        @apply no-underline;
         @apply md:mr-12;
         @apply text-foreground;
     }

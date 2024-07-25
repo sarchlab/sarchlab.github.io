@@ -4,8 +4,8 @@
 </script>
 
 <Nav
-    logoLink="/akita"
-    logoImg="/akita_logo.png"
+    logoLink="/cams24"
+    logoText="CAMS24"
     navItems={[
         {
             name: 'Sarchlab',
@@ -40,5 +40,6 @@
     <div slot="slot4">
         <b>Website Designer</b>
         <div class="text-xs mt-3">Yifan Sun</div>
+        <div class="text-xs mt-3">Sabila Al Jannat</div>
     </div>
 </Footer>

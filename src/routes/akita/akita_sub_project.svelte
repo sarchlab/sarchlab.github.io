@@ -5,7 +5,7 @@
     <div class="grid grid-cols-1 gap-10 w-full lg:grid-cols-2 lg:w-auto">
         <div class="sub-project">
             <div class="flex gap-2 items-end">
-                <img src="akita_logo.png" alt="akita_logo" class="h-14" />
+                <img src="/akita_logo.png" alt="akita_logo" class="h-14" />
                 <div>
                     <h3>Akita Simulator Engine</h3>
                     <a href="https://github.com/sarchlab/akita">
@@ -37,7 +37,7 @@
 
         <div class="sub-project">
             <div class="flex gap-2 items-end">
-                <img src="mgpusim_logo.png" alt="akita_logo" class="h-12" />
+                <img src="/mgpusim_logo.png" alt="akita_logo" class="h-12" />
                 <div>
                     <h3>MGPUSim</h3>
                     <a href="https://github.com/sarchlab/mgpusim">
