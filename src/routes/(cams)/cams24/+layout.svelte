@@ -3,9 +3,11 @@
     import Footer from '$src/lib/components/footer.svelte'
 </script>
 
+<svelte:head />
+
 <Nav
     logoLink="/cams24"
-    logoText="CAMS24"
+    logoImg="/cams24_logo.png"
     navItems={[
         {
             name: 'Sarchlab',

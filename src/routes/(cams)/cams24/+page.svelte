@@ -20,6 +20,11 @@
                     opener.id.replace('toggle-opener', 'abstract-content')
                 )
 
+                if (abstractContent === null || arrow === null) {
+                    console.error('Cannot find the abstract content or arrow')
+                    return
+                }
+
                 if (abstractContent.style.display === 'none') {
                     abstractContent.style.display = 'block'
                     arrow.textContent = '▼'
@@ -41,10 +46,12 @@
 
 <div class="block">
     <div class="block-content">
-        <div
-            class="flex flex-col items-center gap-5 md:py-10 md:flex-row md:gap-20"
-        >
-            <!-- <img src="akita_logo.png" alt="The Akita logo" class="w-40" /> -->
+        <div class="flex-row items-center gap-5 md:py-10 md:gap-20">
+            <img
+                src="cams24_logo.png"
+                alt="The Akita logo"
+                class="w-6/12 mb-10"
+            />
             <div>
                 <h1 class="text-3xl font-bold mb-3">
                     <span class="text-6xl font-thin text-muted-foreground">
@@ -147,13 +154,6 @@
             Submissions will be peer-reviewed, and accepted papers will be
             included in the workshop proceedings.
         </p>
-
-        <!-- <p>
-            Authors are invited to submit original research
-            papers in the general area of computer
-            architecture modeling and simulation. Topics
-            include, but are not limited to:
-        </p> -->
     </div>
 </div>
 
