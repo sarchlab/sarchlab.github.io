@@ -144,21 +144,13 @@
     </div>
 </div>
 
-
 <div class="block">
     <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Keynotes</h2>
-    
-    <!-- <div class="content"> -->
-        <div
-            style="float: left; margin-right: 10px"
-            id="keynote1"
-        >
-            <img
-                src="/msinclair-2019.jpg"
-                width="160"
-                height="180"
-            />
+
+        <!-- <div class="content"> -->
+        <div style="float: left; margin-right: 10px" id="keynote1">
+            <img src="/msinclair-2019.jpg" width="160" height="180" />
         </div>
         <b>Speaker:</b> Matt Sinclair, University of Wisconsin-Madison<br />
         <b>Title: TBD </b>
@@ -167,37 +159,34 @@
             <b>Abstract:</b> TBD
         </p>
         <p align="justify">
-            <b>Bio:</b> Matt Sinclair is an Assistant Professor in the Computer Sciences 
-            Department, an affiliate faculty member of the Electrical & Computer 
-            Engineering Department, and an affiliate of the Teaching Academy at 
-            the University of Wisconsin-Madison. He is primarily a computer 
-            architect, although his work also includes other areas such as 
-            operating systems and parallel programming. Moreover, he is also 
-            passionate about designing the tools used to study future heterogeneous 
-            systems, including serving as a member of the gem5 Project Management 
-            Committee. As an instructor at UW-Madison, he is currently part of the 
-            Excel Initiative, and was previously a Madison Teaching & Learning 
-            Fellow. He also is the current steward for the ISCA Hall of Fame. 
-            His research has been recognized several times, including with an 
-            NSF CAREER award, a 2018 ACM Doctoral Dissertation Award nomination, 
-            a Qualcomm Innovation Fellowship, the 2018 David J. Kuck Outstanding 
-            PhD Thesis Award, an ACM SIGARCH - IEEE Computer Society TCCA 2018 
-            Outstanding Dissertation Award Honorable Mention, two Mavis Future 
-            Faculty Fellowships, a Feng Chen Memorial Award, and W.J. Poppelbaum 
-            Award, and Saburo Muroga Fellowship. Previously, he completed his PhD 
-            in Computer Architecture in the Computer Science Department at the 
-            University of Illinois at Urbana-Champaign under the supervision of 
-            Sarita Adve. During his PhD he interned at NVIDIA Research and after his 
-            PhD he was a postdoc at AMD Research; at both AMD and NVIDIA his work 
-            focused on optimizing future GPU memory systems.
+            <b>Bio:</b> Matt Sinclair is an Assistant Professor in the Computer
+            Sciences Department, an affiliate faculty member of the Electrical &
+            Computer Engineering Department, and an affiliate of the Teaching Academy
+            at the University of Wisconsin-Madison. He is primarily a computer architect,
+            although his work also includes other areas such as operating systems
+            and parallel programming. Moreover, he is also passionate about designing
+            the tools used to study future heterogeneous systems, including serving
+            as a member of the gem5 Project Management Committee. As an instructor
+            at UW-Madison, he is currently part of the Excel Initiative, and was
+            previously a Madison Teaching & Learning Fellow. He also is the current
+            steward for the ISCA Hall of Fame. His research has been recognized
+            several times, including with an NSF CAREER award, a 2018 ACM Doctoral
+            Dissertation Award nomination, a Qualcomm Innovation Fellowship, the
+            2018 David J. Kuck Outstanding PhD Thesis Award, an ACM SIGARCH - IEEE
+            Computer Society TCCA 2018 Outstanding Dissertation Award Honorable
+            Mention, two Mavis Future Faculty Fellowships, a Feng Chen Memorial
+            Award, and W.J. Poppelbaum Award, and Saburo Muroga Fellowship. Previously,
+            he completed his PhD in Computer Architecture in the Computer Science
+            Department at the University of Illinois at Urbana-Champaign under the
+            supervision of Sarita Adve. During his PhD he interned at NVIDIA Research
+            and after his PhD he was a postdoc at AMD Research; at both AMD and
+            NVIDIA his work focused on optimizing future GPU memory systems.
         </p>
         <br />
 
         <br />
     </div>
 </div>
-
-
 
 <div class="block">
     <div class="block-content">
@@ -215,9 +204,17 @@
 <div class="block">
     <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Important Dates</h2>
-        <ul>
-            <li><b>Papers Due:</b> August 16, 2024 (Anywhere on Earth)</li>
-            <li><b>Author Notification:</b> September 15, 2024</li>
+        <ul class="ml-2">
+            <li>
+                <b>Papers Due:</b> <br />
+                <p class="ml-4"><strike>August 16, 2024</strike></p>
+                <p class="ml-4">August 30, 2024 (Anywhere on Earth)</p>
+            </li>
+            <li>
+                <b>Author Notification:</b>
+                <p class="ml-4"><strike>September 15, 2024</strike></p>
+                <p class="ml-4">September 23, 2024</p>
+            </li>
         </ul>
     </div>
 </div>
