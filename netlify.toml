@@ -3,7 +3,7 @@
   publish = "build"
 
 [[redirects]]
-  from = "https://lightweightarchsim.org/*
+  from = "https://lightweightarchsim.org/*"
   to = "https://sarchlab.org/lwsim/*"
   status = 200
   force = true
