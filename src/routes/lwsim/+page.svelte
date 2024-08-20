@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-    <title>Leight Weight Simulation</title>
+    <title>Light Weight Simulation</title>
 </svelte:head>
 
 <div class="block-container">This is test content.</div>

@@ -1,9 +1,3 @@
 [build]
   command = "npm run build"
   publish = "build"
-
-[[redirects]]
-  from = "/lwsim/*"
-  to = "https://lightweightarchsim.com/:splat"
-  status = 200
-  force = true
