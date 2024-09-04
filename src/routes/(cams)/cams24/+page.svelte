@@ -74,7 +74,7 @@
                         >AT&T Hotel and Conference Center</a
                     >, Austin, Texas
                     <br />
-                    <b>Room:</b> TBD
+                    <b>Room:</b> Room 101
                 </div>
 
                 <p class="text-baseline mt-4">
@@ -332,10 +332,10 @@
 <div class="block">
     <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Program Committee</h2>
-        In this workshop, we are experimenting with a PhD and practitioner-led PC. 
-        We believe that PhD students and practitioners are the end users of simulation 
-        and performance modeling tools and hence, should know the tools the best. We will 
-        report our experience during the workshop event.
+        <p>In this workshop, we are experimenting with a PhD and practitioner-led PC. 
+            We believe that PhD students and practitioners are the end users of simulation 
+            and performance modeling tools and hence, should know the tools the best. We will 
+            report our experience during the workshop event.</p>
         <ul>
             <li>Yuhui Bao (Northeastern University)</li>
             <li>Ying Li (William & Mary)</li>
