@@ -74,7 +74,7 @@
                         >AT&T Hotel and Conference Center</a
                     >, Austin, Texas
                     <br />
-                    <b>Room:</b> Room 101
+                    <b>Room:</b> 101
                 </div>
 
                 <p class="text-baseline mt-4">
@@ -336,7 +336,7 @@
             We believe that PhD students and practitioners are the end users of simulation 
             and performance modeling tools and hence, should know the tools the best. We will 
             report our experience during the workshop event.</p>
-        <ul>
+        <ul class="ml-6 list-disc">
             <li>Yuhui Bao (Northeastern University)</li>
             <li>Ying Li (William & Mary)</li>
             <li>Changxi Liu (National University of Singapore)</li>
