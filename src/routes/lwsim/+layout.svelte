@@ -1,20 +1,37 @@
 <script>
     import Nav from '$components/nav.svelte'
+    import News from '$components/news.svelte'
     import Footer from '$src/lib/components/footer.svelte'
 </script>
 
 <Nav
-    logoLink="/akita"
-    logoImg="/akita_logo.png"
+    logoLink="/"
+    logoImg="/sarchlab.svg"
     navItems={[
         {
-            name: 'Sarchlab',
-            link: '/',
+            name: 'People',
+            link: '/people',
+        },
+        {
+            name: 'Grant',
+            link: '/grant',
+        },
+        {
+            name: 'Publication',
+            link: '/publication',
+        },
+        {
+            name: 'Software',
+            link: '/software',
+        },
+        {
+            name: 'News',
+            link: '/news',
         },
     ]}
 />
 
-<div class="block-container">
+<div class="main-container">
     <slot />
 </div>
 
