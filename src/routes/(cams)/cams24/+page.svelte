@@ -64,9 +64,9 @@
                     (CAMS 2024)
                 </h1>
                 <div class="text-lg">
-                    <b>Date:</b> November 2nd, 2024
+                    <b>Date:</b> Saturday, November 2, 2024
                     <br />
-                    <b>Time:</b> Saturday Morning
+                    <b>Time:</b> 8:00 AM CST - 12:00 PM CST
                     <br />
                     <b>Location:</b>
                     <a
