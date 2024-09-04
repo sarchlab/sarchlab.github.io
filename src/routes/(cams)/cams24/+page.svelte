@@ -335,11 +335,19 @@
 <div class="block">
     <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Program Committee</h2>
-        To be announced.
-        <!-- <ul>
+        In this workshop, we are experimenting with a PhD and practitioner-led PC. 
+        We believe that PhD students and practitioners are the end users of simulation 
+        and performance modeling tools and hence, should know the tools the best. We will 
+        report our experience during the workshop event.
+        <ul>
+            <li>Yuhui Bao (Northeastern University)</li>
             <li>Ying Li (William & Mary)</li>
             <li>Changxi Liu (National University of Singapore)</li>
-        </ul> -->
+            <li>Patrick Lavin (Sandia National Lab) </li>
+            <li>Mohammadreza Rezvani (UC Riverside)</li>
+            <li>Mahyar Samani (UC Davis)</li>
+            <li>William Won (Georgia Institute of Technology)</li>
+        </ul>
     </div>
 </div>
 
