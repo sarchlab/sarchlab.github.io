@@ -14,7 +14,7 @@
     architecture and for the architecture to serve human.
 </p>
 
-<h2 class="sec-title">Hiring</h2>
+<!-- <h2 class="sec-title">Hiring</h2>
 
 <p>
     <b>Ph.D.</b> SARCHLAB is actively seeking <u>1-2 Ph.D. students</u>,
@@ -36,7 +36,7 @@
 <p>
     <b>How to apply.</b> Interested candidates should email Yifan Sun (ysun25@wm.edu)
     with their CV and transcript attached to inquire about opportunities.
-</p>
+</p> -->
 
 <ResearchInterests />
 

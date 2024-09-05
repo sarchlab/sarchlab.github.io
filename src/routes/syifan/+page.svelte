@@ -18,7 +18,7 @@
         performance modeling.
     </p>
 
-    <h2 class="sec-title">Hiring</h2>
+    <!-- <h2 class="sec-title">Hiring</h2>
 
     <p>
         <b>Ph.D.</b> I am actively seeking <u>1-2 Ph.D. students</u>, starting
@@ -37,7 +37,7 @@
     <p>
         <b>How to apply.</b> Interested candidates should email me (ysun25@wm.edu)
         with their CV and transcript attached to inquire about opportunities.
-    </p>
+    </p> -->
 
     <ResearchInterests />
 </div>
