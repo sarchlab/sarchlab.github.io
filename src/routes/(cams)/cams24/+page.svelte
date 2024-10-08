@@ -165,7 +165,8 @@
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>9:00 - 9:15   Demystifying Platform Requirements for Diverse LLM Inference Use Cases</td>
+                <td>9:00 - 9:15</td>
+                <td>Demystifying Platform Requirements for Diverse LLM Inference Use Cases</td>
             </tr>
             <tr class="sub-schedule">
                 <td></td>
