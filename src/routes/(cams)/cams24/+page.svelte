@@ -147,6 +147,9 @@
 <div class="block">
     <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Workshop Program</h2>
+        <h3>
+            All times are in Eastern Daylight Time (UTC-4).
+        </h3>
         <table id="schedule">
             <tr>
                 <td>8:00 - 8:10</td>
