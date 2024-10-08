@@ -165,20 +165,19 @@
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>9:00 - 9:15</td>
-                <td>Demystifying Platform Requirements for Diverse LLM Inference Use Cases</td>
+                <td>9:00 - 9:15  |  Demystifying Platform Requirements for Diverse LLM Inference Use Cases</td>
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>9:15 - 9:30   BottleneckAI: Harnessing Machine Learning and Knowledge Transfer for Detecting Architectural Bottlenecks</td>
+                <td>9:15 - 9:30  |  BottleneckAI: Harnessing Machine Learning and Knowledge Transfer for Detecting Architectural Bottlenecks</td>
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>9:30 - 9:45   How Accurate is Accurate Enough for Simulators? A Review of Simulation Validation</td>
+                <td>9:30 - 9:45  |  How Accurate is Accurate Enough for Simulators? A Review of Simulation Validation</td>
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>9:45 - 10:00   Parallelizing a Modern GPU Simulator</td>
+                <td>9:45 - 10:00  |  Parallelizing a Modern GPU Simulator</td>
             </tr>
             <tr>
                 <td>10:00 - 10:30</td>
@@ -190,19 +189,19 @@
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>10:30 - 10:50   gem5 (Jason Lowe-Power)</td>
+                <td>10:30 - 10:50  |  gem5 (Jason Lowe-Power)</td>
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>10:50 - 11:10   Sniper (Alen Sabu, Trevor E. Carlson)</td>
+                <td>10:50 - 11:10  |  Sniper (Alen Sabu, Trevor E. Carlson)</td>
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>11:10 - 11:30   Akita (Yifan Sun)</td>
+                <td>11:10 - 11:30  |  Akita (Yifan Sun)</td>
             </tr>
             <tr class="sub-schedule">
                 <td></td>
-                <td>11:30 - 11:50   SST (TBD)</td>
+                <td>11:30 - 11:50  |  SST (TBD)</td>
             </tr>
             <tr>
                 <td>11:50 - 12:00</td>
