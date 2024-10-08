@@ -146,6 +146,70 @@
 
 <div class="block">
     <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Workshop Program</h2>
+        <table id="schedule">
+            <tr>
+                <td>8:00 - 8:10</td>
+                <td>Opening Remarks</td>
+            </tr>
+            <tr>
+                <td>8:10 - 9:00</td>
+                <td>Keynote</td>
+            </tr>
+            <tr>
+                <td>9:00 - 10:00</td>
+                <td>Paper Talks</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td></td>
+                <td>9:00 - 9:15 Demystifying Platform Requirements for Diverse LLM Inference Use Cases</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td></td>
+                <td>9:15 - 9:30 BottleneckAI: Harnessing Machine Learning and Knowledge Transfer for Detecting Architectural Bottlenecks</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td></td>
+                <td>9:30 - 9:45 How Accurate is Accurate Enough for Simulators? A Review of Simulation Validation</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td></td>
+                <td>9:45 - 10:00 Parallelizing a Modern GPU Simulator</td>
+            </tr>
+            <tr>
+                <td>10:00 - 10:30</td>
+                <td>Coffee break</td>
+            </tr>
+            <tr>
+                <td>10:30 - 12:00</td>
+                <td>Simulator Talks</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td></td>
+                <td>10:30 - 10:50 gem5 (Jason Lowe-Power)</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td></td>
+                <td>10:50 - 11:10 Sniper (Alen Sabu, Trevor E. Carlson)</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td></td>
+                <td>11:10 - 11:30 Akita (Yifan Sun)</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td></td>
+                <td>11:30 - 11:50 SST (TBD)</td>
+            </tr>
+            <tr>
+                <td>11:50 - 12:00</td>
+                <td>Closing Remarks</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Keynotes</h2>
 
         <!-- <div class="content"> -->
