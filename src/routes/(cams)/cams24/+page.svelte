@@ -183,12 +183,12 @@
                             <p class="talk-abstract">
                                 Large language models (LLMs) have shown remarkable performance across a wide range 
                                 of applications, often outperforming human experts. However, deploying these 
-                                parameter-heavy models efficiently for diverse inference use cases requires
-                                 carefully designed hardware platforms with ample computing, memory, 
-                                 and network resources. With LLM deployment scenarios and models 
-                                 evolving at breakneck speed, the hardware requirements to meet Service 
-                                 Level Objectives(SLOs) remains an open research question.
-
+                                parameter-heavy models efficiently for diverse inference use cases requires 
+                                carefully designed hardware platforms with ample computing, memory, 
+                                and network resources. With LLM deployment scenarios and models 
+                                evolving at breakneck speed, the hardware requirements to meet Service 
+                                Level Objectives(SLOs) remains an open research question. 
+                                <br /><br />
                                 In this work, we present an analytical tool, GenZ, to study the relationship 
                                 between LLM inference performance and various platform design parameters. We 
                                 validate our tool against real hardware data running various different LLM models, 
