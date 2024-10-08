@@ -213,10 +213,10 @@
                         <p>Jihyun Ryoo, Gulsum Gudukbay Akbulut, Huaipan Jiang, 
                             Xulong Tang, Suat Akbulut, Jack Sampson, Vijaykrishnan 
                             Narayanan and Mahmut Taylan Kandemir (The Pennsylvania State University) </p>        
-                        <button id="toggle-opener-1" class="collapse-opener">
+                        <button id="toggle-opener-2" class="collapse-opener">
                            <span class="collapse-arrow">▶</span> Abstract
                        </button>
-                       <div id="abstract-content-1" class="collapse-content">
+                       <div id="abstract-content-2" class="collapse-content">
                            <p class="talk-abstract">
                             The architectural analysis tools that output bottleneck 
                             information do not allow knowledge transfer to other 
@@ -244,10 +244,10 @@
                         [Paper] How Accurate is Accurate Enough for Simulators? A
                         Review of Simulation Validation
                         <p>Shiyuan Li (Oregon State University) and Yifan Sun (The College of William and Mary) </p>        
-                        <button id="toggle-opener-1" class="collapse-opener">
+                        <button id="toggle-opener-3" class="collapse-opener">
                            <span class="collapse-arrow">▶</span> Abstract
                        </button>
-                       <div id="abstract-content-1" class="collapse-content">
+                       <div id="abstract-content-3" class="collapse-content">
                            <p class="talk-abstract">
                             Simulators are vital tools for evaluating the performance of 
                             innovative architectural designs. To ensure an accurate simulation 
@@ -274,10 +274,10 @@
                     <td>9:45 - 10:00</td>
                     <td>[Paper] Parallelizing a Modern GPU Simulator</td>
                     <p>Rodrigo Huerta and Antonio Gonzalez (Universitat Politècnica de Catalunya)</p>        
-                        <button id="toggle-opener-1" class="collapse-opener">
+                        <button id="toggle-opener-4" class="collapse-opener">
                            <span class="collapse-arrow">▶</span> Abstract
                        </button>
-                       <div id="abstract-content-1" class="collapse-content">
+                       <div id="abstract-content-4" class="collapse-content">
                            <p class="talk-abstract">
                             Simulators are a primary tool in computer architecture 
                             research but are extremely computationally intensive. 
@@ -319,10 +319,10 @@
                     <td>11:10 - 11:30</td>
                     <td>
                         User-Friendly Tools in Akita (Yifan Sun)
-                        <button id="toggle-opener-1" class="collapse-opener">
+                        <button id="toggle-opener-5" class="collapse-opener">
                             <span class="collapse-arrow">▶</span> Abstract
                         </button>
-                        <div id="abstract-content-1" class="collapse-content">
+                        <div id="abstract-content-5" class="collapse-content">
                             <p class="talk-abstract">
                                 In this talk, we will present the real-time
                                 monitoring tool for Akita---AkitaRTM---and the
