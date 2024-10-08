@@ -199,7 +199,7 @@
                 </tr>
                 <tr>
                     <td>10:30 - 12:00</td>
-                    <td>Simulator Talks</td>
+                    <td>Simulator Release Talks</td>
                 </tr>
                 <tr class="sub-schedule">
                     <td>10:30 - 10:50</td>
@@ -213,12 +213,17 @@
                     <td>11:10 - 11:30</td>
                     <td>
                         User-Friendly Tools in Akita (Yifan Sun)
-                        <p class="talk-abstract">
-                            In this talk, we will present the real-time
-                            monitoring tool for Akita---AkitaRTM---and the
-                            default trace visualization tool for
-                            Akita---Daisen.
-                        </p>
+                        <button id="toggle-opener-1" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> Abstract
+                        </button>
+                        <div id="abstract-content-1" class="collapse-content">
+                            <p class="talk-abstract">
+                                In this talk, we will present the real-time
+                                monitoring tool for Akita---AkitaRTM---and the
+                                default trace visualization tool for
+                                Akita---Daisen.
+                            </p>
+                        </div>
                     </td>
                 </tr>
                 <tr class="sub-schedule">
@@ -502,6 +507,7 @@
         cursor: pointer;
         display: flex;
         align-items: center;
+        @apply text-sm text-gray-500;
     }
 
     .collapse-arrow {
