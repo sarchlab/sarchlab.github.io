@@ -310,11 +310,47 @@
                 </tr>
                 <tr class="sub-schedule">
                     <td>10:30 - 10:50</td>
-                    <td>gem5 (Jason Lowe-Power)</td>
+                    <td>What's new in gem5 24.0 (Jason Lowe-Power)
+                        <button id="toggle-opener-6" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> Abstract
+                        </button>
+                        <div id="abstract-content-6" class="collapse-content">
+                            <p class="talk-abstract">
+                                In this talk, we will explore the significant 
+                                advancements and new features introduced in gem5 
+                                v24.0 over the past five years. We will discuss the development 
+                                of a robust and inclusive community. Key updates include the introduction 
+                                of a standard library for simplified simulation setup, the implementation 
+                                of the CHI coherence protocol for enhanced cache hierarchy configurability, 
+                                and support for full system machine learning stacks using unmodified ML 
+                                frameworks like PyTorch and TensorFlow.
+                            </p>
+                        </div>
+                    </td>
                 </tr>
                 <tr class="sub-schedule">
                     <td>10:50 - 11:10</td>
-                    <td>Sniper (Alen Sabu, Trevor E. Carlson)</td>
+                    <td>Release of Sniper v8.1 and Guide on Common Simulation Practices
+                        (Alen Sabu, Trevor E. Carlson)
+                        <button id="toggle-opener-7" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> Abstract
+                        </button>
+                        <div id="abstract-content-7" class="collapse-content">
+                            <p class="talk-abstract">
+                                In this talk, we will introduce the latest release of 
+                                Sniper, version 8.1. This Sniper release includes support 
+                                for Pac-Sim, a sampled simulation technique suitable for 
+                                dynamically scheduled multi-threaded workloads. Pac-Sim 
+                                eliminates the need for upfront profiling, allowing users 
+                                to simulate large multi-threaded workloads more efficiently. 
+                                Further, we release a document that assists computer architects 
+                                and practitioners with selecting the right tools for their 
+                                performance evaluation studies. We hope the document to be 
+                                the starting point for any simulation-based research in 
+                                computer architecture.
+                            </p>
+                        </div>
+                    </td>
                 </tr>
                 <tr class="sub-schedule">
                     <td>11:10 - 11:30</td>
