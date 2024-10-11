@@ -56,8 +56,6 @@
                 publication
             )
         }
-
-        console.log(publicationByYear)
     })
 </script>
 

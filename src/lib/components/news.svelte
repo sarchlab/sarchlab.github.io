@@ -1,7 +1,53 @@
-<script>
+<script lang="ts">
+    import { onMount } from 'svelte'
+
+    export let maxItems = 6
+
+    let box: HTMLDivElement | null = null
+    let folded = false
+    let foldedItems: Element[] = []
+
+    let moreNewsButton = onMount(() => {
+        if (maxItems > 0) {
+            foldNews(null)
+        }
+
+        box?.classList.remove('invisible')
+    })
+
+    const toggleFold = (event: Event) => {
+        if (folded) {
+            unfoldNews(event.target)
+        } else {
+            foldNews(event.target)
+        }
+    }
+
+    const foldNews = (btn: EventTarget | null) => {
+        folded = true
+        foldedItems = [...document.querySelectorAll('ul li')]
+        foldedItems.slice(maxItems).forEach((item) => {
+            ;(item as HTMLElement).style.display = 'none'
+        })
+
+        if (btn) {
+            ;(btn as HTMLElement).innerHTML = 'More news ...'
+        }
+    }
+
+    const unfoldNews = (btn: EventTarget | null) => {
+        folded = false
+        foldedItems.forEach((item) => {
+            ;(item as HTMLElement).style.display = 'list-item'
+        })
+
+        if (btn) {
+            ;(btn as HTMLElement).innerHTML = 'Less news'
+        }
+    }
 </script>
 
-<div>
+<div class="invisible" bind:this={box}>
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
@@ -103,6 +149,11 @@
             >.
         </li>
     </ul>
+    <div>
+        <button class="mt-4" on:click|preventDefault={toggleFold}
+            >More news</button
+        >
+    </div>
 </div>
 
 <style lang="postcss">

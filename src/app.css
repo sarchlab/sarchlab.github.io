@@ -77,7 +77,9 @@
 
     body {
         @apply bg-background text-foreground;
-        font-feature-settings: 'rlig' 1, 'calt' 1;
+        font-feature-settings:
+            'rlig' 1,
+            'calt' 1;
     }
 
     .sec-title {
@@ -118,19 +120,20 @@
     .main-container {
         @apply flex flex-col px-8 gap-4 items-start;
         @apply md:flex-row md:justify-center;
-        @apply md:container md:mx-auto;
+        @apply md:container md:mx-auto md:h-auto;
         @apply justify-center;
         @apply max-w-screen-2xl;
     }
 
     .main-container > .two-col-left {
         @apply w-full;
-        @apply md:w-9/12;
+        @apply md:w-9/12 md:h-auto;
     }
 
     .main-container > .two-col-right {
         @apply hidden;
-        @apply md:w-3/12 md:flex;
+        @apply md:w-3/12  md:overflow-y-auto;
+        @apply md:flex;
     }
 
     .block-container {
