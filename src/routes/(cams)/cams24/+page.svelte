@@ -371,7 +371,23 @@
                 </tr>
                 <tr class="sub-schedule">
                     <td>11:30 - 11:50</td>
-                    <td>SST (TBD)</td>
+                    <td>SST 14.1 Highlights (Patrick Lavin)
+                        <button id="toggle-opener-8" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> Abstract
+                        </button>
+                        <div id="abstract-content-8" class="collapse-content">
+                            <p class="talk-abstract">
+                                In this talk, we will cover the improvements made 
+                                to the Structural Simulation Toolkit over the past several 
+                                years. We will look at improvements made to the parallel core, 
+                                most notably checkpoint/restart, as well as additions to the 
+                                included simulation components such as Merlin, a network simulator, 
+                                and Mercury, a large-scale application model. We will also share work 
+                                done to help new users, including a new documentation website and an 
+                                interactive utility for learning about simulation components.
+                            </p>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>11:50 - 12:00</td>
