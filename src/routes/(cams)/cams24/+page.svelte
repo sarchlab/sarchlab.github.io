@@ -407,7 +407,7 @@
             <img src="/msinclair-2019.jpg" width="160" height="180" />
         </div>
         <b>Speaker:</b> Matt Sinclair, University of Wisconsin-Madison<br />
-        <b>Title: Reducing the GAP: Improving the Fidelity and Scalability of gem5’s GPU Models </b>
+        <b>Title: </b> Reducing the GAP: Improving the Fidelity and Scalability of gem5’s GPU Models
         <br /><br />
         <p align="justify">
             <b>Abstract:</b> The breakdown in Moore’s Law and Dennard Scaling is leading to drastic changes 
