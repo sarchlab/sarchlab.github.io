@@ -407,34 +407,50 @@
             <img src="/msinclair-2019.jpg" width="160" height="180" />
         </div>
         <b>Speaker:</b> Matt Sinclair, University of Wisconsin-Madison<br />
-        <b>Title: TBD </b>
+        <b>Title: Reducing the GAP: Improving the Fidelity and Scalability of gem5’s GPU Models </b>
         <br /><br />
         <p align="justify">
-            <b>Abstract:</b> TBD
+            <b>Abstract:</b> The breakdown in Moore’s Law and Dennard Scaling is leading to drastic changes 
+            in the makeup and constitution of computing systems. For example, a single 
+            chip integrates 10-100s of cores and has a heterogeneous mix of general-purpose 
+            compute engines and highly specialized accelerators. Traditionally, computer 
+            architects have relied on tools like architectural simulators to accurately 
+            perform early-stage prototyping and optimizations for the proposed research. 
+            However, as systems become increasingly complex and heterogeneous, architectural 
+            tools are straining to keep up. In particular, publicly available architectural 
+            simulators are often not very representative of the industry parts they intend 
+            to represent. This leads to a mismatch in expectations; when prototyping new 
+            optimizations researchers may draw the wrong conclusions about the efficacy 
+            of proposed optimizations if the tool’s models do not provide high fidelity.  
+            Moreover, modeling and simulation tools are also struggling to keep pace with 
+            increasingly large, complex workloads from domains such as machine learning (ML).
+            <br /><br />
+            In this talk, I will discuss our work on improving the open source, publicly 
+            available GPU models in the widely used gem5 simulator.  gem5 can run entire 
+            systems, including CPUs, GPUs, and accelerators, as well as the operating system, 
+            runtime, network, and other related components. Thus, gem5 has the potential to 
+            allow users to study the behavior of the entire heterogeneous systems.  
+            Unfortunately, some of gem5’s publicly available models do not always provide 
+            high accuracy relative to their ”real” counterparts, especially for the memory 
+            subsystem.  I will discuss my group's efforts to overcome these challenges and 
+            improve the fidelity of gem5's GPU models, as well as our ongoing efforts to 
+            scalably run modern ML and HPC workloads in frameworks such as PyTorch and 
+            TensorFlow in gem5.  Collectively, this work significantly enhances the 
+            state-of-the-art and enables more widespread adoption of gem5 as an accurate 
+            platform for heterogeneous architecture research.
         </p>
         <p align="justify">
-            <b>Bio:</b> Matt Sinclair is an Assistant Professor in the Computer
-            Sciences Department, an affiliate faculty member of the Electrical &
-            Computer Engineering Department, and an affiliate of the Teaching Academy
-            at the University of Wisconsin-Madison. He is primarily a computer architect,
-            although his work also includes other areas such as operating systems
-            and parallel programming. Moreover, he is also passionate about designing
-            the tools used to study future heterogeneous systems, including serving
-            as a member of the gem5 Project Management Committee. As an instructor
-            at UW-Madison, he is currently part of the Excel Initiative, and was
-            previously a Madison Teaching & Learning Fellow. He also is the current
-            steward for the ISCA Hall of Fame. His research has been recognized
-            several times, including with an NSF CAREER award, a 2018 ACM Doctoral
-            Dissertation Award nomination, a Qualcomm Innovation Fellowship, the
-            2018 David J. Kuck Outstanding PhD Thesis Award, an ACM SIGARCH - IEEE
-            Computer Society TCCA 2018 Outstanding Dissertation Award Honorable
-            Mention, two Mavis Future Faculty Fellowships, a Feng Chen Memorial
-            Award, and W.J. Poppelbaum Award, and Saburo Muroga Fellowship. Previously,
-            he completed his PhD in Computer Architecture in the Computer Science
-            Department at the University of Illinois at Urbana-Champaign under the
-            supervision of Sarita Adve. During his PhD he interned at NVIDIA Research
-            and after his PhD he was a postdoc at AMD Research; at both AMD and
-            NVIDIA his work focused on optimizing future GPU memory systems.
+            <b>Bio:</b> I am an Assistant Professor in the Computer Sciences Department at the 
+            University of Wisconsin-Madison. I am also an Affiliate Faculty in the ECE Department 
+            and Teaching Academy at UW-Madison. My research primarily focuses on how to design, 
+            program, and optimize future heterogeneous systems. I also design the tools for future 
+            heterogeneous systems, including serving on the gem5 Project Management Committee and 
+            the MLCommons Power and HPC Working Groups. I am a recipient of the NSF CAREER award, 
+            and my work has been funded by the DOE, Google, NSF, and SRC. My research has also 
+            been recognized several times, including an ACM Doctoral Dissertation Award nomination, 
+            a Qualcomm Innovation Fellowship, the David J. Kuck Outstanding PhD Thesis Award, and 
+            an ACM SIGARCH - IEEE Computer Society TCCA Outstanding Dissertation Award Honorable 
+            Mention. I am also the current steward for the ISCA Hall of Fame.
         </p>
         <br />
 
