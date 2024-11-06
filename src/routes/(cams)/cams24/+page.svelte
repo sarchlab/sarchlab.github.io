@@ -310,11 +310,47 @@
                 </tr>
                 <tr class="sub-schedule">
                     <td>10:30 - 10:50</td>
-                    <td>gem5 (Jason Lowe-Power)</td>
+                    <td>What's new in gem5 24.0 (Jason Lowe-Power)
+                        <button id="toggle-opener-6" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> Abstract
+                        </button>
+                        <div id="abstract-content-6" class="collapse-content">
+                            <p class="talk-abstract">
+                                In this talk, we will explore the significant 
+                                advancements and new features introduced in gem5 
+                                v24.0 over the past five years. We will discuss the development 
+                                of a robust and inclusive community. Key updates include the introduction 
+                                of a standard library for simplified simulation setup, the implementation 
+                                of the CHI coherence protocol for enhanced cache hierarchy configurability, 
+                                and support for full system machine learning stacks using unmodified ML 
+                                frameworks like PyTorch and TensorFlow.
+                            </p>
+                        </div>
+                    </td>
                 </tr>
                 <tr class="sub-schedule">
                     <td>10:50 - 11:10</td>
-                    <td>Sniper (Alen Sabu, Trevor E. Carlson)</td>
+                    <td>Release of Sniper v8.1 and Guide on Common Simulation Practices
+                        (Alen Sabu, Trevor E. Carlson)
+                        <button id="toggle-opener-7" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> Abstract
+                        </button>
+                        <div id="abstract-content-7" class="collapse-content">
+                            <p class="talk-abstract">
+                                In this talk, we will introduce the latest release of 
+                                Sniper, version 8.1. This Sniper release includes support 
+                                for Pac-Sim, a sampled simulation technique suitable for 
+                                dynamically scheduled multi-threaded workloads. Pac-Sim 
+                                eliminates the need for upfront profiling, allowing users 
+                                to simulate large multi-threaded workloads more efficiently. 
+                                Further, we release a document that assists computer architects 
+                                and practitioners with selecting the right tools for their 
+                                performance evaluation studies. We hope the document to be 
+                                the starting point for any simulation-based research in 
+                                computer architecture.
+                            </p>
+                        </div>
+                    </td>
                 </tr>
                 <tr class="sub-schedule">
                     <td>11:10 - 11:30</td>
@@ -335,7 +371,23 @@
                 </tr>
                 <tr class="sub-schedule">
                     <td>11:30 - 11:50</td>
-                    <td>SST (TBD)</td>
+                    <td>SST 14.1 Highlights (Patrick Lavin)
+                        <button id="toggle-opener-8" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> Abstract
+                        </button>
+                        <div id="abstract-content-8" class="collapse-content">
+                            <p class="talk-abstract">
+                                In this talk, we will cover the improvements made 
+                                to the Structural Simulation Toolkit over the past several 
+                                years. We will look at improvements made to the parallel core, 
+                                most notably checkpoint/restart, as well as additions to the 
+                                included simulation components such as Merlin, a network simulator, 
+                                and Mercury, a large-scale application model. We will also share work 
+                                done to help new users, including a new documentation website and an 
+                                interactive utility for learning about simulation components.
+                            </p>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>11:50 - 12:00</td>
@@ -355,34 +407,50 @@
             <img src="/msinclair-2019.jpg" width="160" height="180" />
         </div>
         <b>Speaker:</b> Matt Sinclair, University of Wisconsin-Madison<br />
-        <b>Title: TBD </b>
+        <b>Title: </b> Reducing the GAP: Improving the Fidelity and Scalability of gem5’s GPU Models
         <br /><br />
         <p align="justify">
-            <b>Abstract:</b> TBD
+            <b>Abstract:</b> The breakdown in Moore’s Law and Dennard Scaling is leading to drastic changes 
+            in the makeup and constitution of computing systems. For example, a single 
+            chip integrates 10-100s of cores and has a heterogeneous mix of general-purpose 
+            compute engines and highly specialized accelerators. Traditionally, computer 
+            architects have relied on tools like architectural simulators to accurately 
+            perform early-stage prototyping and optimizations for the proposed research. 
+            However, as systems become increasingly complex and heterogeneous, architectural 
+            tools are straining to keep up. In particular, publicly available architectural 
+            simulators are often not very representative of the industry parts they intend 
+            to represent. This leads to a mismatch in expectations; when prototyping new 
+            optimizations researchers may draw the wrong conclusions about the efficacy 
+            of proposed optimizations if the tool’s models do not provide high fidelity.  
+            Moreover, modeling and simulation tools are also struggling to keep pace with 
+            increasingly large, complex workloads from domains such as machine learning (ML).
+            <br /><br />
+            In this talk, I will discuss our work on improving the open source, publicly 
+            available GPU models in the widely used gem5 simulator.  gem5 can run entire 
+            systems, including CPUs, GPUs, and accelerators, as well as the operating system, 
+            runtime, network, and other related components. Thus, gem5 has the potential to 
+            allow users to study the behavior of the entire heterogeneous systems.  
+            Unfortunately, some of gem5’s publicly available models do not always provide 
+            high accuracy relative to their ”real” counterparts, especially for the memory 
+            subsystem.  I will discuss my group's efforts to overcome these challenges and 
+            improve the fidelity of gem5's GPU models, as well as our ongoing efforts to 
+            scalably run modern ML and HPC workloads in frameworks such as PyTorch and 
+            TensorFlow in gem5.  Collectively, this work significantly enhances the 
+            state-of-the-art and enables more widespread adoption of gem5 as an accurate 
+            platform for heterogeneous architecture research.
         </p>
         <p align="justify">
-            <b>Bio:</b> Matt Sinclair is an Assistant Professor in the Computer
-            Sciences Department, an affiliate faculty member of the Electrical &
-            Computer Engineering Department, and an affiliate of the Teaching Academy
-            at the University of Wisconsin-Madison. He is primarily a computer architect,
-            although his work also includes other areas such as operating systems
-            and parallel programming. Moreover, he is also passionate about designing
-            the tools used to study future heterogeneous systems, including serving
-            as a member of the gem5 Project Management Committee. As an instructor
-            at UW-Madison, he is currently part of the Excel Initiative, and was
-            previously a Madison Teaching & Learning Fellow. He also is the current
-            steward for the ISCA Hall of Fame. His research has been recognized
-            several times, including with an NSF CAREER award, a 2018 ACM Doctoral
-            Dissertation Award nomination, a Qualcomm Innovation Fellowship, the
-            2018 David J. Kuck Outstanding PhD Thesis Award, an ACM SIGARCH - IEEE
-            Computer Society TCCA 2018 Outstanding Dissertation Award Honorable
-            Mention, two Mavis Future Faculty Fellowships, a Feng Chen Memorial
-            Award, and W.J. Poppelbaum Award, and Saburo Muroga Fellowship. Previously,
-            he completed his PhD in Computer Architecture in the Computer Science
-            Department at the University of Illinois at Urbana-Champaign under the
-            supervision of Sarita Adve. During his PhD he interned at NVIDIA Research
-            and after his PhD he was a postdoc at AMD Research; at both AMD and
-            NVIDIA his work focused on optimizing future GPU memory systems.
+            <b>Bio:</b> I am an Assistant Professor in the Computer Sciences Department at the 
+            University of Wisconsin-Madison. I am also an Affiliate Faculty in the ECE Department 
+            and Teaching Academy at UW-Madison. My research primarily focuses on how to design, 
+            program, and optimize future heterogeneous systems. I also design the tools for future 
+            heterogeneous systems, including serving on the gem5 Project Management Committee and 
+            the MLCommons Power and HPC Working Groups. I am a recipient of the NSF CAREER award, 
+            and my work has been funded by the DOE, Google, NSF, and SRC. My research has also 
+            been recognized several times, including an ACM Doctoral Dissertation Award nomination, 
+            a Qualcomm Innovation Fellowship, the David J. Kuck Outstanding PhD Thesis Award, and 
+            an ACM SIGARCH - IEEE Computer Society TCCA Outstanding Dissertation Award Honorable 
+            Mention. I am also the current steward for the ISCA Hall of Fame.
         </p>
         <br />
 
