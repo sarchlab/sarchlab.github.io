@@ -50,7 +50,7 @@
 
         <Course
             year="Spring 2021"
-            title="CSCI780: Topics in Computer Science"
+            title="CSCI780: Topics in Computer Architecture"
             link="https://www.notion.so/syifan/W-M-CSCI780-Spring-2020-Topics-in-Computer-Architecture-0271f98a5f6a491db11760d91c50df97"
         />
 
