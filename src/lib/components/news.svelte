@@ -71,15 +71,6 @@
             '24') !
         </li>
         <li>
-            <span class="date">[Apr 2024]</span>
-            Our project
-            <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2402804">
-                "Enabling Graphics Processing Unit Performance Simulation for
-                Large-Scale Workloads with Lightweight Simulation Methods"
-            </a> has been awarded by NSF! Thanks to NSF and my collaborator Adwait
-            Jog and Sreepathi Pai.
-        </li>
-        <li>
             <span class="date">[Mar 2024]</span> Our
             <a href="https://sarchlab.org/akita/akita24"
                 >First Lightweight Community Workshop on Akita and MGPUSim</a
