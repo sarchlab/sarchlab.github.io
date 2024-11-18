@@ -55,6 +55,20 @@
             <div>Ph.D. Student</div>
             <div><b>Email:</b> dxu05@wm.edu</div>
         </Member>
+
+        <Member
+            name="Enze Xu"
+            profile_img="/enze.jpg"
+            link="https://xuenze.com/"
+        >
+            <div>Ph.D. Student</div>
+            <div><b>Email:</b> exu03@wm.edu</div>
+        </Member>
+
+        <Member name="Yijia Shi" profile_img="" link="">
+            <div>Ph.D. Student</div>
+            <div><b>Email:</b> yshi16@wm.edu</div>
+        </Member>
     </div>
 
     <h2 class="sec-title">Undergraduate Researcher</h2>
