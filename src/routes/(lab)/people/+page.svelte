@@ -140,6 +140,10 @@
             <div>2024/7 -</div>
             <div>New York University</div>
         </Member>
+
+        <Member name="Kaiyan Ma" lightweight>
+            <div>2024/7 -</div>
+        </Member>
     </div>
 
     <h2 class="sec-title">Past Members</h2>
