@@ -51,6 +51,16 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Mar 2025]</span>
+            Our paper <a href="/wafer_scale_gpu_gpgpu.pdf">"Exploring the Wafer-Scale GPU"</a> has been accepted by the 
+            GPGPU 2025 workshop and Daoxuan give a presentation at the workshop. 
+            Congrats Daoxuan!
+        </li>
+        <li>
+            <span class="date">[Jan 2025]</span>
+            Daoxuan Xu has achieved Ph.D. candidacy. Congrats Daoxuan!
+        </li>
+        <li>
             <span class="date">[Jul 2024]</span>
             Our paper
             <a href="https://arxiv.org/abs/2404.13414">

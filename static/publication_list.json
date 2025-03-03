@@ -1,10 +1,63 @@
 [
     {
+        "title": "Sibir: A Dynamic Binary Instrumentation Framework Targeting AMD GPUs",
+        "authors": "Matin Raayai Ardakani, Andrew Nguyen, Ivan Rosales, Daoxuan Xu, Yuwei Sun, Yifan Sun, David Kaeli, Norm Rubin",
+        "venue": "ISPASS2025",
+        "year": 2025,
+        "tags": [
+            "lab",
+            "yifan"
+        ],
+        "links": []
+    },
+    {
+        "title": "Exploring the Wafer-Scale GPUs",
+        "authors": "Daoxuan Xu, Le Xu, Jie Ren, Yifan Sun",
+        "venue": "GPGPU '25",
+        "year": 2025,
+        "tags": [
+            "yifan",
+            "lab"
+        ],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/wafer_scale_gpu_gpgpu.pdf",
+                "text": "PDF"
+            }
+        ]
+    },
+    {
+        "title": "ACTA: Automatic Configuration of the Tensor Memory Accelerator for High-End GPUs.",
+        "authors": "Nicolás Meseguer, Yifan Sun, Michael Pellauer, José L. Abellán and Manuel E. Acacio",
+        "venue": "GPGPU '25",
+        "year": 2025,
+        "tags": [
+            "yifan",
+            "lab"
+        ],
+        "links": []
+    },
+    {
+        "title": "Understanding the Practices, Perceptions, and (Dis)Trust of Generative AI among Instructors: A Mixed-methods Study in the U.S. Higher Education",
+        "authors": "Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
+        "venue": "Computers and Education: Artificial Intelligence",
+        "year": 2025,
+        "tags": [
+            "yifan",
+            "lab"
+        ],
+        "links": []
+    },
+    {
         "title": "Looking into the Black Box: Monitoring Computer Architecture Simulations in Real-Time with AkitaRTM",
         "authors": "Ali Mosallaei, Katherine Isaacs, Yifan Sun",
         "venue": "MICRO '24",
         "year": 2024,
-        "tags": ["yifan", "lab"],
+        "tags": [
+            "yifan",
+            "lab"
+        ],
         "links": []
     },
     {
@@ -12,7 +65,10 @@
         "authors": "Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
         "venue": "Learning @ Scale '24",
         "year": 2024,
-        "tags": ["yifan", "lab"],
+        "tags": [
+            "yifan",
+            "lab"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -26,7 +82,10 @@
         "authors": "Yichen Luo, Daoxuan Xu, Gang Zhou, Yifan Sun, Sidi Lu",
         "venue": "MOST '24",
         "year": 2024,
-        "tags": ["lab", "yifan"],
+        "tags": [
+            "lab",
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -40,7 +99,10 @@
         "authors": "Shaoyu Wang (co-first author), Hang Yan (co-first author), Katherine E. Isaacs, Yifan Sun",
         "venue": "TVCG",
         "year": 2023,
-        "tags": ["lab", "yifan"],
+        "tags": [
+            "lab",
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -54,7 +116,10 @@
         "authors": "Ying Li, Yifan Sun, Adwait Jog",
         "venue": "MICRO 2023",
         "year": 2023,
-        "tags": ["lab", "yifan"],
+        "tags": [
+            "lab",
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -68,7 +133,10 @@
         "authors": "Changxi Liu, Yifan Sun, Trevor E. Carlson",
         "venue": "MICRO 2023",
         "year": 2023,
-        "tags": ["lab", "yifan"],
+        "tags": [
+            "lab",
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -82,7 +150,10 @@
         "authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
         "venue": "Book",
         "year": 2022,
-        "tags": ["lab", "yifan"],
+        "tags": [
+            "lab",
+            "yifan"
+        ],
         "links": []
     },
     {
@@ -90,7 +161,10 @@
         "authors": "Yuhui Bao, Yifan Sun, Zlatan Feric, Michael Tian Shen, Micah Weston, José L. Abellán, Trinayan Baruah, John Kim, Ayay Joshi, David Kaeli",
         "venue": "PACT 2022",
         "year": 2022,
-        "tags": ["lab", "yifan"],
+        "tags": [
+            "lab",
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -104,7 +178,9 @@
         "authors": "Yixuan Zhang, Yifan Sun, Joseph D Gaggiano, Neha Kumar, Clio Maria Adris, and Andrea G Parker",
         "venue": "IEEEVis 2022",
         "year": 2022,
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -118,7 +194,9 @@
         "authors": "Yixuan Zhang, Nurul Suhaimi, Nutchanon Yongsatianchot, Joseph D Gaggiano, Miso Kim, Shivani A Patel, Yifan Sun, Stacy Marsella, Jacqueline Griffin, Andrea G Parker",
         "venue": "CHI 2022",
         "year": 2022,
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -132,7 +210,10 @@
         "authors": "Yifan Sun, Yixuan Zhang, Ali Mosallaei, Michael D. Shah, Cody Dunne, David Kaeli",
         "venue": "EuroVis 2021",
         "year": 2021,
-        "tags": ["lab", "yifan"],
+        "tags": [
+            "lab",
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -156,7 +237,9 @@
         "authors": "Shi Dong, Yifan Sun, Nicolas Bohm Agostini, Elmira Karimi, Daniel Lowell, Jing Zhou, José Cano, José L. Abellán, David Kaeli",
         "year": 2021,
         "venue": "TPDS",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -170,7 +253,9 @@
         "authors": "Junping Zhao, Yifan Sun, Layne Peng, Jie Bao, Kun Wang",
         "year": 2021,
         "venue": "US Patent App.",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -184,7 +269,9 @@
         "authors": "Yixuan Zhang, Yifan Sun, Lace Padilla, Submit Barua, Enrico Bertini, Andrea G. Parker",
         "year": 2021,
         "venue": "CHI 2021",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -198,7 +285,9 @@
         "authors": "Trinayan Baruah, Kaustubh Shivdikar, Shi Dong, Yifan Sun, Saiful A. Mojumder, Kihoon Jung, José L. Abellán, Yash Ukidave, Ajay Joshi, John Kim, David Kaeli",
         "year": 2021,
         "venue": "ISPASS 2021",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -212,7 +301,9 @@
         "authors": "Trinayan Baruah, Yifan Sun, Saiful A. Mojumder, José L. Abellán, Yash Ukidave, Ajay Joshi, Norman Rubin, John Kim, David Kaeli",
         "year": 2020,
         "venue": "PACT 2020",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -226,7 +317,9 @@
         "authors": "Saiful A Mojumder, Yifan Sun, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
         "year": 2020,
         "venue": "ArXiv",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -240,7 +333,9 @@
         "authors": "Saiful A Mojumder, Yifan Sun, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
         "year": 2020,
         "venue": "ArXiv",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -254,7 +349,9 @@
         "authors": "Omid Mohaddesi, Yifan Sun, Rana Azghandi, Rozhin Doroudi, Sam Snodgrass, Ozlem Ergun, Jacqueline Griffin, David Kaeli, Stacy Marsella, Casper Harteveld",
         "year": 2020,
         "venue": "CHI 2020",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -268,7 +365,9 @@
         "authors": "Rozhin Doroudi, Pedro Sequeira, Stacy Marsella, Ozlem Ergun, Rana Azghandi, David Kaeli, Yifan Sun, Jacqueline Griffin",
         "year": 2020,
         "venue": "PLoS one",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -282,7 +381,9 @@
         "authors": "Trinayan Baruah, Yifan Sun, Ali Tolga Dinçer, Saiful A. Mojumder, José L. Abellán, Yash Ukidave, Ajay Joshi, Normam Rubin, John Kim, David Kaeli",
         "year": 2020,
         "venue": "HPCA 2020",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -296,7 +397,9 @@
         "authors": "Yifan Sun",
         "year": 2020,
         "venue": "Ph.D. Dissertation",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": []
     },
     {
@@ -304,7 +407,9 @@
         "authors": "Chen Li, Yifan Sun, Lingling Jin, Lingjie Xu, Zheng Cao, Pengfei Fan, David Kaeli, Sheng Ma, Yang Guo, Jun Yang",
         "year": 2019,
         "venue": "IEEE Computer Architecture Letters (CAL)",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -318,7 +423,9 @@
         "authors": "Yifan Sun, Nicolas Bohm Agostini, Dong Shi, David Kaeli",
         "year": 2019,
         "venue": "ArXiv",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -332,7 +439,9 @@
         "authors": "Yifan Sun, Trinayan Baruah, Saiful A. Mojumder, Shi Dong, Xiang Gong, Shane Treadway, Yuhui Bao, Spencer Hance, Carter McCardwell, Vincent Zhao, Harrison Barclay, Amir Kavyan Ziabari, Zhongliang Chen, Rafael Ubal, José L. Abellán, John Kim, Ajay Joshi, David Kaeli",
         "year": 2019,
         "venue": "ISCA 2019",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -346,7 +455,9 @@
         "authors": "Mohammad Khavari Tavana, Yifan Sun, Nicolas Bohm Agostini, David Kaeli",
         "year": 2019,
         "venue": "IPDPS 2019",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -360,7 +471,9 @@
         "authors": "Yifan Sun, Trinayan Baruah, Shi Dong, David Kaeli",
         "year": 2019,
         "venue": "IWOCL 2019",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": []
     },
     {
@@ -368,7 +481,9 @@
         "authors": "Zhao Junping, Layne Peng, Jie Bao, Kun Wang, Yifan Sun",
         "year": 2019,
         "venue": "US Patent App.",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -382,7 +497,9 @@
         "authors": "Yifan Sun, Layne Peng, Robert A Lincourt Jr, John Cardente, Junping Zhao",
         "year": 2019,
         "venue": "US Patent App.",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -396,7 +513,9 @@
         "authors": "Rozhin Doroudi, Rana Azghandi, Zlatan Feric, Omid Mohaddesi, Yifan Sun, Jacqueline Griffin, Ozlem Ergun, David Kaeli, Pedro Sequeira, Stacy Marsella, Casper Harteveld",
         "year": 2018,
         "venue": "WinterSim 2018",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -410,7 +529,9 @@
         "authors": "Yifan Sun, Layne Peng, Jr. Robert A. Lincourt, John Cardente, John S Harwood",
         "year": 2018,
         "venue": "US Patent App.",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -424,7 +545,9 @@
         "authors": "Yifan Sun, Trinayan Baruah, Saiful A Mojumder, Shi Dong, Rafael Ubal, Xiang Gong, Shane Treadway, Yuhui Bao, Vincent Zhao, José L Abellán, John Kim, Ajay Joshi, David Kaeli",
         "year": 2018,
         "venue": "ArXiv",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -438,7 +561,9 @@
         "authors": "Saiful A Mojumder, Marcia S Louis, Yifan Sun, Amir Kavyan Ziabari, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
         "year": 2018,
         "venue": "IISWC 2018",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -452,7 +577,9 @@
         "authors": "Yifan Sun, Saoni Mukherjee, Trinayan Baruah, Shi Dong, Julian Gutierrez, Prannory Mohan, David Kaeli",
         "year": 2018,
         "venue": "ISPASS 2018",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -466,7 +593,9 @@
         "authors": "Trinayan Baruah, Yifan Sun, Shi Dong, David Kaeli, Norm Rubin",
         "year": 2018,
         "venue": "DATE 2018",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -480,7 +609,9 @@
         "authors": "Shi Dong, Gong Xiang, Yifan Sun, Trinayan Baruah, David Kaeli",
         "year": 2018,
         "venue": "ICPE 2018",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -494,7 +625,9 @@
         "authors": "Leiming Yu, Xun Gong, Yifan Sun, Qianqian Fang, Norm Rubin, David Kaeli",
         "year": 2017,
         "venue": "IISWC 2017",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -508,7 +641,9 @@
         "authors": "Yifan Sun, Xiang Gong, Amir Kavyan Ziabari, Leiming Yu, Xiangyu Li, Saoni Mukherjee, Carter McCardwell, Alejandro Vilegas, David Kaeli",
         "year": 2016,
         "venue": "IISWC 2016",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -522,7 +657,9 @@
         "authors": "Yifan Sun, Chisheng Liang, Steven Sutherland, Casper Harteveld, David Kaeli",
         "year": 2016,
         "venue": "CIG 2016",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -536,7 +673,9 @@
         "authors": "Y-C Chung, W-C Hsu, S-H Hung, TB Jablin, D Kaeli, Y Sun, R Ubal",
         "year": 2016,
         "venue": "Book Chapter",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": []
     },
     {
@@ -544,7 +683,9 @@
         "authors": "Amir Kavyan Ziabari, Yifan Sun, Yenai Ma, Dana Schaa, Jose L. Abellan, John Kim, Ajay Joshi, David Kaeli",
         "year": 2016,
         "venue": "TACO",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -558,7 +699,9 @@
         "authors": "Amir Kavyan Ziabari, Yifan Sun, Yenai Ma, Dana Schaa, Jose L. Abellan, John Kim, Ajay Joshi, David Kaeli",
         "year": 2016,
         "venue": "ISPASS 2016",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -572,7 +715,9 @@
         "authors": "Yifan Sun, Kaushik R Chowdhury",
         "year": 2014,
         "venue": "IEEE Communications Magazine",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -586,7 +731,9 @@
         "authors": "Abdulla K Al-Ali, Yifan Sun, Marco Di Felice, Jarkko Paavola, Kaushik R Chowdhury",
         "year": 2014,
         "venue": "IEEE Transactions on Vehicular Technology (TVT)",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": []
     },
     {
@@ -594,7 +741,9 @@
         "authors": "Jithin Jagannath, Anu Saji, Hovannes Kulhandjian, Yifan Sun, Emrecan Demirors, Tommaso Melodia",
         "year": 2013,
         "venue": "WUWNet 2013",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": []
     },
     {
@@ -602,7 +751,9 @@
         "authors": "Yifan Sun, Tommaso Melodia",
         "year": 2013,
         "venue": "WUWNet 2013",
-        "tags": ["yifan"],
+        "tags": [
+            "yifan"
+        ],
         "links": []
     }
 ]

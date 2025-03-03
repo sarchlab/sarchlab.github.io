@@ -52,7 +52,7 @@
             profile_img="/daoxuan.jpg"
             link="https://www.linkedin.com/in/%E9%81%93%E7%85%8A-%E5%BE%90-23223323b/"
         >
-            <div>Ph.D. Student</div>
+            <div>Ph.D. Candidate</div>
             <div><b>Email:</b> dxu05@wm.edu</div>
         </Member>
 
@@ -143,6 +143,11 @@
 
         <Member name="Kaiyan Ma" lightweight>
             <div>2024/7 -</div>
+        </Member>
+
+        <Member name="Yang Yu" lightweight>
+            <div>2025/2 -</div>
+            <div>Eindhoven University of Technology</div>
         </Member>
     </div>
 
