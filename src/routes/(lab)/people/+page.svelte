@@ -112,6 +112,12 @@
             <div>2024/6 -</div>
             <div><b>Email:</b> hzhao10@wm.edu</div>
         </Member>
+
+        <Member name="Jingyang Chen" profile_img="" link="">
+            <div>Undergraduate Researcher</div>
+            <div>2025/2 -</div>
+            <div><b>Email:</b> jchen52@wm.edu</div>
+        </Member>
     </div>
 
     <h2 class="sec-title">External Research Interns</h2>
