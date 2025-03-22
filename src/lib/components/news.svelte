@@ -52,9 +52,35 @@
     <ul>
         <li>
             <span class="date">[Mar 2025]</span>
-            Our paper <a href="/wafer_scale_gpu_gpgpu.pdf">"Exploring the Wafer-Scale GPU"</a> has been accepted by the 
-            GPGPU 2025 workshop and Daoxuan give a presentation at the workshop. 
-            Congrats Daoxuan!
+            Our paper
+            <a href="#"
+                >"TrioSim: A Lightweight Simulator for Large-Scale DNN
+                Workloads on Multi-GPU Systems"</a
+            >
+            has been accepted by the 52nd International Symposium on Computer Architecture
+            (ISCA 2025)! Congrats Ying!
+        </li>
+        <li>
+            <span class="date">[Mar 2025]</span>
+            Two other papers have been accepted by ISCA 2025: "NetCrafter: Tailoring
+            Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems" and "The
+            Sparsity-Aware LazyGPU Architecture". Thanks to our collaborators at
+            UVA and NUS!
+        </li>
+        <li>
+            <span class="date">[Mar 2025]</span>
+            Our paper "Sibir: A Dynamic Binary Instrumentation Framework Targeting
+            AMD GPUs" has been accepted by ISPASS 2025. Daoxuan and Yuwei have been
+            involved in this project. Thanks to our collaborators at Northeastern
+            University!
+        </li>
+        <li>
+            <span class="date">[Mar 2025]</span>
+            Our paper
+            <a href="/wafer_scale_gpu_gpgpu.pdf"
+                >"Exploring the Wafer-Scale GPU"</a
+            > has been accepted by the GPGPU 2025 workshop and Daoxuan give a presentation
+            at the workshop. Congrats Daoxuan!
         </li>
         <li>
             <span class="date">[Jan 2025]</span>
