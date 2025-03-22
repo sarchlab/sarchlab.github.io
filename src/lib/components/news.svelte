@@ -52,13 +52,9 @@
     <ul>
         <li>
             <span class="date">[Mar 2025]</span>
-            Our paper
-            <a href="#"
-                >"TrioSim: A Lightweight Simulator for Large-Scale DNN
-                Workloads on Multi-GPU Systems"</a
-            >
-            has been accepted by the 52nd International Symposium on Computer Architecture
-            (ISCA 2025)! Congrats Ying!
+            Our paper "TrioSim: A Lightweight Simulator for Large-Scale DNN Workloads
+            on Multi-GPU Systems" has been accepted by the 52nd International Symposium
+            on Computer Architecture (ISCA 2025)! Congrats Ying!
         </li>
         <li>
             <span class="date">[Mar 2025]</span>
