@@ -17,7 +17,7 @@
     },
     {
         "title": "The Sparsity-Aware LazyGPU Architecture",
-        "authors": "Changxi Liu, Yu Miao, Yifan Sun, Trevor E. Carlson",
+        "authors": "Changxi Liu, Miao Yu, Yifan Sun, Trevor E. Carlson",
         "venue": "ISCA 2025",
         "year": 2025,
         "tags": ["yifan", "lab"],
