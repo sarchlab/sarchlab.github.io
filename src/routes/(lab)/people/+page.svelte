@@ -122,11 +122,6 @@
 
     <h2 class="sec-title">External Research Interns</h2>
     <div class="person-container lightweight">
-        <Member name="Chen Gong" lightweight>
-            <div>2023/4 -</div>
-            <div>Huazhong U. of Sci. and Tech.</div>
-        </Member>
-
         <Member name="Bohan Cui" lightweight>
             <div>2023/7 -</div>
             <div>Nanjing University</div>
@@ -142,11 +137,6 @@
             <div>Oregon State University</div>
         </Member>
 
-        <Member name="Yuwei Sun" lightweight>
-            <div>2024/7 -</div>
-            <div>New York University</div>
-        </Member>
-
         <Member name="Kaiyan Ma" lightweight>
             <div>2024/7 -</div>
         </Member>
@@ -158,6 +148,21 @@
     </div>
 
     <h2 class="sec-title">Past Members</h2>
+
+    <h3 class="mt-5 mb-2">Undergraduate Researchers</h3>
+    <div class="person-container">
+        <Member
+            name="Yexi Zheng"
+            profile_img="/yexi_zheng.jpg"
+            link="https://www.linkedin.com/in/yexi-zheng-201894225/"
+            lightweight
+        >
+            <div>Undergraduate Researcher</div>
+            <div>2023/11 - 2024/10</div>
+        </Member>
+    </div>
+
+    <h3 class="mt-5 mb-2">External Research Interns</h3>
     <div class="person-container">
         <Member name="Yan Hang" lightweight>
             <div>Research Intern</div>
@@ -199,16 +204,6 @@
             </div>
         </Member>
 
-        <Member
-            name="Yexi Zheng"
-            profile_img="/yexi_zheng.jpg"
-            link="https://www.linkedin.com/in/yexi-zheng-201894225/"
-            lightweight
-        >
-            <div>Undergraduate Researcher</div>
-            <div>2023/11 - 2024/10</div>
-        </Member>
-
         <Member name="Yuchao Su" lightweight>
             <div>Research Intern</div>
             <div>2023/8 - 2024/8</div>
@@ -224,6 +219,16 @@
         <Member name="Jijie Zhou" lightweight>
             <div>Research Intern</div>
             <div>2023/11 - 2024/11</div>
+        </Member>
+
+        <Member name="Chen Gong" lightweight>
+            <div>2023/4 - 2025/3</div>
+            <div>Huazhong U. of Sci. and Tech.</div>
+        </Member>
+
+        <Member name="Yuwei Sun" lightweight>
+            <div>2024/7 - 2025/3</div>
+            <div>New York University</div>
         </Member>
     </div>
 </div>

@@ -51,6 +51,13 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Apr 2025]</span>
+            Our paper "Will Your Next Pair Programming Partner Be Human? An Empirical
+            Evaluation of Generative AI as a Collaborative Teammate in a Semester-Long
+            Classroom Setting" has been accepted by the 12th 2025 ACM Learning @
+            Scale Conference (L@S 2025)! Congrats Wenhan!
+        </li>
+        <li>
             <span class="date">[Mar 2025]</span>
             Our paper "TrioSim: A Lightweight Simulator for Large-Scale DNN Workloads
             on Multi-GPU Systems" has been accepted by the 52nd International Symposium
