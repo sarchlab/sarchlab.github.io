@@ -51,7 +51,7 @@
                     alt="google scholar"
                 />
                 <a
-                    href="https://scholar.google.com/citations?user=avkG7UgAAAAJ&hl=en"
+                    href="https://scholar.google.com/citations?user=LZg-kGAAAAAJ&hl=en"
                     >Google Scholar</a
                 >
             </div>
