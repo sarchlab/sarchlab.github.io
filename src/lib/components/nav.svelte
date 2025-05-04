@@ -200,7 +200,7 @@
     nav {
         @apply items-center mb-3 py-4 px-2;
         @apply bg-background;
-        @apply max-w-screen-2xl;
+        @apply w-full max-w-screen-2xl;
         @apply mx-auto;
     }
 
