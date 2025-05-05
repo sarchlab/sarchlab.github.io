@@ -26,7 +26,7 @@
     <div class="person-container">
         <Member
             name="Ying Li"
-            profile_img="/ying_profile.png"
+            profile_img="/yingli_photo.jpg"
             link="https://yingliphd.com/#about_me"
         >
             <div>Ph.D. Candidate</div>
