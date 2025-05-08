@@ -13,7 +13,13 @@
         "venue": "ISCA 2025",
         "year": 2025,
         "tags": ["yifan", "lab"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/triosim_isca2025.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems",
