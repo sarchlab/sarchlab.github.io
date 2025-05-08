@@ -1,7 +1,7 @@
 [
     {
         "title": "Will Your Next Pair Programming Partner Be Human? An Empirical Evaluation of Generative AI as a Collaborative Teammate in a Semester-Long Classroom Setting",
-        "authors": "Wenhan Lyu, Yimeng Wang, Yifan Sun and Yixuan Zhang",
+        "authors": "Wenhan Lyu, Yimeng Wang, Yifan Sun, Yixuan Zhang",
         "venue": "Learning @ Scale 2025",
         "year": 2025,
         "tags": ["yifan", "lab"],
@@ -61,7 +61,7 @@
     },
     {
         "title": "ACTA: Automatic Configuration of the Tensor Memory Accelerator for High-End GPUs.",
-        "authors": "Nicolás Meseguer, Yifan Sun, Michael Pellauer, José L. Abellán and Manuel E. Acacio",
+        "authors": "Nicolás Meseguer, Yifan Sun, Michael Pellauer, José L. Abellán, Manuel E. Acacio",
         "venue": "GPGPU 2025",
         "year": 2025,
         "tags": ["yifan", "lab"],
