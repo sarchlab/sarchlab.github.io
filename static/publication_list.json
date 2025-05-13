@@ -458,14 +458,6 @@
         ]
     },
     {
-        "title": "MGSim: A Flexible High-Performance Simulator for Multi-GPU Systems",
-        "authors": "Yifan Sun, Trinayan Baruah, Shi Dong, David Kaeli",
-        "year": 2019,
-        "venue": "IWOCL 2019",
-        "tags": ["yifan"],
-        "links": []
-    },
-    {
         "title": "Checkpointing for GPU-as-a-Service in Cloud Computing Environment",
         "authors": "Zhao Junping, Layne Peng, Jie Bao, Kun Wang, Yifan Sun",
         "year": 2019,
