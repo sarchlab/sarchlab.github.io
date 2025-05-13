@@ -101,7 +101,13 @@
         "venue": "MICRO 2024",
         "year": 2024,
         "tags": ["yifan", "lab"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/akitartm.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Evaluating the Effectiveness of LLMs in Introductory Computer Science Education: A Semester-Long Field Study",
