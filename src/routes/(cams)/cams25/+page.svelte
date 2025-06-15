@@ -78,7 +78,7 @@
                     The goal of the workshop is to provide a forum for
                     researchers and practitioners to exchange ideas and discuss
                     the latest advances in the field of computer architecture
-                    modeling ans simulation. The focus on modeling and
+                    modeling and simulation. The focus on modeling and
                     simulation techniques is of vital importance to the ongoing
                     advancements in microarchitecture, as these methods are
                     essential tools for improving system performance,
@@ -157,6 +157,49 @@
 
 <div class="block">
     <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Call for Tool Release Talks</h2>
+        <p>
+            Starting from CAMS 2024, we organize a specialized session that
+            allows tool creators to announce their new releases to amplify
+            their exposure. The talks will announce new simulators, or new
+            releases of existing simulators, highlighting their new features
+            and improvements.
+        </p>
+        <p>
+            Last year, all the talks are invited. This year, we solicit talks
+            from a broader community. Please submit a 1-page abstract that
+            includes what simulator, what new version, and what new features
+            that you want to present. The selection will be made based on the
+            relevance to the workshop topics, decided by the workshop chairs.
+        </p>
+        <p>We encourage in-person talks, but remote talks are also welcome.</p>
+
+        <div class="ml-2 mt-4 gap-4 flex flex-col">
+            <div>
+                <b>Abstract Due:</b> September 15, 2025 (Anywhere on Earth)
+            </div>
+            <div>
+                <b>Notification:</b> September 22, 2025
+            </div>
+
+            <div>
+                <b>Submission Guidelines</b>
+                <p>
+                    Abstract submission follows the same format as the paper
+                    submission (see below), except for the 1-page limit.
+                </p>
+            </div>
+
+            <div>
+                <b>Submission Site:</b>
+                TBD
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block">
+    <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Call for Papers</h2>
         <p>
             The workshop invites submissions of original work in the form of
@@ -212,7 +255,7 @@
                 <p>
                     At least one author of accepted papers is expected to
                     present in person during the event. We understand the
-                    travel difficulty of the post-pandemia era. In extreme
+                    travel difficulty in the post-pandemic era. In extreme
                     cases, we will allow remote or pre-recorded presentations.
                 </p>
             </div>
