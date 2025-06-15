@@ -27,13 +27,7 @@
         "venue": "ISCA 2025",
         "year": 2025,
         "tags": ["yifan", "lab"],
-        "links": [
-            {
-                "icon": "/file_outline.svg",
-                "link": "/netcrafter_isca.pdf",
-                "text": "PDF"
-            }
-        ]
+        "links": []
     },
     {
         "title": "The Sparsity-Aware LazyGPU Architecture",
