@@ -299,7 +299,7 @@
                     </td>
                     <td>
                         <img
-                            src="sabila_profile.jpeg"
+                            src="enze.jpg"
                             style="border-radius: 10px"
                             alt=""
                             data-position="center center"
@@ -321,9 +321,9 @@
                         >
                     </td>
                     <td>
-                        <a href="" target="&ldquo;blank&rdquo;">
-                            Sabila Al Jannat
-                        </a>
+                        <a 
+                            href="https://xuenze.com"
+                            target="&ldquo;blank&rdquo;">Enze Xu</a>
                     </td>
                 </tr>
                 <tr>
