@@ -143,15 +143,69 @@
 
 <div class="block">
     <div class="block-content">
-        <h2 class="text-theme font-bold mb-6">Workshop Program</h2>
-        <p>TBD</p>
-    </div>
-</div>
+        <h2 class="text-theme font-bold mb-6">Call for Papers</h2>
+        <p>
+            The workshop invites submissions of original work in the form of
+            full papers (up to 6 pages, reference not included) covering all
+            aspects of computer architecture modeling and simulation.
+            Submissions will be peer-reviewed, and accepted papers will be
+            included in the workshop proceedings.
+        </p>
 
-<div class="block">
-    <div class="block-content">
-        <h2 class="text-theme font-bold mb-6">Keynotes</h2>
-        <p>TBD</p>
+        <div class="ml-2 mt-4 gap-4 flex flex-col">
+            <div>
+                <b>Papers Due:</b> August 18, 2025 (Anywhere on Earth)
+            </div>
+            <div>
+                <b>Author Notification:</b> September 15, 2025
+            </div>
+
+            <div>
+                <b>Submission Guidelines</b>
+                <p>
+                    Full paper submissions must be in PDF format for US
+                    letter-size or A4 paper. They must not exceed 6 pages
+                    (excluding unlimited references) in standard ACM two-column
+                    conference format (review mode, with page numbers, 9pt font
+                    minimum). More concise papers with ideas clearly expressed
+                    are also welcomed. Authors can select if they want to
+                    reveal their identity in the submission.
+                </p>
+                <p>
+                    We use the ACM Primary article template. Templates for ACM
+                    format are available for Microsoft Word and LaTeX at this
+                    link.
+                    <a
+                        href="https://www.acm.org/publications/proceedings-template"
+                    >
+                        https://www.acm.org/publications/proceedings-template</a
+                    >. For Latex users, please use the sigplan example in the
+                    template folder. For Overleaf users, the template is also
+                    available at
+                    <a
+                        href="https://www.overleaf.com/latex/templates?q=acm+sigconf"
+                    >
+                        https://www.overleaf.com/latex/templates?q=acm+sigconf
+                    </a>.
+                </p>
+                <p>
+                    We do not put the paper in the ACM or IEEE digital
+                    libraries. Therefore, the papers submitted to the event can
+                    be submitted to other venues without restrictions.
+                </p>
+                <p>
+                    At least one author of accepted papers is expected to
+                    present in person during the event. We understand the
+                    travel difficulty in the post-pandemic era. In extreme
+                    cases, we will allow remote or pre-recorded presentations.
+                </p>
+            </div>
+
+            <div>
+                <b>Submission Site:</b>
+                TBD
+            </div>
+        </div>
     </div>
 </div>
 
@@ -200,71 +254,15 @@
 
 <div class="block">
     <div class="block-content">
-        <h2 class="text-theme font-bold mb-6">Call for Papers</h2>
-        <p>
-            The workshop invites submissions of original work in the form of
-            full papers (up to 6 pages, reference not included) covering all
-            aspects of computer architecture modeling and simulation.
-            Submissions will be peer-reviewed, and accepted papers will be
-            included in the workshop proceedings.
-        </p>
+        <h2 class="text-theme font-bold mb-6">Workshop Program</h2>
+        <p>TBD</p>
+    </div>
+</div>
 
-        <div class="ml-2 mt-4 gap-4 flex flex-col">
-            <div>
-                <b>Papers Due:</b> August 18, 2025 (Anywhere on Earth)
-            </div>
-            <div>
-                <b>Author Notification:</b> September 15, 2025
-            </div>
-
-            <div>
-                <b>Submission Guidelines</b>
-                <p>
-                    Full paper submissions must be in PDF format for US
-                    letter-size or A4 paper. They must not exceed 6 pages
-                    (excluding unlimited references) in standard ACM two-column
-                    conference format (review mode, with page numbers, 9pt font
-                    minimum). More concise papers with ideas clearly expressed
-                    are also welcomed. Authors can select if they want to
-                    reveal their identity in the submission.
-                </p>
-                <p>
-                    We use the ACM Primary article template. Templates for ACM
-                    format are available for Microsoft Word and LaTeX at this
-                    link.
-                    <a
-                        href="https://www.acm.org/publications/proceedings-template"
-                    >
-                        https://www.acm.org/publications/proceedings-template</a
-                    >
-                </p>
-                <p>
-                    For Latex users, please use the sigplan example in the
-                    template folder. For Overleaf users, the template is also
-                    available at <a
-                        href="https://www.overleaf.com/latex/templates?q=acm+sigconf"
-                    >
-                        https://www.overleaf.com/latex/templates?q=acm+sigconf
-                    </a>
-                </p>
-                <p>
-                    We do not put the paper in the ACM or IEEE digital
-                    libraries. Therefore, the papers submitted to the event can
-                    be submitted to other venues without restrictions.
-                </p>
-                <p>
-                    At least one author of accepted papers is expected to
-                    present in person during the event. We understand the
-                    travel difficulty in the post-pandemic era. In extreme
-                    cases, we will allow remote or pre-recorded presentations.
-                </p>
-            </div>
-
-            <div>
-                <b>Submission Site:</b>
-                TBD
-            </div>
-        </div>
+<div class="block">
+    <div class="block-content">
+        <h2 class="text-theme font-bold mb-6">Keynotes</h2>
+        <p>TBD</p>
     </div>
 </div>
 
@@ -321,9 +319,10 @@
                         >
                     </td>
                     <td>
-                        <a 
+                        <a
                             href="https://xuenze.com"
-                            target="&ldquo;blank&rdquo;">Enze Xu</a>
+                            target="&ldquo;blank&rdquo;">Enze Xu</a
+                        >
                     </td>
                 </tr>
                 <tr>
