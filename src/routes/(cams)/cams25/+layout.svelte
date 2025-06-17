@@ -41,6 +41,11 @@
 
     <div slot="slot4">
         <b>Website Designer</b>
-        <div class="text-xs mt-3">Yifan Sun</div>
+        <div class="text-xs mt-3">
+            <a href="/syifan" target="_blank">Yifan Sun</a>
+        </div>
+        <div class="text-xs mt-3">
+            <a href="https://xuenze.com/" target="_blank">Enze Xu</a>
+        </div>
     </div>
 </Footer>
