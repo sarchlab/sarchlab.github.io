@@ -67,11 +67,13 @@
                 <div class="text-lg">
                     <b>Date:</b> October 18 or 19, 2025
                     <br />
-                    <b>Time:</b> TBD
-                    <br />
+
                     <b>Location:</b> TBD
                     <br />
                     <b>Room:</b> TBD
+                    <br />
+                    <b>Paper Submission Deadline:</b> August 11, 2025 (Anywhere
+                    on Earth)
                 </div>
 
                 <p class="text-baseline mt-4">
@@ -154,10 +156,10 @@
 
         <div class="ml-2 mt-4 gap-4 flex flex-col">
             <div>
-                <b>Papers Due:</b> August 18, 2025 (Anywhere on Earth)
+                <b>Paper Due:</b> August 11, 2025 (Anywhere on Earth)
             </div>
             <div>
-                <b>Author Notification:</b> September 15, 2025
+                <b>Author Notification:</b> September 8, 2025
             </div>
 
             <div>
