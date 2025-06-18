@@ -65,15 +65,23 @@
                     (CAMS 2025)
                 </h1>
                 <div class="text-lg">
-                    <b>Date:</b> October 18 or 19, 2025
+                    <p class="mt-2 mb-8">
+                        To be held in conjunction with <a
+                            href="https://microarch.org/micro58/"
+                        >
+                            MICRO 2025
+                        </a>
+                    </p>
+                    <b>Workshop Date:</b> October 18 or 19, 2025
                     <br />
 
-                    <b>Location:</b> TBD
+                    <b>Full Paper Due:</b> August 11, 2025 (Anywhere on Earth)
+                    <br />
+                    <b>Location:</b> Seoul, Korea
+                    <br />
+                    <b>Venue:</b> TBD
                     <br />
                     <b>Room:</b> TBD
-                    <br />
-                    <b>Paper Submission Deadline:</b> August 11, 2025 (Anywhere
-                    on Earth)
                 </div>
 
                 <p class="text-baseline mt-4">
@@ -170,8 +178,8 @@
                     (excluding unlimited references) in standard ACM two-column
                     conference format (review mode, with page numbers, 9pt font
                     minimum). More concise papers with ideas clearly expressed
-                    are also welcomed. Authors can select if they want to
-                    reveal their identity in the submission.
+                    are also welcomed. Authors may choose whether to reveal
+                    their identity in the submission.
                 </p>
                 <p>
                     We use the ACM Primary article template. Templates for ACM
@@ -191,14 +199,14 @@
                     </a>.
                 </p>
                 <p>
-                    We do not put the paper in the ACM or IEEE digital
-                    libraries. Therefore, the papers submitted to the event can
-                    be submitted to other venues without restrictions.
+                    We do not include the papers in the ACM or IEEE digital
+                    libraries. Therefore, papers submitted to this event may be
+                    submitted to other venues without restrictions.
                 </p>
                 <p>
                     At least one author of accepted papers is expected to
                     present in person during the event. We understand the
-                    travel difficulty in the post-pandemic era. In extreme
+                    travel difficulty in the post-pandemic era. In exceptional
                     cases, we will allow remote or pre-recorded presentations.
                 </p>
             </div>
@@ -222,13 +230,17 @@
             and improvements.
         </p>
         <p>
-            Last year, all the talks are invited. This year, we solicit talks
-            from a broader community. Please submit a 1-page abstract that
-            includes what simulator, what new version, and what new features
-            that you want to present. The selection will be made based on the
-            relevance to the workshop topics, decided by the workshop chairs.
+            Last year, all the talks were invited. This year, we are soliciting
+            talks from a broader community. Please submit a 1-page (including
+            references) abstract that includes which simulator, which new
+            version, and what new features you want to present. No peer review
+            process will be applied to abstracts. The workshop chairs will make
+            the selection, mainly based on the relevancy and potential
+            interests of the audience.
         </p>
-        <p>We encourage in-person talks, but remote talks are also welcome.</p>
+        <p>
+            We encourage in-person talks, but remote talks are also acceptable.
+        </p>
 
         <div class="ml-2 mt-4 gap-4 flex flex-col">
             <div>
@@ -241,8 +253,8 @@
             <div>
                 <b>Submission Guidelines</b>
                 <p>
-                    Abstract submission follows the same format as the paper
-                    submission (see below), except for the 1-page limit.
+                    Abstract submissions should follow the same format as paper
+                    submissions (see above), except for the 1-page limit.
                 </p>
             </div>
 
