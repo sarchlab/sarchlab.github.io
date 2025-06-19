@@ -213,7 +213,7 @@
 
             <div>
                 <b>Submission Site:</b>
-                TBD
+                <a href="https://easychair.org/conferences/?conf=cams25full">https://easychair.org/conferences/?conf=cams25full</a>
             </div>
         </div>
     </div>
@@ -260,7 +260,7 @@
 
             <div>
                 <b>Submission Site:</b>
-                TBD
+                <a href="https://easychair.org/conferences/?conf=cams25toolrelease">https://easychair.org/conferences/?conf=cams25toolrelease</a>
             </div>
         </div>
     </div>
