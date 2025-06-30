@@ -18,6 +18,11 @@
                 "icon": "/file_outline.svg",
                 "link": "/triosim_isca2025.pdf",
                 "text": "PDF"
+            },
+            {
+                "icon": "/file_powerpoint-regular.svg",
+                "link": "/triosim_isca2025.pptx",
+                "text": "Slides"
             }
         ]
     },
@@ -27,7 +32,13 @@
         "venue": "ISCA 2025",
         "year": 2025,
         "tags": ["yifan", "lab"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://dl.acm.org/doi/10.1145/3695053.3731040",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "The Sparsity-Aware LazyGPU Architecture",
