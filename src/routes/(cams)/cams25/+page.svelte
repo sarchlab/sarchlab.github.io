@@ -72,7 +72,7 @@
                             MICRO 2025
                         </a>
                     </p>
-                    <b>Workshop Date:</b> October 18, 2025, 8:00 AM – 12:00 PM
+                    <b>Workshop Date:</b> October 18, 2025
                     <br />
 
                     <b>Full Paper Due:</b> August 11, 2025 (Anywhere on Earth)
