@@ -266,8 +266,4 @@
         @apply lg:grid-cols-1 xl:gap-0;
         @apply xl:grid-cols-1 xl:gap-0;
     }
-
-    .member-description {
-        @apply text-sm text-muted-foreground leading-4;
-    }
 </style>

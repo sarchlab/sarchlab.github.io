@@ -84,6 +84,10 @@
         @apply text-4xl font-semibold text-foreground;
     }
 
+    .person-description {
+        @apply text-sm text-muted-foreground leading-4;
+    }
+
     .person-card.lightweight .profile-img {
         @apply hidden;
     }
@@ -91,6 +95,7 @@
     .person-name {
         @apply text-2xl font-semibold;
     }
+
     .person-card.lightweight .person-name {
         @apply text-lg;
     }
