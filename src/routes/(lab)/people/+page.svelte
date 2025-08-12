@@ -54,7 +54,11 @@
             link="https://www.linkedin.com/in/%E9%81%93%E7%85%8A-%E5%BE%90-23223323b/"
             role="Ph.D. Candidate"
             email="dxu05@wm.edu"
-        />
+        >
+            <div>
+                Co-advised with <a href="https://jren73.github.io/">Jie Ren</a>
+            </div>
+        </Member>
 
         <Member
             name="Enze Xu"
