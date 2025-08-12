@@ -75,13 +75,14 @@
                     <b>Workshop Date:</b> October 18, 2025
                     <br />
 
-                    <b>Full Paper Due:</b> August 11, 2025 (Anywhere on Earth)
+                    <b>Full Paper Due:</b>
+                    <s>August 11, 2025</s> August 25, 2025 (Anywhere on Earth)
                     <br />
                     <b>Location:</b> Seoul, Korea
                     <br />
-                    <b>Venue:</b> TBD
+                    <b>Venue:</b> Lotte Hotel
                     <br />
-                    <b>Room:</b> TBD
+                    <b>Room:</b> Room 1
                 </div>
 
                 <p class="text-baseline mt-4">
@@ -164,10 +165,12 @@
 
         <div class="ml-2 mt-4 gap-4 flex flex-col">
             <div>
-                <b>Paper Due:</b> August 11, 2025 (Anywhere on Earth)
+                <b>Paper Due:</b>
+                <s>August 11, 2025</s> August 25, 2025 (Anywhere on Earth)
             </div>
             <div>
-                <b>Author Notification:</b> September 8, 2025
+                <b>Author Notification:</b>
+                <s>September 8, 2025</s> September 15, 2025
             </div>
 
             <div>
@@ -213,7 +216,9 @@
 
             <div>
                 <b>Submission Site:</b>
-                <a href="https://easychair.org/conferences/?conf=cams25full">https://easychair.org/conferences/?conf=cams25full</a>
+                <a href="https://easychair.org/conferences/?conf=cams25full"
+                    >https://easychair.org/conferences/?conf=cams25full</a
+                >
             </div>
         </div>
     </div>
@@ -260,7 +265,10 @@
 
             <div>
                 <b>Submission Site:</b>
-                <a href="https://easychair.org/conferences/?conf=cams25toolrelease">https://easychair.org/conferences/?conf=cams25toolrelease</a>
+                <a
+                    href="https://easychair.org/conferences/?conf=cams25toolrelease"
+                    >https://easychair.org/conferences/?conf=cams25toolrelease</a
+                >
             </div>
         </div>
     </div>
