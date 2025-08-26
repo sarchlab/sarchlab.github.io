@@ -80,15 +80,6 @@
     <h2 class="sec-title">Undergraduate Researcher</h2>
     <div class="person-container">
         <Member
-            name="Aibo Li"
-            profile_img="/aibo.jpg"
-            link=""
-            role="Undergraduate Researcher"
-            date="2023/11 -"
-            email="ali14@wm.edu"
-        />
-
-        <Member
             name="Xuzhong Wang"
             profile_img="https://media.licdn.com/dms/image/v2/D4E03AQFAjQqjt1Iq-A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730063518623?e=1756944000&v=beta&t=xqj3Cyzbe4gjcLePiMJeCp5vIRbMeu4hszHPDVDpi40"
             link=""
@@ -104,6 +95,13 @@
             role="Undergraduate Researcher"
             date="2024/6 -"
             email="hzhao10@wm.edu"
+        />
+
+        <Member
+            name="Jeremy Coonley"
+            role="Undergraduate Researcher"
+            date="2025/4 -"
+            email="jmcoonley@wm.edu"
         />
     </div>
 
@@ -171,6 +169,16 @@
             role="Undergraduate Researcher"
             date="2023/9 - 2025/9"
             email="pjibarz@wm.edu"
+            variant="extra-lightweight"
+        />
+
+        <Member
+            name="Aibo Li"
+            profile_img="/aibo.jpg"
+            link=""
+            role="Undergraduate Researcher"
+            date="2023/11 - 2025/8"
+            email="ali14@wm.edu"
             variant="extra-lightweight"
         />
 
