@@ -366,7 +366,25 @@
 <div class="block">
     <div class="block-content">
         <h2 class="text-theme font-bold mb-6">Program Committee</h2>
-        <p>TBD</p>
+        <p>
+            In this workshop, we are experimenting with a PhD and
+            practitioner-led PC. We believe that PhD students and practitioners
+            are the end users of simulation and performance modeling tools and
+            hence, should know the tools the best. We will report our
+            experience during the workshop event.
+        </p>
+        <ul class="ml-6 list-disc">
+            <li>Mario Badr (University of Toronto)</li>
+            <li>Yuhui Bao (AMD)</li>
+            <li>Shibo Chen (Tenstorrent)</li>
+            <li>Shi Dong (Cerebras Systems)</li>
+            <li>Hanxian Huang (Meta)</li>
+            <li>Bingyao Li (University of California, Riverside)</li>
+            <li>Changxi Liu (National University of Singapore)</li>
+            <li>Hongyuan Liu (Stevens Institute of Technology)</li>
+            <li>Kaustubh Shivdikar (AMD)</li>
+            <li>Jindi Wu (DePaul University)</li>
+        </ul>
     </div>
 </div>
 
