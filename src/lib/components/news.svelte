@@ -72,7 +72,7 @@
         </li>
         <li>
             <span class="date">[Mar 2025]</span>
-            Our paper "Sibir: A Dynamic Binary Instrumentation Framework Targeting
+            Our paper "Luthier: A Dynamic Binary Instrumentation Framework Targeting
             AMD GPUs" has been accepted by ISPASS 2025. Daoxuan and Yuwei have been
             involved in this project. Thanks to our collaborators at Northeastern
             University!

@@ -38,7 +38,7 @@
         "links": []
     },
     {
-        "title": "Sibir: A Dynamic Binary Instrumentation Framework Targeting AMD GPUs",
+        "title": "Luthier: A Dynamic Binary Instrumentation Framework Targeting AMD GPUs",
         "authors": "Matin Raayai Ardakani, Andrew Nguyen, Ivan Rosales, Daoxuan Xu, Yuwei Sun, Yifan Sun, David Kaeli, Norm Rubin",
         "venue": "ISPASS 2025",
         "year": 2025,
