@@ -2,10 +2,15 @@
     export let name = ''
     export let profile_img = ''
     export let link = ''
-    export let lightweight = false
+    export let variant = 'default'
+    export let role = ''
+    export let date = ''
+    export let affiliation = ''
+    export let description = ''
+    export let email = ''
 </script>
 
-<div class="person-card" class:lightweight>
+<div class={`person-card ${variant}`}>
     {#if profile_img !== ''}
         <img class="profile-img" src={profile_img} alt="Profile of {name}" />
     {:else}
@@ -27,6 +32,21 @@
             </a>
         {:else}
             <div class="person-name">{name}</div>
+        {/if}
+        {#if role !== ''}
+            <div class="person-role">{role}</div>
+        {/if}
+        {#if date !== ''}
+            <div class="person-date">{date}</div>
+        {/if}
+        {#if affiliation !== ''}
+            <div class="person-affiliation">{affiliation}</div>
+        {/if}
+        {#if description !== ''}
+            <div class="person-description">{description}</div>
+        {/if}
+        {#if email !== ''}
+            <div class="person-email"><b>Email:</b> {email}</div>
         {/if}
         <slot />
     </div>
@@ -64,6 +84,10 @@
         @apply text-4xl font-semibold text-foreground;
     }
 
+    .person-description {
+        @apply text-sm text-muted-foreground leading-4;
+    }
+
     .person-card.lightweight .profile-img {
         @apply hidden;
     }
@@ -71,7 +95,45 @@
     .person-name {
         @apply text-2xl font-semibold;
     }
+
     .person-card.lightweight .person-name {
         @apply text-lg;
+    }
+
+    .person-card.extra-lightweight {
+        @apply p-0 my-1 pl-3;
+        @apply flex-row;
+    }
+
+    .person-card.extra-lightweight .person-info {
+        @apply flex-row gap-2;
+    }
+
+    .person-card.extra-lightweight .profile-img {
+        @apply hidden;
+    }
+
+    .person-card.extra-lightweight .person-name {
+        @apply text-base;
+    }
+
+    .person-card.extra-lightweight .person-date {
+        @apply text-base;
+    }
+
+    .person-card.extra-lightweight .person-affiliation {
+        @apply hidden;
+    }
+
+    .person-card.extra-lightweight .person-role {
+        @apply hidden;
+    }
+
+    .person-card.extra-lightweight .person-description {
+        @apply hidden;
+    }
+
+    .person-card.extra-lightweight .person-email {
+        @apply hidden;
     }
 </style>

@@ -18,6 +18,11 @@
                 "icon": "/file_outline.svg",
                 "link": "/triosim_isca2025.pdf",
                 "text": "PDF"
+            },
+            {
+                "icon": "/file-powerpoint-regular.svg",
+                "link": "/triosim_isca2025.pptx",
+                "text": "Slides"
             }
         ]
     },
@@ -27,7 +32,13 @@
         "venue": "ISCA 2025",
         "year": 2025,
         "tags": ["yifan", "lab"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://dl.acm.org/doi/10.1145/3695053.3731040",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "The Sparsity-Aware LazyGPU Architecture",
@@ -35,7 +46,13 @@
         "venue": "ISCA 2025",
         "year": 2025,
         "tags": ["yifan", "lab"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/lazy_gpu.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Luthier: A Dynamic Binary Instrumentation Framework Targeting AMD GPUs",
@@ -68,6 +85,14 @@
         "links": []
     },
     {
+        "title": "Accelerated Computing with HIP, 2nd Edition",
+        "authors": "Yifan Sun, Sabila Al Jannat, Trinayan Baruah, David Kaeli",
+        "venue": "Book",
+        "year": 2025,
+        "tags": ["lab", "yifan"],
+        "links": []
+    },
+    {
         "title": "Understanding the Practices, Perceptions, and (Dis)Trust of Generative AI among Instructors: A Mixed-methods Study in the U.S. Higher Education",
         "authors": "Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
         "venue": "Computers and Education: Artificial Intelligence",
@@ -81,7 +106,13 @@
         "venue": "MICRO 2024",
         "year": 2024,
         "tags": ["yifan", "lab"],
-        "links": []
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/akitartm.pdf",
+                "text": "PDF"
+            }
+        ]
     },
     {
         "title": "Evaluating the Effectiveness of LLMs in Introductory Computer Science Education: A Semester-Long Field Study",
@@ -430,14 +461,6 @@
                 "text": "PDF"
             }
         ]
-    },
-    {
-        "title": "MGSim: A Flexible High-Performance Simulator for Multi-GPU Systems",
-        "authors": "Yifan Sun, Trinayan Baruah, Shi Dong, David Kaeli",
-        "year": 2019,
-        "venue": "IWOCL 2019",
-        "tags": ["yifan"],
-        "links": []
     },
     {
         "title": "Checkpointing for GPU-as-a-Service in Cloud Computing Environment",
