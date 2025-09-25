@@ -1,3 +1,13 @@
+<script>
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
+    const triggerPrint = () => {
+        window.print()
+    }
+</script>
+
 <svelte:head>
     <title>Yifan Sun - Curriculum Vitae</title>
 </svelte:head>
@@ -60,11 +70,9 @@
             </header>
             <div class="entry-list">
                 <div class="entry">
-                    <div class="entry-header">
-                        <div class="role">Assistant Professor</div>
-                        <div class="affiliation">
-                            Computer Science, William &amp; Mary
-                        </div>
+                    <div class="entry-body">
+                        <div class="entry-header">Assistant Professor</div>
+                        <div>Computer Science, William &amp; Mary</div>
                     </div>
                     <div class="entry-meta">
                         <div>Williamsburg, VA</div>
@@ -80,49 +88,53 @@
             </header>
             <div class="entry-list">
                 <div class="entry">
-                    <div class="entry-header">
-                        <div class="role">Ph.D. in Computer Engineering</div>
-                        <div class="affiliation">Northeastern University</div>
+                    <div class="entry-body">
+                        <div class="entry-header">
+                            Ph.D. in Computer Engineering
+                        </div>
+                        <div>Northeastern University</div>
                     </div>
                     <div class="entry-meta">
-                        <div>Boston, MA</div>
                         <div>Sep. 2013 - Aug. 2020</div>
+                        <div>Boston, MA</div>
                     </div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <div class="role">M.S. in Electrical Engineering</div>
-                        <div class="affiliation">University at Buffalo</div>
+                    <div class="entry-body">
+                        <div class="entry-header">
+                            M.S. in Electrical Engineering
+                        </div>
+                        <div>University at Buffalo</div>
                     </div>
                     <div class="entry-meta">
-                        <div>Buffalo, NY</div>
                         <div>Sep. 2011 - Jun. 2013</div>
+                        <div>Buffalo, NY</div>
                     </div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <div class="role">
+                    <div class="entry-body">
+                        <div class="entry-header">
                             B.Eng. in Electrical Engineering
                         </div>
-                        <div class="affiliation">
+                        <div>
                             Huazhong University of Science and Technology
                         </div>
                     </div>
                     <div class="entry-meta">
-                        <div>Wuhan, China</div>
                         <div>Sep. 2007 - Jun. 2011</div>
+                        <div>Wuhan, China</div>
                     </div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <div class="role">
+                    <div class="entry-body">
+                        <div class="entry-header">
                             Bachelor in Business Administration (Minor)
                         </div>
-                        <div class="affiliation">Wuhan University</div>
+                        <div>Wuhan University</div>
                     </div>
                     <div class="entry-meta">
-                        <div>Wuhan, China</div>
                         <div>Sep. 2008 - Jun. 2011</div>
+                        <div>Wuhan, China</div>
                     </div>
                 </div>
             </div>
@@ -134,37 +146,37 @@
             </header>
             <div class="entry-list">
                 <div class="entry">
-                    <div class="entry-header">
-                        <div class="role">
-                            Performance modeling and graphics simulator
-                            development for AMD Navi GPUs
-                        </div>
-                        <div class="affiliation">
+                    <div class="entry-body">
+                        <div class="entry-header">
                             AMD, <span class="subtle"
                                 >Software Engineer (Co-op)</span
                             >
                         </div>
+                        <div>
+                            Performance modeling and graphics simulator
+                            development for AMD Navi GPUs
+                        </div>
                     </div>
                     <div class="entry-meta">
-                        <div>Boxborough, MA</div>
                         <div>Jul. 2018 - Dec. 2018</div>
+                        <div>Boxborough, MA</div>
                     </div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <div class="role">
-                            Cloud-based GPU-as-a-service system design,
-                            development, and deployment
-                        </div>
-                        <div class="affiliation">
+                    <div class="entry-body">
+                        <div class="entry-header">
                             Dell EMC, <span class="subtle"
                                 >Software Engineer (Co-op)</span
                             >
                         </div>
+                        <div>
+                            Cloud-based GPU-as-a-service system design,
+                            development, and deployment
+                        </div>
                     </div>
                     <div class="entry-meta">
-                        <div>Hopkinton, MA</div>
                         <div>Jul. 2016 - Dec. 2016</div>
+                        <div>Hopkinton, MA</div>
                     </div>
                 </div>
             </div>
@@ -176,67 +188,67 @@
             </header>
             <div class="entry-list">
                 <div class="entry">
-                    <div class="entry-header">
-                        <strong>CAREER Award</strong>
+                    <div class="entry-body">
+                        <div class="entry-header">CAREER Award</div>
                         NSF
                     </div>
-                    <div class="entry-meta">
-                        William &amp; Mary, VA &#8212; 2024
-                    </div>
+                    <div class="entry-meta">2024</div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <strong>Best Paper Award</strong>
+                    <div class="entry-body">
+                        <div class="entry-header">Best Paper Award</div>
                         CHI'23
                     </div>
-                    <div class="entry-meta">Hamburg, Germany &#8212; 2023</div>
+                    <div class="entry-meta">2023</div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <strong>Best Paper Honorable Mention</strong>
+                    <div class="entry-body">
+                        <div class="entry-header">
+                            Best Paper Honorable Mention
+                        </div>
                         CHI'20
                     </div>
-                    <div class="entry-meta">Honolulu, HI &#8212; 2020</div>
+                    <div class="entry-meta">2020</div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <strong
-                            >Outstanding Graduate Student in Experiential
-                            Learning</strong
-                        >
+                    <div class="entry-body">
+                        <div class="entry-header">
+                            Outstanding Graduate Student in Experiential
+                            Learning
+                        </div>
                         Northeastern University
                     </div>
-                    <div class="entry-meta">Boston, MA &#8212; 2019</div>
+                    <div class="entry-meta">2019</div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <strong>Teaching Award</strong>
+                    <div class="entry-body">
+                        <div class="entry-header">Teaching Award</div>
                         Northeastern University College of Engineering
                     </div>
-                    <div class="entry-meta">Boston, MA &#8212; 2019</div>
+                    <div class="entry-meta">2019</div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <strong>Best Paper Award</strong>
+                    <div class="entry-body">
+                        <div class="entry-header">Best Paper Award</div>
                         ICPE
                     </div>
-                    <div class="entry-meta">Berlin, Germany &#8212; 2018</div>
+                    <div class="entry-meta">2018</div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <strong>Best Paper Candidate</strong>
+                    <div class="entry-body">
+                        <div class="entry-header">Best Paper Candidate</div>
                         IISWC
                     </div>
-                    <div class="entry-meta">Providence, RI &#8212; 2016</div>
+                    <div class="entry-meta">2016</div>
                 </div>
                 <div class="entry">
-                    <div class="entry-header">
-                        <strong>Best Student Paper Award</strong>
+                    <div class="entry-body">
+                        <div class="entry-header">
+                            Best Student Paper Award
+                        </div>
                         WUWNET
                     </div>
-                    <div class="entry-meta">
-                        Kaohsiung, Taiwan &#8212; 2013
-                    </div>
+                    <div class="entry-meta">013</div>
                 </div>
             </div>
         </section>
@@ -250,14 +262,9 @@
                 William &amp; Mary.
             </p>
             <div class="entry-list">
-                <div class="entry grant-entry">
-                    <div class="entry-header">
-                        <div class="grant-title">
-                            <strong
-                                >Advancing Tools and Resources for the AMD ROCm
-                                Platform</strong
-                            >
-                        </div>
+                <div class="entry">
+                    <div class="entry-body">
+                        Advancing Tools and Resources for the AMD ROCm Platform
                         <div class="grant-detail">
                             <span><em>AMD, Gift, Sole PI</em></span>
                             <span class="subtle">$100,000</span>
@@ -267,8 +274,8 @@
                         <div>Dec. 2024</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >CAREER: Towards Next-Generation
@@ -286,8 +293,8 @@
                         <div>Apr. 2025 - Mar. 2030</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >Enabling GPU Performance Simulation for
@@ -313,8 +320,8 @@
                         <div>May 2024 - Apr. 2028</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >Binary Instrumentation for GPU Programs on AMD
@@ -330,8 +337,8 @@
                         <div>Dec. 2023</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >HIP Development on AMD ROCm Platform</strong
@@ -346,8 +353,8 @@
                         <div>Dec. 2023</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >The Methods of Profiling and Tracing of GPU
@@ -363,8 +370,8 @@
                         <div>May 2023</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >Building Explainable Architecture with
@@ -380,8 +387,8 @@
                         <div>May 2023 - Apr. 2026</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >Enabling Computer Architecture as a Service</strong
@@ -406,8 +413,8 @@
                         <div>Mar. 2023 - Feb. 2026</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >AMD ROCm and HIP Platform Development</strong
@@ -424,8 +431,8 @@
                         <div>Mar. 2022</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >Exploring Interpretable Deep Learning from
@@ -452,8 +459,8 @@
                         <div>Feb. 2022</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >Developing Infrastructure for Advancing
@@ -480,8 +487,8 @@
                         <div>Dec. 2021</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >AMD ROCm and HIP Platform Development</strong
@@ -496,8 +503,8 @@
                         <div>Sep. 2021</div>
                     </div>
                 </div>
-                <div class="entry grant-entry">
-                    <div class="entry-header">
+                <div class="entry">
+                    <div class="entry-body">
                         <div class="grant-title">
                             <strong
                                 >General-Purpose Computing with AMD Graphics
@@ -531,7 +538,7 @@
             </div>
             <h3>Peer-Reviewed Conference Papers</h3>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Wenhan Lyu, Yimeng Wang, <span class="self-name"
                         >Yifan Sun</span
                     >, and Yixuan Zhang. 2025.
@@ -546,7 +553,7 @@
                     https://doi.org/10.1145/3698205.3729544 [Acceptance Rate
                     18/84 &approx; 21.4%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="wm-advisee">Ying Li</span>, Yuhui Bao, Gongyu
                     Wang, Xinxin Mei, Pranav Vaid, Anandaroop Ghosh, Adwait
                     Jog, Darius Bunandar, Ajay Joshi, and
@@ -560,7 +567,7 @@
                     1524&#8211;1538. https://doi.org/10.1145/3695053.3731082
                     [Acceptance Rate 132/570 &approx; 23.2%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Amel Fatima, Yang Yang, <span class="self-name"
                         >Yifan Sun</span
                     >, Rachata Ausavarungnirun, and Adwait Jog. 2025.
@@ -573,7 +580,7 @@
                     1064&#8211;1078. https://doi.org/10.1145/3695053.3731040
                     [Acceptance Rate 132/570 &approx; 23.2%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Changxi Liu, Miao Yu, <span class="self-name"
                         >Yifan Sun</span
                     >, and Trevor E. Carlson. 2025.
@@ -585,7 +592,7 @@
                     1020&#8211;1034. https://doi.org/10.1145/3695053.3731009
                     [Acceptance Rate 132/570 &approx; 23.2%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Matin Raayai-Ardakani, Andrew Nguyen, Ivan Rosales, <span
                         class="wm-advisee">Daoxuan Xu</span
                     >, Yuwei Sun, <span class="self-name">Yifan Sun</span>,
@@ -599,7 +606,7 @@
                     https://doi.org/10.1109/ISPASS64960.2025.00022 [Acceptance
                     Rate 28/99 &approx; 28%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Ali Mosallaei, Katherine E. Isaacs, and <span
                         class="self-name">Yifan Sun</span
                     >. 2024.
@@ -611,7 +618,7 @@
                     https://doi.org/10.1109/MICRO61859.2024.00063 [Acceptance
                     Rate 113/ 489 &approx; 22.7%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, <span
                         class="self-name">Yifan Sun</span
                     >, and Yixuan Zhang. 2024.
@@ -624,7 +631,7 @@
                     https://doi.org/10.1145/3657604.3662036 [Acceptance rate:
                     22/ 90 &approx; 24.4%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Yichen Luo, Daoxuan Xu, Gang Zhou, <span class="self-name"
                         >Yifan Sun</span
                     >, and Sidi Lu. 2024.
@@ -635,7 +642,7 @@
                     Operations, Services and Technologies (MOST '24). IEEE,
                     193&#8211;205. https://doi.org/10.1109/MOST60774.2024.00028
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="wm-advisee">Ying Li</span>,
                     <span class="self-name">Yifan Sun</span>, and Adwait Jog.
                     2023.
@@ -648,7 +655,7 @@
                     <br /> https://doi.org/10.1145/3613424.3614277 [Acceptance rate:
                     101/424 &approx; 23.8%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Changxi Liu, <span class="self-name">Yifan Sun</span>, and
                     Trevor E. Carlson. 2023.
                     <span class="publication-title"
@@ -660,7 +667,7 @@
                     https://doi.org/10.1145/3613424.3623773 [Acceptance rate:
                     101/424 &approx; 23.8%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     &#127942; <strong>[Best Paper Award (Top 1%)] </strong>
                     Yixuan Zhang, Joseph D Gaggiano, Nutchanon Yongsatianchot, Nurul
                     M Suhaimi, Miso Kim,
@@ -675,7 +682,7 @@
                     1&#8211;22. <br />https://doi.org/10.1145/3544548.3581019
                     [Acceptance rate: 879/3182 &approx; 27.6%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
                     Joseph D. Gaggiano, Neha Kumar, Clio Andris, and Andrea G.
                     Parker. 2023.
@@ -687,7 +694,7 @@
                     https://doi.org/10.1109/TVCG.2022.3209493. [Acceptance
                     rate: 122/ 460 &approx; 26.5%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Yuhui Bao, <span class="self-name">Yifan Sun</span>, Zlatan
                     Feric, Michael Tian Shen, Micah Weston, Jos&#233; L.
                     Abell&#225;n, Trinayan Baruah, John Kim, Ajay Joshi, and
@@ -701,7 +708,7 @@
                     USA, 333&#8211;345. https://doi.org/10.1145/3559009.3569666
                     [Acceptance rate: 50/ 118 &approx; 42.4%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Yixuan Zhang, Nurul Suhaimi, Nutchanon Yongsatianchot,
                     Joseph D Gaggiano, Miso Kim, Shivani A Patel, <span
                         class="self-name">Yifan Sun</span
@@ -717,7 +724,7 @@
                     1&#8211;21. https://doi.org/10.1145/3491102.3501889 [Top
                     12.5%; Acceptance rate: 638/ 2597 &approx; 24.6%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Yixuan Zhang, Ali
                     Mosallaei, Michael D. Shah, Cody Dunne, and David Kaeli.
                     2021.
@@ -728,7 +735,7 @@
                     <br />https://doi.org/10.1111/cgf.14303 [Acceptance Rate
                     &approx; 26.0%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
                     Lace Padilla, Sumit Barua, Enrico Bertini, and Andrea G
                     Parker. 2021.
@@ -741,7 +748,7 @@
                     1&#8211;23. <br /> https://doi.org/10.1145/3411764.3445381 [Acceptance
                     rate &approx; 26.3%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Trinayan Baruah, Kaustubh Shivdikar, Shi Dong, <span
                         class="self-name">Yifan Sun</span
                     >, Saiful A. Mojumder, Kihoon Jung, Jos&#233; L.
@@ -755,7 +762,7 @@
                     13&#8211;23. https://doi.org/10.1109/ISPASS51385.2021.00013
                     [Acceptance rate &approx; 36.9%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
                     Saiful A. Mojumder, Jos&#233; L. Abell&#225;n, Yash
                     Ukidave, Ajay Joshi, Norman Rubin, John Kim, and David
@@ -769,7 +776,7 @@
                     USA, 455&#8211;466. https://doi.org/10.1145/3410463.3414639
                     [Acceptance rate &approx; 25.9%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     &#127942; <strong
                         >[Best Paper Honorable Mention (<br />textless 5%)]</strong
                     >
@@ -786,7 +793,7 @@
                     https://doi.org/10.1145/3313831.3376571 [Acceptance rate
                     &approx; 24.3%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
                     Ali Tolga Din&#231;er, Saiful A. Mojumder, Jos&#233; L.
                     Abell&#225;n, Yash Ukidave, Ajay Joshi, Norman Rubin, John
@@ -799,7 +806,7 @@
                     https://doi.org/10.1109/HPCA47549.2020.00055 [Acceptance
                     rate &approx; 19.4%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Trinayan Baruah,
                     Saiful A. Mojumder, Shi Dong, Xiang Gong, Shane Treadway,
                     Yuhui Bao, Spencer Hance, Carter McCardwell, Vincent Zhao,
@@ -815,7 +822,7 @@
                     https://doi.org/10.1145/3307650.3322230 [Acceptance rate
                     &approx; 17.0%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Mohammad Khavari Tavana, <span class="self-name"
                         >Yifan Sun</span
                     >, Nicolas Bohm Agostini, and David Kaeli. 2019.
@@ -828,7 +835,7 @@
                     <br /> https://doi.org/10.1109/IPDPS.2019.00075 [Acceptance
                     rate &approx; 27.7%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Saiful A. Mojumder, Marcia S. Louis, <span
                         class="self-name">Yifan Sun</span
                     >, Amir Kavyan Ziabari, Jos&#233; L. Abell&#225;n, John
@@ -840,7 +847,7 @@
                     https://doi.org/10.1109/IISWC.2018.8573521 [Acceptance rate
                     &approx; 36.2%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Rozhin Doroudi, Rana Azghandi, Zlatan Feric, Omid
                     Mohaddesi, <span class="self-name">Yifan Sun</span>,
                     Jacqueline Griffin, Ozlem Ergun, David Kaeli, Pedro
@@ -853,7 +860,7 @@
                     88&#8211;99. https://doi.org/10.1109/WSC.2018.8632387
                     [Acceptance rate &approx; 70.4%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Saoni Mukherjee,
                     Trinayan Baruah, Shi Dong, Julian Gutierrez, Prannoy Mohan,
                     and David Kaeli. 2018.
@@ -865,7 +872,7 @@
                     209&#8211;218. <br /> https://doi.org/10.1109/ISPASS.2018.00034
                     [Acceptance rate &approx; 31.3%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     &#127942; <strong>[Best Paper Award]</strong> Shi Dong,
                     Xiang Gong, <span class="self-name">Yifan Sun</span>,
                     Trinayan Baruah, and David Kaeli. 2018.
@@ -878,7 +885,7 @@
                     96&#8211;106. https://doi.org/10.1145/3184407.3184423
                     [Acceptance rate $=$ 24.0%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
                     Shi Dong, David Kaeli, and Norm Rubin. 2018.
                     <span class="publication-title"
@@ -890,7 +897,7 @@
                     https://doi.org/10.23919/DATE.2018.8342104 [Acceptance rate
                     &approx; 24.2%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     &#127942; <strong>[Best Paper Candidate]</strong>
                     <span class="self-name">Yifan Sun</span>, Xiang Gong, Amir
                     Kavyan Ziabari, Leiming Yu, Xiangyu Li, Saoni Mukherjee,
@@ -904,7 +911,7 @@
                     https://doi.org/10.1109/IISWC.2016.7581262 [Acceptance rate
                     &approx; 30.4%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Chisheng Liang,
                     Steven Sutherland, Casper Harteveld, and David Kaeli. 2016.
                     <span class="publication-title"
@@ -914,7 +921,7 @@
                     https://doi.org/10.1109/CIG.2016.7860444 [Acceptance rate
                     unknown]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Saoni Mukherjee, <span class="self-name">Yifan Sun</span>,
                     Paul Blinzer, Amir Kavyan Ziabari, and David Kaeli. 2016.
                     <span class="publication-title"
@@ -925,7 +932,7 @@
                     183&#8211;193. https://doi.org/10.1109/ISPASS.2016.7482093
                     [Acceptance rate &approx; 35.1%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Jithin Jagannath, Anu Saji, Hovannes Kulhandjian, <span
                         class="self-name">Yifan Sun</span
                     >, Emrecan Demirors, and Tommaso Melodia. 2013.
@@ -939,7 +946,7 @@
                     1&#8211;8. https://doi.org/10.1145/2532378.2532382
                     [Acceptance rate $=$ 20.0%]
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     &#127942; <span class="self-name">Yifan Sun</span> and
                     Tommaso Melodia. 2013.
                     <span class="publication-title"
@@ -955,7 +962,7 @@
             </div>
             <h3>Journals</h3>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Wenhan Lyu, Shuang Zhang, Tingting Chung, <span
                         class="self-name">Yifan Sun</span
                     >, and Yixuan Zhang. 2025.
@@ -966,7 +973,7 @@
                     >. Computers and Education: Artificial Intelligence 8
                     (2025), 100383. https://doi.org/10.1016/j.caeai.2025.100383
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Shaoyu Wang, Hang Yan, Katherine E. Isaacs, and <span
                         class="self-name">Yifan Sun</span
                     >. 2024.
@@ -978,7 +985,7 @@
                     30, 4 (2024), 1970&#8211;1983.
                     https://doi.org/10.1109/TVCG.2023.3337173
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Shi Dong, <span class="self-name">Yifan Sun</span>, Nicolas
                     Bohm Agostini, Elmira Karimi, Daniel Lowell, Jing Zhou,
                     Jos&#233; Cano, Jos&#233; L. Abell&#225;n, and David Kaeli.
@@ -989,7 +996,7 @@
                     >. IEEE Transactions on Parallel and Distributed Systems
                     32, 10 (2021), 2448&#8211;2463. <br /> https://doi.org/10.1109/TPDS.2021.3067825
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Rozhin Doroudi, Pedro Sequeira, Stacy Marsella, Ozlem
                     Ergun, Rana Azghandi, David Kaeli, <span class="self-name"
                         >Yifan Sun</span
@@ -1000,7 +1007,7 @@
                     >. PLOS ONE 15, 2 (February 2020), e0224761.
                     https://doi.org/10.1371/journal.pone.0224761
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Chen Li, <span class="self-name">Yifan Sun</span>, Lingling
                     Jin, Lingjie Xu, Zheng Cao, Pengfei Fan, David Kaeli, Sheng
                     Ma, Yang Guo, and Jun Yang. 2019.
@@ -1010,7 +1017,7 @@
                     >. IEEE Computer Architecture Letters 18, 2 (2019),
                     157&#8211;160. https://doi.org/10.1109/LCA.2019.2955119
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Amir Kavyan Ziabari, <span class="self-name"
                         >Yifan Sun</span
                     >, Yenai Ma, Dana Schaa, Jos&#233; L. Abell&#225;n, Rafael
@@ -1021,7 +1028,7 @@
                     >. ACM Trans. Archit. Code Optim. 13, 4, Article 35
                     (December 2016), 25 pages. https://doi.org/10.1145/2996190
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Abdulla K. Al-Ali, <span class="self-name">Yifan Sun</span
                     >, Marco Di Felice, Jarkko Paavola, and Kaushik R.
                     Chowdhury. 2015.
@@ -1031,7 +1038,7 @@
                     >. IEEE Transactions on Vehicular Technology 64, 1 (2015),
                     263&#8211;272. https://doi.org/10.1109/TVT.2014.2318837
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span> and Kaushik R.
                     Chowdhury. 2014.
                     <span class="publication-title"
@@ -1042,7 +1049,7 @@
             </div>
             <h3>Books</h3>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>,
                     <span class="wm-advisee">Sabila Al Jannat</span>, Trinayan
                     Buruah, and David Kaeli. 2025.
@@ -1055,7 +1062,7 @@
                         ></span
                     > ISBN: 979-8218107444.
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Trinayan Buruah,
                     and David Kaeli. 2022.
                     <span class="publication-title"
@@ -1069,7 +1076,7 @@
             </div>
             <h3>Translation of My Books</h3>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name"
                         >&#1048;&#1092;&#1072;&#1085;&#1100;
                         &#1057;&#1091;&#1085;</span
@@ -1089,7 +1096,7 @@
             </div>
             <h3>Book Chapters</h3>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Shih-Hao Hung, Thomas B. Jablin, <span class="self-name"
                         >Yifan Sun</span
                     >, Rafael Ubal, and David Kaeli. 2015.
@@ -1100,7 +1107,7 @@
             </div>
             <h3>Patents</h3>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Junping Zhao, <span class="self-name">Yifan Sun</span>.
                     Layne Peng, Jie Bao, Kun Wang. (Jan. 2021).
                     <span class="publication-title"
@@ -1109,7 +1116,7 @@
                     >. Patent No. US 10,891,156, Filed Apr 26, 2017, Issued Jan
                     12, 2021.
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Layne Peng,
                     Robert A. Lincourt JR., John Cardente, and Junping Zhao.
                     (Jun. 2019).
@@ -1119,7 +1126,7 @@
                     >. Patent No. US 10,262,390, Filed Apr 14, 2017, Issued Jun
                     27, 2019.
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Junping Zhao, Layne Peng, Jie Bao, Kun Wang, and <span
                         class="self-name">Yifan Sun</span
                     >. (Apr. 2019).
@@ -1129,7 +1136,7 @@
                     >, Patent No. US 10,275,851, Filed Apr 25, 2017, Issued Apr
                     30, 2019.
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Layne Peng,
                     Robert A. Lincourt JR., John Cardente, John S Harwood.
                     (Oct. 2018).
@@ -1141,7 +1148,7 @@
             </div>
             <h3>Workshop or Poster Publications</h3>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="wm-advisee">Daoxuan Xu</span>, Le Xu, Jie Ren,
                     <span class="self-name">Yifan Sun</span>. 2025.
                     <span class="publication-title"
@@ -1149,7 +1156,7 @@
                     >. The 17th Workshop on General Purpose Processing using
                     GPU (GPGPU 2025).
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Nicol&#225;s Meseguer, <span class="self-name"
                         >Yifan Sun</span
                     >, Michael Pellauer, Jos&#233; L. Abell&#225;n and Manuel
@@ -1160,7 +1167,7 @@
                     >. The 17th Workshop on General Purpose Processing using
                     GPU (GPGPU 2025).
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="wm-advisee">Chris Thames</span>,
                     <span class="self-name">Yifan Sun</span>. 2024.
                     <span class="publication-title"
@@ -1169,7 +1176,7 @@
                     >. The 24th Integrated Communications, Navigation and
                     Surveillance Conference (ICNS 2024).
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="wm-advisee">Ying Li</span>, Yuhui Bao, Pranav
                     Vaid, Gongyu Wang, Adwait Jog, Darius Bunandar, Ajay Joshi,
                     <span class="self-name">Yifan Sun</span>. 2023.
@@ -1179,7 +1186,7 @@
                     >. The First Workshop on Computer Architecture Modeling and
                     Simulation (CAMS 2023).
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Ali Mosallaei, Katherine Isaacs, <span class="self-name"
                         >Yifan Sun</span
                     >. 2023.
@@ -1189,7 +1196,7 @@
                     >. The First Workshop on Computer Architecture Modeling and
                     Simulation (CAMS 2023).
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="wm-advisee">Ying Li</span>,
                     <span class="self-name">Yifan Sun</span>, Adwait Jog. 2023.
                     <span class="publication-title"
@@ -1198,7 +1205,7 @@
                     >. 2023 IEEE International Symposium on Performance
                     Analysis of Systems and Software (ISPASS 2023).
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="wm-advisee">Chris Thames</span>, Hang Yan,
                     <span class="self-name">Yifan Sun</span>. 2022.
                     <span class="publication-title"
@@ -1207,7 +1214,7 @@
                     >. The 14th Workshop on General Purpose Processing using
                     GPU (GPGPU 2022).
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
                     Sumit Barua, Enrico Bertini, and Andrea Grimes Parker.
                     2020.
@@ -1219,7 +1226,7 @@
             </div>
             <h3>Preprints</h3>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Saiful A. Mojumder, <span class="self-name">Yifan Sun</span
                     >, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah,
                     Jos&#233; L. Abell&#225;n, John Kim, David Kaeli, Ajay
@@ -1228,7 +1235,7 @@
                         >MGPU-TSM: A Multi-GPU System with Truly Shared Memory</span
                     >. arXiv preprint arXiv:2008.02300.
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     Saiful A. Mojumder, <span class="self-name">Yifan Sun</span
                     >, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah,
                     Jos&#233; L. Abell&#225;n, John Kim, David Kaeli, Ajay
@@ -1238,7 +1245,7 @@
                         Coherence Scheme for Multi-GPU Systems</span
                     >. arXiv preprint arXiv:2007.04292.
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Nicolas Bohm
                     Agostini, Shi Dong, and David Kaeli. 2019.
                     <span class="publication-title"
@@ -1246,7 +1253,7 @@
                         Data</span
                     >. arXiv preprint arXiv:1911.11313.
                 </div>
-                <div class="publication-entry">
+                <div class="entry publication-entry">
                     <span class="self-name">Yifan Sun</span>, Trinayan Baruah,
                     Saiful A Mojumder, Shi Dong, Rafael Ubal, Xiang Gong, Shane
                     Treadway, Yuhui Bao, Vincent Zhao, Jos&#233; Luis
@@ -1261,77 +1268,130 @@
 
         <section class="cv-section" id="software">
             <header class="section-header">
-                <h2>Open-Source Software &amp; Datasets</h2>
+                <h2>Software &amp; Datasets</h2>
             </header>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
-                    <span class="publication-title">The CHIP Dataset</span>.
-                    <a
-                        href="https://chip-dataset.vercel.app"
-                        target="_blank"
-                        rel="noreferrer">https://chip-dataset.vercel.app</a
-                    ><br />A dataset with 2185 CPUs and 2668 GPUs. Help
-                    researchers understand the semiconductor development
-                    trends.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title">The CHIP Dataset</span>
+                        <div class="subtitle">
+                            <a
+                                href="https://chip-dataset.vercel.app"
+                                target="_blank"
+                                rel="noreferrer"
+                                >https://chip-dataset.vercel.app</a
+                            >
+                        </div>
+                    </div>
+                    <div class="entry-body">
+                        A dataset with 2185 CPUs and 2668 GPUs helping
+                        researchers understand semiconductor development
+                        trends.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Daisen (now part of Akita)</span
-                    >.
-                    <a
-                        href="https://gitlab.com/akita/vis"
-                        target="_blank"
-                        rel="noreferrer">https://gitlab.com/akita/vis</a
-                    ><br />A general-purpose visualization tool that reveals
-                    the detailed behavior of hardware components.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Daisen (now part of Akita)</span
+                        >
+                        <div class="subtitle">
+                            <a
+                                href="https://gitlab.com/akita/vis"
+                                target="_blank"
+                                rel="noreferrer"
+                                >https://gitlab.com/akita/vis</a
+                            >
+                        </div>
+                    </div>
+                    <div class="entry-body">
+                        A general-purpose visualization tool that reveals the
+                        detailed behavior of hardware components.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title">MGPUSim</span>.
-                    <a
-                        href="https://github.com/sarchlab/mgpusim"
-                        target="_blank"
-                        rel="noreferrer">https://github.com/sarchlab/mgpusim</a
-                    ><br />A multi-GPU system simulator based on AMD GCN3 GPUs.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title">MGPUSim</span>
+                        <div class="subtitle">
+                            <a
+                                href="https://github.com/sarchlab/mgpusim"
+                                target="_blank"
+                                rel="noreferrer"
+                                >https://github.com/sarchlab/mgpusim</a
+                            >
+                        </div>
+                    </div>
+                    <div class="entry-body">
+                        A multi-GPU system simulator based on AMD GCN3 GPUs.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title">Akita</span>.
-                    <a
-                        href="https://github.com/sarchlab/akita"
-                        target="_blank"
-                        rel="noreferrer">https://github.com/sarchlab/akita</a
-                    ><br />A high-flexibility, high-performance, parallel
-                    computer architecture simulation framework.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title">Akita</span>
+                        <div class="subtitle">
+                            <a
+                                href="https://github.com/sarchlab/akita"
+                                target="_blank"
+                                rel="noreferrer"
+                                >https://github.com/sarchlab/akita</a
+                            >
+                        </div>
+                    </div>
+                    <div class="entry-body">
+                        A high-flexibility, high-performance, parallel computer
+                        architecture simulation framework.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title">Hetero-Mark</span>.
-                    <a
-                        href="https://github.com/NUCAR-DEV/Hetero-Mark"
-                        target="_blank"
-                        rel="noreferrer"
-                        >https://github.com/NUCAR-DEV/Hetero-Mark</a
-                    ><br />A benchmark suite for CPU-GPU collaborative
-                    computing.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title">Hetero-Mark</span>
+                        <div class="subtitle">
+                            <a
+                                href="https://github.com/NUCAR-DEV/Hetero-Mark"
+                                target="_blank"
+                                rel="noreferrer"
+                                >https://github.com/NUCAR-DEV/Hetero-Mark</a
+                            >
+                        </div>
+                    </div>
+                    <div class="entry-body">
+                        A benchmark suite for CPU-GPU collaborative computing.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Drug Supply Chain Simulator</span
-                    >.
-                    <a
-                        href="https://gitlab.com/syifan/crisp"
-                        target="_blank"
-                        rel="noreferrer">https://gitlab.com/syifan/crisp</a
-                    ><br />A human-in-the-loop logistics simulator for the U.S.
-                    drug supply chain.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Drug Supply Chain Simulator</span
+                        >
+                        <div class="subtitle">
+                            <a
+                                href="https://gitlab.com/syifan/crisp"
+                                target="_blank"
+                                rel="noreferrer"
+                                >https://gitlab.com/syifan/crisp</a
+                            >
+                        </div>
+                    </div>
+                    <div class="entry-body">
+                        A human-in-the-loop logistics simulator for the U.S.
+                        drug supply chain.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title">VistaLights</span>.
-                    <a
-                        href="https://github.com/syifan/VistaLights"
-                        target="_blank"
-                        rel="noreferrer"
-                        >https://github.com/syifan/VistaLights</a
-                    ><br />Strategic game for maritime traffic management and
-                    disaster relief.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title">VistaLights</span>
+                        <div class="subtitle">
+                            <a
+                                href="https://github.com/syifan/VistaLights"
+                                target="_blank"
+                                rel="noreferrer"
+                                >https://github.com/syifan/VistaLights</a
+                            >
+                        </div>
+                    </div>
+                    <div class="entry-body">
+                        Strategic game for maritime traffic management and
+                        disaster relief.
+                    </div>
                 </div>
             </div>
         </section>
@@ -1341,91 +1401,156 @@
                 <h2>Talks and Tutorials</h2>
             </header>
             <div class="entry-list publication-list">
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >User-Friendly Tools in Akita 3.0</span
-                    ><br />The 2nd Workshop on Computer Architecture Modeling
-                    and Simulation (CAMS '24). November 2024.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >User-Friendly Tools in Akita 3.0</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        The 2nd Workshop on Computer Architecture Modeling and
+                        Simulation (CAMS '24). November 2024.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >On the Human Side of Computer Architecture, Towards
-                        Explainable Architecture</span
-                    ><br />North Carolina State University. October 2024.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >On the Human Side of Computer Architecture,
+                            Towards Explainable Architecture</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        North Carolina State University. October 2024.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Towards Building Explainable Computer Architecture</span
-                    ><br />Lehigh University. February 2023.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Towards Building Explainable Computer Architecture</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        Lehigh University. February 2023.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >MGPUSim: A One-Stop Solution for GPU Architecture
-                        Simulation</span
-                    ><br />The 2020 International Conference on High
-                    Performance Computing &amp; Simulation (HPCS '20). January
-                    2021.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >MGPUSim: A One-Stop Solution for GPU Architecture
+                            Simulation</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        The 2020 International Conference on High Performance
+                        Computing &amp; Simulation (HPCS '20). January 2021.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >MGPUSim: A High-Flexibility, High-Performance,
-                        Multi-GPU Simulator</span
-                    ><br />Alibaba. July 2020.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >MGPUSim: A High-Flexibility, High-Performance,
+                            Multi-GPU Simulator</span
+                        >
+                    </div>
+                    <div class="entry-body">Alibaba. July 2020.</div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Exploring Multi-GPU Simulation and Visual Profiling
-                        with MGPUSim</span
-                    ><br />With Jos&#233; L. Abell&#225;n, Trinayan Baruah, and
-                    David Kaeli. Tutorial at ISCA 2020. May 2020.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Exploring Multi-GPU Simulation and Visual
+                            Profiling with MGPUSim</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        With Jos&#233; L. Abell&#225;n, Trinayan Baruah, and
+                        David Kaeli. Tutorial at ISCA 2020. May 2020.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Collaborative Heterogeneous Computing</span
-                    ><br />William &amp; Mary. March 2020.<br />University of
-                    California, Santa Cruz. March 2020.<br />University of
-                    Pittsburgh. March 2020.<br />University of Central Florida.
-                    March 2020.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Collaborative Heterogeneous Computing</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        William &amp; Mary. March 2020. University of
+                        California, Santa Cruz. March 2020. University of
+                        Pittsburgh. March 2020. University of Central Florida.
+                        March 2020.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Tutorial on the Akita Simulator Framework and MGPUSim</span
-                    ><br />With Trinayan Baruah, Shi Dong, and David Kaeli.
-                    Tutorial at HPCA 2020. February 2020.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Tutorial on the Akita Simulator Framework and
+                            MGPUSim</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        With Trinayan Baruah, Shi Dong, and David Kaeli.
+                        Tutorial at HPCA 2020. February 2020.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Research in the NUCAR Laboratory at Northeastern
-                        University</span
-                    ><br />FutureWei. With David Kaeli. July 2019.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Research in the NUCAR Laboratory at Northeastern
+                            University</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        FutureWei. With David Kaeli. July 2019.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >MGSim: a Flexible High-Performance Simulator for
-                        Multi-GPU Systems</span
-                    ><br />International Workshop on OpenCL (IWOCL). May 2019.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >MGSim: a Flexible High-Performance Simulator for
+                            Multi-GPU Systems</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        International Workshop on OpenCL (IWOCL). May 2019.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >AKITA: A Go-Based Computer Architecture Simulator
-                        Framework</span
-                    ><br />Google. May 2019.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >AKITA: A Go-Based Computer Architecture Simulator
+                            Framework</span
+                        >
+                    </div>
+                    <div class="entry-body">Google. May 2019.</div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Enabling Multi-GPU High Performance Computing with
-                        Memory System Design</span
-                    ><br />Lightning talk at Boston University Red Hat
-                    Collaboratory. February 2019.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Enabling Multi-GPU High Performance Computing with
+                            Memory System Design</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        Lightning talk at Boston University Red Hat
+                        Collaboratory. February 2019.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title"
-                        >Benchmarking the New Unified Memory of CUDA 8</span
-                    ><br />With Frank Zhao. GTC 2017, San Jose. August 2017.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Benchmarking the New Unified Memory of CUDA 8</span
+                        >
+                    </div>
+                    <div class="entry-body">
+                        With Frank Zhao. GTC 2017, San Jose. August 2017.
+                    </div>
                 </div>
-                <div class="publication-entry">
-                    <span class="publication-title">Multi2Sim 5.0</span><br
-                    />Tutorial at IISWC 2016. September 2016.
+                <div class="entry resource-entry">
+                    <div class="entry-body">
+                        <span class="publication-title">Multi2Sim 5.0</span>
+                    </div>
+                    <div class="entry-body">
+                        Tutorial at IISWC 2016. September 2016.
+                    </div>
                 </div>
             </div>
         </section>
@@ -1438,7 +1563,7 @@
                 <h3>Teaching @ William &amp; Mary</h3>
                 <div class="entry-list teaching-list">
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 CSCI654 &#183; Advanced Computer Architecture
                             </div>
@@ -1449,7 +1574,7 @@
                         <div class="entry-meta">Spring 2025</div>
                     </div>
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 CSCI432 &#183; Web Programming
                             </div>
@@ -1462,7 +1587,7 @@
                         <div class="entry-meta">Fall 2024, 2025</div>
                     </div>
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 CSCI780 &#183; Computer Architecture Modeling
                                 and Simulation
@@ -1474,7 +1599,7 @@
                         <div class="entry-meta">Spring 2023</div>
                     </div>
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 CSCI780 &#183; Data Visualization
                             </div>
@@ -1485,7 +1610,7 @@
                         <div class="entry-meta">Spring 2022, 2024</div>
                     </div>
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 CSCI780 &#183; Topics in Computer Architecture
                             </div>
@@ -1496,7 +1621,7 @@
                         <div class="entry-meta">Spring 2021</div>
                     </div>
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 CSCI141 &#183; Computational Problem Solving
                             </div>
@@ -1515,7 +1640,7 @@
                 <h3>Teaching @ Northeastern University</h3>
                 <div class="entry-list teaching-list">
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 EECE2322 &#183; Fundamental Digital Design and
                                 Computer Organization
@@ -1534,7 +1659,7 @@
                         <div class="entry-meta">Fall 2019</div>
                     </div>
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 EECE2560 &#183; Fundamentals of Engineering
                                 Algorithms
@@ -1555,7 +1680,7 @@
                         <div class="entry-meta">Spring 2018</div>
                     </div>
                     <div class="entry teaching-entry">
-                        <div class="entry-header">
+                        <div class="entry-body">
                             <div class="role">
                                 EECE2160 &#183; Embedded Design Enabling
                                 Robotics
@@ -1582,7 +1707,7 @@
             <h3>Ph.D. Students</h3>
             <div class="entry-list">
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Yijia Shi</span>
                     </div>
                     <div class="entry-meta">
@@ -1591,7 +1716,7 @@
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Enze Xu</span>
                     </div>
                     <div class="entry-meta">
@@ -1600,7 +1725,7 @@
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Daoxuan Xu</span>
                         <div class="subtitle">Co-advised with Jie Ren</div>
                     </div>
@@ -1610,7 +1735,7 @@
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Sabila Al Jannat</span>
                     </div>
                     <div class="entry-meta">
@@ -1619,7 +1744,7 @@
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Ying Li</span>
                         <div class="subtitle">Co-advised with Adwait Jog</div>
                     </div>
@@ -1629,9 +1754,11 @@
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Chris Thames</span>
-                        <div class="subtitle">Part-time, with full-time job at NASA</div>
+                        <div class="subtitle">
+                            Part-time, with full-time job at NASA
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>William &amp; Mary</div>
@@ -1642,7 +1769,7 @@
             <h3>Master Researchers</h3>
             <div class="entry-list">
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Daoxuan Xu</span>
                     </div>
                     <div class="entry-meta">
@@ -1651,7 +1778,7 @@
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Yuhui Bao</span>
                     </div>
                     <div class="entry-meta">
@@ -1663,15 +1790,19 @@
             <h3>Undergraduate Researchers</h3>
             <div class="entry-list">
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
-                        <span class="publication-title">Zhuoyan Zheng, Mengyang He, Pablo Ibarz, Aibo Li, Yexi Zheng, Xuzhong Wang, Huizhi Zhao, Jeremy Coonley</span>
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Zhuoyan Zheng, Mengyang He, Pablo Ibarz, Aibo Li,
+                            Yexi Zheng, Xuzhong Wang, Huizhi Zhao, Jeremy
+                            Coonley</span
+                        >
                     </div>
                     <div class="entry-meta">
                         <div>William &amp; Mary</div>
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Ali Mosallaei</span>
                     </div>
                     <div class="entry-meta">
@@ -1679,23 +1810,30 @@
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
-                        <span class="publication-title">Shaoyu Wang, Hang Yan, Chen Gong</span>
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Shaoyu Wang, Hang Yan, Chen Gong</span
+                        >
                     </div>
                     <div class="entry-meta">
-                        <div>Huazhong University of Science &amp; Technology (China)</div>
+                        <div>
+                            Huazhong University of Science &amp; Technology
+                            (China)
+                        </div>
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
-                        <span class="publication-title">Ali Tolga Din&amp;ccedil;er</span>
+                    <div class="entry-body">
+                        <span class="publication-title"
+                            >Ali Tolga Din&amp;ccedil;er</span
+                        >
                     </div>
                     <div class="entry-meta">
                         <div>Istanbul Technical University (Turkey)</div>
                     </div>
                 </div>
                 <div class="entry mentee-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <span class="publication-title">Xin Li</span>
                         <div class="subtitle">REU Student</div>
                     </div>
@@ -1712,14 +1850,17 @@
             </header>
             <div class="entry-list">
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>William &amp; Mary News</strong>
                         <div class="subtitle">
                             <a
                                 href="https://news.wm.edu/2025/05/12/william-mary-professor-wins-nsf-career-award-to-study-computer-chip-performance/"
                                 target="_blank"
                                 rel="noreferrer"
-                                >William &amp; Mary professor wins NSF CAREER award to study computer chip performance; Sun brings human-centered approach to computer architecture</a
+                                >William &amp; Mary professor wins NSF CAREER
+                                award to study computer chip performance; Sun
+                                brings human-centered approach to computer
+                                architecture</a
                             >
                         </div>
                     </div>
@@ -1728,14 +1869,15 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>William &amp; Mary News</strong>
                         <div class="subtitle">
                             <a
                                 href="https://news.wm.edu/2023/07/26/books-published-by-william-mary-faculty-in-2023/"
                                 target="_blank"
                                 rel="noreferrer"
-                                >Books published by William &amp; Mary faculty in 2023</a
+                                >Books published by William &amp; Mary faculty
+                                in 2023</a
                             >
                         </div>
                     </div>
@@ -1744,7 +1886,7 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>FiveThirtyEight</strong>
                         <div class="subtitle">
                             <a
@@ -1752,12 +1894,14 @@
                                 target="_blank"
                                 rel="noreferrer"
                                 >The Datasets We&#8217;re Looking At This Week</a
-                            > (The
+                            >
+                            (The
                             <a
                                 href="https://chip-dataset.vercel.app"
                                 target="_blank"
                                 rel="noreferrer">CHIP dataset</a
-                            > is highlighted by the &#8220;Data Is Plural&#8221; column.)
+                            > is highlighted by the &#8220;Data Is Plural&#8221;
+                            column.)
                         </div>
                     </div>
                     <div class="entry-meta">
@@ -1765,14 +1909,15 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>William &amp; Mary News</strong>
                         <div class="subtitle">
                             <a
                                 href="https://www.wm.edu/news/stories/2022/misinformation-examination-how-trust-and-distrust-shift-during-covid-19.php"
                                 target="_blank"
                                 rel="noreferrer"
-                                >Misinformation examination: How trust and distrust shift during COVID-19</a
+                                >Misinformation examination: How trust and
+                                distrust shift during COVID-19</a
                             >
                         </div>
                     </div>
@@ -1781,14 +1926,15 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>WYDaily</strong>
                         <div class="subtitle">
                             <a
                                 href="https://wydaily.com/news/2021/12/15/wm-professor-helps-medical-experts-study-covid-19-with-gpus/"
                                 target="_blank"
                                 rel="noreferrer"
-                                >W&amp;M Professor Helps Medical Experts Study COVID-19 With GPUs</a
+                                >W&amp;M Professor Helps Medical Experts Study
+                                COVID-19 With GPUs</a
                             >
                         </div>
                     </div>
@@ -1797,14 +1943,15 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>William &amp; Mary News</strong>
                         <div class="subtitle">
                             <a
                                 href="https://www.wm.edu/news/stories/2021/sun-is-teaching-covid-19-researchers-how-to-use-high-performance-amd-computers.php"
                                 target="_blank"
                                 rel="noreferrer"
-                                >Sun is Teaching COVID-19 Researchers How to Use High-Performance AMD Computers</a
+                                >Sun is Teaching COVID-19 Researchers How to
+                                Use High-Performance AMD Computers</a
                             >
                         </div>
                     </div>
@@ -1813,28 +1960,14 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>HiPEAC info 58</strong>
                         <div class="subtitle">
                             <a
                                 href="https://www.hipeac.net/magazine/7152/"
                                 target="_blank"
-                                rel="noreferrer">MGPUSim announced at ISCA 2019</a>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2019</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-header">
-                        <strong>News@Northeastern College of Engineering</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://coe.northeastern.edu/news/yifan-sun-and-nucar-research-lab-featured-in-hipeac-news/"
-                                target="_blank"
                                 rel="noreferrer"
-                                >Yifan Sun and NUCAR Research Lab featured in HiPEAC News</a
+                                >MGPUSim announced at ISCA 2019</a
                             >
                         </div>
                     </div>
@@ -1843,14 +1976,34 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
+                        <strong
+                            >News@Northeastern College of Engineering</strong
+                        >
+                        <div class="subtitle">
+                            <a
+                                href="https://coe.northeastern.edu/news/yifan-sun-and-nucar-research-lab-featured-in-hipeac-news/"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Yifan Sun and NUCAR Research Lab featured in
+                                HiPEAC News</a
+                            >
+                        </div>
+                    </div>
+                    <div class="entry-meta">
+                        <div>2019</div>
+                    </div>
+                </div>
+                <div class="entry media-entry">
+                    <div class="entry-body">
                         <strong>News@Northeastern</strong>
                         <div class="subtitle">
                             <a
                                 href="https://news.northeastern.edu/2018/12/14/a-student-went-off-to-do-a-co-op-at-a-major-tech-firm-he-came-back-with-a-patent/?fbclid=IwAR1hRI8CoPk34xJ2jp0xAcG71p0cMSV-PEIu_C7yuJxWwHXSjmFxecMn1UY"
                                 target="_blank"
                                 rel="noreferrer"
-                                >A Student Went off to Do a Co-op at a Major Tech Firm. He Came Back With a Patent.</a
+                                >A Student Went off to Do a Co-op at a Major
+                                Tech Firm. He Came Back With a Patent.</a
                             >
                         </div>
                     </div>
@@ -1859,14 +2012,15 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>WIRED</strong>
                         <div class="subtitle">
                             <a
                                 href="https://www.wired.com/2013/10/undersea/"
                                 target="_blank"
                                 rel="noreferrer"
-                                >Finally, the Underwater We've All Been Waiting For</a
+                                >Finally, the Underwater We've All Been Waiting
+                                For</a
                             >
                         </div>
                     </div>
@@ -1875,14 +2029,15 @@
                     </div>
                 </div>
                 <div class="entry media-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>NBC News</strong>
                         <div class="subtitle">
                             <a
                                 href="https://www.nbcnews.com/technolog/deep-sea-internet-detect-tsunamis-spy-smugglers-discover-oil-8C11399875"
                                 target="_blank"
                                 rel="noreferrer"
-                                >Deep-sea Internet to Detect Tsunamis, Spy on Smugglers, and Discover Oil</a
+                                >Deep-sea Internet to Detect Tsunamis, Spy on
+                                Smugglers, and Discover Oil</a
                             >
                         </div>
                     </div>
@@ -1893,16 +2048,18 @@
             </div>
         </section>
 
-                <section class="cv-section" id="service">
+        <section class="cv-section" id="service">
             <header class="section-header">
                 <h2>Service</h2>
             </header>
             <h3>Ph.D. Dissertation Committee</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Lishan Yang</strong>
-                        <div class="subtitle">Joined GMU as Assistant Professor</div>
+                        <div class="subtitle">
+                            Joined GMU as Assistant Professor
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>William &amp; Mary</div>
@@ -1910,7 +2067,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Yuhui Bao</strong>
                         <div class="subtitle">First Job @ AMD Inc.</div>
                     </div>
@@ -1919,7 +2076,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Matin Raayai</strong>
                     </div>
                     <div class="entry-meta">
@@ -1930,9 +2087,11 @@
             <h3>Master Thesis Committee</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Jiangtao Kong</strong>
-                        <div class="subtitle">Continued Ph.D. study at William &amp; Mary</div>
+                        <div class="subtitle">
+                            Continued Ph.D. study at William &amp; Mary
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>William &amp; Mary</div>
@@ -1943,9 +2102,12 @@
             <h3>Professional Organization Participation</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Member</strong>
-                        <div class="subtitle">Technical Community on Microprogramming and Microarchitecture (TCuARCH)</div>
+                        <div class="subtitle">
+                            Technical Community on Microprogramming and
+                            Microarchitecture (TCuARCH)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025 - Present</div>
@@ -1955,9 +2117,11 @@
             <h3>Conference Organization</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Local Organization Chair</strong>
-                        <div class="subtitle">The 17th NASA Formal Methods Symposium (NFM '25)</div>
+                        <div class="subtitle">
+                            The 17th NASA Formal Methods Symposium (NFM '25)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>William &amp; Mary</div>
@@ -1965,18 +2129,24 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Artifact Evaluation Chair</strong>
-                        <div class="subtitle">2025 IEEE International Symposium on Workload Characterization (IISWC '25)</div>
+                        <div class="subtitle">
+                            2025 IEEE International Symposium on Workload
+                            Characterization (IISWC '25)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Workshop/Tutorial Chair</strong>
-                        <div class="subtitle">IEEE International Symposium on High-Performance Computer Architecture (HPCA '23)</div>
+                        <div class="subtitle">
+                            IEEE International Symposium on High-Performance
+                            Computer Architecture (HPCA '23)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
@@ -1986,63 +2156,84 @@
             <h3>Workshop Chairing</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Chair</strong>
-                        <div class="subtitle">17th Workshop on General Purpose Processing Using GPU (GPGPU '25)</div>
+                        <div class="subtitle">
+                            17th Workshop on General Purpose Processing Using
+                            GPU (GPGPU '25)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Chair</strong>
-                        <div class="subtitle">2nd Workshop on Computer Architecture Modeling and Simulation (CAMS '24)</div>
+                        <div class="subtitle">
+                            2nd Workshop on Computer Architecture Modeling and
+                            Simulation (CAMS '24)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Chair</strong>
-                        <div class="subtitle">16th Workshop on General Purpose Processing Using GPU (GPGPU '24)</div>
+                        <div class="subtitle">
+                            16th Workshop on General Purpose Processing Using
+                            GPU (GPGPU '24)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Chair</strong>
-                        <div class="subtitle">1st Workshop on Computer Architecture Modeling and Simulation (CAMS '23)</div>
+                        <div class="subtitle">
+                            1st Workshop on Computer Architecture Modeling and
+                            Simulation (CAMS '23)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Chair</strong>
-                        <div class="subtitle">15th Workshop on General Purpose Processing Using GPU (GPGPU '23)</div>
+                        <div class="subtitle">
+                            15th Workshop on General Purpose Processing Using
+                            GPU (GPGPU '23)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Chair</strong>
-                        <div class="subtitle">14th Workshop on General Purpose Processing Using GPU (GPGPU '22)</div>
+                        <div class="subtitle">
+                            14th Workshop on General Purpose Processing Using
+                            GPU (GPGPU '22)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>Web Chair</strong>
-                        <div class="subtitle">6th Workshop on General Purpose Processing Using GPU (GPGPU '16)</div>
+                        <div class="subtitle">
+                            6th Workshop on General Purpose Processing Using
+                            GPU (GPGPU '16)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2016</div>
@@ -2052,18 +2243,24 @@
             <h3>Funding Agency Panelist</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>DOE Panelist</strong>
-                        <div class="subtitle">Office of Advanced Scientific Computing Research (ASCR), Early Career Research Program (ECRP)</div>
+                        <div class="subtitle">
+                            Office of Advanced Scientific Computing Research
+                            (ASCR), Early Career Research Program (ECRP)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         <strong>NSF Panelist</strong>
-                        <div class="subtitle">NSF Cyberinfrastructure for Sustained Scientific Innovation (CSSI), Element</div>
+                        <div class="subtitle">
+                            NSF Cyberinfrastructure for Sustained Scientific
+                            Innovation (CSSI), Element
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
@@ -2073,144 +2270,189 @@
             <h3>Program Committee</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         HPCA '25
-                        <div class="subtitle">31st IEEE International Symposium on High-Performance Computer Architecture</div>
+                        <div class="subtitle">
+                            31st IEEE International Symposium on
+                            High-Performance Computer Architecture
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         CF '24
-                        <div class="subtitle">21st ACM International Conference on Computing Frontiers</div>
+                        <div class="subtitle">
+                            21st ACM International Conference on Computing
+                            Frontiers
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         HPCA '24
-                        <div class="subtitle">30th IEEE International Symposium on High-Performance Computer Architecture</div>
+                        <div class="subtitle">
+                            30th IEEE International Symposium on
+                            High-Performance Computer Architecture
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         AccML '24
-                        <div class="subtitle">6th Workshop on Accelerated Machine Learning</div>
+                        <div class="subtitle">
+                            6th Workshop on Accelerated Machine Learning
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         ICCD '24
-                        <div class="subtitle">42nd IEEE International Conference on Computer Design</div>
+                        <div class="subtitle">
+                            42nd IEEE International Conference on Computer
+                            Design
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         ICCD '23
-                        <div class="subtitle">41st IEEE International Conference on Computer Design</div>
+                        <div class="subtitle">
+                            41st IEEE International Conference on Computer
+                            Design
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         CF '23
-                        <div class="subtitle">20th ACM International Conference on Computing Frontiers</div>
+                        <div class="subtitle">
+                            20th ACM International Conference on Computing
+                            Frontiers
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         AccML '23
-                        <div class="subtitle">5th Workshop on Accelerated Machine Learning</div>
+                        <div class="subtitle">
+                            5th Workshop on Accelerated Machine Learning
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         HPCA '23
-                        <div class="subtitle">IEEE International Symposium on High-Performance Computer Architecture</div>
+                        <div class="subtitle">
+                            IEEE International Symposium on High-Performance
+                            Computer Architecture
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         SBAC-PAD '22
-                        <div class="subtitle">International Symposium on Computer Architecture and High Performance Computing</div>
+                        <div class="subtitle">
+                            International Symposium on Computer Architecture
+                            and High Performance Computing
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         ICCD '22
-                        <div class="subtitle">40th IEEE International Conference on Computer Design</div>
+                        <div class="subtitle">
+                            40th IEEE International Conference on Computer
+                            Design
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         AccML '22
-                        <div class="subtitle">4th Workshop on Accelerated Machine Learning</div>
+                        <div class="subtitle">
+                            4th Workshop on Accelerated Machine Learning
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         SBAC-PAD '21
-                        <div class="subtitle">IEEE International Symposium on Computer Architecture and High Performance Computing</div>
+                        <div class="subtitle">
+                            IEEE International Symposium on Computer
+                            Architecture and High Performance Computing
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2021</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         ICCD '21
-                        <div class="subtitle">40th IEEE International Conference on Computer Design</div>
+                        <div class="subtitle">
+                            40th IEEE International Conference on Computer
+                            Design
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2021</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         ICCD '20
-                        <div class="subtitle">39th IEEE International Conference on Computer Design</div>
+                        <div class="subtitle">
+                            39th IEEE International Conference on Computer
+                            Design
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2020</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         GPGPU '20
-                        <div class="subtitle">13th Workshop on General Purpose Processing Using GPU</div>
+                        <div class="subtitle">
+                            13th Workshop on General Purpose Processing Using
+                            GPU
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2020</div>
@@ -2220,143 +2462,180 @@
             <h3>Journal Reviewer</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TACO
-                        <div class="subtitle">ACM Transactions on Architecture and Code Optimization</div>
+                        <div class="subtitle">
+                            ACM Transactions on Architecture and Code
+                            Optimization
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TCC
-                        <div class="subtitle">IEEE Transactions on Cloud Computing</div>
+                        <div class="subtitle">
+                            IEEE Transactions on Cloud Computing
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         JPDC
-                        <div class="subtitle">Journal of Parallel and Distributed Computing</div>
+                        <div class="subtitle">
+                            Journal of Parallel and Distributed Computing
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TACO
-                        <div class="subtitle">ACM Transactions on Architecture and Code Optimization</div>
+                        <div class="subtitle">
+                            ACM Transactions on Architecture and Code
+                            Optimization
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TOMPECS
-                        <div class="subtitle">ACM Transactions on Modeling and Performance Evaluation of Computing Systems</div>
+                        <div class="subtitle">
+                            ACM Transactions on Modeling and Performance
+                            Evaluation of Computing Systems
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TACO
-                        <div class="subtitle">ACM Transactions on Architecture and Code Optimization</div>
+                        <div class="subtitle">
+                            ACM Transactions on Architecture and Code
+                            Optimization
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         FGCS
-                        <div class="subtitle">Future Generation Computer Systems</div>
+                        <div class="subtitle">
+                            Future Generation Computer Systems
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TPDS
-                        <div class="subtitle">IEEE Transactions on Parallel and Distributed Systems</div>
+                        <div class="subtitle">
+                            IEEE Transactions on Parallel and Distributed
+                            Systems
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
-                        IEEE Micro
-                    </div>
+                    <div class="entry-body">IEEE Micro</div>
                     <div class="entry-meta">
                         <div>2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TPDS
-                        <div class="subtitle">IEEE Transactions on Parallel and Distributed Systems</div>
+                        <div class="subtitle">
+                            IEEE Transactions on Parallel and Distributed
+                            Systems
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2021</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TACO
-                        <div class="subtitle">ACM Transactions on Architecture and Code Optimization</div>
+                        <div class="subtitle">
+                            ACM Transactions on Architecture and Code
+                            Optimization
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2021</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         CAL
-                        <div class="subtitle">IEEE Computer Architecture Letters</div>
+                        <div class="subtitle">
+                            IEEE Computer Architecture Letters
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2021</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         JPDC
-                        <div class="subtitle">Journal of Parallel and Distributed Computing</div>
+                        <div class="subtitle">
+                            Journal of Parallel and Distributed Computing
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2020</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TPDS
-                        <div class="subtitle">IEEE Transactions on Parallel and Distributed Systems</div>
+                        <div class="subtitle">
+                            IEEE Transactions on Parallel and Distributed
+                            Systems
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2020</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TOC
-                        <div class="subtitle">IEEE Transactions on Computers</div>
+                        <div class="subtitle">
+                            IEEE Transactions on Computers
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2020</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         TACO
-                        <div class="subtitle">ACM Transactions on Architecture and Code Optimization</div>
+                        <div class="subtitle">
+                            ACM Transactions on Architecture and Code
+                            Optimization
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2020</div>
@@ -2366,27 +2645,36 @@
             <h3>External Review Committee / Ad-hoc Reviewer</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         ISPASS '25
-                        <div class="subtitle">IEEE International Symposium on Performance Analysis of Systems and Software</div>
+                        <div class="subtitle">
+                            IEEE International Symposium on Performance
+                            Analysis of Systems and Software
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         ISCA '24
-                        <div class="subtitle">International Symposium on Computer Architecture (External Review Committee)</div>
+                        <div class="subtitle">
+                            International Symposium on Computer Architecture
+                            (External Review Committee)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         PacificVis '24
-                        <div class="subtitle">IEEE Pacific Visualization Symposium (Ad-hoc Reviewer)</div>
+                        <div class="subtitle">
+                            IEEE Pacific Visualization Symposium (Ad-hoc
+                            Reviewer)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024</div>
@@ -2396,7 +2684,7 @@
             <h3>William &amp; Mary Undergraduate Advising</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Pre-Major Advisor
                         <div class="subtitle">7 students</div>
                     </div>
@@ -2405,7 +2693,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Pre-Major Advisor
                         <div class="subtitle">7 students</div>
                     </div>
@@ -2414,7 +2702,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         CS Major Advisor
                         <div class="subtitle">4 students</div>
                     </div>
@@ -2423,7 +2711,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Prem-Major Advisor
                         <div class="subtitle">8 students</div>
                     </div>
@@ -2432,7 +2720,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         CS Major Advisor
                         <div class="subtitle">1 student</div>
                     </div>
@@ -2441,7 +2729,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Pre-Major Advisor
                         <div class="subtitle">10 students</div>
                     </div>
@@ -2450,7 +2738,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         CS Major Advisor
                         <div class="subtitle">1 student</div>
                     </div>
@@ -2459,7 +2747,7 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Pre-Major Advisor
                         <div class="subtitle">6 students</div>
                     </div>
@@ -2471,36 +2759,47 @@
             <h3>William &amp; Mary University-Wide Committee</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Generative AI University Teaching &amp; Learning Project (UTLP)</div>
+                        <div class="subtitle">
+                            Generative AI University Teaching &amp; Learning
+                            Project (UTLP)
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023 - 2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee</div>
+                        <div class="subtitle">
+                            S. Laurie Sanderson Awards for Excellence in
+                            Undergraduate Mentoring Committee
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022 - 2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Research Computing Advisory Committee</div>
+                        <div class="subtitle">
+                            Research Computing Advisory Committee
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022 - 2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee</div>
+                        <div class="subtitle">
+                            S. Laurie Sanderson Awards for Excellence in
+                            Undergraduate Mentoring Committee
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2021 - 2022</div>
@@ -2510,43 +2809,51 @@
             <h3>William &amp; Mary Department-Level Committee</h3>
             <div class="entry-list">
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Computer Science Undergraduate Curriculum</div>
+                        <div class="subtitle">
+                            Computer Science Undergraduate Curriculum
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025 - 2026</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Computer Science Web Presence</div>
+                        <div class="subtitle">
+                            Computer Science Web Presence
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2025 - 2026</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Chair
-                        <div class="subtitle">Computer Science Graduate Recruiting</div>
+                        <div class="subtitle">
+                            Computer Science Graduate Recruiting
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024 - 2025</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Computer Science Web Presence</div>
+                        <div class="subtitle">
+                            Computer Science Web Presence
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2024 - 2025</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
                         <div class="subtitle">Computer Science Colloquium</div>
                     </div>
@@ -2555,25 +2862,29 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Computer Science Graduate Recruiting</div>
+                        <div class="subtitle">
+                            Computer Science Graduate Recruiting
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023 - 2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Computer Science Web Presence</div>
+                        <div class="subtitle">
+                            Computer Science Web Presence
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2023 - 2024</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
                         <div class="subtitle">Computer Science Colloquium</div>
                     </div>
@@ -2582,25 +2893,29 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Chair
-                        <div class="subtitle">Computer Science Web Presence</div>
+                        <div class="subtitle">
+                            Computer Science Web Presence
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022 - 2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Data Science Faculty Recruitment</div>
+                        <div class="subtitle">
+                            Data Science Faculty Recruitment
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022 - 2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
                         <div class="subtitle">Computer Science Colloquium</div>
                     </div>
@@ -2609,25 +2924,29 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Chair
-                        <div class="subtitle">Computer Science Graduate Admission</div>
+                        <div class="subtitle">
+                            Computer Science Graduate Admission
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022 - 2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Computer Science Graduate Recruiting</div>
+                        <div class="subtitle">
+                            Computer Science Graduate Recruiting
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2022 - 2023</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
                         <div class="subtitle">Computer Science System</div>
                     </div>
@@ -2636,16 +2955,18 @@
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
-                        <div class="subtitle">Computer Science Web Presence</div>
+                        <div class="subtitle">
+                            Computer Science Web Presence
+                        </div>
                     </div>
                     <div class="entry-meta">
                         <div>2021 - 2022</div>
                     </div>
                 </div>
                 <div class="entry service-entry">
-                    <div class="entry-header">
+                    <div class="entry-body">
                         Member
                         <div class="subtitle">Computer Science Curriculum</div>
                     </div>
@@ -2656,6 +2977,15 @@
             </div>
         </section>
     </main>
+
+    <div class="floating-actions" aria-label="page controls">
+        <button type="button" class="action-button" on:click={scrollToTop}>
+            Back to Top
+        </button>
+        <button type="button" class="action-button" on:click={triggerPrint}>
+            Download PDF
+        </button>
+    </div>
 </div>
 
 <style>
@@ -2736,6 +3066,45 @@
         gap: 1.45rem;
     }
 
+    .floating-actions {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        z-index: 999;
+    }
+
+    .action-button {
+        background: #1d2f4b;
+        color: #fff;
+        border: none;
+        border-radius: 999px;
+        padding: 0.55rem 1.1rem;
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            background 0.2s ease;
+    }
+
+    .action-button:hover,
+    .action-button:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+        background: #243f68;
+        outline: none;
+    }
+
+    .action-button:focus-visible {
+        outline: 2px solid rgba(29, 47, 75, 0.4);
+        outline-offset: 3px;
+    }
+
     .cv-section {
         position: relative;
     }
@@ -2803,10 +3172,15 @@
         padding: 0.15rem 0;
     }
 
-    .entry-header {
+    .entry-body {
         display: flex;
         flex-direction: column;
         gap: 0.15rem;
+    }
+
+    .entry-header {
+        font-weight: 600;
+        color: #111;
     }
 
     .role {
@@ -2835,33 +3209,20 @@
         margin-bottom: 0.25rem;
     }
 
-    .note {
-        font-style: italic;
-        color: #444;
-    }
-
-    .publication-list {
-        gap: 0.9rem;
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-    }
-
-    .publication-entry {
-        display: block;
-        line-height: 1.55;
+    .entry-body {
+        margin-top: 0.2rem;
     }
 
     .publication-title {
-        font-style: italic;
-        color: #1d2f4b;
+        /* color: #1d2f4b; */
+        font-weight: 700;
     }
 
     .self-name {
         text-decoration: underline;
         text-decoration-thickness: 2px;
         text-decoration-color: #1d2f4b;
-        font-weight: 600;
+        /* font-weight: 600; */
     }
 
     .wm-advisee {
@@ -2870,48 +3231,7 @@
         text-decoration-color: #1d2f4b;
     }
 
-    .grant-title {
-        font-weight: 600;
-        margin-bottom: 0.1rem;
-    }
-
-    .grant-detail {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.45rem;
-        font-size: 0.94rem;
-        color: #333;
-    }
-
-    .subtle {
-        color: #555;
-    }
-
-    .list-heading {
-        font-weight: 600;
-        margin-bottom: 0.4rem;
-    }
-
-    .three-col {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 0.6rem 1.4rem;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .three-col li {
-        margin: 0;
-    }
-
-    .subtitle {
-        display: block;
-        font-size: 0.9rem;
-        color: #444;
-    }
-
-    @media (max-width: 900px) {
+    @media screen and (max-width: 900px) {
         .cv-container {
             margin: 0;
             min-height: auto;
@@ -2943,6 +3263,11 @@
     }
 
     @media print {
+        @page {
+            size: letter;
+            margin: 0.7in;
+        }
+
         :global(body) {
             background: #fff;
             font-size: 0.88rem;
@@ -2954,11 +3279,11 @@
             margin: 0;
             width: 100%;
             max-width: none;
-            padding: 0.8in 0.75in;
+            padding: 0;
             page-break-inside: avoid;
         }
 
-        #svelte > :not(.cv-container) {
+        .floating-actions {
             display: none !important;
         }
 
@@ -2973,10 +3298,6 @@
 
         .cv-header {
             border-bottom-width: 2px;
-        }
-
-        .publication-list li {
-            page-break-inside: avoid;
         }
     }
 </style>
