@@ -1,4 +1,6 @@
 <script>
+    import CvTable from './cv_table.svelte'
+
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
@@ -6,6 +8,211 @@
     const triggerPrint = () => {
         window.print()
     }
+
+    const academicAppointments = [
+        {
+            left: ['Assistant Professor', 'Computer Science, William & Mary'],
+            right: ['Williamsburg, VA', 'Aug. 2020 - Present'],
+        },
+    ]
+
+    const educationEntries = [
+        {
+            left: ['Ph.D. in Computer Engineering', 'Northeastern University'],
+            right: ['Sep. 2013 - Aug. 2020', 'Boston, MA'],
+        },
+        {
+            left: ['M.S. in Electrical Engineering', 'University at Buffalo'],
+            right: ['Sep. 2011 - Jun. 2013', 'Buffalo, NY'],
+        },
+        {
+            left: [
+                'B.Eng. in Electrical Engineering',
+                'Huazhong University of Science and Technology',
+            ],
+            right: ['Sep. 2007 - Jun. 2011', 'Wuhan, China'],
+        },
+        {
+            left: [
+                'Bachelor in Business Administration (Minor)',
+                'Wuhan University',
+            ],
+            right: ['Sep. 2008 - Jun. 2011', 'Wuhan, China'],
+        },
+    ]
+
+    const awardsEntries = [
+        { left: ['CAREER Award', 'NSF'], right: ['2024'] },
+        { left: ['Best Paper Award', "CHI'23"], right: ['2023'] },
+        {
+            left: ['Best Paper Honorable Mention', "CHI'20"],
+            right: ['2020'],
+        },
+        {
+            left: [
+                'Outstanding Graduate Student in Experiential Learning',
+                'Northeastern University',
+            ],
+            right: ['2019'],
+        },
+        {
+            left: [
+                'Teaching Award',
+                'Northeastern University College of Engineering',
+            ],
+            right: ['2019'],
+        },
+        { left: ['Best Paper Award', 'ICPE'], right: ['2018'] },
+        { left: ['Best Paper Candidate', 'IISWC'], right: ['2016'] },
+        { left: ['Best Student Paper Award', 'WUWNET'], right: ['2013'] },
+    ]
+
+    const industryEntries = [
+        {
+            left: [
+                'AMD',
+                'Software Engineer (Co-op)',
+                'Performance modeling and graphics simulator development for AMD Navi GPUs',
+            ],
+            right: ['Jul. 2018 - Dec. 2018', 'Boxborough, MA'],
+        },
+        {
+            left: [
+                'Dell EMC',
+                'Software Engineer (Co-op)',
+                'Cloud-based GPU-as-a-service system design, development, and deployment',
+            ],
+            right: ['Jul. 2016 - Dec. 2016', 'Hopkinton, MA'],
+        },
+    ]
+
+    const grantEntries = [
+        {
+            left: [
+                'Advancing Tools and Resources for the AMD ROCm Platform',
+                'AMD, Gift',
+                '$100,000',
+                'Sole PI',
+            ],
+            right: ['Dec. 2024'],
+        },
+        {
+            left: [
+                'CAREER: Towards Next-Generation Human-in-the-Loop and Human-over-the-Loop Computer Architecture Performance Analysis Infrastructure',
+                'NSF, CAREER',
+                '$598,555',
+                'Sole PI',
+            ],
+            right: ['Apr. 2025 - Mar. 2030'],
+        },
+        {
+            left: [
+                'Enabling GPU Performance Simulation for Large-Scale Workloads with Lightweight Simulation Methods',
+                'NSF, SHF Core, Medium',
+                '$1,133,743 (my share $376,249)',
+                {
+                    html: 'PI: <span class="self-name">Yifan Sun</span> (lead institution lead PI), Adwait Jog, Sreepathi Pai',
+                },
+            ],
+            right: ['May 2024 - Apr. 2028'],
+        },
+        {
+            left: [
+                'Binary Instrumentation for GPU Programs on AMD Platforms',
+                'AMD, Gift',
+                '$50,000',
+                'Sole PI',
+            ],
+            right: ['Dec. 2023'],
+        },
+        {
+            left: [
+                'HIP Development on AMD ROCm Platform',
+                'AMD, Gift',
+                '$50,000',
+                'Sole PI',
+            ],
+            right: ['Dec. 2023'],
+        },
+        {
+            left: [
+                'The Methods of Profiling and Tracing of GPU Programs Running on AMD ROCm Platforms',
+                'AMD, Gift',
+                '$44,000',
+                'Sole PI',
+            ],
+            right: ['May 2023'],
+        },
+        {
+            left: [
+                'Building Explainable Architecture with Simulation and Visualization Techniques',
+                'NSF, CRII',
+                '$175,000',
+                'Sole PI',
+            ],
+            right: ['May 2023 - Apr. 2026'],
+        },
+        {
+            left: [
+                'Enabling Computer Architecture as a Service',
+                'NSF, CCRI (later renamed as CIRC), Planning-C',
+                '$100,000 (my share $72,369)',
+                {
+                    html: 'PI: <span class="self-name">Yifan Sun</span> (lead institution lead PI), Katherine E. Isaacs (University of Utah)',
+                },
+            ],
+            right: ['Mar. 2023 - Feb. 2026'],
+        },
+        {
+            left: [
+                'AMD ROCm and HIP Platform Development',
+                'AMD, Gift',
+                '$60,000 + 2x AMD MI100 GPU',
+                'Sole PI',
+            ],
+            right: ['Mar. 2022'],
+        },
+        {
+            left: [
+                'Exploring Interpretable Deep Learning from Information Theoretic Perspective: Modeling and Applications',
+                'Neocortex, Pittsburgh Supercomputing Center',
+                'Access to Cerebras Wafer-Scale Computing Devices',
+                {
+                    html: 'PI: Huajie Shao, <span class="self-name">Yifan Sun</span>',
+                },
+            ],
+            right: ['Feb. 2022'],
+        },
+        {
+            left: [
+                'Developing Infrastructure for Advancing Research and Teaching in Security and Reliability',
+                'Coastal Virginia Center for Cyber Innovation (COVA CCI)',
+                '$79,670 for equipment shared by the department',
+                {
+                    html: 'PI: Dmitry Evtyushkin; Co-PI: Evgenia Smirni, <span class="self-name">Yifan Sun</span>, Adwait Nadkarni',
+                },
+            ],
+            right: ['Dec. 2021'],
+        },
+        {
+            left: [
+                'AMD ROCm and HIP Platform Development',
+                'AMD, Gift',
+                '$40,000',
+                'Sole PI',
+            ],
+            right: ['Sep. 2021'],
+        },
+        {
+            left: [
+                'General-Purpose Computing with AMD Graphics Processors',
+                'AMD, Gift',
+                '$40,000',
+                'Sole PI',
+            ],
+            right: ['Apr. 2021'],
+        },
+    ]
 </script>
 
 <svelte:head>
@@ -68,189 +275,28 @@
             <header class="section-header">
                 <h2>Academic Appointments</h2>
             </header>
-            <div class="entry-list">
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">Assistant Professor</div>
-                        <div>Computer Science, William &amp; Mary</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Williamsburg, VA</div>
-                        <div>Aug. 2020 - Present</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={academicAppointments} />
         </section>
 
         <section class="cv-section" id="education">
             <header class="section-header">
                 <h2>Education</h2>
             </header>
-            <div class="entry-list">
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            Ph.D. in Computer Engineering
-                        </div>
-                        <div>Northeastern University</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Sep. 2013 - Aug. 2020</div>
-                        <div>Boston, MA</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            M.S. in Electrical Engineering
-                        </div>
-                        <div>University at Buffalo</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Sep. 2011 - Jun. 2013</div>
-                        <div>Buffalo, NY</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            B.Eng. in Electrical Engineering
-                        </div>
-                        <div>
-                            Huazhong University of Science and Technology
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Sep. 2007 - Jun. 2011</div>
-                        <div>Wuhan, China</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            Bachelor in Business Administration (Minor)
-                        </div>
-                        <div>Wuhan University</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Sep. 2008 - Jun. 2011</div>
-                        <div>Wuhan, China</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={educationEntries} />
         </section>
 
         <section class="cv-section" id="industry-experience">
             <header class="section-header">
                 <h2>Industry Experience</h2>
             </header>
-            <div class="entry-list">
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            AMD, <span class="subtle"
-                                >Software Engineer (Co-op)</span
-                            >
-                        </div>
-                        <div>
-                            Performance modeling and graphics simulator
-                            development for AMD Navi GPUs
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Jul. 2018 - Dec. 2018</div>
-                        <div>Boxborough, MA</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            Dell EMC, <span class="subtle"
-                                >Software Engineer (Co-op)</span
-                            >
-                        </div>
-                        <div>
-                            Cloud-based GPU-as-a-service system design,
-                            development, and deployment
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Jul. 2016 - Dec. 2016</div>
-                        <div>Hopkinton, MA</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={industryEntries} />
         </section>
 
         <section class="cv-section" id="awards">
             <header class="section-header">
                 <h2>Awards</h2>
             </header>
-            <div class="entry-list">
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">CAREER Award</div>
-                        NSF
-                    </div>
-                    <div class="entry-meta">2024</div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">Best Paper Award</div>
-                        CHI'23
-                    </div>
-                    <div class="entry-meta">2023</div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            Best Paper Honorable Mention
-                        </div>
-                        CHI'20
-                    </div>
-                    <div class="entry-meta">2020</div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            Outstanding Graduate Student in Experiential
-                            Learning
-                        </div>
-                        Northeastern University
-                    </div>
-                    <div class="entry-meta">2019</div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">Teaching Award</div>
-                        Northeastern University College of Engineering
-                    </div>
-                    <div class="entry-meta">2019</div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">Best Paper Award</div>
-                        ICPE
-                    </div>
-                    <div class="entry-meta">2018</div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">Best Paper Candidate</div>
-                        IISWC
-                    </div>
-                    <div class="entry-meta">2016</div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="entry-header">
-                            Best Student Paper Award
-                        </div>
-                        WUWNET
-                    </div>
-                    <div class="entry-meta">013</div>
-                </div>
-            </div>
+            <CvTable entries={awardsEntries} />
         </section>
 
         <section class="cv-section" id="grants">
@@ -261,266 +307,7 @@
                 I have acquired research funding that totals $1,685,843 at
                 William &amp; Mary.
             </p>
-            <div class="entry-list">
-                <div class="entry">
-                    <div class="entry-body">
-                        Advancing Tools and Resources for the AMD ROCm Platform
-                        <div class="grant-detail">
-                            <span><em>AMD, Gift, Sole PI</em></span>
-                            <span class="subtle">$100,000</span>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Dec. 2024</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >CAREER: Towards Next-Generation
-                                Human-in-the-Loop and Human-over-the-Loop
-                                Computer Architecture Performance Analysis
-                                Infrastructure</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span><em>NSF, CAREER, Sole PI</em></span>
-                            <span class="subtle">$598,555</span>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Apr. 2025 - Mar. 2030</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >Enabling GPU Performance Simulation for
-                                Large-Scale Workloads with Lightweight
-                                Simulation Methods</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span
-                                ><em
-                                    >NSF, SHF Core, Medium &#8212; PI: <span
-                                        class="self-name">Yifan Sun</span
-                                    > (lead institution lead PI), Adwait Jog, Sreepathi
-                                    Pai</em
-                                ></span
-                            >
-                            <span class="subtle"
-                                >$1,133,743; my share $376,249</span
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>May 2024 - Apr. 2028</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >Binary Instrumentation for GPU Programs on AMD
-                                Platforms</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span><em>AMD, Gift, Sole PI</em></span>
-                            <span class="subtle">$50,000</span>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Dec. 2023</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >HIP Development on AMD ROCm Platform</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span><em>AMD, Gift, Sole PI</em></span>
-                            <span class="subtle">$50,000</span>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Dec. 2023</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >The Methods of Profiling and Tracing of GPU
-                                Programs Running on AMD ROCm Platforms</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span><em>AMD, Gift, Sole PI</em></span>
-                            <span class="subtle">$44,000</span>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>May 2023</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >Building Explainable Architecture with
-                                Simulation and Visualization Techniques</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span><em>NSF, CRII, Sole PI</em></span>
-                            <span class="subtle">$175,000</span>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>May 2023 - Apr. 2026</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >Enabling Computer Architecture as a Service</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span
-                                ><em
-                                    >NSF, CCRI (later renamed as CIRC),
-                                    Planning-C &#8212; PI: <span
-                                        class="self-name">Yifan Sun</span
-                                    > (lead institution lead PI), Katherine E. Isaacs
-                                    (University of Utah)</em
-                                ></span
-                            >
-                            <span class="subtle"
-                                >$100,000; my share $72,369</span
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Mar. 2023 - Feb. 2026</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >AMD ROCm and HIP Platform Development</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span><em>AMD, Gift, Sole PI</em></span>
-                            <span class="subtle"
-                                >$60,000 + 2x AMD MI100 GPU</span
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Mar. 2022</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >Exploring Interpretable Deep Learning from
-                                Information Theoretic Perspective: Modeling and
-                                Applications</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span
-                                ><em
-                                    >Neocortex, Pittsburgh Supercomputing
-                                    Center &#8212; PI: Huajie Shao, <span
-                                        class="self-name">Yifan Sun</span
-                                    ></em
-                                ></span
-                            >
-                            <span class="subtle"
-                                >Access to Cerebras Wafer-Scale Computing
-                                Devices</span
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Feb. 2022</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >Developing Infrastructure for Advancing
-                                Research and Teaching in Security and
-                                Reliability</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span
-                                ><em
-                                    >Coastal Virginia Center for Cyber
-                                    Innovation (COVA CCI) &#8212; PI: Dmitry
-                                    Evtyushkin; Co-PI: Evgenia Smirni, <span
-                                        class="self-name">Yifan Sun</span
-                                    >, Adwait Nadkarni</em
-                                ></span
-                            >
-                            <span class="subtle"
-                                >$79,670 for equipment shared by the department</span
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Dec. 2021</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >AMD ROCm and HIP Platform Development</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span><em>AMD, Gift, Sole PI</em></span>
-                            <span class="subtle">$40,000</span>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Sep. 2021</div>
-                    </div>
-                </div>
-                <div class="entry">
-                    <div class="entry-body">
-                        <div class="grant-title">
-                            <strong
-                                >General-Purpose Computing with AMD Graphics
-                                Processors</strong
-                            >
-                        </div>
-                        <div class="grant-detail">
-                            <span><em>AMD, Gift, Sole PI</em></span>
-                            <span class="subtle">$40,000</span>
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Apr. 2021</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={grantEntries} />
         </section>
 
         <section class="cv-section" id="publications">
@@ -537,7 +324,7 @@
                 </p>
             </div>
             <h3>Peer-Reviewed Conference Papers</h3>
-            <div class="entry-list publication-list">
+            <div class="entry-list">
                 <div class="entry publication-entry">
                     Wenhan Lyu, Yimeng Wang, <span class="self-name"
                         >Yifan Sun</span
@@ -3110,7 +2897,7 @@
     }
 
     .section-header {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .section-intro {
@@ -3149,7 +2936,7 @@
         font-size: 2.12rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        margin: 1.4rem 0 0.8rem 0;
+        margin: 0.4rem 0 0.2rem 0;
         color: #1d2f4b;
         border-bottom: 1px solid rgba(29, 47, 75, 0.35);
         font-weight: 100;
