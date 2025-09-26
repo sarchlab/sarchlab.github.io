@@ -1021,6 +1021,612 @@
             right: ['', 'September 2016'],
         },
     ]
+
+    const teachingWMEntries: TableEntry[] = [
+        {
+            left: [
+                'CSCI654 - Advanced Computer Architecture',
+                'Graduate-level course; new course',
+            ],
+            right: ['Spring 2025'],
+        },
+        {
+            left: [
+                'CSCI432 - Web Programming',
+                'Senior undergraduate-level course; new course',
+            ],
+            right: ['Fall 2024, 2025'],
+        },
+        {
+            left: [
+                'CSCI780 - Computer Architecture Modeling and Simulation',
+                'Ph.D.-level course; new course',
+            ],
+            right: ['Spring 2023'],
+        },
+        {
+            left: [
+                'CSCI780 - Data Visualization',
+                'Ph.D.-level course; new course',
+            ],
+            right: ['Spring 2022, 2024'],
+        },
+        {
+            left: [
+                'CSCI780 - Topics in Computer Architecture',
+                'Ph.D.-level course; new course',
+            ],
+            right: ['Spring 2021'],
+        },
+        {
+            left: [
+                'CSCI141 - Computational Problem Solving',
+                'Undergraduate Python programming course (1st-2nd year)',
+            ],
+            right: ['Fall 2020-2023'],
+        },
+    ]
+
+    const teachingNEUEntries: TableEntry[] = [
+        {
+            left: [
+                'EECE2322 - Fundamental Digital Design and Computer Organization',
+                'Co-instructor with Dr. Pereira da Silva Aloizio',
+                'Intermediate-level undergraduate course (3rd year)',
+            ],
+            right: ['Fall 2019'],
+        },
+        {
+            left: [
+                'EECE2560 - Fundamentals of Engineering Algorithms',
+                'Instructor',
+                'Intermediate-level undergraduate course (3rd year)',
+                'Course redesign with student learning score 4.7/5; instructor effectiveness 4.4/5',
+            ],
+            right: ['Spring 2018'],
+        },
+        {
+            left: [
+                'EECE2160 - Embedded Design Enabling Robotics',
+                'Instructor',
+                'Intermediate-level undergraduate course (2nd year)',
+                'Instructor effectiveness 4.6/5',
+            ],
+            right: ['Fall 2017'],
+        },
+    ]
+
+    const menteePhDEntries: TableEntry[] = [
+        {
+            left: ['Yijia Shi', 'William & Mary'],
+            right: ['2024 - Present'],
+        },
+        {
+            left: ['Enze Xu', 'William & Mary'],
+            right: ['2024 - Present'],
+        },
+        {
+            left: ['Daoxuan Xu', 'William & Mary', 'Co-advised with Jie Ren'],
+            right: ['2023 - Present'],
+        },
+        {
+            left: ['Sabila Al Jannat', 'William & Mary'],
+            right: ['2022 - Present'],
+        },
+        {
+            left: ['Ying Li', 'William & Mary', 'Co-advised with Adwait Jog'],
+            right: ['2021 - Present'],
+        },
+        {
+            left: [
+                'Chris Thames',
+                'William & Mary',
+                'Part-time, with full-time job at NASA',
+            ],
+            right: ['2020 - Present'],
+        },
+    ]
+
+    const menteeMasterEntries: TableEntry[] = [
+        {
+            left: ['Daoxuan Xu', 'University of Florida'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Yuhui Bao', 'Northeastern University'],
+            right: ['2018 - 2020'],
+        },
+    ]
+
+    const menteeUndergradEntries: TableEntry[] = [
+        {
+            left: [
+                'William & Mary',
+                'Zhuoyan Zheng, Mengyang He, Pablo Ibarz, Aibo Li, Yexi Zheng, Xuzhong Wang, Huizhi Zhao, Jeremy Coonley',
+            ],
+            right: [],
+        },
+        {
+            left: ['University of Michigan, Ann Arbor', 'Ali Mosallaei'],
+            right: [],
+        },
+        {
+            left: [
+                'Huazhong University of Science & Technology (China)',
+                'Shaoyu Wang, Hang Yan, Chen Gong',
+            ],
+            right: [],
+        },
+        {
+            left: ['Istanbul Technical University (Turkey)', 'Ali Tolga Dinçer'],
+            right: [],
+        },
+        {
+            left: ['William & Mary', 'Xin Li (REU Student)'],
+            right: [],
+        },
+    ]
+
+    const mediaCoverageEntries: TableEntry[] = [
+        {
+            left: [
+                'William & Mary News',
+                {
+                    html: `<a href="https://news.wm.edu/2025/05/12/william-mary-professor-wins-nsf-career-award-to-study-computer-chip-performance/" target="_blank" rel="noreferrer">William &amp; Mary professor wins NSF CAREER award to study computer chip performance; Sun brings human-centered approach to computer architecture</a>`,
+                },
+            ],
+            right: ['2025'],
+        },
+        {
+            left: [
+                'William & Mary News',
+                {
+                    html: `<a href="https://news.wm.edu/2023/07/26/books-published-by-william-mary-faculty-in-2023/" target="_blank" rel="noreferrer">Books published by William &amp; Mary faculty in 2023</a>`,
+                },
+            ],
+            right: ['2023'],
+        },
+        {
+            left: [
+                'FiveThirtyEight',
+                {
+                    html: `<a href="https://fivethirtyeight.com/features/the-datasets-were-looking-at-this-week-13/" target="_blank" rel="noreferrer">The Datasets We&#8217;re Looking At This Week</a> (The <a href="https://chip-dataset.vercel.app" target="_blank" rel="noreferrer">CHIP dataset</a> is highlighted by the &#8220;Data Is Plural&#8221; column.)`,
+                },
+            ],
+            right: ['2022'],
+        },
+        {
+            left: [
+                'William & Mary News',
+                {
+                    html: `<a href="https://www.wm.edu/news/stories/2022/misinformation-examination-how-trust-and-distrust-shift-during-covid-19.php" target="_blank" rel="noreferrer">Misinformation examination: How trust and distrust shift during COVID-19</a>`,
+                },
+            ],
+            right: ['2022'],
+        },
+        {
+            left: [
+                'WYDaily',
+                {
+                    html: `<a href="https://wydaily.com/news/2021/12/15/wm-professor-helps-medical-experts-study-covid-19-with-gpus/" target="_blank" rel="noreferrer">W&amp;M Professor Helps Medical Experts Study COVID-19 With GPUs</a>`,
+                },
+            ],
+            right: ['2021'],
+        },
+        {
+            left: [
+                'William & Mary News',
+                {
+                    html: `<a href="https://www.wm.edu/news/stories/2021/sun-is-teaching-covid-19-researchers-how-to-use-high-performance-amd-computers.php" target="_blank" rel="noreferrer">Sun is Teaching COVID-19 Researchers How to Use High-Performance AMD Computers</a>`,
+                },
+            ],
+            right: ['2021'],
+        },
+        {
+            left: [
+                'HiPEAC info 58',
+                {
+                    html: `<a href="https://www.hipeac.net/magazine/7152/" target="_blank" rel="noreferrer">MGPUSim announced at ISCA 2019</a>`,
+                },
+            ],
+            right: ['2019'],
+        },
+        {
+            left: [
+                'News@Northeastern College of Engineering',
+                {
+                    html: `<a href="https://coe.northeastern.edu/news/yifan-sun-and-nucar-research-lab-featured-in-hipeac-news/" target="_blank" rel="noreferrer">Yifan Sun and NUCAR Research Lab featured in HiPEAC News</a>`,
+                },
+            ],
+            right: ['2019'],
+        },
+        {
+            left: [
+                'News@Northeastern',
+                {
+                    html: `<a href="https://news.northeastern.edu/2018/12/14/a-student-went-off-to-do-a-co-op-at-a-major-tech-firm-he-came-back-with-a-patent/?fbclid=IwAR1hRI8CoPk34xJ2jp0xAcG71p0cMSV-PEIu_C7yuJxWwHXSjmFxecMn1UY" target="_blank" rel="noreferrer">A Student Went off to Do a Co-op at a Major Tech Firm. He Came Back With a Patent.</a>`,
+                },
+            ],
+            right: ['2018'],
+        },
+        {
+            left: [
+                'WIRED',
+                {
+                    html: `<a href="https://www.wired.com/2013/10/undersea/" target="_blank" rel="noreferrer">Finally, the Underwater We&#8217;ve All Been Waiting For</a>`,
+                },
+            ],
+            right: ['2013'],
+        },
+        {
+            left: [
+                'NBC News',
+                {
+                    html: `<a href="https://www.nbcnews.com/technolog/deep-sea-internet-detect-tsunamis-spy-smugglers-discover-oil-8C11399875" target="_blank" rel="noreferrer">Deep-sea Internet to Detect Tsunamis, Spy on Smugglers, and Discover Oil</a>`,
+                },
+            ],
+            right: ['2013'],
+        },
+    ]
+
+    const servicePhdCommitteeEntries: TableEntry[] = [
+        {
+            left: ['Lishan Yang', 'Joined GMU as Assistant Professor'],
+            right: ['William & Mary', 'Defended Spring 2022'],
+        },
+        {
+            left: ['Yuhui Bao', 'First Job @ AMD Inc.'],
+            right: ['Northeastern University'],
+        },
+        {
+            left: ['Matin Raayai'],
+            right: ['Northeastern University'],
+        },
+    ]
+
+    const serviceMasterCommitteeEntries: TableEntry[] = [
+        {
+            left: ['Jiangtao Kong', 'Continued Ph.D. study at William & Mary'],
+            right: ['William & Mary', 'Defended Spring 2023'],
+        },
+    ]
+
+    const serviceOrgEntries: TableEntry[] = [
+        {
+            left: [
+                'Member',
+                'Technical Community on Microprogramming and Microarchitecture (TCuARCH)',
+            ],
+            right: ['2025 - Present'],
+        },
+    ]
+
+    const serviceConferenceOrgEntries: TableEntry[] = [
+        {
+            left: ['Local Organization Chair', "The 17th NASA Formal Methods Symposium (NFM '25)"],
+            right: ['William & Mary', '2025'],
+        },
+        {
+            left: ['Artifact Evaluation Chair', "2025 IEEE International Symposium on Workload Characterization (IISWC '25)"],
+            right: ['2025'],
+        },
+        {
+            left: ['Workshop/Tutorial Chair', "IEEE International Symposium on High-Performance Computer Architecture (HPCA '23)"],
+            right: ['2023'],
+        },
+    ]
+
+    const serviceWorkshopChairEntries: TableEntry[] = [
+        {
+            left: ['Chair', "17th Workshop on General Purpose Processing Using GPU (GPGPU '25)"],
+            right: ['2025'],
+        },
+        {
+            left: ['Chair', "2nd Workshop on Computer Architecture Modeling and Simulation (CAMS '24)"],
+            right: ['2024'],
+        },
+        {
+            left: ['Chair', "16th Workshop on General Purpose Processing Using GPU (GPGPU '24)"],
+            right: ['2024'],
+        },
+        {
+            left: ['Chair', "1st Workshop on Computer Architecture Modeling and Simulation (CAMS '23)"],
+            right: ['2023'],
+        },
+        {
+            left: ['Chair', "15th Workshop on General Purpose Processing Using GPU (GPGPU '23)"],
+            right: ['2023'],
+        },
+        {
+            left: ['Chair', "14th Workshop on General Purpose Processing Using GPU (GPGPU '22)"],
+            right: ['2022'],
+        },
+        {
+            left: ['Web Chair', "6th Workshop on General Purpose Processing Using GPU (GPGPU '16)"],
+            right: ['2016'],
+        },
+    ]
+
+    const serviceFundingPanelEntries: TableEntry[] = [
+        {
+            left: ['DOE Panelist', 'Office of Advanced Scientific Computing Research (ASCR), Early Career Research Program (ECRP)'],
+            right: ['2025'],
+        },
+        {
+            left: ['NSF Panelist', 'NSF Cyberinfrastructure for Sustained Scientific Innovation (CSSI), Element'],
+            right: ['2022'],
+        },
+    ]
+
+    const serviceProgramCommitteeEntries: TableEntry[] = [
+        {
+            left: ["HPCA '25", '31st IEEE International Symposium on High-Performance Computer Architecture'],
+            right: ['2025'],
+        },
+        {
+            left: ["CF '24", '21st ACM International Conference on Computing Frontiers'],
+            right: ['2024'],
+        },
+        {
+            left: ["HPCA '24", '30th IEEE International Symposium on High-Performance Computer Architecture'],
+            right: ['2024'],
+        },
+        {
+            left: ["AccML '24", '6th Workshop on Accelerated Machine Learning'],
+            right: ['2024'],
+        },
+        {
+            left: ["ICCD '24", '42nd IEEE International Conference on Computer Design'],
+            right: ['2024'],
+        },
+        {
+            left: ["ICCD '23", '41st IEEE International Conference on Computer Design'],
+            right: ['2023'],
+        },
+        {
+            left: ["CF '23", '20th ACM International Conference on Computing Frontiers'],
+            right: ['2023'],
+        },
+        {
+            left: ["AccML '23", '5th Workshop on Accelerated Machine Learning'],
+            right: ['2023'],
+        },
+        {
+            left: ["HPCA '23", 'IEEE International Symposium on High-Performance Computer Architecture'],
+            right: ['2023'],
+        },
+        {
+            left: ["SBAC-PAD '22", 'International Symposium on Computer Architecture and High Performance Computing'],
+            right: ['2022'],
+        },
+        {
+            left: ["ICCD '22", '40th IEEE International Conference on Computer Design'],
+            right: ['2022'],
+        },
+        {
+            left: ["AccML '22", '4th Workshop on Accelerated Machine Learning'],
+            right: ['2022'],
+        },
+        {
+            left: ["SBAC-PAD '21", 'IEEE International Symposium on Computer Architecture and High Performance Computing'],
+            right: ['2021'],
+        },
+        {
+            left: ["ICCD '21", '40th IEEE International Conference on Computer Design'],
+            right: ['2021'],
+        },
+        {
+            left: ["ICCD '20", '39th IEEE International Conference on Computer Design'],
+            right: ['2020'],
+        },
+        {
+            left: ["GPGPU '20", '13th Workshop on General Purpose Processing Using GPU'],
+            right: ['2020'],
+        },
+    ]
+
+    const serviceJournalReviewerEntries: TableEntry[] = [
+        {
+            left: ['TACO', 'ACM Transactions on Architecture and Code Optimization'],
+            right: ['2025'],
+        },
+        {
+            left: ['TCC', 'IEEE Transactions on Cloud Computing'],
+            right: ['2024'],
+        },
+        {
+            left: ['JPDC', 'Journal of Parallel and Distributed Computing'],
+            right: ['2023'],
+        },
+        {
+            left: ['TACO', 'ACM Transactions on Architecture and Code Optimization'],
+            right: ['2023'],
+        },
+        {
+            left: ['TOMPECS', 'ACM Transactions on Modeling and Performance Evaluation of Computing Systems'],
+            right: ['2022'],
+        },
+        {
+            left: ['TACO', 'ACM Transactions on Architecture and Code Optimization'],
+            right: ['2022'],
+        },
+        {
+            left: ['FGCS', 'Future Generation Computer Systems'],
+            right: ['2022'],
+        },
+        {
+            left: ['TPDS', 'IEEE Transactions on Parallel and Distributed Systems'],
+            right: ['2022'],
+        },
+        {
+            left: ['IEEE Micro'],
+            right: ['2022'],
+        },
+        {
+            left: ['TPDS', 'IEEE Transactions on Parallel and Distributed Systems'],
+            right: ['2021'],
+        },
+        {
+            left: ['TACO', 'ACM Transactions on Architecture and Code Optimization'],
+            right: ['2021'],
+        },
+        {
+            left: ['CAL', 'IEEE Computer Architecture Letters'],
+            right: ['2021'],
+        },
+        {
+            left: ['JPDC', 'Journal of Parallel and Distributed Computing'],
+            right: ['2020'],
+        },
+        {
+            left: ['TPDS', 'IEEE Transactions on Parallel and Distributed Systems'],
+            right: ['2020'],
+        },
+        {
+            left: ['TOC', 'IEEE Transactions on Computers'],
+            right: ['2020'],
+        },
+        {
+            left: ['TACO', 'ACM Transactions on Architecture and Code Optimization'],
+            right: ['2020'],
+        },
+    ]
+
+    const serviceExternalReviewEntries: TableEntry[] = [
+        {
+            left: ["ISPASS '25", 'IEEE International Symposium on Performance Analysis of Systems and Software'],
+            right: ['2025'],
+        },
+        {
+            left: ["ISCA '24", 'International Symposium on Computer Architecture (External Review Committee)'],
+            right: ['2024'],
+        },
+        {
+            left: ["PacificVis '24", 'IEEE Pacific Visualization Symposium (Ad-hoc Reviewer)'],
+            right: ['2024'],
+        },
+    ]
+
+    const serviceWmAdvisingEntries: TableEntry[] = [
+        {
+            left: ['Pre-Major Advisor', '7 students'],
+            right: ['2025 - 2026'],
+        },
+        {
+            left: ['Pre-Major Advisor', '7 students'],
+            right: ['2024 - 2025'],
+        },
+        {
+            left: ['CS Major Advisor', '4 students'],
+            right: ['2023 - 2024'],
+        },
+        {
+            left: ['Prem-Major Advisor', '8 students'],
+            right: ['2023 - 2024'],
+        },
+        {
+            left: ['CS Major Advisor', '1 student'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Pre-Major Advisor', '10 students'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['CS Major Advisor', '1 student'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Pre-Major Advisor', '6 students'],
+            right: ['2021 - 2022'],
+        },
+    ]
+
+    const serviceWmUniversityEntries: TableEntry[] = [
+        {
+            left: ['Member', 'Generative AI University Teaching & Learning Project (UTLP)'],
+            right: ['2023 - 2024'],
+        },
+        {
+            left: ['Member', 'S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Member', 'Research Computing Advisory Committee'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Member', 'S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee'],
+            right: ['2021 - 2022'],
+        },
+    ]
+
+    const serviceWmDepartmentEntries: TableEntry[] = [
+        {
+            left: ['Member', 'Computer Science Undergraduate Curriculum'],
+            right: ['2025 - 2026'],
+        },
+        {
+            left: ['Member', 'Computer Science Web Presence'],
+            right: ['2025 - 2026'],
+        },
+        {
+            left: ['Chair', 'Computer Science Graduate Recruiting'],
+            right: ['2024 - 2025'],
+        },
+        {
+            left: ['Member', 'Computer Science Web Presence'],
+            right: ['2024 - 2025'],
+        },
+        {
+            left: ['Member', 'Computer Science Colloquium'],
+            right: ['2024 - 2025'],
+        },
+        {
+            left: ['Member', 'Computer Science Graduate Recruiting'],
+            right: ['2023 - 2024'],
+        },
+        {
+            left: ['Member', 'Computer Science Web Presence'],
+            right: ['2023 - 2024'],
+        },
+        {
+            left: ['Member', 'Computer Science Colloquium'],
+            right: ['2023 - 2024'],
+        },
+        {
+            left: ['Chair', 'Computer Science Web Presence'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Member', 'Data Science Faculty Recruitment'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Member', 'Computer Science Colloquium'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Chair', 'Computer Science Graduate Admission'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Member', 'Computer Science Graduate Recruiting'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Member', 'Computer Science System'],
+            right: ['2022 - 2023'],
+        },
+        {
+            left: ['Member', 'Computer Science Web Presence'],
+            right: ['2021 - 2022'],
+        },
+        {
+            left: ['Member', 'Computer Science Curriculum'],
+            right: ['2021 - 2022'],
+        },
+    ]
 </script>
 
 <svelte:head>
@@ -1192,142 +1798,11 @@
             </header>
             <div class="subsection">
                 <h3>Teaching @ William &amp; Mary</h3>
-                <div class="entry-list teaching-list">
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                CSCI654 &#183; Advanced Computer Architecture
-                            </div>
-                            <ul>
-                                <li>Graduate level, new course</li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Spring 2025</div>
-                    </div>
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                CSCI432 &#183; Web Programming
-                            </div>
-                            <ul>
-                                <li>
-                                    Senior undergrad-level course, new course
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Fall 2024, 2025</div>
-                    </div>
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                CSCI780 &#183; Computer Architecture Modeling
-                                and Simulation
-                            </div>
-                            <ul>
-                                <li>Ph.D.-level course, new course</li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Spring 2023</div>
-                    </div>
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                CSCI780 &#183; Data Visualization
-                            </div>
-                            <ul>
-                                <li>Ph.D.-level course, new course</li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Spring 2022, 2024</div>
-                    </div>
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                CSCI780 &#183; Topics in Computer Architecture
-                            </div>
-                            <ul>
-                                <li>Ph.D.-level course, new course</li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Spring 2021</div>
-                    </div>
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                CSCI141 &#183; Computational Problem Solving
-                            </div>
-                            <ul>
-                                <li>
-                                    Undergraduate's first Python programming
-                                    course (1st - 2nd year)
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Fall 2020-2023</div>
-                    </div>
-                </div>
+                <CvTable entries={teachingWMEntries} />
             </div>
             <div class="subsection">
                 <h3>Teaching @ Northeastern University</h3>
-                <div class="entry-list teaching-list">
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                EECE2322 &#183; Fundamental Digital Design and
-                                Computer Organization
-                            </div>
-                            <ul>
-                                <li>
-                                    Co-instructor. With Dr. Pereira da Silva
-                                    Aloizio
-                                </li>
-                                <li>
-                                    Intermediate-level undergraduate course
-                                    (3rd year)
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Fall 2019</div>
-                    </div>
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                EECE2560 &#183; Fundamentals of Engineering
-                                Algorithms
-                            </div>
-                            <ul>
-                                <li>Instructor</li>
-                                <li>
-                                    Intermediate-level undergraduate course
-                                    (3rd year)
-                                </li>
-                                <li>
-                                    Redesigned the course (&quot;I have learned
-                                    a lot in this course&quot;: 4.7 out of 5)
-                                </li>
-                                <li>Instructor effectiveness 4.4 out of 5</li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Spring 2018</div>
-                    </div>
-                    <div class="entry teaching-entry">
-                        <div class="entry-body">
-                            <div class="role">
-                                EECE2160 &#183; Embedded Design Enabling
-                                Robotics
-                            </div>
-                            <ul>
-                                <li>Instructor</li>
-                                <li>
-                                    Intermediate-level undergraduate course
-                                    (2nd year)
-                                </li>
-                                <li>Instructor effectiveness 4.6 out of 5</li>
-                            </ul>
-                        </div>
-                        <div class="entry-meta">Fall 2017</div>
-                    </div>
-                </div>
+                <CvTable entries={teachingNEUEntries} />
             </div>
         </section>
 
@@ -1336,347 +1811,18 @@
                 <h2>Student Mentees</h2>
             </header>
             <h3>Ph.D. Students</h3>
-            <div class="entry-list">
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Yijia Shi</span>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>2024 - Present</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Enze Xu</span>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>2024 - Present</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Daoxuan Xu</span>
-                        <div class="subtitle">Co-advised with Jie Ren</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>2023 - Present</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Sabila Al Jannat</span>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>2022 - Present</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Ying Li</span>
-                        <div class="subtitle">Co-advised with Adwait Jog</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>2021 - Present</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Chris Thames</span>
-                        <div class="subtitle">
-                            Part-time, with full-time job at NASA
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>2020 - Present</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={menteePhDEntries} />
             <h3>Master Researchers</h3>
-            <div class="entry-list">
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Daoxuan Xu</span>
-                    </div>
-                    <div class="entry-meta">
-                        <div>University of Florida</div>
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Yuhui Bao</span>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Northeastern University</div>
-                        <div>2018 - 2020</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={menteeMasterEntries} />
             <h3>Undergraduate Researchers</h3>
-            <div class="entry-list">
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Zhuoyan Zheng, Mengyang He, Pablo Ibarz, Aibo Li,
-                            Yexi Zheng, Xuzhong Wang, Huizhi Zhao, Jeremy
-                            Coonley</span
-                        >
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Ali Mosallaei</span>
-                    </div>
-                    <div class="entry-meta">
-                        <div>University of Michigan, Ann Arbor</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Shaoyu Wang, Hang Yan, Chen Gong</span
-                        >
-                    </div>
-                    <div class="entry-meta">
-                        <div>
-                            Huazhong University of Science &amp; Technology
-                            (China)
-                        </div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Ali Tolga Din&amp;ccedil;er</span
-                        >
-                    </div>
-                    <div class="entry-meta">
-                        <div>Istanbul Technical University (Turkey)</div>
-                    </div>
-                </div>
-                <div class="entry mentee-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Xin Li</span>
-                        <div class="subtitle">REU Student</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={menteeUndergradEntries} />
         </section>
 
         <section class="cv-section" id="media-coverage">
             <header class="section-header">
                 <h2>Selected Media Coverage</h2>
             </header>
-            <div class="entry-list">
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>William &amp; Mary News</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://news.wm.edu/2025/05/12/william-mary-professor-wins-nsf-career-award-to-study-computer-chip-performance/"
-                                target="_blank"
-                                rel="noreferrer"
-                                >William &amp; Mary professor wins NSF CAREER
-                                award to study computer chip performance; Sun
-                                brings human-centered approach to computer
-                                architecture</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>William &amp; Mary News</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://news.wm.edu/2023/07/26/books-published-by-william-mary-faculty-in-2023/"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Books published by William &amp; Mary faculty
-                                in 2023</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>FiveThirtyEight</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://fivethirtyeight.com/features/the-datasets-were-looking-at-this-week-13/"
-                                target="_blank"
-                                rel="noreferrer"
-                                >The Datasets We&#8217;re Looking At This Week</a
-                            >
-                            (The
-                            <a
-                                href="https://chip-dataset.vercel.app"
-                                target="_blank"
-                                rel="noreferrer">CHIP dataset</a
-                            > is highlighted by the &#8220;Data Is Plural&#8221;
-                            column.)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>William &amp; Mary News</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://www.wm.edu/news/stories/2022/misinformation-examination-how-trust-and-distrust-shift-during-covid-19.php"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Misinformation examination: How trust and
-                                distrust shift during COVID-19</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>WYDaily</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://wydaily.com/news/2021/12/15/wm-professor-helps-medical-experts-study-covid-19-with-gpus/"
-                                target="_blank"
-                                rel="noreferrer"
-                                >W&amp;M Professor Helps Medical Experts Study
-                                COVID-19 With GPUs</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>William &amp; Mary News</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://www.wm.edu/news/stories/2021/sun-is-teaching-covid-19-researchers-how-to-use-high-performance-amd-computers.php"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Sun is Teaching COVID-19 Researchers How to
-                                Use High-Performance AMD Computers</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>HiPEAC info 58</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://www.hipeac.net/magazine/7152/"
-                                target="_blank"
-                                rel="noreferrer"
-                                >MGPUSim announced at ISCA 2019</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2019</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong
-                            >News@Northeastern College of Engineering</strong
-                        >
-                        <div class="subtitle">
-                            <a
-                                href="https://coe.northeastern.edu/news/yifan-sun-and-nucar-research-lab-featured-in-hipeac-news/"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Yifan Sun and NUCAR Research Lab featured in
-                                HiPEAC News</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2019</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>News@Northeastern</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://news.northeastern.edu/2018/12/14/a-student-went-off-to-do-a-co-op-at-a-major-tech-firm-he-came-back-with-a-patent/?fbclid=IwAR1hRI8CoPk34xJ2jp0xAcG71p0cMSV-PEIu_C7yuJxWwHXSjmFxecMn1UY"
-                                target="_blank"
-                                rel="noreferrer"
-                                >A Student Went off to Do a Co-op at a Major
-                                Tech Firm. He Came Back With a Patent.</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2018</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>WIRED</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://www.wired.com/2013/10/undersea/"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Finally, the Underwater We've All Been Waiting
-                                For</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2013</div>
-                    </div>
-                </div>
-                <div class="entry media-entry">
-                    <div class="entry-body">
-                        <strong>NBC News</strong>
-                        <div class="subtitle">
-                            <a
-                                href="https://www.nbcnews.com/technolog/deep-sea-internet-detect-tsunamis-spy-smugglers-discover-oil-8C11399875"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Deep-sea Internet to Detect Tsunamis, Spy on
-                                Smugglers, and Discover Oil</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2013</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={mediaCoverageEntries} />
         </section>
 
         <section class="cv-section" id="service">
@@ -1684,928 +1830,29 @@
                 <h2>Service</h2>
             </header>
             <h3>Ph.D. Dissertation Committee</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Lishan Yang</strong>
-                        <div class="subtitle">
-                            Joined GMU as Assistant Professor
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>Defended Spring 2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Yuhui Bao</strong>
-                        <div class="subtitle">First Job @ AMD Inc.</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Northeastern University</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Matin Raayai</strong>
-                    </div>
-                    <div class="entry-meta">
-                        <div>Northeastern University</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={servicePhdCommitteeEntries} />
             <h3>Master Thesis Committee</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Jiangtao Kong</strong>
-                        <div class="subtitle">
-                            Continued Ph.D. study at William &amp; Mary
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>Defended Spring 2023</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceMasterCommitteeEntries} />
             <h3>Professional Organization Participation</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Member</strong>
-                        <div class="subtitle">
-                            Technical Community on Microprogramming and
-                            Microarchitecture (TCuARCH)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025 - Present</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceOrgEntries} />
             <h3>Conference Organization</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Local Organization Chair</strong>
-                        <div class="subtitle">
-                            The 17th NASA Formal Methods Symposium (NFM '25)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>William &amp; Mary</div>
-                        <div>2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Artifact Evaluation Chair</strong>
-                        <div class="subtitle">
-                            2025 IEEE International Symposium on Workload
-                            Characterization (IISWC '25)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Workshop/Tutorial Chair</strong>
-                        <div class="subtitle">
-                            IEEE International Symposium on High-Performance
-                            Computer Architecture (HPCA '23)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceConferenceOrgEntries} />
             <h3>Workshop Chairing</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Chair</strong>
-                        <div class="subtitle">
-                            17th Workshop on General Purpose Processing Using
-                            GPU (GPGPU '25)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Chair</strong>
-                        <div class="subtitle">
-                            2nd Workshop on Computer Architecture Modeling and
-                            Simulation (CAMS '24)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Chair</strong>
-                        <div class="subtitle">
-                            16th Workshop on General Purpose Processing Using
-                            GPU (GPGPU '24)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Chair</strong>
-                        <div class="subtitle">
-                            1st Workshop on Computer Architecture Modeling and
-                            Simulation (CAMS '23)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Chair</strong>
-                        <div class="subtitle">
-                            15th Workshop on General Purpose Processing Using
-                            GPU (GPGPU '23)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Chair</strong>
-                        <div class="subtitle">
-                            14th Workshop on General Purpose Processing Using
-                            GPU (GPGPU '22)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>Web Chair</strong>
-                        <div class="subtitle">
-                            6th Workshop on General Purpose Processing Using
-                            GPU (GPGPU '16)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2016</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceWorkshopChairEntries} />
             <h3>Funding Agency Panelist</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>DOE Panelist</strong>
-                        <div class="subtitle">
-                            Office of Advanced Scientific Computing Research
-                            (ASCR), Early Career Research Program (ECRP)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        <strong>NSF Panelist</strong>
-                        <div class="subtitle">
-                            NSF Cyberinfrastructure for Sustained Scientific
-                            Innovation (CSSI), Element
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceFundingPanelEntries} />
             <h3>Program Committee</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        HPCA '25
-                        <div class="subtitle">
-                            31st IEEE International Symposium on
-                            High-Performance Computer Architecture
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        CF '24
-                        <div class="subtitle">
-                            21st ACM International Conference on Computing
-                            Frontiers
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        HPCA '24
-                        <div class="subtitle">
-                            30th IEEE International Symposium on
-                            High-Performance Computer Architecture
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        AccML '24
-                        <div class="subtitle">
-                            6th Workshop on Accelerated Machine Learning
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        ICCD '24
-                        <div class="subtitle">
-                            42nd IEEE International Conference on Computer
-                            Design
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        ICCD '23
-                        <div class="subtitle">
-                            41st IEEE International Conference on Computer
-                            Design
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        CF '23
-                        <div class="subtitle">
-                            20th ACM International Conference on Computing
-                            Frontiers
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        AccML '23
-                        <div class="subtitle">
-                            5th Workshop on Accelerated Machine Learning
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        HPCA '23
-                        <div class="subtitle">
-                            IEEE International Symposium on High-Performance
-                            Computer Architecture
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        SBAC-PAD '22
-                        <div class="subtitle">
-                            International Symposium on Computer Architecture
-                            and High Performance Computing
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        ICCD '22
-                        <div class="subtitle">
-                            40th IEEE International Conference on Computer
-                            Design
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        AccML '22
-                        <div class="subtitle">
-                            4th Workshop on Accelerated Machine Learning
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        SBAC-PAD '21
-                        <div class="subtitle">
-                            IEEE International Symposium on Computer
-                            Architecture and High Performance Computing
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        ICCD '21
-                        <div class="subtitle">
-                            40th IEEE International Conference on Computer
-                            Design
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        ICCD '20
-                        <div class="subtitle">
-                            39th IEEE International Conference on Computer
-                            Design
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2020</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        GPGPU '20
-                        <div class="subtitle">
-                            13th Workshop on General Purpose Processing Using
-                            GPU
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2020</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceProgramCommitteeEntries} />
             <h3>Journal Reviewer</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TACO
-                        <div class="subtitle">
-                            ACM Transactions on Architecture and Code
-                            Optimization
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TCC
-                        <div class="subtitle">
-                            IEEE Transactions on Cloud Computing
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        JPDC
-                        <div class="subtitle">
-                            Journal of Parallel and Distributed Computing
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TACO
-                        <div class="subtitle">
-                            ACM Transactions on Architecture and Code
-                            Optimization
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TOMPECS
-                        <div class="subtitle">
-                            ACM Transactions on Modeling and Performance
-                            Evaluation of Computing Systems
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TACO
-                        <div class="subtitle">
-                            ACM Transactions on Architecture and Code
-                            Optimization
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        FGCS
-                        <div class="subtitle">
-                            Future Generation Computer Systems
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TPDS
-                        <div class="subtitle">
-                            IEEE Transactions on Parallel and Distributed
-                            Systems
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">IEEE Micro</div>
-                    <div class="entry-meta">
-                        <div>2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TPDS
-                        <div class="subtitle">
-                            IEEE Transactions on Parallel and Distributed
-                            Systems
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TACO
-                        <div class="subtitle">
-                            ACM Transactions on Architecture and Code
-                            Optimization
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        CAL
-                        <div class="subtitle">
-                            IEEE Computer Architecture Letters
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        JPDC
-                        <div class="subtitle">
-                            Journal of Parallel and Distributed Computing
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2020</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TPDS
-                        <div class="subtitle">
-                            IEEE Transactions on Parallel and Distributed
-                            Systems
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2020</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TOC
-                        <div class="subtitle">
-                            IEEE Transactions on Computers
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2020</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        TACO
-                        <div class="subtitle">
-                            ACM Transactions on Architecture and Code
-                            Optimization
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2020</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceJournalReviewerEntries} />
             <h3>External Review Committee / Ad-hoc Reviewer</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        ISPASS '25
-                        <div class="subtitle">
-                            IEEE International Symposium on Performance
-                            Analysis of Systems and Software
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        ISCA '24
-                        <div class="subtitle">
-                            International Symposium on Computer Architecture
-                            (External Review Committee)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        PacificVis '24
-                        <div class="subtitle">
-                            IEEE Pacific Visualization Symposium (Ad-hoc
-                            Reviewer)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceExternalReviewEntries} />
             <h3>William &amp; Mary Undergraduate Advising</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Pre-Major Advisor
-                        <div class="subtitle">7 students</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025 - 2026</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Pre-Major Advisor
-                        <div class="subtitle">7 students</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024 - 2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        CS Major Advisor
-                        <div class="subtitle">4 students</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023 - 2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Prem-Major Advisor
-                        <div class="subtitle">8 students</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023 - 2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        CS Major Advisor
-                        <div class="subtitle">1 student</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Pre-Major Advisor
-                        <div class="subtitle">10 students</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        CS Major Advisor
-                        <div class="subtitle">1 student</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Pre-Major Advisor
-                        <div class="subtitle">6 students</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021 - 2022</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceWmAdvisingEntries} />
             <h3>William &amp; Mary University-Wide Committee</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Generative AI University Teaching &amp; Learning
-                            Project (UTLP)
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023 - 2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            S. Laurie Sanderson Awards for Excellence in
-                            Undergraduate Mentoring Committee
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Research Computing Advisory Committee
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            S. Laurie Sanderson Awards for Excellence in
-                            Undergraduate Mentoring Committee
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021 - 2022</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceWmUniversityEntries} />
             <h3>William &amp; Mary Department-Level Committee</h3>
-            <div class="entry-list">
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Computer Science Undergraduate Curriculum
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025 - 2026</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Computer Science Web Presence
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2025 - 2026</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Chair
-                        <div class="subtitle">
-                            Computer Science Graduate Recruiting
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024 - 2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Computer Science Web Presence
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024 - 2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">Computer Science Colloquium</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2024 - 2025</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Computer Science Graduate Recruiting
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023 - 2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Computer Science Web Presence
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023 - 2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">Computer Science Colloquium</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2023 - 2024</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Chair
-                        <div class="subtitle">
-                            Computer Science Web Presence
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Data Science Faculty Recruitment
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">Computer Science Colloquium</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Chair
-                        <div class="subtitle">
-                            Computer Science Graduate Admission
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Computer Science Graduate Recruiting
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">Computer Science System</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2022 - 2023</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">
-                            Computer Science Web Presence
-                        </div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021 - 2022</div>
-                    </div>
-                </div>
-                <div class="entry service-entry">
-                    <div class="entry-body">
-                        Member
-                        <div class="subtitle">Computer Science Curriculum</div>
-                    </div>
-                    <div class="entry-meta">
-                        <div>2021 - 2022</div>
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={serviceWmDepartmentEntries} />
         </section>
     </main>
 
