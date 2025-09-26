@@ -1,5 +1,19 @@
-<script>
+<script lang="ts">
     import CvTable from './cv_table.svelte'
+
+    type TableCell =
+        | string
+        | number
+        | boolean
+        | null
+        | undefined
+        | { html: string }
+
+    type TableEntry = {
+        left: Array<TableCell>
+        right: Array<TableCell>
+        hanging?: TableCell
+    }
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -213,6 +227,800 @@
             right: ['Apr. 2021'],
         },
     ]
+
+    const createPublicationEntries = (items: string[]): TableEntry[] =>
+        items.map((html, index, array) => ({
+            hanging: `${array.length - index}.`,
+            left: [{ html: html.trim() }],
+            right: [],
+        }))
+
+    const peerReviewedConferenceItems = [
+        `                    Wenhan Lyu, Yimeng Wang, <span class="self-name"
+                        >Yifan Sun</span
+                    >, and Yixuan Zhang. 2025.
+                    <span class="publication-title"
+                        >Will Your Next Pair Programming Partner Be Human? An
+                        Empirical Evaluation of Generative AI as a
+                        Collaborative Teammate in a Semester-Long Classroom
+                        Setting</span
+                    >. In Proceedings of the Twelfth ACM Conference on Learning
+                    @ Scale (L@S '25). Association for Computing Machinery, New
+                    York, NY, USA, 83&#8211;94.
+                    https://doi.org/10.1145/3698205.3729544 [Acceptance Rate
+                    18/84 &approx; 21.4%]`,
+        `                    <span class="wm-advisee">Ying Li</span>, Yuhui Bao, Gongyu
+                    Wang, Xinxin Mei, Pranav Vaid, Anandaroop Ghosh, Adwait
+                    Jog, Darius Bunandar, Ajay Joshi, and
+                    <span class="self-name">Yifan Sun</span>. 2025.
+                    <span class="publication-title"
+                        >TrioSim: A Lightweight Simulator for Large-Scale DNN
+                        Workloads on Multi-GPU Systems</span
+                    >. In Proceedings of the 52nd Annual International
+                    Symposium on Computer Architecture (ISCA '25). Association
+                    for Computing Machinery, New York, NY, USA,
+                    1524&#8211;1538. https://doi.org/10.1145/3695053.3731082
+                    [Acceptance Rate 132/570 &approx; 23.2%]`,
+        `                    Amel Fatima, Yang Yang, <span class="self-name"
+                        >Yifan Sun</span
+                    >, Rachata Ausavarungnirun, and Adwait Jog. 2025.
+                    <span class="publication-title"
+                        >NetCrafter: Tailoring Network Traffic for Non-Uniform
+                        Bandwidth Multi-GPU Systems</span
+                    >. In Proceedings of the 52nd Annual International
+                    Symposium on Computer Architecture (ISCA '25). Association
+                    for Computing Machinery, New York, NY, USA,
+                    1064&#8211;1078. https://doi.org/10.1145/3695053.3731040
+                    [Acceptance Rate 132/570 &approx; 23.2%]`,
+        `                    Changxi Liu, Miao Yu, <span class="self-name"
+                        >Yifan Sun</span
+                    >, and Trevor E. Carlson. 2025.
+                    <span class="publication-title"
+                        >The Sparsity-Aware LazyGPU Architecture</span
+                    >. In Proceedings of the 52nd Annual International
+                    Symposium on Computer Architecture (ISCA '25). Association
+                    for Computing Machinery, New York, NY, USA,
+                    1020&#8211;1034. https://doi.org/10.1145/3695053.3731009
+                    [Acceptance Rate 132/570 &approx; 23.2%]`,
+        `                    Matin Raayai-Ardakani, Andrew Nguyen, Ivan Rosales, <span
+                        class="wm-advisee">Daoxuan Xu</span
+                    >, Yuwei Sun, <span class="self-name">Yifan Sun</span>,
+                    David Kaeli, and Norman Rubin. 2025.
+                    <span class="publication-title"
+                        >Luthier: A Dynamic Binary Instrumentation Framework
+                        Targeting AMD GPUs</span
+                    >. In Proceedings of the 2025 IEEE International Symposium
+                    on Performance Analysis of Systems and Software (ISPASS),
+                    May 11-13, 2025. 137&#8211;149. Ghent, Belgium.
+                    https://doi.org/10.1109/ISPASS64960.2025.00022 [Acceptance
+                    Rate 28/99 &approx; 28%]`,
+        `                    Ali Mosallaei, Katherine E. Isaacs, and <span
+                        class="self-name">Yifan Sun</span
+                    >. 2024.
+                    <span class="publication-title"
+                        >Looking into the Black Box: Monitoring Computer
+                        Architecture Simulations in Real-Time with AkitaRTM</span
+                    >. In 2024 57th IEEE/ACM International Symposium on
+                    Microarchitecture (MICRO '24). IEEE, 780&#8211;794.
+                    https://doi.org/10.1109/MICRO61859.2024.00063 [Acceptance
+                    Rate 113/ 489 &approx; 22.7%]`,
+        `                    Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, <span
+                        class="self-name">Yifan Sun</span
+                    >, and Yixuan Zhang. 2024.
+                    <span class="publication-title"
+                        >Evaluating the Effectiveness of LLMs in Introductory
+                        Computer Science Education: A Semester-Long Field Study</span
+                    >. In Proceedings of the Eleventh ACM Conference on
+                    Learning @ Scale (L@S '24). Association for Computing
+                    Machinery, New York, NY, USA, 63&#8211;74.
+                    https://doi.org/10.1145/3657604.3662036 [Acceptance rate:
+                    22/ 90 &approx; 24.4%]`,
+        `                    Yichen Luo, Daoxuan Xu, Gang Zhou, <span class="self-name"
+                        >Yifan Sun</span
+                    >, and Sidi Lu. 2024.
+                    <span class="publication-title"
+                        >Impact of Raindrops on Camera-Based Detection in
+                        Software-Defined Vehicles</span
+                    >. In 2024 IEEE International Conference on Mobility,
+                    Operations, Services and Technologies (MOST '24). IEEE,
+                    193&#8211;205. https://doi.org/10.1109/MOST60774.2024.00028`,
+        `                    <span class="wm-advisee">Ying Li</span>,
+                    <span class="self-name">Yifan Sun</span>, and Adwait Jog.
+                    2023.
+                    <span class="publication-title"
+                        >Path Forward Beyond Simulators: Fast and Accurate GPU
+                        Execution Time Prediction for DNN Workloads</span
+                    >. In Proceedings of the 56th Annual IEEE/ACM International
+                    Symposium on Microarchitecture (MICRO '23). Association for
+                    Computing Machinery, New York, NY, USA, 380&#8211;394.
+                    <br /> https://doi.org/10.1145/3613424.3614277 [Acceptance rate:
+                    101/424 &approx; 23.8%]`,
+        `                    Changxi Liu, <span class="self-name">Yifan Sun</span>, and
+                    Trevor E. Carlson. 2023.
+                    <span class="publication-title"
+                        >Photon: A Fine-grained Sampled Simulation Methodology
+                        for GPU Workloads</span
+                    >. In Proceedings of the 56th Annual IEEE/ACM International
+                    Symposium on Microarchitecture (MICRO '23). Association for
+                    Computing Machinery, New York, NY, USA, 1227&#8211;1241.
+                    https://doi.org/10.1145/3613424.3623773 [Acceptance rate:
+                    101/424 &approx; 23.8%]`,
+        `                    &#127942; <strong>[Best Paper Award (Top 1%)] </strong>
+                    Yixuan Zhang, Joseph D Gaggiano, Nutchanon Yongsatianchot, Nurul
+                    M Suhaimi, Miso Kim,
+                    <span class="self-name">Yifan Sun</span>, Jacqueline
+                    Griffin, and Andrea G Parker. 2023.
+                    <span class="publication-title"
+                        >What Do We Mean When We Talk about Trust in Social
+                        Media? A Systematic Review</span
+                    >. In Proceedings of the 2023 CHI Conference on Human
+                    Factors in Computing Systems (CHI '23). Association for
+                    Computing Machinery, New York, NY, USA, Article 670,
+                    1&#8211;22. https://doi.org/10.1145/3544548.3581019
+                    [Acceptance rate: 879/3182 &approx; 27.6%]`,
+        `                    Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
+                    Joseph D. Gaggiano, Neha Kumar, Clio Andris, and Andrea G.
+                    Parker. 2023.
+                    <span class="publication-title"
+                        >Visualization Design Practices in a Crisis: Behind the
+                        Scenes with COVID-19 Dashboard Creators</span
+                    >. IEEE Transactions on Visualization and Computer Graphics
+                    29, 1 (2023), 1037&#8211;1047.
+                    https://doi.org/10.1109/TVCG.2022.3209493. [Acceptance
+                    rate: 122/ 460 &approx; 26.5%]`,
+        `                    Yuhui Bao, <span class="self-name">Yifan Sun</span>, Zlatan
+                    Feric, Michael Tian Shen, Micah Weston, Jos&#233; L.
+                    Abell&#225;n, Trinayan Baruah, John Kim, Ajay Joshi, and
+                    David Kaeli. 2023.
+                    <span class="publication-title"
+                        >NaviSim: A Highly Accurate GPU Simulator for AMD RDNA
+                        GPUs</span
+                    >. In Proceedings of the International Conference on
+                    Parallel Architectures and Compilation Techniques (PACT
+                    '22). Association for Computing Machinery, New York, NY,
+                    USA, 333&#8211;345. https://doi.org/10.1145/3559009.3569666
+                    [Acceptance rate: 50/ 118 &approx; 42.4%]`,
+        `                    Yixuan Zhang, Nurul Suhaimi, Nutchanon Yongsatianchot,
+                    Joseph D Gaggiano, Miso Kim, Shivani A Patel, <span
+                        class="self-name">Yifan Sun</span
+                    >, Stacy Marsella, Jacqueline Griffin, and Andrea G Parker.
+                    2022.
+                    <span class="publication-title"
+                        >Shifting Trust: Examining How Trust and Distrust
+                        Emerge, Transform, and Collapse in COVID-19 Information
+                        Seeking</span
+                    >. In Proceedings of the 2022 CHI Conference on Human
+                    Factors in Computing Systems (CHI '22). Association for
+                    Computing Machinery, New York, NY, USA, Article 78,
+                    1&#8211;21. https://doi.org/10.1145/3491102.3501889 [Top
+                    12.5%; Acceptance rate: 638/ 2597 &approx; 24.6%]`,
+        `                    <span class="self-name">Yifan Sun</span>, Yixuan Zhang, Ali
+                    Mosallaei, Michael D. Shah, Cody Dunne, and David Kaeli.
+                    2021.
+                    <span class="publication-title"
+                        >Daisen: A Framework for Visualizing Detailed GPU
+                        Execution</span
+                    >. Computer Graphics Forum 40, 3 (2021), 239&#8211;250.
+                    <br />https://doi.org/10.1111/cgf.14303 [Acceptance Rate
+                    &approx; 26.0%]`,
+        `                    Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
+                    Lace Padilla, Sumit Barua, Enrico Bertini, and Andrea G
+                    Parker. 2021.
+                    <span class="publication-title"
+                        >Mapping the Landscape of COVID-19 Crisis
+                        Visualizations</span
+                    >. In Proceedings of the 2021 CHI Conference on Human
+                    Factors in Computing Systems (CHI '21). Association for
+                    Computing Machinery, New York, NY, USA, Article 608,
+                    1&#8211;23. <br /> https://doi.org/10.1145/3411764.3445381 [Acceptance
+                    rate &approx; 26.3%]`,
+        `                    Trinayan Baruah, Kaustubh Shivdikar, Shi Dong, <span
+                        class="self-name">Yifan Sun</span
+                    >, Saiful A. Mojumder, Kihoon Jung, Jos&#233; L.
+                    Abell&#225;n, Yash Ukidave, Ajay Joshi, John Kim, and David
+                    Kaeli. 2021.
+                    <span class="publication-title"
+                        >GNNMark: A Benchmark Suite to Characterize Graph
+                        Neural Network Training on GPUs</span
+                    >. In 2021 IEEE International Symposium on Performance
+                    Analysis of Systems and Software (ISPASS '21). IEEE,
+                    13&#8211;23. https://doi.org/10.1109/ISPASS51385.2021.00013
+                    [Acceptance rate &approx; 36.9%]`,
+        `                    Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
+                    Saiful A. Mojumder, Jos&#233; L. Abell&#225;n, Yash
+                    Ukidave, Ajay Joshi, Norman Rubin, John Kim, and David
+                    Kaeli. 2020.
+                    <span class="publication-title"
+                        >Valkyrie: Leveraging Inter-TLB Locality to Enhance GPU
+                        Performance</span
+                    >. In Proceedings of the ACM International Conference on
+                    Parallel Architectures and Compilation Techniques (PACT
+                    '20). Association for Computing Machinery, New York, NY,
+                    USA, 455&#8211;466. https://doi.org/10.1145/3410463.3414639
+                    [Acceptance rate &approx; 25.9%]`,
+        `                    &#127942; <strong
+                        >[Best Paper Honorable Mention (< 5%)]</strong
+                    >
+                    Omid Mohaddesi, <span class="self-name">Yifan Sun</span>,
+                    Rana Azghandi, Rozhin Doroudi, Sam Snodgrass, Ozlem Ergun,
+                    Jacqueline Griffin, David Kaeli, Stacy Marsella, and Casper
+                    Harteveld. 2020.
+                    <span class="publication-title"
+                        >Introducing Gamettes: A Playful Approach for Capturing
+                        Decision-Making for Informing Behavioral Models</span
+                    >. In Proceedings of the 2020 CHI Conference on Human
+                    Factors in Computing Systems (CHI '20). Association for
+                    Computing Machinery, New York, NY, USA, 1&#8211;13.
+                    https://doi.org/10.1145/3313831.3376571 [Acceptance rate
+                    &approx; 24.3%]`,
+        `                    Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
+                    Ali Tolga Din&#231;er, Saiful A. Mojumder, Jos&#233; L.
+                    Abell&#225;n, Yash Ukidave, Ajay Joshi, Norman Rubin, John
+                    Kim, and David Kaeli. 2020.
+                    <span class="publication-title"
+                        >Griffin: Hardware-Software Support for Efficient Page
+                        Migration in Multi-GPU Systems</span
+                    >. In 2020 IEEE International Symposium on High Performance
+                    Computer Architecture (HPCA '20). IEEE, 596&#8211;609.
+                    https://doi.org/10.1109/HPCA47549.2020.00055 [Acceptance
+                    rate &approx; 19.4%]`,
+        `                    <span class="self-name">Yifan Sun</span>, Trinayan Baruah,
+                    Saiful A. Mojumder, Shi Dong, Xiang Gong, Shane Treadway,
+                    Yuhui Bao, Spencer Hance, Carter McCardwell, Vincent Zhao,
+                    Harrison Barclay, Amir Kavyan Ziabari, Zhongliang Chen,
+                    Rafael Ubal, Jos&#233; L. Abell&#225;n, John Kim, Ajay
+                    Joshi, and David Kaeli. 2019.
+                    <span class="publication-title"
+                        >MGPUSim: enabling multi-GPU performance modeling and
+                        optimization</span
+                    >. In Proceedings of the 46th International Symposium on
+                    Computer Architecture (ISCA '19). Association for Computing
+                    Machinery, New York, NY, USA, 197&#8211;209.
+                    https://doi.org/10.1145/3307650.3322230 [Acceptance rate
+                    &approx; 17.0%]`,
+        `                    Mohammad Khavari Tavana, <span class="self-name"
+                        >Yifan Sun</span
+                    >, Nicolas Bohm Agostini, and David Kaeli. 2019.
+                    <span class="publication-title"
+                        >Exploiting Adaptive Data Compression to Improve
+                        Performance and Energy-Efficiency of Compute Workloads
+                        in Multi-GPU Systems</span
+                    >. In 2019 IEEE International Parallel and Distributed
+                    Processing Symposium (IPDPS '19). IEEE, 664&#8211;674.
+                    <br /> https://doi.org/10.1109/IPDPS.2019.00075 [Acceptance
+                    rate &approx; 27.7%]`,
+        `                    Saiful A. Mojumder, Marcia S. Louis, <span
+                        class="self-name">Yifan Sun</span
+                    >, Amir Kavyan Ziabari, Jos&#233; L. Abell&#225;n, John
+                    Kim, David Kaeli, and Ajay Joshi. 2018.
+                    <span class="publication-title"
+                        >Profiling DNN Workloads on a Volta-based DGX-1 System</span
+                    >. In 2018 IEEE International Symposium on Workload
+                    Characterization (IISWC '18). IEEE, 122&#8211;133.
+                    https://doi.org/10.1109/IISWC.2018.8573521 [Acceptance rate
+                    &approx; 36.2%]`,
+        `                    Rozhin Doroudi, Rana Azghandi, Zlatan Feric, Omid
+                    Mohaddesi, <span class="self-name">Yifan Sun</span>,
+                    Jacqueline Griffin, Ozlem Ergun, David Kaeli, Pedro
+                    Sequeira, Stacy Marsella, and Casper Harteveld. 2018.
+                    <span class="publication-title"
+                        >An Integrated Simulation Framework for Examining
+                        Resiliency in Pharmaceutical Supply Chains Considering
+                        Human Behaviors</span
+                    >. In 2018 Winter Simulation Conference (WSC '18). IEEE,
+                    88&#8211;99. https://doi.org/10.1109/WSC.2018.8632387
+                    [Acceptance rate &approx; 70.4%]`,
+        `                    <span class="self-name">Yifan Sun</span>, Saoni Mukherjee,
+                    Trinayan Baruah, Shi Dong, Julian Gutierrez, Prannoy Mohan,
+                    and David Kaeli. 2018.
+                    <span class="publication-title"
+                        >Evaluating Performance Tradeoffs on the Radeon Open
+                        Compute Platform</span
+                    >. In 2018 IEEE International Symposium on Performance
+                    Analysis of Systems and Software (ISPASS '18). IEEE,
+                    209&#8211;218. <br /> https://doi.org/10.1109/ISPASS.2018.00034
+                    [Acceptance rate &approx; 31.3%]`,
+        `                    &#127942; <strong>[Best Paper Award]</strong> Shi Dong,
+                    Xiang Gong, <span class="self-name">Yifan Sun</span>,
+                    Trinayan Baruah, and David Kaeli. 2018.
+                    <span class="publication-title"
+                        >Characterizing the Microarchitectural Implications of
+                        a Convolutional Neural Network (CNN) Execution on GPUs</span
+                    >. In Proceedings of the 2018 ACM/SPEC International
+                    Conference on Performance Engineering (ICPE '18).
+                    Association for Computing Machinery, New York, NY, USA,
+                    96&#8211;106. https://doi.org/10.1145/3184407.3184423
+                    [Acceptance rate $=$ 24.0%]`,
+        `                    Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
+                    Shi Dong, David Kaeli, and Norm Rubin. 2018.
+                    <span class="publication-title"
+                        >Airavat: Improving Energy Efficiency of Heterogeneous
+                        Applications</span
+                    >. In 2018 Design, Automation &amp; Test in Europe
+                    Conference &amp; Exhibition (DATE '18). IEEE,
+                    731&#8211;736. DOI:
+                    https://doi.org/10.23919/DATE.2018.8342104 [Acceptance rate
+                    &approx; 24.2%]`,
+        `                    &#127942; <strong>[Best Paper Candidate]</strong>
+                    <span class="self-name">Yifan Sun</span>, Xiang Gong, Amir
+                    Kavyan Ziabari, Leiming Yu, Xiangyu Li, Saoni Mukherjee,
+                    Carter McCardwell, Alejandro Villegas, and David Kaeli.
+                    2016.
+                    <span class="publication-title"
+                        >Hetero-Mark, a Benchmark Suite for CPU-GPU
+                        Collaborative Computing</span
+                    >. In 2016 IEEE International Symposium on Workload
+                    Characterization (IISWC '16). IEEE, 1&#8211;10.
+                    https://doi.org/10.1109/IISWC.2016.7581262 [Acceptance rate
+                    &approx; 30.4%]`,
+        `                    <span class="self-name">Yifan Sun</span>, Chisheng Liang,
+                    Steven Sutherland, Casper Harteveld, and David Kaeli. 2016.
+                    <span class="publication-title"
+                        >Modeling Player Decisions in a Supply Chain Game</span
+                    >. In 2016 IEEE Conference on Computational Intelligence
+                    and Games (CIG '16). IEEE, 1&#8211;8.
+                    https://doi.org/10.1109/CIG.2016.7860444 [Acceptance rate
+                    unknown]`,
+        `                    Saoni Mukherjee, <span class="self-name">Yifan Sun</span>,
+                    Paul Blinzer, Amir Kavyan Ziabari, and David Kaeli. 2016.
+                    <span class="publication-title"
+                        >A Comprehensive Performance Analysis of HSA and OpenCL
+                        2.0</span
+                    >. In 2016 IEEE International Symposium on Performance
+                    Analysis of Systems and Software (ISPASS '16). IEEE,
+                    183&#8211;193. https://doi.org/10.1109/ISPASS.2016.7482093
+                    [Acceptance rate &approx; 35.1%]`,
+        `                    Jithin Jagannath, Anu Saji, Hovannes Kulhandjian, <span
+                        class="self-name">Yifan Sun</span
+                    >, Emrecan Demirors, and Tommaso Melodia. 2013.
+                    <span class="publication-title"
+                        >A hybrid MAC protocol with channel-dependent optimized
+                        scheduling for clustered underwater acoustic sensor
+                        networks</span
+                    >. In Proceedings of the 8th International Conference on
+                    Underwater Networks &amp; Systems (WUWNet '13). Association
+                    for Computing Machinery, New York, NY, USA, Article 3,
+                    1&#8211;8. https://doi.org/10.1145/2532378.2532382
+                    [Acceptance rate $=$ 20.0%]`,
+        `                    &#127942; <span class="self-name">Yifan Sun</span> and
+                    Tommaso Melodia. 2013.
+                    <span class="publication-title"
+                        >The Internet Underwater: an IP-compatible protocol
+                        stack for commercial undersea modems</span
+                    >. In Proceedings of the 8th International Conference on
+                    Underwater Networks &amp;; Systems (WUWNet '13).
+                    Association for Computing Machinery, New York, NY, USA,
+                    Article 37, 1&#8211;8.
+                    <br />https://doi.org/10.1145/2532378.2532407 [Acceptance
+                    rate $=$ 20.0%]`,
+    ]
+
+    const peerReviewedConferenceEntries = createPublicationEntries(
+        peerReviewedConferenceItems
+    )
+
+    const journalItems = [
+        `                    Wenhan Lyu, Shuang Zhang, Tingting Chung, <span
+                        class="self-name">Yifan Sun</span
+                    >, and Yixuan Zhang. 2025.
+                    <span class="publication-title"
+                        >Understanding the practices, perceptions, and
+                        (dis)trust of generative AI among instructors: A
+                        mixed-methods study in the U.S. higher education</span
+                    >. Computers and Education: Artificial Intelligence 8
+                    (2025), 100383. https://doi.org/10.1016/j.caeai.2025.100383`,
+        `                    Shaoyu Wang, Hang Yan, Katherine E. Isaacs, and <span
+                        class="self-name">Yifan Sun</span
+                    >. 2024.
+                    <span class="publication-title"
+                        >Visual Exploratory Analysis for Designing Large-Scale
+                        Network-on-Chip Architectures: A Domain Expert-Led
+                        Design Study</span
+                    >. IEEE Transactions on Visualization and Computer Graphics
+                    30, 4 (2024), 1970&#8211;1983.
+                    https://doi.org/10.1109/TVCG.2023.3337173`,
+        `                    Shi Dong, <span class="self-name">Yifan Sun</span>, Nicolas
+                    Bohm Agostini, Elmira Karimi, Daniel Lowell, Jing Zhou,
+                    Jos&#233; Cano, Jos&#233; L. Abell&#225;n, and David Kaeli.
+                    2021.
+                    <span class="publication-title"
+                        >Spartan: A Sparsity-Adaptive Framework to Accelerate
+                        Deep Neural Network Training on GPUs</span
+                    >. IEEE Transactions on Parallel and Distributed Systems
+                    32, 10 (2021), 2448&#8211;2463. <br /> https://doi.org/10.1109/TPDS.2021.3067825`,
+        `                    Rozhin Doroudi, Pedro Sequeira, Stacy Marsella, Ozlem
+                    Ergun, Rana Azghandi, David Kaeli, <span class="self-name"
+                        >Yifan Sun</span
+                    >, and Jacqueline Griffin. 2020.
+                    <span class="publication-title"
+                        >Effects of trust-based decision making in disrupted
+                        supply chains</span
+                    >. PLOS ONE 15, 2 (February 2020), e0224761.
+                    https://doi.org/10.1371/journal.pone.0224761`,
+        `                    Chen Li, <span class="self-name">Yifan Sun</span>, Lingling
+                    Jin, Lingjie Xu, Zheng Cao, Pengfei Fan, David Kaeli, Sheng
+                    Ma, Yang Guo, and Jun Yang. 2019.
+                    <span class="publication-title"
+                        >Priority-Based PCIe Scheduling for Multi-Tenant
+                        Multi-GPU Systems</span
+                    >. IEEE Computer Architecture Letters 18, 2 (2019),
+                    157&#8211;160. https://doi.org/10.1109/LCA.2019.2955119`,
+        `                    Amir Kavyan Ziabari, <span class="self-name"
+                        >Yifan Sun</span
+                    >, Yenai Ma, Dana Schaa, Jos&#233; L. Abell&#225;n, Rafael
+                    Ubal, John Kim, Ajay Joshi, and David Kaeli. 2016.
+                    <span class="publication-title"
+                        >UMH: A Hardware-Based Unified Memory Hierarchy for
+                        Systems with Multiple Discrete GPUs</span
+                    >. ACM Trans. Archit. Code Optim. 13, 4, Article 35
+                    (December 2016), 25 pages. https://doi.org/10.1145/2996190`,
+        `                    Abdulla K. Al-Ali, <span class="self-name">Yifan Sun</span
+                    >, Marco Di Felice, Jarkko Paavola, and Kaushik R.
+                    Chowdhury. 2015.
+                    <span class="publication-title"
+                        >Accessing Spectrum Databases Using Interference
+                        Alignment in Vehicular Cognitive Radio Networks</span
+                    >. IEEE Transactions on Vehicular Technology 64, 1 (2015),
+                    263&#8211;272. https://doi.org/10.1109/TVT.2014.2318837`,
+        `                    <span class="self-name">Yifan Sun</span> and Kaushik R.
+                    Chowdhury. 2014.
+                    <span class="publication-title"
+                        >Enabling Emergency Communication Through a Cognitive
+                        Radio Vehicular Network.</span
+                    > IEEE Communications Magazine 52, 10 (2014), 68&#8211;75. https://doi.org/10.1109/MCOM.2014.6917404`,
+    ]
+
+    const journalEntries = createPublicationEntries(journalItems)
+
+    const bookItems = [
+        `                    <span class="self-name">Yifan Sun</span>,
+                    <span class="wm-advisee">Sabila Al Jannat</span>, Trinayan
+                    Buruah, and David Kaeli. 2025.
+                    <span class="publication-title"
+                        ><a
+                            href="https://www.amazon.com/Accelerated-Computing-HIP-Yifan-Sun/dp/B0F4F3F211/"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Accelerated Computing with HIP: Second Edition.</a
+                        ></span
+                    > ISBN: 979-8218107444.`,
+        `                    <span class="self-name">Yifan Sun</span>, Trinayan Buruah,
+                    and David Kaeli. 2022.
+                    <span class="publication-title"
+                        ><a
+                            href="https://www.amazon.com/Accelerated-Computing-HIP-Yifan-Sun/dp/B0BQQ18HGP/"
+                            target="_blank"
+                            rel="noreferrer">Accelerated Computing with HIP</a
+                        ></span
+                    >. ISBN: 979-8218107444.`,
+    ]
+
+    const bookEntries = createPublicationEntries(bookItems)
+
+    const bookTranslationItems = [
+        `                    <span class="self-name"
+                        >&#1048;&#1092;&#1072;&#1085;&#1100;
+                        &#1057;&#1091;&#1085;</span
+                    >, &#1058;&#1088;&#1080;&#1085;&#1072;&#1081;&#1072;&#1085;
+                    &#1041;&#1072;&#1088;&#1091;&#1072;,
+                    &#1044;&#1101;&#1074;&#1080;&#1076;
+                    &#1050;&#1072;&#1101;&#1083;&#1080;.2024.<span
+                        class="publication-title"
+                        >&#1042;&#1067;&#1057;&#1054;&#1050;&#1054;&#1055;&#1056;&#1054;&#1048;&#1047;&#1042;&#1054;&#1044;&#1048;&#1058;&#1045;&#1051;&#1068;&#1053;&#1067;&#1045;
+                        &#1042;&#1067;&#1063;&#1048;&#1057;&#1051;&#1045;&#1053;&#1048;&#1071;
+                        &#1057;
+                        &#1055;&#1054;&#1052;&#1054;&#1065;&#1068;&#1070; HIP</span
+                    > (The Russian translation of the book Accelerated Computing
+                    with HIP, as part of the Supercomputing Education Series), Moscow
+                    University Press.`,
+    ]
+
+    const bookTranslationEntries = createPublicationEntries(
+        bookTranslationItems
+    )
+
+    const bookChapterItems = [
+        `                    Shih-Hao Hung, Thomas B. Jablin, <span class="self-name"
+                        >Yifan Sun</span
+                    >, Rafael Ubal, and David Kaeli. 2015.
+                    <span class="publication-title">HSA Simulators</span>. A
+                    book chapter in Heterogeneous System Architecture:
+                    Practical Applications for Industry, 1st edition, Elsevier.`,
+    ]
+
+    const bookChapterEntries = createPublicationEntries(bookChapterItems)
+
+    const patentItems = [
+        `                    Junping Zhao, <span class="self-name">Yifan Sun</span>.
+                    Layne Peng, Jie Bao, Kun Wang. (Jan. 2021).
+                    <span class="publication-title"
+                        >Intelligent data coordination for accelerated
+                        computing in cloud environment</span
+                    >. Patent No. US 10,891,156, Filed Apr 26, 2017, Issued Jan
+                    12, 2021.`,
+        `                    <span class="self-name">Yifan Sun</span>, Layne Peng,
+                    Robert A. Lincourt JR., John Cardente, and Junping Zhao.
+                    (Jun. 2019).
+                    <span class="publication-title"
+                        >Managing access to a resource pool of graphics
+                        processing units under fine grain control</span
+                    >. Patent No. US 10,262,390, Filed Apr 14, 2017, Issued Jun
+                    27, 2019.`,
+        `                    Junping Zhao, Layne Peng, Jie Bao, Kun Wang, and <span
+                        class="self-name">Yifan Sun</span
+                    >. (Apr. 2019).
+                    <span class="publication-title"
+                        >Checkpointing for GPU-as-a-Service in Cloud Computing
+                        Environment</span
+                    >, Patent No. US 10,275,851, Filed Apr 25, 2017, Issued Apr
+                    30, 2019.`,
+        `                    <span class="self-name">Yifan Sun</span>, Layne Peng,
+                    Robert A. Lincourt JR., John Cardente, John S Harwood.
+                    (Oct. 2018).
+                    <span class="publication-title"
+                        >Queue-based GPU Virtualization and Management System</span
+                    >. Patent No. US 10,109,030, Filed Dec 27, 2016, Issued Oct
+                    23, 2018.`,
+    ]
+
+    const patentEntries = createPublicationEntries(patentItems)
+
+    const workshopItems = [
+        `                    <span class="wm-advisee">Daoxuan Xu</span>, Le Xu, Jie Ren,
+                    <span class="self-name">Yifan Sun</span>. 2025.
+                    <span class="publication-title"
+                        >Exploring the Wafer-Scale GPUs</span
+                    >. The 17th Workshop on General Purpose Processing using
+                    GPU (GPGPU 2025).`,
+        `                    Nicol&#225;s Meseguer, <span class="self-name"
+                        >Yifan Sun</span
+                    >, Michael Pellauer, Jos&#233; L. Abell&#225;n and Manuel
+                    E. Acacio. 2025.
+                    <span class="publication-title"
+                        >ACTA: Automatic Configuration of the Tensor Memory
+                        Accelerator for High-End GPUs</span
+                    >. The 17th Workshop on General Purpose Processing using
+                    GPU (GPGPU 2025).`,
+        `                    <span class="wm-advisee">Chris Thames</span>,
+                    <span class="self-name">Yifan Sun</span>. 2024.
+                    <span class="publication-title"
+                        >A Survey of Artificial Intelligence Approaches to
+                        Safety and Mission-Critical Systems</span
+                    >. The 24th Integrated Communications, Navigation and
+                    Surveillance Conference (ICNS 2024).`,
+        `                    <span class="wm-advisee">Ying Li</span>, Yuhui Bao, Pranav
+                    Vaid, Gongyu Wang, Adwait Jog, Darius Bunandar, Ajay Joshi,
+                    <span class="self-name">Yifan Sun</span>. 2023.
+                    <span class="publication-title"
+                        >TraceSim: a Lightweight Simulator for Large-Scale DNN
+                        Workloads on Multi-GPU Systems</span
+                    >. The First Workshop on Computer Architecture Modeling and
+                    Simulation (CAMS 2023).`,
+        `                    Ali Mosallaei, Katherine Isaacs, <span class="self-name"
+                        >Yifan Sun</span
+                    >. 2023.
+                    <span class="publication-title"
+                        >Looking into the Black Box: Monitoring Computer
+                        Architecture Simulations in Real-Time with AkitaRTM</span
+                    >. The First Workshop on Computer Architecture Modeling and
+                    Simulation (CAMS 2023).`,
+        `                    <span class="wm-advisee">Ying Li</span>,
+                    <span class="self-name">Yifan Sun</span>, Adwait Jog. 2023.
+                    <span class="publication-title"
+                        >A Regression-based Model for End-to-End Latency
+                        Prediction for DNN Execution on GPUs</span
+                    >. 2023 IEEE International Symposium on Performance
+                    Analysis of Systems and Software (ISPASS 2023).`,
+        `                    <span class="wm-advisee">Chris Thames</span>, Hang Yan,
+                    <span class="self-name">Yifan Sun</span>. 2022.
+                    <span class="publication-title"
+                        >Understanding Wafer-Scale GPU Performance using an
+                        Architectural Simulator</span
+                    >. The 14th Workshop on General Purpose Processing using
+                    GPU (GPGPU 2022).`,
+        `                    Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
+                    Sumit Barua, Enrico Bertini, and Andrea Grimes Parker.
+                    2020.
+                    <span class="publication-title"
+                        >Mapping the Landscape of COVID-19 Crisis
+                        Visualizations</span
+                    >. Visualization for Communication (VisComm).`,
+    ]
+
+    const workshopEntries = createPublicationEntries(workshopItems)
+
+    const preprintItems = [
+        `                    Saiful A. Mojumder, <span class="self-name">Yifan Sun</span
+                    >, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah,
+                    Jos&#233; L. Abell&#225;n, John Kim, David Kaeli, Ajay
+                    Joshi. 2020.
+                    <span class="publication-title"
+                        >MGPU-TSM: A Multi-GPU System with Truly Shared Memory</span
+                    >. arXiv preprint arXiv:2008.02300.`,
+        `                    Saiful A. Mojumder, <span class="self-name">Yifan Sun</span
+                    >, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah,
+                    Jos&#233; L. Abell&#225;n, John Kim, David Kaeli, Ajay
+                    Joshi. 2020.
+                    <span class="publication-title"
+                        >HALCONE : A Hardware-Level Timestamp-Based Cache
+                        Coherence Scheme for Multi-GPU Systems</span
+                    >. arXiv preprint arXiv:2007.04292.`,
+        `                    <span class="self-name">Yifan Sun</span>, Nicolas Bohm
+                    Agostini, Shi Dong, and David Kaeli. 2019.
+                    <span class="publication-title"
+                        >Summarizing CPU and GPU Design Trends with Product
+                        Data</span
+                    >. arXiv preprint arXiv:1911.11313.`,
+        `                    <span class="self-name">Yifan Sun</span>, Trinayan Baruah,
+                    Saiful A Mojumder, Shi Dong, Rafael Ubal, Xiang Gong, Shane
+                    Treadway, Yuhui Bao, Vincent Zhao, Jos&#233; Luis
+                    Abell&#225;n, John Kim, Ajay Joshi, and David Kaeli. 2019.
+                    <span class="publication-title"
+                        >MGSim+MGMark: A Framework for Multi-GPU System
+                        Research</span
+                    >. arXiv preprint arXiv:1811.02884.`,
+    ]
+
+    const preprintEntries = createPublicationEntries(preprintItems)
+
+    const softwareEntries: TableEntry[] = [
+        {
+            left: [
+                'The CHIP Dataset',
+                'https://chip-dataset.vercel.app',
+                'A dataset with 2185 CPUs and 2668 GPUs helping researchers understand semiconductor development trends.',
+            ],
+            right: [],
+        },
+        {
+            left: [
+                'Daisen (now part of Akita)',
+                'https://gitlab.com/akita/vis',
+                'A general-purpose visualization tool that reveals the detailed behavior of hardware components.',
+            ],
+            right: [],
+        },
+        {
+            left: [
+                'MGPUSim',
+                'https://github.com/sarchlab/mgpusim',
+                'A multi-GPU system simulator based on AMD GCN3 GPUs.',
+            ],
+            right: [],
+        },
+        {
+            left: [
+                'Akita',
+                'https://github.com/sarchlab/akita',
+                'A high-flexibility, high-performance, parallel computer architecture simulation framework.',
+            ],
+            right: [],
+        },
+        {
+            left: [
+                'Hetero-Mark',
+                'https://github.com/NUCAR-DEV/Hetero-Mark',
+                'A benchmark suite for CPU-GPU collaborative computing.',
+            ],
+            right: [],
+        },
+        {
+            left: [
+                'Drug Supply Chain Simulator',
+                'https://gitlab.com/syifan/crisp',
+                'A human-in-the-loop logistics simulator for the U.S. drug supply chain.',
+            ],
+            right: [],
+        },
+        {
+            left: [
+                'VistaLights',
+                'https://github.com/syifan/VistaLights',
+                'Strategic game for maritime traffic management and disaster relief.',
+            ],
+            right: [],
+        },
+    ]
+
+    const talkEntries: TableEntry[] = [
+        {
+            left: [
+                'User-Friendly Tools in Akita 3.0',
+                "The 2nd Workshop on Computer Architecture Modeling and Simulation (CAMS '24)",
+            ],
+            right: ['', 'November 2024'],
+        },
+        {
+            left: [
+                'On the Human Side of Computer Architecture, Towards Explainable Architecture',
+                'North Carolina State University',
+            ],
+            right: ['', 'October 2024'],
+        },
+        {
+            left: [
+                'Towards Building Explainable Computer Architecture',
+                'Lehigh University',
+            ],
+            right: ['', 'February 2023'],
+        },
+        {
+            left: [
+                'MGPUSim: A One-Stop Solution for GPU Architecture Simulation',
+                "The 2020 International Conference on High Performance Computing & Simulation (HPCS '20)",
+            ],
+            right: ['', 'January 2021'],
+        },
+        {
+            left: [
+                'MGPUSim: A High-Flexibility, High-Performance, Multi-GPU Simulator',
+                'Alibaba',
+            ],
+            right: ['', 'July 2020'],
+        },
+        {
+            left: [
+                'Exploring Multi-GPU Simulation and Visual Profiling with MGPUSim',
+                'With José L. Abellán, Trinayan Baruah, and David Kaeli. Tutorial at ISCA 2020',
+            ],
+            right: ['', 'May 2020'],
+        },
+        {
+            left: [
+                'Collaborative Heterogeneous Computing',
+                'William & Mary',
+                'University of California, Santa Cruz',
+                'University of Arizona',
+            ],
+            right: ['', 'March 2020', 'March 2020', 'March 2020'],
+        },
+        {
+            left: [
+                'Tutorial on the Akita Simulator Framework and MGPUSim',
+                'With Trinayan Baruah, Shi Dong, and David Kaeli. Tutorial at HPCA 2020',
+            ],
+            right: ['', 'February 2020'],
+        },
+        {
+            left: [
+                'Research in the NUCAR Laboratory at Northeastern University',
+                'FutureWei. With David Kaeli',
+            ],
+            right: ['', 'July 2019'],
+        },
+        {
+            left: [
+                'MGSim: a Flexible High-Performance Simulator for Multi-GPU Systems',
+                'International Workshop on OpenCL (IWOCL)',
+            ],
+            right: ['', 'May 2019'],
+        },
+        {
+            left: [
+                'AKITA: A Go-Based Computer Architecture Simulator Framework',
+                'Google',
+            ],
+            right: ['', 'May 2019'],
+        },
+        {
+            left: [
+                'Enabling Multi-GPU High Performance Computing with Memory System Design',
+                'Lightning talk at Boston University Red Hat Collaboratory',
+            ],
+            right: ['', 'February 2019'],
+        },
+        {
+            left: [
+                'Benchmarking the New Unified Memory of CUDA 8',
+                'With Frank Zhao. GTC 2017, San Jose',
+            ],
+            right: ['', 'August 2017'],
+        },
+        {
+            left: ['Multi2Sim 5.0', 'Tutorial at IISWC 2016'],
+            right: ['', 'September 2016'],
+        },
+    ]
 </script>
 
 <svelte:head>
@@ -324,732 +1132,43 @@
                 </p>
             </div>
             <h3>Peer-Reviewed Conference Papers</h3>
-            <div class="entry-list">
-                <div class="entry publication-entry">
-                    Wenhan Lyu, Yimeng Wang, <span class="self-name"
-                        >Yifan Sun</span
-                    >, and Yixuan Zhang. 2025.
-                    <span class="publication-title"
-                        >Will Your Next Pair Programming Partner Be Human? An
-                        Empirical Evaluation of Generative AI as a
-                        Collaborative Teammate in a Semester-Long Classroom
-                        Setting</span
-                    >. In Proceedings of the Twelfth ACM Conference on Learning
-                    @ Scale (L@S '25). Association for Computing Machinery, New
-                    York, NY, USA, 83&#8211;94.
-                    https://doi.org/10.1145/3698205.3729544 [Acceptance Rate
-                    18/84 &approx; 21.4%]
-                </div>
-                <div class="entry publication-entry">
-                    <span class="wm-advisee">Ying Li</span>, Yuhui Bao, Gongyu
-                    Wang, Xinxin Mei, Pranav Vaid, Anandaroop Ghosh, Adwait
-                    Jog, Darius Bunandar, Ajay Joshi, and
-                    <span class="self-name">Yifan Sun</span>. 2025.
-                    <span class="publication-title"
-                        >TrioSim: A Lightweight Simulator for Large-Scale DNN
-                        Workloads on Multi-GPU Systems</span
-                    >. In Proceedings of the 52nd Annual International
-                    Symposium on Computer Architecture (ISCA '25). Association
-                    for Computing Machinery, New York, NY, USA,
-                    1524&#8211;1538. https://doi.org/10.1145/3695053.3731082
-                    [Acceptance Rate 132/570 &approx; 23.2%]
-                </div>
-                <div class="entry publication-entry">
-                    Amel Fatima, Yang Yang, <span class="self-name"
-                        >Yifan Sun</span
-                    >, Rachata Ausavarungnirun, and Adwait Jog. 2025.
-                    <span class="publication-title"
-                        >NetCrafter: Tailoring Network Traffic for Non-Uniform
-                        Bandwidth Multi-GPU Systems</span
-                    >. In Proceedings of the 52nd Annual International
-                    Symposium on Computer Architecture (ISCA '25). Association
-                    for Computing Machinery, New York, NY, USA,
-                    1064&#8211;1078. https://doi.org/10.1145/3695053.3731040
-                    [Acceptance Rate 132/570 &approx; 23.2%]
-                </div>
-                <div class="entry publication-entry">
-                    Changxi Liu, Miao Yu, <span class="self-name"
-                        >Yifan Sun</span
-                    >, and Trevor E. Carlson. 2025.
-                    <span class="publication-title"
-                        >The Sparsity-Aware LazyGPU Architecture</span
-                    >. In Proceedings of the 52nd Annual International
-                    Symposium on Computer Architecture (ISCA '25). Association
-                    for Computing Machinery, New York, NY, USA,
-                    1020&#8211;1034. https://doi.org/10.1145/3695053.3731009
-                    [Acceptance Rate 132/570 &approx; 23.2%]
-                </div>
-                <div class="entry publication-entry">
-                    Matin Raayai-Ardakani, Andrew Nguyen, Ivan Rosales, <span
-                        class="wm-advisee">Daoxuan Xu</span
-                    >, Yuwei Sun, <span class="self-name">Yifan Sun</span>,
-                    David Kaeli, and Norman Rubin. 2025.
-                    <span class="publication-title"
-                        >Luthier: A Dynamic Binary Instrumentation Framework
-                        Targeting AMD GPUs</span
-                    >. In Proceedings of the 2025 IEEE International Symposium
-                    on Performance Analysis of Systems and Software (ISPASS),
-                    May 11-13, 2025. 137&#8211;149. Ghent, Belgium.
-                    https://doi.org/10.1109/ISPASS64960.2025.00022 [Acceptance
-                    Rate 28/99 &approx; 28%]
-                </div>
-                <div class="entry publication-entry">
-                    Ali Mosallaei, Katherine E. Isaacs, and <span
-                        class="self-name">Yifan Sun</span
-                    >. 2024.
-                    <span class="publication-title"
-                        >Looking into the Black Box: Monitoring Computer
-                        Architecture Simulations in Real-Time with AkitaRTM</span
-                    >. In 2024 57th IEEE/ACM International Symposium on
-                    Microarchitecture (MICRO '24). IEEE, 780&#8211;794.
-                    https://doi.org/10.1109/MICRO61859.2024.00063 [Acceptance
-                    Rate 113/ 489 &approx; 22.7%]
-                </div>
-                <div class="entry publication-entry">
-                    Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, <span
-                        class="self-name">Yifan Sun</span
-                    >, and Yixuan Zhang. 2024.
-                    <span class="publication-title"
-                        >Evaluating the Effectiveness of LLMs in Introductory
-                        Computer Science Education: A Semester-Long Field Study</span
-                    >. In Proceedings of the Eleventh ACM Conference on
-                    Learning @ Scale (L@S '24). Association for Computing
-                    Machinery, New York, NY, USA, 63&#8211;74.
-                    https://doi.org/10.1145/3657604.3662036 [Acceptance rate:
-                    22/ 90 &approx; 24.4%]
-                </div>
-                <div class="entry publication-entry">
-                    Yichen Luo, Daoxuan Xu, Gang Zhou, <span class="self-name"
-                        >Yifan Sun</span
-                    >, and Sidi Lu. 2024.
-                    <span class="publication-title"
-                        >Impact of Raindrops on Camera-Based Detection in
-                        Software-Defined Vehicles</span
-                    >. In 2024 IEEE International Conference on Mobility,
-                    Operations, Services and Technologies (MOST '24). IEEE,
-                    193&#8211;205. https://doi.org/10.1109/MOST60774.2024.00028
-                </div>
-                <div class="entry publication-entry">
-                    <span class="wm-advisee">Ying Li</span>,
-                    <span class="self-name">Yifan Sun</span>, and Adwait Jog.
-                    2023.
-                    <span class="publication-title"
-                        >Path Forward Beyond Simulators: Fast and Accurate GPU
-                        Execution Time Prediction for DNN Workloads</span
-                    >. In Proceedings of the 56th Annual IEEE/ACM International
-                    Symposium on Microarchitecture (MICRO '23). Association for
-                    Computing Machinery, New York, NY, USA, 380&#8211;394.
-                    <br /> https://doi.org/10.1145/3613424.3614277 [Acceptance rate:
-                    101/424 &approx; 23.8%]
-                </div>
-                <div class="entry publication-entry">
-                    Changxi Liu, <span class="self-name">Yifan Sun</span>, and
-                    Trevor E. Carlson. 2023.
-                    <span class="publication-title"
-                        >Photon: A Fine-grained Sampled Simulation Methodology
-                        for GPU Workloads</span
-                    >. In Proceedings of the 56th Annual IEEE/ACM International
-                    Symposium on Microarchitecture (MICRO '23). Association for
-                    Computing Machinery, New York, NY, USA, 1227&#8211;1241.
-                    https://doi.org/10.1145/3613424.3623773 [Acceptance rate:
-                    101/424 &approx; 23.8%]
-                </div>
-                <div class="entry publication-entry">
-                    &#127942; <strong>[Best Paper Award (Top 1%)] </strong>
-                    Yixuan Zhang, Joseph D Gaggiano, Nutchanon Yongsatianchot, Nurul
-                    M Suhaimi, Miso Kim,
-                    <span class="self-name">Yifan Sun</span>, Jacqueline
-                    Griffin, and Andrea G Parker. 2023.
-                    <span class="publication-title"
-                        >What Do We Mean When We Talk about Trust in Social
-                        Media? A Systematic Review</span
-                    >. In Proceedings of the 2023 CHI Conference on Human
-                    Factors in Computing Systems (CHI '23). Association for
-                    Computing Machinery, New York, NY, USA, Article 670,
-                    1&#8211;22. <br />https://doi.org/10.1145/3544548.3581019
-                    [Acceptance rate: 879/3182 &approx; 27.6%]
-                </div>
-                <div class="entry publication-entry">
-                    Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
-                    Joseph D. Gaggiano, Neha Kumar, Clio Andris, and Andrea G.
-                    Parker. 2023.
-                    <span class="publication-title"
-                        >Visualization Design Practices in a Crisis: Behind the
-                        Scenes with COVID-19 Dashboard Creators</span
-                    >. IEEE Transactions on Visualization and Computer Graphics
-                    29, 1 (2023), 1037&#8211;1047.
-                    https://doi.org/10.1109/TVCG.2022.3209493. [Acceptance
-                    rate: 122/ 460 &approx; 26.5%]
-                </div>
-                <div class="entry publication-entry">
-                    Yuhui Bao, <span class="self-name">Yifan Sun</span>, Zlatan
-                    Feric, Michael Tian Shen, Micah Weston, Jos&#233; L.
-                    Abell&#225;n, Trinayan Baruah, John Kim, Ajay Joshi, and
-                    David Kaeli. 2023.
-                    <span class="publication-title"
-                        >NaviSim: A Highly Accurate GPU Simulator for AMD RDNA
-                        GPUs</span
-                    >. In Proceedings of the International Conference on
-                    Parallel Architectures and Compilation Techniques (PACT
-                    '22). Association for Computing Machinery, New York, NY,
-                    USA, 333&#8211;345. https://doi.org/10.1145/3559009.3569666
-                    [Acceptance rate: 50/ 118 &approx; 42.4%]
-                </div>
-                <div class="entry publication-entry">
-                    Yixuan Zhang, Nurul Suhaimi, Nutchanon Yongsatianchot,
-                    Joseph D Gaggiano, Miso Kim, Shivani A Patel, <span
-                        class="self-name">Yifan Sun</span
-                    >, Stacy Marsella, Jacqueline Griffin, and Andrea G Parker.
-                    2022.
-                    <span class="publication-title"
-                        >Shifting Trust: Examining How Trust and Distrust
-                        Emerge, Transform, and Collapse in COVID-19 Information
-                        Seeking</span
-                    >. In Proceedings of the 2022 CHI Conference on Human
-                    Factors in Computing Systems (CHI '22). Association for
-                    Computing Machinery, New York, NY, USA, Article 78,
-                    1&#8211;21. https://doi.org/10.1145/3491102.3501889 [Top
-                    12.5%; Acceptance rate: 638/ 2597 &approx; 24.6%]
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Yixuan Zhang, Ali
-                    Mosallaei, Michael D. Shah, Cody Dunne, and David Kaeli.
-                    2021.
-                    <span class="publication-title"
-                        >Daisen: A Framework for Visualizing Detailed GPU
-                        Execution</span
-                    >. Computer Graphics Forum 40, 3 (2021), 239&#8211;250.
-                    <br />https://doi.org/10.1111/cgf.14303 [Acceptance Rate
-                    &approx; 26.0%]
-                </div>
-                <div class="entry publication-entry">
-                    Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
-                    Lace Padilla, Sumit Barua, Enrico Bertini, and Andrea G
-                    Parker. 2021.
-                    <span class="publication-title"
-                        >Mapping the Landscape of COVID-19 Crisis
-                        Visualizations</span
-                    >. In Proceedings of the 2021 CHI Conference on Human
-                    Factors in Computing Systems (CHI '21). Association for
-                    Computing Machinery, New York, NY, USA, Article 608,
-                    1&#8211;23. <br /> https://doi.org/10.1145/3411764.3445381 [Acceptance
-                    rate &approx; 26.3%]
-                </div>
-                <div class="entry publication-entry">
-                    Trinayan Baruah, Kaustubh Shivdikar, Shi Dong, <span
-                        class="self-name">Yifan Sun</span
-                    >, Saiful A. Mojumder, Kihoon Jung, Jos&#233; L.
-                    Abell&#225;n, Yash Ukidave, Ajay Joshi, John Kim, and David
-                    Kaeli. 2021.
-                    <span class="publication-title"
-                        >GNNMark: A Benchmark Suite to Characterize Graph
-                        Neural Network Training on GPUs</span
-                    >. In 2021 IEEE International Symposium on Performance
-                    Analysis of Systems and Software (ISPASS '21). IEEE,
-                    13&#8211;23. https://doi.org/10.1109/ISPASS51385.2021.00013
-                    [Acceptance rate &approx; 36.9%]
-                </div>
-                <div class="entry publication-entry">
-                    Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
-                    Saiful A. Mojumder, Jos&#233; L. Abell&#225;n, Yash
-                    Ukidave, Ajay Joshi, Norman Rubin, John Kim, and David
-                    Kaeli. 2020.
-                    <span class="publication-title"
-                        >Valkyrie: Leveraging Inter-TLB Locality to Enhance GPU
-                        Performance</span
-                    >. In Proceedings of the ACM International Conference on
-                    Parallel Architectures and Compilation Techniques (PACT
-                    '20). Association for Computing Machinery, New York, NY,
-                    USA, 455&#8211;466. https://doi.org/10.1145/3410463.3414639
-                    [Acceptance rate &approx; 25.9%]
-                </div>
-                <div class="entry publication-entry">
-                    &#127942; <strong
-                        >[Best Paper Honorable Mention (<br />textless 5%)]</strong
-                    >
-                    Omid Mohaddesi, <span class="self-name">Yifan Sun</span>,
-                    Rana Azghandi, Rozhin Doroudi, Sam Snodgrass, Ozlem Ergun,
-                    Jacqueline Griffin, David Kaeli, Stacy Marsella, and Casper
-                    Harteveld. 2020.
-                    <span class="publication-title"
-                        >Introducing Gamettes: A Playful Approach for Capturing
-                        Decision-Making for Informing Behavioral Models</span
-                    >. In Proceedings of the 2020 CHI Conference on Human
-                    Factors in Computing Systems (CHI '20). Association for
-                    Computing Machinery, New York, NY, USA, 1&#8211;13.
-                    https://doi.org/10.1145/3313831.3376571 [Acceptance rate
-                    &approx; 24.3%]
-                </div>
-                <div class="entry publication-entry">
-                    Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
-                    Ali Tolga Din&#231;er, Saiful A. Mojumder, Jos&#233; L.
-                    Abell&#225;n, Yash Ukidave, Ajay Joshi, Norman Rubin, John
-                    Kim, and David Kaeli. 2020.
-                    <span class="publication-title"
-                        >Griffin: Hardware-Software Support for Efficient Page
-                        Migration in Multi-GPU Systems</span
-                    >. In 2020 IEEE International Symposium on High Performance
-                    Computer Architecture (HPCA '20). IEEE, 596&#8211;609.
-                    https://doi.org/10.1109/HPCA47549.2020.00055 [Acceptance
-                    rate &approx; 19.4%]
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Trinayan Baruah,
-                    Saiful A. Mojumder, Shi Dong, Xiang Gong, Shane Treadway,
-                    Yuhui Bao, Spencer Hance, Carter McCardwell, Vincent Zhao,
-                    Harrison Barclay, Amir Kavyan Ziabari, Zhongliang Chen,
-                    Rafael Ubal, Jos&#233; L. Abell&#225;n, John Kim, Ajay
-                    Joshi, and David Kaeli. 2019.
-                    <span class="publication-title"
-                        >MGPUSim: enabling multi-GPU performance modeling and
-                        optimization</span
-                    >. In Proceedings of the 46th International Symposium on
-                    Computer Architecture (ISCA '19). Association for Computing
-                    Machinery, New York, NY, USA, 197&#8211;209.
-                    https://doi.org/10.1145/3307650.3322230 [Acceptance rate
-                    &approx; 17.0%]
-                </div>
-                <div class="entry publication-entry">
-                    Mohammad Khavari Tavana, <span class="self-name"
-                        >Yifan Sun</span
-                    >, Nicolas Bohm Agostini, and David Kaeli. 2019.
-                    <span class="publication-title"
-                        >Exploiting Adaptive Data Compression to Improve
-                        Performance and Energy-Efficiency of Compute Workloads
-                        in Multi-GPU Systems</span
-                    >. In 2019 IEEE International Parallel and Distributed
-                    Processing Symposium (IPDPS '19). IEEE, 664&#8211;674.
-                    <br /> https://doi.org/10.1109/IPDPS.2019.00075 [Acceptance
-                    rate &approx; 27.7%]
-                </div>
-                <div class="entry publication-entry">
-                    Saiful A. Mojumder, Marcia S. Louis, <span
-                        class="self-name">Yifan Sun</span
-                    >, Amir Kavyan Ziabari, Jos&#233; L. Abell&#225;n, John
-                    Kim, David Kaeli, and Ajay Joshi. 2018.
-                    <span class="publication-title"
-                        >Profiling DNN Workloads on a Volta-based DGX-1 System</span
-                    >. In 2018 IEEE International Symposium on Workload
-                    Characterization (IISWC '18). IEEE, 122&#8211;133.
-                    https://doi.org/10.1109/IISWC.2018.8573521 [Acceptance rate
-                    &approx; 36.2%]
-                </div>
-                <div class="entry publication-entry">
-                    Rozhin Doroudi, Rana Azghandi, Zlatan Feric, Omid
-                    Mohaddesi, <span class="self-name">Yifan Sun</span>,
-                    Jacqueline Griffin, Ozlem Ergun, David Kaeli, Pedro
-                    Sequeira, Stacy Marsella, and Casper Harteveld. 2018.
-                    <span class="publication-title"
-                        >An Integrated Simulation Framework for Examining
-                        Resiliency in Pharmaceutical Supply Chains Considering
-                        Human Behaviors</span
-                    >. In 2018 Winter Simulation Conference (WSC '18). IEEE,
-                    88&#8211;99. https://doi.org/10.1109/WSC.2018.8632387
-                    [Acceptance rate &approx; 70.4%]
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Saoni Mukherjee,
-                    Trinayan Baruah, Shi Dong, Julian Gutierrez, Prannoy Mohan,
-                    and David Kaeli. 2018.
-                    <span class="publication-title"
-                        >Evaluating Performance Tradeoffs on the Radeon Open
-                        Compute Platform</span
-                    >. In 2018 IEEE International Symposium on Performance
-                    Analysis of Systems and Software (ISPASS '18). IEEE,
-                    209&#8211;218. <br /> https://doi.org/10.1109/ISPASS.2018.00034
-                    [Acceptance rate &approx; 31.3%]
-                </div>
-                <div class="entry publication-entry">
-                    &#127942; <strong>[Best Paper Award]</strong> Shi Dong,
-                    Xiang Gong, <span class="self-name">Yifan Sun</span>,
-                    Trinayan Baruah, and David Kaeli. 2018.
-                    <span class="publication-title"
-                        >Characterizing the Microarchitectural Implications of
-                        a Convolutional Neural Network (CNN) Execution on GPUs</span
-                    >. In Proceedings of the 2018 ACM/SPEC International
-                    Conference on Performance Engineering (ICPE '18).
-                    Association for Computing Machinery, New York, NY, USA,
-                    96&#8211;106. https://doi.org/10.1145/3184407.3184423
-                    [Acceptance rate $=$ 24.0%]
-                </div>
-                <div class="entry publication-entry">
-                    Trinayan Baruah, <span class="self-name">Yifan Sun</span>,
-                    Shi Dong, David Kaeli, and Norm Rubin. 2018.
-                    <span class="publication-title"
-                        >Airavat: Improving Energy Efficiency of Heterogeneous
-                        Applications</span
-                    >. In 2018 Design, Automation &amp; Test in Europe
-                    Conference &amp; Exhibition (DATE '18). IEEE,
-                    731&#8211;736. DOI:
-                    https://doi.org/10.23919/DATE.2018.8342104 [Acceptance rate
-                    &approx; 24.2%]
-                </div>
-                <div class="entry publication-entry">
-                    &#127942; <strong>[Best Paper Candidate]</strong>
-                    <span class="self-name">Yifan Sun</span>, Xiang Gong, Amir
-                    Kavyan Ziabari, Leiming Yu, Xiangyu Li, Saoni Mukherjee,
-                    Carter McCardwell, Alejandro Villegas, and David Kaeli.
-                    2016.
-                    <span class="publication-title"
-                        >Hetero-Mark, a Benchmark Suite for CPU-GPU
-                        Collaborative Computing</span
-                    >. In 2016 IEEE International Symposium on Workload
-                    Characterization (IISWC '16). IEEE, 1&#8211;10.
-                    https://doi.org/10.1109/IISWC.2016.7581262 [Acceptance rate
-                    &approx; 30.4%]
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Chisheng Liang,
-                    Steven Sutherland, Casper Harteveld, and David Kaeli. 2016.
-                    <span class="publication-title"
-                        >Modeling Player Decisions in a Supply Chain Game</span
-                    >. In 2016 IEEE Conference on Computational Intelligence
-                    and Games (CIG '16). IEEE, 1&#8211;8.
-                    https://doi.org/10.1109/CIG.2016.7860444 [Acceptance rate
-                    unknown]
-                </div>
-                <div class="entry publication-entry">
-                    Saoni Mukherjee, <span class="self-name">Yifan Sun</span>,
-                    Paul Blinzer, Amir Kavyan Ziabari, and David Kaeli. 2016.
-                    <span class="publication-title"
-                        >A Comprehensive Performance Analysis of HSA and OpenCL
-                        2.0</span
-                    >. In 2016 IEEE International Symposium on Performance
-                    Analysis of Systems and Software (ISPASS '16). IEEE,
-                    183&#8211;193. https://doi.org/10.1109/ISPASS.2016.7482093
-                    [Acceptance rate &approx; 35.1%]
-                </div>
-                <div class="entry publication-entry">
-                    Jithin Jagannath, Anu Saji, Hovannes Kulhandjian, <span
-                        class="self-name">Yifan Sun</span
-                    >, Emrecan Demirors, and Tommaso Melodia. 2013.
-                    <span class="publication-title"
-                        >A hybrid MAC protocol with channel-dependent optimized
-                        scheduling for clustered underwater acoustic sensor
-                        networks</span
-                    >. In Proceedings of the 8th International Conference on
-                    Underwater Networks &amp; Systems (WUWNet '13). Association
-                    for Computing Machinery, New York, NY, USA, Article 3,
-                    1&#8211;8. https://doi.org/10.1145/2532378.2532382
-                    [Acceptance rate $=$ 20.0%]
-                </div>
-                <div class="entry publication-entry">
-                    &#127942; <span class="self-name">Yifan Sun</span> and
-                    Tommaso Melodia. 2013.
-                    <span class="publication-title"
-                        >The Internet Underwater: an IP-compatible protocol
-                        stack for commercial undersea modems</span
-                    >. In Proceedings of the 8th International Conference on
-                    Underwater Networks &amp;; Systems (WUWNet '13).
-                    Association for Computing Machinery, New York, NY, USA,
-                    Article 37, 1&#8211;8.
-                    <br />https://doi.org/10.1145/2532378.2532407 [Acceptance
-                    rate $=$ 20.0%]
-                </div>
+            <div class="publication-list">
+                <CvTable entries={peerReviewedConferenceEntries} />
             </div>
+
             <h3>Journals</h3>
-            <div class="entry-list publication-list">
-                <div class="entry publication-entry">
-                    Wenhan Lyu, Shuang Zhang, Tingting Chung, <span
-                        class="self-name">Yifan Sun</span
-                    >, and Yixuan Zhang. 2025.
-                    <span class="publication-title"
-                        >Understanding the practices, perceptions, and
-                        (dis)trust of generative AI among instructors: A
-                        mixed-methods study in the U.S. higher education</span
-                    >. Computers and Education: Artificial Intelligence 8
-                    (2025), 100383. https://doi.org/10.1016/j.caeai.2025.100383
-                </div>
-                <div class="entry publication-entry">
-                    Shaoyu Wang, Hang Yan, Katherine E. Isaacs, and <span
-                        class="self-name">Yifan Sun</span
-                    >. 2024.
-                    <span class="publication-title"
-                        >Visual Exploratory Analysis for Designing Large-Scale
-                        Network-on-Chip Architectures: A Domain Expert-Led
-                        Design Study</span
-                    >. IEEE Transactions on Visualization and Computer Graphics
-                    30, 4 (2024), 1970&#8211;1983.
-                    https://doi.org/10.1109/TVCG.2023.3337173
-                </div>
-                <div class="entry publication-entry">
-                    Shi Dong, <span class="self-name">Yifan Sun</span>, Nicolas
-                    Bohm Agostini, Elmira Karimi, Daniel Lowell, Jing Zhou,
-                    Jos&#233; Cano, Jos&#233; L. Abell&#225;n, and David Kaeli.
-                    2021.
-                    <span class="publication-title"
-                        >Spartan: A Sparsity-Adaptive Framework to Accelerate
-                        Deep Neural Network Training on GPUs</span
-                    >. IEEE Transactions on Parallel and Distributed Systems
-                    32, 10 (2021), 2448&#8211;2463. <br /> https://doi.org/10.1109/TPDS.2021.3067825
-                </div>
-                <div class="entry publication-entry">
-                    Rozhin Doroudi, Pedro Sequeira, Stacy Marsella, Ozlem
-                    Ergun, Rana Azghandi, David Kaeli, <span class="self-name"
-                        >Yifan Sun</span
-                    >, and Jacqueline Griffin. 2020.
-                    <span class="publication-title"
-                        >Effects of trust-based decision making in disrupted
-                        supply chains</span
-                    >. PLOS ONE 15, 2 (February 2020), e0224761.
-                    https://doi.org/10.1371/journal.pone.0224761
-                </div>
-                <div class="entry publication-entry">
-                    Chen Li, <span class="self-name">Yifan Sun</span>, Lingling
-                    Jin, Lingjie Xu, Zheng Cao, Pengfei Fan, David Kaeli, Sheng
-                    Ma, Yang Guo, and Jun Yang. 2019.
-                    <span class="publication-title"
-                        >Priority-Based PCIe Scheduling for Multi-Tenant
-                        Multi-GPU Systems</span
-                    >. IEEE Computer Architecture Letters 18, 2 (2019),
-                    157&#8211;160. https://doi.org/10.1109/LCA.2019.2955119
-                </div>
-                <div class="entry publication-entry">
-                    Amir Kavyan Ziabari, <span class="self-name"
-                        >Yifan Sun</span
-                    >, Yenai Ma, Dana Schaa, Jos&#233; L. Abell&#225;n, Rafael
-                    Ubal, John Kim, Ajay Joshi, and David Kaeli. 2016.
-                    <span class="publication-title"
-                        >UMH: A Hardware-Based Unified Memory Hierarchy for
-                        Systems with Multiple Discrete GPUs</span
-                    >. ACM Trans. Archit. Code Optim. 13, 4, Article 35
-                    (December 2016), 25 pages. https://doi.org/10.1145/2996190
-                </div>
-                <div class="entry publication-entry">
-                    Abdulla K. Al-Ali, <span class="self-name">Yifan Sun</span
-                    >, Marco Di Felice, Jarkko Paavola, and Kaushik R.
-                    Chowdhury. 2015.
-                    <span class="publication-title"
-                        >Accessing Spectrum Databases Using Interference
-                        Alignment in Vehicular Cognitive Radio Networks</span
-                    >. IEEE Transactions on Vehicular Technology 64, 1 (2015),
-                    263&#8211;272. https://doi.org/10.1109/TVT.2014.2318837
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span> and Kaushik R.
-                    Chowdhury. 2014.
-                    <span class="publication-title"
-                        >Enabling Emergency Communication Through a Cognitive
-                        Radio Vehicular Network.</span
-                    > IEEE Communications Magazine 52, 10 (2014), 68&#8211;75. https://doi.org/10.1109/MCOM.2014.6917404
-                </div>
+            <div class="publication-list">
+                <CvTable entries={journalEntries} />
             </div>
+
             <h3>Books</h3>
-            <div class="entry-list publication-list">
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>,
-                    <span class="wm-advisee">Sabila Al Jannat</span>, Trinayan
-                    Buruah, and David Kaeli. 2025.
-                    <span class="publication-title"
-                        ><a
-                            href="https://www.amazon.com/Accelerated-Computing-HIP-Yifan-Sun/dp/B0F4F3F211/"
-                            target="_blank"
-                            rel="noreferrer"
-                            >Accelerated Computing with HIP: Second Edition.</a
-                        ></span
-                    > ISBN: 979-8218107444.
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Trinayan Buruah,
-                    and David Kaeli. 2022.
-                    <span class="publication-title"
-                        ><a
-                            href="https://www.amazon.com/Accelerated-Computing-HIP-Yifan-Sun/dp/B0BQQ18HGP/"
-                            target="_blank"
-                            rel="noreferrer">Accelerated Computing with HIP</a
-                        ></span
-                    >. ISBN: 979-8218107444.
-                </div>
+            <div class="publication-list">
+                <CvTable entries={bookEntries} />
             </div>
+
             <h3>Translation of My Books</h3>
-            <div class="entry-list publication-list">
-                <div class="entry publication-entry">
-                    <span class="self-name"
-                        >&#1048;&#1092;&#1072;&#1085;&#1100;
-                        &#1057;&#1091;&#1085;</span
-                    >, &#1058;&#1088;&#1080;&#1085;&#1072;&#1081;&#1072;&#1085;
-                    &#1041;&#1072;&#1088;&#1091;&#1072;,
-                    &#1044;&#1101;&#1074;&#1080;&#1076;
-                    &#1050;&#1072;&#1101;&#1083;&#1080;.2024.<span
-                        class="publication-title"
-                        >&#1042;&#1067;&#1057;&#1054;&#1050;&#1054;&#1055;&#1056;&#1054;&#1048;&#1047;&#1042;&#1054;&#1044;&#1048;&#1058;&#1045;&#1051;&#1068;&#1053;&#1067;&#1045;
-                        &#1042;&#1067;&#1063;&#1048;&#1057;&#1051;&#1045;&#1053;&#1048;&#1071;
-                        &#1057;
-                        &#1055;&#1054;&#1052;&#1054;&#1065;&#1068;&#1070; HIP</span
-                    > (The Russian translation of the book Accelerated Computing
-                    with HIP, as part of the Supercomputing Education Series), Moscow
-                    University Press.
-                </div>
+            <div class="publication-list">
+                <CvTable entries={bookTranslationEntries} />
             </div>
+
             <h3>Book Chapters</h3>
-            <div class="entry-list publication-list">
-                <div class="entry publication-entry">
-                    Shih-Hao Hung, Thomas B. Jablin, <span class="self-name"
-                        >Yifan Sun</span
-                    >, Rafael Ubal, and David Kaeli. 2015.
-                    <span class="publication-title">HSA Simulators</span>. A
-                    book chapter in Heterogeneous System Architecture:
-                    Practical Applications for Industry, 1st edition, Elsevier.
-                </div>
+            <div class="publication-list">
+                <CvTable entries={bookChapterEntries} />
             </div>
+
             <h3>Patents</h3>
-            <div class="entry-list publication-list">
-                <div class="entry publication-entry">
-                    Junping Zhao, <span class="self-name">Yifan Sun</span>.
-                    Layne Peng, Jie Bao, Kun Wang. (Jan. 2021).
-                    <span class="publication-title"
-                        >Intelligent data coordination for accelerated
-                        computing in cloud environment</span
-                    >. Patent No. US 10,891,156, Filed Apr 26, 2017, Issued Jan
-                    12, 2021.
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Layne Peng,
-                    Robert A. Lincourt JR., John Cardente, and Junping Zhao.
-                    (Jun. 2019).
-                    <span class="publication-title"
-                        >Managing access to a resource pool of graphics
-                        processing units under fine grain control</span
-                    >. Patent No. US 10,262,390, Filed Apr 14, 2017, Issued Jun
-                    27, 2019.
-                </div>
-                <div class="entry publication-entry">
-                    Junping Zhao, Layne Peng, Jie Bao, Kun Wang, and <span
-                        class="self-name">Yifan Sun</span
-                    >. (Apr. 2019).
-                    <span class="publication-title"
-                        >Checkpointing for GPU-as-a-Service in Cloud Computing
-                        Environment</span
-                    >, Patent No. US 10,275,851, Filed Apr 25, 2017, Issued Apr
-                    30, 2019.
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Layne Peng,
-                    Robert A. Lincourt JR., John Cardente, John S Harwood.
-                    (Oct. 2018).
-                    <span class="publication-title"
-                        >Queue-based GPU Virtualization and Management System</span
-                    >. Patent No. US 10,109,030, Filed Dec 27, 2016, Issued Oct
-                    23, 2018.
-                </div>
+            <div class="publication-list">
+                <CvTable entries={patentEntries} />
             </div>
+
             <h3>Workshop or Poster Publications</h3>
-            <div class="entry-list publication-list">
-                <div class="entry publication-entry">
-                    <span class="wm-advisee">Daoxuan Xu</span>, Le Xu, Jie Ren,
-                    <span class="self-name">Yifan Sun</span>. 2025.
-                    <span class="publication-title"
-                        >Exploring the Wafer-Scale GPUs</span
-                    >. The 17th Workshop on General Purpose Processing using
-                    GPU (GPGPU 2025).
-                </div>
-                <div class="entry publication-entry">
-                    Nicol&#225;s Meseguer, <span class="self-name"
-                        >Yifan Sun</span
-                    >, Michael Pellauer, Jos&#233; L. Abell&#225;n and Manuel
-                    E. Acacio. 2025.
-                    <span class="publication-title"
-                        >ACTA: Automatic Configuration of the Tensor Memory
-                        Accelerator for High-End GPUs</span
-                    >. The 17th Workshop on General Purpose Processing using
-                    GPU (GPGPU 2025).
-                </div>
-                <div class="entry publication-entry">
-                    <span class="wm-advisee">Chris Thames</span>,
-                    <span class="self-name">Yifan Sun</span>. 2024.
-                    <span class="publication-title"
-                        >A Survey of Artificial Intelligence Approaches to
-                        Safety and Mission-Critical Systems</span
-                    >. The 24th Integrated Communications, Navigation and
-                    Surveillance Conference (ICNS 2024).
-                </div>
-                <div class="entry publication-entry">
-                    <span class="wm-advisee">Ying Li</span>, Yuhui Bao, Pranav
-                    Vaid, Gongyu Wang, Adwait Jog, Darius Bunandar, Ajay Joshi,
-                    <span class="self-name">Yifan Sun</span>. 2023.
-                    <span class="publication-title"
-                        >TraceSim: a Lightweight Simulator for Large-Scale DNN
-                        Workloads on Multi-GPU Systems</span
-                    >. The First Workshop on Computer Architecture Modeling and
-                    Simulation (CAMS 2023).
-                </div>
-                <div class="entry publication-entry">
-                    Ali Mosallaei, Katherine Isaacs, <span class="self-name"
-                        >Yifan Sun</span
-                    >. 2023.
-                    <span class="publication-title"
-                        >Looking into the Black Box: Monitoring Computer
-                        Architecture Simulations in Real-Time with AkitaRTM</span
-                    >. The First Workshop on Computer Architecture Modeling and
-                    Simulation (CAMS 2023).
-                </div>
-                <div class="entry publication-entry">
-                    <span class="wm-advisee">Ying Li</span>,
-                    <span class="self-name">Yifan Sun</span>, Adwait Jog. 2023.
-                    <span class="publication-title"
-                        >A Regression-based Model for End-to-End Latency
-                        Prediction for DNN Execution on GPUs</span
-                    >. 2023 IEEE International Symposium on Performance
-                    Analysis of Systems and Software (ISPASS 2023).
-                </div>
-                <div class="entry publication-entry">
-                    <span class="wm-advisee">Chris Thames</span>, Hang Yan,
-                    <span class="self-name">Yifan Sun</span>. 2022.
-                    <span class="publication-title"
-                        >Understanding Wafer-Scale GPU Performance using an
-                        Architectural Simulator</span
-                    >. The 14th Workshop on General Purpose Processing using
-                    GPU (GPGPU 2022).
-                </div>
-                <div class="entry publication-entry">
-                    Yixuan Zhang, <span class="self-name">Yifan Sun</span>,
-                    Sumit Barua, Enrico Bertini, and Andrea Grimes Parker.
-                    2020.
-                    <span class="publication-title"
-                        >Mapping the Landscape of COVID-19 Crisis
-                        Visualizations</span
-                    >. Visualization for Communication (VisComm).
-                </div>
+            <div class="publication-list">
+                <CvTable entries={workshopEntries} />
             </div>
+
             <h3>Preprints</h3>
-            <div class="entry-list publication-list">
-                <div class="entry publication-entry">
-                    Saiful A. Mojumder, <span class="self-name">Yifan Sun</span
-                    >, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah,
-                    Jos&#233; L. Abell&#225;n, John Kim, David Kaeli, Ajay
-                    Joshi. 2020.
-                    <span class="publication-title"
-                        >MGPU-TSM: A Multi-GPU System with Truly Shared Memory</span
-                    >. arXiv preprint arXiv:2008.02300.
-                </div>
-                <div class="entry publication-entry">
-                    Saiful A. Mojumder, <span class="self-name">Yifan Sun</span
-                    >, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah,
-                    Jos&#233; L. Abell&#225;n, John Kim, David Kaeli, Ajay
-                    Joshi. 2020.
-                    <span class="publication-title"
-                        >HALCONE : A Hardware-Level Timestamp-Based Cache
-                        Coherence Scheme for Multi-GPU Systems</span
-                    >. arXiv preprint arXiv:2007.04292.
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Nicolas Bohm
-                    Agostini, Shi Dong, and David Kaeli. 2019.
-                    <span class="publication-title"
-                        >Summarizing CPU and GPU Design Trends with Product
-                        Data</span
-                    >. arXiv preprint arXiv:1911.11313.
-                </div>
-                <div class="entry publication-entry">
-                    <span class="self-name">Yifan Sun</span>, Trinayan Baruah,
-                    Saiful A Mojumder, Shi Dong, Rafael Ubal, Xiang Gong, Shane
-                    Treadway, Yuhui Bao, Vincent Zhao, Jos&#233; Luis
-                    Abell&#225;n, John Kim, Ajay Joshi, and David Kaeli. 2019.
-                    <span class="publication-title"
-                        >MGSim+MGMark: A Framework for Multi-GPU System
-                        Research</span
-                    >. arXiv preprint arXiv:1811.02884.
-                </div>
+            <div class="publication-list">
+                <CvTable entries={preprintEntries} />
             </div>
         </section>
 
@@ -1057,289 +1176,14 @@
             <header class="section-header">
                 <h2>Software &amp; Datasets</h2>
             </header>
-            <div class="entry-list publication-list">
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">The CHIP Dataset</span>
-                        <div class="subtitle">
-                            <a
-                                href="https://chip-dataset.vercel.app"
-                                target="_blank"
-                                rel="noreferrer"
-                                >https://chip-dataset.vercel.app</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-body">
-                        A dataset with 2185 CPUs and 2668 GPUs helping
-                        researchers understand semiconductor development
-                        trends.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Daisen (now part of Akita)</span
-                        >
-                        <div class="subtitle">
-                            <a
-                                href="https://gitlab.com/akita/vis"
-                                target="_blank"
-                                rel="noreferrer"
-                                >https://gitlab.com/akita/vis</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-body">
-                        A general-purpose visualization tool that reveals the
-                        detailed behavior of hardware components.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">MGPUSim</span>
-                        <div class="subtitle">
-                            <a
-                                href="https://github.com/sarchlab/mgpusim"
-                                target="_blank"
-                                rel="noreferrer"
-                                >https://github.com/sarchlab/mgpusim</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-body">
-                        A multi-GPU system simulator based on AMD GCN3 GPUs.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Akita</span>
-                        <div class="subtitle">
-                            <a
-                                href="https://github.com/sarchlab/akita"
-                                target="_blank"
-                                rel="noreferrer"
-                                >https://github.com/sarchlab/akita</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-body">
-                        A high-flexibility, high-performance, parallel computer
-                        architecture simulation framework.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Hetero-Mark</span>
-                        <div class="subtitle">
-                            <a
-                                href="https://github.com/NUCAR-DEV/Hetero-Mark"
-                                target="_blank"
-                                rel="noreferrer"
-                                >https://github.com/NUCAR-DEV/Hetero-Mark</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-body">
-                        A benchmark suite for CPU-GPU collaborative computing.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Drug Supply Chain Simulator</span
-                        >
-                        <div class="subtitle">
-                            <a
-                                href="https://gitlab.com/syifan/crisp"
-                                target="_blank"
-                                rel="noreferrer"
-                                >https://gitlab.com/syifan/crisp</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-body">
-                        A human-in-the-loop logistics simulator for the U.S.
-                        drug supply chain.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">VistaLights</span>
-                        <div class="subtitle">
-                            <a
-                                href="https://github.com/syifan/VistaLights"
-                                target="_blank"
-                                rel="noreferrer"
-                                >https://github.com/syifan/VistaLights</a
-                            >
-                        </div>
-                    </div>
-                    <div class="entry-body">
-                        Strategic game for maritime traffic management and
-                        disaster relief.
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={softwareEntries} />
         </section>
 
         <section class="cv-section" id="talks">
             <header class="section-header">
                 <h2>Talks and Tutorials</h2>
             </header>
-            <div class="entry-list publication-list">
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >User-Friendly Tools in Akita 3.0</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        The 2nd Workshop on Computer Architecture Modeling and
-                        Simulation (CAMS '24). November 2024.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >On the Human Side of Computer Architecture,
-                            Towards Explainable Architecture</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        North Carolina State University. October 2024.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Towards Building Explainable Computer Architecture</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        Lehigh University. February 2023.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >MGPUSim: A One-Stop Solution for GPU Architecture
-                            Simulation</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        The 2020 International Conference on High Performance
-                        Computing &amp; Simulation (HPCS '20). January 2021.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >MGPUSim: A High-Flexibility, High-Performance,
-                            Multi-GPU Simulator</span
-                        >
-                    </div>
-                    <div class="entry-body">Alibaba. July 2020.</div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Exploring Multi-GPU Simulation and Visual
-                            Profiling with MGPUSim</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        With Jos&#233; L. Abell&#225;n, Trinayan Baruah, and
-                        David Kaeli. Tutorial at ISCA 2020. May 2020.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Collaborative Heterogeneous Computing</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        William &amp; Mary. March 2020. University of
-                        California, Santa Cruz. March 2020. University of
-                        Pittsburgh. March 2020. University of Central Florida.
-                        March 2020.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Tutorial on the Akita Simulator Framework and
-                            MGPUSim</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        With Trinayan Baruah, Shi Dong, and David Kaeli.
-                        Tutorial at HPCA 2020. February 2020.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Research in the NUCAR Laboratory at Northeastern
-                            University</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        FutureWei. With David Kaeli. July 2019.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >MGSim: a Flexible High-Performance Simulator for
-                            Multi-GPU Systems</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        International Workshop on OpenCL (IWOCL). May 2019.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >AKITA: A Go-Based Computer Architecture Simulator
-                            Framework</span
-                        >
-                    </div>
-                    <div class="entry-body">Google. May 2019.</div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Enabling Multi-GPU High Performance Computing with
-                            Memory System Design</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        Lightning talk at Boston University Red Hat
-                        Collaboratory. February 2019.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title"
-                            >Benchmarking the New Unified Memory of CUDA 8</span
-                        >
-                    </div>
-                    <div class="entry-body">
-                        With Frank Zhao. GTC 2017, San Jose. August 2017.
-                    </div>
-                </div>
-                <div class="entry resource-entry">
-                    <div class="entry-body">
-                        <span class="publication-title">Multi2Sim 5.0</span>
-                    </div>
-                    <div class="entry-body">
-                        Tutorial at IISWC 2016. September 2016.
-                    </div>
-                </div>
-            </div>
+            <CvTable entries={talkEntries} />
         </section>
 
         <section class="cv-section" id="teaching">
@@ -2782,7 +2626,7 @@
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         color: #111;
         font-size: 0.85rem;
-        line-height: 1.5;
+        line-height: 1.45;
     }
 
     .cv-container {
@@ -2821,7 +2665,7 @@
     .contact {
         text-align: right;
         font-size: 0.85rem;
-        line-height: 1.4;
+        line-height: 1.35;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -3000,19 +2844,19 @@
         margin-top: 0.2rem;
     }
 
-    .publication-title {
+    :global(.publication-title) {
         /* color: #1d2f4b; */
         font-weight: 700;
     }
 
-    .self-name {
+    :global(.self-name) {
         text-decoration: underline;
         text-decoration-thickness: 2px;
         text-decoration-color: #1d2f4b;
         /* font-weight: 600; */
     }
 
-    .wm-advisee {
+    :global(.wm-advisee) {
         text-decoration-line: underline;
         text-decoration-style: wavy;
         text-decoration-color: #1d2f4b;

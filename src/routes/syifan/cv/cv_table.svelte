@@ -1,11 +1,18 @@
 <script lang="ts">
     import CvTableEntry from './cv_table_entry.svelte'
 
-    type TableCell = string | number | boolean | null | undefined | { html: string }
+    type TableCell =
+        | string
+        | number
+        | boolean
+        | null
+        | undefined
+        | { html: string }
 
     type TableEntry = {
         left: Array<TableCell>
         right: Array<TableCell>
+        hanging?: TableCell
     }
 
     export let entries: TableEntry[] = []
@@ -15,7 +22,11 @@
     <table class="cv-table">
         <tbody>
             {#each entries as entry}
-                <CvTableEntry left={entry.left} right={entry.right} />
+                <CvTableEntry
+                    hanging={entry.hanging ?? null}
+                    left={entry.left}
+                    right={entry.right}
+                />
             {/each}
         </tbody>
     </table>
