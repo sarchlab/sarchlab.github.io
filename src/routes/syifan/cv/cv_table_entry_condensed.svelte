@@ -48,17 +48,28 @@
                 {/if}
             </td>
         {/if}
-        <td class:left-header={index === 0 && left[index] != null}>
-            {#if left[index] != null}
-                {#if isHtmlValue(left[index])}
-                    {@html left[index].html}
-                {:else if index === 0}
-                    <strong>{left[index]}</strong>
-                {:else}
-                    {left[index]}
-                {/if}
-            {/if}
-        </td>
+
+        {#if index === 0}
+            <td class="left-cell" rowspan={rowCount}>
+                {#each left as value, leftIndex}
+                    {#if value != null}
+                        <span
+                            class:left-header-span={leftIndex === 0}
+                            class:left-entry-span={leftIndex > 0}
+                        >
+                            {#if isHtmlValue(value)}
+                                {@html value.html}
+                            {:else if leftIndex === 0}
+                                <strong>{value}</strong>
+                            {:else}
+                                {value}
+                            {/if}
+                        </span>
+                    {/if}
+                {/each}
+            </td>
+        {/if}
+
         {#if hasRightColumn}
             <td class="right-cell">
                 {#if right[index] != null}
@@ -85,24 +96,43 @@
         line-height: 1.2;
     }
 
-    tr:not(.entry-start) td {
-        font-size: 0.9em;
-    }
-
     .hanging-cell {
         padding: 0.05rem 0.5rem 0.05rem 0;
         white-space: nowrap;
         vertical-align: top;
     }
 
+    .left-cell {
+        padding-right: 0.5rem;
+        min-width: 10rem;
+    }
+
+    .left-cell span {
+        display: inline;
+        white-space: nowrap;
+    }
+
+    /* .left-cell span:not(:last-child)::after {
+        content: '; ';
+        color: #666;
+    } */
+
+    .left-header-span {
+        font-size: 1.05em;
+    }
+
+    .left-entry-span {
+        font-size: 0.95em;
+    }
+
+    .left-cell strong {
+        font-weight: 600;
+    }
+
     .right-cell {
         padding-right: 0;
         text-align: right;
         white-space: nowrap;
-    }
-
-    .left-header strong {
-        font-weight: 600;
     }
 
     .entry-start td {

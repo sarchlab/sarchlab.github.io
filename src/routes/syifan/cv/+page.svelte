@@ -343,21 +343,21 @@
             <h3>Conference Organization</h3>
             <CvTable entries={serviceConferenceOrgEntries} />
             <h3>Workshop Chairing</h3>
-            <CvTable entries={serviceWorkshopChairEntries} />
+            <CvTable entries={serviceWorkshopChairEntries} condensed />
             <h3>Funding Agency Panelist</h3>
             <CvTable entries={serviceFundingPanelEntries} />
             <h3>Program Committee</h3>
-            <CvTable entries={serviceProgramCommitteeEntries} />
+            <CvTable entries={serviceProgramCommitteeEntries} condensed />
             <h3>Journal Reviewer</h3>
-            <CvTable entries={serviceJournalReviewerEntries} />
+            <CvTable entries={serviceJournalReviewerEntries} condensed />
             <h3>External Review Committee / Ad-hoc Reviewer</h3>
-            <CvTable entries={serviceExternalReviewEntries} />
+            <CvTable entries={serviceExternalReviewEntries} condensed />
             <h3>William &amp; Mary Undergraduate Advising</h3>
-            <CvTable entries={serviceWmAdvisingEntries} />
+            <CvTable entries={serviceWmAdvisingEntries} condensed />
             <h3>William &amp; Mary University-Wide Committee</h3>
-            <CvTable entries={serviceWmUniversityEntries} />
+            <CvTable entries={serviceWmUniversityEntries} condensed />
             <h3>William &amp; Mary Department-Level Committee</h3>
-            <CvTable entries={serviceWmDepartmentEntries} />
+            <CvTable entries={serviceWmDepartmentEntries} condensed />
         </section>
     </main>
 

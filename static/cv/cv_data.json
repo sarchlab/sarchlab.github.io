@@ -5,10 +5,7 @@
                 "Assistant Professor",
                 "Computer Science, William & Mary"
             ],
-            "right": [
-                "Williamsburg, VA",
-                "8/2020 - Present"
-            ]
+            "right": ["Williamsburg, VA", "8/2020 - Present"]
         }
     ],
     "educationEntries": [
@@ -17,114 +14,68 @@
                 "Ph.D. in Computer Engineering",
                 "Northeastern University"
             ],
-            "right": [
-                "9/2013 - 8/2020",
-                "Boston, MA"
-            ]
+            "right": ["9/2013 - 8/2020", "Boston, MA"]
         },
         {
             "left": [
                 "M.S. in Electrical Engineering",
                 "University at Buffalo"
             ],
-            "right": [
-                "9/2011 - 6/2013",
-                "Buffalo, NY"
-            ]
+            "right": ["9/2011 - 6/2013", "Buffalo, NY"]
         },
         {
             "left": [
                 "B.Eng. in Electrical Engineering",
                 "Huazhong University of Science and Technology"
             ],
-            "right": [
-                "9/2007 - 6/2011",
-                "Wuhan, China"
-            ]
+            "right": ["9/2007 - 6/2011", "Wuhan, China"]
         },
         {
             "left": [
                 "Bachelor in Business Administration (Minor)",
                 "Wuhan University"
             ],
-            "right": [
-                "9/2008 - 6/2011",
-                "Wuhan, China"
-            ]
+            "right": ["9/2008 - 6/2011", "Wuhan, China"]
         }
     ],
     "awardsEntries": [
         {
-            "left": [
-                "CAREER Award",
-                "NSF"
-            ],
-            "right": [
-                "2024"
-            ]
+            "left": ["CAREER Award", "NSF"],
+            "right": ["2024"]
         },
         {
-            "left": [
-                "Best Paper Award",
-                "CHI'23"
-            ],
-            "right": [
-                "2023"
-            ]
+            "left": ["Best Paper Award", "CHI'23"],
+            "right": ["2023"]
         },
         {
-            "left": [
-                "Best Paper Honorable Mention",
-                "CHI'20"
-            ],
-            "right": [
-                "2020"
-            ]
+            "left": ["Best Paper Honorable Mention", "CHI'20"],
+            "right": ["2020"]
         },
         {
             "left": [
                 "Outstanding Graduate Student in Experiential Learning",
                 "Northeastern University"
             ],
-            "right": [
-                "2019"
-            ]
+            "right": ["2019"]
         },
         {
             "left": [
                 "Teaching Award",
                 "Northeastern University College of Engineering"
             ],
-            "right": [
-                "2019"
-            ]
+            "right": ["2019"]
         },
         {
-            "left": [
-                "Best Paper Award",
-                "ICPE"
-            ],
-            "right": [
-                "2018"
-            ]
+            "left": ["Best Paper Award", "ICPE"],
+            "right": ["2018"]
         },
         {
-            "left": [
-                "Best Paper Candidate",
-                "IISWC"
-            ],
-            "right": [
-                "2016"
-            ]
+            "left": ["Best Paper Candidate", "IISWC"],
+            "right": ["2016"]
         },
         {
-            "left": [
-                "Best Student Paper Award",
-                "WUWNET"
-            ],
-            "right": [
-                "2013"
-            ]
+            "left": ["Best Student Paper Award", "WUWNET"],
+            "right": ["2013"]
         }
     ],
     "industryEntries": [
@@ -134,10 +85,7 @@
                 "Software Engineer (Co-op)",
                 "Performance modeling and graphics simulator development for AMD Navi GPUs"
             ],
-            "right": [
-                "7/2018 - 12/2018",
-                "Boxborough, MA"
-            ]
+            "right": ["7/2018 - 12/2018", "Boxborough, MA"]
         },
         {
             "left": [
@@ -145,10 +93,7 @@
                 "Software Engineer (Co-op)",
                 "Cloud-based GPU-as-a-service system design, development, and deployment"
             ],
-            "right": [
-                "7/2016 - 12/2016",
-                "Hopkinton, MA"
-            ]
+            "right": ["7/2016 - 12/2016", "Hopkinton, MA"]
         }
     ],
     "grantEntries": [
@@ -159,9 +104,7 @@
                 "$100,000",
                 "Sole PI"
             ],
-            "right": [
-                "12/2024"
-            ]
+            "right": ["12/2024"]
         },
         {
             "left": [
@@ -170,9 +113,7 @@
                 "$598,555",
                 "Sole PI"
             ],
-            "right": [
-                "4/2025 - 3/2030"
-            ]
+            "right": ["4/2025 - 3/2030"]
         },
         {
             "left": [
@@ -183,9 +124,7 @@
                     "html": "PI: <span class=\"self-name\">Yifan Sun</span> (lead institution lead PI), Adwait Jog, Sreepathi Pai"
                 }
             ],
-            "right": [
-                "5/2024 - 4/2028"
-            ]
+            "right": ["5/2024 - 4/2028"]
         },
         {
             "left": [
@@ -194,9 +133,7 @@
                 "$50,000",
                 "Sole PI"
             ],
-            "right": [
-                "12/2023"
-            ]
+            "right": ["12/2023"]
         },
         {
             "left": [
@@ -205,9 +142,7 @@
                 "$50,000",
                 "Sole PI"
             ],
-            "right": [
-                "12/2023"
-            ]
+            "right": ["12/2023"]
         },
         {
             "left": [
@@ -216,9 +151,7 @@
                 "$44,000",
                 "Sole PI"
             ],
-            "right": [
-                "5/2023"
-            ]
+            "right": ["5/2023"]
         },
         {
             "left": [
@@ -227,9 +160,7 @@
                 "$175,000",
                 "Sole PI"
             ],
-            "right": [
-                "5/2023 - 4/2026"
-            ]
+            "right": ["5/2023 - 4/2026"]
         },
         {
             "left": [
@@ -240,9 +171,7 @@
                     "html": "PI: <span class=\"self-name\">Yifan Sun</span> (lead institution lead PI), Katherine E. Isaacs (University of Utah)"
                 }
             ],
-            "right": [
-                "3/2023 - 2/2026"
-            ]
+            "right": ["3/2023 - 2/2026"]
         },
         {
             "left": [
@@ -251,9 +180,7 @@
                 "$60,000 + 2x AMD MI100 GPU",
                 "Sole PI"
             ],
-            "right": [
-                "3/2022"
-            ]
+            "right": ["3/2022"]
         },
         {
             "left": [
@@ -264,9 +191,7 @@
                     "html": "PI: Huajie Shao, <span class=\"self-name\">Yifan Sun</span>"
                 }
             ],
-            "right": [
-                "2/2022"
-            ]
+            "right": ["2/2022"]
         },
         {
             "left": [
@@ -277,9 +202,7 @@
                     "html": "PI: Dmitry Evtyushkin; Co-PI: Evgenia Smirni, <span class=\"self-name\">Yifan Sun</span>, Adwait Nadkarni"
                 }
             ],
-            "right": [
-                "12/2021"
-            ]
+            "right": ["12/2021"]
         },
         {
             "left": [
@@ -288,9 +211,7 @@
                 "$40,000",
                 "Sole PI"
             ],
-            "right": [
-                "9/2021"
-            ]
+            "right": ["9/2021"]
         },
         {
             "left": [
@@ -299,9 +220,7 @@
                 "$40,000",
                 "Sole PI"
             ],
-            "right": [
-                "4/2021"
-            ]
+            "right": ["4/2021"]
         }
     ],
     "softwareEntries": [
@@ -368,60 +287,42 @@
                 "User-Friendly Tools in Akita 3.0",
                 "The 2nd Workshop on Computer Architecture Modeling and Simulation (CAMS '24)"
             ],
-            "right": [
-                "",
-                "11/2024"
-            ]
+            "right": ["", "11/2024"]
         },
         {
             "left": [
                 "On the Human Side of Computer Architecture, Towards Explainable Architecture",
                 "North Carolina State University"
             ],
-            "right": [
-                "",
-                "10/2024"
-            ]
+            "right": ["", "10/2024"]
         },
         {
             "left": [
                 "Towards Building Explainable Computer Architecture",
                 "Lehigh University"
             ],
-            "right": [
-                "",
-                "2/2023"
-            ]
+            "right": ["", "2/2023"]
         },
         {
             "left": [
                 "MGPUSim: A One-Stop Solution for GPU Architecture Simulation",
                 "The 2020 International Conference on High Performance Computing & Simulation (HPCS '20)"
             ],
-            "right": [
-                "",
-                "1/2021"
-            ]
+            "right": ["", "1/2021"]
         },
         {
             "left": [
                 "MGPUSim: A High-Flexibility, High-Performance, Multi-GPU Simulator",
                 "Alibaba"
             ],
-            "right": [
-                "",
-                "7/2020"
-            ]
+            "right": ["", "7/2020"]
         },
         {
             "left": [
                 "Exploring Multi-GPU Simulation and Visual Profiling with MGPUSim",
                 "With José L. Abellán, Trinayan Baruah, and David Kaeli. Tutorial at ISCA 2020"
             ],
-            "right": [
-                "",
-                "5/2020"
-            ]
+            "right": ["", "5/2020"]
         },
         {
             "left": [
@@ -431,83 +332,53 @@
                 "University of Pittsburgh",
                 "University of Central Florida"
             ],
-            "right": [
-                "",
-                "3/2020",
-                "3/2020",
-                "3/2020",
-                "3/2020"
-            ]
+            "right": ["", "3/2020", "3/2020", "3/2020", "3/2020"]
         },
         {
             "left": [
                 "Tutorial on the Akita Simulator Framework and MGPUSim",
                 "With Trinayan Baruah, Shi Dong, and David Kaeli. Tutorial at HPCA 2020"
             ],
-            "right": [
-                "",
-                "2/2020"
-            ]
+            "right": ["", "2/2020"]
         },
         {
             "left": [
                 "Research in the NUCAR Laboratory at Northeastern University",
                 "FutureWei. With David Kaeli"
             ],
-            "right": [
-                "",
-                "7/2019"
-            ]
+            "right": ["", "7/2019"]
         },
         {
             "left": [
                 "MGSim: a Flexible High-Performance Simulator for Multi-GPU Systems",
                 "International Workshop on OpenCL (IWOCL)"
             ],
-            "right": [
-                "",
-                "5/2019"
-            ]
+            "right": ["", "5/2019"]
         },
         {
             "left": [
                 "AKITA: A Go-Based Computer Architecture Simulator Framework",
                 "Google"
             ],
-            "right": [
-                "",
-                "5/2019"
-            ]
+            "right": ["", "5/2019"]
         },
         {
             "left": [
                 "Enabling Multi-GPU High Performance Computing with Memory System Design",
                 "Lightning talk at Boston University Red Hat Collaboratory"
             ],
-            "right": [
-                "",
-                "2/2019"
-            ]
+            "right": ["", "2/2019"]
         },
         {
             "left": [
                 "Benchmarking the New Unified Memory of CUDA 8",
                 "With Frank Zhao. GTC 2017, San Jose"
             ],
-            "right": [
-                "",
-                "8/2017"
-            ]
+            "right": ["", "8/2017"]
         },
         {
-            "left": [
-                "Multi2Sim 5.0",
-                "Tutorial at IISWC 2016"
-            ],
-            "right": [
-                "",
-                "9/2016"
-            ]
+            "left": ["Multi2Sim 5.0", "Tutorial at IISWC 2016"],
+            "right": ["", "9/2016"]
         }
     ],
     "teachingWMEntries": [
@@ -516,54 +387,42 @@
                 "CSCI654 - Advanced Computer Architecture",
                 "Graduate-level course; new course"
             ],
-            "right": [
-                "Spring 2025"
-            ]
+            "right": ["Spring 2025"]
         },
         {
             "left": [
                 "CSCI432 - Web Programming",
                 "Senior undergraduate-level course; new course"
             ],
-            "right": [
-                "Fall 2024, Fall 2025"
-            ]
+            "right": ["Fall 2024, Fall 2025"]
         },
         {
             "left": [
                 "CSCI780 - Computer Architecture Modeling and Simulation",
                 "Ph.D.-level course; new course"
             ],
-            "right": [
-                "Spring 2023"
-            ]
+            "right": ["Spring 2023"]
         },
         {
             "left": [
                 "CSCI780 - Data Visualization",
                 "Ph.D.-level course; new course"
             ],
-            "right": [
-                "Spring 2022, Spring 2024"
-            ]
+            "right": ["Spring 2022, Spring 2024"]
         },
         {
             "left": [
                 "CSCI780 - Topics in Computer Architecture",
                 "Ph.D.-level course; new course"
             ],
-            "right": [
-                "Spring 2021"
-            ]
+            "right": ["Spring 2021"]
         },
         {
             "left": [
                 "CSCI141 - Computational Problem Solving",
                 "Undergraduate Python programming course (1st-2nd year)"
             ],
-            "right": [
-                "Fall 2020 - Fall 2023"
-            ]
+            "right": ["Fall 2020 - Fall 2023"]
         }
     ],
     "teachingNEUEntries": [
@@ -573,9 +432,7 @@
                 "Co-instructor with Dr. Pereira da Silva Aloizio",
                 "Intermediate-level undergraduate course (3rd year)"
             ],
-            "right": [
-                "Fall 2019"
-            ]
+            "right": ["Fall 2019"]
         },
         {
             "left": [
@@ -584,9 +441,7 @@
                 "Intermediate-level undergraduate course (3rd year)",
                 "Course redesign with student learning score 4.7/5; instructor effectiveness 4.4/5"
             ],
-            "right": [
-                "Spring 2018"
-            ]
+            "right": ["Spring 2018"]
         },
         {
             "left": [
@@ -595,29 +450,17 @@
                 "Intermediate-level undergraduate course (2nd year)",
                 "Instructor effectiveness 4.6/5"
             ],
-            "right": [
-                "Fall 2017"
-            ]
+            "right": ["Fall 2017"]
         }
     ],
     "menteePhDEntries": [
         {
-            "left": [
-                "Yijia Shi",
-                "William & Mary"
-            ],
-            "right": [
-                "2024 - Present"
-            ]
+            "left": ["Yijia Shi", "William & Mary"],
+            "right": ["2024 - Present"]
         },
         {
-            "left": [
-                "Enze Xu",
-                "William & Mary"
-            ],
-            "right": [
-                "2024 - Present"
-            ]
+            "left": ["Enze Xu", "William & Mary"],
+            "right": ["2024 - Present"]
         },
         {
             "left": [
@@ -625,27 +468,15 @@
                 "William & Mary",
                 "Co-advised with Jie Ren"
             ],
-            "right": [
-                "2023 - Present"
-            ]
+            "right": ["2023 - Present"]
         },
         {
-            "left": [
-                "Sabila Al Jannat",
-                "William & Mary"
-            ],
-            "right": [
-                "2022 - Present"
-            ]
+            "left": ["Sabila Al Jannat", "William & Mary"],
+            "right": ["2022 - Present"]
         },
         {
-            "left": [
-                "Ying Li",
-                "William & Mary"
-            ],
-            "right": [
-                "2021 - Present"
-            ]
+            "left": ["Ying Li", "William & Mary"],
+            "right": ["2021 - Present"]
         },
         {
             "left": [
@@ -653,29 +484,17 @@
                 "William & Mary",
                 "Part-time, with full-time job at NASA"
             ],
-            "right": [
-                "2020 - Present"
-            ]
+            "right": ["2020 - Present"]
         }
     ],
     "menteeMasterEntries": [
         {
-            "left": [
-                "Daoxuan Xu",
-                "University of Florida"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Daoxuan Xu", "University of Florida"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Yuhui Bao",
-                "Northeastern University"
-            ],
-            "right": [
-                "2018 - 2020"
-            ]
+            "left": ["Yuhui Bao", "Northeastern University"],
+            "right": ["2018 - 2020"]
         }
     ],
     "menteeUndergradEntries": [
@@ -687,10 +506,7 @@
             "right": []
         },
         {
-            "left": [
-                "University of Michigan, Ann Arbor",
-                "Ali Mosallaei"
-            ],
+            "left": ["University of Michigan, Ann Arbor", "Ali Mosallaei"],
             "right": []
         },
         {
@@ -708,10 +524,7 @@
             "right": []
         },
         {
-            "left": [
-                "William & Mary",
-                "Xin Li (REU Student)"
-            ],
+            "left": ["William & Mary", "Xin Li (REU Student)"],
             "right": []
         }
     ],
@@ -723,9 +536,7 @@
                     "html": "<a href=\"https://news.wm.edu/2025/05/12/william-mary-professor-wins-nsf-career-award-to-study-computer-chip-performance/\" target=\"_blank\" rel=\"noreferrer\">William &amp; Mary professor wins NSF CAREER award to study computer chip performance; Sun brings human-centered approach to computer architecture</a>"
                 }
             ],
-            "right": [
-                "2025"
-            ]
+            "right": ["2025"]
         },
         {
             "left": [
@@ -734,9 +545,7 @@
                     "html": "<a href=\"https://news.wm.edu/2023/07/26/books-published-by-william-mary-faculty-in-2023/\" target=\"_blank\" rel=\"noreferrer\">Books published by William &amp; Mary faculty in 2023</a>"
                 }
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         },
         {
             "left": [
@@ -745,9 +554,7 @@
                     "html": "<a href=\"https://fivethirtyeight.com/features/the-datasets-were-looking-at-this-week-13/\" target=\"_blank\" rel=\"noreferrer\">The Datasets We&#8217;re Looking At This Week</a> (The <a href=\"https://chip-dataset.vercel.app\" target=\"_blank\" rel=\"noreferrer\">CHIP dataset</a> is highlighted by the &#8220;Data Is Plural&#8221; column.)"
                 }
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
             "left": [
@@ -756,9 +563,7 @@
                     "html": "<a href=\"https://www.wm.edu/news/stories/2022/misinformation-examination-how-trust-and-distrust-shift-during-covid-19.php\" target=\"_blank\" rel=\"noreferrer\">Misinformation examination: How trust and distrust shift during COVID-19</a>"
                 }
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
             "left": [
@@ -767,9 +572,7 @@
                     "html": "<a href=\"https://wydaily.com/news/2021/12/15/wm-professor-helps-medical-experts-study-covid-19-with-gpus/\" target=\"_blank\" rel=\"noreferrer\">W&amp;M Professor Helps Medical Experts Study COVID-19 With GPUs</a>"
                 }
             ],
-            "right": [
-                "2021"
-            ]
+            "right": ["2021"]
         },
         {
             "left": [
@@ -778,9 +581,7 @@
                     "html": "<a href=\"https://www.wm.edu/news/stories/2021/sun-is-teaching-covid-19-researchers-how-to-use-high-performance-amd-computers.php\" target=\"_blank\" rel=\"noreferrer\">Sun is Teaching COVID-19 Researchers How to Use High-Performance AMD Computers</a>"
                 }
             ],
-            "right": [
-                "2021"
-            ]
+            "right": ["2021"]
         },
         {
             "left": [
@@ -789,9 +590,7 @@
                     "html": "<a href=\"https://www.hipeac.net/magazine/7152/\" target=\"_blank\" rel=\"noreferrer\">MGPUSim announced at ISCA 2019</a>"
                 }
             ],
-            "right": [
-                "2019"
-            ]
+            "right": ["2019"]
         },
         {
             "left": [
@@ -800,9 +599,7 @@
                     "html": "<a href=\"https://coe.northeastern.edu/news/yifan-sun-and-nucar-research-lab-featured-in-hipeac-news/\" target=\"_blank\" rel=\"noreferrer\">Yifan Sun and NUCAR Research Lab featured in HiPEAC News</a>"
                 }
             ],
-            "right": [
-                "2019"
-            ]
+            "right": ["2019"]
         },
         {
             "left": [
@@ -811,9 +608,7 @@
                     "html": "<a href=\"https://news.northeastern.edu/2018/12/14/a-student-went-off-to-do-a-co-op-at-a-major-tech-firm-he-came-back-with-a-patent/?fbclid=IwAR1hRI8CoPk34xJ2jp0xAcG71p0cMSV-PEIu_C7yuJxWwHXSjmFxecMn1UY\" target=\"_blank\" rel=\"noreferrer\">A Student Went off to Do a Co-op at a Major Tech Firm. He Came Back With a Patent.</a>"
                 }
             ],
-            "right": [
-                "2018"
-            ]
+            "right": ["2018"]
         },
         {
             "left": [
@@ -822,9 +617,7 @@
                     "html": "<a href=\"https://www.wired.com/2013/10/undersea/\" target=\"_blank\" rel=\"noreferrer\">Finally, the Underwater We&#8217;ve All Been Waiting For</a>"
                 }
             ],
-            "right": [
-                "2013"
-            ]
+            "right": ["2013"]
         },
         {
             "left": [
@@ -833,38 +626,21 @@
                     "html": "<a href=\"https://www.nbcnews.com/technolog/deep-sea-internet-detect-tsunamis-spy-smugglers-discover-oil-8C11399875\" target=\"_blank\" rel=\"noreferrer\">Deep-sea Internet to Detect Tsunamis, Spy on Smugglers, and Discover Oil</a>"
                 }
             ],
-            "right": [
-                "2013"
-            ]
+            "right": ["2013"]
         }
     ],
     "servicePhdCommitteeEntries": [
         {
-            "left": [
-                "Lishan Yang",
-                "Joined GMU as Assistant Professor"
-            ],
-            "right": [
-                "William & Mary",
-                "Defended Spring 2022"
-            ]
+            "left": ["Lishan Yang", "Joined GMU as Assistant Professor"],
+            "right": ["William & Mary", "Defended Spring 2022"]
         },
         {
-            "left": [
-                "Yuhui Bao",
-                "First Job @ AMD Inc."
-            ],
-            "right": [
-                "Northeastern University"
-            ]
+            "left": ["Yuhui Bao", "First Job @ AMD Inc."],
+            "right": ["Northeastern University"]
         },
         {
-            "left": [
-                "Matin Raayai"
-            ],
-            "right": [
-                "Northeastern University"
-            ]
+            "left": ["Matin Raayai"],
+            "right": ["Northeastern University"]
         }
     ],
     "serviceMasterCommitteeEntries": [
@@ -873,10 +649,7 @@
                 "Jiangtao Kong",
                 "Continued Ph.D. study at William & Mary"
             ],
-            "right": [
-                "William & Mary",
-                "Defended Spring 2023"
-            ]
+            "right": ["William & Mary", "Defended Spring 2023"]
         }
     ],
     "serviceOrgEntries": [
@@ -885,9 +658,7 @@
                 "Member",
                 "Technical Community on Microprogramming and Microarchitecture (TCuARCH)"
             ],
-            "right": [
-                "2025 - Present"
-            ]
+            "right": ["2025 - Present"]
         }
     ],
     "serviceConferenceOrgEntries": [
@@ -896,28 +667,21 @@
                 "Local Organization Chair",
                 "The 17th NASA Formal Methods Symposium (NFM '25)"
             ],
-            "right": [
-                "William & Mary",
-                "2025"
-            ]
+            "right": ["William & Mary, 2025"]
         },
         {
             "left": [
                 "Artifact Evaluation Chair",
                 "2025 IEEE International Symposium on Workload Characterization (IISWC '25)"
             ],
-            "right": [
-                "2025"
-            ]
+            "right": ["2025"]
         },
         {
             "left": [
                 "Workshop/Tutorial Chair",
                 "IEEE International Symposium on High-Performance Computer Architecture (HPCA '23)"
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         }
     ],
     "serviceWorkshopChairEntries": [
@@ -926,63 +690,49 @@
                 "Chair",
                 "17th Workshop on General Purpose Processing Using GPU (GPGPU '25)"
             ],
-            "right": [
-                "2025"
-            ]
+            "right": ["2025"]
         },
         {
             "left": [
                 "Chair",
                 "2nd Workshop on Computer Architecture Modeling and Simulation (CAMS '24)"
             ],
-            "right": [
-                "2024"
-            ]
+            "right": ["2024"]
         },
         {
             "left": [
                 "Chair",
                 "16th Workshop on General Purpose Processing Using GPU (GPGPU '24)"
             ],
-            "right": [
-                "2024"
-            ]
+            "right": ["2024"]
         },
         {
             "left": [
                 "Chair",
                 "1st Workshop on Computer Architecture Modeling and Simulation (CAMS '23)"
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         },
         {
             "left": [
                 "Chair",
                 "15th Workshop on General Purpose Processing Using GPU (GPGPU '23)"
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         },
         {
             "left": [
                 "Chair",
                 "14th Workshop on General Purpose Processing Using GPU (GPGPU '22)"
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
             "left": [
                 "Web Chair",
                 "6th Workshop on General Purpose Processing Using GPU (GPGPU '16)"
             ],
-            "right": [
-                "2016"
-            ]
+            "right": ["2016"]
         }
     ],
     "serviceFundingPanelEntries": [
@@ -991,18 +741,14 @@
                 "DOE Panelist",
                 "Office of Advanced Scientific Computing Research (ASCR), Early Career Research Program (ECRP)"
             ],
-            "right": [
-                "2025"
-            ]
+            "right": ["2025"]
         },
         {
             "left": [
                 "NSF Panelist",
                 "NSF Cyberinfrastructure for Sustained Scientific Innovation (CSSI), Element"
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         }
     ],
     "serviceProgramCommitteeEntries": [
@@ -1011,144 +757,112 @@
                 "HPCA '25",
                 "31st IEEE International Symposium on High-Performance Computer Architecture"
             ],
-            "right": [
-                "2025"
-            ]
+            "right": ["2025"]
         },
         {
             "left": [
                 "CF '24",
                 "21st ACM International Conference on Computing Frontiers"
             ],
-            "right": [
-                "2024"
-            ]
+            "right": ["2024"]
         },
         {
             "left": [
                 "HPCA '24",
                 "30th IEEE International Symposium on High-Performance Computer Architecture"
             ],
-            "right": [
-                "2024"
-            ]
+            "right": ["2024"]
         },
         {
             "left": [
                 "AccML '24",
                 "6th Workshop on Accelerated Machine Learning"
             ],
-            "right": [
-                "2024"
-            ]
+            "right": ["2024"]
         },
         {
             "left": [
                 "ICCD '24",
                 "42nd IEEE International Conference on Computer Design"
             ],
-            "right": [
-                "2024"
-            ]
+            "right": ["2024"]
         },
         {
             "left": [
                 "ICCD '23",
                 "41st IEEE International Conference on Computer Design"
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         },
         {
             "left": [
                 "CF '23",
                 "20th ACM International Conference on Computing Frontiers"
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         },
         {
             "left": [
                 "AccML '23",
                 "5th Workshop on Accelerated Machine Learning"
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         },
         {
             "left": [
                 "HPCA '23",
                 "IEEE International Symposium on High-Performance Computer Architecture"
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         },
         {
             "left": [
                 "SBAC-PAD '22",
                 "International Symposium on Computer Architecture and High Performance Computing"
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
             "left": [
                 "ICCD '22",
                 "40th IEEE International Conference on Computer Design"
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
             "left": [
                 "AccML '22",
                 "4th Workshop on Accelerated Machine Learning"
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
             "left": [
                 "SBAC-PAD '21",
                 "IEEE International Symposium on Computer Architecture and High Performance Computing"
             ],
-            "right": [
-                "2021"
-            ]
+            "right": ["2021"]
         },
         {
             "left": [
                 "ICCD '21",
                 "40th IEEE International Conference on Computer Design"
             ],
-            "right": [
-                "2021"
-            ]
+            "right": ["2021"]
         },
         {
             "left": [
                 "ICCD '20",
                 "39th IEEE International Conference on Computer Design"
             ],
-            "right": [
-                "2020"
-            ]
+            "right": ["2020"]
         },
         {
             "left": [
                 "GPGPU '20",
                 "13th Workshop on General Purpose Processing Using GPU"
             ],
-            "right": [
-                "2020"
-            ]
+            "right": ["2020"]
         }
     ],
     "serviceJournalReviewerEntries": [
@@ -1157,143 +871,91 @@
                 "TACO",
                 "ACM Transactions on Architecture and Code Optimization"
             ],
-            "right": [
-                "2025"
-            ]
+            "right": ["2025"]
         },
         {
-            "left": [
-                "TCC",
-                "IEEE Transactions on Cloud Computing"
-            ],
-            "right": [
-                "2024"
-            ]
+            "left": ["TCC", "IEEE Transactions on Cloud Computing"],
+            "right": ["2024"]
         },
         {
-            "left": [
-                "JPDC",
-                "Journal of Parallel and Distributed Computing"
-            ],
-            "right": [
-                "2023"
-            ]
+            "left": ["JPDC", "Journal of Parallel and Distributed Computing"],
+            "right": ["2023"]
         },
         {
             "left": [
                 "TACO",
                 "ACM Transactions on Architecture and Code Optimization"
             ],
-            "right": [
-                "2023"
-            ]
+            "right": ["2023"]
         },
         {
             "left": [
                 "TOMPECS",
                 "ACM Transactions on Modeling and Performance Evaluation of Computing Systems"
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
             "left": [
                 "TACO",
                 "ACM Transactions on Architecture and Code Optimization"
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
-            "left": [
-                "FGCS",
-                "Future Generation Computer Systems"
-            ],
-            "right": [
-                "2022"
-            ]
+            "left": ["FGCS", "Future Generation Computer Systems"],
+            "right": ["2022"]
         },
         {
             "left": [
                 "TPDS",
                 "IEEE Transactions on Parallel and Distributed Systems"
             ],
-            "right": [
-                "2022"
-            ]
+            "right": ["2022"]
         },
         {
-            "left": [
-                "IEEE Micro"
-            ],
-            "right": [
-                "2022"
-            ]
+            "left": ["IEEE Micro"],
+            "right": ["2022"]
         },
         {
             "left": [
                 "TPDS",
                 "IEEE Transactions on Parallel and Distributed Systems"
             ],
-            "right": [
-                "2021"
-            ]
+            "right": ["2021"]
         },
         {
             "left": [
                 "TACO",
                 "ACM Transactions on Architecture and Code Optimization"
             ],
-            "right": [
-                "2021"
-            ]
+            "right": ["2021"]
         },
         {
-            "left": [
-                "CAL",
-                "IEEE Computer Architecture Letters"
-            ],
-            "right": [
-                "2021"
-            ]
+            "left": ["CAL", "IEEE Computer Architecture Letters"],
+            "right": ["2021"]
         },
         {
-            "left": [
-                "JPDC",
-                "Journal of Parallel and Distributed Computing"
-            ],
-            "right": [
-                "2020"
-            ]
+            "left": ["JPDC", "Journal of Parallel and Distributed Computing"],
+            "right": ["2020"]
         },
         {
             "left": [
                 "TPDS",
                 "IEEE Transactions on Parallel and Distributed Systems"
             ],
-            "right": [
-                "2020"
-            ]
+            "right": ["2020"]
         },
         {
-            "left": [
-                "TOC",
-                "IEEE Transactions on Computers"
-            ],
-            "right": [
-                "2020"
-            ]
+            "left": ["TOC", "IEEE Transactions on Computers"],
+            "right": ["2020"]
         },
         {
             "left": [
                 "TACO",
                 "ACM Transactions on Architecture and Code Optimization"
             ],
-            "right": [
-                "2020"
-            ]
+            "right": ["2020"]
         }
     ],
     "serviceExternalReviewEntries": [
@@ -1302,101 +964,55 @@
                 "ISPASS '25",
                 "IEEE International Symposium on Performance Analysis of Systems and Software"
             ],
-            "right": [
-                "2025"
-            ]
+            "right": ["2025"]
         },
         {
             "left": [
                 "ISCA '24",
                 "International Symposium on Computer Architecture (External Review Committee)"
             ],
-            "right": [
-                "2024"
-            ]
+            "right": ["2024"]
         },
         {
             "left": [
                 "PacificVis '24",
                 "IEEE Pacific Visualization Symposium (Ad-hoc Reviewer)"
             ],
-            "right": [
-                "2024"
-            ]
+            "right": ["2024"]
         }
     ],
     "serviceWmAdvisingEntries": [
         {
-            "left": [
-                "Pre-Major Advisor",
-                "7 students"
-            ],
-            "right": [
-                "2025 - 2026"
-            ]
+            "left": ["Pre-Major Advisor", "7 students"],
+            "right": ["2025 - 2026"]
         },
         {
-            "left": [
-                "Pre-Major Advisor",
-                "7 students"
-            ],
-            "right": [
-                "2024 - 2025"
-            ]
+            "left": ["Pre-Major Advisor", "7 students"],
+            "right": ["2024 - 2025"]
         },
         {
-            "left": [
-                "CS Major Advisor",
-                "4 students"
-            ],
-            "right": [
-                "2023 - 2024"
-            ]
+            "left": ["CS Major Advisor", "4 students"],
+            "right": ["2023 - 2024"]
         },
         {
-            "left": [
-                "Prem-Major Advisor",
-                "8 students"
-            ],
-            "right": [
-                "2023 - 2024"
-            ]
+            "left": ["Prem-Major Advisor", "8 students"],
+            "right": ["2023 - 2024"]
         },
         {
-            "left": [
-                "CS Major Advisor",
-                "1 student"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["CS Major Advisor", "1 student"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Pre-Major Advisor",
-                "10 students"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Pre-Major Advisor", "10 students"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "CS Major Advisor",
-                "1 student"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["CS Major Advisor", "1 student"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Pre-Major Advisor",
-                "6 students"
-            ],
-            "right": [
-                "2021 - 2022"
-            ]
+            "left": ["Pre-Major Advisor", "6 students"],
+            "right": ["2021 - 2022"]
         }
     ],
     "serviceWmUniversityEntries": [
@@ -1405,182 +1021,91 @@
                 "Member",
                 "Generative AI University Teaching & Learning Project (UTLP)"
             ],
-            "right": [
-                "2023 - 2024"
-            ]
+            "right": ["2023 - 2024"]
         },
         {
             "left": [
                 "Member",
                 "S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee"
             ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Member",
-                "Research Computing Advisory Committee"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Member", "Research Computing Advisory Committee"],
+            "right": ["2022 - 2023"]
         },
         {
             "left": [
                 "Member",
                 "S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee"
             ],
-            "right": [
-                "2021 - 2022"
-            ]
+            "right": ["2021 - 2022"]
         }
     ],
     "serviceWmDepartmentEntries": [
         {
-            "left": [
-                "Member",
-                "Computer Science Undergraduate Curriculum"
-            ],
-            "right": [
-                "2025 - 2026"
-            ]
+            "left": ["Member", "Computer Science Undergraduate Curriculum"],
+            "right": ["2025 - 2026"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Web Presence"
-            ],
-            "right": [
-                "2025 - 2026"
-            ]
+            "left": ["Member", "Computer Science Web Presence"],
+            "right": ["2025 - 2026"]
         },
         {
-            "left": [
-                "Chair",
-                "Computer Science Graduate Recruiting"
-            ],
-            "right": [
-                "2024 - 2025"
-            ]
+            "left": ["Chair", "Computer Science Graduate Recruiting"],
+            "right": ["2024 - 2025"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Web Presence"
-            ],
-            "right": [
-                "2024 - 2025"
-            ]
+            "left": ["Member", "Computer Science Web Presence"],
+            "right": ["2024 - 2025"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Colloquium"
-            ],
-            "right": [
-                "2024 - 2025"
-            ]
+            "left": ["Member", "Computer Science Colloquium"],
+            "right": ["2024 - 2025"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Graduate Recruiting"
-            ],
-            "right": [
-                "2023 - 2024"
-            ]
+            "left": ["Member", "Computer Science Graduate Recruiting"],
+            "right": ["2023 - 2024"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Web Presence"
-            ],
-            "right": [
-                "2023 - 2024"
-            ]
+            "left": ["Member", "Computer Science Web Presence"],
+            "right": ["2023 - 2024"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Colloquium"
-            ],
-            "right": [
-                "2023 - 2024"
-            ]
+            "left": ["Member", "Computer Science Colloquium"],
+            "right": ["2023 - 2024"]
         },
         {
-            "left": [
-                "Chair",
-                "Computer Science Web Presence"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Chair", "Computer Science Web Presence"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Member",
-                "Data Science Faculty Recruitment"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Member", "Data Science Faculty Recruitment"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Colloquium"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Member", "Computer Science Colloquium"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Chair",
-                "Computer Science Graduate Admission"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Chair", "Computer Science Graduate Admission"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Graduate Recruiting"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Member", "Computer Science Graduate Recruiting"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science System"
-            ],
-            "right": [
-                "2022 - 2023"
-            ]
+            "left": ["Member", "Computer Science System"],
+            "right": ["2022 - 2023"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Web Presence"
-            ],
-            "right": [
-                "2021 - 2022"
-            ]
+            "left": ["Member", "Computer Science Web Presence"],
+            "right": ["2021 - 2022"]
         },
         {
-            "left": [
-                "Member",
-                "Computer Science Curriculum"
-            ],
-            "right": [
-                "2021 - 2022"
-            ]
+            "left": ["Member", "Computer Science Curriculum"],
+            "right": ["2021 - 2022"]
         }
     ]
 }
