@@ -67,6 +67,8 @@
         venue: string
         venue_full?: string
         year: number
+        month?: number
+        day?: number
         tags: string[]
         links: PublicationLink[]
         type: PublicationType
@@ -75,7 +77,11 @@
         acceptance_comment?: string
     }
 
-    export let data: { cvData: CvData; publicationList: Publication[] }
+    export let data: {
+        cvData: CvData
+        publicationList: Publication[]
+        showPublicationDetails: boolean
+    }
 
     const {
         academicAppointments,
@@ -106,6 +112,9 @@
     } = data.cvData
 
     const publicationList = data.publicationList
+    const showPublicationDetails = data.showPublicationDetails
+
+    let showDetails = showPublicationDetails
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -228,41 +237,49 @@
                 title="Peer-Reviewed Conference Papers"
                 types="conference"
                 publications={publicationList}
+                {showDetails}
             />
             <CvPubTable
                 title="Journals"
                 types="journal"
                 publications={publicationList}
+                {showDetails}
             />
             <CvPubTable
                 title="Books"
                 types="book"
                 publications={publicationList}
+                {showDetails}
             />
             <CvPubTable
                 title="Translation of My Books"
                 types="bookTranslation"
                 publications={publicationList}
+                {showDetails}
             />
             <CvPubTable
                 title="Book Chapters"
                 types="bookChapter"
                 publications={publicationList}
+                {showDetails}
             />
             <CvPubTable
                 title="Patents"
                 types="patent"
                 publications={publicationList}
+                {showDetails}
             />
             <CvPubTable
                 title="Workshop or Poster Publications"
                 types="workshop"
                 publications={publicationList}
+                {showDetails}
             />
             <CvPubTable
                 title="Preprints"
                 types="preprint"
                 publications={publicationList}
+                {showDetails}
             />
         </section>
 
@@ -347,6 +364,14 @@
     <div class="floating-actions" aria-label="page controls">
         <button type="button" class="action-button" on:click={scrollToTop}>
             Back to Top
+        </button>
+        <button
+            type="button"
+            class="action-button"
+            on:click={() => (showDetails = !showDetails)}
+            aria-pressed={showDetails}
+        >
+            {showDetails ? 'Hide Details' : 'Show More Details'}
         </button>
         <button type="button" class="action-button" on:click={triggerPrint}>
             Download PDF
@@ -525,7 +550,7 @@
         font-size: 1.2rem;
         /* letter-spacing: 0.12em; */
         /* text-transform: uppercase; */
-        margin: 1rem 0 0.6rem;
+        margin: 1.2rem 0 0 0;
         color: #243654;
         font-weight: 500;
         text-decoration: underline;

@@ -6,10 +6,7 @@
         "year": 2025,
         "month": 3,
         "day": 1,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [],
         "type": "workshop",
         "venue_full": "17th Workshop on General Purpose Processing Using GPU"
@@ -21,10 +18,7 @@
         "year": 2025,
         "month": 3,
         "day": 1,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -33,7 +27,7 @@
             }
         ],
         "type": "workshop",
-        "venue_full": "17th Workshop on General Purpose Processing Using GPU "
+        "venue_full": "17th Workshop on General Purpose Processing Using GPUs"
     },
     {
         "title": "Accelerated Computing with HIP, 2nd Edition",
@@ -42,10 +36,7 @@
         "year": 2025,
         "month": 1,
         "day": 31,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [],
         "type": "book",
         "venue_full": "Self-published",
@@ -58,16 +49,13 @@
         "year": 2025,
         "month": 5,
         "day": 11,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [],
         "type": "conference",
         "venue_full": "2025 IEEE International Symposium on Performance Analysis of Systems and Software",
         "identification_information": "137–149.",
         "doi": "https://doi.org/10.1109/ISPASS64960.2025.00022",
-        "acceptance_comment": "Acceptance: 28/99 (≈28%)"
+        "acceptance_comment": "Acceptance Rate: 28/99 (~28%)"
     },
     {
         "title": "NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems",
@@ -76,10 +64,7 @@
         "year": 2025,
         "month": 6,
         "day": 21,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -91,7 +76,7 @@
         "venue_full": "52nd International Symposium on Computer Architecture",
         "identification_information": "1064–1078.",
         "doi": "https://doi.org/10.1145/3695053.3731040",
-        "acceptance_comment": "Acceptance: 132/570 (≈23.2%)"
+        "acceptance_comment": "Acceptance Rate: 132/570 (~23.2%)"
     },
     {
         "title": "The Sparsity-Aware LazyGPU Architecture",
@@ -100,10 +85,7 @@
         "year": 2025,
         "month": 6,
         "day": 21,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -115,7 +97,7 @@
         "venue_full": "52nd International Symposium on Computer Architecture",
         "identification_information": "1020–1034.",
         "doi": "https://doi.org/10.1145/3695053.3731009",
-        "acceptance_comment": "Acceptance: 132/570 (≈23.2%)"
+        "acceptance_comment": "Acceptance Rate: 132/570 (~23.2%)"
     },
     {
         "title": "TrioSim: A Lightweight Simulator for Large-Scale DNN Workloads on Multi-GPU Systems",
@@ -124,10 +106,7 @@
         "year": 2025,
         "month": 6,
         "day": 21,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -144,7 +123,7 @@
         "venue_full": "52nd International Symposium on Computer Architecture",
         "identification_information": "1524–1538.",
         "doi": "https://doi.org/10.1145/3695053.3731082",
-        "acceptance_comment": "Acceptance: 132/570 (≈23.2%)"
+        "acceptance_comment": "Acceptance Rate: 132/570 (~23.2%)"
     },
     {
         "title": "Understanding the Practices, Perceptions, and (Dis)Trust of Generative AI among Instructors: A Mixed-methods Study in the U.S. Higher Education",
@@ -153,10 +132,7 @@
         "year": 2025,
         "month": 2,
         "day": 10,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [],
         "type": "journal",
         "venue_full": "Computers & Education: Artificial Intelligence",
@@ -170,16 +146,13 @@
         "year": 2025,
         "month": 7,
         "day": 22,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [],
         "type": "conference",
-        "venue_full": "12th ACM Conference on Learning @ Scale",
+        "venue_full": "12th ACM Conference on Learning at Scale",
         "identification_information": "83-94.",
         "doi": "https://doi.org/10.1145/3698205.3729544",
-        "acceptance_comment": "Acceptance: 18/84 (≈21.4%)"
+        "acceptance_comment": "Acceptance Rate: 18/84 (~21.4%)"
     },
     {
         "title": "A Survey of Artificial Intelligence Approaches to Safety and Mission-Critical Systems",
@@ -188,10 +161,7 @@
         "month": 4,
         "day": 21,
         "venue": "ICNS 2024",
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [],
         "type": "workshop",
         "venue_full": "24th Integrated Communications, Navigation and Surveillance Conference"
@@ -201,9 +171,7 @@
         "authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
         "year": 2024,
         "venue": "Moscow University Press",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [],
         "type": "bookTranslation",
         "venue_full": "Supercomputing Education Series, Moscow University Press",
@@ -213,12 +181,9 @@
     {
         "title": "Evaluating the Effectiveness of LLMs in Introductory Computer Science Education: A Semester-Long Field Study",
         "authors": "Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
-        "venue": "Learning @ Scale 2024",
+        "venue": "L@S 2024",
         "year": 2024,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -227,10 +192,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "Eleventh ACM Conference on Learning @ Scale (L@S 2024)",
+        "venue_full": "Eleventh ACM Conference on Learning at Scale",
         "identification_information": "63–74.",
         "doi": "https://doi.org/10.1145/3657604.3662036",
-        "acceptance_comment": "Acceptance: 22/90 (≈24.4%)",
+        "acceptance_comment": "Acceptance Rate: 22/90 (~24.4%)",
         "month": 7,
         "day": 18
     },
@@ -239,10 +204,7 @@
         "authors": "Yichen Luo, Daoxuan Xu, Gang Zhou, Yifan Sun, Sidi Lu",
         "venue": "MOST 2024",
         "year": 2024,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -251,7 +213,7 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2024 IEEE International Conference on Mobility, Operations, Services and Technologies (MOST 2024)",
+        "venue_full": "2024 IEEE International Conference on Mobility, Operations, Services and Technologies",
         "identification_information": "193–205.",
         "doi": "https://doi.org/10.1109/MOST60774.2024.00028",
         "month": 6,
@@ -262,10 +224,7 @@
         "authors": "Ali Mosallaei, Katherine Isaacs, Yifan Sun",
         "venue": "MICRO 2024",
         "year": 2024,
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -274,9 +233,9 @@
             }
         ],
         "type": "conference",
-        "venue_full": "57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024)",
+        "venue_full": "57th IEEE/ACM International Symposium on Microarchitecture",
         "doi": "https://doi.org/10.1109/MICRO61859.2024.00063",
-        "acceptance_comment": "Acceptance: 113/489 (≈22.7%)",
+        "acceptance_comment": "Acceptance Rate: 113/489 (~22.7%)",
         "month": 10,
         "day": 26
     },
@@ -285,13 +244,10 @@
         "authors": "Ying Li, Yifan Sun, Adwait Jog",
         "year": 2023,
         "venue": "ISPASS 2023",
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [],
         "type": "workshop",
-        "venue_full": "2023 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS 2023)",
+        "venue_full": "2023 IEEE International Symposium on Performance Analysis of Systems and Software",
         "month": 1,
         "day": 1
     },
@@ -300,10 +256,7 @@
         "authors": "Ying Li, Yifan Sun, Adwait Jog",
         "venue": "MICRO 2023",
         "year": 2023,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -312,10 +265,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "56th IEEE/ACM International Symposium on Microarchitecture (MICRO 2023)",
+        "venue_full": "56th IEEE/ACM International Symposium on Microarchitecture",
         "identification_information": "380–394.",
         "doi": "https://doi.org/10.1145/3613424.3614277",
-        "acceptance_comment": "Acceptance: 101/424 (≈23.8%)",
+        "acceptance_comment": "Acceptance Rate: 101/424 (~23.8%)",
         "month": 11,
         "day": 28
     },
@@ -324,10 +277,7 @@
         "authors": "Changxi Liu, Yifan Sun, Trevor E. Carlson",
         "venue": "MICRO 2023",
         "year": 2023,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -336,10 +286,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "56th IEEE/ACM International Symposium on Microarchitecture (MICRO 2023)",
+        "venue_full": "56th IEEE/ACM International Symposium on Microarchitecture",
         "identification_information": "1227–1241.",
         "doi": "https://doi.org/10.1145/3613424.3623773",
-        "acceptance_comment": "Acceptance: 101/424 (≈23.8%)",
+        "acceptance_comment": "Acceptance Rate: 101/424 (~23.8%)",
         "month": 11,
         "day": 28
     },
@@ -348,13 +298,10 @@
         "authors": "Ying Li, Yuhui Bao, Pranav Vaid, Gongyu Wang, Adwait Jog, Darius Bunandar, Ajay Joshi, Yifan Sun",
         "year": 2023,
         "venue": "CAMS 2023",
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [],
         "type": "workshop",
-        "venue_full": "First Workshop on Computer Architecture Modeling and Simulation (CAMS 2023)",
+        "venue_full": "First Workshop on Computer Architecture Modeling and Simulation",
         "month": 1,
         "day": 1
     },
@@ -363,10 +310,7 @@
         "authors": "Shaoyu Wang (co-first author), Hang Yan (co-first author), Katherine E. Isaacs, Yifan Sun",
         "venue": "TVCG",
         "year": 2023,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -375,7 +319,7 @@
             }
         ],
         "type": "journal",
-        "venue_full": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "venue_full": "IEEE Transactions on Visualization and Computer Graphics",
         "identification_information": "30(4), 1970–1983.",
         "doi": "https://doi.org/10.1109/TVCG.2023.3337173",
         "month": 4,
@@ -386,27 +330,22 @@
         "authors": "Yixuan Zhang, Joseph D Gaggiano, Nutchanon Yongsatianchot, Nurul M Suhaimi, Miso Kim, Yifan Sun, Jacqueline Griffin, and Andrea G Parker",
         "year": 2023,
         "venue": "CHI 2023",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [],
         "type": "conference",
-        "venue_full": "2023 CHI Conference on Human Factors in Computing Systems (CHI 2023)",
+        "venue_full": "2023 CHI Conference on Human Factors in Computing Systems",
         "identification_information": "Article 670, 1–22.",
         "doi": "https://doi.org/10.1145/3544548.3581019",
-        "acceptance_comment": "Acceptance: 879/3182 (≈27.6%)",
-        "month": 1,
-        "day": 1
+        "acceptance_comment": "Acceptance Rate: 879/3182 (~27.6%)",
+        "month": 4,
+        "day": 23
     },
     {
         "title": "Accelerated Computing with HIP",
         "authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
         "venue": "Book",
         "year": 2022,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [],
         "type": "book",
         "venue_full": "Self-published book (ISBN 979-8218107444)",
@@ -419,10 +358,7 @@
         "authors": "Yuhui Bao, Yifan Sun, Zlatan Feric, Michael Tian Shen, Micah Weston, José L. Abellán, Trinayan Baruah, John Kim, Ajay Joshi, David Kaeli",
         "venue": "PACT 2022",
         "year": 2022,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -431,10 +367,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "International Conference on Parallel Architectures and Compilation Techniques (PACT 2022)",
+        "venue_full": "International Conference on Parallel Architectures and Compilation Techniques",
         "identification_information": "333–345.",
         "doi": "https://doi.org/10.1145/3559009.3569666",
-        "acceptance_comment": "Acceptance: 50/118 (≈42.4%)",
+        "acceptance_comment": "Acceptance Rate: 50/118 (~42.4%)",
         "month": 10,
         "day": 10
     },
@@ -443,9 +379,7 @@
         "authors": "Yixuan Zhang, Nurul Suhaimi, Nutchanon Yongsatianchot, Joseph D Gaggiano, Miso Kim, Shivani A Patel, Yifan Sun, Stacy Marsella, Jacqueline Griffin, Andrea G Parker",
         "venue": "CHI 2022",
         "year": 2022,
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -454,36 +388,31 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2022 CHI Conference on Human Factors in Computing Systems (CHI 2022)",
+        "venue_full": "2022 CHI Conference on Human Factors in Computing Systems",
         "identification_information": "Article 78, 1–21.",
         "doi": "https://doi.org/10.1145/3491102.3501889",
-        "acceptance_comment": "Acceptance: 638/2597 (12.5%)",
-        "month": 1,
-        "day": 1
+        "acceptance_comment": "Acceptance Rate: 638/2597 (~12.5%)",
+        "month": 4,
+        "day": 30
     },
     {
         "title": "Understanding Wafer-Scale GPU Performance using an Architectural Simulator",
         "authors": "Chris Thames, Hang Yan, Yifan Sun",
         "year": 2022,
         "venue": "GPGPU 2022",
-        "tags": [
-            "yifan",
-            "lab"
-        ],
+        "tags": ["yifan", "lab"],
         "links": [],
         "type": "workshop",
-        "venue_full": "14th Workshop on General Purpose Processing Using GPU (GPGPU 2022)",
+        "venue_full": "14th Workshop on General Purpose Processing Using GPU",
         "month": 1,
         "day": 1
     },
     {
         "title": "Visualization Design Practices in a Crisis: Behind the Scenes with COVID-19 Dashboard Creators",
         "authors": "Yixuan Zhang, Yifan Sun, Joseph D Gaggiano, Neha Kumar, Clio Maria Adris, and Andrea G Parker",
-        "venue": "IEEEVis 2022",
-        "year": 2022,
-        "tags": [
-            "yifan"
-        ],
+        "venue": "IEEE TVCG",
+        "year": 2023,
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -492,10 +421,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "IEEE Visualization Conference (IEEE VIS 2022)",
+        "venue_full": "IEEE Transactions on Visualization and Computer Graphics",
         "identification_information": "29(1), 1037–1047.",
         "doi": "https://doi.org/10.1109/TVCG.2022.3209493",
-        "acceptance_comment": "Acceptance: 122/460 (≈26.5%)",
+        "acceptance_comment": "Acceptance Rate: 122/460 (~26.5%)",
         "month": 1,
         "day": 1
     },
@@ -504,10 +433,7 @@
         "authors": "Yifan Sun, Yixuan Zhang, Ali Mosallaei, Michael D. Shah, Cody Dunne, David Kaeli",
         "venue": "EuroVis 2021",
         "year": 2021,
-        "tags": [
-            "lab",
-            "yifan"
-        ],
+        "tags": ["lab", "yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -526,10 +452,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "Eurographics Conference on Visualization (EuroVis 2021)",
+        "venue_full": "Eurographics Conference on Visualization",
         "identification_information": "40(3), 239–250.",
         "doi": "https://doi.org/10.1111/cgf.14303",
-        "acceptance_comment": "Acceptance: ≈26.0%",
+        "acceptance_comment": "Acceptance Rate: 26.0%",
         "month": 6,
         "day": 14
     },
@@ -538,9 +464,7 @@
         "authors": "Trinayan Baruah, Kaustubh Shivdikar, Shi Dong, Yifan Sun, Saiful A. Mojumder, Kihoon Jung, José L. Abellán, Yash Ukidave, Ajay Joshi, John Kim, David Kaeli",
         "year": 2021,
         "venue": "ISPASS 2021",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -549,10 +473,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2021 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS 2021)",
+        "venue_full": "2021 IEEE International Symposium on Performance Analysis of Systems and Software",
         "identification_information": "13–23.",
         "doi": "https://doi.org/10.1109/ISPASS51385.2021.00013",
-        "acceptance_comment": "Acceptance: ≈36.9%",
+        "acceptance_comment": "Acceptance Rate: ~36.9%",
         "month": 3,
         "day": 28
     },
@@ -560,10 +484,8 @@
         "title": "Intelligent data coordination for accelerated computing in cloud environment",
         "authors": "Junping Zhao, Yifan Sun, Layne Peng, Jie Bao, Kun Wang",
         "year": 2021,
-        "venue": "US Patent App.",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "US Patent",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -575,16 +497,14 @@
         "venue_full": "United States Patent Application",
         "identification_information": "Patent No. US 10,891,156, Filed Apr 26, 2017, Issued Jan 12, 2021.",
         "month": 1,
-        "day": 1
+        "day": 12
     },
     {
         "title": "Mapping the Landscape of COVID-19 Crisis Visualizations",
         "authors": "Yixuan Zhang, Yifan Sun, Lace Padilla, Submit Barua, Enrico Bertini, Andrea G. Parker",
         "year": 2021,
         "venue": "CHI 2021",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -593,21 +513,19 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2021 CHI Conference on Human Factors in Computing Systems (CHI 2021)",
+        "venue_full": "2021 CHI Conference on Human Factors in Computing Systems",
         "identification_information": "Visualization for Communication (VisComm).",
         "doi": "https://doi.org/10.1145/3411764.3445381",
-        "acceptance_comment": "Acceptance: ≈26.3%",
-        "month": 1,
-        "day": 1
+        "acceptance_comment": "Acceptance Rate: ~26.3%",
+        "month": 5,
+        "day": 8
     },
     {
         "title": "Spartan: A Sparsity-Adaptive Framework to Accelerate Deep Neural Network Training on GPUs",
         "authors": "Shi Dong, Yifan Sun, Nicolas Bohm Agostini, Elmira Karimi, Daniel Lowell, Jing Zhou, José Cano, José L. Abellán, David Kaeli",
         "year": 2021,
         "venue": "TPDS",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -616,7 +534,7 @@
             }
         ],
         "type": "journal",
-        "venue_full": "IEEE Transactions on Parallel and Distributed Systems (TPDS)",
+        "venue_full": "IEEE Transactions on Parallel and Distributed Systems",
         "identification_information": "32(10), 2448–2463.",
         "doi": "https://doi.org/10.1109/TPDS.2021.3067825",
         "month": 1,
@@ -627,9 +545,7 @@
         "authors": "Rozhin Doroudi, Pedro Sequeira, Stacy Marsella, Ozlem Ergun, Rana Azghandi, David Kaeli, Yifan Sun, Jacqueline Griffin",
         "year": 2020,
         "venue": "PLoS one",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -649,9 +565,7 @@
         "authors": "Yifan Sun",
         "year": 2020,
         "venue": "Ph.D. Dissertation",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [],
         "type": "dissertation",
         "venue_full": "Ph.D. Dissertation, Northeastern University",
@@ -664,9 +578,7 @@
         "authors": "Trinayan Baruah, Yifan Sun, Ali Tolga Dinçer, Saiful A. Mojumder, José L. Abellán, Yash Ukidave, Ajay Joshi, Norman Rubin, John Kim, David Kaeli",
         "year": 2020,
         "venue": "HPCA 2020",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -675,10 +587,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2020 IEEE International Symposium on High Performance Computer Architecture (HPCA 2020)",
+        "venue_full": "2020 IEEE International Symposium on High Performance Computer Architecture",
         "identification_information": "596–609.",
         "doi": "https://doi.org/10.1109/HPCA47549.2020.00055",
-        "acceptance_comment": "Acceptance: ≈19.4%",
+        "acceptance_comment": "Acceptance Rate: ~19.4%",
         "month": 2,
         "day": 22
     },
@@ -686,10 +598,8 @@
         "title": "Halcone: A Hardware-Level Timestamp-based Cache Coherence Scheme for Multi-gpu Systems",
         "authors": "Saiful A Mojumder, Yifan Sun, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
         "year": 2020,
-        "venue": "ArXiv",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "arXiv",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -708,9 +618,7 @@
         "authors": "Omid Mohaddesi, Yifan Sun, Rana Azghandi, Rozhin Doroudi, Sam Snodgrass, Ozlem Ergun, Jacqueline Griffin, David Kaeli, Stacy Marsella, Casper Harteveld",
         "year": 2020,
         "venue": "CHI 2020",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -719,10 +627,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2020 CHI Conference on Human Factors in Computing Systems (CHI 2020)",
+        "venue_full": "2020 CHI Conference on Human Factors in Computing Systems",
         "identification_information": "1–13.",
         "doi": "https://doi.org/10.1145/3313831.3376571",
-        "acceptance_comment": "Acceptance: ≈24.3%",
+        "acceptance_comment": "Acceptance Rate: ~24.3%",
         "month": 1,
         "day": 1
     },
@@ -730,10 +638,8 @@
         "title": "MGPU-TSM: A Multi-gpu System with Truly Shared Memory",
         "authors": "Saiful A Mojumder, Yifan Sun, Leila Delshadtehrani, Yenai Ma, Trinayan Baruah, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
         "year": 2020,
-        "venue": "ArXiv",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "arXiv",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -752,9 +658,7 @@
         "authors": "Trinayan Baruah, Yifan Sun, Saiful A. Mojumder, José L. Abellán, Yash Ukidave, Ajay Joshi, Norman Rubin, John Kim, David Kaeli",
         "year": 2020,
         "venue": "PACT 2020",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -763,21 +667,19 @@
             }
         ],
         "type": "conference",
-        "venue_full": "ACM International Conference on Parallel Architectures and Compilation Techniques (PACT 2020)",
+        "venue_full": "ACM International Conference on Parallel Architectures and Compilation Techniques",
         "identification_information": "455–466.",
         "doi": "https://doi.org/10.1145/3410463.3414639",
-        "acceptance_comment": "Acceptance: ≈25.9%",
-        "month": 1,
-        "day": 1
+        "acceptance_comment": "Acceptance Rate: ~25.9%",
+        "month": 10,
+        "day": 2
     },
     {
         "title": "Checkpointing for GPU-as-a-Service in Cloud Computing Environment",
         "authors": "Zhao Junping, Layne Peng, Jie Bao, Kun Wang, Yifan Sun",
         "year": 2019,
-        "venue": "US Patent App.",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "US Patent",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -788,17 +690,15 @@
         "type": "patent",
         "venue_full": "United States Patent Application",
         "identification_information": ", Patent No. US 10,275,851, Filed Apr 25, 2017, Issued Apr 30, 2019.",
-        "month": 1,
-        "day": 1
+        "month": 4,
+        "day": 30
     },
     {
         "title": "Exploiting Adaptive Data Compression to Improve Performance and Energy-efficiency of Compute Workloads in Multi-GPU Systems",
         "authors": "Mohammad Khavari Tavana, Yifan Sun, Nicolas Bohm Agostini, David Kaeli",
         "year": 2019,
         "venue": "IPDPS 2019",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -807,10 +707,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2019 IEEE International Parallel and Distributed Processing Symposium (IPDPS 2019)",
+        "venue_full": "2019 IEEE International Parallel and Distributed Processing Symposium",
         "identification_information": "664–674.",
         "doi": "https://doi.org/10.1109/IPDPS.2019.00075",
-        "acceptance_comment": "Acceptance: ≈27.7%",
+        "acceptance_comment": "Acceptance Rate: ~27.7%",
         "month": 5,
         "day": 20
     },
@@ -819,9 +719,7 @@
         "authors": "Yifan Sun, Trinayan Baruah, Saiful A. Mojumder, Shi Dong, Xiang Gong, Shane Treadway, Yuhui Bao, Spencer Hance, Carter McCardwell, Vincent Zhao, Harrison Barclay, Amir Kavyan Ziabari, Zhongliang Chen, Rafael Ubal, José L. Abellán, John Kim, Ajay Joshi, David Kaeli",
         "year": 2019,
         "venue": "ISCA 2019",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -830,10 +728,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "46th International Symposium on Computer Architecture (ISCA 2019)",
+        "venue_full": "46th International Symposium on Computer Architecture",
         "identification_information": "197–209.",
         "doi": "https://doi.org/10.1145/3307650.3322230",
-        "acceptance_comment": "Acceptance: ≈17.0%",
+        "acceptance_comment": "Acceptance Rate: 17.0%",
         "month": 6,
         "day": 22
     },
@@ -841,10 +739,8 @@
         "title": "Managing Access to a Resource Pool of Graphics Processing Units under Fine Grain Control",
         "authors": "Yifan Sun, Layne Peng, Robert A Lincourt Jr, John Cardente, Junping Zhao",
         "year": 2019,
-        "venue": "US Patent App.",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "US Patent",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -855,17 +751,15 @@
         "type": "patent",
         "venue_full": "United States Patent Application",
         "identification_information": "Patent No. US 10,262,390, Filed Apr 14, 2017, Issued Jun 27, 2019.",
-        "month": 1,
-        "day": 1
+        "month": 6,
+        "day": 27
     },
     {
         "title": "Priority-based PCIe scheduling for multi-tenant multi-GPU systems",
         "authors": "Chen Li, Yifan Sun, Lingling Jin, Lingjie Xu, Zheng Cao, Pengfei Fan, David Kaeli, Sheng Ma, Yang Guo, Jun Yang",
         "year": 2019,
-        "venue": "IEEE Computer Architecture Letters (CAL)",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "IEEE CAL",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -874,7 +768,7 @@
             }
         ],
         "type": "journal",
-        "venue_full": "IEEE Computer Architecture Letters (CAL)",
+        "venue_full": "IEEE Computer Architecture Letters",
         "identification_information": "18(2), 157–160.",
         "doi": "https://doi.org/10.1109/LCA.2019.2955119",
         "month": 1,
@@ -884,10 +778,8 @@
         "title": "Summarizing CPU and GPU Design Trends with Product Data",
         "authors": "Yifan Sun, Nicolas Bohm Agostini, Dong Shi, David Kaeli",
         "year": 2019,
-        "venue": "ArXiv",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "arXiv",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -906,9 +798,7 @@
         "authors": "Trinayan Baruah, Yifan Sun, Shi Dong, David Kaeli, Norm Rubin",
         "year": 2018,
         "venue": "DATE 2018",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -917,21 +807,19 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2018 Design, Automation & Test in Europe Conference & Exhibition (DATE 2018)",
-        "identification_information": "731–736. DOI:.",
+        "venue_full": "2018 Design, Automation & Test in Europe Conference & Exhibition",
+        "identification_information": "731–736.",
         "doi": "https://doi.org/10.23919/DATE.2018.8342104",
-        "acceptance_comment": "Acceptance: ≈24.2%",
-        "month": 1,
-        "day": 1
+        "acceptance_comment": "Acceptance Rate: ~24.2%",
+        "month": 3,
+        "day": 19
     },
     {
         "title": "An Integrated Simulation Framework for Examining Resiliency in Pharmaceutical Supply Chains Considering Human Behaviors",
         "authors": "Rozhin Doroudi, Rana Azghandi, Zlatan Feric, Omid Mohaddesi, Yifan Sun, Jacqueline Griffin, Ozlem Ergun, David Kaeli, Pedro Sequeira, Stacy Marsella, Casper Harteveld",
         "year": 2018,
-        "venue": "WinterSim 2018",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "WSC 2018",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -940,21 +828,19 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2018 Winter Simulation Conference (WSC 2018)",
+        "venue_full": "2018 Winter Simulation Conference",
         "identification_information": "88–99.",
         "doi": "https://doi.org/10.1109/WSC.2018.8632387",
-        "acceptance_comment": "Acceptance: ≈70.4%",
-        "month": 1,
-        "day": 1
+        "acceptance_comment": "Acceptance Rate: ~70.4%",
+        "month": 12,
+        "day": 9
     },
     {
         "title": "Characterizing the Microarchitectural Implications of a Convolutional Neural Network (CNN) on GPUs",
         "authors": "Shi Dong, Gong Xiang, Yifan Sun, Trinayan Baruah, David Kaeli",
         "year": 2018,
         "venue": "ICPE 2018",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -963,10 +849,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2018 ACM/SPEC International Conference on Performance Engineering (ICPE 2018)",
+        "venue_full": "2018 ACM/SPEC International Conference on Performance Engineering",
         "identification_information": "96–106.",
         "doi": "https://doi.org/10.1145/3184407.3184423",
-        "acceptance_comment": "Acceptance: 24.0%",
+        "acceptance_comment": "Acceptance Rate: 24.0%",
         "month": 4,
         "day": 9
     },
@@ -975,9 +861,7 @@
         "authors": "Yifan Sun, Saoni Mukherjee, Trinayan Baruah, Shi Dong, Julian Gutierrez, Prannory Mohan, David Kaeli",
         "year": 2018,
         "venue": "ISPASS 2018",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -986,10 +870,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2018 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS 2018)",
+        "venue_full": "2018 IEEE International Symposium on Performance Analysis of Systems and Software",
         "identification_information": "209–218.",
         "doi": "https://doi.org/10.1109/ISPASS.2018.00034",
-        "acceptance_comment": "Acceptance: ≈31.3%",
+        "acceptance_comment": "Acceptance Rate: ~31.3%",
         "month": 4,
         "day": 2
     },
@@ -997,10 +881,8 @@
         "title": "MGSim+MGMark: A Framework for Multi-GPU System Research",
         "authors": "Yifan Sun, Trinayan Baruah, Saiful A Mojumder, Shi Dong, Rafael Ubal, Xiang Gong, Shane Treadway, Yuhui Bao, Vincent Zhao, José L Abellán, John Kim, Ajay Joshi, David Kaeli",
         "year": 2018,
-        "venue": "ArXiv",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "arXiv",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1019,9 +901,7 @@
         "authors": "Saiful A Mojumder, Marcia S Louis, Yifan Sun, Amir Kavyan Ziabari, José L Abellán, John Kim, David Kaeli, Ajay Joshi",
         "year": 2018,
         "venue": "IISWC 2018",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1030,10 +910,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2018 IEEE International Symposium on Workload Characterization (IISWC 2018)",
+        "venue_full": "2018 IEEE International Symposium on Workload Characterization",
         "identification_information": "122–133.",
         "doi": "https://doi.org/10.1109/IISWC.2018.8573521",
-        "acceptance_comment": "Acceptance: ≈36.2%",
+        "acceptance_comment": "Acceptance Rate: ~36.2%",
         "month": 9,
         "day": 30
     },
@@ -1041,10 +921,8 @@
         "title": "Queue-based GPU Virtualization and Management System",
         "authors": "Yifan Sun, Layne Peng, Jr. Robert A. Lincourt, John Cardente, John S Harwood",
         "year": 2018,
-        "venue": "US Patent App.",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "US Patent",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1055,17 +933,15 @@
         "type": "patent",
         "venue_full": "United States Patent Application",
         "identification_information": "Patent No. US 10,109,030, Filed Dec 27, 2016, Issued Oct 23, 2018.",
-        "month": 1,
-        "day": 1
+        "month": 10,
+        "day": 23
     },
     {
         "title": "Moka: Model-based Concurrent Kernel Analysis",
         "authors": "Leiming Yu, Xun Gong, Yifan Sun, Qianqian Fang, Norm Rubin, David Kaeli",
         "year": 2017,
         "venue": "IISWC 2017",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1074,9 +950,9 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2017 IEEE International Symposium on Workload Characterization (IISWC 2017)",
-        "identification_information": "In 2017 IEEE International Symposium on Workload Characterization (IISWC '17). IEEE.",
-        "month": 1,
+        "venue_full": "2017 IEEE International Symposium on Workload Characterization",
+        "identification_information": "",
+        "month": 10,
         "day": 1
     },
     {
@@ -1084,9 +960,7 @@
         "authors": "Amir Kavyan Ziabari, Yifan Sun, Yenai Ma, Dana Schaa, Jose L. Abellan, John Kim, Ajay Joshi, David Kaeli",
         "year": 2016,
         "venue": "ISPASS 2016",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1095,10 +969,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2016 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS 2016)",
+        "venue_full": "2016 IEEE International Symposium on Performance Analysis of Systems and Software",
         "identification_information": "183–193.",
         "doi": "https://doi.org/10.1109/ISPASS.2016.7482093",
-        "acceptance_comment": "Acceptance: ≈35.1%",
+        "acceptance_comment": "Acceptance Rate: ~35.1%",
         "month": 1,
         "day": 1
     },
@@ -1107,9 +981,7 @@
         "authors": "Y-C Chung, W-C Hsu, S-H Hung, TB Jablin, D Kaeli, Y Sun, R Ubal",
         "year": 2016,
         "venue": "Book Chapter",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [],
         "type": "bookChapter",
         "venue_full": "Heterogeneous System Architecture: Practical Applications for Industry (Elsevier, 1st edition)",
@@ -1122,9 +994,7 @@
         "authors": "Yifan Sun, Xiang Gong, Amir Kavyan Ziabari, Leiming Yu, Xiangyu Li, Saoni Mukherjee, Carter McCardwell, Alejandro Vilegas, David Kaeli",
         "year": 2016,
         "venue": "IISWC 2016",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1133,10 +1003,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2016 IEEE International Symposium on Workload Characterization (IISWC 2016)",
+        "venue_full": "2016 IEEE International Symposium on Workload Characterization",
         "identification_information": "1–10.",
         "doi": "https://doi.org/10.1109/IISWC.2016.7581262",
-        "acceptance_comment": "Acceptance: ≈30.4%",
+        "acceptance_comment": "Acceptance Rate: ~30.4%",
         "month": 1,
         "day": 1
     },
@@ -1145,9 +1015,7 @@
         "authors": "Yifan Sun, Chisheng Liang, Steven Sutherland, Casper Harteveld, David Kaeli",
         "year": 2016,
         "venue": "CIG 2016",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1156,10 +1024,10 @@
             }
         ],
         "type": "conference",
-        "venue_full": "2016 IEEE Conference on Computational Intelligence and Games (CIG 2016)",
+        "venue_full": "2016 IEEE Conference on Computational Intelligence and Games",
         "identification_information": "1–8.",
         "doi": "https://doi.org/10.1109/CIG.2016.7860444",
-        "acceptance_comment": "Acceptance: Acceptance rate unknown",
+        "acceptance_comment": "Acceptance Rate: unknown",
         "month": 1,
         "day": 1
     },
@@ -1168,9 +1036,7 @@
         "authors": "Amir Kavyan Ziabari, Yifan Sun, Yenai Ma, Dana Schaa, Jose L. Abellan, John Kim, Ajay Joshi, David Kaeli",
         "year": 2016,
         "venue": "TACO",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1179,7 +1045,7 @@
             }
         ],
         "type": "journal",
-        "venue_full": "ACM Transactions on Architecture and Code Optimization (TACO)",
+        "venue_full": "ACM Transactions on Architecture and Code Optimization",
         "identification_information": "13, 4, Article 35 (December 2016), 25 pages.",
         "doi": "https://doi.org/10.1145/2996190",
         "month": 1,
@@ -1188,14 +1054,12 @@
     {
         "title": "Accessing Spectrum Databases using Interference Alignment in Vehicular Cognitive Radio Networks",
         "authors": "Abdulla K Al-Ali, Yifan Sun, Marco Di Felice, Jarkko Paavola, Kaushik R Chowdhury",
-        "year": 2014,
-        "venue": "IEEE Transactions on Vehicular Technology (TVT)",
-        "tags": [
-            "yifan"
-        ],
+        "year": 2015,
+        "venue": "IEEE TVT",
+        "tags": ["yifan"],
         "links": [],
         "type": "journal",
-        "venue_full": "IEEE Transactions on Vehicular Technology (TVT)",
+        "venue_full": "IEEE Transactions on Vehicular Technology",
         "identification_information": "64(1), 263–272.",
         "doi": "https://doi.org/10.1109/TVT.2014.2318837",
         "month": 1,
@@ -1205,10 +1069,8 @@
         "title": "Enabling emergency communication through a cognitive radio vehicular network",
         "authors": "Yifan Sun, Kaushik R Chowdhury",
         "year": 2014,
-        "venue": "IEEE Communications Magazine",
-        "tags": [
-            "yifan"
-        ],
+        "venue": "IEEE Commun. Mag.",
+        "tags": ["yifan"],
         "links": [
             {
                 "icon": "/file_outline.svg",
@@ -1220,7 +1082,7 @@
         "venue_full": "IEEE Communications Magazine",
         "identification_information": "52, 10 (2014), 68–75.",
         "doi": "https://doi.org/10.1109/MCOM.2014.6917404",
-        "month": 1,
+        "month": 10,
         "day": 1
     },
     {
@@ -1228,33 +1090,29 @@
         "authors": "Jithin Jagannath, Anu Saji, Hovannes Kulhandjian, Yifan Sun, Emrecan Demirors, Tommaso Melodia",
         "year": 2013,
         "venue": "WUWNet 2013",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [],
         "type": "conference",
-        "venue_full": "8th International Conference on Underwater Networks & Systems (WUWNet 2013)",
+        "venue_full": "8th International Conference on Underwater Networks & Systems",
         "identification_information": "Article 3, 1–8.",
         "doi": "https://doi.org/10.1145/2532378.2532382",
-        "acceptance_comment": "Acceptance: 20.0%",
-        "month": 1,
-        "day": 1
+        "acceptance_comment": "Acceptance Rate: 20.0%",
+        "month": 11,
+        "day": 11
     },
     {
         "title": "The Internet underwater: An IP-compatible protocol stack for commercial undersea modems",
         "authors": "Yifan Sun, Tommaso Melodia",
         "year": 2013,
         "venue": "WUWNet 2013",
-        "tags": [
-            "yifan"
-        ],
+        "tags": ["yifan"],
         "links": [],
         "type": "conference",
-        "venue_full": "8th International Conference on Underwater Networks & Systems (WUWNet 2013)",
+        "venue_full": "8th International Conference on Underwater Networks & Systems",
         "identification_information": "Article 37, 1–8.",
         "doi": "https://doi.org/10.1145/2532378.2532407",
-        "acceptance_comment": "Acceptance: 20.0%",
-        "month": 1,
-        "day": 1
+        "acceptance_comment": "Acceptance Rate: 20.0%",
+        "month": 11,
+        "day": 11
     }
 ]

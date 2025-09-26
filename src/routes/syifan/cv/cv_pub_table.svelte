@@ -38,6 +38,8 @@
         venue: string
         venue_full?: string
         year: number
+        month?: number
+        day?: number
         tags: string[]
         links: PublicationLink[]
         type: PublicationType
@@ -52,6 +54,7 @@
     export let title: string
     export let publications: Publication[] = []
     export let types: PublicationType | PublicationType[]
+    export let showDetails = false
 
     const escapeHtml = (value: string): string =>
         value
@@ -61,12 +64,18 @@
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;')
 
-    const highlight = (source: string, name: string, className: string): string => {
+    const highlight = (
+        source: string,
+        name: string,
+        className: string
+    ): string => {
         const escapedName = name.replace(/[\\^$*+?.()|[\\]{}]/g, '\\$&')
         const pattern = new RegExp(`\\b${escapedName}\\b`, 'g')
-        return source.replace(pattern, `<span class="${className}">${name}</span>`)
+        return source.replace(
+            pattern,
+            `<span class="${className}">${name}</span>`
+        )
     }
-
 
     const formatAuthors = (authors: string): string => {
         let formatted = escapeHtml(authors)
@@ -77,15 +86,13 @@
         return formatted
     }
 
-    const formatTitle = (title: string): string => escapeHtml(title.trim())
+    const formatTitle = (title: string): string => title.trim()
 
     const formatVenue = (publication: Publication): string => {
-        const rawFull = (publication.venue_full ?? publication.venue).trim()
-        const rawShort = publication.venue.trim()
-        const full = escapeHtml(rawFull)
-        const short = escapeHtml(rawShort)
-        const fullLower = rawFull.toLowerCase()
-        const shortLower = rawShort.toLowerCase()
+        const full = (publication.venue_full ?? publication.venue).trim()
+        const short = publication.venue.trim()
+        const fullLower = full.toLowerCase()
+        const shortLower = short.toLowerCase()
         if (fullLower === shortLower) {
             return full
         }
@@ -96,7 +103,7 @@
     }
 
     const formatIdentification = (value?: string): string | null =>
-        value ? escapeHtml(value.trim()) : null
+        value ? value.trim() : null
 
     const formatDoi = (value?: string): string | null =>
         value
@@ -108,30 +115,47 @@
             return null
         }
         const trimmed = value.trim()
-        const escaped = escapeHtml(trimmed)
-        return trimmed.toLowerCase().startsWith('accept') ? escaped : `Acceptance: ${escaped}`
+        return trimmed.toLowerCase().startsWith('accept')
+            ? trimmed
+            : `Acceptance: ${trimmed}`
     }
 
     $: typeSet = Array.isArray(types) ? new Set(types) : new Set([types])
 
-    $: filtered = publications.filter((publication) => typeSet.has(publication.type))
+    $: filtered = publications.filter((publication) =>
+        typeSet.has(publication.type)
+    )
+
+    $: sorted = [...filtered].sort((a, b) => {
+        const yearDiff = (b.year ?? 0) - (a.year ?? 0)
+        if (yearDiff !== 0) return yearDiff
+        const monthDiff = (b.month ?? 0) - (a.month ?? 0)
+        if (monthDiff !== 0) return monthDiff
+        const dayDiff = (b.day ?? 0) - (a.day ?? 0)
+        if (dayDiff !== 0) return dayDiff
+        return a.title.localeCompare(b.title)
+    })
 
     let entries: TableEntry[] = []
-    $: entries = filtered.map((publication, index, array) => {
+    $: entries = sorted.map((publication, index, array) => {
         const leftCells: TableCell[] = [
             formatTitle(publication.title),
             { html: formatAuthors(publication.authors) },
             formatVenue(publication),
         ]
 
-        const identification = formatIdentification(publication.identification_information)
-        if (identification) {
-            leftCells.push(identification)
-        }
+        if (showDetails) {
+            const identification = formatIdentification(
+                publication.identification_information
+            )
+            if (identification) {
+                leftCells.push(identification)
+            }
 
-        const doiHtml = formatDoi(publication.doi)
-        if (doiHtml) {
-            leftCells.push({ html: doiHtml })
+            const doiHtml = formatDoi(publication.doi)
+            if (doiHtml) {
+                leftCells.push({ html: doiHtml })
+            }
         }
 
         const acceptance = formatAcceptance(publication.acceptance_comment)
@@ -156,7 +180,7 @@
     <h3>{title}</h3>
     {#if entries.length > 0}
         <div class="publication-list">
-            <CvTable entries={entries} />
+            <CvTable {entries} />
         </div>
     {:else}
         <p class="empty-message">No publications available.</p>
@@ -174,4 +198,13 @@
         margin: 0.5rem 0 0;
     }
 
+    h3 {
+        font-size: 1.2rem;
+        /* letter-spacing: 0.12em; */
+        /* text-transform: uppercase; */
+        margin: 1.2rem 0 0 0;
+        color: #243654;
+        font-weight: 500;
+        text-decoration: underline;
+    }
 </style>

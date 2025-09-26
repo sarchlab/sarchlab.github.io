@@ -1,5 +1,5 @@
 /** @type {import('./$types').PageLoad} */
-export async function load({ fetch }) {
+export async function load({ fetch, url }) {
     const [cvResponse, publicationResponse] = await Promise.all([
         fetch('/cv/cv_data.json'),
         fetch('/publication_list.json'),
@@ -10,8 +10,11 @@ export async function load({ fetch }) {
         publicationResponse.json(),
     ])
 
+    const showPublicationDetails = url.searchParams.has('show_details')
+
     return {
         cvData,
         publicationList,
+        showPublicationDetails,
     }
 }
