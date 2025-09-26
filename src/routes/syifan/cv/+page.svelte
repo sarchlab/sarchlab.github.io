@@ -1,5 +1,6 @@
 <script lang="ts">
     import CvTable from './cv_table.svelte'
+    import CvPubTable from './cv_pub_table.svelte'
 
     type TableCell =
         | string
@@ -21,14 +22,6 @@
         awardsEntries: TableEntry[]
         industryEntries: TableEntry[]
         grantEntries: TableEntry[]
-        peerReviewedConferenceEntries: TableEntry[]
-        journalEntries: TableEntry[]
-        bookEntries: TableEntry[]
-        bookTranslationEntries: TableEntry[]
-        bookChapterEntries: TableEntry[]
-        patentEntries: TableEntry[]
-        workshopEntries: TableEntry[]
-        preprintEntries: TableEntry[]
         softwareEntries: TableEntry[]
         talkEntries: TableEntry[]
         teachingWMEntries: TableEntry[]
@@ -51,7 +44,38 @@
         serviceWmDepartmentEntries: TableEntry[]
     }
 
-    export let data: { cvData: CvData }
+    type PublicationLink = {
+        icon?: string
+        link: string
+        text: string
+    }
+
+    type PublicationType =
+        | 'conference'
+        | 'journal'
+        | 'book'
+        | 'bookTranslation'
+        | 'bookChapter'
+        | 'patent'
+        | 'workshop'
+        | 'preprint'
+        | 'dissertation'
+
+    type Publication = {
+        title: string
+        authors: string
+        venue: string
+        venue_full?: string
+        year: number
+        tags: string[]
+        links: PublicationLink[]
+        type: PublicationType
+        identification_information?: string
+        doi?: string
+        acceptance_comment?: string
+    }
+
+    export let data: { cvData: CvData; publicationList: Publication[] }
 
     const {
         academicAppointments,
@@ -59,14 +83,6 @@
         awardsEntries,
         industryEntries,
         grantEntries,
-        peerReviewedConferenceEntries,
-        journalEntries,
-        bookEntries,
-        bookTranslationEntries,
-        bookChapterEntries,
-        patentEntries,
-        workshopEntries,
-        preprintEntries,
         softwareEntries,
         talkEntries,
         teachingWMEntries,
@@ -88,6 +104,8 @@
         serviceWmUniversityEntries,
         serviceWmDepartmentEntries,
     } = data.cvData
+
+    const publicationList = data.publicationList
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -206,45 +224,46 @@
                     &amp; Mary student advisee
                 </p>
             </div>
-            <h3>Peer-Reviewed Conference Papers</h3>
-            <div class="publication-list">
-                <CvTable entries={peerReviewedConferenceEntries} />
-            </div>
-
-            <h3>Journals</h3>
-            <div class="publication-list">
-                <CvTable entries={journalEntries} />
-            </div>
-
-            <h3>Books</h3>
-            <div class="publication-list">
-                <CvTable entries={bookEntries} />
-            </div>
-
-            <h3>Translation of My Books</h3>
-            <div class="publication-list">
-                <CvTable entries={bookTranslationEntries} />
-            </div>
-
-            <h3>Book Chapters</h3>
-            <div class="publication-list">
-                <CvTable entries={bookChapterEntries} />
-            </div>
-
-            <h3>Patents</h3>
-            <div class="publication-list">
-                <CvTable entries={patentEntries} />
-            </div>
-
-            <h3>Workshop or Poster Publications</h3>
-            <div class="publication-list">
-                <CvTable entries={workshopEntries} />
-            </div>
-
-            <h3>Preprints</h3>
-            <div class="publication-list">
-                <CvTable entries={preprintEntries} />
-            </div>
+            <CvPubTable
+                title="Peer-Reviewed Conference Papers"
+                types="conference"
+                publications={publicationList}
+            />
+            <CvPubTable
+                title="Journals"
+                types="journal"
+                publications={publicationList}
+            />
+            <CvPubTable
+                title="Books"
+                types="book"
+                publications={publicationList}
+            />
+            <CvPubTable
+                title="Translation of My Books"
+                types="bookTranslation"
+                publications={publicationList}
+            />
+            <CvPubTable
+                title="Book Chapters"
+                types="bookChapter"
+                publications={publicationList}
+            />
+            <CvPubTable
+                title="Patents"
+                types="patent"
+                publications={publicationList}
+            />
+            <CvPubTable
+                title="Workshop or Poster Publications"
+                types="workshop"
+                publications={publicationList}
+            />
+            <CvPubTable
+                title="Preprints"
+                types="preprint"
+                publications={publicationList}
+            />
         </section>
 
         <section class="cv-section" id="software">
