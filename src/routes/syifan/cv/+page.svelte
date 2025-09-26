@@ -394,7 +394,7 @@
         min-height: 11in;
         margin: 1.5rem auto;
         background: #fff;
-        padding: 80px 80px 80px 80px;
+        padding: 80px 80px 400px 80px;
         box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
         box-sizing: border-box;
     }
@@ -628,6 +628,7 @@
             min-height: auto;
             padding: 1.5rem;
             box-shadow: none;
+            padding-bottom: 180px;
         }
 
         .cv-header {

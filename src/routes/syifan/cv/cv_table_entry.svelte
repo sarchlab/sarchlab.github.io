@@ -112,4 +112,29 @@
     td {
         line-height: 1.2rem;
     }
+
+    @media screen and (max-width: 600px) {
+        tr {
+            display: block;
+            line-height: 1.1em;
+        }
+
+        td,
+        .right-cell,
+        .hanging-cell {
+            display: block;
+            width: 100%;
+            padding-right: 0;
+            white-space: normal;
+            text-align: left;
+        }
+
+        .entry-start td:first-child {
+            padding-top: 0.7rem;
+        }
+
+        .entry-start td {
+            padding-top: 0.1rem;
+        }
+    }
 </style>

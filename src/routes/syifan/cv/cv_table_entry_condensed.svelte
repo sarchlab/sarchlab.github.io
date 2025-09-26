@@ -109,7 +109,6 @@
 
     .left-cell span {
         display: inline;
-        white-space: nowrap;
     }
 
     /* .left-cell span:not(:last-child)::after {
@@ -141,5 +140,30 @@
 
     td {
         line-height: 1.2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        tr {
+            display: block;
+        }
+
+        td,
+        .right-cell,
+        .hanging-cell,
+        .left-cell {
+            display: block;
+            width: 100%;
+            padding-right: 0;
+            white-space: normal;
+            text-align: left;
+        }
+
+        .left-cell {
+            margin-bottom: 0.4rem;
+        }
+
+        .entry-start td {
+            padding-top: 0.4rem;
+        }
     }
 </style>
