@@ -1,20 +1,21 @@
+import yaml from 'js-yaml'
+
 /** @type {import('./$types').PageLoad} */
-export async function load({ fetch, url }) {
-    const [cvResponse, publicationResponse] = await Promise.all([
-        fetch('/cv/cv_data.json'),
-        fetch('/publication_list.json'),
-    ])
+export async function load({ fetch }) {
+    const cvResponse = await fetch('/cv/cv_data.yml')
 
-    const [cvData, publicationList] = await Promise.all([
-        cvResponse.json(),
-        publicationResponse.json(),
-    ])
+    if (!cvResponse.ok) {
+        throw new Error(`Failed to load CV data: ${cvResponse.status}`)
+    }
 
-    const showPublicationDetails = url.searchParams.has('show_details')
+    const cvText = await cvResponse.text()
+    const cvData = yaml.load(cvText)
+
+    if (!cvData || typeof cvData !== 'object') {
+        throw new Error('Invalid CV data format')
+    }
 
     return {
         cvData,
-        publicationList,
-        showPublicationDetails,
     }
 }

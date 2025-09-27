@@ -16,6 +16,7 @@
         "@sveltejs/adapter-auto": "^3.2.4",
         "@sveltejs/adapter-netlify": "^4.3.3",
         "@sveltejs/kit": "^2.5.24",
+        "@types/js-yaml": "^4.0.9",
         "@typescript-eslint/eslint-plugin": "^8.2.0",
         "@typescript-eslint/parser": "^8.2.0",
         "autoprefixer": "^10.4.20",
@@ -39,6 +40,7 @@
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
         "feather-icons": "^4.29.2",
+        "js-yaml": "^4.1.0",
         "lucide-svelte": "^0.428.0",
         "tailwind-merge": "^2.5.2",
         "tailwindcss-animate": "^1.0.7"

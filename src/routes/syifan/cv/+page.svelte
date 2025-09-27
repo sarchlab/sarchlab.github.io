@@ -1,6 +1,5 @@
 <script lang="ts">
     import CvTable from './cv_table.svelte'
-    import CvPubTable from './cv_pub_table.svelte'
 
     type TableCell =
         | string
@@ -10,111 +9,60 @@
         | undefined
         | { html: string }
 
-    type TableEntry = {
+    type CvEntry = {
         left: Array<TableCell>
         right: Array<TableCell>
         hanging?: TableCell
     }
 
-    type CvData = {
-        academicAppointments: TableEntry[]
-        educationEntries: TableEntry[]
-        awardsEntries: TableEntry[]
-        industryEntries: TableEntry[]
-        grantEntries: TableEntry[]
-        softwareEntries: TableEntry[]
-        talkEntries: TableEntry[]
-        teachingWMEntries: TableEntry[]
-        teachingNEUEntries: TableEntry[]
-        menteePhDEntries: TableEntry[]
-        menteeMasterEntries: TableEntry[]
-        menteeUndergradEntries: TableEntry[]
-        mediaCoverageEntries: TableEntry[]
-        servicePhdCommitteeEntries: TableEntry[]
-        serviceMasterCommitteeEntries: TableEntry[]
-        serviceOrgEntries: TableEntry[]
-        serviceConferenceOrgEntries: TableEntry[]
-        serviceWorkshopChairEntries: TableEntry[]
-        serviceFundingPanelEntries: TableEntry[]
-        serviceProgramCommitteeEntries: TableEntry[]
-        serviceJournalReviewerEntries: TableEntry[]
-        serviceExternalReviewEntries: TableEntry[]
-        serviceWmAdvisingEntries: TableEntry[]
-        serviceWmUniversityEntries: TableEntry[]
-        serviceWmDepartmentEntries: TableEntry[]
-    }
-
-    type PublicationLink = {
-        icon?: string
-        link: string
-        text: string
-    }
-
-    type PublicationType =
-        | 'conference'
-        | 'journal'
-        | 'book'
-        | 'bookTranslation'
-        | 'bookChapter'
-        | 'patent'
-        | 'workshop'
-        | 'preprint'
-        | 'dissertation'
-
-    type Publication = {
+    type CvSubsection = {
+        id: string
         title: string
-        authors: string
-        venue: string
-        venue_full?: string
-        year: number
-        month?: number
-        day?: number
-        tags: string[]
-        links: PublicationLink[]
-        type: PublicationType
-        identification_information?: string
-        doi?: string
-        acceptance_comment?: string
+        entries?: CvEntry[]
+        meta?: string[]
+        condensed?: boolean
+    }
+
+    type CvSection = {
+        id: string
+        title: string
+        entries?: CvEntry[]
+        meta?: string[]
+        condensed?: boolean
+        subsections?: CvSubsection[]
+    }
+
+    type CvHeader = {
+        name: string
+        tags?: string[]
+        contact?: Record<string, string>
+    }
+
+    type CvData = {
+        version?: number
+        header: CvHeader
+        sections?: CvSection[]
+    }
+
+    const contactOrder = ['phone', 'email', 'website']
+    const contactIcons: Record<string, string> = {
+        phone: '/phone-solid-full.svg',
+        email: '/envelope-solid-full.svg',
+        website: '/globe-solid-full.svg',
     }
 
     export let data: {
         cvData: CvData
-        publicationList: Publication[]
-        showPublicationDetails: boolean
     }
 
-    const {
-        academicAppointments,
-        educationEntries,
-        awardsEntries,
-        industryEntries,
-        grantEntries,
-        softwareEntries,
-        talkEntries,
-        teachingWMEntries,
-        teachingNEUEntries,
-        menteePhDEntries,
-        menteeMasterEntries,
-        menteeUndergradEntries,
-        mediaCoverageEntries,
-        servicePhdCommitteeEntries,
-        serviceMasterCommitteeEntries,
-        serviceOrgEntries,
-        serviceConferenceOrgEntries,
-        serviceWorkshopChairEntries,
-        serviceFundingPanelEntries,
-        serviceProgramCommitteeEntries,
-        serviceJournalReviewerEntries,
-        serviceExternalReviewEntries,
-        serviceWmAdvisingEntries,
-        serviceWmUniversityEntries,
-        serviceWmDepartmentEntries,
-    } = data.cvData
+    let cvData: CvData = { header: { name: '' }, sections: [] }
+    let header: CvHeader = cvData.header
+    let sections: CvSection[] = []
+    let contactEntries: Array<{ key: string; value: string }> = []
 
-    const publicationList = data.publicationList
-    const showPublicationDetails = data.showPublicationDetails
-
-    let showDetails = showPublicationDetails
+    $: cvData = data.cvData
+    $: header = cvData.header
+    $: sections = cvData.sections ?? []
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -123,6 +71,33 @@
     const triggerPrint = () => {
         window.print()
     }
+
+    const formatWebsite = (value: string) =>
+        /^https?:\/\//i.test(value) ? value : `https://${value}`
+
+    $: contactEntries = (() => {
+        const contact = (header?.contact ?? {}) as Record<string, string>
+        const entries: Array<{ key: string; value: string }> = []
+
+        for (const key of contactOrder) {
+            const value = contact[key]
+            if (typeof value === 'string' && value.trim().length > 0) {
+                entries.push({ key, value })
+            }
+        }
+
+        for (const [key, value] of Object.entries(contact)) {
+            if (
+                !contactOrder.includes(key) &&
+                typeof value === 'string' &&
+                value.trim().length > 0
+            ) {
+                entries.push({ key, value })
+            }
+        }
+
+        return entries
+    })()
 </script>
 
 <svelte:head>
@@ -132,246 +107,96 @@
 <div class="cv-container">
     <header class="cv-header">
         <div>
-            <h1>Yifan Sun</h1>
-            <p class="tagline">
-                Assistant Professor, Computer Science, William &amp; Mary
-                <br />
-                McGlothlin-Street Hall 117 Williamsburg, VA 23185
-            </p>
+            <h1>{header.name}</h1>
+            {#if header.tags?.length}
+                <p class="tagline">
+                    {#each header.tags as tag, index}
+                        {tag}
+                        {#if index < header.tags.length - 1}
+                            <br />
+                        {/if}
+                    {/each}
+                </p>
+            {/if}
         </div>
-        <div class="contact">
-            <div class="contact-item">
-                <img
-                    class="contact-icon"
-                    src="/phone-solid-full.svg"
-                    alt=""
-                    aria-hidden="true"
-                    width="16"
-                    height="16"
-                />
-                <span>(+1) 716-868-2480</span>
+        {#if contactEntries.length > 0}
+            <div class="contact">
+                {#each contactEntries as entry (entry.key)}
+                    <div class="contact-item">
+                        {#if contactIcons[entry.key]}
+                            <img
+                                class="contact-icon"
+                                src={contactIcons[entry.key]}
+                                alt=""
+                                aria-hidden="true"
+                                width="16"
+                                height="16"
+                            />
+                        {/if}
+                        {#if entry.key === 'email'}
+                            <a href={`mailto:${entry.value}`}>{entry.value}</a>
+                        {:else if entry.key === 'website'}
+                            <a
+                                href={formatWebsite(entry.value)}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                {entry.value}
+                            </a>
+                        {:else}
+                            <span>{entry.value}</span>
+                        {/if}
+                    </div>
+                {/each}
             </div>
-            <div class="contact-item">
-                <img
-                    class="contact-icon"
-                    src="/envelope-solid-full.svg"
-                    alt=""
-                    aria-hidden="true"
-                    width="16"
-                    height="16"
-                />
-                <a href="mailto:ysun25@wm.edu">ysun25@wm.edu</a>
-            </div>
-            <div class="contact-item">
-                <img
-                    class="contact-icon"
-                    src="/globe-solid-full.svg"
-                    alt=""
-                    aria-hidden="true"
-                    width="16"
-                    height="16"
-                />
-                <a
-                    href="https://syifan.github.io"
-                    target="_blank"
-                    rel="noreferrer">syifan.github.io</a
-                >
-            </div>
-        </div>
+        {/if}
     </header>
 
     <main>
-        <section class="cv-section" id="academic-appointments">
-            <header class="section-header">
-                <h2>Academic Appointments</h2>
-            </header>
-            <CvTable entries={academicAppointments} />
-        </section>
+        {#each sections as section (section.id)}
+            <section class="cv-section" id={section.id}>
+                <header class="section-header">
+                    <h2>{section.title}</h2>
+                </header>
 
-        <section class="cv-section" id="education">
-            <header class="section-header">
-                <h2>Education</h2>
-            </header>
-            <CvTable entries={educationEntries} />
-        </section>
+                {#if section.meta?.length}
+                    {#each section.meta as metaLine}
+                        <p class="list-heading">{metaLine}</p>
+                    {/each}
+                {/if}
 
-        <section class="cv-section" id="industry-experience">
-            <header class="section-header">
-                <h2>Industry Experience</h2>
-            </header>
-            <CvTable entries={industryEntries} />
-        </section>
+                {#if section.entries?.length}
+                    <CvTable
+                        entries={section.entries ?? []}
+                        condensed={section.condensed ?? false}
+                    />
+                {/if}
 
-        <section class="cv-section" id="awards">
-            <header class="section-header">
-                <h2>Awards</h2>
-            </header>
-            <CvTable entries={awardsEntries} />
-        </section>
+                {#if section.subsections?.length}
+                    {#each section.subsections as subsection (subsection.id)}
+                        <div class="subsection">
+                            <h3>{subsection.title}</h3>
 
-        <section class="cv-section" id="grants">
-            <header class="section-header">
-                <h2>Grants</h2>
-            </header>
-            <p class="list-heading">
-                I have acquired research funding that totals $1,685,843 at
-                William &amp; Mary.
-            </p>
-            <CvTable entries={grantEntries} />
-        </section>
+                            {#if subsection.meta?.length}
+                                {#each subsection.meta as metaLine}
+                                    <p class="list-heading">{metaLine}</p>
+                                {/each}
+                            {/if}
 
-        <section class="cv-section" id="publications">
-            <header class="section-header">
-                <h2>Publications</h2>
-            </header>
-            <div class="section-intro">
-                <p class="note">
-                    <span class="self-name">Underline</span> &#8212; Myself
-                </p>
-                <p class="note">
-                    <span class="wm-advisee">Wavy underline</span> &#8212; My William
-                    &amp; Mary student advisee
-                </p>
-            </div>
-            <CvPubTable
-                title="Peer-Reviewed Conference Papers"
-                types="conference"
-                publications={publicationList}
-                {showDetails}
-            />
-            <CvPubTable
-                title="Refereed Journals"
-                types="journal"
-                publications={publicationList}
-                {showDetails}
-            />
-            <CvPubTable
-                title="Books"
-                types="book"
-                publications={publicationList}
-                {showDetails}
-            />
-            <CvPubTable
-                title="Translation of My Books"
-                types="bookTranslation"
-                publications={publicationList}
-                {showDetails}
-            />
-            <CvPubTable
-                title="Book Chapters"
-                types="bookChapter"
-                publications={publicationList}
-                {showDetails}
-            />
-            <CvPubTable
-                title="Patents"
-                types="patent"
-                publications={publicationList}
-                {showDetails}
-            />
-            <CvPubTable
-                title="Workshop or Poster Publications"
-                types="workshop"
-                publications={publicationList}
-                {showDetails}
-            />
-            <CvPubTable
-                title="Preprints"
-                types="preprint"
-                publications={publicationList}
-                {showDetails}
-            />
-        </section>
-
-        <section class="cv-section" id="software">
-            <header class="section-header">
-                <h2>Software &amp; Datasets</h2>
-            </header>
-            <CvTable entries={softwareEntries} />
-        </section>
-
-        <section class="cv-section" id="talks">
-            <header class="section-header">
-                <h2>Talks and Tutorials</h2>
-            </header>
-            <CvTable entries={talkEntries} />
-        </section>
-
-        <section class="cv-section" id="teaching">
-            <header class="section-header">
-                <h2>Teaching</h2>
-            </header>
-            <div class="subsection">
-                <h3>Teaching @ William &amp; Mary</h3>
-                <CvTable entries={teachingWMEntries} />
-            </div>
-            <div class="subsection">
-                <h3>Teaching @ Northeastern University</h3>
-                <CvTable entries={teachingNEUEntries} />
-            </div>
-        </section>
-
-        <section class="cv-section" id="mentees">
-            <header class="section-header">
-                <h2>Student Mentees</h2>
-            </header>
-            <h3>Ph.D. Students</h3>
-            <CvTable entries={menteePhDEntries} />
-            <h3>Master Researchers</h3>
-            <CvTable entries={menteeMasterEntries} />
-            <h3>Undergraduate Researchers</h3>
-            <CvTable entries={menteeUndergradEntries} />
-        </section>
-
-        <section class="cv-section" id="media-coverage">
-            <header class="section-header">
-                <h2>Selected Media Coverage</h2>
-            </header>
-            <CvTable entries={mediaCoverageEntries} />
-        </section>
-
-        <section class="cv-section" id="service">
-            <header class="section-header">
-                <h2>Service</h2>
-            </header>
-            <h3>Ph.D. Dissertation Committee</h3>
-            <CvTable entries={servicePhdCommitteeEntries} />
-            <h3>Master Thesis Committee</h3>
-            <CvTable entries={serviceMasterCommitteeEntries} />
-            <h3>Professional Organization Participation</h3>
-            <CvTable entries={serviceOrgEntries} />
-            <h3>Conference Organization</h3>
-            <CvTable entries={serviceConferenceOrgEntries} />
-            <h3>Workshop Chairing</h3>
-            <CvTable entries={serviceWorkshopChairEntries} condensed />
-            <h3>Funding Agency Panelist</h3>
-            <CvTable entries={serviceFundingPanelEntries} />
-            <h3>Program Committee</h3>
-            <CvTable entries={serviceProgramCommitteeEntries} condensed />
-            <h3>Journal Reviewer</h3>
-            <CvTable entries={serviceJournalReviewerEntries} condensed />
-            <h3>External Review Committee / Ad-hoc Reviewer</h3>
-            <CvTable entries={serviceExternalReviewEntries} condensed />
-            <h3>William &amp; Mary Undergraduate Advising</h3>
-            <CvTable entries={serviceWmAdvisingEntries} condensed />
-            <h3>William &amp; Mary University-Wide Committee</h3>
-            <CvTable entries={serviceWmUniversityEntries} condensed />
-            <h3>William &amp; Mary Department-Level Committee</h3>
-            <CvTable entries={serviceWmDepartmentEntries} condensed />
-        </section>
+                            <CvTable
+                                entries={subsection.entries ?? []}
+                                condensed={subsection.condensed ?? false}
+                            />
+                        </div>
+                    {/each}
+                {/if}
+            </section>
+        {/each}
     </main>
 
     <div class="floating-actions" aria-label="page controls">
         <button type="button" class="action-button" on:click={scrollToTop}>
             Back to Top
-        </button>
-        <button
-            type="button"
-            class="action-button"
-            on:click={() => (showDetails = !showDetails)}
-            aria-pressed={showDetails}
-        >
-            {showDetails ? 'Hide Details' : 'Show More Details'}
         </button>
         <button type="button" class="action-button" on:click={triggerPrint}>
             Download PDF
