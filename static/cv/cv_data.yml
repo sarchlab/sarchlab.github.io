@@ -185,6 +185,9 @@ sections:
           - "Sole PI"
         right: ["4/2021"]
 
+  - id: publication
+    title: "Publications"
+
   - id: softwareEntries
     title: "Software & Datasets"
     entries:
@@ -455,13 +458,10 @@ sections:
               - "Member"
               - "Technical Community on Microprogramming and Microarchitecture (TCuARCH)"
             right: ["2025 - Present"]
+
       - id: serviceConferenceOrgEntries
         title: "Conference Organization"
         entries:
-          - left:
-              - "Local Organization Chair"
-              - "The 17th NASA Formal Methods Symposium (NFM '25)"
-            right: ["William & Mary, 2025"]
           - left:
               - "Artifact Evaluation Chair"
               - "2025 IEEE International Symposium on Workload Characterization (IISWC '25)"
@@ -470,6 +470,16 @@ sections:
               - "Workshop/Tutorial Chair"
               - "IEEE International Symposium on High-Performance Computer Architecture (HPCA '23)"
             right: ["2023"]
+        
+      - id: serviceToWM
+        title: "Service to W&M"
+        entries:
+          - left:
+              - "Local Organization Chair"
+              - "The 17th NASA Formal Methods Symposium (NFM '25)"
+            right: ["2025"]
+
+
       - id: serviceWorkshopChairEntries
         title: "Workshop Chairing"
         condensed: true

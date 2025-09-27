@@ -10,8 +10,7 @@ const WM_ADVISEES = [
     'Enze Xu',
 ]
 const PUBLICATION_TAG = 'yifan'
-const PUBLICATION_SECTION_ID = 'publicationEntries'
-const SOFTWARE_SECTION_ID = 'softwareEntries'
+const PUBLICATION_SECTION_ID = 'publication'
 const PUBLICATION_TYPE_TITLES = {
     conference: 'Conference Papers',
     journal: 'Journal Articles',
@@ -184,9 +183,9 @@ const createPublicationSubsection = (type, publications) => {
     }
 }
 
-const createPublicationSection = (publications) => {
+const createPublicationSubsections = (publications) => {
     if (!Array.isArray(publications) || publications.length === 0) {
-        return null
+        return []
     }
 
     const filtered = publications.filter(
@@ -196,38 +195,13 @@ const createPublicationSection = (publications) => {
             publication.tags.includes(PUBLICATION_TAG)
     )
 
-    const subsections = PUBLICATION_TYPE_ORDER.flatMap((type) => {
+    return PUBLICATION_TYPE_ORDER.flatMap((type) => {
         const items = filtered.filter(
             (publication) => publication.type === type
         )
         const subsection = createPublicationSubsection(type, items)
         return subsection ? [subsection] : []
     })
-
-    if (subsections.length === 0) {
-        return null
-    }
-
-    return {
-        id: PUBLICATION_SECTION_ID,
-        title: 'Publications',
-        subsections,
-    }
-}
-
-const insertSectionBefore = (sections, sectionToInsert, beforeId) => {
-    if (!sectionToInsert) {
-        return sections
-    }
-
-    const index = sections.findIndex((section) => section.id === beforeId)
-    const insertionIndex = index === -1 ? sections.length : index
-
-    return [
-        ...sections.slice(0, insertionIndex),
-        sectionToInsert,
-        ...sections.slice(insertionIndex),
-    ]
 }
 
 /** @type {import('./$types').PageLoad} */
@@ -260,15 +234,34 @@ export async function load({ fetch }) {
         throw new Error('Invalid publication data format')
     }
 
-    const publicationSection = createPublicationSection(publicationData)
+    const publicationSubsections = createPublicationSubsections(publicationData)
     const sections = Array.isArray(cvData.sections) ? [...cvData.sections] : []
-    const mergedSections = publicationSection
-        ? insertSectionBefore(
-              sections,
-              publicationSection,
-              SOFTWARE_SECTION_ID
-          )
-        : sections
+
+    const mergedSections = (() => {
+        if (publicationSubsections.length === 0) {
+            return sections
+        }
+
+        const index = sections.findIndex(
+            (section) => section.id === PUBLICATION_SECTION_ID
+        )
+
+        if (index === -1) {
+            console.warn(
+                'CV publication section placeholder not found; skipping publications.'
+            )
+            return sections
+        }
+
+        return sections.map((section, currentIndex) =>
+            currentIndex === index
+                ? {
+                      ...section,
+                      subsections: publicationSubsections,
+                  }
+                : section
+        )
+    })()
 
     return {
         cvData: {

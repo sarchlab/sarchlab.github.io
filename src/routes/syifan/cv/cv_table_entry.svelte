@@ -160,6 +160,7 @@
     .hanging-cell {
         width: 1%;
         padding-right: 1rem;
+        text-align: right;
     }
 
     @media screen and (max-width: 600px) {
