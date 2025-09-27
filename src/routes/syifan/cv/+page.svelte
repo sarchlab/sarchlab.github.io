@@ -211,7 +211,7 @@
 
         <section class="cv-section" id="grants">
             <header class="section-header">
-                <h2>Grants and Supports</h2>
+                <h2>Grants</h2>
             </header>
             <p class="list-heading">
                 I have acquired research funding that totals $1,685,843 at
@@ -240,7 +240,7 @@
                 {showDetails}
             />
             <CvPubTable
-                title="Journals"
+                title="Refereed Journals"
                 types="journal"
                 publications={publicationList}
                 {showDetails}

@@ -41,7 +41,7 @@
     "awardsEntries": [
         {
             "left": ["CAREER Award", "NSF"],
-            "right": ["2024"]
+            "right": ["2025"]
         },
         {
             "left": ["Best Paper Award", "CHI'23"],
@@ -524,7 +524,7 @@
             "right": []
         },
         {
-            "left": ["William & Mary", "Xin Li (REU Student)"],
+            "left": ["Northeastern University", "Xin Li (REU Student)"],
             "right": []
         }
     ],
@@ -995,19 +995,15 @@
             "right": ["2023 - 2024"]
         },
         {
-            "left": ["Prem-Major Advisor", "8 students"],
+            "left": ["Pre-Major Advisor", "8 students"],
             "right": ["2023 - 2024"]
         },
         {
-            "left": ["CS Major Advisor", "1 student"],
+            "left": ["CS Major Advisor", "2 students"],
             "right": ["2022 - 2023"]
         },
         {
             "left": ["Pre-Major Advisor", "10 students"],
-            "right": ["2022 - 2023"]
-        },
-        {
-            "left": ["CS Major Advisor", "1 student"],
             "right": ["2022 - 2023"]
         },
         {

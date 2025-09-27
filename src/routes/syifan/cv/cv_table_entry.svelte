@@ -49,6 +49,17 @@
                 {/if}
             </td>
         {/if}
+        {#if hasRightColumn}
+            <td class="right-cell">
+                {#if right[index] != null}
+                    {#if isHtmlValue(right[index])}
+                        {@html right[index].html}
+                    {:else}
+                        {right[index]}
+                    {/if}
+                {/if}
+            </td>
+        {/if}
         {#if condensed}
             {#if index === 0}
                 <td class="left-cell" rowspan={rowCount}>
@@ -83,17 +94,6 @@
                 {/if}
             </td>
         {/if}
-        {#if hasRightColumn}
-            <td class="right-cell">
-                {#if right[index] != null}
-                    {#if isHtmlValue(right[index])}
-                        {@html right[index].html}
-                    {:else}
-                        {right[index]}
-                    {/if}
-                {/if}
-            </td>
-        {/if}
     </tr>
 {/each}
 
@@ -120,6 +120,7 @@
     }
 
     .left-cell {
+        padding-left: 1rem;
         padding-right: 0.5rem;
         min-width: 10rem;
     }
@@ -137,8 +138,9 @@
     }
 
     .right-cell {
-        padding-right: 0;
-        text-align: right;
+        padding-right: 1rem;
+        padding-left: 0;
+        text-align: left;
         white-space: nowrap;
     }
 
@@ -167,6 +169,7 @@
             display: block;
             width: 100%;
             padding-right: 0;
+            padding-left: 0;
             white-space: normal;
             text-align: left;
         }

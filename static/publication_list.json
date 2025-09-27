@@ -127,7 +127,7 @@
     },
     {
         "title": "Understanding the Practices, Perceptions, and (Dis)Trust of Generative AI among Instructors: A Mixed-methods Study in the U.S. Higher Education",
-        "authors": "Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
+        "authors": "Wenhan Lyu, Shuang Zhang, Tingting (Rachel) Chung, Yifan Sun, Yixuan Zhang",
         "venue": "CEAI",
         "year": 2025,
         "month": 2,
@@ -322,8 +322,8 @@
         "venue_full": "IEEE Transactions on Visualization and Computer Graphics",
         "identification_information": "30(4), 1970–1983.",
         "doi": "https://doi.org/10.1109/TVCG.2023.3337173",
-        "month": 4,
-        "day": 1
+        "month": 11,
+        "day": 28
     },
     {
         "title": "What Do We Mean When We Talk about Trust in Social Media? A Systematic Review",
@@ -391,7 +391,7 @@
         "venue_full": "2022 CHI Conference on Human Factors in Computing Systems",
         "identification_information": "Article 78, 1–21.",
         "doi": "https://doi.org/10.1145/3491102.3501889",
-        "acceptance_comment": "Acceptance Rate: 638/2597 (~12.5%)",
+        "acceptance_comment": "Acceptance Rate: 638/2597 (~24.6%)",
         "month": 4,
         "day": 30
     },
@@ -410,7 +410,7 @@
     {
         "title": "Visualization Design Practices in a Crisis: Behind the Scenes with COVID-19 Dashboard Creators",
         "authors": "Yixuan Zhang, Yifan Sun, Joseph D Gaggiano, Neha Kumar, Clio Maria Adris, and Andrea G Parker",
-        "venue": "IEEE TVCG",
+        "venue": "IEEE VIS",
         "year": 2023,
         "tags": ["yifan"],
         "links": [
@@ -689,7 +689,7 @@
         ],
         "type": "patent",
         "venue_full": "United States Patent Application",
-        "identification_information": ", Patent No. US 10,275,851, Filed Apr 25, 2017, Issued Apr 30, 2019.",
+        "identification_information": "Patent No. US 10,275,851, Filed Apr 25, 2017, Issued Apr 30, 2019.",
         "month": 4,
         "day": 30
     },
@@ -978,7 +978,7 @@
     },
     {
         "title": "HSA Simulators",
-        "authors": "Y-C Chung, W-C Hsu, S-H Hung, TB Jablin, D Kaeli, Y Sun, R Ubal",
+        "authors": "Shih‑Hao Hung, Thomas B. Jablin, Yifan Sun, Rafael Ubal, David Kaeli",
         "year": 2016,
         "venue": "Book Chapter",
         "tags": ["yifan"],
@@ -1033,7 +1033,7 @@
     },
     {
         "title": "UMH: A Hardware-based Unified Memory Hierarchy for Systems with Multiple Discrete GPUs",
-        "authors": "Amir Kavyan Ziabari, Yifan Sun, Yenai Ma, Dana Schaa, Jose L. Abellan, John Kim, Ajay Joshi, David Kaeli",
+        "authors": "Amir Kavyan Ziabari, Yifan Sun, Yenai Ma, Dana Schaa, Jose L. Abellan, Rafael Ubal, John Kim, Ajay Joshi, David Kaeli",
         "year": 2016,
         "venue": "TACO",
         "tags": ["yifan"],
@@ -1059,7 +1059,7 @@
         "tags": ["yifan"],
         "links": [],
         "type": "journal",
-        "venue_full": "IEEE Transactions on Vehicular Technology",
+        "venue_full": "IEEE TRANSACTIONs on Vehicular Technology",
         "identification_information": "64(1), 263–272.",
         "doi": "https://doi.org/10.1109/TVT.2014.2318837",
         "month": 1,
