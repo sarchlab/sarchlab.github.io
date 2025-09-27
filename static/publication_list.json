@@ -514,7 +514,7 @@
         ],
         "type": "conference",
         "venue_full": "2021 CHI Conference on Human Factors in Computing Systems",
-        "identification_information": "Visualization for Communication (VisComm).",
+        "identification_information": "Article 608, 1–23.",
         "doi": "https://doi.org/10.1145/3411764.3445381",
         "acceptance_comment": "Acceptance Rate: ~26.3%",
         "month": 5,
@@ -608,8 +608,8 @@
             }
         ],
         "type": "preprint",
-        "venue_full": "arXiv preprint",
-        "identification_information": "arXiv:2007.04292.",
+        "venue_full": "arXiv",
+        "identification_information": "2007.04292.",
         "month": 1,
         "day": 1
     },
@@ -648,8 +648,8 @@
             }
         ],
         "type": "preprint",
-        "venue_full": "arXiv preprint",
-        "identification_information": "arXiv:2008.02300.",
+        "venue_full": "arXiv",
+        "identification_information": "2008.02300.",
         "month": 1,
         "day": 1
     },
@@ -788,8 +788,8 @@
             }
         ],
         "type": "preprint",
-        "venue_full": "arXiv preprint",
-        "identification_information": "arXiv:1911.11313.",
+        "venue_full": "arXiv",
+        "identification_information": "1911.11313.",
         "month": 1,
         "day": 1
     },
@@ -891,8 +891,8 @@
             }
         ],
         "type": "preprint",
-        "venue_full": "arXiv preprint",
-        "identification_information": "arXiv:1811.02884.",
+        "venue_full": "arXiv",
+        "identification_information": "1811.02884.",
         "month": 1,
         "day": 1
     },

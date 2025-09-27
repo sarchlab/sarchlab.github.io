@@ -157,6 +157,11 @@
         line-height: 1.2rem;
     }
 
+    .hanging-cell {
+        width: 1%;
+        padding-right: 1rem;
+    }
+
     @media screen and (max-width: 600px) {
         tr {
             display: block;
@@ -165,10 +170,8 @@
 
         td,
         .right-cell,
-        .hanging-cell,
         .left-cell {
             display: block;
-            width: 100%;
             padding-right: 0;
             padding-left: 0;
             white-space: normal;
