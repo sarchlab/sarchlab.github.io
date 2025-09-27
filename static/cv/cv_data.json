@@ -384,6 +384,13 @@
     "teachingWMEntries": [
         {
             "left": [
+                "CSCI432 - Web Programming",
+                "Senior undergraduate-level course"
+            ],
+            "right": ["Fall 2025"]
+        },
+        {
+            "left": [
                 "CSCI654 - Advanced Computer Architecture",
                 "Graduate-level course; new course"
             ],
@@ -394,21 +401,47 @@
                 "CSCI432 - Web Programming",
                 "Senior undergraduate-level course; new course"
             ],
-            "right": ["Fall 2024, Fall 2025"]
+            "right": ["Fall 2024"]
+        },
+        {
+            "left": ["CSCI780 - Data Visualization", "Ph.D.-level course"],
+            "right": ["Spring 2024"]
+        },
+        {
+            "left": [
+                "CSCI141 - Computational Problem Solving",
+                "Undergraduate Python programming course (1st-2nd year)",
+                "Redesigned the lab instruction materials that unifies the sections"
+            ],
+            "right": ["Fall 2023"]
         },
         {
             "left": [
                 "CSCI780 - Computer Architecture Modeling and Simulation",
-                "Ph.D.-level course; new course"
+                "Ph.D.-level course"
             ],
             "right": ["Spring 2023"]
+        },
+        {
+            "left": [
+                "CSCI141 - Computational Problem Solving",
+                "Undergraduate Python programming course (1st-2nd year)"
+            ],
+            "right": ["Fall 2022"]
         },
         {
             "left": [
                 "CSCI780 - Data Visualization",
                 "Ph.D.-level course; new course"
             ],
-            "right": ["Spring 2022, Spring 2024"]
+            "right": ["Spring 2022"]
+        },
+        {
+            "left": [
+                "CSCI141 - Computational Problem Solving",
+                "Undergraduate Python programming course (1st-2nd year)"
+            ],
+            "right": ["Fall 2021"]
         },
         {
             "left": [
@@ -422,7 +455,7 @@
                 "CSCI141 - Computational Problem Solving",
                 "Undergraduate Python programming course (1st-2nd year)"
             ],
-            "right": ["Fall 2020 - Fall 2023"]
+            "right": ["Fall 2020"]
         }
     ],
     "teachingNEUEntries": [
