@@ -86,7 +86,8 @@
         return formatted
     }
 
-    const formatTitle = (title: string): string => title.trim()
+    const formatTitle = (pub: Publication): string =>
+        `(${pub.year}) ${pub.title.trim()}`
 
     const formatVenue = (publication: Publication): string => {
         const full = (publication.venue_full ?? publication.venue).trim()
@@ -139,7 +140,7 @@
     let entries: TableEntry[] = []
     $: entries = sorted.map((publication, index, array) => {
         const leftCells: TableCell[] = [
-            formatTitle(publication.title),
+            formatTitle(publication),
             { html: formatAuthors(publication.authors) },
             formatVenue(publication),
         ]
@@ -171,7 +172,7 @@
         return {
             hanging: `${array.length - index}.`,
             left: leftCells,
-            right: rightCells,
+            // right: rightCells,
         }
     })
 </script>
