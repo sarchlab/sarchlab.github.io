@@ -138,10 +138,11 @@
     }
 
     .right-cell {
+        padding: 0;
         padding-right: 1rem;
-        padding-left: 0;
         text-align: left;
         white-space: nowrap;
+        width: 1%;
     }
 
     .left-header strong {
