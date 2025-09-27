@@ -1,6 +1,5 @@
 <script lang="ts">
     import CvTableEntry from './cv_table_entry.svelte'
-    import CvTableEntryCondensed from './cv_table_entry_condensed.svelte'
 
     type TableCell =
         | string
@@ -18,16 +17,14 @@
 
     export let entries: TableEntry[] = []
     export let condensed = false
-
-    $: EntryComponent = condensed ? CvTableEntryCondensed : CvTableEntry
 </script>
 
 {#if entries.length > 0}
     <table class="cv-table">
         <tbody>
             {#each entries as entry}
-                <svelte:component
-                    this={EntryComponent}
+                <CvTableEntry
+                    condensed={condensed}
                     hanging={entry.hanging ?? null}
                     left={entry.left}
                     right={entry.right}

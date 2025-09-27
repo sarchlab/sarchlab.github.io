@@ -5,6 +5,7 @@
     export let left: Array<CellValue> = []
     export let right: Array<CellValue> = []
     export let hanging: CellValue = null
+    export let condensed = false
 
     const isHtmlValue = (value: CellValue): value is HtmlValue =>
         typeof value === 'object' && value !== null && 'html' in value
@@ -36,7 +37,7 @@
 </script>
 
 {#each rows as index}
-    <tr class:entry-start={index === 0}>
+    <tr class:entry-start={index === 0} class:condensed-row={condensed}>
         {#if hasHangingColumn}
             <td class="hanging-cell">
                 {#if index === 0}
@@ -48,17 +49,40 @@
                 {/if}
             </td>
         {/if}
-        <td class:left-header={index === 0 && left[index] != null}>
-            {#if left[index] != null}
-                {#if isHtmlValue(left[index])}
-                    {@html left[index].html}
-                {:else if index === 0}
-                    <strong>{left[index]}</strong>
-                {:else}
-                    {left[index]}
-                {/if}
+        {#if condensed}
+            {#if index === 0}
+                <td class="left-cell" rowspan={rowCount}>
+                    {#each left as value, leftIndex}
+                        {#if value != null}
+                            <span
+                                class:left-header-span={leftIndex === 0}
+                                class:left-entry-span={leftIndex > 0}
+                            >
+                                {#if isHtmlValue(value)}
+                                    {@html value.html}
+                                {:else if leftIndex === 0}
+                                    <strong>{value}</strong>
+                                {:else}
+                                    {value}
+                                {/if}
+                            </span>
+                        {/if}
+                    {/each}
+                </td>
             {/if}
-        </td>
+        {:else}
+            <td class:left-header={index === 0 && left[index] != null}>
+                {#if left[index] != null}
+                    {#if isHtmlValue(left[index])}
+                        {@html left[index].html}
+                    {:else if index === 0}
+                        <strong>{left[index]}</strong>
+                    {:else}
+                        {left[index]}
+                    {/if}
+                {/if}
+            </td>
+        {/if}
         {#if hasRightColumn}
             <td class="right-cell">
                 {#if right[index] != null}
@@ -85,7 +109,7 @@
         line-height: 1.2;
     }
 
-    tr:not(.entry-start) td {
+    tr:not(.entry-start):not(.condensed-row) td {
         font-size: 0.9em;
     }
 
@@ -93,6 +117,23 @@
         padding: 0.05rem 0.5rem 0.05rem 0;
         white-space: nowrap;
         vertical-align: top;
+    }
+
+    .left-cell {
+        padding-right: 0.5rem;
+        min-width: 10rem;
+    }
+
+    .left-cell span {
+        display: inline;
+    }
+
+    .left-header-span {
+        font-size: 1.05em;
+    }
+
+    .left-entry-span {
+        font-size: 0.95em;
     }
 
     .right-cell {
@@ -121,7 +162,8 @@
 
         td,
         .right-cell,
-        .hanging-cell {
+        .hanging-cell,
+        .left-cell {
             display: block;
             width: 100%;
             padding-right: 0;
@@ -129,12 +171,20 @@
             text-align: left;
         }
 
-        .entry-start td:first-child {
+        .left-cell {
+            margin-bottom: 0.4rem;
+        }
+
+        .entry-start:not(.condensed-row) td:first-child {
             padding-top: 0.7rem;
         }
 
-        .entry-start td {
+        .entry-start:not(.condensed-row) td {
             padding-top: 0.1rem;
+        }
+
+        .condensed-row.entry-start td {
+            padding-top: 0.4rem;
         }
     }
 </style>
