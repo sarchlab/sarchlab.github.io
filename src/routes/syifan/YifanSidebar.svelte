@@ -38,7 +38,7 @@
         <div class="flex flex-col gap-1">
             <div class="entry">
                 <img class="small-icon" src="/file.svg" alt="file" />
-                <a href="yifan_cv.pdf">CV (updated Mar 2025)</a>
+                <a target="_blank" href="syifan/cv">CV</a>
             </div>
             <div class="entry">
                 <img class="small-icon" src="/email.svg" alt="email" />
