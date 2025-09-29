@@ -435,7 +435,7 @@ sections:
         right: ["2013"]
 
   - id: service
-    title: "Service"
+    title: "Service to the Profession"
     subsections:
       - id: servicePhdCommitteeEntries
         title: "Ph.D. Dissertation Committee"
@@ -463,6 +463,10 @@ sections:
         title: "Conference Organization"
         entries:
           - left:
+              - "Local Organization Chair"
+              - "The 17th NASA Formal Methods Symposium (NFM '25)"
+            right: ["2025"]
+          - left:
               - "Artifact Evaluation Chair"
               - "2025 IEEE International Symposium on Workload Characterization (IISWC '25)"
             right: ["2025"]
@@ -470,15 +474,6 @@ sections:
               - "Workshop/Tutorial Chair"
               - "IEEE International Symposium on High-Performance Computer Architecture (HPCA '23)"
             right: ["2023"]
-        
-      - id: serviceToWM
-        title: "Service to W&M"
-        entries:
-          - left:
-              - "Local Organization Chair"
-              - "The 17th NASA Formal Methods Symposium (NFM '25)"
-            right: ["2025"]
-
 
       - id: serviceWorkshopChairEntries
         title: "Workshop Chairing"
@@ -591,75 +586,94 @@ sections:
             right: ["2024"]
           - left: ["PacificVis '24", "IEEE Pacific Visualization Symposium (Ad-hoc Reviewer)"]
             right: ["2024"]
-      - id: serviceWmAdvisingEntries
-        title: "William & Mary Undergraduate Advising"
-        condensed: true
-        entries:
-          - left: ["Pre-Major Advisor", "7 students"]
-            right: ["2025 - 2026"]
-          - left: ["Pre-Major Advisor", "7 students"]
-            right: ["2024 - 2025"]
-          - left: ["CS Major Advisor", "4 students"]
-            right: ["2023 - 2024"]
-          - left: ["Pre-Major Advisor", "8 students"]
-            right: ["2023 - 2024"]
-          - left: ["CS Major Advisor", "2 students"]
-            right: ["2022 - 2023"]
-          - left: ["Pre-Major Advisor", "10 students"]
-            right: ["2022 - 2023"]
-          - left: ["Pre-Major Advisor", "6 students"]
-            right: ["2021 - 2022"]
-      - id: serviceWmUniversityEntries
-        title: "William & Mary University-Wide Committee"
-        condensed: true
-        entries:
-          - left:
-              - "Member"
-              - "Generative AI University Teaching & Learning Project (UTLP)"
-            right: ["2023 - 2024"]
-          - left:
-              - "Member"
-              - "S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee"
-            right: ["2022 - 2023"]
-          - left: ["Member", "Research Computing Advisory Committee"]
-            right: ["2022 - 2023"]
-          - left:
-              - "Member"
-              - "S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee"
-            right: ["2021 - 2022"]
-      - id: serviceWmDepartmentEntries
-        title: "William & Mary Department-Level Committee"
-        condensed: true
-        entries:
-          - left: ["Member", "Computer Science Undergraduate Curriculum"]
-            right: ["2025 - 2026"]
-          - left: ["Member", "Computer Science Web Presence"]
-            right: ["2025 - 2026"]
-          - left: ["Chair", "Computer Science Graduate Recruiting"]
-            right: ["2024 - 2025"]
-          - left: ["Member", "Computer Science Web Presence"]
-            right: ["2024 - 2025"]
-          - left: ["Member", "Computer Science Colloquium"]
-            right: ["2024 - 2025"]
-          - left: ["Member", "Computer Science Graduate Recruiting"]
-            right: ["2023 - 2024"]
-          - left: ["Member", "Computer Science Web Presence"]
-            right: ["2023 - 2024"]
-          - left: ["Member", "Computer Science Colloquium"]
-            right: ["2023 - 2024"]
-          - left: ["Chair", "Computer Science Web Presence"]
-            right: ["2022 - 2023"]
-          - left: ["Member", "Data Science Faculty Recruitment"]
-            right: ["2022 - 2023"]
-          - left: ["Member", "Computer Science Colloquium"]
-            right: ["2022 - 2023"]
-          - left: ["Chair", "Computer Science Graduate Admission"]
-            right: ["2022 - 2023"]
-          - left: ["Member", "Computer Science Graduate Recruiting"]
-            right: ["2022 - 2023"]
-          - left: ["Member", "Computer Science System"]
-            right: ["2022 - 2023"]
-          - left: ["Member", "Computer Science Web Presence"]
-            right: ["2021 - 2022"]
-          - left: ["Member", "Computer Science Curriculum"]
-            right: ["2021 - 2022"]
+
+  - id: serviceToWm
+    title: "Service to William & Mary"
+    subsections:
+    - id: eventOrganization
+      title: "Event Organization"
+      entries:
+        - left:
+          - "Local Organization Chair"
+          - "The 17th NASA Formal Methods Symposium (NFM '25)"
+          - "Secured $8,000+ in sponsorship funding from William & Mary CS Department, School of Arts & Sciences, and Provost's Office"
+          - "Coordinated full conference logistics including venue, AV infrastructure, parking, and hospitality services for attendees"
+          - "Room Tidewater at Saddler Center, William & Mary, Williamsburg, VA"
+          right: ["6/11/2025"]
+          
+        - left:
+          - "Chair"
+          - "The 3rd William & Mary Computer Science Symposium for Graduate Studies"
+          right: ["11/9/2024"]
+    - id: serviceWmAdvisingEntries
+      title: "William & Mary Undergraduate Advising"
+      condensed: true
+      entries:
+        - left: ["Pre-Major Advisor", "7 students"]
+          right: ["2025 - 2026"]
+        - left: ["Pre-Major Advisor", "7 students"]
+          right: ["2024 - 2025"]
+        - left: ["CS Major Advisor", "4 students"]
+          right: ["2023 - 2024"]
+        - left: ["Pre-Major Advisor", "8 students"]
+          right: ["2023 - 2024"]
+        - left: ["CS Major Advisor", "2 students"]
+          right: ["2022 - 2023"]
+        - left: ["Pre-Major Advisor", "10 students"]
+          right: ["2022 - 2023"]
+        - left: ["Pre-Major Advisor", "6 students"]
+          right: ["2021 - 2022"]
+    - id: serviceWmUniversityEntries
+      title: "William & Mary University-Wide Committee"
+      condensed: true
+      entries:
+        - left:
+            - "Member"
+            - "Generative AI University Teaching & Learning Project (UTLP)"
+          right: ["2023 - 2024"]
+        - left:
+            - "Member"
+            - "S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee"
+          right: ["2022 - 2023"]
+        - left: ["Member", "Research Computing Advisory Committee"]
+          right: ["2022 - 2023"]
+        - left:
+            - "Member"
+            - "S. Laurie Sanderson Awards for Excellence in Undergraduate Mentoring Committee"
+          right: ["2021 - 2022"]
+    - id: serviceWmDepartmentEntries
+      title: "William & Mary Department-Level Committee"
+      condensed: true
+      entries:
+        - left: ["Member", "Computer Science Undergraduate Curriculum"]
+          right: ["2025 - 2026"]
+        - left: ["Member", "Computer Science Web Presence"]
+          right: ["2025 - 2026"]
+        - left: ["Chair", "Computer Science Graduate Recruiting"]
+          right: ["2024 - 2025"]
+        - left: ["Member", "Computer Science Web Presence"]
+          right: ["2024 - 2025"]
+        - left: ["Member", "Computer Science Colloquium"]
+          right: ["2024 - 2025"]
+        - left: ["Member", "Computer Science Graduate Recruiting"]
+          right: ["2023 - 2024"]
+        - left: ["Member", "Computer Science Web Presence"]
+          right: ["2023 - 2024"]
+        - left: ["Member", "Computer Science Colloquium"]
+          right: ["2023 - 2024"]
+        - left: ["Chair", "Computer Science Web Presence"]
+          right: ["2022 - 2023"]
+        - left: ["Member", "Data Science Faculty Recruitment"]
+          right: ["2022 - 2023"]
+        - left: ["Member", "Computer Science Colloquium"]
+          right: ["2022 - 2023"]
+        - left: ["Chair", "Computer Science Graduate Admission"]
+          right: ["2022 - 2023"]
+        - left: ["Member", "Computer Science Graduate Recruiting"]
+          right: ["2022 - 2023"]
+        - left: ["Member", "Computer Science System"]
+          right: ["2022 - 2023"]
+        - left: ["Member", "Computer Science Web Presence"]
+          right: ["2021 - 2022"]
+        - left: ["Member", "Computer Science Curriculum"]
+          right: ["2021 - 2022"]
