@@ -291,7 +291,7 @@
                 <td style="font-weight:bold;">Opening Remarks</td>
             </tr>
             <tr>
-                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 1</td>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 1: Simulation for AI</td>
             </tr>
             <tr class="sub-schedule">
                 <td>8:10 AM – 9:00 AM</td>
@@ -375,26 +375,27 @@
                     <p>Nikos Karystinos, George-Marios Fragkoulis and Dimitris Gizopoulos (University of Athens)</p>
                 </td>
             </tr>
-            <tr class="sub-schedule">
+            <!-- <tr class="sub-schedule">
                 <td>2:00 PM – 2:20 PM</td>
                 <td>Discussion</td>
-            </tr>
+            </tr> -->
             <tr>
                 <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 4: Round Table Discussion</td>
             </tr>
             <tr class="sub-schedule">
-                <td>2:20 PM – 2:30 PM</td>
-                <td>Topic 1: TBD</td>
+                <td>2:00 PM – 2:40 PM</td>
+                <td>
+                    Break group discussion
+                    <p>Topic 1: TBD</p>
+                    <p>Topic 2: TBD</p>
+                    <p>Topic 3: TBD</p>
+                </td>
             </tr>
             <tr class="sub-schedule">
-                <td>2:30 PM – 2:40 PM</td>
-                <td>Topic 2: TBD</td>
+                <td>2:40 PM – 3:00 PM</td>
+                <td>Summary</td>
             </tr>
-            <tr class="sub-schedule">
-                <td>2:40 PM – 2:50 PM</td>
-                <td>Topic 3: TBD</td>
-            </tr>
-            
+ 
 
             <tr>
                 <td>3:00 PM – 3:30 PM</td>
