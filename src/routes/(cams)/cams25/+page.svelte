@@ -291,7 +291,7 @@
                 <td style="font-weight:bold;">Opening Remarks</td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:center; font-weight:bold;">Session 1</td>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 1</td>
             </tr>
             <tr class="sub-schedule">
                 <td>8:10 AM – 9:00 AM</td>
@@ -300,14 +300,14 @@
             <tr class="sub-schedule">
                 <td>9:00 AM – 9:20 AM</td>
                 <td>
-                    [Paper] NetTLMSim: A Virtual Prototype Simulator for Large-Scale Accelerator Networks
-                    <p>Junsu Heo, Shinyoung Kim, Hyeseong Shin, Jaesuk Lee (Konkuk University), Sungkyung Park (Pusan National University) and Chester Sungchung Park (Konkuk University)</p> 
+                    <b>[Paper]</b> NetTLMSim: A Virtual Prototype Simulator for Large-Scale Accelerator Networks
+                    <p>Junsu Heo, Shinyoung Kim, Hyeseong Shin, Jaesuk Lee (Konkuk University), Sungkyung Park (Pusan National University) and Chester Sungchung Park (Konkuk University)</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>9:20 AM – 9:40 AM</td>
                 <td>
-                    [Paper] A comprehensive analysis and modeling of spill operations in vector processing units
+                    <b>[Paper]</b> A comprehensive analysis and modeling of spill operations in vector processing units
                     <p>Hossein Mokhtarnia, Osman Unsal and Adrian Cristal Kestelman (Barcelona Supercomputing Center)</p>
                 </td>
             </tr>
@@ -321,19 +321,19 @@
             </tr>
 
             <tr>
-                <td colspan="2" style="text-align:center; font-weight:bold;">Session 2: AI for Simulation</td>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 2: AI for Simulation</td>
             </tr>
             <tr class="sub-schedule">
                 <td>10:30 AM – 10:50 AM</td>
                 <td>
-                    [Paper] gem5 Co-Pilot: AI Assistant Agent for Architectural Design Space Acceleration
+                    <b>[Paper]</b> gem5 Co-Pilot: AI Assistant Agent for Architectural Design Space Acceleration
                     <p>Zuoming Fu (Cornell University), Alexander Manley (University of Kansas) and Mohammad Alian (Cornell University)</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>10:50 AM – 11:10 AM</td>
                 <td>
-                    [Paper] DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant [Remote]
+                    <b>[Paper]</b> DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant [Remote]
                     <p>Enze Xu, Jeremy Coonley, Daoxuan Xu and Yifan Sun (College of William & Mary)</p>
                 </td>
             </tr>
@@ -352,26 +352,26 @@
             </tr>
             
             <tr>
-                <td colspan="2" style="text-align:center; font-weight:bold;">Session 3: Network on chip and system-level simulation</td>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 3: Network on chip and system-level simulation</td>
             </tr>
             <tr class="sub-schedule">
                 <td>1:00 PM – 1:20 PM</td>
                 <td>
-                    [Paper] A Cycle-accurate, Extensible Traffic Generator for Cross-abstraction NoC Simulation
+                    <b>[Paper]</b> A Cycle-accurate, Extensible Traffic Generator for Cross-abstraction NoC Simulation
                     <p>Chanwoo Song and Hyun-Gyu Kim (Openedges Technology)</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>1:20 PM – 1:40 PM</td>
                 <td>
-                    [Paper] Latency-Aware QoS Optimization of XY-YX Routing in NoCs via Analytical Latency Estimation
+                    <b>[Paper]</b> Latency-Aware QoS Optimization of XY-YX Routing in NoCs via Analytical Latency Estimation
                     <p>Jongwon Oh, Seongmo An, Jinyoung Shin and Seung Eun Lee (Seoul National University of Science and Technology)</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>1:40 PM – 2:00 PM</td>
                 <td>
-                    [Paper] Enabling Realistic Virtualized Cloud Workload Evaluation in RISC-V
+                    <b>[Paper]</b> Enabling Realistic Virtualized Cloud Workload Evaluation in RISC-V
                     <p>Nikos Karystinos, George-Marios Fragkoulis and Dimitris Gizopoulos (University of Athens)</p>
                 </td>
             </tr>
@@ -390,20 +390,20 @@
             </tr>
 
             <tr>
-                <td colspan="2" style="text-align:center; font-weight:bold;">Session 4: Simulation Design Methods</td>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 4: Simulation Design Methods</td>
             </tr>
             
             <tr class="sub-schedule">
                 <td>3:30 PM – 3:50 PM</td>
                 <td>
-                    [Paper] Phalanx: A Processor Simulator Based on the Entity Component System Architecture
+                    <b>[Paper]</b> Phalanx: A Processor Simulator Based on the Entity Component System Architecture
                     <p>Toshiki Maekawa (Nagoya Institute of Technology), Akihiko Odaki (The University of Tokyo), Toru Koizumi, Tomoaki Tsumura (Nagoya Institute of Technology) and Ryota Shioya (The University of Tokyo)</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>3:50 PM – 4:10 PM</td>
                 <td>
-                    [Tool Release Talk] Mess Simulator: New Capabilities in the Latest Release
+                    <b>[Tool Release Talk]</b> Mess Simulator: New Capabilities in the Latest Release
                     <p>Pouya Esmaili-Dokht, Ashkan Asgharzadeh, Petar Radojkovic and Eduard Ayguadé (Barcelona Supercomputing Center)</p>
                 </td>
             </tr>
@@ -605,5 +605,9 @@
 
     .collapse-content.show {
         display: block;
+    }
+
+    .session-header {
+    background-color: #e6f7fb; /* Tailwind's sky-100, or pick your preferred light blue */
     }
 </style>
