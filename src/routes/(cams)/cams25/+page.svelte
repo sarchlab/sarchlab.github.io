@@ -352,7 +352,7 @@
             </tr>
             
             <tr>
-                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 3: Network on chip and system-level simulation</td>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 3: Network on Chip and System-level Simulation</td>
             </tr>
             <tr class="sub-schedule">
                 <td>1:00 PM – 1:20 PM</td>
@@ -377,12 +377,24 @@
             </tr>
             <tr class="sub-schedule">
                 <td>2:00 PM – 2:20 PM</td>
-                <td>[TBD]</td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>2:20 PM – 2:40 PM</td>
                 <td>Discussion</td>
             </tr>
+            <tr>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 4: Round Table Discussion</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td>2:20 PM – 2:30 PM</td>
+                <td>Topic 1: TBD</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td>2:30 PM – 2:40 PM</td>
+                <td>Topic 2: TBD</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td>2:40 PM – 2:50 PM</td>
+                <td>Topic 3: TBD</td>
+            </tr>
+            
 
             <tr>
                 <td>3:00 PM – 3:30 PM</td>
@@ -390,7 +402,7 @@
             </tr>
 
             <tr>
-                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 4: Simulation Design Methods</td>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 5: Simulation Design Methods</td>
             </tr>
             
             <tr class="sub-schedule">
@@ -608,6 +620,6 @@
     }
 
     .session-header {
-    background-color: #e6f7fb; /* Tailwind's sky-100, or pick your preferred light blue */
+        background-color: #fff9e0; /* Tailwind's sky-100, or pick your preferred light blue */
     }
 </style>
