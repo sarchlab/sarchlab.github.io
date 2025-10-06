@@ -544,7 +544,7 @@ sections:
         title: "Journal Reviewer"
         condensed: true
         entries:
-          - left: ["TACO", "ACM Transactions on Architecture and Code Optimization"]
+          - left: ["TACO X3", "ACM Transactions on Architecture and Code Optimization"]
             right: ["2025"]
           - left: ["TCC", "IEEE Transactions on Cloud Computing"]
             right: ["2024"]
