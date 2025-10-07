@@ -544,6 +544,8 @@ sections:
         title: "Journal Reviewer"
         condensed: true
         entries:
+          - left: ["FGCS", "Future Generation Computer Systems"]
+            right: ["2025"]
           - left: ["TACO X3", "ACM Transactions on Architecture and Code Optimization"]
             right: ["2025"]
           - left: ["TCC", "IEEE Transactions on Cloud Computing"]
