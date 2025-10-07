@@ -339,7 +339,8 @@
             </tr>
             <tr class="sub-schedule">
                 <td>11:10 AM – 11:30 AM</td>
-                <td>Santosh [Talk title TBD, remote]</td>
+                <td>Talk: [TBD]</td>
+                <!-- <td>Santosh [Talk title TBD, remote]</td> -->
             </tr>
             <tr class="sub-schedule">
                 <td>11:30 AM – 11:50 AM</td>
@@ -356,7 +357,7 @@
             </tr>
             <tr class="sub-schedule">
                 <td>1:00 PM – 2:00 PM</td>
-                <td>Keynote: TBD</td>
+                <td>Keynote: [TBD]</td>
             </tr>
             <tr class="sub-schedule">
                 <td>2:00 PM – 2:20 PM</td>
@@ -415,13 +416,14 @@
             <tr class="sub-schedule">
                 <td>3:50 PM – 4:10 PM</td>
                 <td>
-                    <b>[Tool Release Talk]</b> Mess Simulator: New Capabilities in the Latest Release
+                    <b>[Paper]</b> Mess Simulator: New Capabilities in the Latest Release
                     <p>Pouya Esmaili-Dokht, Ashkan Asgharzadeh, Petar Radojkovic and Eduard Ayguadé (Barcelona Supercomputing Center)</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>4:10 PM – 4:30 PM</td>
-                <td>Rishov Sarkar [Talk title TBD]</td>
+                <!-- <td>Rishov Sarkar [Talk title TBD]</td> -->
+                <td>Talk: [TBD]</td>
             </tr>
             <tr class="sub-schedule">
                 <td>4:30 PM – 4:50 PM</td>
