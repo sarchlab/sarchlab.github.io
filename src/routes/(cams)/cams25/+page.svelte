@@ -355,21 +355,25 @@
                 <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 3: Network on Chip and System-level Simulation</td>
             </tr>
             <tr class="sub-schedule">
-                <td>1:00 PM – 1:20 PM</td>
+                <td>1:00 PM – 2:00 PM</td>
+                <td>Keynote: TBD</td>
+            </tr>
+            <tr class="sub-schedule">
+                <td>2:00 PM – 2:20 PM</td>
                 <td>
                     <b>[Paper]</b> A Cycle-accurate, Extensible Traffic Generator for Cross-abstraction NoC Simulation
                     <p>Chanwoo Song and Hyun-Gyu Kim (Openedges Technology)</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
-                <td>1:20 PM – 1:40 PM</td>
+                <td>2:20 PM – 2:40 PM</td>
                 <td>
                     <b>[Paper]</b> Latency-Aware QoS Optimization of XY-YX Routing in NoCs via Analytical Latency Estimation
                     <p>Jongwon Oh, Seongmo An, Jinyoung Shin and Seung Eun Lee (Seoul National University of Science and Technology)</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
-                <td>1:40 PM – 2:00 PM</td>
+                <td>2:40 PM – 3:00 PM</td>
                 <td>
                     <b>[Paper]</b> Enabling Realistic Virtualized Cloud Workload Evaluation in RISC-V
                     <p>Nikos Karystinos, George-Marios Fragkoulis and Dimitris Gizopoulos (University of Athens)</p>
@@ -379,7 +383,7 @@
                 <td>2:00 PM – 2:20 PM</td>
                 <td>Discussion</td>
             </tr> -->
-            <tr>
+            <!-- <tr>
                 <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 4: Round Table Discussion</td>
             </tr>
             <tr class="sub-schedule">
@@ -390,12 +394,7 @@
                     <p>Topic 2: TBD</p>
                     <p>Topic 3: TBD</p>
                 </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>2:40 PM – 3:00 PM</td>
-                <td>Summary</td>
-            </tr>
- 
+            </tr> -->
 
             <tr>
                 <td>3:00 PM – 3:30 PM</td>
@@ -403,7 +402,7 @@
             </tr>
 
             <tr>
-                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 5: Simulation Design Methods</td>
+                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 4: Simulation Design Methods</td>
             </tr>
             
             <tr class="sub-schedule">
