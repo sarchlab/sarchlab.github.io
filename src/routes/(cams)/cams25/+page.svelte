@@ -328,6 +328,16 @@
                 <td>
                     <b>[Paper]</b> gem5 Co-Pilot: AI Assistant Agent for Architectural Design Space Acceleration
                     <p>Zuoming Fu (Cornell University), Alexander Manley (University of Kansas) and Mohammad Alian (Cornell University)</p>
+                    <button id="toggle-opener-3" class="collapse-opener">
+                        <span class="collapse-arrow">▶</span> [Paper PDF]
+                    </button>
+                    <div id="abstract-content-3" class="collapse-content">
+                        <p class="talk-paper-pdf">
+                            <a href="/cams25/gem5%20Co-Pilot%20AI%20Assistant%20Agent%20for%20Architectural%20Design%20Space%20Exploration.pdf" target="_blank">
+                                gem5 Co-Pilot AI Assistant Agent for Architectural Design Space Exploration.pdf
+                            </a>
+                        </p>
+                    </div>
                 </td>
             </tr>
             <tr class="sub-schedule">
@@ -335,6 +345,16 @@
                 <td>
                     <b>[Paper]</b> DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant [Remote]
                     <p>Enze Xu, Jeremy Coonley, Daoxuan Xu and Yifan Sun (College of William & Mary)</p>
+                    <button id="toggle-opener-4" class="collapse-opener">
+                        <span class="collapse-arrow">▶</span> [Paper PDF]
+                    </button>
+                    <div id="abstract-content-4" class="collapse-content">
+                        <p class="talk-paper-pdf">
+                            <a href="/cams25/DaisenBot-%20Human-AI%20Collaboration%20in%20GPU%20Performance%20Analysis%20with%20Multi-Modal%20AI%20Assistant.pdf" target="_blank">
+                                DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant.pdf
+                            </a>
+                        </p>
+                    </div>
                 </td>
             </tr>
             <tr class="sub-schedule">
@@ -597,7 +617,7 @@
         margin-bottom: 1em;
     }
 
-    .talk-abstract {
+    .talk-paper-pdf {
         @apply text-sm;
         @apply text-gray-500;
     }
