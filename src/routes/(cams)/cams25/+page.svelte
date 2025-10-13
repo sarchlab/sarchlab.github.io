@@ -295,7 +295,10 @@
             </tr>
             <tr class="sub-schedule">
                 <td>8:10 AM – 9:00 AM</td>
-                <td>Keynote: Gwangsun Kim</td>
+                <td>
+                    <b>[Keynote]</b> Accelerating Accelerator Research: The ONNXim and PyTorchSim Story
+                    <p>Presenter: Gwangsun Kim</p>
+                </td>
             </tr>
             <tr class="sub-schedule">
                 <td>9:00 AM – 9:20 AM</td>
@@ -369,7 +372,10 @@
             </tr>
             <tr class="sub-schedule">
                 <td>11:10 AM – 11:30 AM</td>
-                <td>Talk: [TBD]</td>
+                <td>
+                    <b>[Talk]</b> ML-accelerated microarchitecture simulation: Insights, Challenges, and Opportunities
+                    <p>Presenter: Santosh Pandey</p>
+                </td>
                 <!-- <td>Santosh [Talk title TBD, remote]</td> -->
             </tr>
             <tr class="sub-schedule">
@@ -387,7 +393,10 @@
             </tr>
             <tr class="sub-schedule">
                 <td>1:00 PM – 2:00 PM</td>
-                <td>Keynote: [TBD]</td>
+                <td>
+                    <b>[Keynote]</b> TBD
+                    <p>Presenter: TBD</p>
+                </td>
             </tr>
             <tr class="sub-schedule">
                 <td>2:00 PM – 2:20 PM</td>
@@ -463,7 +472,10 @@
             <tr class="sub-schedule">
                 <td>4:10 PM – 4:30 PM</td>
                 <!-- <td>Rishov Sarkar [Talk title TBD]</td> -->
-                <td>Talk: [TBD]</td>
+                <td>
+                    <b>[Talk]</b> TBD
+                    <p>Presenter: TBD</p>
+                </td>
             </tr>
             <tr class="sub-schedule">
                 <td>4:30 PM – 4:50 PM</td>
