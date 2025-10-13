@@ -302,6 +302,16 @@
                 <td>
                     <b>[Paper]</b> NetTLMSim: A Virtual Prototype Simulator for Large-Scale Accelerator Networks
                     <p>Junsu Heo, Shinyoung Kim, Hyeseong Shin, Jaesuk Lee (Konkuk University), Sungkyung Park (Pusan National University) and Chester Sungchung Park (Konkuk University)</p>
+                    <button id="toggle-opener-1" class="collapse-opener">
+                        <span class="collapse-arrow">▶</span> [Paper PDF]
+                    </button>
+                    <div id="abstract-content-1" class="collapse-content">
+                        <p class="talk-paper-pdf">
+                            <a href="/cams25/NetTLMSim-%20A%20Virtual%20Prototype%20Simulator%20for%20Large-Scale%20Accelerator%20Networks.pdf" target="_blank">
+                                NetTLMSim: A Virtual Prototype Simulator for Large-Scale Accelerator Networks.pdf
+                            </a>
+                        </p>
+                    </div>
                 </td>
             </tr>
             <tr class="sub-schedule">
