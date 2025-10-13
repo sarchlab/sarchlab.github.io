@@ -408,6 +408,16 @@
                 <td>
                     <b>[Paper]</b> Enabling Realistic Virtualized Cloud Workload Evaluation in RISC-V
                     <p>Nikos Karystinos, George-Marios Fragkoulis and Dimitris Gizopoulos (University of Athens)</p>
+                    <button id="toggle-opener-7" class="collapse-opener">
+                        <span class="collapse-arrow">▶</span> [Paper PDF]
+                    </button>
+                    <div id="abstract-content-7" class="collapse-content">
+                        <p class="talk-paper-pdf">
+                            <a href="/cams25/Enabling%20Realistic%20Virtualized%20Cloud%20Workload%20Evaluation%20in%20RISC-V.pdf" target="_blank">
+                                Enabling Realistic Virtualized Cloud Workload Evaluation in RISC-V.pdf
+                            </a>
+                        </p>
+                    </div>
                 </td>
             </tr>
             <!-- <tr class="sub-schedule">
