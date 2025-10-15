@@ -473,7 +473,7 @@
                 <td>4:10 PM – 4:30 PM</td>
                 <!-- <td>Rishov Sarkar [Talk title TBD]</td> -->
                 <td>
-                    <b>[Talk]</b> TBD
+                    <b>[Talk]</b> Sniper 9.0 Faster Automated Sampling and Virtuoso Integration
                     <p>Speaker: TBD</p>
                 </td>
             </tr>
