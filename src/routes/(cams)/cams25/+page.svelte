@@ -357,7 +357,7 @@
                 <td>10:50 AM – 11:10 AM</td>
                 <td>
                     <b>[Paper]</b> DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant [Remote]
-                    <p>Enze Xu, Jeremy Coonley, Daoxuan Xu and Yifan Sun (College of William & Mary)</p>
+                    <p>Enze Xu, Jeremy Coonley, Daoxuan Xu and Yifan Sun (William & Mary)</p>
                     <button id="toggle-opener-4" class="collapse-opener">
                         <span class="collapse-arrow">▶</span> [Paper PDF]
                     </button>
@@ -401,7 +401,7 @@
             <tr class="sub-schedule">
                 <td>2:00 PM – 2:20 PM</td>
                 <td>
-                    <b>[Paper]</b> A Cycle-accurate, Extensible Traffic Generator for Cross-abstraction NoC Simulation
+                    <b>[Paper]</b> An End-to-End Evaluation Framework for NoC IP: Performance Analysis to Verification Support
                     <p>Chanwoo Song and Hyun-Gyu Kim (Openedges Technology)</p>
                 </td>
             </tr>
