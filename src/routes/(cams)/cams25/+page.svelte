@@ -297,7 +297,7 @@
                 <td>8:10 AM – 9:00 AM</td>
                 <td>
                     <b>[Keynote]</b> Accelerating Accelerator Research: The ONNXim and PyTorchSim Story
-                    <p>Presenter: Gwangsun Kim</p>
+                    <p>Speaker: Gwangsun Kim</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
@@ -395,7 +395,7 @@
                 <td>1:00 PM – 2:00 PM</td>
                 <td>
                     <b>[Keynote]</b> TBD
-                    <p>Presenter: TBD</p>
+                    <p>Speaker: TBD</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
@@ -474,7 +474,7 @@
                 <!-- <td>Rishov Sarkar [Talk title TBD]</td> -->
                 <td>
                     <b>[Talk]</b> TBD
-                    <p>Presenter: TBD</p>
+                    <p>Speaker: TBD</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
