@@ -374,7 +374,7 @@
                 <td>11:10 AM – 11:30 AM</td>
                 <td>
                     <b>[Talk]</b> ML-accelerated microarchitecture simulation: Insights, Challenges, and Opportunities
-                    <p>Presenter: Santosh Pandey</p>
+                    <p>Speaker: Santosh Pandey</p>
                 </td>
                 <!-- <td>Santosh [Talk title TBD, remote]</td> -->
             </tr>
