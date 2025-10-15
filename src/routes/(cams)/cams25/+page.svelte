@@ -339,7 +339,7 @@
             <tr class="sub-schedule">
                 <td>10:30 AM – 10:50 AM</td>
                 <td>
-                    <b>[Paper]</b> gem5 Co-Pilot: AI Assistant Agent for Architectural Design Space Acceleration
+                    <b>[Paper]</b> gem5 Co-Pilot: AI Assistant Agent for Architectural Design Space Acceleration [Remote]
                     <p>Zuoming Fu (Cornell University), Alexander Manley (University of Kansas) and Mohammad Alian (Cornell University)</p>
                     <button id="toggle-opener-3" class="collapse-opener">
                         <span class="collapse-arrow">▶</span> [Paper PDF]
@@ -373,7 +373,7 @@
             <tr class="sub-schedule">
                 <td>11:10 AM – 11:30 AM</td>
                 <td>
-                    <b>[Talk]</b> ML-accelerated microarchitecture simulation: Insights, Challenges, and Opportunities
+                    <b>[Talk]</b> ML-accelerated microarchitecture simulation: Insights, Challenges, and Opportunities [Remote]
                     <p>Speaker: Santosh Pandey</p>
                 </td>
                 <!-- <td>Santosh [Talk title TBD, remote]</td> -->
