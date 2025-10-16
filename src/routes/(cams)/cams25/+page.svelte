@@ -394,8 +394,8 @@
             <tr class="sub-schedule">
                 <td>1:00 PM – 2:00 PM</td>
                 <td>
-                    <b>[Keynote]</b> TBD
-                    <p>Speaker: TBD</p>
+                    <b>[Keynote]</b> Reflections on Building a High-Performance Microarchitectural Simulation Framework
+                    <p>Speaker: Heiner Litz</p>
                 </td>
             </tr>
             <tr class="sub-schedule">
@@ -505,7 +505,7 @@
         <h2 class="text-theme font-bold mb-6">Keynotes</h2>
         <!-- <div class="content"> -->
         <div style="float: left; margin-right: 10px" id="keynote1">
-            <img src="/GwangsunKim2025.avif" width="201" height="230" style="border-radius:10px; margin:5px;" alt="Gwangsun Kim" />
+            <img src="/cams25_pic/GwangsunKim2025.avif" width="190" height="210" style="border-radius:10px; margin:5px;" alt="Gwangsun Kim" />
         </div>
         <p>
             <b>Speaker:</b> Gwangsun Kim
@@ -518,12 +518,36 @@
         <p>
             <b>Abstract:</b>
             Recently, AI has been advancing at an unprecedented pace, driving transformative changes across the world. However, state-of-the-art AI algorithms have become increasingly demanding in both compute and memory resources, posing significant challenges in system design, particularly in the development of AI accelerators or Neural Processing Units (NPUs). Thus, as technology scaling slows down, it has become even more critical to develop innovative NPU hardware architectures and software technologies that can fully exploit hardware capabilities. To this end, accurate, fast, and versatile full-stack NPU simulators are essential for effective design-space exploration of both hardware and software. Yet achieving these goals simultaneously is difficult, as the aforementioned requirements often conflict with one another.
-            <br />
+            <br /><br />
             In this talk, I will share my experience working with my students to build two open-source NPU simulators, ONNXim and PyTorchSim, developed to address these challenges. ONNXim is a fast, cycle-accurate NPU simulator that takes DNNs in ONNX format to evaluate the inference performance of NPUs. Building on ONNXim, PyTorchSim extends simulation capability to DNNs written in PyTorch, enabling fast and cycle-accurate NPU simulation for both inference and training, with integrated compiler support. I will discuss the motivation behind ONNXim, how it evolved into PyTorchSim, and the key insights and lessons learned throughout their development. I will also briefly talk about future directions for PyTorchSim.
             <br />
         </p>
         <p>
             <b>Bio:</b> Gwangsun Kim is an Associate Professor in the Department of Computer Science and  Engineering at POSTECH, South Korea. He is also currently a Visiting  Academic at Arm, based in Cambridge, UK. Before joining POSTECH, he  worked as a Senior Research/Performance Engineer at Arm from 2016 to 2018. He received his Ph.D. and M.S. degrees in Computer Science from KAIST in 2016 and 2012, respectively,  and his B.S. degree in Computer Science and Engineering and Electrical  Engineering from POSTECH in 2010. His work received the Best Paper Award at PACT 2013 and was nominated for the Best Paper Award at PACT 2016. His  research interests include various areas of computer systems, such as  CPU/GPU/NPU architectures, near-data processing, systems for AI, memory systems, networking, and simulation methodology. 
+        </p>
+
+        <br /><br /><br />
+
+        <div style="float: left; margin-right: 10px" id="keynote1">
+            <img src="/cams25_pic/HeinerLitz2025.jpeg" width="190" height="210" style="border-radius:10px; margin:5px;" alt="Gwangsun Kim" />
+        </div>
+        <p>
+            <b>Speaker:</b> Heiner Litz
+            <br />
+        </p>
+        <p>
+            <b>Title: </b> Reflections on Building a High-Performance Microarchitectural Simulation Framework
+            <br />
+        </p>
+        <p>
+            <b>Abstract:</b>
+            Microarchitectural simulation lies at the heart of computer-architecture research: it enables hypothesis validation, design-space exploration, and performance projection of next-generation processors. Credible simulation studies demand faithful models of modern out-of-order CPUs, representative workloads executed at scale, and productive workflows that combine high simulation speed with robust automation and analysis.
+            <br />
+            Developing such a framework is a daunting challenge, as modern CPUs are among the most intricate engineering systems ever created. In this talk, I will share insights from leading the development of Scarab, a high-performance microarchitectural simulator that combines detailed modeling accuracy, fast simulation throughput, and an industry-grade infrastructure. I will discuss lessons learned in (1) designing accurate and realistic models, (2) performing rigorous calibration and validation, (3) applying strong software-engineering practices, and (4) building scalable and maintainable simulation infrastructure. Together, these principles have made Scarab one of the most capable and extensible open-source CPU simulators available today.
+            <br />
+        </p>
+        <p>
+            <b>Bio:</b> Heiner Litz is an Associate Professor of Computer Science and Engineering at the University of California, Santa Cruz, where he holds the Kumar Malavalli Endowed Chair and directs the Center for Research in Storage Systems (CRSS). His research spans computer architecture, datacenter systems, storage, and scalable AI infrastructure. His contributions have been recognized with an NSF CAREER Award, the Intel Outstanding Researcher Award, multiple Best Paper Awards, and Google and Meta Faculty Awards. Litz received his Ph.D. in Computer Engineering from Mannheim University and previously held research appointments at the University of Heidelberg, Stanford, Google, and MIT.
         </p>
         <!-- <p>TBD</p> -->
     </div>
