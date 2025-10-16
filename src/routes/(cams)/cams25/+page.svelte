@@ -403,6 +403,16 @@
                 <td>
                     <b>[Paper]</b> An End-to-End Evaluation Framework for NoC IP: Performance Analysis to Verification Support
                     <p>Chanwoo Song and Hyun-Gyu Kim (Openedges Technology)</p>
+                    <button id="toggle-opener-5" class="collapse-opener">
+                        <span class="collapse-arrow">▶</span> [Paper PDF]
+                    </button>
+                    <div id="abstract-content-5" class="collapse-content">
+                        <p class="talk-paper-pdf">
+                            <a href="/cams25/An%20End-to-End%20Evaluation%20Framework%20for%20NoC%20IP-%20Performance%20Analysis%20to%20Verification%20Support.pdf" target="_blank">
+                                An End-to-End Evaluation Framework for NoC IP: Performance Analysis to Verification Support.pdf
+                            </a>
+                        </p>
+                    </div>
                 </td>
             </tr>
             <tr class="sub-schedule">
