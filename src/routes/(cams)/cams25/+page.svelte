@@ -582,6 +582,19 @@
                             Radojkovic and Eduard Ayguadé (Barcelona
                             Supercomputing Center)
                         </p>
+                        <button id="toggle-opener-9" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> [Paper PDF]
+                        </button>
+                        <div id="abstract-content-9" class="collapse-content">
+                            <p class="talk-paper-pdf">
+                                <a
+                                    href="/cams25/Mess%20Simulator-%20New%20Capabilities%20in%20the%20Latest%20Release.pdf"
+                                    target="_blank"
+                                >
+                                    Mess Simulator: New Capabilities in the Latest Release.pdf
+                                </a>
+                            </p>
+                        </div>
                     </td>
                 </tr>
                 <tr class="sub-schedule">
