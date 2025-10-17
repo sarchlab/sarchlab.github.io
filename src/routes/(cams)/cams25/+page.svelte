@@ -82,7 +82,7 @@
                     <br />
                     <b>Venue:</b> Lotte Hotel
                     <br />
-                    <b>Room:</b> Room 1
+                    <b>Room:</b> Brahms (President Hotel, 19F)
                 </div>
 
                 <p class="text-baseline mt-4">
@@ -286,164 +286,239 @@
                 </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>8:00 AM – 8:10 AM</td>
-                <td style="font-weight:bold;">Opening Remarks</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 1: Simulation for AI</td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>8:10 AM – 9:00 AM</td>
-                <td>
-                    <b>[Keynote]</b> Accelerating Accelerator Research: The ONNXim and PyTorchSim Story
-                    <p>Speaker: Gwangsun Kim</p>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>9:00 AM – 9:20 AM</td>
-                <td>
-                    <b>[Paper]</b> NetTLMSim: A Virtual Prototype Simulator for Large-Scale Accelerator Networks
-                    <p>Junsu Heo, Shinyoung Kim, Hyeseong Shin, Jaesuk Lee (Konkuk University), Sungkyung Park (Pusan National University) and Chester Sungchung Park (Konkuk University)</p>
-                    <button id="toggle-opener-1" class="collapse-opener">
-                        <span class="collapse-arrow">▶</span> [Paper PDF]
-                    </button>
-                    <div id="abstract-content-1" class="collapse-content">
-                        <p class="talk-paper-pdf">
-                            <a href="/cams25/NetTLMSim-%20A%20Virtual%20Prototype%20Simulator%20for%20Large-Scale%20Accelerator%20Networks.pdf" target="_blank">
-                                NetTLMSim: A Virtual Prototype Simulator for Large-Scale Accelerator Networks.pdf
-                            </a>
+                <tr>
+                    <td>8:00 AM – 8:10 AM</td>
+                    <td style="font-weight:bold;">Opening Remarks</td>
+                </tr>
+                <tr>
+                    <td
+                        colspan="2"
+                        class="session-header"
+                        style="text-align:center; font-weight:bold;"
+                        >Session 1: Simulation for AI</td
+                    >
+                </tr>
+                <tr class="sub-schedule">
+                    <td>8:10 AM – 9:00 AM</td>
+                    <td>
+                        <b>[Keynote]</b> Accelerating Accelerator Research: The
+                        ONNXim and PyTorchSim Story
+                        <p>Speaker: Gwangsun Kim</p>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>9:00 AM – 9:20 AM</td>
+                    <td>
+                        <b>[Paper]</b> NetTLMSim: A Virtual Prototype Simulator
+                        for Large-Scale Accelerator Networks
+                        <p>
+                            Junsu Heo, Shinyoung Kim, Hyeseong Shin, Jaesuk Lee
+                            (Konkuk University), Sungkyung Park (Pusan National
+                            University) and Chester Sungchung Park (Konkuk
+                            University)
                         </p>
-                    </div>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>9:20 AM – 9:40 AM</td>
-                <td>
-                    <b>[Paper]</b> A comprehensive analysis and modeling of spill operations in vector processing units
-                    <p>Hossein Mokhtarnia, Osman Unsal and Adrian Cristal Kestelman (Barcelona Supercomputing Center)</p>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>9:40 AM – 10:00 AM</td>
-                <td>Discussion</td>
-            </tr>
-            <tr>
-                <td>10:00 AM – 10:30 AM</td>
-                <td style="font-weight:bold;">Coffee Break</td>
-            </tr>
+                        <button id="toggle-opener-1" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> [Paper PDF]
+                        </button>
+                        <div id="abstract-content-1" class="collapse-content">
+                            <p class="talk-paper-pdf">
+                                <a
+                                    href="/cams25/NetTLMSim-%20A%20Virtual%20Prototype%20Simulator%20for%20Large-Scale%20Accelerator%20Networks.pdf"
+                                    target="_blank"
+                                >
+                                    NetTLMSim: A Virtual Prototype Simulator
+                                    for Large-Scale Accelerator Networks.pdf
+                                </a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>9:20 AM – 9:40 AM</td>
+                    <td>
+                        <b>[Paper]</b> A comprehensive analysis and modeling of
+                        spill operations in vector processing units
+                        <p>
+                            Hossein Mokhtarnia, Osman Unsal and Adrian Cristal
+                            Kestelman (Barcelona Supercomputing Center)
+                        </p>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>9:40 AM – 10:00 AM</td>
+                    <td>Discussion</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM – 10:30 AM</td>
+                    <td style="font-weight:bold;">Coffee Break</td>
+                </tr>
 
-            <tr>
-                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 2: AI for Simulation</td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>10:30 AM – 10:50 AM</td>
-                <td>
-                    <b>[Paper]</b> gem5 Co-Pilot: AI Assistant Agent for Architectural Design Space Acceleration [Remote]
-                    <p>Zuoming Fu (Cornell University), Alexander Manley (University of Kansas) and Mohammad Alian (Cornell University)</p>
-                    <button id="toggle-opener-3" class="collapse-opener">
-                        <span class="collapse-arrow">▶</span> [Paper PDF]
-                    </button>
-                    <div id="abstract-content-3" class="collapse-content">
-                        <p class="talk-paper-pdf">
-                            <a href="/cams25/gem5%20Co-Pilot%20AI%20Assistant%20Agent%20for%20Architectural%20Design%20Space%20Exploration.pdf" target="_blank">
-                                gem5 Co-Pilot AI Assistant Agent for Architectural Design Space Exploration.pdf
-                            </a>
+                <tr>
+                    <td
+                        colspan="2"
+                        class="session-header"
+                        style="text-align:center; font-weight:bold;"
+                        >Session 2: AI for Simulation</td
+                    >
+                </tr>
+                <tr class="sub-schedule">
+                    <td>10:30 AM – 10:50 AM</td>
+                    <td>
+                        <b>[Paper]</b> gem5 Co-Pilot: AI Assistant Agent for
+                        Architectural Design Space Acceleration [Remote]
+                        <p>
+                            Zuoming Fu (Cornell University), Alexander Manley
+                            (University of Kansas) and Mohammad Alian (Cornell
+                            University)
                         </p>
-                    </div>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>10:50 AM – 11:10 AM</td>
-                <td>
-                    <b>[Paper]</b> DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant [Remote]
-                    <p>Enze Xu, Jeremy Coonley, Daoxuan Xu and Yifan Sun (William & Mary)</p>
-                    <button id="toggle-opener-4" class="collapse-opener">
-                        <span class="collapse-arrow">▶</span> [Paper PDF]
-                    </button>
-                    <div id="abstract-content-4" class="collapse-content">
-                        <p class="talk-paper-pdf">
-                            <a href="/cams25/DaisenBot-%20Human-AI%20Collaboration%20in%20GPU%20Performance%20Analysis%20with%20Multi-Modal%20AI%20Assistant.pdf" target="_blank">
-                                DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant.pdf
-                            </a>
+                        <button id="toggle-opener-3" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> [Paper PDF]
+                        </button>
+                        <div id="abstract-content-3" class="collapse-content">
+                            <p class="talk-paper-pdf">
+                                <a
+                                    href="/cams25/gem5%20Co-Pilot%20AI%20Assistant%20Agent%20for%20Architectural%20Design%20Space%20Exploration.pdf"
+                                    target="_blank"
+                                >
+                                    gem5 Co-Pilot AI Assistant Agent for
+                                    Architectural Design Space Exploration.pdf
+                                </a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>10:50 AM – 11:10 AM</td>
+                    <td>
+                        <b>[Paper]</b> DaisenBot: Human-AI Collaboration in GPU
+                        Performance Analysis with Multi-Modal AI Assistant
+                        [Remote]
+                        <p>
+                            Enze Xu, Jeremy Coonley, Daoxuan Xu and Yifan Sun
+                            (William & Mary)
                         </p>
-                    </div>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>11:10 AM – 11:30 AM</td>
-                <td>
-                    <b>[Talk]</b> ML-accelerated microarchitecture simulation: Insights, Challenges, and Opportunities [Remote]
-                    <p>Speaker: Santosh Pandey</p>
-                </td>
-                <!-- <td>Santosh [Talk title TBD, remote]</td> -->
-            </tr>
-            <tr class="sub-schedule">
-                <td>11:30 AM – 11:50 AM</td>
-                <td>Discussion</td>
-            </tr>
+                        <button id="toggle-opener-4" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> [Paper PDF]
+                        </button>
+                        <div id="abstract-content-4" class="collapse-content">
+                            <p class="talk-paper-pdf">
+                                <a
+                                    href="/cams25/DaisenBot-%20Human-AI%20Collaboration%20in%20GPU%20Performance%20Analysis%20with%20Multi-Modal%20AI%20Assistant.pdf"
+                                    target="_blank"
+                                >
+                                    DaisenBot: Human-AI Collaboration in GPU
+                                    Performance Analysis with Multi-Modal AI
+                                    Assistant.pdf
+                                </a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>11:10 AM – 11:30 AM</td>
+                    <td>
+                        <b>[Talk]</b> ML-accelerated microarchitecture
+                        simulation: Insights, Challenges, and Opportunities
+                        [Remote]
+                        <p>Speaker: Santosh Pandey</p>
+                    </td>
+                    <!-- <td>Santosh [Talk title TBD, remote]</td> -->
+                </tr>
+                <tr class="sub-schedule">
+                    <td>11:30 AM – 11:50 AM</td>
+                    <td>Discussion</td>
+                </tr>
 
-            <tr>
-                <td>12:00 PM – 1:00 PM</td>
-                <td style="font-weight:bold;">Lunch Break</td>
-            </tr>
-            
-            <tr>
-                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 3: Network on Chip and System-level Simulation</td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>1:00 PM – 2:00 PM</td>
-                <td>
-                    <b>[Keynote]</b> Reflections on Building a High-Performance Microarchitectural Simulation Framework
-                    <p>Speaker: Heiner Litz</p>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>2:00 PM – 2:20 PM</td>
-                <td>
-                    <b>[Paper]</b> An End-to-End Evaluation Framework for NoC IP: Performance Analysis to Verification Support
-                    <p>Chanwoo Song and Hyun-Gyu Kim (Openedges Technology)</p>
-                    <button id="toggle-opener-5" class="collapse-opener">
-                        <span class="collapse-arrow">▶</span> [Paper PDF]
-                    </button>
-                    <div id="abstract-content-5" class="collapse-content">
-                        <p class="talk-paper-pdf">
-                            <a href="/cams25/An%20End-to-End%20Evaluation%20Framework%20for%20NoC%20IP-%20Performance%20Analysis%20to%20Verification%20Support.pdf" target="_blank">
-                                An End-to-End Evaluation Framework for NoC IP: Performance Analysis to Verification Support.pdf
-                            </a>
+                <tr>
+                    <td>12:00 PM – 1:00 PM</td>
+                    <td style="font-weight:bold;">Lunch Break</td>
+                </tr>
+
+                <tr>
+                    <td
+                        colspan="2"
+                        class="session-header"
+                        style="text-align:center; font-weight:bold;"
+                        >Session 3: Network on Chip and System-level Simulation</td
+                    >
+                </tr>
+                <tr class="sub-schedule">
+                    <td>1:00 PM – 2:00 PM</td>
+                    <td>
+                        <b>[Keynote]</b> Reflections on Building a
+                        High-Performance Microarchitectural Simulation
+                        Framework
+                        <p>Speaker: Heiner Litz</p>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>2:00 PM – 2:20 PM</td>
+                    <td>
+                        <b>[Paper]</b> An End-to-End Evaluation Framework for
+                        NoC IP: Performance Analysis to Verification Support
+                        <p>
+                            Chanwoo Song and Hyun-Gyu Kim (Openedges
+                            Technology)
                         </p>
-                    </div>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>2:20 PM – 2:40 PM</td>
-                <td>
-                    <b>[Paper]</b> Latency-Aware QoS Optimization of XY-YX Routing in NoCs via Analytical Latency Estimation
-                    <p>Jongwon Oh, Seongmo An, Jinyoung Shin and Seung Eun Lee (Seoul National University of Science and Technology)</p>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>2:40 PM – 3:00 PM</td>
-                <td>
-                    <b>[Paper]</b> Enabling Realistic Virtualized Cloud Workload Evaluation in RISC-V
-                    <p>Nikos Karystinos, George-Marios Fragkoulis and Dimitris Gizopoulos (University of Athens)</p>
-                    <button id="toggle-opener-7" class="collapse-opener">
-                        <span class="collapse-arrow">▶</span> [Paper PDF]
-                    </button>
-                    <div id="abstract-content-7" class="collapse-content">
-                        <p class="talk-paper-pdf">
-                            <a href="/cams25/Enabling%20Realistic%20Virtualized%20Cloud%20Workload%20Evaluation%20in%20RISC-V.pdf" target="_blank">
-                                Enabling Realistic Virtualized Cloud Workload Evaluation in RISC-V.pdf
-                            </a>
+                        <button id="toggle-opener-5" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> [Paper PDF]
+                        </button>
+                        <div id="abstract-content-5" class="collapse-content">
+                            <p class="talk-paper-pdf">
+                                <a
+                                    href="/cams25/An%20End-to-End%20Evaluation%20Framework%20for%20NoC%20IP-%20Performance%20Analysis%20to%20Verification%20Support.pdf"
+                                    target="_blank"
+                                >
+                                    An End-to-End Evaluation Framework for NoC
+                                    IP: Performance Analysis to Verification
+                                    Support.pdf
+                                </a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>2:20 PM – 2:40 PM</td>
+                    <td>
+                        <b>[Paper]</b> Latency-Aware QoS Optimization of XY-YX
+                        Routing in NoCs via Analytical Latency Estimation
+                        <p>
+                            Jongwon Oh, Seongmo An, Jinyoung Shin and Seung Eun
+                            Lee (Seoul National University of Science and
+                            Technology)
                         </p>
-                    </div>
-                </td>
-            </tr>
-            <!-- <tr class="sub-schedule">
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>2:40 PM – 3:00 PM</td>
+                    <td>
+                        <b>[Paper]</b> Enabling Realistic Virtualized Cloud
+                        Workload Evaluation in RISC-V
+                        <p>
+                            Nikos Karystinos, George-Marios Fragkoulis and
+                            Dimitris Gizopoulos (University of Athens)
+                        </p>
+                        <button id="toggle-opener-7" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> [Paper PDF]
+                        </button>
+                        <div id="abstract-content-7" class="collapse-content">
+                            <p class="talk-paper-pdf">
+                                <a
+                                    href="/cams25/Enabling%20Realistic%20Virtualized%20Cloud%20Workload%20Evaluation%20in%20RISC-V.pdf"
+                                    target="_blank"
+                                >
+                                    Enabling Realistic Virtualized Cloud
+                                    Workload Evaluation in RISC-V.pdf
+                                </a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <!-- <tr class="sub-schedule">
                 <td>2:00 PM – 2:20 PM</td>
                 <td>Discussion</td>
             </tr> -->
-            <!-- <tr>
+                <!-- <tr>
                 <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 4: Round Table Discussion</td>
             </tr>
             <tr class="sub-schedule">
@@ -456,46 +531,64 @@
                 </td>
             </tr> -->
 
-            <tr>
-                <td>3:00 PM – 3:30 PM</td>
-                <td style="font-weight:bold;">Coffee Break</td>
-            </tr>
+                <tr>
+                    <td>3:00 PM – 3:30 PM</td>
+                    <td style="font-weight:bold;">Coffee Break</td>
+                </tr>
 
-            <tr>
-                <td colspan="2" class="session-header" style="text-align:center; font-weight:bold;">Session 4: Simulation Design Methods</td>
-            </tr>
-            
-            <tr class="sub-schedule">
-                <td>3:30 PM – 3:50 PM</td>
-                <td>
-                    <b>[Paper]</b> Phalanx: A Processor Simulator Based on the Entity Component System Architecture
-                    <p>Toshiki Maekawa (Nagoya Institute of Technology), Akihiko Odaki (The University of Tokyo), Toru Koizumi, Tomoaki Tsumura (Nagoya Institute of Technology) and Ryota Shioya (The University of Tokyo)</p>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>3:50 PM – 4:10 PM</td>
-                <td>
-                    <b>[Paper]</b> Mess Simulator: New Capabilities in the Latest Release
-                    <p>Pouya Esmaili-Dokht, Ashkan Asgharzadeh, Petar Radojkovic and Eduard Ayguadé (Barcelona Supercomputing Center)</p>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>4:10 PM – 4:30 PM</td>
-                <!-- <td>Rishov Sarkar [Talk title TBD]</td> -->
-                <td>
-                    <b>[Talk]</b> Sniper 9.0 Faster Automated Sampling and Virtuoso Integration
-                    <p>Speaker: TBD</p>
-                </td>
-            </tr>
-            <tr class="sub-schedule">
-                <td>4:30 PM – 4:50 PM</td>
-                <td>Discussion</td>
-            </tr>
-            <tr>
-                <td>4:50 PM – 5:00 PM</td>
-                <td style="font-weight:bold;">Closing Remarks</td>
-            </tr>
-        </tbody>
+                <tr>
+                    <td
+                        colspan="2"
+                        class="session-header"
+                        style="text-align:center; font-weight:bold;"
+                        >Session 4: Simulation Design Methods</td
+                    >
+                </tr>
+
+                <tr class="sub-schedule">
+                    <td>3:30 PM – 3:50 PM</td>
+                    <td>
+                        <b>[Paper]</b> Phalanx: A Processor Simulator Based on
+                        the Entity Component System Architecture
+                        <p>
+                            Toshiki Maekawa (Nagoya Institute of Technology),
+                            Akihiko Odaki (The University of Tokyo), Toru
+                            Koizumi, Tomoaki Tsumura (Nagoya Institute of
+                            Technology) and Ryota Shioya (The University of
+                            Tokyo)
+                        </p>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>3:50 PM – 4:10 PM</td>
+                    <td>
+                        <b>[Paper]</b> Mess Simulator: New Capabilities in the
+                        Latest Release
+                        <p>
+                            Pouya Esmaili-Dokht, Ashkan Asgharzadeh, Petar
+                            Radojkovic and Eduard Ayguadé (Barcelona
+                            Supercomputing Center)
+                        </p>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>4:10 PM – 4:30 PM</td>
+                    <!-- <td>Rishov Sarkar [Talk title TBD]</td> -->
+                    <td>
+                        <b>[Talk]</b> Sniper 9.0 Faster Automated Sampling and
+                        Virtuoso Integration
+                        <p>Speaker: TBD</p>
+                    </td>
+                </tr>
+                <tr class="sub-schedule">
+                    <td>4:30 PM – 4:50 PM</td>
+                    <td>Discussion</td>
+                </tr>
+                <tr>
+                    <td>4:50 PM – 5:00 PM</td>
+                    <td style="font-weight:bold;">Closing Remarks</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </div>
@@ -505,49 +598,118 @@
         <h2 class="text-theme font-bold mb-6">Keynotes</h2>
         <!-- <div class="content"> -->
         <div style="float: left; margin-right: 10px" id="keynote1">
-            <img src="/cams25_pic/GwangsunKim2025.avif" width="190" height="210" style="border-radius:10px; margin:5px;" alt="Gwangsun Kim" />
+            <img
+                src="/cams25_pic/GwangsunKim2025.avif"
+                width="190"
+                height="210"
+                style="border-radius:10px; margin:5px;"
+                alt="Gwangsun Kim"
+            />
         </div>
         <p>
             <b>Speaker:</b> Gwangsun Kim
             <br />
         </p>
         <p>
-            <b>Title: </b> Accelerating Accelerator Research: The ONNXim and PyTorchSim Story
+            <b>Title: </b> Accelerating Accelerator Research: The ONNXim and
+            PyTorchSim Story
             <br />
         </p>
         <p class="justify">
             <b>Abstract:</b>
-            Recently, AI has been advancing at an unprecedented pace, driving transformative changes across the world. However, state-of-the-art AI algorithms have become increasingly demanding in both compute and memory resources, posing significant challenges in system design, particularly in the development of AI accelerators or Neural Processing Units (NPUs). Thus, as technology scaling slows down, it has become even more critical to develop innovative NPU hardware architectures and software technologies that can fully exploit hardware capabilities. To this end, accurate, fast, and versatile full-stack NPU simulators are essential for effective design-space exploration of both hardware and software. Yet achieving these goals simultaneously is difficult, as the aforementioned requirements often conflict with one another.
+            Recently, AI has been advancing at an unprecedented pace, driving transformative
+            changes across the world. However, state-of-the-art AI algorithms have
+            become increasingly demanding in both compute and memory resources,
+            posing significant challenges in system design, particularly in the
+            development of AI accelerators or Neural Processing Units (NPUs). Thus,
+            as technology scaling slows down, it has become even more critical to
+            develop innovative NPU hardware architectures and software technologies
+            that can fully exploit hardware capabilities. To this end, accurate,
+            fast, and versatile full-stack NPU simulators are essential for effective
+            design-space exploration of both hardware and software. Yet achieving
+            these goals simultaneously is difficult, as the aforementioned requirements
+            often conflict with one another.
             <br /><br />
-            In this talk, I will share my experience working with my students to build two open-source NPU simulators, ONNXim and PyTorchSim, developed to address these challenges. ONNXim is a fast, cycle-accurate NPU simulator that takes DNNs in ONNX format to evaluate the inference performance of NPUs. Building on ONNXim, PyTorchSim extends simulation capability to DNNs written in PyTorch, enabling fast and cycle-accurate NPU simulation for both inference and training, with integrated compiler support. I will discuss the motivation behind ONNXim, how it evolved into PyTorchSim, and the key insights and lessons learned throughout their development. I will also briefly talk about future directions for PyTorchSim.
+            In this talk, I will share my experience working with my students to
+            build two open-source NPU simulators, ONNXim and PyTorchSim, developed
+            to address these challenges. ONNXim is a fast, cycle-accurate NPU simulator
+            that takes DNNs in ONNX format to evaluate the inference performance
+            of NPUs. Building on ONNXim, PyTorchSim extends simulation capability
+            to DNNs written in PyTorch, enabling fast and cycle-accurate NPU simulation
+            for both inference and training, with integrated compiler support. I
+            will discuss the motivation behind ONNXim, how it evolved into PyTorchSim,
+            and the key insights and lessons learned throughout their development.
+            I will also briefly talk about future directions for PyTorchSim.
             <br />
         </p>
         <p class="justify">
-            <b>Bio:</b> Gwangsun Kim is an Associate Professor in the Department of Computer Science and  Engineering at POSTECH, South Korea. He is also currently a Visiting  Academic at Arm, based in Cambridge, UK. Before joining POSTECH, he  worked as a Senior Research/Performance Engineer at Arm from 2016 to 2018. He received his Ph.D. and M.S. degrees in Computer Science from KAIST in 2016 and 2012, respectively,  and his B.S. degree in Computer Science and Engineering and Electrical  Engineering from POSTECH in 2010. His work received the Best Paper Award at PACT 2013 and was nominated for the Best Paper Award at PACT 2016. His  research interests include various areas of computer systems, such as  CPU/GPU/NPU architectures, near-data processing, systems for AI, memory systems, networking, and simulation methodology. 
+            <b>Bio:</b> Gwangsun Kim is an Associate Professor in the Department
+            of Computer Science and Engineering at POSTECH, South Korea. He is also
+            currently a Visiting Academic at Arm, based in Cambridge, UK. Before
+            joining POSTECH, he worked as a Senior Research/Performance Engineer
+            at Arm from 2016 to 2018. He received his Ph.D. and M.S. degrees in
+            Computer Science from KAIST in 2016 and 2012, respectively, and his
+            B.S. degree in Computer Science and Engineering and Electrical Engineering
+            from POSTECH in 2010. His work received the Best Paper Award at PACT
+            2013 and was nominated for the Best Paper Award at PACT 2016. His research
+            interests include various areas of computer systems, such as CPU/GPU/NPU
+            architectures, near-data processing, systems for AI, memory systems,
+            networking, and simulation methodology.
         </p>
 
         <br /><br /><br />
 
         <div style="float: left; margin-right: 10px" id="keynote1">
-            <img src="/cams25_pic/HeinerLitz2025.jpeg" width="190" height="210" style="border-radius:10px; margin:5px;" alt="Gwangsun Kim" />
+            <img
+                src="/cams25_pic/HeinerLitz2025.jpeg"
+                width="190"
+                height="210"
+                style="border-radius:10px; margin:5px;"
+                alt="Gwangsun Kim"
+            />
         </div>
         <p>
             <b>Speaker:</b> Heiner Litz
             <br />
         </p>
         <p>
-            <b>Title: </b> Reflections on Building a High-Performance Microarchitectural Simulation Framework
+            <b>Title: </b> Reflections on Building a High-Performance
+            Microarchitectural Simulation Framework
             <br />
         </p>
         <p class="justify">
             <b>Abstract:</b>
-            Microarchitectural simulation lies at the heart of computer-architecture research: it enables hypothesis validation, design-space exploration, and performance projection of next-generation processors. Credible simulation studies demand faithful models of modern out-of-order CPUs, representative workloads executed at scale, and productive workflows that combine high simulation speed with robust automation and analysis.
+            Microarchitectural simulation lies at the heart of computer-architecture
+            research: it enables hypothesis validation, design-space exploration,
+            and performance projection of next-generation processors. Credible simulation
+            studies demand faithful models of modern out-of-order CPUs, representative
+            workloads executed at scale, and productive workflows that combine high
+            simulation speed with robust automation and analysis.
             <br />
-            Developing such a framework is a daunting challenge, as modern CPUs are among the most intricate engineering systems ever created. In this talk, I will share insights from leading the development of Scarab, a high-performance microarchitectural simulator that combines detailed modeling accuracy, fast simulation throughput, and an industry-grade infrastructure. I will discuss lessons learned in (1) designing accurate and realistic models, (2) performing rigorous calibration and validation, (3) applying strong software-engineering practices, and (4) building scalable and maintainable simulation infrastructure. Together, these principles have made Scarab one of the most capable and extensible open-source CPU simulators available today.
+            Developing such a framework is a daunting challenge, as modern CPUs
+            are among the most intricate engineering systems ever created. In this
+            talk, I will share insights from leading the development of Scarab,
+            a high-performance microarchitectural simulator that combines detailed
+            modeling accuracy, fast simulation throughput, and an industry-grade
+            infrastructure. I will discuss lessons learned in (1) designing accurate
+            and realistic models, (2) performing rigorous calibration and validation,
+            (3) applying strong software-engineering practices, and (4) building
+            scalable and maintainable simulation infrastructure. Together, these
+            principles have made Scarab one of the most capable and extensible open-source
+            CPU simulators available today.
             <br />
         </p>
         <p class="justify">
-            <b>Bio:</b> Heiner Litz is an Associate Professor of Computer Science and Engineering at the University of California, Santa Cruz, where he holds the Kumar Malavalli Endowed Chair and directs the Center for Research in Storage Systems (CRSS). His research spans computer architecture, datacenter systems, storage, and scalable AI infrastructure. His contributions have been recognized with an NSF CAREER Award, the Intel Outstanding Researcher Award, multiple Best Paper Awards, and Google and Meta Faculty Awards. Litz received his Ph.D. in Computer Engineering from Mannheim University and previously held research appointments at the University of Heidelberg, Stanford, Google, and MIT.
+            <b>Bio:</b> Heiner Litz is an Associate Professor of Computer Science
+            and Engineering at the University of California, Santa Cruz, where he
+            holds the Kumar Malavalli Endowed Chair and directs the Center for Research
+            in Storage Systems (CRSS). His research spans computer architecture,
+            datacenter systems, storage, and scalable AI infrastructure. His contributions
+            have been recognized with an NSF CAREER Award, the Intel Outstanding
+            Researcher Award, multiple Best Paper Awards, and Google and Meta Faculty
+            Awards. Litz received his Ph.D. in Computer Engineering from Mannheim
+            University and previously held research appointments at the University
+            of Heidelberg, Stanford, Google, and MIT.
         </p>
         <!-- <p>TBD</p> -->
     </div>
