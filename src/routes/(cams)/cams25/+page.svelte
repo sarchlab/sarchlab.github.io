@@ -557,6 +557,19 @@
                             Technology) and Ryota Shioya (The University of
                             Tokyo)
                         </p>
+                        <button id="toggle-opener-8" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> [Paper PDF]
+                        </button>
+                        <div id="abstract-content-8" class="collapse-content">
+                            <p class="talk-paper-pdf">
+                                <a
+                                    href="/cams25/Phalanx-%20A%20Processor%20Simulator%20Based%20on%20the%20Entity%20Component%20System%20Architecture.pdf"
+                                    target="_blank"
+                                >
+                                    Phalanx: A Processor Simulator Based on the Entity Component System Architecture.pdf
+                                </a>
+                            </p>
+                        </div>
                     </td>
                 </tr>
                 <tr class="sub-schedule">
