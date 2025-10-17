@@ -575,14 +575,14 @@
                 <tr class="sub-schedule">
                     <td>3:50 PM – 4:10 PM</td>
                     <td>
-                        <b>[Paper]</b> Mess Simulator: New Capabilities in the
+                        <b>[Tool Release Talk]</b> Mess Simulator: New Capabilities in the
                         Latest Release
                         <p>
                             Pouya Esmaili-Dokht, Ashkan Asgharzadeh, Petar
                             Radojkovic and Eduard Ayguadé (Barcelona
                             Supercomputing Center)
                         </p>
-                        <button id="toggle-opener-9" class="collapse-opener">
+                        <!-- <button id="toggle-opener-9" class="collapse-opener">
                             <span class="collapse-arrow">▶</span> [Paper PDF]
                         </button>
                         <div id="abstract-content-9" class="collapse-content">
@@ -594,16 +594,16 @@
                                     Mess Simulator: New Capabilities in the Latest Release.pdf
                                 </a>
                             </p>
-                        </div>
+                        </div> -->
                     </td>
                 </tr>
                 <tr class="sub-schedule">
                     <td>4:10 PM – 4:30 PM</td>
                     <!-- <td>Rishov Sarkar [Talk title TBD]</td> -->
                     <td>
-                        <b>[Talk]</b> Sniper 9.0 Faster Automated Sampling and
+                        <b>[Tool Release Talk]</b> Sniper 9.0 Faster Automated Sampling and
                         Virtuoso Integration
-                        <p>Speaker: TBD</p>
+                        <p>Speaker: Trevor E. Carlson</p>
                     </td>
                 </tr>
                 <tr class="sub-schedule">
