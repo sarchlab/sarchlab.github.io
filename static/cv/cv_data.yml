@@ -53,10 +53,32 @@ sections:
           - "Wuhan, China"
         right:
           - "9/2008 - 6/2011"
+
+  - id: industryEntries
+    title: "Industry Experience"
+    condensed: true
+    entries:
+      - left:
+          - "AMD"
+          - "Software Engineer (Co-op)"
+          - "Boxborough, MA"
+          # - "Performance modeling and graphics simulator development for AMD Navi GPUs"
+        right:
+          - "7/2018 - 12/2018"
+          
+          
+      - left:
+          - "Dell EMC"
+          - "Software Engineer (Co-op)"
+          - "Hopkinton, MA"
+          # - "Cloud-based GPU-as-a-service system design, development, and deployment"
+        right:
+          - "7/2016 - 12/2016"
           
 
   - id: awardsEntries
     title: "Honors & Awards"
+    condensed: true
     entries:
       - left: ["CAREER Award", "NSF"]
         right: ["2025"]
@@ -79,25 +101,7 @@ sections:
       - left: ["Best Student Paper Award", "WUWNET"]
         right: ["2013"]
 
-  - id: industryEntries
-    title: "Industry Experience"
-    entries:
-      - left:
-          - "AMD"
-          - "Software Engineer (Co-op)"
-          - "Boxborough, MA"
-          # - "Performance modeling and graphics simulator development for AMD Navi GPUs"
-        right:
-          - "7/2018 - 12/2018"
-          
-          
-      - left:
-          - "Dell EMC"
-          - "Software Engineer (Co-op)"
-          - "Hopkinton, MA"
-          # - "Cloud-based GPU-as-a-service system design, development, and deployment"
-        right:
-          - "7/2016 - 12/2016"
+  
           
           
 
@@ -604,6 +608,9 @@ sections:
         - left:
           - "Chair"
           - "The 3rd William & Mary Computer Science Symposium for Graduate Studies"
+          - "110+ Participants"
+          - "Developed academic program featuring faculty lightning talks, competitive poster session, and panel discussions across 10 research areas"
+          - "Supported national recruitment effort targeting prospective MS and PhD candidates"
           right: ["11/9/2024"]
     - id: serviceWmAdvisingEntries
       title: "William & Mary Undergraduate Advising"

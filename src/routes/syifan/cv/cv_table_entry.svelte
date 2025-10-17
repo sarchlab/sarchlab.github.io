@@ -150,11 +150,11 @@
     }
 
     .entry-start td {
-        padding-top: 0.6rem;
+        padding-top: 0.4rem;
     }
 
     td {
-        line-height: 1.2rem;
+        line-height: 1rem;
     }
 
     .hanging-cell {
@@ -180,7 +180,7 @@
         }
 
         .left-cell {
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.2rem;
         }
 
         .entry-start:not(.condensed-row) td:first-child {

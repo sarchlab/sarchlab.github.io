@@ -210,7 +210,7 @@
         background: #e9eef3;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         color: #111;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         line-height: 1.45;
     }
 
