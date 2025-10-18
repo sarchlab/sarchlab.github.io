@@ -8,6 +8,7 @@
         | null
         | undefined
         | { html: string }
+    type CvMetaLine = string | { html: string }
 
     type CvEntry = {
         left: Array<TableCell>
@@ -19,7 +20,7 @@
         id: string
         title: string
         entries?: CvEntry[]
-        meta?: string[]
+        meta?: CvMetaLine[]
         condensed?: boolean
     }
 
@@ -27,7 +28,7 @@
         id: string
         title: string
         entries?: CvEntry[]
-        meta?: string[]
+        meta?: CvMetaLine[]
         condensed?: boolean
         subsections?: CvSubsection[]
     }
@@ -74,6 +75,14 @@
 
     const formatWebsite = (value: string) =>
         /^https?:\/\//i.test(value) ? value : `https://${value}`
+
+    const isHtmlMetaLine = (
+        metaLine: CvMetaLine | null | undefined
+    ): metaLine is { html: string } =>
+        typeof metaLine === 'object' &&
+        metaLine !== null &&
+        'html' in metaLine &&
+        typeof metaLine.html === 'string'
 
     $: contactEntries = (() => {
         const contact = (header?.contact ?? {}) as Record<string, string>
@@ -161,7 +170,13 @@
 
                 {#if section.meta?.length}
                     {#each section.meta as metaLine}
-                        <p class="list-heading">{metaLine}</p>
+                        {#if isHtmlMetaLine(metaLine)}
+                            <p class="list-heading">
+                                {@html metaLine.html}
+                            </p>
+                        {:else}
+                            <p class="list-heading">{metaLine}</p>
+                        {/if}
                     {/each}
                 {/if}
 
@@ -179,7 +194,15 @@
 
                             {#if subsection.meta?.length}
                                 {#each subsection.meta as metaLine}
-                                    <p class="list-heading">{metaLine}</p>
+                                    {#if isHtmlMetaLine(metaLine)}
+                                        <p class="list-heading">
+                                            {@html metaLine.html}
+                                        </p>
+                                    {:else}
+                                        <p class="list-heading">
+                                            {metaLine}
+                                        </p>
+                                    {/if}
                                 {/each}
                             {/if}
 
@@ -243,7 +266,7 @@
 
     .tagline {
         margin: 0.4rem 0 0;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: #334;
     }
 
@@ -362,7 +385,7 @@
     } */
 
     h2 {
-        font-size: 2.12rem;
+        font-size: 2.121rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         margin: 0.4rem 0 0.2rem 0;

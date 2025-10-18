@@ -4,7 +4,7 @@ header:
   name: "Yifan Sun"
   tags:
     - "Assistant Professor, Computer Science, William & Mary"
-    - "McGlothlin-Street Hall 117 Williamsburg, VA 23185"
+    - "McGlothlin-Street Hall 117, Williamsburg, VA 23185"
   contact:
     phone: "(+1) 716-868-2480"
     email: "ysun25@wm.edu"
@@ -191,6 +191,9 @@ sections:
 
   - id: publication
     title: "Publications"
+    meta:
+      - html: "<span class=\"self-name\">Yifan Sun</span> -- self-name"
+      - html: "<span class=\"wm-advisee\">First Last</span> -- my PhD advisee at William &amp; Mary"
 
   - id: softwareEntries
     title: "Software & Datasets"
