@@ -155,8 +155,8 @@
         "acceptance_comment": "Acceptance Rate: 18/84 (~21.4%)"
     },
     {
-        "title": "DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant [Remote]",
-        "authors": "Enze Xu, Jeremy Coonley, Daoxuan Xu and Yifan Sun (William & Mary)",
+        "title": "DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant",
+        "authors": "Enze Xu, Jeremy Coonley, Daoxuan Xu, Yifan Sun",
         "venue": "CAMS 2025",
         "year": 2025,
         "month": 10,
@@ -167,11 +167,6 @@
                 "icon": "/file_outline.svg",
                 "link": "/cams25/DaisenBot- Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant.pdf",
                 "text": "PDF"
-            },
-            {
-                "icon": "/globe-solid-full.svg",
-                "link": "https://sarchlab.org/cams25",
-                "text": "Workshop Page"
             }
         ],
         "type": "workshop",

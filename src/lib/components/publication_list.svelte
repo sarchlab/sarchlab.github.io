@@ -11,6 +11,8 @@
         authors: string
         venue: string
         year: number
+        month?: number
+        day?: number
         tags: string[]
         links: {
             icon: string
@@ -22,11 +24,14 @@
     let publicationByYear: { year: number; publications: pubType[] }[] = []
 
     onMount(() => {
-        const filterTokens = filter.split('|')
+        const filterTokens = filter
+            .split('|')
+            .map((token) => token.trim())
+            .filter((token) => token.length > 0)
         const filteredPublications = publications.filter((publication) => {
             const tags = publication['tags']
             if (tags === undefined) {
-                return false
+                return filterTokens.length === 0
             }
 
             for (const filterToken of filterTokens) {
@@ -39,7 +44,6 @@
         })
 
         publicationByYear = []
-        const publiationYears: number[] = []
         const publicationYearToIndex = {} as Record<number, number>
         for (const publication of filteredPublications) {
             const year = publication['year']
@@ -49,13 +53,33 @@
                     year: year,
                     publications: [] as pubType[],
                 })
-                publiationYears.push(year)
             }
 
             publicationByYear[publicationYearToIndex[year]].publications.push(
                 publication
             )
         }
+
+        const asNumber = (value?: number) =>
+            typeof value === 'number' && Number.isFinite(value) ? value : 0
+
+        for (const entry of publicationByYear) {
+            entry.publications.sort((a, b) => {
+                const monthDiff = asNumber(b.month) - asNumber(a.month)
+                if (monthDiff !== 0) {
+                    return monthDiff
+                }
+
+                const dayDiff = asNumber(b.day) - asNumber(a.day)
+                if (dayDiff !== 0) {
+                    return dayDiff
+                }
+
+                return (a.title ?? '').localeCompare(b.title ?? '')
+            })
+        }
+
+        publicationByYear.sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
     })
 </script>
 
