@@ -18,9 +18,15 @@
         performance modeling.
     </p>
 
-    <!-- <h2 class="sec-title">Hiring</h2>
+    <h2 class="sec-title">Hiring</h2>
 
     <p>
+        I have no plan of hiring new Ph.D. students, research interns, or
+        undergraduate research assistants in Spring 2026, Fall 2026 and Spring
+        2027.
+    </p>
+
+    <!-- <p>
         <b>Ph.D.</b> I am actively seeking <u>1-2 Ph.D. students</u>, starting
         to join our team in Spring 2024 or Fall 2025. Candidates should possess
         a solid background in programming and a keen interest in computer
