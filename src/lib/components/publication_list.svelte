@@ -1,7 +1,6 @@
 <script lang="ts">
     import Publication from '$src/lib/components/publication.svelte'
     import PublicationLink from '$src/lib/components/publication_link.svelte'
-    import { onMount } from 'svelte'
 
     export let filter = ''
     export let publications = [] as pubType[]
@@ -13,7 +12,7 @@
         year: number
         month?: number
         day?: number
-        tags: string[]
+        tags?: string[]
         links: {
             icon: string
             text: string
@@ -21,49 +20,53 @@
         }[]
     }
 
+    let filterTokens: string[] = []
+    let filteredPublications = [] as pubType[]
     let publicationByYear: { year: number; publications: pubType[] }[] = []
 
-    onMount(() => {
-        const filterTokens = filter
-            .split('|')
-            .map((token) => token.trim())
-            .filter((token) => token.length > 0)
-        const filteredPublications = publications.filter((publication) => {
-            const tags = publication['tags']
-            if (tags === undefined) {
-                return filterTokens.length === 0
+    const asNumber = (value?: number) =>
+        typeof value === 'number' && Number.isFinite(value) ? value : 0
+
+    $: filterTokens = filter
+        .split('|')
+        .map((token) => token.trim())
+        .filter((token) => token.length > 0)
+
+    $: filteredPublications = publications.filter((publication) => {
+        const tags = publication.tags
+        if (tags === undefined) {
+            return filterTokens.length === 0
+        }
+
+        for (const filterToken of filterTokens) {
+            if (!tags.includes(filterToken)) {
+                return false
             }
+        }
 
-            for (const filterToken of filterTokens) {
-                if (tags.indexOf(filterToken) === -1) {
-                    return false
-                }
-            }
+        return true
+    })
 
-            return true
-        })
-
-        publicationByYear = []
+    $: publicationByYear = (() => {
+        const grouped: { year: number; publications: pubType[] }[] = []
         const publicationYearToIndex = {} as Record<number, number>
+
         for (const publication of filteredPublications) {
-            const year = publication['year']
+            const year = publication.year
             if (publicationYearToIndex[year] === undefined) {
-                publicationYearToIndex[year] = publicationByYear.length
-                publicationByYear.push({
-                    year: year,
-                    publications: [] as pubType[],
+                publicationYearToIndex[year] = grouped.length
+                grouped.push({
+                    year,
+                    publications: [],
                 })
             }
 
-            publicationByYear[publicationYearToIndex[year]].publications.push(
+            grouped[publicationYearToIndex[year]].publications.push(
                 publication
             )
         }
 
-        const asNumber = (value?: number) =>
-            typeof value === 'number' && Number.isFinite(value) ? value : 0
-
-        for (const entry of publicationByYear) {
+        for (const entry of grouped) {
             entry.publications.sort((a, b) => {
                 const monthDiff = asNumber(b.month) - asNumber(a.month)
                 if (monthDiff !== 0) {
@@ -79,8 +82,9 @@
             })
         }
 
-        publicationByYear.sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
-    })
+        grouped.sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
+        return grouped
+    })()
 </script>
 
 {#each publicationByYear as { year, publications }}
