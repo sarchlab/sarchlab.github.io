@@ -51,6 +51,18 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Sep 2025]</span>
+            Our paper "HDPAT: Hierarchical Distributed Page Address Translation
+            for Wafer-Scale GPUs" has been accepted by HPCA 2026! Congrats Daoxuan
+            and Ying!
+        </li>
+        <li>
+            <span class="date">[Sep 2025]</span>
+            Our paper "QuCo: Efficient and Flexible Hardware-Driven Automatic Configuration
+            of Tile Transfers in GPUs" has been accepted by HPCA 2026! Thanks to
+            our collaborators from NVIDIA and the University of Murcia.
+        </li>
+        <li>
             <span class="date">[Apr 2025]</span>
             Our paper "Will Your Next Pair Programming Partner Be Human? An Empirical
             Evaluation of Generative AI as a Collaborative Teammate in a Semester-Long

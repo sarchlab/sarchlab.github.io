@@ -42,37 +42,41 @@ const PUBLICATION_TYPE_ORDER: PublicationType[] = [
 ]
 
 type HtmlValue = { html: string }
-type TableCell = string | number | boolean | null | undefined | HtmlValue
-
-type CvMetaLine = string | HtmlValue
+type ContentValue =
+    | string
+    | number
+    | boolean
+    | null
+    | undefined
+    | HtmlValue
 
 type CvEntry = {
-    left: TableCell[]
-    right: TableCell[]
-    hanging?: TableCell
+    index?: ContentValue
+    content?: ContentValue[]
+    meta?: ContentValue[]
 }
 
 type CvSubsection = {
-    id: string
-    title: string
-    entries: CvEntry[]
-    meta?: CvMetaLine[]
+    id?: string
+    title?: string
+    meta?: ContentValue[]
     condensed?: boolean
+    entries?: CvEntry[]
 }
 
 type CvSection = {
-    id: string
-    title: string
-    entries?: CvEntry[]
-    meta?: CvMetaLine[]
+    id?: string
+    title?: string
+    meta?: ContentValue[]
     condensed?: boolean
+    entries?: CvEntry[]
     subsections?: CvSubsection[]
 }
 
 type CvHeader = {
     name: string
     tags?: string[]
-    contact?: Record<string, string>
+    contact?: Record<string, unknown>
 }
 
 type CvData = {
@@ -211,7 +215,7 @@ const sortPublications = (a: Publication, b: Publication): number => {
     return titleA.localeCompare(titleB)
 }
 
-const toCvTableEntry = (
+const toPublicationEntry = (
     publication: Publication,
     index: number,
     total: number
@@ -220,7 +224,7 @@ const toCvTableEntry = (
         publication.identification_information
     )
 
-    const left: TableCell[] = [
+    const left: ContentValue[] = [
         formatTitle(publication),
         { html: formatAuthors(publication.authors ?? '') },
         formatVenue(publication) +
@@ -238,9 +242,9 @@ const toCvTableEntry = (
     }
 
     return {
-        hanging: `${total - index}.`,
-        left,
-        right: [],
+        index: `${total - index}.`,
+        content: left,
+        meta: [],
     }
 }
 
@@ -257,7 +261,7 @@ const createPublicationSubsection = (
         id: `${type}Publications`,
         title: PUBLICATION_TYPE_TITLES[type] ?? type,
         entries: sorted.map((publication, index) =>
-            toCvTableEntry(publication, index, sorted.length)
+            toPublicationEntry(publication, index, sorted.length)
         ),
     }
 }
@@ -359,7 +363,7 @@ export const load: PageLoad = async ({ fetch }) => {
                 ? {
                       ...section,
                       subsections: publicationSubsections,
-                  }
+                }
                 : section
         )
     })()
