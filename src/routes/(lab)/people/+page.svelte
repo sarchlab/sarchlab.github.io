@@ -81,7 +81,7 @@
     <div class="person-container">
         <Member
             name="Xuzhong Wang"
-            profile_img="https://media.licdn.com/dms/image/v2/D4E03AQFAjQqjt1Iq-A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730063518623?e=1756944000&v=beta&t=xqj3Cyzbe4gjcLePiMJeCp5vIRbMeu4hszHPDVDpi40"
+            profile_img="/xuzhong.jpeg"
             link=""
             role="Undergraduate Researcher"
             date="2024/5 -"
