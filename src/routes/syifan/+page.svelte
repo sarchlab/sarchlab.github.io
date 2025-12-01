@@ -41,7 +41,7 @@
         students.
     </p>
     <p>
-        <b>How to apply.</b> Interested candidates should email me (ysun25@wm.edu)
+        <b>How to apply.</b> Interested candidates should email me (profyifansun@gmail.com)
         with their CV and transcript attached to inquire about opportunities.
     </p> -->
 

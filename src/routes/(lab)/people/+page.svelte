@@ -16,7 +16,7 @@
             profile_img="/yifan_profile.png"
             link="/syifan"
             role="Assistant Professor"
-            email="ysun25@wm.edu"
+            email="profyifansun@gmail.com"
         >
             <div><b>Office:</b> McGlothlin-Street Hall 117</div>
         </Member>

@@ -41,7 +41,7 @@
     letters can be provided for productive students.
 </p>
 <p>
-    <b>How to apply.</b> Interested candidates should email Yifan Sun (ysun25@wm.edu)
+    <b>How to apply.</b> Interested candidates should email Yifan Sun (profyifansun@gmail.com)
     with their CV and transcript attached to inquire about opportunities.
 </p> -->
 
