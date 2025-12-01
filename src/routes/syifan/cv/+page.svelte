@@ -19,18 +19,19 @@
         try {
             const shadow = container.attachShadow({ mode: 'open' })
 
-            const style = document.createElement('style')
-            style.textContent = easycvStyles
-            shadow.appendChild(style)
+            const baseStyle = document.createElement('style')
+            baseStyle.textContent = easycvStyles
+            shadow.appendChild(baseStyle)
 
-            const override = document.createElement('style')
-            override.textContent = overrideStyles
-            shadow.appendChild(override)
+            const overrideStyle = document.createElement('style')
+            overrideStyle.textContent = overrideStyles
+            shadow.appendChild(overrideStyle)
 
             const cvElement = createCvElement(data.cvData, {
                 actions: true,
             })
             shadow.appendChild(cvElement)
+            container.removeAttribute('aria-busy')
 
             const title = data.cvData?.header?.name
             if (title) {

@@ -7,25 +7,25 @@
 }
 
 /* Example tweaks: adjust as needed */
-.cv-header h1 {
+.easycv-header h1 {
     font-size: 2.2rem;
 }
 
-.cv-section h2 {
+.easycv-section h2 {
     font-size: 1rem;
     letter-spacing: 0.05em;
 }
 
-.cv-table td {
+.easycv-table td {
     padding: 0.05rem 0.3rem 0.05rem 0;
 }
 
-/* Add a small gap between .cv-table columns */
-.cv-table td + td {
+/* Add a small gap between .easycv-table columns */
+.easycv-table td + td {
     padding-left: 0.5rem;
 }
 
 /* Add breathing room between entries (skip condensed tables) */
-.cv-table tr.entry-start:not(.condensed-row):not(:first-child) > td {
+.easycv-table tr.entry-start:not(.condensed-row):not(:first-child) > td {
     padding-top: 0.8rem;
 }
