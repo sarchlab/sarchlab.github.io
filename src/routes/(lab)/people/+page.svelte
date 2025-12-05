@@ -121,21 +121,6 @@
             affiliation="Brandeis University"
         />
 
-        <Member
-            name="Shiyuan Li"
-            variant="lightweight"
-            date="2024/7 -"
-            affiliation="Oregon State University"
-        />
-
-        <Member name="Kaiyan Ma" variant="lightweight" date="2024/7 -" />
-
-        <Member
-            name="Yang Yu"
-            variant="lightweight"
-            date="2025/2 -"
-            affiliation="Eindhoven University of Technology"
-        />
     </div>
 
     <h2 class="sec-title">Past Members</h2>
@@ -256,6 +241,26 @@
             variant="extra-lightweight"
             date="2024/7 - 2025/3"
             affiliation="New York University"
+        />
+
+        <Member
+            name="Shiyuan Li"
+            variant="extra-lightweight"
+            date="2024/7 - 2025/12"
+            affiliation="Oregon State University"
+        />
+
+        <Member
+            name="Kaiyan Ma"
+            variant="extra-lightweight"
+            date="2024/7 - 2025/12"
+        />
+
+        <Member
+            name="Yang Yu"
+            variant="extra-lightweight"
+            date="2025/2 - 2025/12"
+            affiliation="Eindhoven University of Technology"
         />
     </div>
 </div>
