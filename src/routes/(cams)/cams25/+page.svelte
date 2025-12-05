@@ -487,6 +487,19 @@
                             Lee (Seoul National University of Science and
                             Technology)
                         </p>
+                        <button id="toggle-opener-6" class="collapse-opener">
+                            <span class="collapse-arrow">▶</span> [Paper PDF]
+                        </button>
+                        <div id="abstract-content-6" class="collapse-content">
+                            <p class="talk-paper-pdf">
+                                <a
+                                    href="/cams25/Latency-Aware%20QoS%20Optimization%20of%20XY-YX%20Routing%20in%20NoCs%20via%20Analytical%20Latency%20Estimation.pdf"
+                                    target="_blank"
+                                >
+                                    Latency-Aware QoS Optimization of XY-YX Routing in NoCs via Analytical Latency Estimation.pdf
+                                </a>
+                            </p>
+                        </div>
                     </td>
                 </tr>
                 <tr class="sub-schedule">

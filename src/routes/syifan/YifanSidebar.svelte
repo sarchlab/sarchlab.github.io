@@ -42,7 +42,7 @@
             </div>
             <div class="entry">
                 <img class="small-icon" src="/email.svg" alt="email" />
-                <a href="mailto:ysun25@wm.edu">ysun25@wm.edu</a>
+                <a href="mailto:profyifansun@gmail.com">profyifansun@gmail.com</a>
             </div>
             <div class="entry">
                 <img

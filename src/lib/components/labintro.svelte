@@ -14,8 +14,15 @@
     architecture and for the architecture to serve human.
 </p>
 
-<!-- <h2 class="sec-title">Hiring</h2>
+<h2 class="sec-title">Hiring</h2>
 
+<p>
+    SArchLab has no plan of hiring new Ph.D. students, research interns, or
+    undergraduate research assistants in Spring 2026, Fall 2026 and Spring
+    2027.
+</p>
+
+<!-- 
 <p>
     <b>Ph.D.</b> SARCHLAB is actively seeking <u>1-2 Ph.D. students</u>,
     starting from either the Spring 2024 or Fall 2025 semester, with an
@@ -34,7 +41,7 @@
     letters can be provided for productive students.
 </p>
 <p>
-    <b>How to apply.</b> Interested candidates should email Yifan Sun (ysun25@wm.edu)
+    <b>How to apply.</b> Interested candidates should email Yifan Sun (profyifansun@gmail.com)
     with their CV and transcript attached to inquire about opportunities.
 </p> -->
 

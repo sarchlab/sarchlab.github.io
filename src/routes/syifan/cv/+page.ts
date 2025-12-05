@@ -1,5 +1,7 @@
 import yaml from 'js-yaml'
 
+import type { PageLoad } from './$types'
+
 const SELF_NAME = 'Yifan Sun'
 const WM_ADVISEES = [
     'Ying Li',
@@ -8,9 +10,11 @@ const WM_ADVISEES = [
     'Yijia Shi',
     'Sabila Al Jannat',
     'Enze Xu',
-]
+] as const
+
 const PUBLICATION_TAG = 'yifan'
 const PUBLICATION_SECTION_ID = 'publication'
+
 const PUBLICATION_TYPE_TITLES = {
     conference: 'Conference Papers',
     journal: 'Journal Articles',
@@ -21,8 +25,11 @@ const PUBLICATION_TYPE_TITLES = {
     patent: 'Patents',
     preprint: 'Preprints',
     dissertation: 'Dissertations',
-}
-const PUBLICATION_TYPE_ORDER = [
+} as const
+
+type PublicationType = keyof typeof PUBLICATION_TYPE_TITLES
+
+const PUBLICATION_TYPE_ORDER: PublicationType[] = [
     'conference',
     'journal',
     'workshop',
@@ -34,7 +41,76 @@ const PUBLICATION_TYPE_ORDER = [
     'dissertation',
 ]
 
-const escapeHtml = (value) =>
+type HtmlValue = { html: string }
+type ContentValue =
+    | string
+    | number
+    | boolean
+    | null
+    | undefined
+    | HtmlValue
+
+type CvEntry = {
+    index?: ContentValue
+    content?: ContentValue[]
+    meta?: ContentValue[]
+}
+
+type CvSubsection = {
+    id?: string
+    title?: string
+    meta?: ContentValue[]
+    condensed?: boolean
+    entries?: CvEntry[]
+}
+
+type CvSection = {
+    id?: string
+    title?: string
+    meta?: ContentValue[]
+    condensed?: boolean
+    entries?: CvEntry[]
+    subsections?: CvSubsection[]
+}
+
+type CvHeader = {
+    name: string
+    tags?: string[]
+    contact?: Record<string, unknown>
+}
+
+type CvData = {
+    version?: number
+    header: CvHeader
+    sections?: CvSection[]
+}
+
+type PublicationLink = {
+    icon: string
+    text: string
+    link: string
+}
+
+type Publication = {
+    title?: string
+    authors?: string
+    venue?: string
+    venue_full?: string
+    year?: number
+    month?: number
+    day?: number
+    tags?: string[]
+    links?: PublicationLink[]
+    type?: PublicationType | (string & {})
+    identification_information?: string
+    doi?: string
+    acceptance_comment?: string
+}
+
+const isRecord = (value: unknown): value is Record<string, unknown> =>
+    typeof value === 'object' && value !== null && !Array.isArray(value)
+
+const escapeHtml = (value: unknown): string =>
     String(value)
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
@@ -42,13 +118,13 @@ const escapeHtml = (value) =>
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;')
 
-const highlight = (source, name, className) => {
-    const escapedName = name.replace(/[\\^$*+?.()|[\\]{}]/g, '\\$&')
+const highlight = (source: string, name: string, className: string): string => {
+    const escapedName = name.replace(/[\\^$*+?.()|[\]{}]/g, '\\$&')
     const pattern = new RegExp(`\\b${escapedName}\\b`, 'g')
     return source.replace(pattern, `<span class="${className}">${name}</span>`)
 }
 
-const formatAuthors = (authors) => {
+const formatAuthors = (authors?: string | null): string => {
     let formatted = escapeHtml(authors ?? '')
     for (const advisee of WM_ADVISEES) {
         formatted = highlight(formatted, advisee, 'wm-advisee')
@@ -57,13 +133,13 @@ const formatAuthors = (authors) => {
     return formatted
 }
 
-const formatTitle = (publication) => {
+const formatTitle = (publication: Publication): string => {
     const year = publication.year ? `(${publication.year})` : ''
     const title = (publication.title ?? '').trim()
     return [year, title].filter(Boolean).join(' ')
 }
 
-const formatVenue = (publication) => {
+const formatVenue = (publication: Publication): string => {
     const venue = (publication.venue ?? '').trim()
     const full = (publication.venue_full ?? venue).trim()
 
@@ -85,7 +161,7 @@ const formatVenue = (publication) => {
     return `${full} (${venue})`
 }
 
-const formatIdentification = (value) => {
+const formatIdentification = (value?: string | null): string | null => {
     if (!value) {
         return null
     }
@@ -93,7 +169,7 @@ const formatIdentification = (value) => {
     return trimmed.length > 0 ? trimmed : null
 }
 
-const formatDoi = (value) => {
+const formatDoi = (value?: string | null): string | null => {
     if (!value) {
         return null
     }
@@ -105,7 +181,7 @@ const formatDoi = (value) => {
     return `DOI: <a href="${escapedValue}" target="_blank" rel="noreferrer">${escapedValue}</a>`
 }
 
-const formatAcceptance = (value) => {
+const formatAcceptance = (value?: string | null): string | null => {
     if (!value) {
         return null
     }
@@ -118,7 +194,7 @@ const formatAcceptance = (value) => {
         : `Acceptance: ${trimmed}`
 }
 
-const sortPublications = (a, b) => {
+const sortPublications = (a: Publication, b: Publication): number => {
     const yearDiff = (b.year ?? 0) - (a.year ?? 0)
     if (yearDiff !== 0) {
         return yearDiff
@@ -139,12 +215,16 @@ const sortPublications = (a, b) => {
     return titleA.localeCompare(titleB)
 }
 
-const toCvTableEntry = (publication, index, total) => {
+const toPublicationEntry = (
+    publication: Publication,
+    index: number,
+    total: number
+): CvEntry => {
     const identification = formatIdentification(
         publication.identification_information
     )
 
-    const left = [
+    const left: ContentValue[] = [
         formatTitle(publication),
         { html: formatAuthors(publication.authors ?? '') },
         formatVenue(publication) +
@@ -162,13 +242,16 @@ const toCvTableEntry = (publication, index, total) => {
     }
 
     return {
-        hanging: `${total - index}.`,
-        left,
-        right: [],
+        index: `${total - index}.`,
+        content: left,
+        meta: [],
     }
 }
 
-const createPublicationSubsection = (type, publications) => {
+const createPublicationSubsection = (
+    type: PublicationType,
+    publications: Publication[]
+): CvSubsection | null => {
     const sorted = [...publications].sort(sortPublications)
     if (sorted.length === 0) {
         return null
@@ -178,19 +261,21 @@ const createPublicationSubsection = (type, publications) => {
         id: `${type}Publications`,
         title: PUBLICATION_TYPE_TITLES[type] ?? type,
         entries: sorted.map((publication, index) =>
-            toCvTableEntry(publication, index, sorted.length)
+            toPublicationEntry(publication, index, sorted.length)
         ),
     }
 }
 
-const createPublicationSubsections = (publications) => {
+const createPublicationSubsections = (
+    publications: Publication[]
+): CvSubsection[] => {
     if (!Array.isArray(publications) || publications.length === 0) {
         return []
     }
 
     const filtered = publications.filter(
         (publication) =>
-            publication &&
+            isRecord(publication) &&
             Array.isArray(publication.tags) &&
             publication.tags.includes(PUBLICATION_TAG)
     )
@@ -204,8 +289,32 @@ const createPublicationSubsections = (publications) => {
     })
 }
 
-/** @type {import('./$types').PageLoad} */
-export async function load({ fetch }) {
+const ensureCvData = (value: unknown): CvData => {
+    if (!isRecord(value)) {
+        throw new Error('Invalid CV data format')
+    }
+    if (!isRecord(value.header) || typeof value.header.name !== 'string') {
+        throw new Error('Invalid CV header data')
+    }
+    const sections = Array.isArray(value.sections)
+        ? (value.sections as CvSection[])
+        : undefined
+    return {
+        version:
+            typeof value.version === 'number' ? (value.version as number) : undefined,
+        header: value.header as CvHeader,
+        sections,
+    }
+}
+
+const ensurePublicationArray = (value: unknown): Publication[] => {
+    if (!Array.isArray(value)) {
+        throw new Error('Invalid publication data format')
+    }
+    return value.filter(isRecord) as Publication[]
+}
+
+export const load: PageLoad = async ({ fetch }) => {
     const cvResponse = await fetch('/cv/cv_data.yml')
 
     if (!cvResponse.ok) {
@@ -213,11 +322,7 @@ export async function load({ fetch }) {
     }
 
     const cvText = await cvResponse.text()
-    const cvData = yaml.load(cvText)
-
-    if (!cvData || typeof cvData !== 'object') {
-        throw new Error('Invalid CV data format')
-    }
+    const cvData = ensureCvData(yaml.load(cvText))
 
     const publicationResponse = await fetch('/publication_list.json')
 
@@ -227,15 +332,15 @@ export async function load({ fetch }) {
         )
     }
 
-    let publicationData
-    try {
-        publicationData = await publicationResponse.json()
-    } catch (error) {
-        throw new Error('Invalid publication data format')
-    }
+    const publicationData = ensurePublicationArray(
+        await publicationResponse.json()
+    )
 
-    const publicationSubsections = createPublicationSubsections(publicationData)
-    const sections = Array.isArray(cvData.sections) ? [...cvData.sections] : []
+    const publicationSubsections =
+        createPublicationSubsections(publicationData)
+    const sections = Array.isArray(cvData.sections)
+        ? [...cvData.sections]
+        : []
 
     const mergedSections = (() => {
         if (publicationSubsections.length === 0) {
@@ -258,7 +363,7 @@ export async function load({ fetch }) {
                 ? {
                       ...section,
                       subsections: publicationSubsections,
-                  }
+                }
                 : section
         )
     })()
