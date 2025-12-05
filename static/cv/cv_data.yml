@@ -649,6 +649,11 @@ sections:
         condensed: true
         entries:
           - content:
+              - AccML '26
+              - 8th Workshop on Accelerated Machine Learning
+            meta:
+              - '2026'
+          - content:
               - HPCA '25
               - 31st IEEE International Symposium on High-Performance Computer Architecture
             meta:
