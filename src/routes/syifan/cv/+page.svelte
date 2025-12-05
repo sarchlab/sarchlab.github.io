@@ -48,6 +48,13 @@
 
 <svelte:head>
     <title>Yifan Sun - Curriculum Vitae</title>
+    <style>
+        @media print {
+            @page {
+                margin: 0.5in;
+            }
+        }
+    </style>
 </svelte:head>
 
 {#if error}
