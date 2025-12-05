@@ -1,5 +1,27 @@
 [
     {
+        "title": "HDPAT: Hierarchical Distributed Page Address Translation for Wafer-Scale GPUs",
+        "authors": "Daoxuan Xu, Ying Li, Yuwei Sun, Jie Ren, Yifan Sun",
+        "venue": "HPCA 2026",
+        "year": 2026,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "conference",
+        "venue_full": "IEEE International Symposium on High-Performance Computer Architecture",
+        "acceptance_comment": "Acceptance Rate: 119/602 (~19.8%)"
+    },
+    {
+        "title": "QuCo: Efficient and Flexible Hardware-Driven Automatic Configuration of Tile Transfers in GPUs",
+        "authors": "Nicolas Meseguer, Daoxuan Xu, Yifan Sun, Michael Pellauer, José L. Abellán, Manuel E. Acacio",
+        "venue": "HPCA 2026",
+        "year": 2026,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "conference",
+        "venue_full": "IEEE International Symposium on High-Performance Computer Architecture",
+        "acceptance_comment": "Acceptance Rate: 119/602 (~19.8%)"
+    },
+    {
         "title": "ACTA: Automatic Configuration of the Tensor Memory Accelerator for High-End GPUs.",
         "authors": "Nicolás Meseguer, Yifan Sun, Michael Pellauer, José L. Abellán, Manuel E. Acacio",
         "venue": "GPGPU 2025",
