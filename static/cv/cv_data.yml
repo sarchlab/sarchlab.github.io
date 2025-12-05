@@ -543,27 +543,29 @@ sections:
         entries:
           - content:
               - Lishan Yang
+              - William & Mary
               - Joined GMU as Assistant Professor
             meta:
-              - William & Mary
               - Defended Spring 2022
           - content:
               - Yuhui Bao
+              - Northeastern University
               - First Job @ AMD Inc.
             meta:
-              - Northeastern University
-          - content:
-              - Matin Raayai
-            meta:
-              - Northeastern University
+              - Defended Fall 2024 
       - id: serviceMasterCommitteeEntries
         title: Master Thesis Committee
         entries:
           - content:
+              - Qishi Wang
+              - Northeastern University
+            meta:
+              - Defended Spring 2025
+          - content:
               - Jiangtao Kong
+              - William & Mary
               - Continued Ph.D. study at William & Mary
             meta:
-              - William & Mary
               - Defended Spring 2023
       - id: serviceOrgEntries
         title: Professional Organization Participation
