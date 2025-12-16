@@ -5,7 +5,13 @@
         "venue": "HPCA 2026",
         "year": 2026,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/hdpat_hpca_2026.pdf",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "IEEE International Symposium on High-Performance Computer Architecture",
         "acceptance_comment": "Acceptance Rate: 119/602 (~19.8%)"
