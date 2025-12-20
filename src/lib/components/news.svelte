@@ -52,8 +52,8 @@
     <ul>
         <li>
             <span class="date">[Sep 2025]</span>
-            Our paper "HDPAT: Hierarchical Distributed Page Address Translation
-            for Wafer-Scale GPUs" has been accepted by HPCA 2026! Congrats Daoxuan
+            Our paper "<a href="/hdpat_hpca_2026.pdf">HDPAT: Hierarchical Distributed Page Address Translation
+            for Wafer-Scale GPUs</a>" has been accepted by HPCA 2026! Congrats Daoxuan
             and Ying!
         </li>
         <li>
