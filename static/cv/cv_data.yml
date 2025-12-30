@@ -743,9 +743,19 @@ sections:
               - FGCS
               - Future Generation Computer Systems
             meta:
+              - '2026'
+          - content:
+              - TACO
+              - ACM Transactions on Architecture and Code Optimization
+            meta:
+              - '2026'
+          - content:
+              - FGCS
+              - Future Generation Computer Systems
+            meta:
               - '2025'
           - content:
-              - TACO X4
+              - TACO X3
               - ACM Transactions on Architecture and Code Optimization
             meta:
               - '2025'
