@@ -112,28 +112,28 @@
                 <td>10:30 am</td>
                 <td>
                     Ali Mosallaei
-                    <span class="affliation"> (University of Michigan) </span>
+                    <span class="affiliation"> (University of Michigan) </span>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>10:38 am</td>
                 <td>
                     Yueqi Wang
-                    <span class="affliation">(University of Pittsburg) </span>
+                    <span class="affiliation">(University of Pittsburg) </span>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>10:46 am</td>
                 <td>
                     Yuhui Bao
-                    <span class="affliation"> (Northeastern University) </span>
+                    <span class="affiliation"> (Northeastern University) </span>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>10:54 am</td>
                 <td>
                     Hang Yan / Shaoyu Wang
-                    <span class="affliation">
+                    <span class="affiliation">
                         (Huazhong University of Sci. and Tech.)
                     </span>
                 </td>
@@ -141,7 +141,7 @@
             <tr class="sub-schedule">
                 <td>11:02 am</td>
                 <td>
-                    Amel Fatima <span class="affliation">
+                    Amel Fatima <span class="affiliation">
                         (University of Virginia)
                     </span></td
                 >
@@ -149,7 +149,7 @@
             <tr class="sub-schedule">
                 <td>11:10 am</td>
                 <td
-                    >Nicolas Meseguer <span class="affliation">
+                    >Nicolas Meseguer <span class="affiliation">
                         (University of Murcia)</span
                     ></td
                 >
@@ -157,7 +157,7 @@
             <tr class="sub-schedule">
                 <td>11:18 am</td>
                 <td
-                    >Changxi Liu <span class="affliation">
+                    >Changxi Liu <span class="affiliation">
                         (National University of Singapore)</span
                     ></td
                 >
@@ -231,7 +231,7 @@
         @apply font-normal;
     }
 
-    #schedule > tbody > tr.sub-schedule > td > span.affliation {
+    #schedule > tbody > tr.sub-schedule > td > span.affiliation {
         @apply text-gray-500;
         @apply font-normal text-xs;
     }
