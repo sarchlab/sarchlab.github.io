@@ -885,27 +885,6 @@
         @apply font-normal;
     }
 
-    #schedule tr.sub-schedule > td > span.affliation {
-        @apply text-gray-500;
-        @apply font-normal text-xs;
-    }
-
-    .button {
-        @apply inline-block;
-        @apply px-4 py-2;
-        @apply bg-primary;
-        @apply text-white font-bold;
-        @apply rounded-md;
-        @apply transition-all;
-        /* @apply hover:bg-secondary; */
-        @apply no-underline text-lg;
-        @apply mt-4;
-    }
-
-    .abstract {
-        margin-bottom: 1em;
-    }
-
     .talk-paper-pdf {
         @apply text-sm;
         @apply text-gray-500;
@@ -924,10 +903,6 @@
 
     .collapse-content {
         display: none;
-    }
-
-    .collapse-content.show {
-        display: block;
     }
 
     .justify {

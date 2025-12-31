@@ -36,6 +36,5 @@
 
     .footer div {
         @apply mb-2;
-        /* @apply border; */
     }
 </style>

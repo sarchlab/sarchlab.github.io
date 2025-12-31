@@ -2,7 +2,6 @@
     export let title = ''
     export let amount = ''
     export let labAmount = ''
-    export let link = ''
     export let program = ''
     export let sponsor = ''
     export let duration = ''

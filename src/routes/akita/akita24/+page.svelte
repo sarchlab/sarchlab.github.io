@@ -66,6 +66,7 @@
         <h2 class="text-theme font-bold mb-6">Schedule</h2>
         <p class="mb-2">All time in US Eastern time.</p>
         <table id="schedule" class="w-full">
+            <tbody>
             <tr>
                 <td>10:00 am -10:30 am</td>
                 <td>
@@ -96,7 +97,7 @@
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen
-                            />
+                            ></iframe>
                         </div>
                     </div>
                 </td>
@@ -111,28 +112,28 @@
                 <td>10:30 am</td>
                 <td>
                     Ali Mosallaei
-                    <span class="affliation"> (University of Michigan) </span>
+                    <span class="affiliation"> (University of Michigan) </span>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>10:38 am</td>
                 <td>
                     Yueqi Wang
-                    <span class="affliation">(University of Pittsburg) </span>
+                    <span class="affiliation">(University of Pittsburg) </span>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>10:46 am</td>
                 <td>
                     Yuhui Bao
-                    <span class="affliation"> (Northeastern University) </span>
+                    <span class="affiliation"> (Northeastern University) </span>
                 </td>
             </tr>
             <tr class="sub-schedule">
                 <td>10:54 am</td>
                 <td>
                     Hang Yan / Shaoyu Wang
-                    <span class="affliation">
+                    <span class="affiliation">
                         (Huazhong University of Sci. and Tech.)
                     </span>
                 </td>
@@ -140,7 +141,7 @@
             <tr class="sub-schedule">
                 <td>11:02 am</td>
                 <td>
-                    Amel Fatima <span class="affliation">
+                    Amel Fatima <span class="affiliation">
                         (University of Virginia)
                     </span></td
                 >
@@ -148,7 +149,7 @@
             <tr class="sub-schedule">
                 <td>11:10 am</td>
                 <td
-                    >Nicolas Meseguer <span class="affliation">
+                    >Nicolas Meseguer <span class="affiliation">
                         (University of Murcia)</span
                     ></td
                 >
@@ -156,7 +157,7 @@
             <tr class="sub-schedule">
                 <td>11:18 am</td>
                 <td
-                    >Changxi Liu <span class="affliation">
+                    >Changxi Liu <span class="affiliation">
                         (National University of Singapore)</span
                     ></td
                 >
@@ -171,6 +172,7 @@
                 <td>12:30 pm and on</td>
                 <td>Free Chat</td>
             </tr>
+            </tbody>
         </table>
     </div>
 </div>
@@ -209,27 +211,27 @@
         @apply border-t-2 border-b-2 border-primary;
     }
 
-    #schedule > tr {
+    #schedule > tbody > tr {
         @apply border-b border-primary;
     }
 
-    #schedule > tr > td:first-child {
+    #schedule > tbody > tr > td:first-child {
         @apply w-3/12;
         /* @apply text-right; */
         @apply font-bold;
     }
 
-    #schedule > tr > td {
+    #schedule > tbody > tr > td {
         @apply py-2 px-4;
         @apply align-top;
     }
 
-    #schedule > tr.sub-schedule > td {
+    #schedule > tbody > tr.sub-schedule > td {
         @apply pl-10;
         @apply font-normal;
     }
 
-    #schedule > tr.sub-schedule > td > span.affliation {
+    #schedule > tbody > tr.sub-schedule > td > span.affiliation {
         @apply text-gray-500;
         @apply font-normal text-xs;
     }
