@@ -66,6 +66,7 @@
         <h2 class="text-theme font-bold mb-6">Schedule</h2>
         <p class="mb-2">All time in US Eastern time.</p>
         <table id="schedule" class="w-full">
+            <tbody>
             <tr>
                 <td>10:00 am -10:30 am</td>
                 <td>
@@ -171,6 +172,7 @@
                 <td>12:30 pm and on</td>
                 <td>Free Chat</td>
             </tr>
+            </tbody>
         </table>
     </div>
 </div>
@@ -209,27 +211,27 @@
         @apply border-t-2 border-b-2 border-primary;
     }
 
-    #schedule > tr {
+    #schedule > tbody > tr {
         @apply border-b border-primary;
     }
 
-    #schedule > tr > td:first-child {
+    #schedule > tbody > tr > td:first-child {
         @apply w-3/12;
         /* @apply text-right; */
         @apply font-bold;
     }
 
-    #schedule > tr > td {
+    #schedule > tbody > tr > td {
         @apply py-2 px-4;
         @apply align-top;
     }
 
-    #schedule > tr.sub-schedule > td {
+    #schedule > tbody > tr.sub-schedule > td {
         @apply pl-10;
         @apply font-normal;
     }
 
-    #schedule > tr.sub-schedule > td > span.affliation {
+    #schedule > tbody > tr.sub-schedule > td > span.affliation {
         @apply text-gray-500;
         @apply font-normal text-xs;
     }
