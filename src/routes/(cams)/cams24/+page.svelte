@@ -404,7 +404,7 @@
 
         <!-- <div class="content"> -->
         <div style="float: left; margin-right: 10px" id="keynote1">
-            <img src="/msinclair-2019.jpg" width="160" height="180" />
+            <img src="/msinclair-2019.jpg" width="160" height="180" alt="Matt Sinclair" />
         </div>
         <b>Speaker:</b> Matt Sinclair, University of Wisconsin-Madison<br />
         <b>Title: </b> Reducing the GAP: Improving the Fidelity and Scalability of gem5’s GPU Models
@@ -578,9 +578,7 @@
                         >
                     </td>
                     <td>
-                        <a href="" target="&ldquo;blank&rdquo;">
-                            Sabila Al Jannat
-                        </a>
+                        Sabila Al Jannat
                     </td>
                 </tr>
                 <tr>
@@ -652,27 +650,6 @@
         @apply font-normal;
     }
 
-    #schedule tr.sub-schedule > td > span.affliation {
-        @apply text-gray-500;
-        @apply font-normal text-xs;
-    }
-
-    .button {
-        @apply inline-block;
-        @apply px-4 py-2;
-        @apply bg-primary;
-        @apply text-white font-bold;
-        @apply rounded-md;
-        @apply transition-all;
-        /* @apply hover:bg-secondary; */
-        @apply no-underline text-lg;
-        @apply mt-4;
-    }
-
-    .abstract {
-        margin-bottom: 1em;
-    }
-
     .talk-abstract {
         @apply text-sm;
         @apply text-gray-500;
@@ -691,9 +668,5 @@
 
     .collapse-content {
         display: none;
-    }
-
-    .collapse-content.show {
-        display: block;
     }
 </style>
