@@ -1,5 +1,15 @@
 [
     {
+        "title": "Designing AI Peers for Collaborative Mathematical Problem Solving with Middle School Students: A Participatory Design Study",
+        "authors": "Wenhan Lyu, Yimeng Wang, Murong Yue, Yifan Sun, Jennifer Suh, Meredith Kier, Ziyu Yao, Yixuan Zhang",
+        "venue": "CHI 2026",
+        "year": 2026,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "conference",
+        "venue_full": "2026 CHI Conference on Human Factors in Computing Systems"
+    },
+    {
         "title": "HDPAT: Hierarchical Distributed Page Address Translation for Wafer-Scale GPUs",
         "authors": "Daoxuan Xu, Ying Li, Yuwei Sun, Jie Ren, Yifan Sun",
         "venue": "HPCA 2026",

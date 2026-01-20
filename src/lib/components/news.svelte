@@ -51,6 +51,12 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Jan 2026]</span>
+            Our paper "Designing AI Peers for Collaborative Mathematical Problem Solving
+            with Middle School Students: A Participatory Design Study" has been accepted
+            by CHI 2026! Congrats Wenhan!
+        </li>
+        <li>
             <span class="date">[Sep 2025]</span>
             Our paper "<a href="/hdpat_hpca_2026.pdf">HDPAT: Hierarchical Distributed Page Address Translation
             for Wafer-Scale GPUs</a>" has been accepted by HPCA 2026! Congrats Daoxuan
