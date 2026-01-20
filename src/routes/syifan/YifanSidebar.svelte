@@ -29,7 +29,7 @@
         <div class="entry">
             <img class="small-icon" src="/location.svg" alt="location" />
             <div>
-                McGlothlin-Street Hall 117<br />
+                ISC4 Room 1383<br />
                 737 Landrum Dr, <br />
                 Williamsburg, VA 23185
             </div>
