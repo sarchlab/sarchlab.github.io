@@ -483,6 +483,11 @@ sections:
     entries:
       - content:
           - William & Mary News
+          - Books published by William & Mary faculty in 2025
+        meta:
+          - '2026'
+      - content:
+          - William & Mary News
           - >-
             William & Mary professor wins NSF CAREER award to study computer chip performance; Sun brings human-centered
             approach to computer architecture
