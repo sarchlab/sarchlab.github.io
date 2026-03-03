@@ -51,6 +51,11 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Mar 2026]</span>
+            Ying Li has received the W&amp;M International Student Achievement Award!
+            Congratulations Ying!
+        </li>
+        <li>
             <span class="date">[Jan 2026]</span>
             Our paper "Designing AI Peers for Collaborative Mathematical Problem Solving
             with Middle School Students: A Participatory Design Study" has been accepted
