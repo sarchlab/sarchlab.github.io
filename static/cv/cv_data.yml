@@ -5,9 +5,21 @@ header:
     - Assistant Professor, Computer Science, William & Mary
     - ISC4 Room 1383, Williamsburg, VA 23185
   contact:
-    phone: (+1) 757-221-7739
-    email: ysun25@wm.edu
-    website: sarchlab.org/syifan
+    phone:
+      value: "(+1) 757-221-7739"
+      icon: "fa-solid fa-phone"
+      href: "tel:+17572217739"
+      display: true
+    email:
+      value: "ysun25@wm.edu"
+      icon: "fa-solid fa-envelope"
+      href: "mailto:ysun25@wm.edu"
+      display: true
+    website:
+      value: "sarchlab.org/syifan"
+      icon: "fa-solid fa-globe"
+      href: "https://sarchlab.org/syifan"
+      display: true
 sections:
   - id: academicAppointments
     title: Academic Appointments
