@@ -1,5 +1,29 @@
 [
     {
+        "title": "RIPPLE: Ring-based Page Prefetching and Layered Translation for Wafer-Scale GPUs",
+        "authors": "Daoxuan Xu, Ying Li, Jie Ren, Yifan Sun",
+        "venue": "GPGPU 2026",
+        "year": 2026,
+        "month": 3,
+        "day": 30,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "workshop",
+        "venue_full": "18th Workshop on General Purpose Processing Using GPUs"
+    },
+    {
+        "title": "Did You Win the GPU Cloud Lottery? Benchmarking from TFLOPS to Tokens/$",
+        "authors": "Platon Slynko, Jay Lu, Jason Cornick, Laksh Sharma, Shou-Kai Cheng, Benjamin Cornick, Arthur O. Dias dos Santos, Caique Sobral, Carmen Li, Daoxuan Xu, Xinxin Mei, Yifan Sun",
+        "venue": "GPGPU 2026",
+        "year": 2026,
+        "month": 3,
+        "day": 30,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "workshop",
+        "venue_full": "18th Workshop on General Purpose Processing Using GPUs"
+    },
+    {
         "title": "Designing AI Peers for Collaborative Mathematical Problem Solving with Middle School Students: A Participatory Design Study",
         "authors": "Wenhan Lyu, Yimeng Wang, Murong Yue, Yifan Sun, Jennifer Suh, Meredith Kier, Ziyu Yao, Yixuan Zhang",
         "venue": "CHI 2026",
