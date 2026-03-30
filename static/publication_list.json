@@ -1,5 +1,23 @@
 [
     {
+        "title": "Self-Organizing Multi-Agent Systems for Continuous Software Development",
+        "authors": "Wenhan Lyu, Yue Xiao, Yixuan Zhang, Yifan Sun",
+        "venue": "arXiv",
+        "year": 2026,
+        "month": 3,
+        "day": 26,
+        "tags": ["yifan", "lab"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2603.25928",
+                "text": "PDF"
+            }
+        ],
+        "type": "preprint",
+        "venue_full": "arXiv:2603.25928"
+    },
+    {
         "title": "RIPPLE: Ring-based Page Prefetching and Layered Translation for Wafer-Scale GPUs",
         "authors": "Daoxuan Xu, Ying Li, Jie Ren, Yifan Sun",
         "venue": "GPGPU 2026",
