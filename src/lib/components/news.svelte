@@ -52,7 +52,10 @@
     <ul>
         <li>
             <span class="date">[Mar 2026]</span>
-            Ying Li has received the W&amp;M International Student Achievement Award!
+            Ying Li has received the W&amp;M
+            <a href="https://www.wm.edu/offices/revescenter/news/2026/reves-center-announces-2026-international-student-awards.php"
+                >International Student Achievement Award</a
+            >!
             Congratulations Ying!
         </li>
         <li>
