@@ -79,12 +79,6 @@
 
     <h2 class="sec-title">Undergraduate Researcher</h2>
     <div class="person-container">
-        <Member
-            name="Jeremy Coonley"
-            role="Undergraduate Researcher"
-            date="2025/4 -"
-            email="jmcoonley@wm.edu"
-        />
     </div>
 
     <h2 class="sec-title">Past Members</h2>
@@ -158,6 +152,14 @@
             role="Undergraduate Researcher"
             date="2024/6 - 2025/11"
             email="hzhao10@wm.edu"
+            variant="extra-lightweight"
+        />
+
+        <Member
+            name="Jeremy Coonley"
+            role="Undergraduate Researcher"
+            date="2025/4 - 2026/3"
+            email="jmcoonley@wm.edu"
             variant="extra-lightweight"
         />
     </div>
