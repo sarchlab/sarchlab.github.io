@@ -105,24 +105,6 @@
         />
     </div>
 
-    <h2 class="sec-title">External Research Interns</h2>
-    <div class="person-container lightweight">
-        <Member
-            name="Bohan Cui"
-            variant="lightweight"
-            date="2023/7 -"
-            affiliation="Nanjing University"
-        />
-
-        <Member
-            name="Yuanhuan Deng"
-            variant="lightweight"
-            date="2024/4 -"
-            affiliation="Brandeis University"
-        />
-
-    </div>
-
     <h2 class="sec-title">Past Members</h2>
 
     <h3 class="mt-5 mb-2">Undergraduate Researchers</h3>
@@ -244,6 +226,13 @@
         />
 
         <Member
+            name="Yuanhuan Deng"
+            variant="extra-lightweight"
+            date="2024/4 - 2025/3"
+            affiliation="Brandeis University"
+        />
+
+        <Member
             name="Shiyuan Li"
             variant="extra-lightweight"
             date="2024/7 - 2025/12"
@@ -261,6 +250,13 @@
             variant="extra-lightweight"
             date="2025/2 - 2025/12"
             affiliation="Eindhoven University of Technology"
+        />
+
+        <Member
+            name="Bohan Cui"
+            variant="extra-lightweight"
+            date="2023/7 - 2026/4"
+            affiliation="Nanjing University"
         />
     </div>
 </div>
