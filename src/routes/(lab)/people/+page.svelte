@@ -77,10 +77,6 @@
         />
     </div>
 
-    <h2 class="sec-title">Undergraduate Researcher</h2>
-    <div class="person-container">
-    </div>
-
     <h2 class="sec-title">Past Members</h2>
 
     <h3 class="mt-5 mb-2">Undergraduate Researchers</h3>
