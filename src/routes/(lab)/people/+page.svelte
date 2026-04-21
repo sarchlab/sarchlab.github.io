@@ -80,24 +80,6 @@
     <h2 class="sec-title">Undergraduate Researcher</h2>
     <div class="person-container">
         <Member
-            name="Xuzhong Wang"
-            profile_img="/xuzhong.jpeg"
-            link=""
-            role="Undergraduate Researcher"
-            date="2024/5 -"
-            email="xwang58@wm.edu"
-        />
-
-        <Member
-            name="Huizhi Zhao"
-            profile_img=""
-            link=""
-            role="Undergraduate Researcher"
-            date="2024/6 -"
-            email="hzhao10@wm.edu"
-        />
-
-        <Member
             name="Jeremy Coonley"
             role="Undergraduate Researcher"
             date="2025/4 -"
@@ -156,6 +138,26 @@
             role="Undergraduate Researcher"
             date="2023/11 - 2024/10"
             email="yzheng10@wm.edu"
+            variant="extra-lightweight"
+        />
+
+        <Member
+            name="Xuzhong Wang"
+            profile_img="/xuzhong.jpeg"
+            link=""
+            role="Undergraduate Researcher"
+            date="2024/5 - 2025/11"
+            email="xwang58@wm.edu"
+            variant="extra-lightweight"
+        />
+
+        <Member
+            name="Huizhi Zhao"
+            profile_img=""
+            link=""
+            role="Undergraduate Researcher"
+            date="2024/6 - 2025/11"
+            email="hzhao10@wm.edu"
             variant="extra-lightweight"
         />
     </div>
