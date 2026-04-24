@@ -80,6 +80,19 @@
         "acceptance_comment": "Acceptance Rate: 119/602 (~19.8%)"
     },
     {
+        "title": "告别内卷焦虑：走出内耗，重塑韧性 [Chinese translation of Authentic Excellence]",
+        "authors": "Yifan Sun, Janice Zhang",
+        "venue": "Book",
+        "year": 2026,
+        "month": 3,
+        "day": 1,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "book",
+        "venue_full": "China Machine Press",
+        "identification_information": "Chinese translation; published Mar. 2026."
+    },
+    {
         "title": "ACTA: Automatic Configuration of the Tensor Memory Accelerator for High-End GPUs.",
         "authors": "Nicolás Meseguer, Yifan Sun, Michael Pellauer, José L. Abellán, Manuel E. Acacio",
         "venue": "GPGPU 2025",
