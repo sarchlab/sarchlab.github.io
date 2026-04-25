@@ -80,8 +80,8 @@
         "acceptance_comment": "Acceptance Rate: 119/602 (~19.8%)"
     },
     {
-        "title": "告别内卷焦虑：走出内耗，重塑韧性 [Chinese translation of Authentic Excellence]",
-        "authors": "Original authors of Authentic Excellence: Flourishing and Resilience in a Relentless World: R. Kelly Crace, Robert L. Crace; Translators: Yifan Sun, Janice Zhang",
+        "title": "告别内卷焦虑：走出内耗，重塑韧性 (Chinese translation of Authentic Excellence: Flourishing and Resilience in a Relentless World)",
+        "authors": "R. Kelly Crace, Robert L. Crace, Yifan Sun, Janice Zhang",
         "venue": "Books I translated",
         "year": 2026,
         "month": 3,
@@ -278,8 +278,8 @@
         "venue_full": "24th Integrated Communications, Navigation and Surveillance Conference"
     },
     {
-        "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP [Russian translation of Accelerated Computing with HIP]",
-        "authors": "Original authors: Yifan Sun, Trinayan Baruah, David Kaeli; Translator: Oleksandr Kupriyanchuk",
+        "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP (Russian translation of Accelerated Computing with HIP)",
+        "authors": "Yifan Sun, Trinayan Baruah, David Kaeli, Oleksandr Kupriyanchuk",
         "year": 2024,
         "venue": "Translation of my book",
         "tags": ["yifan"],
