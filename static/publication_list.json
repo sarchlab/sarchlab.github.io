@@ -81,8 +81,8 @@
     },
     {
         "title": "告别内卷焦虑：走出内耗，重塑韧性 [Chinese translation of Authentic Excellence]",
-        "authors": "Yifan Sun, Janice Zhang",
-        "venue": "Book",
+        "authors": "Original authors: R. Kelly Crace, Charles J. Hardy, Robert L. Crace; Translators: Yifan Sun, Janice Zhang",
+        "venue": "Books I translated",
         "year": 2026,
         "month": 3,
         "day": 1,
@@ -279,13 +279,13 @@
     },
     {
         "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP [Russian translation of Accelerated Computing with HIP]",
-        "authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
+        "authors": "Original authors: Yifan Sun, Trinayan Baruah, David Kaeli; Translator: Oleksandr Kupriyanchuk",
         "year": 2024,
-        "venue": "Book",
+        "venue": "Translation of my book",
         "tags": ["yifan"],
         "links": [],
         "type": "bookTranslation",
-        "venue_full": "Moscow University Press",
+        "venue_full": "MAX Press",
         "identification_information": "Russian translation; published Jan. 2024.",
         "month": 1,
         "day": 1
