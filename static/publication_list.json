@@ -278,14 +278,15 @@
         "venue_full": "24th Integrated Communications, Navigation and Surveillance Conference"
     },
     {
-        "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP",
-        "authors": "Ифань Сун, Тринайан Баруа, Дэвид Каэли",
+        "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP [Russian translation of Accelerated Computing with HIP]",
+        "authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
         "year": 2024,
-        "venue": "Supercomputing Education Series, Moscow University Press",
+        "venue": "Book",
         "tags": ["yifan"],
         "links": [],
         "type": "bookTranslation",
-        "venue_full": "Russian translation of Accelerated Computing with HIP",
+        "venue_full": "Moscow University Press",
+        "identification_information": "Russian translation; published Jan. 2024.",
         "month": 1,
         "day": 1
     },
