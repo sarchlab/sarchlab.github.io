@@ -86,9 +86,9 @@
         "year": 2026,
         "month": 3,
         "day": 1,
-        "tags": ["yifan", "lab"],
+        "tags": ["yifan"],
         "links": [],
-        "type": "book",
+        "type": "translatedBook",
         "venue_full": "China Machine Press",
         "identification_information": "Chinese translation; published Mar. 2026."
     },
