@@ -51,12 +51,19 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Jun 2026]</span>
+            Our paper "<a href="https://arxiv.org/pdf/2603.25928"
+                >TheBotCompany: Self-Organizing Multi-Agent Systems for Continuous
+                Software Development</a
+            >" has been accepted by ASE 2026! Congrats Wenhan!
+        </li>
+        <li>
             <span class="date">[Mar 2026]</span>
-            Ying Li has received the W&amp;M
+            Congratulations to Ying Li for winning the 2026 Stephen K. Park
+            Graduate Research Award and the W&amp;M
             <a href="https://www.wm.edu/offices/revescenter/news/2026/reves-center-announces-2026-international-student-awards.php"
                 >International Student Achievement Award</a
             >!
-            Congratulations Ying!
         </li>
         <li>
             <span class="date">[Jan 2026]</span>
