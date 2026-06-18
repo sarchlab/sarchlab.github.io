@@ -1,11 +1,11 @@
 [
     {
-        "title": "Self-Organizing Multi-Agent Systems for Continuous Software Development",
+        "title": "TheBotCompany: Self-Organizing Multi-Agent Systems for Continuous Software Development",
         "authors": "Wenhan Lyu, Yue Xiao, Yixuan Zhang, Yifan Sun",
-        "venue": "arXiv",
+        "venue": "ASE 2026",
         "year": 2026,
-        "month": 3,
-        "day": 26,
+        "month": 6,
+        "day": 18,
         "tags": ["yifan", "lab"],
         "links": [
             {
@@ -14,8 +14,10 @@
                 "text": "PDF"
             }
         ],
-        "type": "preprint",
-        "venue_full": "arXiv:2603.25928"
+        "type": "conference",
+        "venue_full": "41st IEEE/ACM International Conference on Automated Software Engineering",
+        "identification_information": "arXiv:2603.25928.",
+        "acceptance_comment": "Acceptance Rate: 115/1236 (~9.3%)"
     },
     {
         "title": "RIPPLE: Ring-based Page Prefetching and Layered Translation for Wafer-Scale GPUs",
