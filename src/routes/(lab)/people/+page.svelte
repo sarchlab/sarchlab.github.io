@@ -18,7 +18,7 @@
             role="Assistant Professor"
             email="profyifansun@gmail.com"
         >
-            <div><b>Office:</b> McGlothlin-Street Hall 117</div>
+            <div><b>Office:</b> ISC 4 1383</div>
         </Member>
     </div>
 

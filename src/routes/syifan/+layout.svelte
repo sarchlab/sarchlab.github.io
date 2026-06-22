@@ -48,8 +48,8 @@
         <div slot="slot1">
             <b>Scalable Architecture Lab</b>
             <div class="text-xs mt-3">
-                McGlothlin-Street Hall 117 <br />
-                737 Landrum Dr, <br />
+                ISC 4 1365 <br />
+                540 Landrum Drive <br />
                 Williamsburg, VA 23185
             </div>
         </div>

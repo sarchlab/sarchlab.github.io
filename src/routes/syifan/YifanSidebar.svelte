@@ -29,8 +29,8 @@
         <div class="entry">
             <img class="small-icon" src="/location.svg" alt="location" />
             <div>
-                ISC4 Room 1383<br />
-                737 Landrum Dr, <br />
+                ISC 4 1383<br />
+                540 Landrum Drive <br />
                 Williamsburg, VA 23185
             </div>
         </div>
