@@ -64,7 +64,7 @@
             name="Enze Xu"
             profile_img="/enze.jpg"
             link="https://xuenze.com/"
-            role="Ph.D. Student"
+            role="Ph.D. Candidate"
             email="exu03@wm.edu"
         />
 
@@ -72,7 +72,7 @@
             name="Yijia Shi"
             profile_img=""
             link=""
-            role="Ph.D. Student"
+            role="Ph.D. Candidate"
             email="yshi16@wm.edu"
         />
     </div>
