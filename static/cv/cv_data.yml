@@ -767,6 +767,11 @@ sections:
             meta:
               - '2026'
           - content:
+              - CAL
+              - IEEE Computer Architecture Letters
+            meta:
+              - '2026'
+          - content:
               - FGCS
               - Future Generation Computer Systems
             meta:
