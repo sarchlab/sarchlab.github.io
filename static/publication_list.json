@@ -1,5 +1,19 @@
 [
     {
+        "title": "Visualize the Invisible: Exposing Causal Layers in GPU Performance Analysis through Milestone Abstractions",
+        "authors": "Yuanhuan Deng, Katherine E. Isaacs, Yifan Sun",
+        "venue": "IEEE VIS 2026",
+        "year": 2026,
+        "month": 7,
+        "day": 15,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "conference",
+        "venue_full": "IEEE Transactions on Visualization and Computer Graphics",
+        "identification_information": "To appear.",
+        "acceptance_comment": "Acceptance Rate: 145/591 (~24.5%)"
+    },
+    {
         "title": "TheBotCompany: Self-Organizing Multi-Agent Systems for Continuous Software Development",
         "authors": "Wenhan Lyu, Yue Xiao, Yixuan Zhang, Yifan Sun",
         "venue": "ASE 2026",
