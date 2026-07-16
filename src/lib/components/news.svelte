@@ -54,7 +54,7 @@
             <span class="date">[Jul 2026]</span>
             Our paper "Visualize the Invisible: Exposing Causal Layers in GPU Performance
             Analysis through Milestone Abstractions" has been accepted by IEEE VIS
-            2026 / TVCG! Congrats Yuanhuan!
+            2026 / TVCG!
         </li>
         <li>
             <span class="date">[Jun 2026]</span>
