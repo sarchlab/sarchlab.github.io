@@ -51,6 +51,12 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Jul 2026]</span>
+            Our paper "Visualize the Invisible: Exposing Causal Layers in GPU Performance
+            Analysis through Milestone Abstractions" has been accepted by IEEE VIS
+            2026 / TVCG!
+        </li>
+        <li>
             <span class="date">[Jun 2026]</span>
             Our paper "<a href="https://arxiv.org/pdf/2603.25928"
                 >TheBotCompany: Self-Organizing Multi-Agent Systems for Continuous
