@@ -100,6 +100,10 @@
         @apply object-contain;
     }
 
+    :global(.dark) .small-icon {
+        filter: invert(1);
+    }
+
     a {
         @apply underline;
     }

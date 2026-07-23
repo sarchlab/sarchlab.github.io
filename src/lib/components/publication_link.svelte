@@ -6,7 +6,7 @@
 
 <a href={link} target="_blank" rel="noopener noreferrer">
     <div class="flex items-center">
-        <img src={icon} alt="icon" class="w-4 h-3" />
+        <img src={icon} alt="icon" class="w-4 h-3 dark:invert" />
         <div class="ml-1">{text}</div>
     </div>
 </a>

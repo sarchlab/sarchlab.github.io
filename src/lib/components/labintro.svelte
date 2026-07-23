@@ -53,7 +53,11 @@
     class="flex flex-row flex-wrap gap-6 items-center justify-center md:justify-start"
 >
     <Sponsor img="NSF_logo.png" name="National Science Foundation" />
-    <Sponsor img="AMD_Logo.svg.png" name="Advanced Micro Devices" />
+    <Sponsor
+        img="AMD_Logo.svg.png"
+        name="Advanced Micro Devices"
+        invertInDark={true}
+    />
 </div>
 
 <style>

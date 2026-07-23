@@ -7,6 +7,9 @@
 
     export let logoLink = ''
     export let logoImg = ''
+    // Optional dark-mode variant of the logo image. Shown instead of
+    // logoImg when the dark theme is active.
+    export let logoImgDark = ''
     export let logoText = ''
     export let navItems = Array<{
         name: string
@@ -115,7 +118,18 @@
     <div class="nav-container">
         {#if logoImg != ''}
             <a href={logoLink}>
-                <img src={logoImg} alt="logo" class="logo" />
+                <img
+                    src={logoImg}
+                    alt="logo"
+                    class="logo {logoImgDark != '' ? 'dark:hidden' : ''}"
+                />
+                {#if logoImgDark != ''}
+                    <img
+                        src={logoImgDark}
+                        alt="logo"
+                        class="logo hidden dark:block"
+                    />
+                {/if}
             </a>
         {:else if logoText != ''}
             <a href={logoLink} class="logo">{logoText}</a>

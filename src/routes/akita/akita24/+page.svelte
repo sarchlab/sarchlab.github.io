@@ -82,7 +82,7 @@
                             on:click={unfold}
                         >
                             <img
-                                class="inline-block w-4 h-4"
+                                class="inline-block w-4 h-4 dark:invert"
                                 src="/caret-right-solid.svg"
                                 alt="right arrow"
                             />

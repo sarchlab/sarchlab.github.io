@@ -13,6 +13,7 @@
 {:else}
     <Nav
         logoImg="/yifan_sun.svg"
+        logoImgDark="/yifan_sun_dark.svg"
         logoLink="/syifan"
         navItems={[
             {

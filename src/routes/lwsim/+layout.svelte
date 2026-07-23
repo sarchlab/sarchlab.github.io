@@ -7,6 +7,7 @@
 <Nav
     logoLink="/"
     logoImg="/sarchlab.svg"
+    logoImgDark="/sarchlab_dark.svg"
     navItems={[
         {
             name: 'People',
