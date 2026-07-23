@@ -56,10 +56,6 @@
                 >
             </div>
             <div class="entry">
-                <img class="small-icon" src="/twitter.svg" alt="twitter" />
-                <a href="https://twitter.com/_syifan_"> Twitter</a>
-            </div>
-            <div class="entry">
                 <img class="small-icon" src="/github.svg" alt="github" />
                 <a href="https://github.com/syifan">GitHub</a>
             </div>
