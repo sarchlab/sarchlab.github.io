@@ -24,7 +24,8 @@
         "links": [],
         "type": "magazine",
         "venue_full": "《留学》杂志",
-        "identification_information": "2026年第14期(总第295期), 第25-27页。(In English: Yifan Sun, \"Ban, Revise, Use, Teach: Four Stages of the University Classroom's Response to AI,\" Studying Abroad Magazine.)"
+        "identification_information": "2026年第14期(总第295期), 第25-27页。",
+        "note": "In English: Yifan Sun, \"Ban, Revise, Use, Teach: Four Stages of the University Classroom's Response to AI,\" Studying Abroad Magazine."
     },
     {
         "title": "ArchSim: Computer Architecture Simulation as a Service",
@@ -147,17 +148,18 @@
         "acceptance_comment": "Acceptance Rate: 119/602 (~19.8%)"
     },
     {
-        "title": "告别内卷焦虑：走出内耗，重塑韧性 (Chinese translation of Authentic Excellence: Flourishing and Resilience in a Relentless World)",
-        "authors": "Authors: R. Kelly Crace, Robert L. Crace; Translators: Yifan Sun, Janice Zhang",
-        "venue": "Books I translated",
+        "title": "告别内卷焦虑：走出内耗，重塑韧性",
+        "authors": "R. Kelly Crace, Robert L. Crace著；孙轶凡、Janice Zhang译",
+        "venue": "机械工业出版社",
         "year": 2026,
         "month": 3,
         "day": 1,
         "tags": ["yifan"],
         "links": [],
-        "type": "translatedBook",
-        "venue_full": "China Machine Press",
-        "identification_information": "Chinese translation; published Mar. 2026."
+        "type": "translation",
+        "venue_full": "机械工业出版社",
+        "identification_information": "2026年3月出版。",
+        "note": "In English: Chinese translation of Authentic Excellence: Flourishing and Resilience in a Relentless World, by R. Kelly Crace and Robert L. Crace; translated by Yifan Sun and Janice Zhang. China Machine Press, Mar. 2026."
     },
     {
         "title": "ACTA: Automatic Configuration of the Tensor Memory Accelerator for High-End GPUs.",
@@ -345,15 +347,16 @@
         "venue_full": "24th Integrated Communications, Navigation and Surveillance Conference"
     },
     {
-        "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP (Russian translation of Accelerated Computing with HIP)",
-        "authors": "Authors: Yifan Sun, Trinayan Baruah, David Kaeli; Translator: Oleksandr Kupriyanchuk",
+        "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP",
+        "authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
         "year": 2024,
-        "venue": "Translation of my book",
+        "venue": "MAX Press",
         "tags": ["yifan"],
         "links": [],
-        "type": "bookTranslation",
+        "type": "foreignEdition",
         "venue_full": "MAX Press",
-        "identification_information": "Russian translation; published Jan. 2024.",
+        "identification_information": "Published Jan. 2024.",
+        "note": "In English: Russian translation of Accelerated Computing with HIP, by Yifan Sun, Trinayan Baruah, and David Kaeli; translated by Oleksandr Kupriyanchuk.",
         "month": 1,
         "day": 1
     },

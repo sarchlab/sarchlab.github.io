@@ -12,6 +12,7 @@
         year: number
         month?: number
         day?: number
+        note?: string
         tags?: string[]
         links: {
             icon: string
@@ -94,6 +95,7 @@
             title={publication.title}
             authors={publication.authors}
             venue={publication.venue}
+            note={publication.note ?? ''}
         >
             {#each publication.links as link}
                 <PublicationLink

@@ -2,6 +2,7 @@
     export let venue = ''
     export let title = ''
     export let authors = ''
+    export let note = ''
 </script>
 
 <div class="pub-card">
@@ -16,6 +17,12 @@
     <div class="authors">
         {authors}
     </div>
+
+    {#if note}
+        <div class="note">
+            ({note})
+        </div>
+    {/if}
 
     <div class="links">
         <slot />
@@ -39,6 +46,10 @@
 
     .authors {
         @apply text-sm;
+    }
+
+    .note {
+        @apply text-sm italic text-muted-foreground;
     }
 
     .links {

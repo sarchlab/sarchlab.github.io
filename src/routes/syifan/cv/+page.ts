@@ -20,9 +20,9 @@ const PUBLICATION_TYPE_TITLES = {
     journal: 'Journal Articles',
     workshop: 'Workshop Papers',
     book: 'Books',
-    translatedBook: 'Books I translated',
+    translation: 'Translations',
     bookChapter: 'Book Chapters',
-    bookTranslation: 'Translation of my book',
+    foreignEdition: 'Foreign Editions of My Books',
     magazine: 'Magazine Articles',
     patent: 'Patents',
     preprint: 'Preprints',
@@ -37,8 +37,8 @@ const PUBLICATION_TYPE_ORDER: PublicationType[] = [
     'workshop',
     'book',
     'bookChapter',
-    'bookTranslation',
-    'translatedBook',
+    'foreignEdition',
+    'translation',
     'magazine',
     'patent',
     'preprint',
@@ -109,6 +109,7 @@ type Publication = {
     identification_information?: string
     doi?: string
     acceptance_comment?: string
+    note?: string
 }
 
 const isRecord = (value: unknown): value is Record<string, unknown> =>
@@ -243,6 +244,11 @@ const toPublicationEntry = (
     const acceptance = formatAcceptance(publication.acceptance_comment)
     if (acceptance) {
         left.push(acceptance)
+    }
+
+    const note = (publication.note ?? '').trim()
+    if (note) {
+        left.push({ html: `<em>(${escapeHtml(note)})</em>` })
     }
 
     return {
