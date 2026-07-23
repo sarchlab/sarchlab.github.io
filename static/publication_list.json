@@ -14,6 +14,38 @@
         "acceptance_comment": "Acceptance Rate: 145/591 (~24.5%)"
     },
     {
+        "title": "禁、改、用、教：大学课堂应对AI的四个阶段",
+        "authors": "孙轶凡",
+        "venue": "《留学》",
+        "year": 2026,
+        "month": 7,
+        "day": 20,
+        "tags": ["yifan"],
+        "links": [],
+        "type": "magazine",
+        "venue_full": "《留学》杂志",
+        "identification_information": "2026年第14期(总第295期), 第25-27页。(In English: Yifan Sun, \"Ban, Revise, Use, Teach: Four Stages of the University Classroom's Response to AI,\" Studying Abroad Magazine.)"
+    },
+    {
+        "title": "ArchSim: Computer Architecture Simulation as a Service",
+        "authors": "Sabila Al Jannat, Wenhan Lyu, Le Khanh Trinh Mai, Huizhi Zhao, Zhuoyan Zheng, Katherine E. Isaacs, Yifan Sun",
+        "venue": "arXiv",
+        "year": 2026,
+        "month": 7,
+        "day": 14,
+        "tags": ["yifan", "lab"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2607.12359",
+                "text": "PDF"
+            }
+        ],
+        "type": "preprint",
+        "venue_full": "arXiv",
+        "identification_information": "2607.12359."
+    },
+    {
         "title": "TheBotCompany: Self-Organizing Multi-Agent Systems for Continuous Software Development",
         "authors": "Wenhan Lyu, Yue Xiao, Yixuan Zhang, Yifan Sun",
         "venue": "ASE 2026",
@@ -32,6 +64,25 @@
         "venue_full": "41st IEEE/ACM International Conference on Automated Software Engineering",
         "identification_information": "arXiv:2603.25928.",
         "acceptance_comment": "Acceptance Rate: 115/1236 (~9.3%)"
+    },
+    {
+        "title": "Akita: A High Usability Simulation Framework for Computer Architecture",
+        "authors": "Sabila Al Jannat, Ying Li, Mengyang He, Xuzhong Wang, Huizhi Zhao, Jingxiang Sun, Daoxuan Xu, Enze Xu, Yifan Sun",
+        "venue": "arXiv",
+        "year": 2026,
+        "month": 4,
+        "day": 30,
+        "tags": ["yifan", "lab"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2604.28073",
+                "text": "PDF"
+            }
+        ],
+        "type": "preprint",
+        "venue_full": "arXiv",
+        "identification_information": "2604.28073."
     },
     {
         "title": "RIPPLE: Ring-based Page Prefetching and Layered Translation for Wafer-Scale GPUs",
