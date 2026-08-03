@@ -65,7 +65,8 @@
         "tags": ["yifan", "lab"],
         "links": [],
         "type": "conference",
-        "venue_full": "2026 CHI Conference on Human Factors in Computing Systems"
+        "venue_full": "2026 CHI Conference on Human Factors in Computing Systems",
+        "acceptance_comment": "Acceptance Rate: 1705/6730 (~25.3%)"
     },
     {
         "title": "HDPAT: Hierarchical Distributed Page Address Translation for Wafer-Scale GPUs",
