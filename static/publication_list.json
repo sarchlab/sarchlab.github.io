@@ -1,5 +1,18 @@
 [
     {
+        "title": "Mixing Models for Enhanced Robustness",
+        "authors": "Chris Thames, Yifan Sun",
+        "venue": "AIxSET 2026",
+        "year": 2026,
+        "month": 9,
+        "day": 28,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "conference",
+        "venue_full": "3rd IEEE International Conference on Artificial Intelligence x Science, Engineering, and Technology",
+        "identification_information": "Short paper (4 pages)."
+    },
+    {
         "title": "Visualize the Invisible: Exposing Causal Layers in GPU Performance Analysis through Milestone Abstractions",
         "authors": "Yuanhuan Deng, Katherine E. Isaacs, Yifan Sun",
         "venue": "IEEE VIS 2026",

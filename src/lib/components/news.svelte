@@ -51,6 +51,11 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Aug 2026]</span>
+            Our short paper "Mixing Models for Enhanced Robustness" has been accepted
+            by AIxSET 2026! Congrats Chris!
+        </li>
+        <li>
             <span class="date">[Jul 2026]</span>
             Our paper "Visualize the Invisible: Exposing Causal Layers in GPU Performance
             Analysis through Milestone Abstractions" has been accepted by IEEE VIS
