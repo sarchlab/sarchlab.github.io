@@ -10,7 +10,7 @@
         "links": [],
         "type": "conference",
         "venue_full": "3rd IEEE International Conference on Artificial Intelligence x Science, Engineering, and Technology",
-        "identification_information": "Short paper (4 pages)."
+        "note": "Short paper."
     },
     {
         "title": "Visualize the Invisible: Exposing Causal Layers in GPU Performance Analysis through Milestone Abstractions",
