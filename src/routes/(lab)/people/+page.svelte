@@ -15,7 +15,7 @@
             name="Yifan Sun"
             profile_img="/yifan_profile.png"
             link="/syifan"
-            role="Assistant Professor"
+            role="Class of 1953 Associate Professor"
             email="profyifansun@gmail.com"
         >
             <div><b>Office:</b> ISC 4 1383</div>

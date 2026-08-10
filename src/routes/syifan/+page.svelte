@@ -9,7 +9,7 @@
 
 <div>
     <p>
-        I am an Assistant Professor in the Department of Computer Science at
+        I am the Class of 1953 Associate Professor of Computer Science at
         William & Mary. I am the lead of the <a href="/"
             >Scalable Architecture Lab</a
         >. I received my Ph.D. degree from the Department of Electrical and

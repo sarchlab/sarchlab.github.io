@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="text-muted-foreground">
-            <p>Assistant Professor</p>
+            <p>Class of 1953 Associate Professor</p>
             <p>Computer Science</p>
             <p>William & Mary</p>
         </div>
