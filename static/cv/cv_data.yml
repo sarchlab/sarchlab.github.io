@@ -2,7 +2,7 @@ version: 1
 header:
   name: Yifan Sun
   tags:
-    - Assistant Professor, Computer Science, William & Mary
+    - Class of 1953 Associate Professor, Computer Science, William & Mary
     - ISC 4 1383, Williamsburg, VA 23185
   contact:
     phone:
@@ -25,11 +25,17 @@ sections:
     title: Academic Appointments
     entries:
       - content:
+          - Class of 1953 Associate Professor
+          - Computer Science, William & Mary
+          - Williamsburg, VA
+        meta:
+          - 8/2026 - Present
+      - content:
           - Assistant Professor
           - Computer Science, William & Mary
           - Williamsburg, VA
         meta:
-          - 8/2020 - Present
+          - 8/2020 - 8/2026
     subsections: []
   - id: educationEntries
     title: Education
