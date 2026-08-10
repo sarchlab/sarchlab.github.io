@@ -20,7 +20,13 @@
         "month": 11,
         "day": 9,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/vis_the_invisible.pdf",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "IEEE Transactions on Visualization and Computer Graphics",
         "identification_information": "To appear.",
