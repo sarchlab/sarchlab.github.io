@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-    <title>Scalable Architecture Lab | Software</title>
+    <title>HUSCARL | Software</title>
 </svelte:head>
 
 <div class="two-col-left flex flex-wrap">

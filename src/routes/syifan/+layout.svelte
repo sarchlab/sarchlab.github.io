@@ -17,7 +17,7 @@
         logoLink="/syifan"
         navItems={[
             {
-                name: 'SARCHLAB',
+                name: 'HUSCARL',
                 link: '/',
             },
             {
@@ -47,8 +47,9 @@
 
     <Footer>
         <div slot="slot1">
-            <b>Scalable Architecture Lab</b>
+            <b>HUSCARL</b>
             <div class="text-xs mt-3">
+                Human-Centered System & Computer Architecture Lab <br />
                 ISC 4 1365 <br />
                 540 Landrum Drive <br />
                 Williamsburg, VA 23185

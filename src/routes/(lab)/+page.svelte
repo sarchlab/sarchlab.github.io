@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Scalable Architecture Lab</title>
+    <title>HUSCARL | Human-Centered System & Computer Architecture Lab</title>
 </svelte:head>
 
 <div class="two-col-left">
