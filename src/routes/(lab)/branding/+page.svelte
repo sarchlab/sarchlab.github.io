@@ -30,49 +30,42 @@
     const logos = [
         {
             title: 'Full logo, light backgrounds',
-            note: 'Blue Green #219EBC',
             img: '/branding/huscarl_full_light.svg',
             png: '/branding/huscarl_full_light.png',
             dark: false,
         },
         {
             title: 'Full logo, dark backgrounds',
-            note: 'Sky Blue #8ECAE6',
             img: '/branding/huscarl_full_dark.svg',
             png: '/branding/huscarl_full_dark.png',
             dark: true,
         },
         {
             title: 'Full logo, monochrome reverse',
-            note: 'Pure White #FFFFFF',
             img: '/branding/huscarl_full_reverse.svg',
             png: '/branding/huscarl_full_reverse.png',
             dark: true,
         },
         {
             title: 'Lockup, light backgrounds',
-            note: 'Blue Green #219EBC',
             img: '/branding/huscarl_lockup_light.svg',
             png: '/branding/huscarl_lockup_light.png',
             dark: false,
         },
         {
             title: 'Lockup, dark backgrounds',
-            note: 'Sky Blue #8ECAE6',
             img: '/branding/huscarl_lockup_dark.svg',
             png: '/branding/huscarl_lockup_dark.png',
             dark: true,
         },
         {
             title: 'Lockup, monochrome reverse',
-            note: 'Pure White #FFFFFF',
             img: '/branding/huscarl_lockup_reverse.svg',
             png: '/branding/huscarl_lockup_reverse.png',
             dark: true,
         },
         {
             title: 'Mark, light backgrounds',
-            note: 'Blue Green #219EBC',
             img: '/branding/huscarl_mark_light.svg',
             png: '/branding/huscarl_mark_light.png',
             dark: false,
@@ -80,7 +73,6 @@
         },
         {
             title: 'Mark, dark backgrounds',
-            note: 'Sky Blue #8ECAE6',
             img: '/branding/huscarl_mark_dark.svg',
             png: '/branding/huscarl_mark_dark.png',
             dark: true,
@@ -88,7 +80,6 @@
         },
         {
             title: 'Mark, monochrome reverse',
-            note: 'Pure White #FFFFFF',
             img: '/branding/huscarl_mark_reverse.svg',
             png: '/branding/huscarl_mark_reverse.png',
             dark: true,
@@ -126,15 +117,13 @@
                     class={l.square ? 'h-24' : 'h-12 max-w-full'}
                 />
             </div>
-            <div
-                class="flex items-center justify-between px-4 py-2 text-xs bg-muted"
-            >
-                <span><b>{l.title}</b> · {l.note}</span>
-                <span>
+            <div class="px-4 py-2 text-xs bg-muted">
+                <div><b>{l.title}</b></div>
+                <div class="mt-1">
                     <a href={l.img} download>SVG</a>
                     ·
                     <a href={l.png} download>PNG</a>
-                </span>
+                </div>
             </div>
         </div>
     {/each}
