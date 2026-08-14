@@ -19,6 +19,7 @@
         --border: 214.3 31.8% 91.4%;
         --input: 214.3 31.8% 91.4%;
 
+        --brand: #219ebc;
         --primary: #023047;
         --primary-foreground: #ffffff;
 
@@ -52,6 +53,7 @@
         --border: 216 34% 17%;
         --input: 216 34% 17%;
 
+        --brand: #8ecae6;
         --primary: #8ecae6;
         --primary-foreground: #023047;
 
@@ -84,6 +86,7 @@
 
     .sec-title {
         @apply text-4xl font-thin mt-8 mb-4;
+        color: var(--brand);
     }
 
     h1,
