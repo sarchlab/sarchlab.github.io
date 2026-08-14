@@ -5,13 +5,13 @@
 </script>
 
 <svelte:head>
-    <title>Scalable Architecture Lab | Grant</title>
+    <title>HUSCARL | Grant</title>
 </svelte:head>
 
 <div class="two-col-left">
     <h2 class="sec-title">Grant</h2>
     <p>
-        SARCHLAB has acquired <u>$908K</u> external grant to support the research
+        HUSCARL has acquired <u>$908K</u> external grant to support the research
         and education activities. We thank our sponsors for the generous support.
     </p>
     <GrantEntry

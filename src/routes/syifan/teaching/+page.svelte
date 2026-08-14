@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Scalable Architecture Lab | Publication</title>
+    <title>HUSCARL | Teaching</title>
 </svelte:head>
 
 <div>

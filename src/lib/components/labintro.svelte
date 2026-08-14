@@ -4,27 +4,31 @@
     import Sponsor from './sponsor.svelte'
 </script>
 
-<h2 class="sec-title">Scalable Architecture Lab</h2>
+<h2 class="sec-title">HUSCARL</h2>
 
 <p class="mt-2 text-sm">
-    Scalable Architecture Lab (SARCHLAB) is a research lab that runs under the
-    Computer Science Department of William & Mary, under the supervision of Dr.
-    Yifan Sun. SARCHLAB aims to develop scalable and efficient computer
-    architectures by emphasizing the capabilities for human to understand the
-    architecture and for the architecture to serve human.
+    HUSCARL (Human-Centered System & Computer Architecture Lab), formerly known
+    as the Scalable Architecture Lab, is a research lab in the Computer Science
+    Department at William & Mary. HUSCARL is led by Dr.
+    <a href="/syifan">Yifan Sun</a>. HUSCARL believes that computer systems and
+    chips are designed by humans and for humans. HUSCARL bridges HCI and data
+    visualization with chip design,
+    building open-source simulators, visualization tools, and AI agents that
+    help humans understand computer architectures and make architectures serve
+    humans better.
 </p>
 
 <h2 class="sec-title">Hiring</h2>
 
 <p>
-    SArchLab has no plan of hiring new Ph.D. students, research interns, or
+    HUSCARL has no plan of hiring new Ph.D. students, research interns, or
     undergraduate research assistants in Spring 2026, Fall 2026 and Spring
     2027.
 </p>
 
 <!-- 
 <p>
-    <b>Ph.D.</b> SARCHLAB is actively seeking <u>1-2 Ph.D. students</u>,
+    <b>Ph.D.</b> HUSCARL is actively seeking <u>1-2 Ph.D. students</u>,
     starting from either the Spring 2024 or Fall 2025 semester, with an
     requirement of a strong programming background and an interest in
     researching the computer hardware domain.

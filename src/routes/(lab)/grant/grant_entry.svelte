@@ -12,7 +12,7 @@
     <div class="duration">{duration}</div>
     <div class="title">{title}</div>
     <div class="info"><b>Sponsor:</b> {sponsor}, {program}</div>
-    <div class="info"><b>Amount:</b> {amount}, SARCHLAB part {labAmount}</div>
+    <div class="info"><b>Amount:</b> {amount}, HUSCARL part {labAmount}</div>
     <div class="info"><b>PIs:</b> {pi}</div>
 </div>
 

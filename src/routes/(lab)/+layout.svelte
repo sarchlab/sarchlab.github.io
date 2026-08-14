@@ -6,8 +6,8 @@
 
 <Nav
     logoLink="/"
-    logoImg="/sarchlab.svg"
-    logoImgDark="/sarchlab_dark.svg"
+    logoImg="/huscarl.svg"
+    logoImgDark="/huscarl_dark.svg"
     navItems={[
         {
             name: 'People',
@@ -34,8 +34,9 @@
 
 <Footer>
     <div slot="slot1">
-        <b>Scalable Architecture Lab</b>
+        <b>HUSCARL</b>
         <div class="text-xs mt-3">
+            Human-Centered System & Computer Architecture Lab <br />
             ISC 4 1365 <br />
             540 Landrum Drive <br />
             Williamsburg, VA 23185
@@ -48,6 +49,13 @@
             <a href="https://github.com/sarchlab">
                 https://github.com/sarchlab
             </a>
+        </div>
+    </div>
+
+    <div slot="slot3">
+        <b>Resources</b>
+        <div class="text-xs mt-3">
+            <a href="/branding">Branding</a>
         </div>
     </div>
 

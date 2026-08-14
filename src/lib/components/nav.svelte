@@ -145,7 +145,7 @@
 
         <div
             id="nav-fold"
-            class="nav-fold hidden items-center text-primary-foreground"
+            class="nav-fold hidden items-center text-foreground"
         >
             <div id="nav-menu-list">
                 {#each navItems as item}
