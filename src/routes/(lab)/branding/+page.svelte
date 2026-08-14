@@ -43,6 +43,13 @@
             dark: true,
         },
         {
+            title: 'Full logo, monochrome reverse',
+            note: 'Pure White #FFFFFF',
+            img: '/branding/huscarl_full_reverse.svg',
+            png: '/branding/huscarl_full_reverse.png',
+            dark: true,
+        },
+        {
             title: 'Lockup, light backgrounds',
             note: 'Blue Green #219EBC',
             img: '/branding/huscarl_lockup_light.svg',
@@ -54,6 +61,13 @@
             note: 'Sky Blue #8ECAE6',
             img: '/branding/huscarl_lockup_dark.svg',
             png: '/branding/huscarl_lockup_dark.png',
+            dark: true,
+        },
+        {
+            title: 'Lockup, monochrome reverse',
+            note: 'Pure White #FFFFFF',
+            img: '/branding/huscarl_lockup_reverse.svg',
+            png: '/branding/huscarl_lockup_reverse.png',
             dark: true,
         },
         {
@@ -69,6 +83,14 @@
             note: 'Sky Blue #8ECAE6',
             img: '/branding/huscarl_mark_dark.svg',
             png: '/branding/huscarl_mark_dark.png',
+            dark: true,
+            square: true,
+        },
+        {
+            title: 'Mark, monochrome reverse',
+            note: 'Pure White #FFFFFF',
+            img: '/branding/huscarl_mark_reverse.svg',
+            png: '/branding/huscarl_mark_reverse.png',
             dark: true,
             square: true,
         },
@@ -90,7 +112,7 @@
 
 <h3 class="mt-8 mb-3 font-bold">Logo</h3>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     {#each logos as l}
         <div class="border rounded-lg overflow-hidden">
             <div
@@ -146,6 +168,10 @@
     <li>
         Web contexts use the single-color lockups above: Blue Green on light,
         Sky Blue on dark.
+    </li>
+    <li>
+        Use the monochrome reverse logo only when brand colors are unavailable
+        or when a dark or photographic background requires a neutral mark.
     </li>
     <li>
         Print materials (posters, slides, signage) use the full logo with the
