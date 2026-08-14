@@ -19,14 +19,14 @@
         --border: 214.3 31.8% 91.4%;
         --input: 214.3 31.8% 91.4%;
 
-        --primary: #3db2d1;
-        --primary-foreground: #100e1b;
+        --primary: #023047;
+        --primary-foreground: #ffffff;
 
-        --secondary: #f1843f;
-        --secondary-foreground: #100e1b;
+        --secondary: #219ebc;
+        --secondary-foreground: #023047;
 
         --accent: #f3f5fa;
-        --accent-foreground: #098761;
+        --accent-foreground: #023047;
 
         --destructive: #d1285b;
         --destructive-foreground: F3F5FA;
@@ -52,14 +52,14 @@
         --border: 216 34% 17%;
         --input: 216 34% 17%;
 
-        --primary: #3db2d1;
-        --primary-foreground: #100e1b;
+        --primary: #8ecae6;
+        --primary-foreground: #023047;
 
-        --secondary: #f1843f;
-        --secondary-foreground: #100e1b;
+        --secondary: #ffb703;
+        --secondary-foreground: #023047;
 
         --accent: #f3f5fa;
-        --accent-foreground: #098761;
+        --accent-foreground: #ffb703;
 
         --destructive: #d1285b;
         --destructive-foreground: F3F5FA;

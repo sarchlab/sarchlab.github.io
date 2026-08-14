@@ -243,7 +243,7 @@
         @apply text-white font-bold;
         @apply rounded-md;
         @apply transition-all;
-        @apply hover:bg-secondary;
+        @apply hover:bg-secondary hover:text-secondary-foreground;
         @apply no-underline text-lg;
         @apply mt-4;
     }
