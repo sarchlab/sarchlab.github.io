@@ -29,6 +29,20 @@
 
     const logos = [
         {
+            title: 'Full logo, light backgrounds',
+            note: 'Blue Green #219EBC',
+            img: '/branding/huscarl_full_light.svg',
+            png: '/branding/huscarl_full_light.png',
+            dark: false,
+        },
+        {
+            title: 'Full logo, dark backgrounds',
+            note: 'Sky Blue #8ECAE6',
+            img: '/branding/huscarl_full_dark.svg',
+            png: '/branding/huscarl_full_dark.png',
+            dark: true,
+        },
+        {
             title: 'Lockup, light backgrounds',
             note: 'Blue Green #219EBC',
             img: '/branding/huscarl_lockup_light.svg',
@@ -104,27 +118,6 @@
     {/each}
 </div>
 
-<div class="border rounded-lg overflow-hidden mt-4">
-    <div class="flex items-center justify-center p-6 bg-white">
-        <img
-            src="/branding/huscarl_full_wm.svg"
-            alt="Full HUSCARL logo with William &amp; Mary Computer Science co-branding"
-            class="max-h-64 max-w-full"
-        />
-    </div>
-    <div class="flex items-center justify-between px-4 py-2 text-xs bg-muted">
-        <span>
-            <b>Full logo with tagline &amp; W&amp;M co-brand</b> · official W&amp;M
-            green &amp; gold — for university and print materials (posters, slides,
-            signage)
-        </span>
-        <span>
-            <a href="/branding/huscarl_full_wm.svg" download>SVG</a>
-            ·
-            <a href="/branding/huscarl_full_wm.png" download>PNG</a>
-        </span>
-    </div>
-</div>
 
 <h3 class="mt-8 mb-3 font-bold">Colors — the “Ocean &amp; Amber” palette</h3>
 
@@ -155,9 +148,8 @@
         Sky Blue on dark.
     </li>
     <li>
-        University and print materials (posters, slides, signage) use the full
-        W&amp;M co-branded logo in its official green &amp; gold — do not
-        recolor it.
+        Print materials (posters, slides, signage) use the full logo with the
+        tagline.
     </li>
     <li>
         Deep Space Blue carries text; Blue Green identifies the brand; the
