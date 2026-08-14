@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">TrioSim</title>
+  <desc id="desc">Three connected accelerator tiles</desc>
+  <rect width="96" height="96" rx="20" fill="#023047"/>
+  <path d="M29 48h38M35 35l26 26M61 35 35 61" stroke="#8ECAE6" stroke-width="5" stroke-linecap="round"/>
+  <rect x="13" y="35" width="24" height="26" rx="6" fill="#219EBC" stroke="#fff" stroke-width="3"/>
+  <rect x="36" y="12" width="24" height="26" rx="6" fill="#FFB703" stroke="#fff" stroke-width="3"/>
+  <rect x="59" y="35" width="24" height="26" rx="6" fill="#FB8500" stroke="#fff" stroke-width="3"/>
+  <path d="M20 43h10M20 49h10M43 20h10M43 26h10M66 43h10M66 49h10" stroke="#023047" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 63v13" stroke="#8ECAE6" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="48" cy="79" r="6" fill="#8ECAE6" stroke="#fff" stroke-width="3"/>
+</svg>

@@ -33,6 +33,21 @@
             workloads running on AMD GPUs. MGPUSim is built on top of Akita.
         </div>
     </Software>
+
+    <Software
+        img="/triosim_logo.svg"
+        title="TrioSim"
+        titleLink="https://github.com/sarchlab/triosim"
+    >
+        <a slot="link" href="https://github.com/sarchlab/triosim">
+            https://github.com/sarchlab/triosim
+        </a>
+        <div slot="description">
+            TrioSim is a lightweight simulator for large-scale DNN workloads on
+            multi-GPU systems. It supports data, tensor, and pipeline
+            parallelism and models both electrical and optical interconnects.
+        </div>
+    </Software>
 </div>
 <div class="two-col-right">
     <News />
