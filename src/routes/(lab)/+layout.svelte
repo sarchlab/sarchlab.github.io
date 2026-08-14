@@ -52,6 +52,13 @@
         </div>
     </div>
 
+    <div slot="slot3">
+        <b>Resources</b>
+        <div class="text-xs mt-3">
+            <a href="/branding">Branding</a>
+        </div>
+    </div>
+
     <div slot="slot4">
         <b>Website Designer</b>
         <div class="text-xs mt-3">Yifan Sun</div>
