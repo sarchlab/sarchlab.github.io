@@ -79,7 +79,7 @@
     <title>HUSCARL | Branding</title>
 </svelte:head>
 
-<div class="w-full max-w-6xl">
+<div class="w-full max-w-4xl">
 <h2 class="sec-title">Branding</h2>
 
 <p class="mt-2 text-sm">
@@ -88,11 +88,9 @@
     introduce colors outside the palette below.
 </p>
 
-<div class="md:grid md:grid-cols-12 md:gap-10">
-<div class="md:col-span-7">
 <h3 class="mt-8 mb-3 font-bold">Logo</h3>
 
-<div class="grid grid-cols-1 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     {#each logos as l}
         <div class="border rounded-lg overflow-hidden">
             <div
@@ -121,9 +119,6 @@
 </div>
 
 
-</div>
-
-<div class="md:col-span-5">
 <h3 class="mt-8 mb-3 font-bold">Colors — the “Ocean &amp; Amber” palette</h3>
 
 <div class="flex flex-col gap-3">
@@ -149,9 +144,6 @@
     (dark-mode background). These five colors plus the neutrals are the entire system
     — please do not introduce new colors.
 </p>
-
-</div>
-</div>
 
 <h3 class="mt-8 mb-3 font-bold">Usage</h3>
 
