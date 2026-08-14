@@ -121,19 +121,14 @@
 
 <h3 class="mt-8 mb-3 font-bold">Colors — the “Ocean &amp; Amber” palette</h3>
 
-<div class="flex flex-col gap-3">
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
     {#each colors as c}
-        <div class="flex items-center gap-4">
-            <div
-                class="w-14 h-14 rounded-lg border shrink-0"
-                style="background: {c.hex}"
-            ></div>
-            <div>
-                <div class="text-sm">
-                    <b>{c.name}</b>
-                    <span class="font-mono text-xs ml-1">{c.hex}</span>
-                </div>
-                <div class="text-xs mt-0.5">{c.role}</div>
+        <div class="border rounded-lg overflow-hidden">
+            <div class="h-14" style="background: {c.hex}"></div>
+            <div class="px-2.5 py-2">
+                <div class="text-sm font-bold">{c.name}</div>
+                <div class="text-xs font-mono">{c.hex}</div>
+                <div class="text-xs mt-1">{c.role}</div>
             </div>
         </div>
     {/each}
