@@ -8,9 +8,10 @@
 
 <p class="mt-2 text-sm">
     HUSCARL (Human-Centered System & Computer Architecture Lab), formerly known
-    as the Scalable Architecture Lab, is a research lab that runs under the
-    Computer Science Department of William & Mary, under the supervision of Dr.
-    Yifan Sun. HUSCARL bridges HCI and data visualization with chip design,
+    as the Scalable Architecture Lab, is a research lab in the Computer Science
+    Department at William & Mary. The lab is led by Dr.
+    <a href="/syifan">Yifan Sun</a>. HUSCARL bridges HCI and data visualization
+    with chip design,
     building open-source simulators, visualization tools, and AI agents that
     help humans understand computer architectures and make architectures serve
     humans better.
