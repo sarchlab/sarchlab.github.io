@@ -48,6 +48,22 @@
             parallelism and models both electrical and optical interconnects.
         </div>
     </Software>
+
+    <Software
+        img="/thebotcompany_logo.svg"
+        title="TheBotCompany"
+        titleLink="https://github.com/syifan/thebotcompany"
+    >
+        <a slot="link" href="https://github.com/syifan/thebotcompany">
+            https://github.com/syifan/thebotcompany
+        </a>
+        <div slot="description">
+            TheBotCompany coordinates persistent, self-organizing AI agent
+            teams that plan, implement, and verify software projects. It
+            provides multi-project orchestration, human escalation, budget
+            controls, and a unified monitoring dashboard.
+        </div>
+    </Software>
 </div>
 <div class="two-col-right">
     <News />
