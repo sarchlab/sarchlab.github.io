@@ -35,16 +35,7 @@
                     <br />
                     <b>Time:</b> 10:00am - 12:00pm (US Eastern Time)
                     <br />
-                    <b>Location:</b>
-                    <a
-                        href="https://cwm.zoom.us/j/91386326093?pwd=Yk1EY2lCTEtwbGhrWTErYUltS3B2Zz09"
-                    >
-                        Virtual on Zoom
-                    </a>
-                    <br />
-                    <a href="/akita/akita24/zoom">
-                        Here is the full Zoom invitation
-                    </a>
+                    <b>Location:</b> Virtual on Zoom
                 </div>
                 <a href="https://forms.gle/WKaeWkEubBLfYQeB7" class="button">
                     RSVP Here

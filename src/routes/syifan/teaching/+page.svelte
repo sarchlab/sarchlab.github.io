@@ -5,12 +5,17 @@
 </script>
 
 <svelte:head>
-    <title>HUSCARL | Teaching</title>
+    <title>Yifan Sun | Teaching</title>
 </svelte:head>
 
 <div>
     <h2 class="sec-title">@ William & Mary</h2>
     <div class="mt-4 flex flex-col gap-4">
+        <Course year="Fall 2025" title="CSCI432: Web Programming" />
+        <Course
+            year="Spring 2025"
+            title="CSCI654: Advanced Computer Architecture"
+        />
         <Course year="Fall 2024" title="CSCI432: Web Programming" />
         <Course
             year="Spring 2024"

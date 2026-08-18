@@ -137,7 +137,7 @@
         <li>
             <span class="date">[Jul 2024]</span>
             Our paper
-            <a href="https://arxiv.org/abs/2404.13414">
+            <a href="/akitartm.pdf">
                 "Looking into the Black Box: Monitoring Computer Architecture
                 Simulations in Real-Time with AkitaRTM"
             </a>

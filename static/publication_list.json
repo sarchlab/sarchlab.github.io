@@ -996,7 +996,7 @@
         "links": [
             {
                 "icon": "/file_outline.svg",
-                "link": "/mgpusim_isca19.pdf",
+                "link": "/mgpusim-isca2019.pdf",
                 "text": "PDF"
             }
         ],
@@ -1056,7 +1056,7 @@
         "links": [
             {
                 "icon": "/file_outline.svg",
-                "link": "/cal19.pdf",
+                "link": "https://arxiv.org/pdf/1911.11313",
                 "text": "PDF"
             }
         ],
@@ -1096,7 +1096,7 @@
         "links": [
             {
                 "icon": "/file_outline.svg",
-                "link": "/wintersim18",
+                "link": "/wsc18.pdf",
                 "text": "PDF"
             }
         ],

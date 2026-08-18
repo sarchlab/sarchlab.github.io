@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-    <title>HUSCARL | Publication</title>
+    <title>Yifan Sun | Publications</title>
 </svelte:head>
 
 <div>
