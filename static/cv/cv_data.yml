@@ -366,6 +366,11 @@ sections:
         title: Teaching @ William & Mary
         entries:
           - content:
+              - CSCI654 - Advanced Computer Architecture
+              - Graduate-level course
+            meta:
+              - Spring 2026
+          - content:
               - CSCI432 - Web Programming
               - Senior undergraduate-level course
             meta:
