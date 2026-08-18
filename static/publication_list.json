@@ -124,7 +124,13 @@
         "month": 3,
         "day": 30,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://downloads.silicondata.com/documents/GPGPU26_SiliconData.pdf",
+                "text": "PDF"
+            }
+        ],
         "type": "workshop",
         "venue_full": "18th Workshop on General Purpose Processing Using GPUs"
     },
@@ -134,7 +140,13 @@
         "venue": "CHI 2026",
         "year": 2026,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2601.17962",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "2026 CHI Conference on Human Factors in Computing Systems"
     },
@@ -161,7 +173,13 @@
         "venue": "HPCA 2026",
         "year": 2026,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://ieeexplore.ieee.org/document/11408440",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "IEEE International Symposium on High-Performance Computer Architecture",
         "acceptance_comment": "Acceptance Rate: 119/602 (~19.8%)"
@@ -188,7 +206,13 @@
         "month": 3,
         "day": 1,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://digitum.um.es/digitum/bitstream/10201/150921/1/preprint_tma_gpgpu_2025.pdf",
+                "text": "PDF"
+            }
+        ],
         "type": "workshop",
         "venue_full": "17th Workshop on General Purpose Processing Using GPU"
     },
@@ -231,7 +255,13 @@
         "month": 5,
         "day": 11,
         "tags": ["lab", "yifan"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://doi.org/10.1109/ISPASS64960.2025.00022",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "2025 IEEE International Symposium on Performance Analysis of Systems and Software",
         "identification_information": "137–149.",
@@ -314,7 +344,13 @@
         "month": 2,
         "day": 10,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2502.05770",
+                "text": "PDF"
+            }
+        ],
         "type": "journal",
         "venue_full": "Computers & Education: Artificial Intelligence",
         "identification_information": "8 (2025), 100383.",
@@ -328,7 +364,13 @@
         "month": 7,
         "day": 22,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2505.08119",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "12th ACM Conference on Learning at Scale",
         "identification_information": "83-94.",
@@ -361,7 +403,13 @@
         "day": 21,
         "venue": "ICNS 2024",
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://ieeexplore.ieee.org/document/10550712",
+                "text": "PDF"
+            }
+        ],
         "type": "workshop",
         "venue_full": "24th Integrated Communications, Navigation and Surveillance Conference"
     },
@@ -446,7 +494,13 @@
         "year": 2023,
         "venue": "ISPASS 2023",
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://ieeexplore.ieee.org/document/10158155",
+                "text": "PDF"
+            }
+        ],
         "type": "workshop",
         "venue_full": "2023 IEEE International Symposium on Performance Analysis of Systems and Software",
         "month": 1,
@@ -532,7 +586,13 @@
         "year": 2023,
         "venue": "CHI 2023",
         "tags": ["yifan"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://arxiv.org/pdf/2302.03671",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "2023 CHI Conference on Human Factors in Computing Systems",
         "identification_information": "Article 670, 1–22.",
@@ -602,7 +662,13 @@
         "year": 2022,
         "venue": "GPGPU 2022",
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://dl.acm.org/doi/10.1145/3530390.3532736",
+                "text": "PDF"
+            }
+        ],
         "type": "workshop",
         "venue_full": "14th Workshop on General Purpose Processing Using GPU",
         "month": 1,
@@ -767,7 +833,13 @@
         "year": 2020,
         "venue": "Ph.D. Dissertation",
         "tags": ["yifan"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://ece.northeastern.edu/groups/nucar/publications/Yifan_Sun_thesis.pdf",
+                "text": "PDF"
+            }
+        ],
         "type": "dissertation",
         "venue_full": "Ph.D. Dissertation, Northeastern University",
         "identification_information": "2020.",
@@ -1183,7 +1255,13 @@
         "year": 2016,
         "venue": "Book Chapter",
         "tags": ["yifan"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://doi.org/10.1016/B978-0-12-800386-2.00008-0",
+                "text": "PDF"
+            }
+        ],
         "type": "bookChapter",
         "venue_full": "Heterogeneous System Architecture: Practical Applications for Industry",
         "identification_information": "Elsevier, 1st edition",
@@ -1258,7 +1336,13 @@
         "year": 2015,
         "venue": "IEEE TVT",
         "tags": ["yifan"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://cris.unibo.it/retrieve/e1dcb338-4c44-7715-e053-1705fe0a6cc9/IA-VehicularNet-17.pdf",
+                "text": "PDF"
+            }
+        ],
         "type": "journal",
         "venue_full": "IEEE TRANSACTIONs on Vehicular Technology",
         "identification_information": "64(1), 263–272.",
@@ -1292,7 +1376,13 @@
         "year": 2013,
         "venue": "WUWNet 2013",
         "tags": ["yifan"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://zimmer.fresnostate.edu/~hkulhandjian/papers/Jithin_Anu_WUWNet2013.pdf",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "8th International Conference on Underwater Networks & Systems",
         "identification_information": "Article 3, 1–8.",
@@ -1307,7 +1397,13 @@
         "year": 2013,
         "venue": "WUWNet 2013",
         "tags": ["yifan"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://www.researchgate.net/publication/262205402_The_Internet_underwater_An_IP-compatible_protocol_stack_for_commercial_undersea_modems/download",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "8th International Conference on Underwater Networks & Systems",
         "identification_information": "Article 37, 1–8.",
