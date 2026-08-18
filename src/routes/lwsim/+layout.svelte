@@ -14,10 +14,6 @@
             link: '/people',
         },
         {
-            name: 'Grant',
-            link: '/grant',
-        },
-        {
             name: 'Publication',
             link: '/publication',
         },
