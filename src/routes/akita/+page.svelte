@@ -2,13 +2,16 @@
     import AkitaDescription from './akita_description.svelte'
     import AkitaEnabledResearch from './akita_enabled_research.svelte'
     import AkitaSubProject from './akita_sub_project.svelte'
+    import Seo from '$components/seo.svelte'
 </script>
 
-<svelte:head>
-    <title>
-        Akita: Building Developer Friendly Computer Architecture Simulator
-    </title>
-</svelte:head>
+<Seo
+    title="Akita | Computer Architecture Simulation Framework"
+    description="Akita is a flexible, high-performance simulation framework for building and analyzing computer architecture models."
+    path="/akita"
+    image="/akita_logo.png"
+    imageAlt="Akita simulator logo"
+/>
 
 <div class="block">
     <AkitaDescription />

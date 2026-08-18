@@ -1,6 +1,8 @@
 <script lang="js">
     import { onMount } from 'svelte'
+    import Seo from '$components/seo.svelte'
 
+    /** @param {{ currentTarget: any }} event */
     function unfold(event) {
         const target = event.currentTarget
         const iframe = target.nextElementSibling
@@ -38,12 +40,13 @@
     })
 </script>
 
-<svelte:head>
-    <title>
-        CAMS25 - The 3rd Workshop on Computer Architecture Modeling and
-        Simulation
-    </title>
-</svelte:head>
+<Seo
+    title="CAMS 2025 | Computer Architecture Modeling and Simulation"
+    description="Archive of the third Workshop on Computer Architecture Modeling and Simulation, held with MICRO 2025 in Seoul, Korea."
+    path="/cams25"
+    image="/cams25_logo.png"
+    imageAlt="CAMS 2025 workshop logo"
+/>
 
 <div class="block">
     <div class="block-content">

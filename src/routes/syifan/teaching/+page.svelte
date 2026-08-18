@@ -1,14 +1,19 @@
 <script>
-    import News from '$components/news.svelte'
+    import Seo from '$components/seo.svelte'
     import '$src/app.css'
     import Course from './course.svelte'
 </script>
 
-<svelte:head>
-    <title>Yifan Sun | Teaching</title>
-</svelte:head>
+<Seo
+    title="Yifan Sun | Teaching"
+    description="Courses taught by Yifan Sun at William & Mary and Northeastern University, including computer architecture, visualization, and programming."
+    path="/syifan/teaching"
+    image="/yifan_profile.png"
+    imageAlt="Yifan Sun"
+/>
 
 <div>
+    <h1 class="sec-title">Teaching</h1>
     <h2 class="sec-title">@ William & Mary</h2>
     <div class="mt-4 flex flex-col gap-4">
         <Course year="Fall 2025" title="CSCI432: Web Programming" />

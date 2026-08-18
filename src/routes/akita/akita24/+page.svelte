@@ -1,4 +1,7 @@
 <script lang="js">
+    import Seo from '$components/seo.svelte'
+
+    /** @param {{ currentTarget: any }} event */
     function unfold(event) {
         const target = event.currentTarget
         const iframe = target.nextElementSibling
@@ -12,10 +15,15 @@
     }
 </script>
 
+<Seo
+    title="Akita '24 | Community Workshop on Akita and MGPUSim"
+    description="Archive of the 2024 community workshop on Akita and MGPUSim, including its program, recordings, and organizer information."
+    path="/akita/akita24"
+    image="/akita_logo.png"
+    imageAlt="Akita simulator logo"
+/>
+
 <svelte:head>
-    <title>
-        The First Lightweight Community Workshop on Akita and MGPUSim (Akita24)
-    </title>
     <link rel="icon" href="/akita_logo.png" />
 </svelte:head>
 

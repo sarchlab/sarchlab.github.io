@@ -1,14 +1,18 @@
 <script>
     import News from '$components/news.svelte'
+    import Seo from '$components/seo.svelte'
     import Member from '$src/lib/components/member.svelte'
     import '$src/app.css'
 </script>
 
-<svelte:head>
-    <title>HUSCARL | People</title>
-</svelte:head>
+<Seo
+    title="HUSCARL | People"
+    description="Meet the faculty, Ph.D. students, and past researchers of HUSCARL at William & Mary."
+    path="/people"
+/>
 
 <div class="two-col-left">
+    <h1 class="sec-title">People</h1>
     <h2 class="sec-title">Faculty</h2>
     <div class="person-container">
         <Member
@@ -268,11 +272,6 @@
     .person-container {
         @apply grid;
         @apply lg:grid-cols-2 xl:gap-4;
-    }
-
-    .person-container.lightweight {
-        @apply lg:grid-cols-2 xl:gap-0;
-        @apply xl:grid-cols-3 xl:gap-0;
     }
 
     .person-container.extra-lightweight {

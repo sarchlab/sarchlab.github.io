@@ -1,15 +1,18 @@
 <script>
-    import Nav from '$components/nav.svelte'
     import News from '$components/news.svelte'
+    import Seo from '$components/seo.svelte'
     import '$src/app.css'
     import Software from '$src/lib/components/software.svelte'
 </script>
 
-<svelte:head>
-    <title>HUSCARL | Software</title>
-</svelte:head>
+<Seo
+    title="HUSCARL | Software"
+    description="Explore HUSCARL software for computer architecture simulation, multi-GPU modeling, and continuous AI-assisted software development."
+    path="/software"
+/>
 
 <div class="two-col-left flex flex-wrap">
+    <h1 class="sec-title w-full">Software</h1>
     <Software img="/akita_logo.png" title="Akita" titleLink="/akita">
         <a slot="link" href="https://github.com/sarchlab/akita">
             https://github.com/sarchlab/akita

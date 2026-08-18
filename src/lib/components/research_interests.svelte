@@ -13,13 +13,13 @@
     <ResearchTopic
         img="/simulation.jpg"
         title="Computer Architecture Simulation"
-        content="A cycle-based simulator is an essential tool for computer architecture researchers to validate their ideas. The community requires the simulators to be easy to learn, highly flexible, highly performant, and highly accurate. I am honored to take the challenge and contribute to the community with the Akita simulator framework and the MGPUSim multi-GPU simulator."
+        content="Cycle-based simulators are essential tools for computer architecture researchers to validate their ideas. The community needs simulators that are easy to learn, flexible, fast, and accurate. We address these needs through the Akita simulator framework and the MGPUSim multi-GPU simulator."
     />
 
     <ResearchTopic
         img="/waferscale.jpg"
         title="Multi-GPU and Wafer-Scale System Design"
-        content="Single GPU systems struggle to meet the performance requirement. Therefore, researchers start to use large-scale multi-GPU systems to achieve extreme performance. Inter-GPU communication can easily kill the performance. I design architecture and system solutions for multi-GPU systems to avoid inter-GPU traffic and improve performance."
+        content="Single-GPU systems struggle to meet the performance requirements of large-scale workloads. Researchers use multi-GPU and wafer-scale systems to achieve higher performance, but inter-GPU communication can become a dominant bottleneck. We design architecture and system techniques that reduce inter-GPU traffic and improve performance."
     />
 </div>
 

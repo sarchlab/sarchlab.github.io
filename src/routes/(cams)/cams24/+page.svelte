@@ -1,5 +1,8 @@
 <script lang="js">
     import { onMount } from 'svelte'
+    import Seo from '$components/seo.svelte'
+
+    /** @param {{ currentTarget: any }} event */
     function unfold(event) {
         const target = event.currentTarget
         const iframe = target.nextElementSibling
@@ -37,12 +40,13 @@
     })
 </script>
 
-<svelte:head>
-    <title>
-        CAMS24 - The 2nd Workshop on Computer Architecture Modeling and
-        Simulation
-    </title>
-</svelte:head>
+<Seo
+    title="CAMS 2024 | Computer Architecture Modeling and Simulation"
+    description="Archive of the second Workshop on Computer Architecture Modeling and Simulation, held with MICRO 2024 in Austin, Texas."
+    path="/cams24"
+    image="/cams24_logo.png"
+    imageAlt="CAMS 2024 workshop logo"
+/>
 
 <div class="block">
     <div class="block-content">
@@ -409,7 +413,7 @@
         <b>Speaker:</b> Matt Sinclair, University of Wisconsin-Madison<br />
         <b>Title: </b> Reducing the GAP: Improving the Fidelity and Scalability of gem5’s GPU Models
         <br /><br />
-        <p align="justify">
+        <p class="text-justify">
             <b>Abstract:</b> The breakdown in Moore’s Law and Dennard Scaling is leading to drastic changes 
             in the makeup and constitution of computing systems. For example, a single 
             chip integrates 10-100s of cores and has a heterogeneous mix of general-purpose 
@@ -439,7 +443,7 @@
             state-of-the-art and enables more widespread adoption of gem5 as an accurate 
             platform for heterogeneous architecture research.
         </p>
-        <p align="justify">
+        <p class="text-justify">
             <b>Bio:</b> I am an Assistant Professor in the Computer Sciences Department at the 
             University of Wisconsin-Madison. I am also an Affiliate Faculty in the ECE Department 
             and Teaching Academy at UW-Madison. My research primarily focuses on how to design, 

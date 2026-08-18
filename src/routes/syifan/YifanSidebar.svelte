@@ -1,10 +1,3 @@
-<script>
-</script>
-
-<svelte:head>
-    <title>Yifan Sun</title>
-</svelte:head>
-
 <div class="sidebar">
     <div class="sub-sidebar md:pl-5">
         <div>

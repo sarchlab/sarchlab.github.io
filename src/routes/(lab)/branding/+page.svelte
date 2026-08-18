@@ -1,4 +1,6 @@
 <script>
+    import Seo from '$components/seo.svelte'
+
     const colors = [
         {
             name: 'Deep Space Blue',
@@ -88,12 +90,14 @@
     ]
 </script>
 
-<svelte:head>
-    <title>HUSCARL | Branding</title>
-</svelte:head>
+<Seo
+    title="HUSCARL | Branding"
+    description="Download official HUSCARL logos and review the lab's color palette and brand usage guidelines."
+    path="/branding"
+/>
 
 <div class="w-full max-w-4xl">
-<h2 class="sec-title">Branding</h2>
+<h1 class="sec-title">Branding</h1>
 
 <p class="mt-2 text-sm">
     Assets and guidelines for HUSCARL (Human-Centered System &amp; Computer

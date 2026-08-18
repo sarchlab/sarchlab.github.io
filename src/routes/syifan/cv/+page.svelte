@@ -3,6 +3,7 @@
     import { createCvElement } from 'easycv'
     import easycvStyles from 'easycv/dist/easycv.css?raw'
     import overrideStyles from './cv-overrides.css?raw'
+    import Seo from '$components/seo.svelte'
 
     import type { PageData } from './$types'
 
@@ -32,11 +33,6 @@
             })
             shadow.appendChild(cvElement)
             container.removeAttribute('aria-busy')
-
-            const title = data.cvData?.header?.name
-            if (title) {
-                document.title = `${title} - Curriculum Vitae`
-            }
         } catch (err) {
             error =
                 err instanceof Error
@@ -46,8 +42,15 @@
     })
 </script>
 
+<Seo
+    title="Yifan Sun | Curriculum Vitae"
+    description="Curriculum vitae of Yifan Sun, Class of 1953 Associate Professor of Computer Science at William & Mary."
+    path="/syifan/cv"
+    image="/yifan_profile.png"
+    imageAlt="Yifan Sun"
+/>
+
 <svelte:head>
-    <title>Yifan Sun - Curriculum Vitae</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <style>
         @media print {
@@ -59,10 +62,12 @@
 </svelte:head>
 
 {#if error}
+    <h1 class="sr-only">Yifan Sun Curriculum Vitae</h1>
     <div class="cv-error" role="alert">
         <p>Unable to load CV.</p>
         <p class="cv-error-message">{error}</p>
     </div>
 {:else}
+    <h1 class="sr-only">Yifan Sun Curriculum Vitae</h1>
     <div class="cv-mount" bind:this={container} aria-busy="true"></div>
 {/if}

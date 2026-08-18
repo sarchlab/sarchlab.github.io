@@ -87,6 +87,11 @@ sections:
     condensed: true
     entries:
       - content:
+          - Class of 1953 Professorship
+          - William & Mary
+        meta:
+          - '2026'
+      - content:
           - CAREER Award
           - NSF
         meta:
@@ -133,17 +138,17 @@ sections:
       - 'Total external funding at William & Mary: $1,685,843.'
     entries:
       - content:
-          - Advancing Tools and Resources for the AMD ROCm Platform
-          - AMD, Gift, $100,000, Sole PI
-        meta:
-          - 12/2024
-      - content:
           - >-
             CAREER: Towards Next-Generation Human-in-the-Loop and Human-over-the-Loop Computer Architecture Performance
             Analysis Infrastructure
           - NSF, CAREER, $598,555, Sole PI
         meta:
           - 4/2025 - 3/2030
+      - content:
+          - Advancing Tools and Resources for the AMD ROCm Platform
+          - AMD, Gift, $100,000, Sole PI
+        meta:
+          - 12/2024
       - content:
           - Enabling GPU Performance Simulation for Large-Scale Workloads with Lightweight Simulation Methods
           - NSF, SHF Core, Medium
@@ -219,6 +224,26 @@ sections:
     title: Software & Datasets
     entries:
       - content:
+          - TheBotCompany
+          - https://github.com/syifan/thebotcompany
+          - A self-organizing multi-agent system for continuous software development.
+        meta: []
+      - content:
+          - ArchSim
+          - https://archsim.app
+          - A browser-based platform for configuring, running, and analyzing computer architecture simulations.
+        meta: []
+      - content:
+          - Zeonica
+          - https://github.com/sarchlab/zeonica
+          - A simulator for coarse-grained reconfigurable arrays and wafer-scale accelerators.
+        meta: []
+      - content:
+          - TrioSim
+          - https://github.com/sarchlab/triosim
+          - A lightweight simulator for large-scale DNN workloads on multi-GPU systems.
+        meta: []
+      - content:
           - The CHIP Dataset
           - https://chip-dataset.vercel.app
           - A dataset with 2185 CPUs and 2668 GPUs helping researchers understand semiconductor development trends.
@@ -229,13 +254,13 @@ sections:
           - MGPUSim
           - https://github.com/sarchlab/mgpusim
           - A multi-GPU system simulator based on AMD GCN3 GPUs.
-          - 187 Stars on GitHub
+          - 264 GitHub stars as of August 2026
         meta: []
       - content:
           - Akita
           - https://github.com/sarchlab/akita
           - A high-flexibility, high-performance, parallel computer architecture simulation framework.
-          - 89 Stars on GitHub
+          - 117 GitHub stars as of August 2026
         meta: []
       - content:
           - Hetero-Mark

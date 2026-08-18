@@ -4,7 +4,7 @@
     import Sponsor from './sponsor.svelte'
 </script>
 
-<h2 class="sec-title">HUSCARL</h2>
+<h1 class="sec-title">HUSCARL</h1>
 
 <p class="mt-2 text-sm">
     HUSCARL (Human-Centered System & Computer Architecture Lab), formerly known

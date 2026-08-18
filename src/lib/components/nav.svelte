@@ -138,6 +138,7 @@
         <button
             id="menu-toggle-btn"
             class=" justify-end md:hidden"
+            aria-label="Toggle navigation menu"
             on:click={toggleMenu}
         >
             {@html feather.icons['menu'].toSvg()}
@@ -171,7 +172,11 @@
                 </div> -->
             </div>
 
-            <button id="theme-option-btn" on:click={toggleThemeOption}>
+            <button
+                id="theme-option-btn"
+                aria-label="Choose color theme"
+                on:click={toggleThemeOption}
+            >
                 {@html feather.icons['sun'].toSvg({
                     width: 18,
                     height: 18,
