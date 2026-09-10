@@ -46,7 +46,7 @@
         "clsx": "^2.1.1",
         "easycv": "^0.3.3",
         "feather-icons": "^4.29.2",
-        "js-yaml": "^4.3.1",
+        "js-yaml": "^4.3.2",
         "lucide-svelte": "^0.428.0",
         "tailwind-merge": "^2.5.2",
         "tailwindcss-animate": "^1.0.7"
