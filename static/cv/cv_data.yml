@@ -690,6 +690,11 @@ sections:
         condensed: true
         entries:
           - content:
+              - NSF Panelist
+              - NSF Human-Centered Computing & Education (HCCE), CAREER Human-AI Teams Panel
+            meta:
+              - '2026'
+          - content:
               - DOE Panelist
               - Office of Advanced Scientific Computing Research (ASCR), Early Career Research Program (ECRP)
             meta:
@@ -703,6 +708,11 @@ sections:
         title: Program Committee
         condensed: true
         entries:
+          - content:
+              - HPCA '27
+              - 33rd IEEE International Symposium on High-Performance Computer Architecture
+            meta:
+              - '2027'
           - content:
               - AccML '26
               - 8th Workshop on Accelerated Machine Learning
