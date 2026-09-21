@@ -1,5 +1,16 @@
 [
     {
+        "title": "TritonParse: Multi-IR Provenance and Reproducible Debugging for Triton Kernel Compilation",
+        "authors": "Ying Li, Yueming Hao, David Berard, Xu Zhao, Barney Huang, Wenyuan Chi, Agron Tsai, Prithvi Patel, Srivatsan Ramesh, Manman Ren, Hongtao Yu, James Wu, Dan Zimmerman, Nicholas J Riasanovsky, Adam Mainz, Bert Maher, Peiying Hua, Daohang Shi, Taylor Robie, Yuanwei Fang, Shuofei Zhu, Shangdi Yu, Nikhil Patel, Bin Bao, Yang Chen, Jan Szczepaniec, Haishan Zhu, Patrick Li, Shane Nay, Adnan Aziz, Bill Yoshimi, Alexey Loginov, Yifan Sun",
+        "venue": "ASPLOS 2027",
+        "year": 2027,
+        "tags": ["yifan", "lab"],
+        "links": [],
+        "type": "conference",
+        "venue_full": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+        "note": "Accepted; to appear."
+    },
+    {
         "title": "Mixing Models for Enhanced Robustness",
         "authors": "Chris Thames, Yifan Sun",
         "venue": "AIxSET 2026",

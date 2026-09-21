@@ -51,6 +51,12 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Sep 2026]</span>
+            Our paper "TritonParse: Multi-IR Provenance and Reproducible Debugging
+            for Triton Kernel Compilation" has been accepted by ASPLOS 2027!
+            Congrats Ying! Thanks to our collaborators at Meta!
+        </li>
+        <li>
             <span class="date">[Aug 2026]</span>
             Our short paper "Mixing Models for Enhanced Robustness" has been accepted
             by AIxSET 2026! Congrats Chris!
