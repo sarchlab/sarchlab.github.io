@@ -196,6 +196,18 @@
         "acceptance_comment": "Acceptance Rate: 119/602 (~19.8%)"
     },
     {
+        "title": "AMD GPU编程：基于ROCm/HIP的架构、工具链和开发流程",
+        "authors": "过敏意、孙世轩、陈鑫宇、孙轶凡 编著",
+        "venue": "清华大学出版社",
+        "year": 2026,
+        "month": 8,
+        "tags": ["yifan"],
+        "links": [],
+        "type": "book",
+        "venue_full": "清华大学出版社",
+        "note": "In English: AMD GPU Programming: Architecture, Toolchain, and Development Workflow with ROCm/HIP, by Minyi Guo, Shixuan Sun, Xinyu Chen, and Yifan Sun. Tsinghua University Press, 2026."
+    },
+    {
         "title": "告别内卷焦虑：走出内耗，重塑韧性",
         "authors": "R. Kelly Crace, Robert L. Crace 著；孙轶凡、张轶轩 译",
         "venue": "机械工业出版社",
