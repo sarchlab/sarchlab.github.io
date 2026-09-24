@@ -1,7 +1,7 @@
 [
     {
         "title": "TritonParse: Multi-IR Provenance and Reproducible Debugging for Triton Kernel Compilation",
-        "authors": "Ying Li, Yueming Hao, David Berard, Xu Zhao, Barney Huang, Wenyuan Chi, Agron Tsai, Prithvi Patel, Srivatsan Ramesh, Manman Ren, Hongtao Yu, James Wu, Dan Zimmerman, Nicholas J Riasanovsky, Adam Mainz, Bert Maher, Peiying Hua, Daohang Shi, Taylor Robie, Yuanwei Fang, Shuofei Zhu, Shangdi Yu, Nikhil Patel, Bin Bao, Yang Chen, Jan Szczepaniec, Haishan Zhu, Patrick Li, Shane Nay, Adnan Aziz, Bill Yoshimi, Alexey Loginov, Yifan Sun",
+        "authors": "Ying Li (co-first author), Yueming Hao (co-first author), David Berard, Xu Zhao, Barney Huang, Wenyuan Chi, Agron Tsai, Prithvi Patel, Srivatsan Ramesh, Manman Ren, Hongtao Yu, James Wu, Dan Zimmerman, Nicholas J Riasanovsky, Adam Mainz, Bert Maher, Peiying Hua, Daohang Shi, Taylor Robie, Yuanwei Fang, Shuofei Zhu, Shangdi Yu, Nikhil Patel, Bin Bao, Yang Chen, Jan Szczepaniec, Haishan Zhu, Patrick Li, Shane Nay, Adnan Aziz, Bill Yoshimi, Alexey Loginov, Yifan Sun",
         "venue": "ASPLOS 2027",
         "year": 2027,
         "tags": ["yifan", "lab"],
