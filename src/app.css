@@ -103,6 +103,15 @@
         @apply text-primary;
     }
 
+    .page-title {
+        font-size: clamp(1.875rem, 3vw, 2.5rem);
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: -0.015em;
+        text-wrap: balance;
+        color: var(--primary);
+    }
+
     h2 {
         @apply text-3xl;
         @apply text-primary;

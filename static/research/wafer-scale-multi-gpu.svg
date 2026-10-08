@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#edf5f5"/>
+  <path d="M100 300h90m820 0h90" fill="none" stroke="#c8dde2" stroke-width="12" stroke-linecap="round"/>
+  <defs><clipPath id="wafer"><circle cx="600" cy="300" r="218"/></clipPath></defs>
+  <circle cx="600" cy="300" r="230" fill="#fff" stroke="#023047" stroke-width="12"/>
+  <g clip-path="url(#wafer)" fill="#219ebc" stroke="#023047" stroke-width="6">
+    <rect x="390" y="90" width="76" height="76" rx="9"/>
+    <rect x="476" y="90" width="76" height="76" rx="9"/>
+    <rect x="562" y="90" width="76" height="76" rx="9"/>
+    <rect x="648" y="90" width="76" height="76" rx="9"/>
+    <rect x="734" y="90" width="76" height="76" rx="9"/>
+    <rect x="390" y="176" width="76" height="76" rx="9"/>
+    <rect x="476" y="176" width="76" height="76" rx="9"/>
+    <rect x="562" y="176" width="76" height="76" rx="9"/>
+    <rect x="648" y="176" width="76" height="76" rx="9"/>
+    <rect x="734" y="176" width="76" height="76" rx="9"/>
+    <rect x="390" y="262" width="76" height="76" rx="9"/>
+    <rect x="476" y="262" width="76" height="76" rx="9"/>
+    <rect x="562" y="262" width="76" height="76" rx="9"/>
+    <rect x="648" y="262" width="76" height="76" rx="9"/>
+    <rect x="734" y="262" width="76" height="76" rx="9"/>
+    <rect x="390" y="348" width="76" height="76" rx="9"/>
+    <rect x="476" y="348" width="76" height="76" rx="9"/>
+    <rect x="562" y="348" width="76" height="76" rx="9"/>
+    <rect x="648" y="348" width="76" height="76" rx="9"/>
+    <rect x="734" y="348" width="76" height="76" rx="9"/>
+    <rect x="390" y="434" width="76" height="76" rx="9"/>
+    <rect x="476" y="434" width="76" height="76" rx="9"/>
+    <rect x="562" y="434" width="76" height="76" rx="9"/>
+    <rect x="648" y="434" width="76" height="76" rx="9"/>
+    <rect x="734" y="434" width="76" height="76" rx="9"/>
+  </g>
+  <path d="M255 300h173v-86h172v172h172v-86h173" fill="none" stroke="#023047" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M255 300h173v-86h172v172h172v-86h173" fill="none" stroke="#ffb703" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ffb703" stroke="#023047" stroke-width="8">
+    <circle cx="255" cy="300" r="22"/><circle cx="945" cy="300" r="22"/>
+    <circle cx="600" cy="300" r="20"/>
+  </g>
+</svg>
