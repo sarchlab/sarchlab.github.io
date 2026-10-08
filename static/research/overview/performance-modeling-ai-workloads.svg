@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">Choose and validate the right model detail</title>
+<desc id="desc">AI workload and system choices lead to a choice among detailed simulation, sampled simulation, regression prediction, and lightweight modeling. A performance estimate must be validated for the design question; validation can lead to revisiting model detail. Akita, MGPUSim, and TrioSim are research simulation tools.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0 0L8 4L0 8Z" fill="#eb732e"/></marker></defs>
+<rect width="1200" height="700" rx="16" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#12394b">
+<text x="32" y="54" font-size="29" font-weight="700" fill="#12394b" text-anchor="start">Workload + system</text>
+<text x="420" y="54" font-size="29" font-weight="700" fill="#12394b" text-anchor="start">Choose model detail</text>
+<text x="931" y="54" font-size="27" font-weight="700" fill="#12394b" text-anchor="start">Answer a question</text>
+<rect x="28" y="84" width="323" height="437" rx="12" fill="#f4fafb" stroke="#c4e2e8" stroke-width="2"/>
+<rect x="55" y="118" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="92" y="118" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="129" y="118" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="166" y="118" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="203" y="118" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="240" y="118" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="55" y="155" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="92" y="155" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="129" y="155" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="166" y="155" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="203" y="155" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="240" y="155" width="27" height="27" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<text x="52" y="243" font-size="27" font-weight="700" fill="#08778f" text-anchor="start">AI workload</text>
+<text x="52" y="287" font-size="25" font-weight="400" fill="#12394b" text-anchor="start">Data / tensor /</text>
+<text x="52" y="320" font-size="25" font-weight="400" fill="#12394b" text-anchor="start">pipeline parallelism</text>
+<path d="M52 347 H321" fill="none" stroke="#c4e2e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="52" y="390" font-size="26" font-weight="700" fill="#08778f" text-anchor="start">Interconnect</text>
+<text x="52" y="435" font-size="25" font-weight="400" fill="#12394b" text-anchor="start">Electrical / optical</text>
+<text x="52" y="468" font-size="25" font-weight="400" fill="#12394b" text-anchor="start">network choices</text>
+<path d="M360 286 H401" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="422" y="94" width="222" height="190" rx="10" fill="#fff" stroke="#08778f" stroke-width="2"/>
+<rect x="488" y="114" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="512" y="114" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="536" y="114" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="560" y="114" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="488" y="138" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="512" y="138" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="536" y="138" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="560" y="138" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="488" y="162" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="512" y="162" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="536" y="162" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="560" y="162" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<text x="533" y="226" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">Detailed</text>
+<text x="533" y="258" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">simulation</text>
+<rect x="668" y="94" width="222" height="190" rx="10" fill="#fff" stroke="#08778f" stroke-width="2"/>
+<rect x="734" y="114" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="758" y="114" width="18" height="18" rx="2" fill="#fff" stroke="#08778f" stroke-width="1"/>
+<rect x="782" y="114" width="18" height="18" rx="2" fill="#fff" stroke="#08778f" stroke-width="1"/>
+<rect x="806" y="114" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="734" y="138" width="18" height="18" rx="2" fill="#fff" stroke="#08778f" stroke-width="1"/>
+<rect x="758" y="138" width="18" height="18" rx="2" fill="#fff" stroke="#08778f" stroke-width="1"/>
+<rect x="782" y="138" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="806" y="138" width="18" height="18" rx="2" fill="#fff" stroke="#08778f" stroke-width="1"/>
+<rect x="734" y="162" width="18" height="18" rx="2" fill="#fff" stroke="#08778f" stroke-width="1"/>
+<rect x="758" y="162" width="18" height="18" rx="2" fill="#35b3ce" stroke="#08778f" stroke-width="1"/>
+<rect x="782" y="162" width="18" height="18" rx="2" fill="#fff" stroke="#08778f" stroke-width="1"/>
+<rect x="806" y="162" width="18" height="18" rx="2" fill="#fff" stroke="#08778f" stroke-width="1"/>
+<text x="779" y="226" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">Sampled</text>
+<text x="779" y="258" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">simulation</text>
+<rect x="422" y="311" width="222" height="190" rx="10" fill="#fff" stroke="#08778f" stroke-width="2"/>
+<path d="M480 402 V332 M480 402 H594" fill="none" stroke="#c4e2e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M488 391 L589 344" fill="none" stroke="#08778f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="491" cy="387" r="4" fill="#b94d14"/>
+<circle cx="515" cy="383" r="4" fill="#b94d14"/>
+<circle cx="539" cy="364" r="4" fill="#b94d14"/>
+<circle cx="571" cy="352" r="4" fill="#b94d14"/>
+<circle cx="590" cy="350" r="4" fill="#b94d14"/>
+<text x="533" y="443" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">Regression</text>
+<text x="533" y="475" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">prediction</text>
+<rect x="668" y="311" width="222" height="190" rx="10" fill="#fff" stroke="#08778f" stroke-width="2"/>
+<rect x="711" y="340" width="59" height="48" rx="3" fill="#eaf7fa" stroke="#08778f" stroke-width="2"/>
+<rect x="792" y="340" width="59" height="48" rx="3" fill="#eaf7fa" stroke="#08778f" stroke-width="2"/>
+<path d="M772 365 H787" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="779" y="443" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">Lightweight</text>
+<text x="779" y="475" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">modeling</text>
+<path d="M899 285 H935" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="953" y="128" width="219" height="157" rx="8" fill="#eaf7fa" stroke="#08778f" stroke-width="2"/>
+<text x="1062" y="187" font-size="27" font-weight="700" fill="#12394b" text-anchor="middle">Performance</text>
+<text x="1062" y="221" font-size="27" font-weight="700" fill="#12394b" text-anchor="middle">estimate</text>
+<path d="M1062 293 V333" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="953" y="349" width="219" height="153" rx="8" fill="#fff" stroke="#08778f" stroke-width="2"/>
+<text x="1062" y="400" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">Validate for</text>
+<text x="1062" y="431" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">the design</text>
+<text x="1062" y="462" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">question</text>
+<path d="M1062 516 V564 H654 V518" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="811" y="599" font-size="24" font-weight="700" fill="#b94d14" text-anchor="middle">Revisit model detail</text>
+<rect x="32" y="629" width="1136" height="48" rx="8" fill="#eaf7fa"/>
+<text x="600" y="661" font-size="25" font-weight="700" fill="#08778f" text-anchor="middle">Simulation tools: Akita · MGPUSim · TrioSim</text>
+</g>
+</svg>

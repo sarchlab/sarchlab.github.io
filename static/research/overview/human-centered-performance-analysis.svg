@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">From execution detail to a design decision</title>
+<desc id="desc">A research workflow connects detailed execution views to causal explanations and human design decisions. Daisen and AkitaRTM expose execution, milestones and DaisenBot support analysis, and architects inspect evidence to compare and revise designs.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M0 0L8 4L0 8Z" fill="#eb732e"/></marker></defs>
+<rect width="1200" height="700" rx="16" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#12394b">
+<rect x="24" y="26" width="348" height="526" rx="12" fill="#f4fafb"/>
+<rect x="426" y="26" width="348" height="526" rx="12" fill="#f4fafb"/>
+<rect x="828" y="26" width="348" height="526" rx="12" fill="#f4fafb"/>
+<circle cx="59" cy="66" r="17" fill="#b94d14"/>
+<text x="59" y="73" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="87" y="76" font-size="28" font-weight="700" fill="#12394b" text-anchor="start">Locate time</text>
+<circle cx="461" cy="66" r="17" fill="#b94d14"/>
+<text x="461" y="73" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="489" y="76" font-size="28" font-weight="700" fill="#12394b" text-anchor="start">Trace causes</text>
+<circle cx="863" cy="66" r="17" fill="#b94d14"/>
+<text x="863" y="73" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="891" y="76" font-size="26" font-weight="700" fill="#12394b" text-anchor="start">Compare designs</text>
+<rect x="56" y="147" width="282" height="180" rx="8" fill="#fff" stroke="#c4e2e8" stroke-width="2"/>
+<path d="M76 189 H320" fill="none" stroke="#c4e2e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M76 237 H320" fill="none" stroke="#c4e2e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M76 285 H320" fill="none" stroke="#c4e2e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="71" y="135" font-size="22" font-weight="700" fill="#08778f" text-anchor="start">GPU execution</text>
+<rect x="76" y="169" width="73.32000000000001" height="28" rx="3" fill="#35b3ce"/>
+<rect x="160.34" y="169" width="70.5" height="28" rx="3" fill="#eaf7fa" stroke="#08778f" stroke-width="2"/>
+<rect x="239.3" y="169" width="67.67999999999999" height="28" rx="3" fill="#35b3ce"/>
+<rect x="76" y="217" width="112.80000000000001" height="28" rx="3" fill="#35b3ce"/>
+<rect x="194.18" y="217" width="70.5" height="28" rx="3" fill="#eb732e"/>
+<rect x="120.86" y="265" width="64.86" height="28" rx="3" fill="#35b3ce"/>
+<rect x="216.73999999999998" y="265" width="78.96000000000001" height="28" rx="3" fill="#35b3ce"/>
+<path d="M229.43 263 V251 H229.43 V246" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="197.0" y="357" font-size="22" font-weight="400" fill="#536774" text-anchor="middle">Time →</text>
+<text x="56" y="416" font-size="25" font-weight="700" fill="#08778f" text-anchor="start">Daisen</text>
+<text x="56" y="450" font-size="25" font-weight="700" fill="#08778f" text-anchor="start">Detailed GPU execution</text>
+<text x="56" y="488" font-size="22" font-weight="400" fill="#12394b" text-anchor="start">AkitaRTM</text>
+<text x="56" y="518" font-size="22" font-weight="400" fill="#12394b" text-anchor="start">Live simulation monitoring</text>
+<rect x="462" y="132" width="275" height="64" rx="8" fill="#fff" stroke="#08778f" stroke-width="2"/>
+<text x="599" y="172" font-size="24" font-weight="700" fill="#12394b" text-anchor="middle">Memory request</text>
+<rect x="462" y="237" width="275" height="64" rx="8" fill="#fff" stroke="#08778f" stroke-width="2"/>
+<text x="599" y="277" font-size="24" font-weight="700" fill="#12394b" text-anchor="middle">Data arrives</text>
+<rect x="462" y="342" width="275" height="64" rx="8" fill="#fff" stroke="#08778f" stroke-width="2"/>
+<text x="599" y="382" font-size="24" font-weight="700" fill="#12394b" text-anchor="middle">Task can continue</text>
+<path d="M599 199 V229" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M599 304 V334" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="460" y="451" font-size="22" font-weight="400" fill="#12394b" text-anchor="start">Milestones reveal causes.</text>
+<text x="460" y="493" font-size="24" font-weight="700" fill="#08778f" text-anchor="start">DaisenBot supports</text>
+<text x="460" y="525" font-size="24" font-weight="700" fill="#08778f" text-anchor="start">human–AI analysis.</text>
+<circle cx="999" cy="141" r="15.6" fill="#08778f"/>
+<path d="M970.2 193.8 Q970.2 163.8 999 163.8 Q1027.8 163.8 1027.8 193.8 Z" fill="#eaf7fa" stroke="#08778f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="999" y="236" font-size="25" font-weight="700" fill="#12394b" text-anchor="middle">Inspect the evidence</text>
+<text x="861" y="320" font-size="24" font-weight="700" fill="#12394b" text-anchor="start">A</text>
+<rect x="898" y="294" width="225" height="36" rx="4" fill="#fff" stroke="#c4e2e8" stroke-width="2"/>
+<rect x="898" y="294" width="205" height="36" rx="4" fill="#35b3ce"/>
+<text x="861" y="397" font-size="24" font-weight="700" fill="#12394b" text-anchor="start">B</text>
+<rect x="898" y="371" width="225" height="36" rx="4" fill="#fff" stroke="#c4e2e8" stroke-width="2"/>
+<rect x="898" y="371" width="148" height="36" rx="4" fill="#35b3ce"/>
+<text x="856" y="459" font-size="24" font-weight="400" fill="#12394b" text-anchor="start">Explore alternatives.</text>
+<text x="856" y="493" font-size="24" font-weight="400" fill="#12394b" text-anchor="start">Decide what to change.</text>
+<path d="M376 284 H418" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M778 284 H820" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1002 570 V610 H198 V567" fill="none" stroke="#eb732e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="600" y="652" font-size="26" font-weight="700" fill="#12394b" text-anchor="middle">Human judgment guides the next analysis.</text>
+</g>
+</svg>

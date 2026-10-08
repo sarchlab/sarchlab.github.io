@@ -14,23 +14,27 @@
 />
 
 <article class="mx-auto w-full min-w-0 max-w-5xl pb-12">
-    <header class="grid items-center gap-6 py-6 md:grid-cols-2">
-        <h1 class="sec-title m-0">{data.topic.title}</h1>
-        <img
-            src={data.topic.image}
-            alt=""
-            width="1200"
-            height="600"
-            class="aspect-[2/1] w-full rounded-2xl border object-cover"
-        />
+    <header class="pb-6 pt-8 md:pb-8 md:pt-12">
+        <h1 class="page-title">{data.topic.title}</h1>
     </header>
 
-    <section aria-labelledby="overview">
-        <h2 id="overview" class="sec-title">Overview</h2>
-        {#each data.topic.overview as paragraph}
-            <p>{paragraph}</p>
-        {/each}
-    </section>
+    <figure aria-label="{data.topic.title} research overview">
+        <picture>
+            <source
+                media="(max-width: 767px)"
+                srcset="/research/overview/{data.topic.slug}-mobile.svg"
+                width="420"
+                height="980"
+            />
+            <img
+                src="/research/overview/{data.topic.slug}.svg"
+                alt={data.topic.figureAlt}
+                width="1200"
+                height="700"
+                class="block h-auto w-full rounded-xl border"
+            />
+        </picture>
+    </figure>
 
     <section aria-labelledby="research-questions">
         <h2 id="research-questions" class="sec-title">Research questions</h2>
