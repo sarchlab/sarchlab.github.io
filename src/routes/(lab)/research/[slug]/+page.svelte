@@ -19,21 +19,13 @@
     </header>
 
     <figure aria-label="{data.topic.title} research overview">
-        <picture>
-            <source
-                media="(max-width: 767px)"
-                srcset="/research/overview/{data.topic.slug}-mobile.svg"
-                width="420"
-                height="980"
-            />
-            <img
-                src="/research/overview/{data.topic.slug}.svg"
-                alt={data.topic.figureAlt}
-                width="1200"
-                height="700"
-                class="block h-auto w-full rounded-xl border"
-            />
-        </picture>
+        <img
+            src="/research/overview/{data.topic.slug}.png"
+            alt={data.topic.figure.alt}
+            width={data.topic.figure.width}
+            height={data.topic.figure.height}
+            class="block h-auto w-full rounded-xl border"
+        />
     </figure>
 
     <section aria-labelledby="research-questions">

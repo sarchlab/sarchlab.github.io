@@ -3,7 +3,7 @@ export interface ResearchTopic {
     title: string
     summary: string
     image: string
-    figureAlt: string
+    figure: { alt: string; width: number; height: number }
     questions: string[]
     software: { name: string; href: string }[]
     publicationTitles: string[]
@@ -18,8 +18,11 @@ export const researchTopics: ResearchTopic[] = [
         summary:
             'Modern chips are too complex for designers to reason about from aggregate statistics. We build visualization tools and AI assistants, such as Daisen and DaisenBot, that show architects where time goes, why a bottleneck occurs, and what to change. We also study how experts actually perform performance analysis.',
         image: '/research/human-centered-performance-analysis.svg',
-        figureAlt:
-            'Inspect GPU timelines with Daisen and live simulations with AkitaRTM; use milestone abstractions and DaisenBot to investigate bottlenecks; then compare designs. Architects inspect the evidence and guide further analysis.',
+        figure: {
+            width: 1672,
+            height: 941,
+            alt: 'Daisen and AkitaRTM expose execution timelines. A highlighted interval leads to a memory request, data arrival, and task-continuation chain. DaisenBot supports human-AI analysis. A researcher compares designs and decides what to change, guiding the next analysis.',
+        },
         questions: [
             'How can a visualization connect execution details to the cause of a performance bottleneck?',
             'Which views help architects move from an aggregate statistic to the events behind it?',
@@ -55,8 +58,11 @@ export const researchTopics: ResearchTopic[] = [
         summary:
             'AI agents can now write code, run experiments, and read results, but they still make mistakes that humans must catch. We design multi-agent systems, such as TheBotCompany, that develop and maintain research software, and we study how humans and agents can explore architecture designs together while humans stay able to verify the results.',
         image: '/research/ai-agents-for-systems-research.svg',
-        figureAlt:
-            'TheBotCompany agent teams plan, implement, and verify research software. Code, experiments, and results go to human review; questions and corrections feed back into the work. Humans can be asked to make decisions.',
+        figure: {
+            width: 1536,
+            height: 1024,
+            alt: 'TheBotCompany agent teams plan, implement, and verify research software. Code, experiments, and results go to human review; questions and corrections feed back into the work. Humans can be asked to make decisions.',
+        },
         questions: [
             'How should agent teams divide the work of developing and maintaining research software?',
             'When should an agent ask a human to check a result or make a decision?',
@@ -84,8 +90,11 @@ export const researchTopics: ResearchTopic[] = [
         summary:
             'Cycle-level simulation cannot keep up with LLM training and inference that span thousands of GPUs. We develop lightweight, validated performance models, such as TrioSim, on top of our open-source Akita and MGPUSim frameworks, and we evaluate which modeling methods are accurate enough for which design questions.',
         image: '/research/performance-modeling-ai-workloads.svg',
-        figureAlt:
-            'Start with an AI workload and system choices, then select detailed simulation, sampled simulation, regression prediction, or lightweight modeling. Validate the model for the design question before comparing performance. Related tools include Akita, MGPUSim, and TrioSim.',
+        figure: {
+            width: 1672,
+            height: 941,
+            alt: 'Start with an AI workload and system choices, then select detailed simulation, sampled simulation, regression prediction, or lightweight modeling. Validate the model for the design question before comparing performance. Related tools include Akita, MGPUSim, and TrioSim.',
+        },
         questions: [
             'How much execution detail does a model need to answer a particular design question?',
             'How can we validate a lightweight model for large-scale AI workloads?',
@@ -128,8 +137,11 @@ export const researchTopics: ResearchTopic[] = [
         summary:
             'AI workloads are pushing GPUs beyond a single die, toward wafer-scale and multi-GPU systems where data movement dominates. We design address translation, memory, and interconnect techniques, including electro-photonic networks, that keep these systems efficient (e.g., HDPAT).',
         image: '/research/wafer-scale-multi-gpu.svg',
-        figureAlt:
-            'Data movement connects compute tiles in wafer-scale GPUs and devices in multi-GPU systems. Research directions include address translation with HDPAT, page prefetching with RIPPLE, network traffic with NetCrafter, and electrical and optical interconnects.',
+        figure: {
+            width: 1672,
+            height: 941,
+            alt: 'Data movement connects compute tiles in wafer-scale GPUs and devices in multi-GPU systems. Research directions include address translation with HDPAT, page prefetching with RIPPLE, network traffic with NetCrafter, and electrical and optical interconnects.',
+        },
         questions: [
             'How should address translation work across a wafer-scale GPU?',
             'How can page prefetching and memory techniques reduce the cost of data movement?',
