@@ -54,32 +54,25 @@
         performance modeling.
     </p>
 
-    <h2 class="sec-title">Hiring</h2>
+    <h2 class="sec-title">Join My Lab</h2>
 
     <p>
-        I have no plan of hiring new Ph.D. students, research interns, or
-        undergraduate research assistants in Spring 2026, Fall 2026 and Spring
-        2027.
+        I am looking for students who can drive their own research. In my lab,
+        HUSCARL, students work with labmates as collaborators, shaping and
+        leading their own research questions while seeking help from each other.
     </p>
 
-    <!-- <p>
-        <b>Ph.D.</b> I am actively seeking <u>1-2 Ph.D. students</u>, starting
-        to join our team in Spring 2024 or Fall 2025. Candidates should possess
-        a solid background in programming and a keen interest in computer
-        hardware research. Specifically, I am eager to mentor a student
-        specializing in data visualization and a student in LLM/NLP.
-    </p>
     <p>
-        <b>Research intern.</b> I also mentor unpaid, remote research intern who
-        may consider to pursue Ph.D. degree under my supervision later. William
-        & Mary undergraduate students are always welcome to contact me for research
-        opportunities. I am happy to provide recommendation letters for productive
-        students.
+        If you are interested in joining HUSCARL, either as a Ph.D. student,
+        master's student, undergraduate researcher, or research intern, please
+        fill out
+        <a
+            href="https://forms.gle/KQ6JHUNNnai7Kfwg7"
+            target="_blank"
+            rel="noopener">this form</a
+        >. Note that submitting the form does not replace the formal graduate or
+        undergraduate program application through William & Mary.
     </p>
-    <p>
-        <b>How to apply.</b> Interested candidates should email me (profyifansun@gmail.com)
-        with their CV and transcript attached to inquire about opportunities.
-    </p> -->
 
     <ResearchInterests />
 </div>
