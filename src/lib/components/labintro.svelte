@@ -22,7 +22,7 @@
 
 <p>
     To become a Huscarl, you need to be able to drive your own research.
-    Huscarls work with labmates as collaborators, shaping and leading their own
+    Huscarls work with labmates and PIs as collaborators, shaping and leading their own
     research questions while seeking help from each other.
 </p>
 

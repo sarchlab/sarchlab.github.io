@@ -58,7 +58,7 @@
 
     <p>
         I am looking for students who can drive their own research. In my lab,
-        HUSCARL, students work with labmates as collaborators, shaping and
+        HUSCARL, students work with labmates and PIs as collaborators, shaping and
         leading their own research questions while seeking help from each other.
     </p>
 
