@@ -15,10 +15,7 @@
 
 <article class="mx-auto w-full min-w-0 max-w-5xl pb-12">
     <header class="grid items-center gap-6 py-6 md:grid-cols-2">
-        <div>
-            <a href="/" class="text-sm">← Home</a>
-            <h1 class="sec-title mt-4">{data.topic.title}</h1>
-        </div>
+        <h1 class="sec-title m-0">{data.topic.title}</h1>
         <img
             src={data.topic.image}
             alt=""
@@ -61,6 +58,4 @@
             {/each}
         </ul>
     </section>
-
-    <a class="mt-8 inline-block" href="/">← Back to home</a>
 </article>
