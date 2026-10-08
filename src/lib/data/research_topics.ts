@@ -59,8 +59,8 @@ export const researchTopics: ResearchTopic[] = [
             'AI agents can now write code, run experiments, and read results, but they still make mistakes that humans must catch. We design multi-agent systems, such as TheBotCompany, that develop and maintain research software, and we study how humans and agents can explore architecture designs together while humans stay able to verify the results.',
         image: '/research/ai-agents-for-systems-research.svg',
         figure: {
-            width: 1536,
-            height: 1024,
+            width: 1672,
+            height: 941,
             alt: 'Collaborative AI agents plan, implement, and verify research software. Code, experiments, and results go to human review; questions and corrections feed back into the next cycle.',
         },
         questions: [
