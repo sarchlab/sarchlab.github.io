@@ -21,7 +21,7 @@ export const researchTopics: ResearchTopic[] = [
         figure: {
             width: 1672,
             height: 941,
-            alt: 'Daisen and AkitaRTM expose execution timelines. A highlighted interval leads to a memory request, data arrival, and task-continuation chain. DaisenBot supports human-AI analysis. A researcher compares designs and decides what to change, guiding the next analysis.',
+            alt: 'Execution visualization highlights time spent in GPU activity and waits. A memory-request, data-arrival, and task-continuation chain supports causal analysis and human-AI reasoning. A researcher compares designs and decides what to change, guiding the next analysis.',
         },
         questions: [
             'How can a visualization connect execution details to the cause of a performance bottleneck?',
@@ -61,7 +61,7 @@ export const researchTopics: ResearchTopic[] = [
         figure: {
             width: 1536,
             height: 1024,
-            alt: 'TheBotCompany agent teams plan, implement, and verify research software. Code, experiments, and results go to human review; questions and corrections feed back into the work. Humans can be asked to make decisions.',
+            alt: 'Collaborative AI agents plan, implement, and verify research software. Code, experiments, and results go to human review; questions and corrections feed back into the next cycle.',
         },
         questions: [
             'How should agent teams divide the work of developing and maintaining research software?',
@@ -93,7 +93,7 @@ export const researchTopics: ResearchTopic[] = [
         figure: {
             width: 1672,
             height: 941,
-            alt: 'Start with an AI workload and system choices, then select detailed simulation, sampled simulation, regression prediction, or lightweight modeling. Validate the model for the design question before comparing performance. Related tools include Akita, MGPUSim, and TrioSim.',
+            alt: 'Start with an AI workload and system choices, then select detailed simulation, sampled simulation, regression prediction, or lightweight modeling. Validate the performance estimate for the design question, then refine the model as needed.',
         },
         questions: [
             'How much execution detail does a model need to answer a particular design question?',
@@ -140,7 +140,7 @@ export const researchTopics: ResearchTopic[] = [
         figure: {
             width: 1672,
             height: 941,
-            alt: 'Data movement connects compute tiles in wafer-scale GPUs and devices in multi-GPU systems. Research directions include address translation with HDPAT, page prefetching with RIPPLE, network traffic with NetCrafter, and electrical and optical interconnects.',
+            alt: 'Data moves among compute tiles in wafer-scale GPUs and devices in multi-GPU systems. Address translation maps virtual to physical addresses, page prefetching anticipates data movement, and traffic routing uses different network paths. Electrical and optical links connect compute units.',
         },
         questions: [
             'How should address translation work across a wafer-scale GPU?',

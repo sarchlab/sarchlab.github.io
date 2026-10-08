@@ -14,11 +14,29 @@
 />
 
 <article class="mx-auto w-full min-w-0 max-w-5xl pb-12">
-    <header class="pb-6 pt-8 md:pb-8 md:pt-12">
+    <nav
+        aria-label="Research topics"
+        class="flex flex-wrap items-center justify-between gap-4 border-b py-5 text-sm text-primary"
+    >
+        <a href="/">Home</a>
+        <div class="flex gap-6">
+            <a
+                href="/research/{data.previousTopic.slug}"
+                aria-label="Previous topic: {data.previousTopic.title}"
+                rel="prev"
+            >← Previous topic</a>
+            <a
+                href="/research/{data.nextTopic.slug}"
+                aria-label="Next topic: {data.nextTopic.title}"
+                rel="next"
+            >Next topic →</a>
+        </div>
+    </nav>
+    <header class="py-6 md:py-8">
         <h1 class="page-title">{data.topic.title}</h1>
     </header>
 
-    <figure aria-label="{data.topic.title} research overview">
+    <figure class="mx-auto max-w-3xl" aria-label="{data.topic.title} research overview">
         <img
             src="/research/overview/{data.topic.slug}.png"
             alt={data.topic.figure.alt}

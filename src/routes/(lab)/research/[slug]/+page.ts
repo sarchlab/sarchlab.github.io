@@ -6,8 +6,16 @@ import type publicationList from '../../../../../static/publication_list.json'
 type Publication = (typeof publicationList)[number]
 
 export const load: PageLoad = async ({ params, fetch }) => {
-    const topic = researchTopics.find((topic) => topic.slug === params.slug)
+    const topicIndex = researchTopics.findIndex(
+        (topic) => topic.slug === params.slug
+    )
+    const topic = researchTopics[topicIndex]
     if (!topic) error(404, 'Research topic not found')
+
+    const previous = researchTopics[
+        (topicIndex - 1 + researchTopics.length) % researchTopics.length
+    ]
+    const next = researchTopics[(topicIndex + 1) % researchTopics.length]
 
     const response = await fetch('/publication_list.json')
     if (!response.ok) error(500, 'Could not load publications')
@@ -15,6 +23,8 @@ export const load: PageLoad = async ({ params, fetch }) => {
 
     return {
         topic,
+        previousTopic: { slug: previous.slug, title: previous.title },
+        nextTopic: { slug: next.slug, title: next.title },
         publications: publications.filter((publication) =>
             topic.publicationTitles.includes(publication.title)
         ),
