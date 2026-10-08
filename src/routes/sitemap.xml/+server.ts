@@ -1,4 +1,5 @@
 import type { RequestHandler } from './$types'
+import { researchTopics } from '$lib/data/research_topics'
 
 const SITE_URL = 'https://sarchlab.org'
 const paths = [
@@ -6,6 +7,7 @@ const paths = [
     '/people',
     '/publication',
     '/software',
+    ...researchTopics.map((topic) => `/research/${topic.slug}`),
     '/news',
     '/branding',
     '/syifan',

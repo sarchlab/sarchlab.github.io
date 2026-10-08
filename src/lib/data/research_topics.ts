@@ -1,0 +1,182 @@
+export interface ResearchTopic {
+    slug: string
+    title: string
+    summary: string
+    image: string
+    overview: string[]
+    questions: string[]
+    software: { name: string; href: string }[]
+    publicationTitles: string[]
+    architecturePublicationTitles?: string[]
+}
+
+// Publication titles select records from the shared publication_list.json.
+export const researchTopics: ResearchTopic[] = [
+    {
+        slug: 'human-centered-performance-analysis',
+        title: 'Human-Centered Performance Analysis',
+        summary:
+            'Modern chips are too complex for designers to reason about from aggregate statistics. We build visualization tools and AI assistants, such as Daisen and DaisenBot, that show architects where time goes, why a bottleneck occurs, and what to change. We also study how experts actually perform performance analysis.',
+        image: '/research/human-centered-performance-analysis.svg',
+        overview: [
+            'Modern chips produce more execution detail than aggregate statistics can explain. Architects need to connect the time spent in a workload to the events and interactions that caused a bottleneck.',
+            'We build visualization tools and AI assistants for that analysis. Daisen visualizes detailed GPU execution. DaisenBot supports human-AI collaboration in GPU performance analysis. Our work also covers real-time simulation monitoring with AkitaRTM and causal layers in GPU analysis through milestone abstractions.',
+            'We study how experts perform performance analysis and use visual tools to reason about architecture designs. That work includes an expert-led study of large-scale network-on-chip design. The aim is to help architects identify a bottleneck, explain its cause, and decide what to change.',
+        ],
+        questions: [
+            'How can a visualization connect execution details to the cause of a performance bottleneck?',
+            'Which views help architects move from an aggregate statistic to the events behind it?',
+            'How can an AI assistant help with performance analysis while keeping its conclusions verifiable?',
+            'How do experts use visual tools to compare and revise architecture designs?',
+        ],
+        software: [
+            {
+                name: 'Daisen',
+                href: 'https://github.com/sarchlab/akita/tree/v3/daisen',
+            },
+            {
+                name: 'Akita',
+                href: '/akita',
+            },
+            {
+                name: 'Lab software',
+                href: '/software',
+            },
+        ],
+        publicationTitles: [
+            'Daisen: A Framework for Visualizing Detailed GPU Execution',
+            'Visual Exploratory Analysis for Designing Large-Scale Network-on-Chip Architectures: A Domain Expert-Led Design Study',
+            'Looking into the Black Box: Monitoring Computer Architecture Simulations in Real-Time with AkitaRTM',
+            'DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant',
+            'Visualize the Invisible: Exposing Causal Layers in GPU Performance Analysis through Milestone Abstractions',
+            'TritonParse: Multi-IR Provenance and Reproducible Debugging for Triton Kernel Compilation',
+        ],
+    },
+    {
+        slug: 'ai-agents-for-systems-research',
+        title: 'AI Agents for Computer Systems Research',
+        summary:
+            'AI agents can now write code, run experiments, and read results, but they still make mistakes that humans must catch. We design multi-agent systems, such as TheBotCompany, that develop and maintain research software, and we study how humans and agents can explore architecture designs together while humans stay able to verify the results.',
+        image: '/research/ai-agents-for-systems-research.svg',
+        overview: [
+            'AI agents can write code, run experiments, and read results. Humans still need to catch mistakes in the code, the experiments, and the conclusions. We study how humans and agents can work together on computer systems research while keeping the results open to verification.',
+            'TheBotCompany uses self-organizing agent teams for continuous software development. The teams plan, implement, and verify software projects, with human escalation and a monitoring dashboard. We use this direction to study how multiple agents can develop and maintain research software.',
+            'Architecture research also requires decisions about what to measure and which designs to explore. DaisenBot studies human-AI collaboration in GPU performance analysis. Across these tasks, we examine how agents can support exploration while humans can inspect the evidence behind a result.',
+        ],
+        questions: [
+            'How should agent teams divide the work of developing and maintaining research software?',
+            'When should an agent ask a human to check a result or make a decision?',
+            'What evidence do humans need to verify an agent-run experiment?',
+            'How can humans and agents explore architecture designs together without losing track of why a design was chosen?',
+        ],
+        software: [
+            {
+                name: 'TheBotCompany',
+                href: 'https://github.com/syifan/thebotcompany',
+            },
+            {
+                name: 'Lab software',
+                href: '/software',
+            },
+        ],
+        publicationTitles: [
+            'TheBotCompany: Self-Organizing Multi-Agent Systems for Continuous Software Development',
+            'DaisenBot: Human-AI Collaboration in GPU Performance Analysis with Multi-Modal AI Assistant',
+        ],
+    },
+    {
+        slug: 'performance-modeling-ai-workloads',
+        title: 'Performance Modeling for Large-Scale AI Workloads',
+        summary:
+            'Cycle-level simulation cannot keep up with LLM training and inference that span thousands of GPUs. We develop lightweight, validated performance models, such as TrioSim, on top of our open-source Akita and MGPUSim frameworks, and we evaluate which modeling methods are accurate enough for which design questions.',
+        image: '/research/performance-modeling-ai-workloads.svg',
+        overview: [
+            'LLM training and inference can span thousands of GPUs. Cycle-level simulation cannot keep up with that scale. We develop lightweight, validated performance models and evaluate which modeling methods are accurate enough for a given architecture design question.',
+            'Akita provides a framework for computer architecture simulation, and MGPUSim models multi-GPU systems. TrioSim models large-scale DNN workloads with data, tensor, and pipeline parallelism. TrioSim also models electrical and optical interconnects.',
+            'Our work covers detailed simulation, sampled simulation, regression-based latency prediction, and lightweight workload models. We examine how the choice of model affects the questions researchers can answer about GPU execution and large-scale systems.',
+        ],
+        questions: [
+            'How much execution detail does a model need to answer a particular design question?',
+            'How can we validate a lightweight model for large-scale AI workloads?',
+            'How do parallelism and interconnect choices affect multi-GPU workload performance?',
+            'When are sampled simulation or regression-based predictions sufficient for an architecture study?',
+        ],
+        software: [
+            {
+                name: 'Akita',
+                href: '/akita',
+            },
+            {
+                name: 'MGPUSim',
+                href: 'https://github.com/sarchlab/mgpusim',
+            },
+            {
+                name: 'TrioSim',
+                href: 'https://github.com/sarchlab/triosim',
+            },
+            {
+                name: 'Lab software',
+                href: '/software',
+            },
+        ],
+        publicationTitles: [
+            'NaviSim: A Highly Accurate GPU Simulator for AMD RDNA GPUs',
+            'A Regression-based Model for End-to-End Latency Prediction for DNN Execution on GPUs',
+            'Path Forward Beyond Simulators: Fast and Accurate GPU Execution Time Prediction for DNN Workloads',
+            'Photon: A Fine-grained Sampled Simulation Methodology for GPU Workloads',
+            'TraceSim: a Lightweight Simulator for Large-Scale DNN Workloads on Multi-GPU Systems',
+            'TrioSim: A Lightweight Simulator for Large-Scale DNN Workloads on Multi-GPU Systems',
+            'Did You Win the GPU Cloud Lottery? Benchmarking from TFLOPS to Tokens/$',
+            'Akita: A High Usability Simulation Framework for Computer Architecture',
+            'ArchSim: Computer Architecture Simulation as a Service',
+        ],
+    },
+    {
+        slug: 'wafer-scale-multi-gpu',
+        title: 'Wafer-Scale and Multi-GPU Systems for AI',
+        summary:
+            'AI workloads are pushing GPUs beyond a single die, toward wafer-scale and multi-GPU systems where data movement dominates. We design address translation, memory, and interconnect techniques, including electro-photonic networks, that keep these systems efficient (e.g., HDPAT).',
+        image: '/research/wafer-scale-multi-gpu.svg',
+        overview: [
+            'AI workloads push GPU systems beyond a single die. Wafer-scale and multi-GPU systems connect many compute tiles or devices, making data movement a central performance concern. We study the address translation, memory, and interconnect techniques that support these systems.',
+            'HDPAT studies hierarchical distributed page address translation for wafer-scale GPUs. RIPPLE studies ring-based page prefetching and layered translation. NetCrafter studies network traffic in multi-GPU systems with non-uniform bandwidth. Our interconnect work also includes electro-photonic networks.',
+            'We use architectural simulation to study wafer-scale GPU performance. Related GPU architecture work covers sparsity-aware execution in LazyGPU and the configuration of data transfers in ACTA and QuCo.',
+        ],
+        questions: [
+            'How should address translation work across a wafer-scale GPU?',
+            'How can page prefetching and memory techniques reduce the cost of data movement?',
+            'How should network traffic use interconnects with non-uniform bandwidth?',
+            'How do electrical and optical interconnect choices affect wafer-scale and multi-GPU systems?',
+        ],
+        software: [
+            {
+                name: 'Akita',
+                href: '/akita',
+            },
+            {
+                name: 'MGPUSim',
+                href: 'https://github.com/sarchlab/mgpusim',
+            },
+            {
+                name: 'TrioSim',
+                href: 'https://github.com/sarchlab/triosim',
+            },
+            {
+                name: 'Lab software',
+                href: '/software',
+            },
+        ],
+        publicationTitles: [
+            'Understanding Wafer-Scale GPU Performance using an Architectural Simulator',
+            'Exploring the Wafer-Scale GPUs',
+            'NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems',
+            'HDPAT: Hierarchical Distributed Page Address Translation for Wafer-Scale GPUs',
+            'RIPPLE: Ring-based Page Prefetching and Layered Translation for Wafer-Scale GPUs',
+        ],
+        architecturePublicationTitles: [
+            'The Sparsity-Aware LazyGPU Architecture',
+            'ACTA: Automatic Configuration of the Tensor Memory Accelerator for High-End GPUs.',
+            'QuCo: Efficient and Flexible Hardware-Driven Automatic Configuration of Tile Transfers in GPUs',
+        ],
+    },
+]
