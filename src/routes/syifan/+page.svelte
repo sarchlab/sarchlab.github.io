@@ -57,18 +57,10 @@
     <h2 class="sec-title">Join My Lab</h2>
 
     <p>
-        I am looking for students who can drive their own research. In my lab,
-        HUSCARL, students work with labmates and PIs as collaborators, shaping and
-        leading their own research questions while seeking help from each other.
-    </p>
-
-    <p>
         If you are interested in joining HUSCARL, either as a Ph.D. student,
-        master's student, undergraduate researcher, or research intern, please
-        email me at
-        <a href="mailto:profyifansun@gmail.com">profyifansun@gmail.com</a> to apply.
-        Note that emailing does not replace the formal graduate or
-        undergraduate program application through William & Mary.
+        master's student, undergraduate researcher, or research intern, you can
+        contact me by sending an email to
+        <a href="mailto:profyifansun@gmail.com">profyifansun@gmail.com</a>.
     </p>
 
     <ResearchInterests />
