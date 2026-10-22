@@ -65,12 +65,9 @@
     <p>
         If you are interested in joining HUSCARL, either as a Ph.D. student,
         master's student, undergraduate researcher, or research intern, please
-        fill out
-        <a
-            href="https://forms.gle/KQ6JHUNNnai7Kfwg7"
-            target="_blank"
-            rel="noopener">this form</a
-        >. Note that submitting the form does not replace the formal graduate or
+        email me at
+        <a href="mailto:profyifansun@gmail.com">profyifansun@gmail.com</a> to apply.
+        Note that emailing does not replace the formal graduate or
         undergraduate program application through William & Mary.
     </p>
 
