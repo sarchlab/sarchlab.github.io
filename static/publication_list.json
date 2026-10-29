@@ -437,6 +437,22 @@
         "venue_full": "24th Integrated Communications, Navigation and Surveillance Conference"
     },
     {
+        "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP, 2nd Russian Edition",
+        "authors": "Yifan Sun, Sabila Al Jannat, Trinayan Baruah, David Kaeli",
+        "venue": "MAX Press",
+        "tags": ["yifan"],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://tikhonovfoundation.ru/projects/19",
+                "text": "Book project"
+            }
+        ],
+        "type": "foreignEdition",
+        "venue_full": "MAX Press",
+        "note": "In English: Accelerated Computing with HIP. Second Russian edition, revised and expanded."
+    },
+    {
         "title": "ВЫСОКОПРОИЗВОДИТЕЛЬНЫЕ ВЫЧИСЛЕНИЯ С ПОМОЩЬЮ HIP",
         "authors": "Yifan Sun, Trinayan Baruah, David Kaeli",
         "year": 2024,
