@@ -441,7 +441,13 @@
         "authors": "Yifan Sun, Sabila Al Jannat, Trinayan Baruah, David Kaeli",
         "venue": "MAX Press",
         "tags": ["yifan"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "https://tikhonovfoundation.ru/projects/19",
+                "text": "Book project"
+            }
+        ],
         "type": "foreignEdition",
         "venue_full": "MAX Press",
         "note": "In English: Accelerated Computing with HIP. Second Russian edition, revised and expanded."
