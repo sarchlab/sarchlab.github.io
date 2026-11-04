@@ -1,7 +1,7 @@
 [
     {
         "title": "Zeonica: A Unified Cycle-Level Simulation Substrate for Spatial Architectures",
-        "authors": "Yijia Shi, Bohan Cui, Shangkun Li, Yuchao Su, Shiran Guo, Ying Li, Cheng Tan, Wei Zhang, Yifan Sun",
+        "authors": "Yijia Shi (co-first author), Bohan Cui (co-first author), Shangkun Li, Yuchao Su, Shiran Guo, Ying Li, Cheng Tan, Wei Zhang, Yifan Sun",
         "venue": "HPCA 2027",
         "year": 2027,
         "tags": ["yifan", "lab"],
@@ -16,7 +16,13 @@
         "venue": "ASPLOS 2027",
         "year": 2027,
         "tags": ["yifan", "lab"],
-        "links": [],
+        "links": [
+            {
+                "icon": "/file_outline.svg",
+                "link": "/tritonparse.pdf",
+                "text": "PDF"
+            }
+        ],
         "type": "conference",
         "venue_full": "International Conference on Architectural Support for Programming Languages and Operating Systems",
         "note": "Accepted; to appear."
