@@ -7,8 +7,7 @@
         "tags": ["yifan", "lab"],
         "links": [],
         "type": "conference",
-        "venue_full": "33rd IEEE International Symposium on High-Performance Computer Architecture",
-        "note": "Accepted; to appear."
+        "venue_full": "33rd IEEE International Symposium on High-Performance Computer Architecture"
     },
     {
         "title": "TritonParse: Multi-IR Provenance and Reproducible Debugging for Triton Kernel Compilation",
@@ -24,8 +23,7 @@
             }
         ],
         "type": "conference",
-        "venue_full": "International Conference on Architectural Support for Programming Languages and Operating Systems",
-        "note": "Accepted; to appear."
+        "venue_full": "International Conference on Architectural Support for Programming Languages and Operating Systems"
     },
     {
         "title": "Mixing Models for Enhanced Robustness",
