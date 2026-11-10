@@ -51,6 +51,12 @@
     <h2 class="sec-title">Lab News</h2>
     <ul>
         <li>
+            <span class="date">[Nov 2, 2026]</span>
+            Our paper "Zeonica: A Unified Cycle-Level Simulation Substrate for
+            Spatial Architectures" has been accepted by HPCA 2027! Congrats Yijia
+            and all collaborators!
+        </li>
+        <li>
             <span class="date">[Sep 2026]</span>
             Our paper "TritonParse: Multi-IR Provenance and Reproducible Debugging
             for Triton Kernel Compilation" has been accepted by ASPLOS 2027!
