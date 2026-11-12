@@ -709,6 +709,11 @@ sections:
         condensed: true
         entries:
           - content:
+              - AccML '27
+              - 9th Workshop on Accelerated Machine Learning
+            meta:
+              - '2027'
+          - content:
               - HPCA '27
               - 33rd IEEE International Symposium on High-Performance Computer Architecture
             meta:
